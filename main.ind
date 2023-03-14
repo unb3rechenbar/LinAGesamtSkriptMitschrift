@@ -1,0 +1,292 @@
+\begin{theindex}
+
+  \item {\bf Abbildung}, \hyperpage{4}
+    \subitem bijektiv, \hyperpage{4}
+    \subitem Bild, \hyperpage{7, 8}
+    \subitem Definitionsmenge, \hyperpage{4}
+    \subitem Einschränkung (Restriktion), \hyperpage{9}
+    \subitem Gleichheit, \hyperpage{8}
+    \subitem Graph, \hyperpage{9}
+    \subitem Hintereinanderschaltung/ -ausführung/ Verkettung/ Komposition ($\circ$), 
+		\hyperpage{10}
+    \subitem Indentität ($\id$), \hyperpage{10}
+    \subitem injektiv, \hyperpage{4}
+    \subitem kanonische Surjektion, \hyperpage{17}
+    \subitem Kern ($\ker$), \hyperpage{33}
+    \subitem Permutation, \hyperpage{7}, \hyperpage{23}
+      \subsubitem Fehlstand, \hyperpage{99}
+      \subsubitem Transposition, \hyperpage{99}
+    \subitem Selbstabbildung, \hyperpage{7}
+    \subitem surjektiv, \hyperpage{4}
+    \subitem Umkehrabbildung (inverse Abbildung), \hyperpage{10}
+    \subitem Urbild, \hyperpage{7}
+    \subitem Wohldefiniertheit, \hyperpage{16}
+    \subitem Zielmenge, \hyperpage{4}
+    \subitem Zuordnungen vermitteln Bijektion, \hyperpage{12}
+  \item {\bf abelsche Gruppe}, \hyperpage{19}
+    \subitem direktes Produkt, \hyperpage{24}
+    \subitem Homomorphismus
+      \subsubitem Automorphismus, \hyperpage{27}
+      \subsubitem Endomorphismus, \hyperpage{27}
+      \subsubitem Epimorphismus, \hyperpage{27}
+      \subsubitem Isomorphismus, \hyperpage{27}, \hyperpage{29}
+      \subsubitem kanonischer Epimorphismus, \hyperpage{34}
+      \subsubitem Monomorphismus, \hyperpage{27}
+    \subitem isomorph ($\cong$), \hyperpage{28}
+    \subitem Untergruppe, \hyperpage{24}
+      \subsubitem erzeugte Untergruppe, \hyperpage{26}
+    \subitem zugrundeliegende Menge/ Trägermenge, \hyperpage{19}
+  \item {\bf Algebraischer Dualraum}, \hyperpage{155}
+    \subitem  Linearform, \hyperpage{155}
+    \subitem Doppeldual/ Bidual, \hyperpage{159}
+    \subitem duale Abbildung, \hyperpage{156}
+    \subitem duale Basis, \hyperpage{156}
+  \item {\bf Allgemeine Cholesky-Zerlegung}, \hyperpage{170}
+    \subitem Permutationsmatrix, \hyperpage{170}
+  \item {\bf  Allquantor} ($\forall $), \hyperpage{3}
+  \item {\bf assoziativ}, \hyperpage{19}, \hyperpage{37}
+
+  \indexspace
+
+  \item {\bf Bilinearform}, \hyperpage{161}
+    \subitem  bilineare Abbildung, \hyperpage{160}
+    \subitem ausgeartet, \hyperpage{164}
+    \subitem Darstellungsmatrix, \hyperpage{162}
+    \subitem quadratische Form, \hyperpage{165}
+    \subitem symmetrische Bilinearform, \hyperpage{164}
+    \subitem symmetrische Matrix, \hyperpage{164}
+
+  \indexspace
+
+  \item {\bf Cayley-Hamilton (Satz)}, \hyperpage{121}
+
+  \indexspace
+
+  \item {\bf distributiv}, \hyperpage{37}
+
+  \indexspace
+
+  \item {\bf  Existenzquantor} ($\exists $), \hyperpage{3}
+
+  \indexspace
+
+  \item {\bf Fundamentalsatz der Algebra}, \hyperpage{56}
+
+  \indexspace
+
+  \item {\bf  ganze Zahlen} ($\mathbb  Z$), \hyperpage{2}
+  \item {\bf Gauß-Verfahren}, \hyperpage{65}
+    \subitem Zeilenoperationen, \hyperpage{65}
+
+  \indexspace
+
+  \item {\bf  Halbordnung}
+    \subitem Infimum, \hyperpage{146}
+    \subitem maximales Element, \hyperpage{148}
+    \subitem Maximum, \hyperpage{146}
+    \subitem minimales Element, \hyperpage{148}
+    \subitem Minimum, \hyperpage{146}
+    \subitem obere Schranke, \hyperpage{146}
+    \subitem Supremum, \hyperpage{146}
+    \subitem untere Schranke, \hyperpage{146}
+  \item {\bf Halbordnung}, \hyperpage{145}
+    \subitem Kette, \hyperpage{148}
+    \subitem Ordnung/ lineare Ordnung, \hyperpage{145}
+      \subsubitem  natürliche Ordnung, \hyperpage{145}
+    \subitem Zorn'sche Lemma, \hyperpage{151}
+  \item {\bf homogenes lineares Gleichungssystem}, \hyperpage{59}
+    \subitem Koeffizientenmatrix, \hyperpage{62}
+    \subitem Stufenform, \hyperpage{62}
+      \subsubitem abhängige Unbekannte, \hyperpage{63}
+      \subsubitem freie Unbekannte, \hyperpage{63}
+      \subsubitem reduzierte Stufenform, \hyperpage{62}
+
+  \indexspace
+
+  \item {\bf  Implikation} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace  +\thickmuskip {.2777em}$, $\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Relbar \tmspace  +\thickmuskip {.2777em}$), 
+		\hyperpage{3}
+  \item {\bf (vollständige) Induktion}, \hyperpage{22}
+  \item {\bf inhomogenes lineares Gleichungssystem}, \hyperpage{87}
+    \subitem Stufenform, \hyperpage{87}
+      \subsubitem abhängige Unbekannte, \hyperpage{87}
+      \subsubitem freie Unbekannte, \hyperpage{87}
+      \subsubitem reduzierte Stufenform, \hyperpage{87}
+  \item {\bf inverse Elemente}, \hyperpage{19}
+
+  \indexspace
+
+  \item {\bf kommutativ}, \hyperpage{19}, \hyperpage{37}
+  \item {\bf kommutativer Ring}, \hyperpage{37}
+    \subitem additive Gruppe, \hyperpage{37}
+    \subitem Einheiten/invertierbare Elemente ($A^\times$), 
+		\hyperpage{51}
+    \subitem Homomorphismus, \hyperpage{41}
+      \subsubitem Automorphismus, \hyperpage{42}
+      \subsubitem Endomorphismus, \hyperpage{42}
+      \subsubitem Epimorphismus, \hyperpage{42}
+      \subsubitem Isomorphismus, \hyperpage{42}
+      \subsubitem Monomorphismus, \hyperpage{42}
+    \subitem Ideal, \hyperpage{45}
+      \subsubitem endlich erzeugt, \hyperpage{47}
+      \subsubitem erzeugtes Ideal, \hyperpage{47}
+      \subsubitem Hauptideal, \hyperpage{47}
+    \subitem imaginäre Einheit ($\i:=\sqrt{-1}$), \hyperpage{53}
+    \subitem Polynomring, \hyperpage{41}
+    \subitem Trägermenge, \hyperpage{37}
+    \subitem Unterring, \hyperpage{39}
+  \item {\bf komplexe Zahlen} ($\C$), \hyperpage{55}
+    \subitem Betrag, \hyperpage{55}
+    \subitem Imaginärteil, \hyperpage{55}
+    \subitem komplexe Konjugation, \hyperpage{55}
+    \subitem Realteil, \hyperpage{55}
+  \item {\bf Körper}, \hyperpage{51}
+
+  \indexspace
+
+  \item {\bf Linearkombination}, \hyperpage{60}
+    \subitem Spann, \hyperpage{60}
+
+  \indexspace
+
+  \item {\bf Matrix}
+    \subitem charakteristisches Polynom, \hyperpage{114}
+    \subitem Darstellungsmatrix, \hyperpage{77}, \hyperpage{81}
+      \subsubitem Basiswechselmatrix, \hyperpage{81}
+    \subitem Determinante, \hyperpage{102}
+      \subsubitem Entwicklung, \hyperpage{107}
+    \subitem diagonalisierbar, \hyperpage{126, 127}
+    \subitem Diagonalmatrix, \hyperpage{125}
+    \subitem Einheitsmatrix, \hyperpage{85}
+    \subitem inverse Matrix, \hyperpage{85}
+    \subitem Kern ($\ker$), \hyperpage{69}
+    \subitem Komatrix, \hyperpage{109}
+    \subitem Matrizenprodukt, \hyperpage{82}
+    \subitem obere Dreiecksmatrix, \hyperpage{125}
+    \subitem Orthogonalität, \hyperpage{140}
+    \subitem Rang, \hyperpage{94}
+    \subitem selbstadjungiert, \hyperpage{141}
+    \subitem trigonalisierbar, \hyperpage{126, 127}
+    \subitem untere Dreiecksmatrix, \hyperpage{125}
+    \subitem Vandermonde-Matrix, \hyperpage{79}
+    \subitem Zeilenraum ($\row$), \hyperpage{69}
+    \subitem Ähnlichkeit, \hyperpage{105}
+  \item {\bf Menge}, \hyperpage{1}
+    \subitem abzählbar, \hyperpage{6}
+    \subitem $\in$ oder $\notin$, \hyperpage{2}
+    \subitem Element, \hyperpage{1}
+    \subitem endlich, \hyperpage{6}
+    \subitem kartesisches Produkt ($\times$), \hyperpage{7}
+    \subitem Mengendifferenz ($\setminus$), \hyperpage{4}
+    \subitem Mächtigkeit ($\#$), \hyperpage{6}
+    \subitem Obermenge ($\supseteq$), \hyperpage{3}
+    \subitem Objekte mit Eigenschaft, \hyperpage{2}
+    \subitem Potenzmenge ($\Pow$), \hyperpage{4}
+    \subitem Schnitt ($\cap/\bigcap$), \hyperpage{3, 4}
+    \subitem symmetrische Differenz ($\Delta$), \hyperpage{21}
+    \subitem Teilmenge ($\subseteq$), \hyperpage{3}
+    \subitem unendlich, \hyperpage{6}
+    \subitem Vereinigung ($\cup/\bigcup$), \hyperpage{3, 4}
+    \subitem Zerlegung, \hyperpage{13}
+    \subitem überabzählbar, \hyperpage{6}
+  \item {\bf Menge von Abbildungen} ($B^A$), \hyperpage{7}
+
+  \indexspace
+
+  \item {\bf natürliche Zahlen} ($\N$), \hyperpage{2}
+  \item {\bf neutrales Element}, \hyperpage{19}, \hyperpage{37}
+
+  \indexspace
+
+  \item ohne Einschränkung (\OE), \hyperpage{22}
+
+  \indexspace
+
+  \item {\bf Polynom}, \hyperpage{41}
+    \subitem Koeffizient, \hyperpage{41}
+      \subsubitem Leitkoeffizient, \hyperpage{41}
+    \subitem normiertes Polynom, \hyperpage{117}
+      \subsubitem Begleitmatrix, \hyperpage{118}
+    \subitem Nullstelle, \hyperpage{56}
+      \subsubitem Vielfachheit, \hyperpage{116}
+    \subitem $p(x)$, \hyperpage{44}
+    \subitem Polynomdivision, \hyperpage{116}
+    \subitem zerfällt (in Linearfaktoren), \hyperpage{116}
+  \item {\bf Primzahl} ($\P$), \hyperpage{52}
+  \item {\bf punktweise Addition}, \hyperpage{24}
+
+  \indexspace
+
+  \item {\bf Relation}, \hyperpage{12}
+    \subitem Kongruenzrelation ($\equiv$), \hyperpage{29}, 
+		\hyperpage{44}, \hyperpage{91}
+      \subsubitem $\equiv_H$, \hyperpage{31}
+      \subsubitem Kongruenzklasse, \hyperpage{29}
+      \subsubitem Nebenklassen, \hyperpage{32}
+      \subsubitem Quotientengruppe, \hyperpage{30}, \hyperpage{32}
+      \subsubitem Quotientenring, \hyperpage{45, 46}
+      \subsubitem Quotientenvektorraum, \hyperpage{91}
+      \subsubitem Restklassen, \hyperpage{46}
+    \subitem Äquivalenzrelation ($\sim$), \hyperpage{12}
+      \subsubitem induziert, \hyperpage{16}
+      \subsubitem Quotientenmenge, \hyperpage{13}
+      \subsubitem reflexiv, \hyperpage{12}
+      \subsubitem symmetrisch, \hyperpage{12}
+      \subsubitem transitiv, \hyperpage{12}
+      \subsubitem $\sim_\mathcal{Z}$, \hyperpage{13}
+      \subsubitem Äquivalenzklasse, \hyperpage{12}
+
+  \indexspace
+
+  \item {\bf Spaltenvektor}, \hyperpage{59}
+
+  \indexspace
+
+  \item {\bf  Teilbarkeit}
+    \subitem  gemeinsamer Teiler (gT), \hyperpage{198}
+    \subitem  gemeinsames Vielfaches (gV), \hyperpage{198}
+    \subitem  größter gemeinsamer Teiler (ggT), \hyperpage{198}
+    \subitem  kleinstes gemeinsames Vielfaches (kgV), \hyperpage{198}
+    \subitem Teiler, \hyperpage{197}
+  \item {\bf Teilbarkeit}
+    \subitem Assozitation, \hyperpage{197}
+    \subitem Teilbarkeitsrelation, \hyperpage{197}
+
+  \indexspace
+
+  \item {\bf Vektorraum}
+    \subitem Basis
+      \subsubitem Eigenbasis, \hyperpage{126}
+    \subitem charakteristisches Polynom, \hyperpage{113}
+      \subsubitem algebraische Vielfachheit, \hyperpage{116}
+      \subsubitem geometrische Vielfachheit, \hyperpage{116}
+    \subitem Homomorphismus/ lineare Abbildung
+      \subsubitem algebraische Identität, \hyperpage{124}
+      \subsubitem Eigenraum, \hyperpage{111}
+      \subsubitem Eigenvektor, \hyperpage{111}
+      \subsubitem Eigenwert, \hyperpage{111}
+      \subsubitem $\End(V)$, \hyperpage{111}
+      \subsubitem $\Hom(V,W)$, \hyperpage{80}
+      \subsubitem Minimalpolynom, \hyperpage{124}
+    \subitem normierter Vektorraum, \hyperpage{132}
+      \subsubitem Homomorphismus, \hyperpage{139}
+      \subsubitem Norm, \hyperpage{132}
+      \subsubitem orthogonale Projektion, \hyperpage{137}
+      \subsubitem orthogonales Komplement, \hyperpage{137}
+      \subsubitem Orthogonalität, \hyperpage{136}
+      \subsubitem Orthonormalbasis, \hyperpage{136}
+      \subsubitem Orthonormalsystem, \hyperpage{136}
+      \subsubitem selbsadjungierter Endomorphismus, \hyperpage{141}
+      \subsubitem Skalarprodukt, \hyperpage{131}
+      \subsubitem Standardskalarprodukt, \hyperpage{132}
+      \subsubitem Winkel, \hyperpage{134}
+    \subitem Unterraum
+      \subsubitem direkte Summe, \hyperpage{95}
+      \subsubitem kanonische Surjektion, \hyperpage{92}
+      \subsubitem Summe, \hyperpage{95}
+
+  \indexspace
+
+  \item {\bf  Äquivalenz} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel  \Rightarrow \tmspace  +\thickmuskip {.2777em}$), 
+		\hyperpage{3}
+
+\end{theindex}
