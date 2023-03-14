@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.14)  14 MAR 2023 21:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.14)  14 MAR 2023 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1350,8 +1350,17 @@ Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
-))
-No file main.aux.
+)) (./main.aux
+
+LaTeX Warning: Label `15.2.12' multiply defined.
+
+
+LaTeX Warning: Label `16.4.23' multiply defined.
+
+
+LaTeX Warning: Label `17.4.2' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
@@ -1373,7 +1382,7 @@ LaTeX Font Info:    ... okay on input line 243.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 243.
 LaTeX Font Info:    ... okay on input line 243.
 Package hyperref Info: Link coloring OFF on input line 243.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1388,6 +1397,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 243.
 LaTeX Info: Redefining \pageref on input line 243.
 LaTeX Info: Redefining \nameref on input line 243.
+ (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1399,7 +1409,8 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
 (scrbook)           before \begin{document} on input line 243.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1475,11 +1486,51 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 ] [4
 
-]
+] (./main.toc [5]
+Overfull \hbox (2.03697pt too wide) detected at line 32
+ []\T1/cmss/bx/n/12 111
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 36
+ []\T1/cmss/bx/n/12 131
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 40
+ []\T1/cmss/bx/n/12 145
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 44
+ []\T1/cmss/bx/n/12 155
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 50
+ []\T1/cmss/bx/n/12 175
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 53
+ []\T1/cmss/bx/n/12 185
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 56
+ []\T1/cmss/bx/n/12 197
+ []
+
+
+Overfull \hbox (2.03697pt too wide) detected at line 61
+ []\T1/cmss/bx/n/12 213
+ []
+
+[6])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5] [6
+ [7] [8
 
 ]
 chapter 1.
@@ -1503,210 +1554,30 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-(./b1/b1Kapitel/b1Mengen.tex
+(./b1/b1Kapitel/b1Mengen.tex [1
 
-LaTeX Warning: Reference `1.1.1' on page 1 undefined on input line 18.
-
-[1
-
-]
-
-LaTeX Warning: Reference `1.1.5' on page 2 undefined on input line 41.
-
-[2]
-
-LaTeX Warning: Reference `1.1.2' on page 3 undefined on input line 120.
-
-[3] [4] [5]
-
-LaTeX Warning: Reference `1.1.22' on page 6 undefined on input line 286.
-
-
-LaTeX Warning: Reference `1.1.21' on page 6 undefined on input line 295.
-
-
-LaTeX Warning: Reference `1.1.22' on page 6 undefined on input line 295.
-
-[6] [7]
-
-LaTeX Warning: Reference `1.1.27' on page 8 undefined on input line 372.
-
-[8]
-
-LaTeX Warning: Reference `1.1.16' on page 9 undefined on input line 404.
-
-
-LaTeX Warning: Reference `1.1.29' on page 9 undefined on input line 404.
-
-
-LaTeX Warning: Reference `1.1.16' on page 9 undefined on input line 434.
-
-
-LaTeX Warning: Reference `1.1.25' on page 9 undefined on input line 466.
-
-[9]
-
-LaTeX Warning: Reference `1.1.16' on page 10 undefined on input line 506.
-
-
-LaTeX Warning: Reference `1.1.16' on page 10 undefined on input line 521.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 538.
-
-
-LaTeX Warning: Reference `1.1.16' on page 10 undefined on input line 539.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 540.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 541.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 541.
-
-
-LaTeX Warning: Reference `1.2.2' on page 10 undefined on input line 541.
-
-
-LaTeX Warning: Reference `1.1.16' on page 10 undefined on input line 543.
-
-[10]
-
-LaTeX Warning: Reference `1.2.5' on page 11 undefined on input line 563.
-
-
-LaTeX Warning: Reference `1.2.5' on page 11 undefined on input line 563.
-
-
-LaTeX Warning: Reference `1.2.5' on page 11 undefined on input line 563.
-
-
-Underfull \vbox (badness 1436) has occurred while \output is active []
+] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+Underfull \vbox (badness 1590) has occurred while \output is active []
 
  [11]
-
-LaTeX Warning: Reference `1.2.6' on page 12 undefined on input line 568.
-
-[12]
-
-LaTeX Warning: Reference `1.2.7' on page 13 undefined on input line 643.
-
-
-LaTeX Warning: Reference `1.1.14' on page 13 undefined on input line 672.
-
-
-LaTeX Warning: Reference `1.3.5' on page 13 undefined on input line 672.
-
-
-LaTeX Warning: Reference `1.3.3' on page 13 undefined on input line 704.
-
-[13] [14]
-
-LaTeX Warning: Reference `1.3.6' on page 15 undefined on input line 746.
-
-[15]
-
-LaTeX Warning: Reference `1.1.29' on page 16 undefined on input line 782.
-
-
-LaTeX Warning: Reference `1.1.19' on page 16 undefined on input line 789.
-
-[16]) [17] [18
+[12] [13] [14] [15] [16]) [17] [18
 
 ]
 chapter 2.
-(./b1/b1Kapitel/b1AbelscheGruppen.tex [19] [20]
-
-LaTeX Warning: Reference `2.1.2' on page 21 undefined on input line 84.
-
-
-LaTeX Warning: Reference `2.1.2' on page 21 undefined on input line 89.
-
-
-LaTeX Warning: Reference `2.1.2' on page 21 undefined on input line 93.
-
-[21]
-
-LaTeX Warning: Reference `2.1.4' on page 22 undefined on input line 103.
-
-
+(./b1/b1Kapitel/b1AbelscheGruppen.tex [19] [20] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 142--145
 []$\T1/cmr/m/n/12 : Sei-en zwei sinn-vol-le Klam-me-run-gen von
  []
 
 [22]
-
-LaTeX Warning: Reference `2.1.6' on page 23 undefined on input line 156.
-
-
-LaTeX Warning: Reference `2.1.6' on page 23 undefined on input line 156.
-
-
-LaTeX Warning: Reference `1.2.5' on page 23 undefined on input line 156.
-
-
-LaTeX Warning: Reference `1.1.29' on page 23 undefined on input line 160.
-
-
-LaTeX Warning: Reference `2.1.6' on page 23 undefined on input line 164.
-
-
-LaTeX Warning: Reference `2.1.2' on page 23 undefined on input line 180.
-
-
-LaTeX Warning: Reference `1.1.30' on page 23 undefined on input line 181.
-
-
-LaTeX Warning: Reference `2.1.6' on page 23 undefined on input line 182.
-
-
-LaTeX Warning: Reference `2.1.9' on page 23 undefined on input line 182.
-
-
-LaTeX Warning: Reference `1.1.6' on page 23 undefined on input line 182.
-
-
-Overfull \hbox (9.99754pt too wide) in paragraph at lines 182--183
+Overfull \hbox (18.2122pt too wide) in paragraph at lines 182--183
 \T1/cmr/m/n/12 Wir set-zen $[][] \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 := 0$\T1/
 cmr/m/n/12 . Statt $[][] \OML/cmm/m/it/12 a[]$ \T1/cmr/m/n/12 schreibt man auch
  $[][] \OML/cmm/m/it/12 a[]$\T1/cmr/m/n/12 . Be-ach-te $[][] \OML/cmm/m/it/12 a
 [] []
  []
 
-
-LaTeX Warning: Reference `1.1.28' on page 23 undefined on input line 186.
-
-
-LaTeX Warning: Reference `1.1.27' on page 23 undefined on input line 186.
-
 [23]
-
-LaTeX Warning: Reference `1.1.12' on page 24 undefined on input line 235.
-
-
 Overfull \hbox (10.92612pt too wide) detected at line 258
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^C\OT1/cmr/m/n/12 ) ((\OML/cmm/m/it/12 a\OT1
 /cmr/m/n/12 ) & (\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 ) & (\OML/cmm/m/it/12 c\OT1/
@@ -1714,171 +1585,21 @@ cmr/m/n/12 ) & (\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ))  =[]\OMS/cmsy/m/n/12 )  \O
 ML/cmm/m/it/12 H[]
  []
 
-
-LaTeX Warning: Reference `2.1.1' on page 24 undefined on input line 262.
-
-
-LaTeX Warning: Reference `2.2.1' on page 24 undefined on input line 265.
-
-
-LaTeX Warning: Reference `2.1.2' on page 24 undefined on input line 278.
-
-[24]
-
-LaTeX Warning: Reference `2.1.3' on page 25 undefined on input line 289.
-
-[25]
-
-LaTeX Warning: Reference `1.1.14' on page 26 undefined on input line 307.
-
-
-LaTeX Warning: Reference `2.2.5' on page 26 undefined on input line 339.
-
-[26]
-
-LaTeX Warning: Reference `2.2.6' on page 27 undefined on input line 347.
-
-
-LaTeX Warning: Reference `1.1.29' on page 27 undefined on input line 377.
+[24] [25] [26]
+Overfull \hbox (9.12148pt too wide) in paragraph at lines 377--382
+\T1/cmr/m/n/12 (Gruppen-)$[]$ \T1/cmr/m/it/12 mor-phis-mus[][][]\T1/cmr/m/n/12 
+, wenn $\OML/cmm/m/it/12 f []$ \T1/cmr/m/n/12 ist. Einen Grup-
+ []
 
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 397.
 
-[27]
-
-LaTeX Warning: Reference `1.2.5' on page 28 undefined on input line 416.
-
-
-LaTeX Warning: Reference `1.2.5' on page 28 undefined on input line 418.
-
-[28]
-
-LaTeX Warning: Reference `2.1.3' on page 29 undefined on input line 451.
-
-
-LaTeX Warning: Reference `2.1.3' on page 29 undefined on input line 473.
-
-
-LaTeX Warning: Reference `2.2.11' on page 29 undefined on input line 475.
-
-
-LaTeX Warning: Reference `2.1.3' on page 29 undefined on input line 476.
-
-
-LaTeX Warning: Reference `1.3' on page 29 undefined on input line 484.
-
-
-LaTeX Warning: Reference `2.3.1' on page 29 undefined on input line 498.
-
-
-LaTeX Warning: Reference `star1' on page 29 undefined on input line 498.
-
-
-LaTeX Warning: Reference `starstar' on page 29 undefined on input line 507.
-
-
-LaTeX Warning: Reference `star1' on page 29 undefined on input line 507.
-
-[29pdfTeX warning (ext4): destination with the same identifier (name{equation.2
-.3.1}) has been already used, duplicate ignored
+[27] [28] [29pdfTeX warning (ext4): destination with the same identifier (name{
+equation.2.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.512 ...rline b:=\overline{a+b}\qquad(a,b\in G)$$
-                                                  ]
-
-LaTeX Warning: Reference `2.3.2' on page 30 undefined on input line 517.
-
-
-LaTeX Warning: Reference `2.1.1' on page 30 undefined on input line 518.
-
-
-LaTeX Warning: Reference `2.2.2' on page 30 undefined on input line 537.
-
-
-LaTeX Warning: Reference `star1' on page 30 undefined on input line 544.
-
-
-LaTeX Warning: Reference `star1' on page 30 undefined on input line 545.
-
-
-LaTeX Warning: Reference `star1' on page 30 undefined on input line 549.
-
-
-LaTeX Warning: Reference `star1' on page 30 undefined on input line 550.
-
-
-LaTeX Warning: Reference `star1' on page 30 undefined on input line 555.
-
-
-LaTeX Warning: Reference `star1' on page 30 undefined on input line 557.
-
-[30]
-
-LaTeX Warning: Reference `1.3.5' on page 31 undefined on input line 563.
-
-
-LaTeX Warning: Reference `1.3.6' on page 31 undefined on input line 568.
-
-
-LaTeX Warning: Reference `2.3.4' on page 31 undefined on input line 584.
-
-
-LaTeX Warning: Reference `1.3.1' on page 31 undefined on input line 587.
-
-
-LaTeX Warning: Reference `2.3.2' on page 31 undefined on input line 587.
-
-
-LaTeX Warning: Reference `2.3.5' on page 31 undefined on input line 605.
-
-
-LaTeX Warning: Reference `1.3.1' on page 31 undefined on input line 605.
-
-
-LaTeX Warning: Reference `1.3.1' on page 31 undefined on input line 608.
-
-
-LaTeX Warning: Reference `2.3.5' on page 31 undefined on input line 608.
-
-[31]
-
-LaTeX Warning: Reference `2.3.1' on page 32 undefined on input line 613.
-
-
-LaTeX Warning: Reference `2.3.4' on page 32 undefined on input line 614.
-
-
-LaTeX Warning: Reference `hpropc' on page 32 undefined on input line 614.
-
-
-LaTeX Warning: Reference `1.1.21' on page 32 undefined on input line 614.
-
-
-LaTeX Warning: Reference `1.3.3' on page 32 undefined on input line 614.
-
-[32]
-
-LaTeX Warning: Reference `1.3.9' on page 33 undefined on input line 646.
-
-
-LaTeX Warning: Reference `1.1.25' on page 33 undefined on input line 647.
-
-
-LaTeX Warning: Reference `2.3.6' on page 33 undefined on input line 648.
-
-
-LaTeX Warning: Reference `1.3.9' on page 33 undefined on input line 653.
-
-
-LaTeX Warning: Reference `2.2.9' on page 33 undefined on input line 655.
-
-
-LaTeX Warning: Reference `2.2.9' on page 33 undefined on input line 655.
-
-
-LaTeX Warning: Reference `2.2.2' on page 33 undefined on input line 658.
-
-
+                                                  ] [30] [31] [32]
 Overfull \hbox (11.71187pt too wide) detected at line 659
 [] \OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 G;  \OT1/cmr/m/n/12
  0 \OMS/cmsy/m/n/12 2 [] \OML/cmm/m/it/12 f;  \OMS/cmsy/m/n/12 8\OML/cmm/m/it/1
@@ -1889,171 +1610,17 @@ t/12 f \OT1/cmr/m/n/12 : \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a \OMS/cmsy/m/n/1
 2 2 [] \OML/cmm/m/it/12 f:
  []
 
-
-LaTeX Warning: Reference `2.2.11' on page 33 undefined on input line 660.
-
-
-LaTeX Warning: Reference `2.2.11' on page 33 undefined on input line 661.
-
-
-LaTeX Warning: Reference `2.3.6' on page 33 undefined on input line 665.
-
-
-LaTeX Warning: Reference `1.1.25' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `2.2.11' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `1.3.9' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `1.3.1' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `1.1.25' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `2.2.11' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `1.3.9' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `1.3.1' on page 33 undefined on input line 669.
-
-
-LaTeX Warning: Reference `1.3.8' on page 33 undefined on input line 674.
-
-
-LaTeX Warning: Reference `2.3.6' on page 33 undefined on input line 688.
-
-
-LaTeX Warning: Reference `2.3.5' on page 33 undefined on input line 691.
-
-
-LaTeX Warning: Reference `2.3.7' on page 33 undefined on input line 692.
-
-
-LaTeX Warning: Reference `1.3.8' on page 33 undefined on input line 693.
-
-
-LaTeX Warning: Reference `2.3.3' on page 33 undefined on input line 694.
-
-
-LaTeX Warning: Reference `1.3.8' on page 33 undefined on input line 696.
-
-
-LaTeX Warning: Reference `1.3.8' on page 33 undefined on input line 697.
-
-[33]
-
-LaTeX Warning: Reference `1.3.10' on page 34 undefined on input line 700.
-
-
-LaTeX Warning: Reference `2.2.12' on page 34 undefined on input line 702.
-
-
-LaTeX Warning: Reference `1.1.25' on page 34 undefined on input line 708.
-
-
-LaTeX Warning: Reference `1.1.29' on page 34 undefined on input line 709.
-
-
-LaTeX Warning: Reference `2.2.2' on page 34 undefined on input line 712.
-
-
-LaTeX Warning: Reference `2.2.11' on page 34 undefined on input line 719.
-
-
-LaTeX Warning: Reference `2.2.11' on page 34 undefined on input line 720.
-
-
-LaTeX Warning: Reference `1.3.11' on page 34 undefined on input line 723.
-
-
-LaTeX Warning: Reference `2.2.12' on page 34 undefined on input line 726.
-
-
-LaTeX Warning: Reference `2.2.15' on page 34 undefined on input line 726.
-
-[34]) [35] [36
+[33] [34]) [35] [36
 
 ]
 chapter 3.
 (./b1/b1Kapitel/b1KommutativeRinge.tex
-
-LaTeX Warning: Reference `3.1.1' on page 37 undefined on input line 18.
-
-
 Overfull \hbox (36.67015pt too wide) in paragraph at lines 19--23
 []\T1/cmr/m/n/12 Man nennt $[]$ die \T1/cmr/m/it/12 zu-grun-de-lie-gen-de $[]$ 
 \T1/cmr/m/n/12 oder die $[]$
  []
 
-
-LaTeX Warning: Reference `2.1.2' on page 37 undefined on input line 23.
-
-
-LaTeX Warning: Reference `2.1.6' on page 37 undefined on input line 24.
-
-
-LaTeX Warning: Reference `2.1.7' on page 37 undefined on input line 24.
-
-
-LaTeX Warning: Reference `2.1.9' on page 37 undefined on input line 24.
-
-[37]
-
-LaTeX Warning: Reference `2.2.12' on page 38 undefined on input line 27.
-
-
-LaTeX Warning: Reference `2.2.11' on page 38 undefined on input line 27.
-
-
-LaTeX Warning: Reference `3.1.2' on page 38 undefined on input line 38.
-
-
-LaTeX Warning: Reference `2.1.3' on page 38 undefined on input line 43.
-
-
-LaTeX Warning: Reference `2.1.11' on page 38 undefined on input line 48.
-
-
-LaTeX Warning: Reference `2.1.11' on page 38 undefined on input line 62.
-
-[38]
-
-LaTeX Warning: Reference `2.1.10' on page 39 undefined on input line 131.
-
-
-LaTeX Warning: Reference `3.1.1' on page 39 undefined on input line 132.
-
-
-LaTeX Warning: Reference `2.1.6' on page 39 undefined on input line 132.
-
-
-LaTeX Warning: Reference `2.1.9' on page 39 undefined on input line 132.
-
-
-LaTeX Warning: Reference `1.1.6' on page 39 undefined on input line 132.
-
-
-LaTeX Warning: Reference `2.2.1' on page 39 undefined on input line 137.
-
-
-LaTeX Warning: Reference `2.2.2' on page 39 undefined on input line 142.
-
-
-LaTeX Warning: Reference `3.1.2' on page 39 undefined on input line 143.
-
-
-LaTeX Warning: Reference `2.2.2' on page 39 undefined on input line 143.
-
-
-LaTeX Warning: Reference `2.2.2' on page 39 undefined on input line 147.
-
-[39]
+[37] [38] [39]
 Underfull \hbox (badness 1264) in paragraph at lines 179--180
 \OT1/cmr/m/n/12 1$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 := 
 0$ \T1/cmr/m/n/12 für $\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12 ^^U \OML/cmm/m/it/12
@@ -2061,335 +1628,15 @@ Underfull \hbox (badness 1264) in paragraph at lines 179--180
 
  []
 
-
-LaTeX Warning: Reference `2.1.9' on page 40 undefined on input line 180.
-
-[40]
-
-LaTeX Warning: Reference `3.2.3' on page 41 undefined on input line 238.
-
-
-LaTeX Warning: Reference `3.2.4' on page 41 undefined on input line 238.
-
-
-LaTeX Warning: Reference `3.1.3' on page 41 undefined on input line 250.
-
-
-LaTeX Warning: Reference `3.1.4' on page 41 undefined on input line 250.
-
-
-LaTeX Warning: Reference `2.2.9' on page 41 undefined on input line 253.
-
-
-LaTeX Warning: Reference `3.1.4' on page 41 undefined on input line 261.
-
-
-LaTeX Warning: Reference `2.2.12' on page 41 undefined on input line 265.
-
-
-Overfull \hbox (159.39877pt too wide) in paragraph at lines 265--267
-[][]\T1/cmr/bx/n/12 Definition 3.2.10. [][]\T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 !$
- []\T1/cmr/m/n/12 ][] Ein Ring-ho-mo-mor-phis-mus $\OML/cmm/m/it/12 f \OT1/cmr/
-m/n/12 : \OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 B$ \T1/cmr/m/n/
-12 heiÿt (Ring-) $[]$\T1/cmr/m/it/12 morphismus[][][]\T1/cmr/m/n/12 ,
- []
-
-[41]
-
-LaTeX Warning: Reference `2.3.13' on page 42 undefined on input line 269.
-
-
-LaTeX Warning: Reference `2.3.13' on page 42 undefined on input line 273.
-
-
-LaTeX Warning: Reference `3.2.2' on page 42 undefined on input line 273.
-
-
-LaTeX Warning: Reference `3.2.8' on page 42 undefined on input line 278.
-
-
-LaTeX Warning: Reference `3.1.5' on page 42 undefined on input line 286.
-
-
-LaTeX Warning: Reference `1.1.30' on page 42 undefined on input line 286.
-
-
-LaTeX Warning: Reference `imfsubring' on page 42 undefined on input line 287.
-
-
-LaTeX Warning: Reference `2.2.15' on page 42 undefined on input line 287.
-
-
-LaTeX Warning: Reference `3.2.6' on page 42 undefined on input line 287.
-
-
-LaTeX Warning: Reference `3.2.4' on page 42 undefined on input line 287.
-
-
-LaTeX Warning: Reference `3.2.6' on page 42 undefined on input line 287.
-
-[42]
-
-LaTeX Warning: Reference `3.2.6' on page 43 undefined on input line 302.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
-LaTeX Warning: Reference `2.1.10' on page 43 undefined on input line 319.
-
-
+[40] [41] [42]
 Underfull \vbox (badness 6316) has occurred while \output is active []
 
  [43]
-
-LaTeX Warning: Reference `substitutioncor' on page 44 undefined on input line 3
-35.
-
-
-LaTeX Warning: Reference `substitutioncor' on page 44 undefined on input line 3
-43.
-
-
-LaTeX Warning: Reference `axisoay' on page 44 undefined on input line 349.
-
-
-LaTeX Warning: Reference `1.3' on page 44 undefined on input line 352.
-
-
-LaTeX Warning: Reference `2.3' on page 44 undefined on input line 352.
-
-
-LaTeX Warning: Reference `2.3.1' on page 44 undefined on input line 359.
-
-
-LaTeX Warning: Reference `3.3.1' on page 44 undefined on input line 366.
-
-
-LaTeX Warning: Reference `star2' on page 44 undefined on input line 366.
-
-[44]
-
-LaTeX Warning: Reference `2.3.3' on page 45 undefined on input line 375.
-
-
-LaTeX Warning: Reference `2.3.3' on page 45 undefined on input line 382.
-
-
-LaTeX Warning: Reference `3.1.1' on page 45 undefined on input line 382.
-
-
-LaTeX Warning: Reference `3.1.2' on page 45 undefined on input line 393.
-
-
-LaTeX Warning: Reference `2.2.2' on page 45 undefined on input line 405.
-
-
-LaTeX Warning: Reference `3.3.4' on page 45 undefined on input line 405.
-
-
-LaTeX Warning: Reference `aiit' on page 45 undefined on input line 405.
-
-
-LaTeX Warning: Reference `2.2.2' on page 45 undefined on input line 405.
-
-
-LaTeX Warning: Reference `3.1.2' on page 45 undefined on input line 406.
-
-
-LaTeX Warning: Reference `2.3.6' on page 45 undefined on input line 410.
-
-[45]
-
-LaTeX Warning: Reference `2.3.4' on page 46 undefined on input line 427.
-
-
-LaTeX Warning: Reference `2.3.6' on page 46 undefined on input line 427.
-
-
-LaTeX Warning: Reference `3.3.4' on page 46 undefined on input line 428.
-
-
-LaTeX Warning: Reference `3.3.1' on page 46 undefined on input line 429.
-
-
-LaTeX Warning: Reference `3.1.2' on page 46 undefined on input line 429.
-
-
-LaTeX Warning: Reference `2.3.6' on page 46 undefined on input line 432.
-
-
-LaTeX Warning: Reference `3.3.1' on page 46 undefined on input line 432.
-
-
-LaTeX Warning: Reference `2.3.6' on page 46 undefined on input line 437.
-
-
-LaTeX Warning: Reference `2.3.7' on page 46 undefined on input line 440.
-
-
-LaTeX Warning: Reference `2.3.1' on page 46 undefined on input line 442.
-
-
-LaTeX Warning: Reference `2.2.5' on page 46 undefined on input line 447.
-
-
-LaTeX Warning: Reference `2.2.5' on page 46 undefined on input line 451.
-
-
-LaTeX Warning: Reference `3.3.4' on page 46 undefined on input line 451.
-
-[46]
-
-LaTeX Warning: Reference `2.2.6' on page 47 undefined on input line 455.
-
-
-LaTeX Warning: Reference `2.2.6' on page 47 undefined on input line 460.
-
-
-LaTeX Warning: Reference `3.3.8' on page 47 undefined on input line 460.
-
-
-LaTeX Warning: Reference `2.2.5' on page 47 undefined on input line 460.
-
-
-LaTeX Warning: Reference `2.2.7' on page 47 undefined on input line 463.
-
-
-LaTeX Warning: Reference `2.2.7' on page 47 undefined on input line 468.
-
-
-LaTeX Warning: Reference `3.3.9' on page 47 undefined on input line 468.
-
-[47]
-
-LaTeX Warning: Reference `2.3.10' on page 48 undefined on input line 511.
-
-
-LaTeX Warning: Reference `2.3.10' on page 48 undefined on input line 517.
-
-
-LaTeX Warning: Reference `3.3.6' on page 48 undefined on input line 517.
-
-
-LaTeX Warning: Reference `2.3.10' on page 48 undefined on input line 518.
-
-
-LaTeX Warning: Reference `3.3.4' on page 48 undefined on input line 518.
-
-
-LaTeX Warning: Reference `3.1.2' on page 48 undefined on input line 519.
-
-
-LaTeX Warning: Reference `2.3.11' on page 48 undefined on input line 523.
-
-
-LaTeX Warning: Reference `2.3.11' on page 48 undefined on input line 537.
-
-
-LaTeX Warning: Reference `2.3.11' on page 48 undefined on input line 538.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 538.
-
-
-LaTeX Warning: Reference `3.3.3' on page 48 undefined on input line 540.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 540.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 540.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 540.
-
-
-LaTeX Warning: Reference `3.3.3' on page 48 undefined on input line 542.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 542.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 542.
-
-
-LaTeX Warning: Reference `3.2.8' on page 48 undefined on input line 542.
-
-
-LaTeX Warning: Reference `2.3.11' on page 48 undefined on input line 546.
-
-[48]
-
-LaTeX Warning: Reference `2.3.12' on page 49 undefined on input line 549.
-
-
-LaTeX Warning: Reference `2.3.12' on page 49 undefined on input line 553.
-
-
-LaTeX Warning: Reference `2.3.14' on page 49 undefined on input line 556.
-
-
-LaTeX Warning: Reference `3.2.10' on page 49 undefined on input line 559.
-
-
-LaTeX Warning: Reference `2.2.15' on page 49 undefined on input line 559.
-
-) [49] [50
+[44] [45] [46] [47] [48]) [49] [50
 
 ]
 chapter 4.
-(./b1/b1Kapitel/b1Koerper.tex
-
-LaTeX Warning: Reference `3.1.1' on page 51 undefined on input line 6.
-
-
-LaTeX Warning: Reference `3.1.2' on page 51 undefined on input line 9.
-
-
-LaTeX Warning: Reference `2.1.1' on page 51 undefined on input line 9.
-
-
-LaTeX Warning: Reference `3.1.1' on page 51 undefined on input line 9.
-
-
-LaTeX Warning: Reference `3.1.3' on page 51 undefined on input line 37.
-
-
-LaTeX Warning: Reference `3.1.4' on page 51 undefined on input line 37.
-
-[51]
-
-LaTeX Warning: Reference `2.3.8' on page 52 undefined on input line 55.
-
-
-LaTeX Warning: Reference `2.2.15' on page 52 undefined on input line 56.
-
-
-LaTeX Warning: Reference `2.3.8' on page 52 undefined on input line 60.
-
-
-LaTeX Warning: Reference `4.1.5' on page 52 undefined on input line 60.
-
-
+(./b1/b1Kapitel/b1Koerper.tex [51]
 Overfull \hbox (8.72614pt too wide) detected at line 75
 \OML/cmm/m/it/12 a \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A[]  \OMS/cmsy/m/n/12 ([
 ])  \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT
@@ -2399,236 +1646,37 @@ L/cmm/m/it/12 a\OT1/cmr/m/n/12 ) = #\OML/cmm/m/it/12 A  \OMS/cmsy/m/n/12 ([])
 \OT1/cmr/m/n/12 #(\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 n:
  []
 
-
-LaTeX Warning: Reference `2.3.7' on page 52 undefined on input line 76.
-
 [52]
-
-LaTeX Warning: Reference `4.1.7' on page 53 undefined on input line 92.
-
-
-LaTeX Warning: Reference `4.1.1' on page 53 undefined on input line 92.
-
-
-LaTeX Warning: Reference `4.1.8' on page 53 undefined on input line 97.
-
-
-LaTeX Warning: Reference `4.1.8' on page 53 undefined on input line 97.
-
-
-LaTeX Warning: Reference `2.1.2' on page 53 undefined on input line 109.
-
-
-LaTeX Warning: Reference `2.1.2' on page 53 undefined on input line 109.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``p2''? on input line 11
-1.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``p1''? on input line 11
-1.
-
-
-LaTeX Warning: Reference `3.2.4' on page 53 undefined on input line 132.
-
-
-LaTeX Warning: Reference `3.2.10' on page 53 undefined on input line 139.
-
-
-LaTeX Warning: Reference `3.2.8' on page 53 undefined on input line 140.
-
-
-LaTeX Warning: Reference `1.1.31' on page 53 undefined on input line 140.
-
-
-LaTeX Warning: Reference `3.3.17' on page 53 undefined on input line 140.
-
-
-LaTeX Warning: Reference `3.3.11' on page 53 undefined on input line 141.
-
-
-LaTeX Warning: Reference `3.2.6' on page 53 undefined on input line 141.
-
-
-LaTeX Warning: Reference `imfsubring' on page 53 undefined on input line 142.
-
-
-LaTeX Warning: Reference `2.2.15' on page 53 undefined on input line 144.
-
-
-LaTeX Warning: Reference `polynomialringexists' on page 53 undefined on input l
-ine 144.
-
-
-LaTeX Warning: Reference `3.2.5' on page 53 undefined on input line 149.
-
-
-LaTeX Warning: Reference `3.2.8' on page 53 undefined on input line 156.
-
-
 Overfull \hbox (4.20282pt too wide) detected at line 164
 []
  []
 
-[53]
-
-LaTeX Warning: Reference `4.2.3' on page 54 undefined on input line 174.
-
-
-LaTeX Warning: Reference `4.2.3' on page 54 undefined on input line 174.
-
-[54]
-
-LaTeX Warning: Reference `4.2.3' on page 55 undefined on input line 181.
-
-
-LaTeX Warning: Reference `4.2.3' on page 55 undefined on input line 194.
-
-
-LaTeX Warning: Reference `3.2.10' on page 55 undefined on input line 195.
-
-
-LaTeX Warning: Reference `4.2.3' on page 55 undefined on input line 201.
-
-
-LaTeX Warning: Reference `writepx' on page 55 undefined on input line 208.
-
-[55]
-
-LaTeX Warning: Reference `3.3.11' on page 56 undefined on input line 215.
-
-
-LaTeX Warning: Reference `3.3.3' on page 56 undefined on input line 216.
-
-
-LaTeX Warning: Reference `3.3.3' on page 56 undefined on input line 217.
-
-
-LaTeX Warning: Reference `3.2.6' on page 56 undefined on input line 221.
-
-
-LaTeX Warning: Reference `4.2.10' on page 56 undefined on input line 229.
-
-
-LaTeX Warning: Reference `4.2.10' on page 56 undefined on input line 240.
-
-[56]
+[53] [54] [55] [56]
 Overfull \hbox (8.5566pt too wide) in paragraph at lines 249--252
 []$\T1/cmtt/m/n/12 https : / / perso . univ-[]rennes1 . fr / marie-[]francoise 
 . roy / bpr-[]ed2-[]posted3 . pdf$[]\T1/cmr/m/n/12 ). 
  []
 
 
-LaTeX Warning: Reference `4.2.12' on page 57 undefined on input line 259.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--263
+Overfull \hbox (3.28926pt too wide) in paragraph at lines 259--263
 []
  []
 
-
-LaTeX Warning: Reference `4.2.8' on page 57 undefined on input line 275.
-
-
-LaTeX Warning: Reference `4.2.8' on page 57 undefined on input line 275.
-
-[57]
-
-LaTeX Warning: Reference `4.1.10' on page 58 undefined on input line 291.
-
-
-LaTeX Warning: Reference `4.2.3' on page 58 undefined on input line 292.
-
-) [58]
+[57]) [58]
 chapter 5.
-(./b1/b1Kapitel/b1HoLiGleichungssysteme.tex
-
-LaTeX Warning: Reference `4.1.4' on page 59 undefined on input line 3.
-
-[59
+(./b1/b1Kapitel/b1HoLiGleichungssysteme.tex [59
 
 ]
-
-LaTeX Warning: Reference `5.1.1' on page 60 undefined on input line 41.
-
-
-LaTeX Warning: Reference `2.1.12' on page 60 undefined on input line 44.
-
-
-LaTeX Warning: Reference `3.1.2' on page 60 undefined on input line 50.
-
-
-LaTeX Warning: Reference `2.1.9' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `2.1.9' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `2.1.9' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `3.1.1' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `2.1.9' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `2.1.9' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `2.1.9' on page 60 undefined on input line 54.
-
-
-LaTeX Warning: Reference `3.1.1' on page 60 undefined on input line 54.
-
-
-Overfull \hbox (18.08316pt too wide) detected at line 54
+Overfull \hbox (26.29782pt too wide) detected at line 54
 []
  []
-
-
-LaTeX Warning: Reference `3.1.1' on page 60 undefined on input line 56.
-
-
-LaTeX Warning: Reference `3.1.1' on page 60 undefined on input line 56.
-
-
-LaTeX Warning: Reference `3.1.1' on page 60 undefined on input line 56.
-
-
-LaTeX Warning: Reference `3.1.2' on page 60 undefined on input line 56.
-
-
-LaTeX Warning: Reference `3.1.2' on page 60 undefined on input line 56.
-
-
-LaTeX Warning: Reference `5.1.3' on page 60 undefined on input line 61.
-
-
-LaTeX Warning: Reference `2.1.10' on page 60 undefined on input line 63.
 
 [60]
 Overfull \hbox (13.11844pt too wide) detected at line 89
 []
  []
 
-
-LaTeX Warning: Reference `5.2' on page 61 undefined on input line 94.
-
-
-LaTeX Warning: Reference `1.1.30' on page 61 undefined on input line 100.
-
-
-LaTeX Warning: Reference `1.1.29' on page 61 undefined on input line 101.
-
 [61]
-
-LaTeX Warning: Reference `5.1.1' on page 62 undefined on input line 119.
-
-
 Overfull \hbox (17.62038pt too wide) in paragraph at lines 125--126
 [][]\T1/cmr/bx/n/12 Definition 5.1.10. []\T1/cmr/m/n/12 Ei-ne Ma-trix $\OML/cmm
 /m/it/12 A \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 )[] \OMS/cmsy
@@ -2636,117 +1684,14 @@ Overfull \hbox (17.62038pt too wide) in paragraph at lines 125--126
 -)Stufenform[]\T1/cmr/m/n/12 ,
  []
 
-[62]
-
-LaTeX Warning: Reference `5.1.9' on page 63 undefined on input line 182.
-
-
-LaTeX Warning: Reference `5.1.10' on page 63 undefined on input line 182.
-
-
-LaTeX Warning: Reference `5.1.10' on page 63 undefined on input line 182.
-
-[63]
-
-LaTeX Warning: Reference `5.1.10' on page 64 undefined on input line 246.
-
-
-LaTeX Warning: Reference `5.1.12' on page 64 undefined on input line 247.
-
-
-LaTeX Warning: Reference `5.1.5' on page 64 undefined on input line 253.
-
-
-LaTeX Warning: Reference `5.1.5' on page 64 undefined on input line 253.
-
-
-LaTeX Warning: Reference `5.1.13' on page 64 undefined on input line 260.
-
-
-LaTeX Warning: Reference `5.1.14' on page 64 undefined on input line 275.
-
-[64]
-
-LaTeX Warning: Reference `5.1.14' on page 65 undefined on input line 323.
-
-
-LaTeX Warning: Reference `1.3.1' on page 65 undefined on input line 325.
-
-
-LaTeX Warning: Reference `5.1.10' on page 65 undefined on input line 330.
-
-[65]
+[62] [63] [64] [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66]
 Overfull \vbox (11.98065pt too high) has occurred while \output is active []
 
 
-[67]
-
-LaTeX Warning: Reference `5.2.3' on page 68 undefined on input line 472.
-
-
-LaTeX Warning: Reference `5.2.4' on page 68 undefined on input line 473.
-
-
-LaTeX Warning: Reference `5.1.13' on page 68 undefined on input line 474.
-
-
-LaTeX Warning: Reference `5.2.3' on page 68 undefined on input line 537.
-
-
-LaTeX Warning: Reference `5.2.4' on page 68 undefined on input line 537.
-
-
-LaTeX Warning: Reference `5.1.12' on page 68 undefined on input line 537.
-
-[68]
-
-LaTeX Warning: Reference `5.1.9' on page 69 undefined on input line 593.
-
-[69] [70]
-
-LaTeX Warning: Reference `5.1.9' on page 71 undefined on input line 687.
-
-
-LaTeX Warning: Reference `5.3.1' on page 71 undefined on input line 687.
-
-
-LaTeX Warning: Reference `5.2.2' on page 71 undefined on input line 695.
-
-
-LaTeX Warning: Reference `5.1.14' on page 71 undefined on input line 695.
-
-
-LaTeX Warning: Reference `5.2.3' on page 71 undefined on input line 695.
-
-
-LaTeX Warning: Reference `5.2.4' on page 71 undefined on input line 695.
-
-
-LaTeX Warning: Reference `5.3.2' on page 71 undefined on input line 696.
-
-
-LaTeX Warning: Reference `5.3.3' on page 71 undefined on input line 696.
-
-[71]
-
-LaTeX Warning: Reference `5.3.3' on page 72 undefined on input line 700.
-
-
-LaTeX Warning: Reference `5.3.1' on page 72 undefined on input line 706.
-
-
-LaTeX Warning: Reference `5.3.4' on page 72 undefined on input line 721.
-
-
-LaTeX Warning: Reference `5.3.5' on page 72 undefined on input line 737.
-
-
-LaTeX Warning: Reference `kerrow' on page 72 undefined on input line 746.
-
-[72]
+[67] [68] [69] [70] [71] [72]
 Overfull \hbox (14.29868pt too wide) in paragraph at lines 756--758
 [][]\T1/cmr/bx/n/12 Beispiel 5.3.8. []\T1/cmr/m/n/12 Wir su-chen ein Glei-chung
 s-sys-tem, des-sen Lö-sungs-men-ge $[] []$
@@ -2771,16 +1716,10 @@ LaTeX Warning: Reference `6.3.7' on page 77 undefined on input line 8.
 LaTeX Warning: Reference `6.3.2' on page 77 undefined on input line 8.
 
 
-LaTeX Warning: Reference `7.1.1' on page 77 undefined on input line 36.
-
-
 LaTeX Warning: Reference `6.3.4' on page 77 undefined on input line 41.
 
 
 LaTeX Warning: Reference `6.3.4' on page 77 undefined on input line 41.
-
-
-LaTeX Warning: Reference `7.1.1' on page 77 undefined on input line 49.
 
 
 LaTeX Warning: Reference `6.3.2' on page 77 undefined on input line 53.
@@ -2802,12 +1741,6 @@ LaTeX Warning: Reference `6.2.8' on page 79 undefined on input line 153.
 
 LaTeX Warning: Reference `6.1.5' on page 79 undefined on input line 179.
 
-
-LaTeX Warning: Reference `1.1.27' on page 79 undefined on input line 180.
-
-
-LaTeX Warning: Reference `5.1.8' on page 79 undefined on input line 182.
-
 [79]
 
 LaTeX Warning: Reference `6.1.10' on page 80 undefined on input line 215.
@@ -2824,40 +1757,7 @@ Overfull \hbox (29.85356pt too wide) detected at line 233
 
 [80]
 
-LaTeX Warning: Reference `1.2.6' on page 81 undefined on input line 269.
-
-
 LaTeX Warning: Reference `6.3.3' on page 81 undefined on input line 269.
-
-
-LaTeX Warning: Reference `7.1.3' on page 81 undefined on input line 276.
-
-
-LaTeX Warning: Reference `7.1.3' on page 81 undefined on input line 276.
-
-
-LaTeX Warning: Reference `7.1.3' on page 81 undefined on input line 276.
-
-
-LaTeX Warning: Reference `7.1.1' on page 81 undefined on input line 276.
-
-
-LaTeX Warning: Reference `7.1.3' on page 81 undefined on input line 277.
-
-
-LaTeX Warning: Reference `7.1.3' on page 81 undefined on input line 277.
-
-
-LaTeX Warning: Reference `7.1.3' on page 81 undefined on input line 277.
-
-
-LaTeX Warning: Reference `7.1.1' on page 81 undefined on input line 277.
-
-
-LaTeX Warning: Reference `7.1.7' on page 81 undefined on input line 283.
-
-
-LaTeX Warning: Reference `7.1.1' on page 81 undefined on input line 295.
 
 [81]
 Underfull \hbox (badness 10000) in paragraph at lines 355--357
@@ -2874,117 +1774,7 @@ LaTeX Warning: Reference `6.3.4' on page 83 undefined on input line 401.
 
 LaTeX Warning: Reference `6.2.2' on page 83 undefined on input line 401.
 
-
-LaTeX Warning: Reference `7.2.2' on page 83 undefined on input line 402.
-
-
-LaTeX Warning: Reference `sim' on page 83 undefined on input line 402.
-
-
-LaTeX Warning: Reference `7.1.1' on page 83 undefined on input line 413.
-
-
-LaTeX Warning: Reference `7.2.4' on page 83 undefined on input line 418.
-
-
-LaTeX Warning: Reference `7.2.4' on page 83 undefined on input line 418.
-
-
-LaTeX Warning: Reference `1.2.5' on page 83 undefined on input line 434.
-
-
-LaTeX Warning: Reference `1.2.5' on page 83 undefined on input line 434.
-
-[83]
-
-LaTeX Warning: Reference `7.2.6' on page 84 undefined on input line 440.
-
-
-LaTeX Warning: Reference `7.1.7' on page 84 undefined on input line 450.
-
-
-LaTeX Warning: Reference `7.1.8' on page 84 undefined on input line 450.
-
-
-LaTeX Warning: Reference `7.2.6' on page 84 undefined on input line 450.
-
-
-LaTeX Warning: Reference `7.1.5' on page 84 undefined on input line 457.
-
-
-LaTeX Warning: Reference `2.1.11' on page 84 undefined on input line 457.
-
-
-LaTeX Warning: Reference `7.1.5' on page 84 undefined on input line 457.
-
-
-LaTeX Warning: Reference `7.2.6' on page 84 undefined on input line 458.
-
-
-LaTeX Warning: Reference `2.1.7' on page 84 undefined on input line 458.
-
-
-LaTeX Warning: Reference `7.2.5' on page 84 undefined on input line 463.
-
-
-LaTeX Warning: Reference `7.1.4' on page 84 undefined on input line 464.
-
-
-LaTeX Warning: Reference `7.2.5' on page 84 undefined on input line 474.
-
-
-LaTeX Warning: Reference `7.2.5' on page 84 undefined on input line 474.
-
-[84]
-
-LaTeX Warning: Reference `7.1.1' on page 85 undefined on input line 504.
-
-
-LaTeX Warning: Reference `1.2.5' on page 85 undefined on input line 515.
-
-
-LaTeX Warning: Reference `7.2.10' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.5' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.10' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.5' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.10' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.5' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.10' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.5' on page 85 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.1.1' on page 85 undefined on input line 522.
-
-
-LaTeX Warning: Reference `7.2.4' on page 85 undefined on input line 527.
-
-
-LaTeX Warning: Reference `7.2.10' on page 85 undefined on input line 527.
-
-
-LaTeX Warning: Reference `7.2.4' on page 85 undefined on input line 527.
-
-
-LaTeX Warning: Reference `7.2.10' on page 85 undefined on input line 527.
-
-
-LaTeX Warning: Reference `1.2.6' on page 85 undefined on input line 527.
-
-[85]
+[83] [84] [85]
 
 LaTeX Warning: Reference `6.2.24' on page 86 undefined on input line 531.
 
@@ -2997,206 +1787,11 @@ LaTeX Warning: Reference `6.3.8' on page 86 undefined on input line 536.
 
 LaTeX Warning: Reference `6.2.26' on page 86 undefined on input line 542.
 
-
-LaTeX Warning: Reference `7.2.4' on page 86 undefined on input line 550.
-
-
-LaTeX Warning: Reference `7.2.10' on page 86 undefined on input line 550.
-
-
-LaTeX Warning: Reference `7.2.12' on page 86 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.2.11' on page 86 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.2.13' on page 86 undefined on input line 561.
-
-
-LaTeX Warning: Reference `7.2.2' on page 86 undefined on input line 561.
-
-
-LaTeX Warning: Reference `sim' on page 86 undefined on input line 561.
-
-[86]
-
-LaTeX Warning: Reference `5' on page 87 undefined on input line 569.
-
-
-LaTeX Warning: Reference `5.1.1' on page 87 undefined on input line 572.
-
-
-LaTeX Warning: Reference `5.1.12' on page 87 undefined on input line 572.
-
-
-LaTeX Warning: Reference `5' on page 87 undefined on input line 572.
-
-
-LaTeX Warning: Reference `5.1.10' on page 87 undefined on input line 572.
-
-
-LaTeX Warning: Reference `5.1.10' on page 87 undefined on input line 572.
-
-
-LaTeX Warning: Reference `5.1.13' on page 87 undefined on input line 597.
-
-[87]
-
-LaTeX Warning: Reference `7.3.1' on page 88 undefined on input line 614.
-
-
-LaTeX Warning: Reference `5.1.14' on page 88 undefined on input line 620.
-
-
-LaTeX Warning: Reference `7.3.2' on page 88 undefined on input line 621.
-
-
-LaTeX Warning: Reference `5.2' on page 88 undefined on input line 624.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-
-LaTeX Warning: Reference `5.3.4' on page 88 undefined on input line 629.
-
-[88]
-
-LaTeX Warning: Reference `5.2.6' on page 89 undefined on input line 635.
-
-
-LaTeX Warning: Reference `7.2.14' on page 89 undefined on input line 686.
-
-
-LaTeX Warning: Reference `7.2.9' on page 89 undefined on input line 690.
-
-
-LaTeX Warning: Reference `7.3.1' on page 89 undefined on input line 700.
-
-
-LaTeX Warning: Reference `7.3.1' on page 89 undefined on input line 700.
-
-
-LaTeX Warning: Reference `7.2.14' on page 89 undefined on input line 700.
-
-
-LaTeX Warning: Reference `7.2.14' on page 89 undefined on input line 701.
-
-[89]) [90]
+[86] [87] [88] [89]) [90]
 chapter 8.
 (./b1/b1Kapitel/b1Quotienten.tex
 
-LaTeX Warning: Reference `1.3' on page 91 undefined on input line 5.
-
-
-LaTeX Warning: Reference `2.3' on page 91 undefined on input line 5.
-
-
-LaTeX Warning: Reference `3.3' on page 91 undefined on input line 5.
-
-
-LaTeX Warning: Reference `2.3.1' on page 91 undefined on input line 8.
-
-
-LaTeX Warning: Reference `3.3.1' on page 91 undefined on input line 8.
-
-
-LaTeX Warning: Reference `2.3.2' on page 91 undefined on input line 13.
-
-
-LaTeX Warning: Reference `3.3.2' on page 91 undefined on input line 13.
-
-
-LaTeX Warning: Reference `8.1.1' on page 91 undefined on input line 13.
-
-
-LaTeX Warning: Reference `2.3.3' on page 91 undefined on input line 22.
-
-
-LaTeX Warning: Reference `3.3.3' on page 91 undefined on input line 22.
-
-
 LaTeX Warning: Reference `6.1.1' on page 91 undefined on input line 27.
-
-
-LaTeX Warning: Reference `2.3.6' on page 91 undefined on input line 31.
-
-
-LaTeX Warning: Reference `3.3.6' on page 91 undefined on input line 31.
-
-
-LaTeX Warning: Reference `3.3.6' on page 91 undefined on input line 39.
-
-
-LaTeX Warning: Reference `2.3.7' on page 91 undefined on input line 43.
-
-
-LaTeX Warning: Reference `3.3.7' on page 91 undefined on input line 43.
 
 [91
 
@@ -3226,36 +1821,9 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Reference `2.3.10' on page 92 undefined on input line 115.
-
-
-LaTeX Warning: Reference `2.3.13' on page 92 undefined on input line 115.
-
-
-LaTeX Warning: Reference `3.3.15' on page 92 undefined on input line 115.
-
-
-LaTeX Warning: Reference `imfsubring' on page 92 undefined on input line 115.
-
 [92]
 
-LaTeX Warning: Reference `2.3.11' on page 93 undefined on input line 131.
-
-
-LaTeX Warning: Reference `3.3.16' on page 93 undefined on input line 131.
-
-
-LaTeX Warning: Reference `2.3.11' on page 93 undefined on input line 139.
-
-
 LaTeX Warning: Reference `6.3.1' on page 93 undefined on input line 139.
-
-
-LaTeX Warning: Reference `2.3.14' on page 93 undefined on input line 144.
-
-
-LaTeX Warning: Reference `isothmring' on page 93 undefined on input line 144.
 
 
 LaTeX Warning: Reference `6.1.2' on page 93 undefined on input line 152.
@@ -3268,36 +1836,12 @@ a-re Ab-bil-dun-gen)\T1/cmr/bx/n/12 . []\T1/cmr/m/n/12 Sei-en $\OML/cmm/m/it/12
  []
 
 
-LaTeX Warning: Reference `8.1.11' on page 94 undefined on input line 187.
-
-
-LaTeX Warning: Reference `8.1.10' on page 94 undefined on input line 187.
-
-
-LaTeX Warning: Reference `5.3.1' on page 94 undefined on input line 191.
-
-
 LaTeX Warning: Reference `6.3.2' on page 94 undefined on input line 191.
-
-
-LaTeX Warning: Reference `8.1.12' on page 94 undefined on input line 194.
-
-
-LaTeX Warning: Reference `5.2.3' on page 94 undefined on input line 196.
-
-
-LaTeX Warning: Reference `5.3.4' on page 94 undefined on input line 196.
 
 
 LaTeX Warning: Reference `6.2.29' on page 94 undefined on input line 196.
 
 
-LaTeX Warning: Reference `8.1.13' on page 94 undefined on input line 200.
-
-
-LaTeX Warning: Reference `7.1.1' on page 94 undefined on input line 208.
-
-
 LaTeX Warning: Reference `6.3.7' on page 94 undefined on input line 212.
 
 
@@ -3319,9 +1863,6 @@ LaTeX Warning: Reference `6.3.7' on page 94 undefined on input line 212.
 LaTeX Warning: Reference `6.3.2' on page 94 undefined on input line 212.
 
 
-LaTeX Warning: Reference `8.1.14' on page 94 undefined on input line 212.
-
-
 LaTeX Warning: Reference `6.3.7' on page 94 undefined on input line 212.
 
 
@@ -3341,37 +1882,13 @@ LaTeX Warning: Reference `6.3.7' on page 94 undefined on input line 212.
 
 
 LaTeX Warning: Reference `6.3.2' on page 94 undefined on input line 212.
-
-
-LaTeX Warning: Reference `8.1.14' on page 94 undefined on input line 212.
 
 [94]
 
-LaTeX Warning: Reference `7.2.9' on page 95 undefined on input line 217.
-
-
-LaTeX Warning: Reference `7.2.11' on page 95 undefined on input line 223.
-
-
-LaTeX Warning: Reference `7.2.12' on page 95 undefined on input line 223.
-
-
 LaTeX Warning: Reference `6.2.27' on page 95 undefined on input line 223.
 
 
-LaTeX Warning: Reference `8.1.15' on page 95 undefined on input line 223.
-
-
-LaTeX Warning: Reference `7.2.11' on page 95 undefined on input line 223.
-
-
-LaTeX Warning: Reference `7.2.12' on page 95 undefined on input line 223.
-
-
 LaTeX Warning: Reference `6.2.27' on page 95 undefined on input line 223.
-
-
-LaTeX Warning: Reference `8.1.15' on page 95 undefined on input line 223.
 
 
 LaTeX Warning: Reference `6.2.28' on page 95 undefined on input line 232.
@@ -3384,9 +1901,6 @@ LaTeX Warning: Reference `6.1.6' on page 95 undefined on input line 241.
 
 [95]
 
-LaTeX Warning: Reference `8.2.1' on page 96 undefined on input line 258.
-
-
 LaTeX Warning: Reference `6.2.27' on page 96 undefined on input line 267.
 
 
@@ -3395,299 +1909,32 @@ Overfull \hbox (13.63017pt too wide) detected at line 272
 mm/m/it/12 U[] \OT1/cmr/m/n/12 = [] []
  []
 
-
-LaTeX Warning: Reference `8.2.2' on page 96 undefined on input line 275.
-
-
-LaTeX Warning: Reference `8.2.2' on page 96 undefined on input line 276.
-
-
-LaTeX Warning: Reference `7.2.12' on page 96 undefined on input line 276.
-
 [96]
 
 LaTeX Warning: Reference `6.3.1' on page 97 undefined on input line 287.
-
-
-LaTeX Warning: Reference `8.1.12' on page 97 undefined on input line 295.
-
-
-LaTeX Warning: Reference `8.2.2' on page 97 undefined on input line 295.
 
 ) [97] [98
 
 ]
 chapter 9.
-(./b1/b1Kapitel/b1Determinanten.tex
-
-LaTeX Warning: Reference `2.1.8' on page 99 undefined on input line 8.
-
-[99]
-
-LaTeX Warning: Reference `9.1.4' on page 100 undefined on input line 48.
-
-
-LaTeX Warning: Reference `2.1.7' on page 100 undefined on input line 55.
-
-[100]
-
-LaTeX Warning: Reference `leibniz' on page 101 undefined on input line 86.
-
-
-LaTeX Warning: Reference `leibniz' on page 101 undefined on input line 87.
-
-
-LaTeX Warning: Reference `9.1.6' on page 101 undefined on input line 96.
-
-
-LaTeX Warning: Reference `9.1.5' on page 101 undefined on input line 96.
-
-
-LaTeX Warning: Reference `9.1.4' on page 101 undefined on input line 96.
-
-
-LaTeX Warning: Reference `leibniz' on page 101 undefined on input line 105.
-
-
-LaTeX Warning: Reference `9.1.4' on page 101 undefined on input line 107.
-
-
-LaTeX Warning: Reference `9.1.5' on page 101 undefined on input line 107.
-
-[101]
-
-LaTeX Warning: Reference `9.1.7' on page 102 undefined on input line 119.
-
-
-LaTeX Warning: Reference `9.1.7' on page 102 undefined on input line 121.
-
-
-LaTeX Warning: Reference `leibniz' on page 102 undefined on input line 121.
-
-
-LaTeX Warning: Reference `9.1.7' on page 102 undefined on input line 126.
-
-
-LaTeX Warning: Reference `leibniz' on page 102 undefined on input line 126.
-
-
-LaTeX Warning: Reference `9.1.7' on page 102 undefined on input line 132.
-
-
-LaTeX Warning: Reference `9.1.7' on page 102 undefined on input line 133.
-
-[102]
-
-LaTeX Warning: Reference `9.1.7' on page 103 undefined on input line 193.
-
-
-LaTeX Warning: Reference `leibniz' on page 103 undefined on input line 193.
-
-
-LaTeX Warning: Reference `9.1.1' on page 103 undefined on input line 194.
-
-
-LaTeX Warning: Reference `9.1.7' on page 103 undefined on input line 199.
-
-
-LaTeX Warning: Reference `leibniz' on page 103 undefined on input line 199.
-
-
-Overfull \hbox (13.05899pt too wide) detected at line 199
+(./b1/b1Kapitel/b1Determinanten.tex [99] [100] [101] [102]
+Overfull \hbox (16.27493pt too wide) detected at line 199
 [] \OML/cmm/m/it/12 A \OT1/cmr/m/n/12 = [] [] [] ([] \OML/cmm/m/it/12 B\OT1/cmr
 /m/n/12 )([] \OML/cmm/m/it/12 C\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
  []
 
 [103]
 
-LaTeX Warning: Reference `5.2' on page 104 undefined on input line 203.
-
-
-LaTeX Warning: Reference `5.1.10' on page 104 undefined on input line 203.
-
-
-LaTeX Warning: Reference `5.2.1' on page 104 undefined on input line 203.
-
-
-LaTeX Warning: Reference `9.1.7' on page 104 undefined on input line 205.
-
-
-LaTeX Warning: Reference `9.1.7' on page 104 undefined on input line 206.
-
-
-LaTeX Warning: Reference `5.2.1' on page 104 undefined on input line 210.
-
-
-LaTeX Warning: Reference `9.1.7' on page 104 undefined on input line 211.
-
-
-LaTeX Warning: Reference `5.2.1' on page 104 undefined on input line 212.
-
-
-LaTeX Warning: Reference `9.1.7' on page 104 undefined on input line 240.
-
-
-LaTeX Warning: Reference `5.1.10' on page 104 undefined on input line 264.
-
-
-LaTeX Warning: Reference `8.1.14' on page 104 undefined on input line 264.
-
-
-LaTeX Warning: Reference `9.1.9' on page 104 undefined on input line 265.
-
-
-LaTeX Warning: Reference `9.1.11' on page 104 undefined on input line 265.
-
-
 LaTeX Warning: Reference `6.2.29' on page 104 undefined on input line 268.
 
-
-LaTeX Warning: Reference `9.1.12' on page 104 undefined on input line 269.
-
-
-LaTeX Warning: Reference `8.1.16' on page 104 undefined on input line 269.
-
-[104]
-
-LaTeX Warning: Reference `9.1.7' on page 105 undefined on input line 284.
-
-
-LaTeX Warning: Reference `9.1.7' on page 105 undefined on input line 294.
-
-
-LaTeX Warning: Reference `9.1.7' on page 105 undefined on input line 294.
-
-
-LaTeX Warning: Reference `1.3.1' on page 105 undefined on input line 309.
-
-
-LaTeX Warning: Reference `7.2.9' on page 105 undefined on input line 315.
-
-[105]
-
-LaTeX Warning: Reference `9.1.15' on page 106 undefined on input line 331.
-
-
-LaTeX Warning: Reference `9.1.9' on page 106 undefined on input line 332.
-
-
-LaTeX Warning: Reference `7.2.9' on page 106 undefined on input line 332.
-
-
-LaTeX Warning: Reference `9.1.15' on page 106 undefined on input line 332.
-
+[104] [105]
 
 LaTeX Warning: Reference `6.3.1' on page 106 undefined on input line 336.
 
 
-LaTeX Warning: Reference `7.1.11' on page 106 undefined on input line 336.
-
-
-LaTeX Warning: Reference `7.2.5' on page 106 undefined on input line 340.
-
-
-LaTeX Warning: Reference `7.1.10' on page 106 undefined on input line 341.
-
-
-LaTeX Warning: Reference `7.1.10' on page 106 undefined on input line 341.
-
-
-LaTeX Warning: Reference `7.1.10' on page 106 undefined on input line 341.
-
-
-LaTeX Warning: Reference `7.2.10' on page 106 undefined on input line 341.
-
-
-LaTeX Warning: Reference `7.2.5' on page 106 undefined on input line 341.
-
-
-LaTeX Warning: Reference `7.2.13' on page 106 undefined on input line 342.
-
-
-LaTeX Warning: Reference `7.2.5' on page 106 undefined on input line 342.
-
-
 LaTeX Warning: Reference `6.2.22' on page 106 undefined on input line 347.
 
-
-LaTeX Warning: Reference `9.1.18' on page 106 undefined on input line 347.
-
-
-LaTeX Warning: Reference `9.1.7' on page 106 undefined on input line 365.
-
-
-LaTeX Warning: Reference `leibniz' on page 106 undefined on input line 365.
-
-
-LaTeX Warning: Reference `9.1.7' on page 106 undefined on input line 369.
-
-
-LaTeX Warning: Reference `leibniz' on page 106 undefined on input line 369.
-
-[106]
-
-LaTeX Warning: Reference `9.1.23' on page 107 undefined on input line 374.
-
-
-LaTeX Warning: Reference `9.1.8' on page 107 undefined on input line 374.
-
-
-LaTeX Warning: Reference `5.2.1' on page 107 undefined on input line 375.
-
-
-LaTeX Warning: Reference `9.1.12' on page 107 undefined on input line 375.
-
-
-LaTeX Warning: Reference `9.1.11' on page 107 undefined on input line 376.
-
-
-LaTeX Warning: Reference `9.1.23' on page 107 undefined on input line 393.
-
-
-LaTeX Warning: Reference `9.1.7' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.12' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.12' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.11' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.7' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.12' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.12' on page 107 undefined on input line 442.
-
-
-LaTeX Warning: Reference `9.1.11' on page 107 undefined on input line 442.
-
-[107]
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``m1''? on input line 49
-0.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``g2''? on input line 49
-0.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``m2''? on input line 49
-0.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``g4''? on input line 49
-0.
-
+[106] [107]
 
 Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``m1''? on input line 49
@@ -3712,318 +1959,48 @@ id you specify a point identical to the center of node ``g4''? on input line 49
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [108]
-
-LaTeX Warning: Reference `9.1.21' on page 109 undefined on input line 501.
-
-
-LaTeX Warning: Reference `9.2.3' on page 109 undefined on input line 501.
-
-
-LaTeX Warning: Reference `7.2.1' on page 109 undefined on input line 501.
-
-
-LaTeX Warning: Reference `9.1.14' on page 109 undefined on input line 508.
-
-
-LaTeX Warning: Reference `7.2.9' on page 109 undefined on input line 512.
-
-
-LaTeX Warning: Reference `9.1.15' on page 109 undefined on input line 512.
-
-
-LaTeX Warning: Reference `9.2.4' on page 109 undefined on input line 512.
-
-
-LaTeX Warning: Reference `9.2.4' on page 109 undefined on input line 512.
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 512--513
-\T1/cmr/m/n/12 al-so $[] \OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12
- K[]$\T1/cmr/m/n/12 . Ist $[] \OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 2 \OML/cmm/m/
-it/12 K[]$\T1/cmr/m/n/12 , so $\OML/cmm/m/it/12 A [] [] I[] []
+Underfull \hbox (badness 1303) in paragraph at lines 512--513
+[]\T1/cmr/m/n/12 Ist $\OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 in-ver-tier-bar [$\OMS
+/cmsy/m/n/12 !$ []\T1/cmr/m/n/12 7.2.9[]], so $\OT1/cmr/m/n/12 1 = [] \OML/cmm/
+m/it/12 I[] \OT1/cmr/m/n/12 = [](\OML/cmm/m/it/12 AA[]\OT1/cmr/m/n/12 ) []
  []
 
-[109]
-
-LaTeX Warning: Reference `7.2.13' on page 110 undefined on input line 515.
-
-
-LaTeX Warning: Reference `9.1.15' on page 110 undefined on input line 519.
-
-
-LaTeX Warning: Reference `9.2.5' on page 110 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.13' on page 110 undefined on input line 521.
-
-
-LaTeX Warning: Reference `7.3' on page 110 undefined on input line 525.
-
-
-LaTeX Warning: Reference `9.1.24' on page 110 undefined on input line 536.
-
-
-LaTeX Warning: Reference `9.1.24' on page 110 undefined on input line 536.
-
-
-LaTeX Warning: Reference `9.1.24' on page 110 undefined on input line 536.
-
-
-LaTeX Warning: Reference `9.1.12' on page 110 undefined on input line 536.
-
-
-LaTeX Warning: Reference `9.1.11' on page 110 undefined on input line 550.
-
-
-LaTeX Warning: Reference `7.2.2' on page 110 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.2.2' on page 110 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.2.2' on page 110 undefined on input line 551.
-
-) [110]
+[109]) [110]
 chapter 10.
 (./b1/b1Kapitel/b1Eigenvektoren.tex
-
-LaTeX Warning: Reference `7.1.6' on page 111 undefined on input line 8.
-
 
 LaTeX Warning: Reference `6.3.1' on page 111 undefined on input line 8.
 
 
 LaTeX Warning: Reference `6.3.2' on page 111 undefined on input line 21.
 
-
-LaTeX Warning: Reference `7.1.4' on page 111 undefined on input line 21.
-
 [111
 
-]
-
-LaTeX Warning: Reference `9.1.16' on page 112 undefined on input line 70.
-
-
-LaTeX Warning: Reference `9.1.18' on page 112 undefined on input line 70.
-
-
-LaTeX Warning: Reference `9.1.19' on page 112 undefined on input line 73.
-
-
-LaTeX Warning: Reference `7.2.7' on page 112 undefined on input line 77.
-
-
-LaTeX Warning: Reference `7.2.7' on page 112 undefined on input line 77.
-
-[112]
-
-LaTeX Warning: Reference `10.1.4' on page 113 undefined on input line 82.
-
-
-LaTeX Warning: Reference `9.1.7' on page 113 undefined on input line 87.
-
-
-LaTeX Warning: Reference `leibniz' on page 113 undefined on input line 87.
-
-
-LaTeX Warning: Reference `10.1.2' on page 113 undefined on input line 98.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 98.
-
-
-LaTeX Warning: Reference `4.2.9' on page 113 undefined on input line 99.
-
-
-LaTeX Warning: Reference `10.1.2' on page 113 undefined on input line 112.
-
+] [112]
 
 LaTeX Warning: Reference `6.2.25' on page 113 undefined on input line 112.
 
 
-LaTeX Warning: Reference `8.1.12' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `8.1.15' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `8.1.16' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `9.1.14' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `7.1.8' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `7.2.10' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `9.1.7' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `leibniz' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `10.1.2' on page 113 undefined on input line 112.
-
-
 LaTeX Warning: Reference `6.2.25' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `8.1.12' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `8.1.15' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `8.1.16' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `9.1.14' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `7.1.8' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `7.2.10' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `writepx' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `9.1.7' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `leibniz' on page 113 undefined on input line 112.
-
-
-LaTeX Warning: Reference `10.1.7' on page 113 undefined on input line 119.
-
-
-LaTeX Warning: Reference `10.1.6' on page 113 undefined on input line 119.
-
-
-LaTeX Warning: Reference `4.2.11' on page 113 undefined on input line 119.
 
 [113]
 
 LaTeX Warning: Reference `6.3.2' on page 114 undefined on input line 123.
 
-
-LaTeX Warning: Reference `7.1.4' on page 114 undefined on input line 123.
-
-
-LaTeX Warning: Reference `10.1.3' on page 114 undefined on input line 123.
-
-
-LaTeX Warning: Reference `9.1.10' on page 114 undefined on input line 131.
-
-
-LaTeX Warning: Reference `9.1.10' on page 114 undefined on input line 131.
-
-
-LaTeX Warning: Reference `9.1.11' on page 114 undefined on input line 152.
-
-
-LaTeX Warning: Reference `10.1.2' on page 114 undefined on input line 170.
-
 [114]
-
-LaTeX Warning: Reference `10.1.8' on page 115 undefined on input line 195.
-
-
-LaTeX Warning: Reference `10.1.10' on page 115 undefined on input line 195.
-
 
 LaTeX Warning: Reference `6.2.19' on page 115 undefined on input line 195.
 
-
-LaTeX Warning: Reference `10.1.2' on page 115 undefined on input line 199.
-
-
-LaTeX Warning: Reference `8.2.1' on page 115 undefined on input line 199.
-
-
-LaTeX Warning: Reference `10.1.10' on page 115 undefined on input line 205.
-
-
-LaTeX Warning: Reference `4.2.9' on page 115 undefined on input line 209.
-
-
-LaTeX Warning: Reference `4.2.11' on page 115 undefined on input line 209.
-
 [115]
-
-LaTeX Warning: Reference `4.2.10' on page 116 undefined on input line 213.
-
 
 LaTeX Warning: Reference `6.2.18' on page 116 undefined on input line 225.
 
 
 LaTeX Warning: Reference `6.2.20' on page 116 undefined on input line 225.
 
-
-LaTeX Warning: Reference `7.1.2' on page 116 undefined on input line 228.
-
-
-LaTeX Warning: Reference `10.1.5' on page 116 undefined on input line 235.
-
-
-LaTeX Warning: Reference `9.1.11' on page 116 undefined on input line 235.
-
-
-LaTeX Warning: Reference `9.1.11' on page 116 undefined on input line 235.
-
-
-LaTeX Warning: Reference `10.1.5' on page 116 undefined on input line 235.
-
-
-LaTeX Warning: Reference `9.1.11' on page 116 undefined on input line 235.
-
-
-LaTeX Warning: Reference `9.1.11' on page 116 undefined on input line 235.
-
 [116]
 
-LaTeX Warning: Reference `3.3.13' on page 117 undefined on input line 258.
-
-
-LaTeX Warning: Reference `10.2.1' on page 117 undefined on input line 264.
-
-
-LaTeX Warning: Reference `10.2.2' on page 117 undefined on input line 277.
-
-
-LaTeX Warning: Reference `3.2.6' on page 117 undefined on input line 284.
-
-
-LaTeX Warning: Reference `3.3.11' on page 117 undefined on input line 284.
-
-
-LaTeX Warning: Reference `writeax' on page 117 undefined on input line 284.
-
-
 LaTeX Warning: Reference `6.1.4' on page 117 undefined on input line 284.
-
-
-LaTeX Warning: Reference `8.1.3' on page 117 undefined on input line 285.
 
 
 LaTeX Warning: Reference `6.2.1' on page 117 undefined on input line 289.
@@ -4031,93 +2008,16 @@ LaTeX Warning: Reference `6.2.1' on page 117 undefined on input line 289.
 
 LaTeX Warning: Reference `6.2.3' on page 117 undefined on input line 294.
 
-
-LaTeX Warning: Reference `2.3.3' on page 117 undefined on input line 295.
-
-
-LaTeX Warning: Reference `8.1.3' on page 117 undefined on input line 295.
-
-
-LaTeX Warning: Reference `10.2.1' on page 117 undefined on input line 299.
-
 [117]
-
-LaTeX Warning: Reference `3.3.3' on page 118 undefined on input line 332.
-
-
-LaTeX Warning: Reference `10.2.5' on page 118 undefined on input line 338.
-
-
-LaTeX Warning: Reference `7.1.2' on page 118 undefined on input line 338.
-
-
-LaTeX Warning: Reference `9.1.10' on page 118 undefined on input line 347.
-
-
-LaTeX Warning: Reference `10.2.5' on page 118 undefined on input line 348.
-
-
-LaTeX Warning: Reference `10.1.9' on page 118 undefined on input line 351.
-
-
-LaTeX Warning: Reference `9.1.12' on page 118 undefined on input line 372.
-
-
 Overfull \hbox (7.49211pt too wide) detected at line 394
 \OML/cmm/m/it/12 ^^_[] \OT1/cmr/m/n/12 = [] []\OML/cmm/m/it/12 :
  []
-
-
-LaTeX Warning: Reference `9.2.1' on page 118 undefined on input line 396.
 
 [118] [119]
 
 LaTeX Warning: Reference `6.3.2' on page 120 undefined on input line 409.
 
-
-LaTeX Warning: Reference `7.1.6' on page 120 undefined on input line 413.
-
-
-LaTeX Warning: Reference `7.1.7' on page 120 undefined on input line 413.
-
-
-LaTeX Warning: Reference `3.2.4' on page 120 undefined on input line 423.
-
-
-LaTeX Warning: Reference `3.1.1' on page 120 undefined on input line 436.
-
-
-LaTeX Warning: Reference `10.2.10' on page 120 undefined on input line 436.
-
-
-LaTeX Warning: Reference `3.2.4' on page 120 undefined on input line 437.
-
-
-LaTeX Warning: Reference `7.2.6' on page 120 undefined on input line 440.
-
-
-LaTeX Warning: Reference `7.2.7' on page 120 undefined on input line 440.
-
 [120]
-
-LaTeX Warning: Reference `substitution' on page 121 undefined on input line 455
-.
-
-
-LaTeX Warning: Reference `10.2.10' on page 121 undefined on input line 457.
-
-
-LaTeX Warning: Reference `10.2.6' on page 121 undefined on input line 463.
-
-
-LaTeX Warning: Reference `7.1.8' on page 121 undefined on input line 463.
-
-
-LaTeX Warning: Reference `7.2.5' on page 121 undefined on input line 463.
-
-
-LaTeX Warning: Reference `10.2.7' on page 121 undefined on input line 464.
-
 
 LaTeX Warning: Reference `6.2.19' on page 121 undefined on input line 476.
 
@@ -4125,147 +2025,19 @@ LaTeX Warning: Reference `6.2.19' on page 121 undefined on input line 476.
 LaTeX Warning: Reference `6.2.20' on page 121 undefined on input line 477.
 
 
-LaTeX Warning: Reference `7.1.2' on page 121 undefined on input line 478.
-
-
-LaTeX Warning: Reference `10.1.5' on page 121 undefined on input line 489.
-
-
-LaTeX Warning: Reference `9.1.11' on page 121 undefined on input line 495.
-
-
-LaTeX Warning: Reference `10.1.5' on page 121 undefined on input line 495.
-
-
-LaTeX Warning: Reference `10.2.7' on page 121 undefined on input line 495.
-
-
-LaTeX Warning: Reference `10.2.12' on page 121 undefined on input line 497.
-
-
 LaTeX Warning: Reference `6.3.2' on page 121 undefined on input line 505.
 
-
-LaTeX Warning: Reference `10.1.9' on page 121 undefined on input line 507.
-
-
-LaTeX Warning: Reference `7.2.5' on page 121 undefined on input line 508.
-
-
-LaTeX Warning: Reference `7.2.5' on page 121 undefined on input line 508.
-
-
-LaTeX Warning: Reference `7.2.5' on page 121 undefined on input line 508.
-
-
-LaTeX Warning: Reference `7.1.8' on page 121 undefined on input line 508.
-
 [121]
-
-LaTeX Warning: Reference `10.2.14' on page 122 undefined on input line 514.
-
-
-LaTeX Warning: Reference `7.1.8' on page 122 undefined on input line 516.
-
-
-LaTeX Warning: Reference `7.2.5' on page 122 undefined on input line 516.
-
-
-LaTeX Warning: Reference `10.2.12' on page 122 undefined on input line 518.
-
-
-LaTeX Warning: Reference `9.1.10' on page 122 undefined on input line 518.
-
-
-LaTeX Warning: Reference `10.2.12' on page 122 undefined on input line 519.
-
-
-LaTeX Warning: Reference `9.1.7' on page 122 undefined on input line 519.
-
-
-LaTeX Warning: Reference `leibniz' on page 122 undefined on input line 519.
-
-
-LaTeX Warning: Reference `7.2.7' on page 122 undefined on input line 521.
-
-
-Underfull \vbox (badness 6658) has occurred while \output is active []
+Underfull \vbox (badness 7012) has occurred while \output is active []
 
  [122]
-
-LaTeX Warning: Reference `9.2.3' on page 123 undefined on input line 534.
-
-
-LaTeX Warning: Reference `9.2.4' on page 123 undefined on input line 537.
-
-
-LaTeX Warning: Reference `10.2.12' on page 123 undefined on input line 565.
-
-
-LaTeX Warning: Reference `3.3.15' on page 123 undefined on input line 565.
-
 [123]
-
-LaTeX Warning: Reference `10.2.14' on page 124 undefined on input line 575.
-
-
-LaTeX Warning: Reference `10.2.4' on page 124 undefined on input line 582.
-
-
-LaTeX Warning: Reference `10.2.14' on page 124 undefined on input line 591.
-
 
 LaTeX Warning: Reference `6.3.2' on page 124 undefined on input line 599.
 
-
-LaTeX Warning: Reference `7.1.4' on page 124 undefined on input line 599.
-
-
-LaTeX Warning: Reference `10.1.3' on page 124 undefined on input line 599.
-
-
-LaTeX Warning: Reference `10.1.9' on page 124 undefined on input line 599.
-
-
-LaTeX Warning: Reference `10.2.14' on page 124 undefined on input line 611.
-
-
-LaTeX Warning: Reference `10.2.9' on page 124 undefined on input line 613.
-
-[124]
-
-LaTeX Warning: Reference `7.1.8' on page 125 undefined on input line 626.
-
-
-LaTeX Warning: Reference `7.2.5' on page 125 undefined on input line 626.
-
-
-LaTeX Warning: Reference `5.1.8' on page 125 undefined on input line 638.
-
-
-LaTeX Warning: Reference `10.2.14' on page 125 undefined on input line 638.
-
-
-LaTeX Warning: Reference `7.1.11' on page 125 undefined on input line 658.
-
-[125]
-
-LaTeX Warning: Reference `10.1.2' on page 126 undefined on input line 659.
-
-
-LaTeX Warning: Reference `10.1.14' on page 126 undefined on input line 668.
-
-
-LaTeX Warning: Reference `10.1.15' on page 126 undefined on input line 668.
-
-
-LaTeX Warning: Reference `7.1.1' on page 126 undefined on input line 687.
-
+[124] [125]
 
 LaTeX Warning: Reference `6.3.7' on page 126 undefined on input line 687.
-
-
-LaTeX Warning: Reference `7.1.1' on page 126 undefined on input line 687.
 
 
 LaTeX Warning: Reference `6.3.7' on page 126 undefined on input line 687.
@@ -4278,221 +2050,49 @@ it
  []
 
 
-LaTeX Warning: Reference `10.1.5' on page 126 undefined on input line 701.
-
-
-LaTeX Warning: Reference `9.1.11' on page 126 undefined on input line 701.
-
-
-LaTeX Warning: Reference `10.1.5' on page 126 undefined on input line 701.
-
-
-LaTeX Warning: Reference `9.1.11' on page 126 undefined on input line 701.
-
-
-LaTeX Warning: Reference `10.1.13' on page 126 undefined on input line 702.
-
-
-LaTeX Warning: Reference `10.1.14' on page 126 undefined on input line 702.
-
-
-LaTeX Warning: Reference `10.1.15' on page 126 undefined on input line 704.
-
-
-LaTeX Warning: Reference `10.1.6' on page 126 undefined on input line 709.
-
-
-LaTeX Warning: Reference `10.1.12' on page 126 undefined on input line 709.
-
-
-LaTeX Warning: Reference `8.2.2' on page 126 undefined on input line 709.
-
-
 LaTeX Warning: Reference `6.2.27' on page 126 undefined on input line 710.
-
-
-LaTeX Warning: Reference `8.2.3' on page 126 undefined on input line 710.
 
 [126]
 
 LaTeX Warning: Reference `6.3.2' on page 127 undefined on input line 714.
 
-
-LaTeX Warning: Reference `10.3.2' on page 127 undefined on input line 714.
-
-
-LaTeX Warning: Reference `10.3.3' on page 127 undefined on input line 727.
-
-
-LaTeX Warning: Reference `7.1.4' on page 127 undefined on input line 731.
-
-
-LaTeX Warning: Reference `9.1.19' on page 127 undefined on input line 731.
-
 [127]
-
-LaTeX Warning: Reference `8.1.8' on page 128 undefined on input line 753.
-
 
 LaTeX Warning: Reference `6.3.3' on page 128 undefined on input line 753.
 
 
-LaTeX Warning: Reference `8.1.9' on page 128 undefined on input line 754.
+Overfull \hbox (1.93799pt too wide) in paragraph at lines 758--759
+[][]\T1/cmr/bx/n/12 Lemma 10.3.7. []\T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 !$ []\T1/
+cmr/m/n/12 8.1.11[]] Sei-en $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein Vek-tor-rau
+m, $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V
+\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 U$ \T1/cmr/m/n/12 ein $
+\OML/cmm/m/it/12 f$\T1/cmr/m/n/12 -invarianter
+ []
 
-
-LaTeX Warning: Reference `8.1.11' on page 128 undefined on input line 758.
-
-
-LaTeX Warning: Reference `8.1.11' on page 128 undefined on input line 765.
-
-
-LaTeX Warning: Reference `7.1.1' on page 128 undefined on input line 765.
-
-
-LaTeX Warning: Reference `10.3.6' on page 128 undefined on input line 766.
-
-
-LaTeX Warning: Reference `9.1.11' on page 128 undefined on input line 771.
-
-
-LaTeX Warning: Reference `10.3.3' on page 128 undefined on input line 775.
-
-
-LaTeX Warning: Reference `9.1.11' on page 128 undefined on input line 788.
-
-
-LaTeX Warning: Reference `10.1.7' on page 128 undefined on input line 797.
-
-
-LaTeX Warning: Reference `10.3.8' on page 128 undefined on input line 797.
-
-
-LaTeX Warning: Reference `8.1.11' on page 128 undefined on input line 797.
-
-
-LaTeX Warning: Reference `10.3.7' on page 128 undefined on input line 797.
-
-[128]
-
-LaTeX Warning: Reference `10.3.5' on page 129 undefined on input line 806.
-
-
-LaTeX Warning: Reference `10.3.5' on page 129 undefined on input line 815.
-
-
-LaTeX Warning: Reference `10.3.9' on page 129 undefined on input line 815.
-
-
-LaTeX Warning: Reference `10.3.3' on page 129 undefined on input line 815.
-
-) [129] [130
+[128]) [129] [130
 
 ]
 chapter 11.
-(./b1/b1Kapitel/b1Skalarprodukte.tex
-
-LaTeX Warning: Reference `4.2.7' on page 131 undefined on input line 4.
-
-
-LaTeX Warning: Reference `9.1.21' on page 131 undefined on input line 6.
-
-
-LaTeX Warning: Reference `11.1.1' on page 131 undefined on input line 28.
-
-
-LaTeX Warning: Reference `11.1.1' on page 131 undefined on input line 31.
-
-[131]
-
-LaTeX Warning: Reference `11.1.1' on page 132 undefined on input line 44.
-
-
-LaTeX Warning: Reference `4.2.8' on page 132 undefined on input line 45.
-
-
-LaTeX Warning: Reference `7.1.5' on page 132 undefined on input line 50.
-
+(./b1/b1Kapitel/b1Skalarprodukte.tex [131]
 
 LaTeX Warning: Reference `6.1.1' on page 132 undefined on input line 76.
 
-
-LaTeX Warning: Reference `2.1.2' on page 132 undefined on input line 77.
-
-[132]
-
-LaTeX Warning: Reference `4.2.8' on page 133 undefined on input line 88.
-
-
-LaTeX Warning: Reference `11.1.7' on page 133 undefined on input line 98.
-
-
-LaTeX Warning: Reference `11.1.7' on page 133 undefined on input line 115.
-
-
-LaTeX Warning: Reference `4.2.8' on page 133 undefined on input line 116.
-
-
-LaTeX Warning: Reference `11.1.8' on page 133 undefined on input line 117.
-
-[133]
-
-LaTeX Warning: Reference `11.1.8' on page 134 undefined on input line 146.
-
-
-LaTeX Warning: Reference `11.1.3' on page 134 undefined on input line 152.
-
-
-LaTeX Warning: Reference `11.1.9' on page 134 undefined on input line 153.
+[132] [133]
+Overfull \hbox (9.13423pt too wide) in paragraph at lines 152--156
+[]\T1/cmr/m/n/12 Die durch das Stan-dards-ka-lar-pro-dukt auf dem $\U/msb/m/n/1
+2 R[]$ \T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 !$[]\T1/cmr/m/n/12 11.1.3[](a)]
+ []
 
 [134]
 
-LaTeX Warning: Reference `11.1.11' on page 135 undefined on input line 171.
-
-
 LaTeX Warning: Reference `6.3.2' on page 135 undefined on input line 171.
 
-
-LaTeX Warning: Reference `11.1.10' on page 135 undefined on input line 171.
-
-
-LaTeX Warning: Reference `11.1.11' on page 135 undefined on input line 172.
-
-
-LaTeX Warning: Reference `11.1.3' on page 135 undefined on input line 176.
-
-
-LaTeX Warning: Reference `11.1.9' on page 135 undefined on input line 177.
-
-
-LaTeX Warning: Reference `11.1.11' on page 135 undefined on input line 180.
-
 [135]
-
-LaTeX Warning: Reference `11.1.11' on page 136 undefined on input line 198.
-
-
-LaTeX Warning: Reference `11.1.12' on page 136 undefined on input line 199.
-
-
-LaTeX Warning: Reference `11.1.9' on page 136 undefined on input line 202.
-
-
-LaTeX Warning: Reference `11.1.12' on page 136 undefined on input line 211.
-
-
-LaTeX Warning: Reference `11.1.12' on page 136 undefined on input line 212.
-
-
-LaTeX Warning: Reference `11.1.12' on page 136 undefined on input line 212.
-
 
 LaTeX Warning: Reference `6.2.1' on page 136 undefined on input line 217.
 
 
 LaTeX Warning: Reference `6.2.2' on page 136 undefined on input line 223.
-
-
-LaTeX Warning: Reference `11.1.3' on page 136 undefined on input line 223.
 
 [136]
 Overfull \hbox (3.7356pt too wide) detected at line 257
@@ -4510,78 +2110,15 @@ OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :
 LaTeX Warning: Reference `6.1.5' on page 137 undefined on input line 266.
 
 
-LaTeX Warning: Reference `7.1.5' on page 137 undefined on input line 266.
-
-
 LaTeX Warning: Reference `6.2.8' on page 137 undefined on input line 267.
 
 [137]
 
-LaTeX Warning: Reference `11.2.11' on page 138 undefined on input line 292.
-
-
-LaTeX Warning: Reference `11.2.12' on page 138 undefined on input line 292.
-
-
-LaTeX Warning: Reference `11.2.12' on page 138 undefined on input line 298.
-
-
 LaTeX Warning: Reference `6.2.18' on page 138 undefined on input line 305.
-
-
-LaTeX Warning: Reference `11.2.14' on page 138 undefined on input line 309.
-
-
-LaTeX Warning: Reference `11.2.15' on page 138 undefined on input line 318.
-
-
-LaTeX Warning: Reference `11.2.12' on page 138 undefined on input line 318.
-
-
-LaTeX Warning: Reference `11.1.1' on page 138 undefined on input line 319.
-
-
-LaTeX Warning: Reference `11.2.8' on page 138 undefined on input line 323.
-
-
-LaTeX Warning: Reference `11.2.9' on page 138 undefined on input line 323.
-
-
-LaTeX Warning: Reference `11.2.8' on page 138 undefined on input line 323.
-
-
-LaTeX Warning: Reference `11.2.9' on page 138 undefined on input line 323.
-
-
-LaTeX Warning: Reference `11.2.11' on page 138 undefined on input line 324.
-
-
-LaTeX Warning: Reference `11.2.10' on page 138 undefined on input line 324.
 
 [138]
 
-LaTeX Warning: Reference `8.2.1' on page 139 undefined on input line 328.
-
-
-LaTeX Warning: Reference `8.2.3' on page 139 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.2.9' on page 139 undefined on input line 337.
-
-
-LaTeX Warning: Reference `11.2.9' on page 139 undefined on input line 345.
-
-
-LaTeX Warning: Reference `11.2.17' on page 139 undefined on input line 345.
-
-
 LaTeX Warning: Reference `6.2.27' on page 139 undefined on input line 346.
-
-
-LaTeX Warning: Reference `11.1.10' on page 139 undefined on input line 357.
-
-
-LaTeX Warning: Reference `11.1.12' on page 139 undefined on input line 362.
 
 
 LaTeX Warning: Reference `6.3.8' on page 139 undefined on input line 372.
@@ -4595,211 +2132,9 @@ Overfull \hbox (3.74588pt too wide) detected at line 404
 []  \OMS/cmsy/m/n/12 ([])  []\OML/cmm/m/it/12 :
  []
 
-
-LaTeX Warning: Reference `7.1.1' on page 140 undefined on input line 408.
-
-
-LaTeX Warning: Reference `11.2.24' on page 140 undefined on input line 408.
-
-[140]
-
-LaTeX Warning: Reference `11.2.25' on page 141 undefined on input line 425.
-
-
-LaTeX Warning: Reference `11.2.6' on page 141 undefined on input line 425.
-
-
-LaTeX Warning: Reference `11.2.22' on page 141 undefined on input line 425.
-
-
-LaTeX Warning: Reference `7.2.1' on page 141 undefined on input line 426.
-
-
-LaTeX Warning: Reference `7.2.13' on page 141 undefined on input line 426.
-
-
-LaTeX Warning: Reference `7.1.4' on page 141 undefined on input line 429.
-
-
-LaTeX Warning: Reference `11.2.16' on page 141 undefined on input line 440.
-
-
-LaTeX Warning: Reference `8.2.1' on page 141 undefined on input line 440.
-
-
-LaTeX Warning: Reference `7.1.1' on page 141 undefined on input line 454.
-
-
-LaTeX Warning: Reference `11.2.24' on page 141 undefined on input line 455.
-
-[141]
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `7.2.1' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `7.2.1' on page 142 undefined on input line 477.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `7.2.1' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `4.2.7' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `9.1.21' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `7.2.1' on page 142 undefined on input line 479.
-
-
-LaTeX Warning: Reference `11.1.3' on page 142 undefined on input line 487.
-
-
-LaTeX Warning: Reference `11.3.5' on page 142 undefined on input line 487.
-
-
-LaTeX Warning: Reference `11.1.3' on page 142 undefined on input line 487.
-
-
-LaTeX Warning: Reference `11.3.3' on page 142 undefined on input line 497.
-
-
-LaTeX Warning: Reference `11.3.1' on page 142 undefined on input line 497.
-
-
-LaTeX Warning: Reference `11.3.6' on page 142 undefined on input line 498.
-
-
-LaTeX Warning: Reference `10.1.2' on page 142 undefined on input line 508.
-
-
-LaTeX Warning: Reference `10.1.3' on page 142 undefined on input line 509.
-
-
-LaTeX Warning: Reference `11.1.1' on page 142 undefined on input line 511.
-
-
-LaTeX Warning: Reference `11.3.3' on page 142 undefined on input line 511.
-
-
-LaTeX Warning: Reference `11.3.3' on page 142 undefined on input line 511.
-
-
-LaTeX Warning: Reference `11.3.3' on page 142 undefined on input line 511.
-
-
-LaTeX Warning: Reference `11.3.1' on page 142 undefined on input line 511.
-
-
-LaTeX Warning: Reference `11.1.1' on page 142 undefined on input line 512.
-
-
-LaTeX Warning: Reference `11.1.1' on page 142 undefined on input line 513.
-
-[142]
-
-LaTeX Warning: Reference `4.2.12' on page 143 undefined on input line 516.
-
-
-LaTeX Warning: Reference `4.2.13' on page 143 undefined on input line 516.
-
-
-LaTeX Warning: Reference `10.3.3' on page 143 undefined on input line 518.
-
-
-LaTeX Warning: Reference `10.1.7' on page 143 undefined on input line 527.
-
-
-LaTeX Warning: Reference `11.2.15' on page 143 undefined on input line 528.
-
-
-LaTeX Warning: Reference `11.3.4' on page 143 undefined on input line 529.
-
-
-LaTeX Warning: Reference `11.3.8' on page 143 undefined on input line 529.
-
-
-LaTeX Warning: Reference `10.1.5' on page 143 undefined on input line 529.
-
-
-LaTeX Warning: Reference `10.1.9' on page 143 undefined on input line 529.
-
-
-LaTeX Warning: Reference `10.1.6' on page 143 undefined on input line 530.
-
-
-LaTeX Warning: Reference `4.2.12' on page 143 undefined on input line 530.
-
-
-LaTeX Warning: Reference `11.2.17' on page 143 undefined on input line 536.
-
-
-LaTeX Warning: Reference `4.2.12' on page 143 undefined on input line 543.
-
-
-LaTeX Warning: Reference `4.2.13' on page 143 undefined on input line 543.
-
-
-LaTeX Warning: Reference `11.3.9' on page 143 undefined on input line 550.
-
-
-LaTeX Warning: Reference `11.2.26' on page 143 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.1.10' on page 143 undefined on input line 551.
-
-
-LaTeX Warning: Reference `11.2.27' on page 143 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.2.11' on page 143 undefined on input line 551.
-
-
-LaTeX Warning: Reference `7.1.4' on page 143 undefined on input line 552.
-
-
-LaTeX Warning: Reference `7.2.5' on page 143 undefined on input line 552.
-
-[143]) [144]
+[140] [141] [142] [143]) [144]
 chapter 12.
 (./b2/b2Kapitel/b2Halbordnungen.tex
-
-LaTeX Warning: Reference `1.3.1' on page 145 undefined on input line 6.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
@@ -4829,11 +2164,7 @@ Overfull \hbox (0.35948pt too wide) in paragraph at lines 127--128
 12 B[]$ 
  []
 
-[147]
-
-LaTeX Warning: Reference `12.1.6' on page 148 undefined on input line 164.
-
-[148]
+[147] [148]
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
@@ -4886,25 +2217,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-
-LaTeX Warning: Reference `12.2.6' on page 150 undefined on input line 240.
-
-[150]
-
-LaTeX Warning: Reference `12.2.7' on page 151 undefined on input line 248.
-
-
-LaTeX Warning: Reference `1.1.2' on page 151 undefined on input line 267.
-
-
-LaTeX Warning: Reference `12.2.9' on page 151 undefined on input line 271.
-
-[151]
+[150] [151]
 
 LaTeX Warning: Reference `6.2.14' on page 152 undefined on input line 287.
-
-
-LaTeX Warning: Reference `12.3.1' on page 152 undefined on input line 316.
 
 
 LaTeX Warning: Command \OE invalid in math mode on input line 320.
@@ -4915,10 +2230,6 @@ Missing character: There is no × in font cmr12!
 ]
 chapter 13.
 (./b2/b2Kapitel/b2BiLiQuaFormen.tex
-
-LaTeX Warning: Reference `7.1.8' on page 155 undefined on input line 25.
-
-
 Overfull \hbox (31.48123pt too wide) in paragraph at lines 29--30
 [][]\T1/cmr/bx/n/12 Satz 13.1.4. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 V$ \T1/
 cmr/m/n/12 ein $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -Vektorraum mit Ba-sis $[] \O
@@ -4939,51 +2250,31 @@ OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N[]$\T1/cmr/m/n/12 . Dann sind $\OT1/cmr/m/n/12
  ^^H : []$ \T1/cmr/m/n/12 und $\OT1/cmr/m/n/12 	 : []$
  []
 
-
-LaTeX Warning: Reference `11.2.23' on page 156 undefined on input line 53.
-
-
-LaTeX Warning: Reference `13.1.6' on page 156 undefined on input line 53.
-
-
-LaTeX Warning: Reference `13.1.6' on page 156 undefined on input line 60.
-
 [156]
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-[157]
-
-LaTeX Warning: Reference `8.1.12' on page 158 undefined on input line 146.
-
-
-LaTeX Warning: Reference `8.1.15' on page 158 undefined on input line 151.
-
-
-LaTeX Warning: Reference `13.1.11' on page 158 undefined on input line 151.
-
-
-LaTeX Warning: Reference `8.1.15' on page 158 undefined on input line 151.
-
-
-LaTeX Warning: Reference `13.1.11' on page 158 undefined on input line 151.
-
-[158]
+[157] [158]
 ./b2/b2Kapitel/b2BiLiQuaFormen.tex:160: Undefined control sequence.
 <recently read> \ep 
                     
 l.160 ...Vektorraum. Die kanonische Abbildung $\ep
                                                    : V\to \ddual V, v\mapsto...
 
-? ignore
+? s
+OK, entering \scrollmode...
 ./b2/b2Kapitel/b2BiLiQuaFormen.tex:163: Undefined control sequence.
 <recently read> \ep 
                     
 l.163 \underline{$\ep$ wohldefiniert}
                                      . Sei $v\in V$. Zu zeigen ist, $V^*\to ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-? ignore
 
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
@@ -4994,15 +2285,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
                     
 l.165 \noindent\underline{$\ep$ linear}
                                        . Seien $v_1,v_2,v\in V$ und $\lambda...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-? ignore all
 ./b2/b2Kapitel/b2BiLiQuaFormen.tex:168: Undefined control sequence.
 <argument>  (\ep 
                  (v_1+v_2))(l)=l(v_1+v_2)=l(v_1)+l(v_2)=(\ep (v_1))(l)+(\ep ...
 l.168 \end{align*}
                   
-? s
-OK, entering \scrollmode...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ./b2/b2Kapitel/b2BiLiQuaFormen.tex:168: Undefined control sequence.
 <argument> ...))(l)=l(v_1+v_2)=l(v_1)+l(v_2)=(\ep 
                                                   (v_1))(l)+(\ep (v_2))(l) 
@@ -5101,20 +2400,11 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `12.3.2' on page 159 undefined on input line 174.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
-
-
-LaTeX Warning: Reference `13.1.5' on page 159 undefined on input line 176.
-
-
-LaTeX Warning: Reference `13.1.14' on page 159 undefined on input line 180.
 
 ./b2/b2Kapitel/b2BiLiQuaFormen.tex:189: Undefined control sequence.
 <recently read> \ep 
@@ -5138,17 +2428,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[159]
-
-LaTeX Warning: Reference `7.1.7' on page 160 undefined on input line 214.
-
-
-LaTeX Warning: Reference `7.2.7' on page 160 undefined on input line 220.
-
-[160]
-
-LaTeX Warning: Reference `13.2.5' on page 161 undefined on input line 257.
-
+[159] [160]
 ./b2/b2Kapitel/b2BiLiQuaFormen.tex:267: Undefined control sequence.
 <recently read> \ep 
                     
@@ -5169,63 +2449,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Reference `7.1.1' on page 161 undefined on input line 285.
-
-[161]
-
-LaTeX Warning: Reference `13.3.3' on page 162 undefined on input line 303.
-
-
-LaTeX Warning: Reference `13.2.1' on page 162 undefined on input line 324.
-
-[162]
-
-LaTeX Warning: Reference `13.3.7' on page 163 undefined on input line 350.
-
-
-LaTeX Warning: Reference `7.1.8' on page 163 undefined on input line 350.
-
-
-LaTeX Warning: Reference `13.3.7' on page 163 undefined on input line 350.
-
-
-LaTeX Warning: Reference `13.3.7' on page 163 undefined on input line 350.
-
-
-LaTeX Warning: Reference `7.1.8' on page 163 undefined on input line 350.
-
-
-LaTeX Warning: Reference `13.3.7' on page 163 undefined on input line 350.
-
-
-LaTeX Warning: Reference `13.3.8' on page 163 undefined on input line 370.
-
-
-LaTeX Warning: Reference `7.2.5' on page 163 undefined on input line 370.
-
-
-LaTeX Warning: Reference `13.1.11' on page 163 undefined on input line 370.
-
-
-LaTeX Warning: Reference `13.3.8' on page 163 undefined on input line 370.
-
-
-LaTeX Warning: Reference `7.2.5' on page 163 undefined on input line 370.
-
-
-LaTeX Warning: Reference `13.1.11' on page 163 undefined on input line 370.
-
-[163]
+[161] [162] [163]
 Overfull \hbox (10.94563pt too wide) in paragraph at lines 374--376
 [][]\T1/cmr/bx/n/12 Definition und Pro-po-si-ti-on 13.3.11. []\T1/cmr/m/n/12 Se
 i $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -V
 ektorraum mit Ba-sis $[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; :::; v[]\OT1/
 cmr/m/n/12 )$\T1/cmr/m/n/12 .
  []
-
-
-LaTeX Warning: Reference `11.3.3' on page 164 undefined on input line 396.
 
 [164]
 Overfull \hbox (11.80663pt too wide) in paragraph at lines 420--421
@@ -5234,10 +2464,6 @@ Vektorraumisomorphismen.
  []
 
 [165]
-
-LaTeX Warning: Reference `13.4.5' on page 166 undefined on input line 458.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
@@ -5262,15 +2488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
-[167]
-
-LaTeX Warning: Reference `13.5.1' on page 168 undefined on input line 568.
-
-[168]
-
-LaTeX Warning: Reference `13.5.2' on page 169 undefined on input line 582.
-
-
+[167] [168]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [169]
@@ -5317,14 +2535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 665--666
 
  []
 
-
-LaTeX Warning: Reference `13.5.1' on page 171 undefined on input line 671.
-
 [171]
-
-LaTeX Warning: Reference `13.5.9' on page 172 undefined on input line 683.
-
-
 Overfull \hbox (10.05965pt too wide) in paragraph at lines 684--685
 []\T1/cmr/m/n/12 Es ist na-tür-lich er-stre-bens-wert in ei-ner ver-all-ge-mei-
 ner-ten Cholesky-Zerlegung $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; P; D\OT1/cmr/m
@@ -5343,25 +2554,19 @@ $\U/msb/m/n/12 R$\T1/cmr/m/n/12 -Vektorraum
  []
 
 
-LaTeX Warning: Reference `13.5.12' on page 175 undefined on input line 19.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
 
-LaTeX Warning: Reference `8.1.12' on page 175 undefined on input line 54.
-
-
 Underfull \vbox (badness 1874) has occurred while \output is active []
 
  [175]
-
-LaTeX Warning: Reference `10.1.14' on page 176 undefined on input line 60.
-
-
-LaTeX Warning: Reference `11.3.10' on page 176 undefined on input line 60.
+Overfull \hbox (24.42099pt too wide) in paragraph at lines 60--62
+\T1/cmr/m/n/12 des $\OML/cmm/m/it/12 ^^U[]$ \T1/cmr/m/n/12 sei-ner al-ge-brai-s
+chen Viel-fach-heit ent-spre-chend oft auf-ge-führt ist [$\OMS/cmsy/m/n/12 !$[]
+\T1/cmr/m/n/12 10.1.14[],[]11.3.10[]],
+ []
 
 [176]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
@@ -5375,27 +2580,9 @@ LaTeX Warning: Reference `6.3.7' on page 177 undefined on input line 86.
 LaTeX Warning: Reference `6.3.8' on page 177 undefined on input line 86.
 
 
-LaTeX Warning: Reference `13.3.10' on page 177 undefined on input line 90.
-
-
-LaTeX Warning: Reference `13.3.10' on page 177 undefined on input line 90.
-
-
-LaTeX Warning: Reference `11.3.10' on page 177 undefined on input line 109.
-
-
-LaTeX Warning: Reference `10.1.4' on page 177 undefined on input line 112.
-
-
-LaTeX Warning: Reference `10.1.13' on page 177 undefined on input line 112.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 109--113
 
  []
-
-
-LaTeX Warning: Reference `10.1.4' on page 177 undefined on input line 114.
 
 
 Underfull \hbox (badness 1622) in paragraph at lines 114--115
@@ -5410,28 +2597,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-
-LaTeX Warning: Reference `13.5.2' on page 177 undefined on input line 116.
-
 [177] [178]
-
-LaTeX Warning: Reference `11.1.1' on page 179 undefined on input line 163.
-
-
-LaTeX Warning: Reference `13.3.2' on page 179 undefined on input line 167.
-
-
-LaTeX Warning: Reference `13.4.2' on page 179 undefined on input line 171.
-
-
-LaTeX Warning: Reference `9.1.21' on page 179 undefined on input line 171.
-
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 192.
-
-
-LaTeX Warning: Reference `14.1.1' on page 179 undefined on input line 192.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
@@ -5439,27 +2608,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
  []
 
 
-LaTeX Warning: Reference `13.5.1' on page 179 undefined on input line 194.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-
-LaTeX Warning: Reference `13.5.7' on page 179 undefined on input line 199.
-
-[179]
-
-LaTeX Warning: Reference `10.3.1' on page 180 undefined on input line 222.
-
-[180]
+[179] [180]
 Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
-
-
-LaTeX Warning: Reference `14.1.1' on page 181 undefined on input line 234.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 234--235
@@ -5467,27 +2623,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--235
  []
 
 
-LaTeX Warning: Reference `14.1.2' on page 181 undefined on input line 236.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
-
-
-LaTeX Warning: Reference `10.1.4' on page 181 undefined on input line 240.
-
-
-LaTeX Warning: Reference `11.3.10' on page 181 undefined on input line 240.
-
-
-LaTeX Warning: Reference `9.1.9' on page 181 undefined on input line 246.
-
-
-LaTeX Warning: Reference `13.5.10' on page 181 undefined on input line 249.
-
-
-LaTeX Warning: Reference `13.5.9' on page 181 undefined on input line 249.
 
 
 Underfull \hbox (badness 4726) in paragraph at lines 251--261
@@ -5518,105 +2656,21 @@ Underfull \hbox (badness 1221) in paragraph at lines 266--267
  []
 
 [181]
-
-LaTeX Warning: Reference `14.2.7' on page 182 undefined on input line 273.
-
-
-LaTeX Warning: Reference `14.1.1' on page 182 undefined on input line 283.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
-
-
-LaTeX Warning: Reference `13.5.1' on page 182 undefined on input line 285.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
-
-LaTeX Warning: Reference `13.1.4' on page 182 undefined on input line 287.
-
 [182]
-
-LaTeX Warning: Reference `14.2.11' on page 183 undefined on input line 304.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-
-LaTeX Warning: Reference `13.1.10' on page 183 undefined on input line 312.
-
-
-LaTeX Warning: Reference `9.1.15' on page 183 undefined on input line 315.
-
-
-LaTeX Warning: Reference `9.1.23' on page 183 undefined on input line 315.
-
-
-LaTeX Warning: Reference `9.1.15' on page 183 undefined on input line 315.
-
-
-LaTeX Warning: Reference `9.1.23' on page 183 undefined on input line 315.
-
-[183]
-
-LaTeX Warning: Reference `13.5.9' on page 184 undefined on input line 320.
-
-
-LaTeX Warning: Reference `13.5.10' on page 184 undefined on input line 320.
-
-
-LaTeX Warning: Reference `13.5.2' on page 184 undefined on input line 320.
-
-
-LaTeX Warning: Reference `13.5.12' on page 184 undefined on input line 323.
-
-
-LaTeX Warning: Reference `13.4.6' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.1.1' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.2.5' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.2.15' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.3.3' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.3.4' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.3.9' on page 184 undefined on input line 329.
-
-
-LaTeX Warning: Reference `11.2.26' on page 184 undefined on input line 334.
-
-
-LaTeX Warning: Reference `7.2.11' on page 184 undefined on input line 334.
-
-
-LaTeX Warning: Reference `7.2.5' on page 184 undefined on input line 334.
-
-
-LaTeX Warning: Reference `11.2.26' on page 184 undefined on input line 334.
-
-
-LaTeX Warning: Reference `7.2.11' on page 184 undefined on input line 334.
-
-
-LaTeX Warning: Reference `7.2.5' on page 184 undefined on input line 334.
-
-) [184]
+[183]) [184]
 chapter 15.
 (./b2/b2Kapitel/b2Skalarprodukte.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
@@ -5627,34 +2681,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
 ]
 
-LaTeX Warning: Reference `11.3.1' on page 186 undefined on input line 58.
-
-
 LaTeX Font Warning: Command \small invalid in math mode on input line 72.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 72.
 
-
-LaTeX Warning: Reference `11.2.5' on page 186 undefined on input line 80.
-
-
-LaTeX Warning: Reference `11.2.13' on page 186 undefined on input line 85.
-
-
-LaTeX Warning: Reference `11.2.13' on page 186 undefined on input line 85.
-
-[186]
-
-LaTeX Warning: Reference `13.1.8' on page 187 undefined on input line 89.
-
-
-LaTeX Warning: Reference `11.2.24' on page 187 undefined on input line 134.
-
-
-LaTeX Warning: Reference `11.2.24' on page 187 undefined on input line 134.
-
-[187]
+[186] [187]
 
 LaTeX Warning: Command \l invalid in math mode on input line 159.
 
@@ -5668,12 +2700,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-
-LaTeX Warning: Reference `15.1.9' on page 188 undefined on input line 174.
-
-
-LaTeX Warning: Reference `15.1.1' on page 188 undefined on input line 180.
-
 [188]
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
@@ -5684,82 +2710,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
-
-LaTeX Warning: Reference `15.1.1' on page 189 undefined on input line 206.
-
-
-LaTeX Warning: Reference `11.2.19' on page 189 undefined on input line 212.
-
-
-LaTeX Warning: Reference `15.1.10' on page 189 undefined on input line 226.
-
-
-LaTeX Warning: Reference `15.1.10' on page 189 undefined on input line 226.
-
 [189]
-
-LaTeX Warning: Reference `11.3.9' on page 190 undefined on input line 235.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-LaTeX Warning: Reference `15.1.6' on page 190 undefined on input line 247.
-
-
-LaTeX Warning: Reference `7.1.8' on page 190 undefined on input line 247.
-
-
-LaTeX Warning: Reference `15.1.9' on page 190 undefined on input line 252.
-
-
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 252.
 
 
-LaTeX Warning: Reference `15.1.9' on page 190 undefined on input line 252.
-
-
-LaTeX Warning: Reference `15.1.9' on page 190 undefined on input line 252.
-
-
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 252.
-
-
-LaTeX Warning: Reference `15.1.9' on page 190 undefined on input line 252.
-
-
-LaTeX Warning: Reference `15.2.3' on page 190 undefined on input line 259.
-
-
-LaTeX Warning: Reference `15.1.1' on page 190 undefined on input line 262.
 
 
 Overfull \hbox (19.90054pt too wide) detected at line 265
 []
  []
 
-
-LaTeX Warning: Reference `11.2.7' on page 190 undefined on input line 266.
-
 [190]
-
-LaTeX Warning: Reference `10.3.2' on page 191 undefined on input line 270.
-
-
-LaTeX Warning: Reference `11.2.19' on page 191 undefined on input line 276.
-
-
-LaTeX Warning: Reference `7.2.12' on page 191 undefined on input line 283.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
-
-
-LaTeX Warning: Reference `15.2.4' on page 191 undefined on input line 285.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 285--286
@@ -5771,45 +2741,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-
-LaTeX Warning: Reference `11.3.9' on page 191 undefined on input line 310.
-
-
-LaTeX Warning: Reference `15.2.4' on page 191 undefined on input line 310.
-
-
-LaTeX Warning: Reference `15.2.4' on page 191 undefined on input line 310.
-
-[191]
-
-LaTeX Warning: Reference `11.3.3' on page 192 undefined on input line 315.
-
-
-LaTeX Warning: Reference `11.2.20' on page 192 undefined on input line 338.
-
-[192]
-
-LaTeX Warning: Reference `11.3.9' on page 193 undefined on input line 366.
-
-
-LaTeX Warning: Reference `15.2.1' on page 193 undefined on input line 370.
-
-
-LaTeX Warning: Reference `15.2.4' on page 193 undefined on input line 391.
-
-
+[191] [192]
 Underfull \hbox (badness 10000) in paragraph at lines 390--392
 
  []
-
-
-LaTeX Warning: Reference `11.2.23' on page 193 undefined on input line 393.
-
-
-LaTeX Warning: Reference `10.1.13' on page 193 undefined on input line 393.
-
-
-LaTeX Warning: Reference `15.2.8' on page 193 undefined on input line 400.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 400--401
@@ -5817,22 +2752,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 400--401
  []
 
 
-LaTeX Warning: Reference `10.1.15' on page 193 undefined on input line 403.
-
-
-LaTeX Warning: Reference `9.1.14' on page 193 undefined on input line 404.
-
-
 Underfull \hbox (badness 2818) in paragraph at lines 402--405
 []$\T1/cmr/m/n/12 . Für je-den re-el-len Ei-gen-wert $\OML/cmm/m/it/12 ^^U$ \T1
 /cmr/m/n/12 von $\OML/cmm/m/it/12 g$ \T1/cmr/m/n/12 sei-en $\OML/cmm/m/it/12 r 
 \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$ \T1/cmr/m/n/12 und
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 402--405
-\T1/cmr/m/n/12 kann durch Über-füh-rung in Stu-fen-form über $\U/msb/m/n/12 R$ 
-\T1/cmr/m/n/12 er-mit-telt wer-den [$\OMS/cmsy/m/n/12 !$\T1/cmr/m/n/12 ,[]],
  []
 
 
@@ -5851,109 +2774,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--415
 
  []
 
-
-LaTeX Warning: Reference `15.2.9' on page 193 undefined on input line 417.
-
 [193] [194]
-
-LaTeX Warning: Reference `11.3.9' on page 195 undefined on input line 425.
-
-
-LaTeX Warning: Reference `11.2.19' on page 195 undefined on input line 429.
-
-
-LaTeX Warning: Reference `7.1.4' on page 195 undefined on input line 443.
-
-
-LaTeX Warning: Reference `11.2.28' on page 195 undefined on input line 443.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
-[195]
-
-LaTeX Warning: Reference `11.2.25' on page 196 undefined on input line 458.
-
-
-LaTeX Warning: Reference `11.3.3' on page 196 undefined on input line 458.
-
-
-LaTeX Warning: Reference `11.2.27' on page 196 undefined on input line 463.
-
-
-LaTeX Warning: Reference `11.3.7' on page 196 undefined on input line 463.
-
-
-LaTeX Warning: Reference `15.1.9' on page 196 undefined on input line 479.
-
-
-LaTeX Warning: Reference `15.1.9' on page 196 undefined on input line 479.
-
-
-LaTeX Warning: Reference `11.2.26' on page 196 undefined on input line 482.
-
-
-LaTeX Warning: Reference `11.3.4' on page 196 undefined on input line 482.
-
-
-Overfull \hbox (8.09212pt too wide) in paragraph at lines 482--485
-[][]\T1/cmr/bx/n/12 Proposition 15.2.14. [][]\T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 
-!$[]\T1/cmr/m/n/12 , []] []Sei-en $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein $\U/m
-sb/m/n/12 K$\T1/cmr/m/n/12 -VR mit Ska-lar-pro-dukt und $[] \OT1/cmr/m/n/12 = (
-\OML/cmm/m/it/12 v[]; :::; v[]\OT1/cmr/m/n/12 )$
- []
-
-
-LaTeX Warning: Reference `15.2.9' on page 196 undefined on input line 496.
-
-
-LaTeX Warning: Reference `15.2.14' on page 196 undefined on input line 496.
-
-
-LaTeX Warning: Reference `15.2.9' on page 196 undefined on input line 496.
-
-
-LaTeX Warning: Reference `15.2.14' on page 196 undefined on input line 496.
-
-
-LaTeX Warning: Reference `11.3.9' on page 196 undefined on input line 499.
-
-
-LaTeX Warning: Reference `11.3.10' on page 196 undefined on input line 499.
-
-) [196]
+[195]) [196]
 chapter 16.
-
-LaTeX Warning: Reference `3.1.1' on page 197 undefined on input line 322.
-
-(./b2/b2Kapitel/b2Teilbarkeit.tex
-
-LaTeX Warning: Reference `3.3.4' on page 197 undefined on input line 27.
-
-
-LaTeX Warning: Reference `3.3.4' on page 197 undefined on input line 28.
-
-
-LaTeX Warning: Reference `3.3.11' on page 197 undefined on input line 28.
-
-
-LaTeX Warning: Reference `1.3.1' on page 197 undefined on input line 33.
-
-
-LaTeX Warning: Reference `1.3.4' on page 197 undefined on input line 33.
-
-
-LaTeX Warning: Reference `12.1.1' on page 197 undefined on input line 33.
-
-
-LaTeX Warning: Reference `1.3.1' on page 197 undefined on input line 37.
-
-
-LaTeX Warning: Reference `2.3.1' on page 197 undefined on input line 37.
-
-[197
+(./b2/b2Kapitel/b2Teilbarkeit.tex [197
 
 ]
 Overfull \hbox (6.64333pt too wide) in paragraph at lines 44--45
@@ -5964,19 +2792,10 @@ t/12 a$ \T1/cmr/m/n/12 ein $[]$
  []
 
 
-LaTeX Warning: Reference `12.1.6' on page 198 undefined on input line 63.
-
-
-LaTeX Warning: Reference `16.1.4' on page 198 undefined on input line 64.
-
-
-LaTeX Warning: Reference `3.3.8' on page 198 undefined on input line 70.
-
-
-LaTeX Warning: Reference `3.3.9' on page 198 undefined on input line 71.
-
-
-LaTeX Warning: Reference `3.3.10' on page 198 undefined on input line 71.
+Overfull \hbox (11.06276pt too wide) in paragraph at lines 63--64
+[]\T1/cmr/m/n/12 Wegen der Ein-deu-tig-keit von In-fi-ma und Su-pre-ma in halb-
+ge-ord-ne-ten Men-gen [$\OMS/cmsy/m/n/12 !$[]\T1/cmr/m/n/12 12.1.6[]]
+ []
 
 [198]
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
@@ -5988,103 +2807,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-
-LaTeX Warning: Reference `3.3.13' on page 199 undefined on input line 101.
-
-
-LaTeX Warning: Reference `10.2.2' on page 199 undefined on input line 101.
-
-
-LaTeX Warning: Reference `16.1.8' on page 199 undefined on input line 101.
-
-
-LaTeX Warning: Reference `16.1.11' on page 199 undefined on input line 101.
-
-
-LaTeX Warning: Reference `3.3.11' on page 199 undefined on input line 108.
-
-
-LaTeX Warning: Reference `3.3.11' on page 199 undefined on input line 108.
-
 [199]
-
-LaTeX Warning: Reference `4.1.1' on page 200 undefined on input line 124.
-
-
-LaTeX Warning: Reference `3.2.1' on page 200 undefined on input line 140.
-
-
-LaTeX Warning: Reference `3.2.2' on page 200 undefined on input line 140.
-
-
-LaTeX Warning: Reference `3.3.13' on page 200 undefined on input line 141.
-
-
-LaTeX Warning: Reference `10.2.2' on page 200 undefined on input line 142.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-
-LaTeX Warning: Reference `16.1.8' on page 200 undefined on input line 158.
-
-
-LaTeX Warning: Reference `16.2.3' on page 200 undefined on input line 169.
-
 [200]
-
-LaTeX Warning: Reference `10.2.3' on page 201 undefined on input line 177.
-
-
-LaTeX Warning: Reference `16.2.2' on page 201 undefined on input line 182.
-
 
 Package paralist Warning: Incorrect label; no or multiple counters.
 (paralist)                The label is: \normalfont  on input line 183.
 
-
-LaTeX Warning: Reference `4.2.10' on page 201 undefined on input line 199.
-
-
-LaTeX Warning: Reference `4.2.10' on page 201 undefined on input line 199.
-
-
-LaTeX Warning: Reference `16.1.8' on page 201 undefined on input line 218.
-
-
-LaTeX Warning: Reference `16.1.18' on page 201 undefined on input line 218.
-
 [201]
-Underfull \vbox (badness 1655) has occurred while \output is active []
 
- [202]
+LaTeX Warning: Reference `16.1.18' on page 202 undefined on input line 218.
 
-LaTeX Warning: Reference `16.3.1' on page 203 undefined on input line 275.
-
-
+[202]
 Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 [203]
-
-LaTeX Warning: Reference `16.3.1' on page 204 undefined on input line 300.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [204]
-
-LaTeX Warning: Reference `16.2.1' on page 205 undefined on input line 329.
-
-
+[204]
 Underfull \hbox (badness 1748) in paragraph at lines 337--338
 []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 p \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$
  \T1/cmr/m/n/12 prim in $\OML/cmm/m/it/12 A$\T1/cmr/m/n/12 . Zu zei-gen sind (a
@@ -6102,30 +2849,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--340
  []
 
 [205]
-
-LaTeX Warning: Reference `4.1.6' on page 206 undefined on input line 349.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 
-LaTeX Warning: Reference `16.4.3' on page 206 undefined on input line 365.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
-
-
-LaTeX Warning: Reference `4.1.7' on page 206 undefined on input line 367.
-
-
-LaTeX Warning: Reference `3.2.4' on page 206 undefined on input line 371.
-
-
-LaTeX Warning: Reference `4.2.6' on page 206 undefined on input line 371.
 
 [206]
 Underfull \hbox (badness 10000) in paragraph at lines 414--416
@@ -6137,29 +2868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
-
-LaTeX Warning: Reference `16.4.12' on page 207 undefined on input line 419.
-
-
-LaTeX Warning: Reference `16.4.14' on page 207 undefined on input line 429.
-
-
-LaTeX Warning: Reference `16.4.12' on page 207 undefined on input line 429.
-
-
-LaTeX Warning: Reference `16.4.13' on page 207 undefined on input line 430.
-
-
-LaTeX Warning: Reference `16.4.14' on page 207 undefined on input line 430.
-
 [207]
-
-LaTeX Warning: Reference `16.4.13' on page 208 undefined on input line 448.
-
-
-LaTeX Warning: Reference `16.4.17' on page 208 undefined on input line 456.
-
-
 Underfull \hbox (badness 1275) in paragraph at lines 456--457
 \T1/cmr/m/n/12 fak-tor auf-tau-chen. Da Prim-ele-men-te kei-ne Ein-hei-ten sind
 , kann aber dort
@@ -6177,12 +2886,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
-
-LaTeX Warning: Reference `12.2.2' on page 208 undefined on input line 458.
-
-
-LaTeX Warning: Reference `16.2.4' on page 208 undefined on input line 458.
-
 [208]
 Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
@@ -6196,55 +2899,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
 LaTeX Warning: Reference `16.4.9' on page 209 undefined on input line 475.
 
-
-LaTeX Warning: Reference `10.1.13' on page 209 undefined on input line 479.
-
-
-LaTeX Warning: Reference `15.2.10' on page 209 undefined on input line 479.
-
-
-LaTeX Warning: Reference `10.1.13' on page 209 undefined on input line 480.
-
-
-LaTeX Warning: Reference `16.4.16' on page 209 undefined on input line 485.
-
 [209]
-
-LaTeX Warning: Reference `16.1.5' on page 210 undefined on input line 496.
-
-
-LaTeX Warning: Reference `16.1.3' on page 210 undefined on input line 496.
-
-
-LaTeX Warning: Reference `16.4.21' on page 210 undefined on input line 496.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
 
-LaTeX Warning: Reference `16.4.13' on page 210 undefined on input line 501.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
-
-
-LaTeX Warning: Reference `16.4.19' on page 210 undefined on input line 506.
-
-
-LaTeX Warning: Reference `16.2.3' on page 210 undefined on input line 506.
-
-
-LaTeX Warning: Reference `16.1.4' on page 210 undefined on input line 512.
-
-
-LaTeX Warning: Reference `12.1.7' on page 210 undefined on input line 512.
-
-
-LaTeX Warning: Reference `12.1.7' on page 210 undefined on input line 517.
 
 
 Overfull \hbox (14.17291pt too wide) in paragraph at lines 515--518
@@ -6256,10 +2919,6 @@ Overfull \hbox (14.17291pt too wide) in paragraph at lines 515--518
 ]
 chapter 17.
 (./b2/b2Kapitel/b2Normalformen.tex
-
-LaTeX Warning: Reference `16.4.8' on page 213 undefined on input line 5.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
@@ -6271,23 +2930,10 @@ $[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A[]$ \T1/cmr/m/n/12 mit $[] [] \OT1/cmr
 /m/n/12 =
  []
 
-[213]
-
-LaTeX Warning: Reference `16.4.21' on page 214 undefined on input line 48.
-
-[214]
+[213] [214]
 Underfull \vbox (badness 7081) has occurred while \output is active []
 
  [215]
-
-LaTeX Warning: Reference `17.1.5' on page 216 undefined on input line 116.
-
-
-LaTeX Warning: Reference `17.1.5' on page 216 undefined on input line 119.
-
-
-LaTeX Warning: Reference `17.1.5' on page 216 undefined on input line 125.
-
 [216]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
@@ -6302,9 +2948,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 LaTeX Warning: Reference `17.1..8' on page 217 undefined on input line 141.
 
 
-LaTeX Warning: Reference `16.4.18' on page 217 undefined on input line 143.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 154--159
 
  []
@@ -6315,46 +2958,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--169
  []
 
 
-LaTeX Warning: Reference `17.1.7' on page 217 undefined on input line 170.
-
-
 Underfull \hbox (badness 3179) in paragraph at lines 173--174
 \T1/cmr/m/n/12 Setze $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 d[]; :::; d[]\OT1/cmr/m
 /n/12 ) := (\OML/cmm/m/it/12 d[]; ::d[]; c; d; d[]; :::; d[]\OT1/cmr/m/n/12 )$\
 T1/cmr/m/n/12 . Noch zu zei-gen ist:
  []
 
-[217]
 
-LaTeX Warning: Reference `17.1.3' on page 218 undefined on input line 179.
+Underfull \vbox (badness 1342) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `17.1.9' on page 218 undefined on input line 180.
-
-
-LaTeX Warning: Reference `16.1.3' on page 218 undefined on input line 184.
-
-
-LaTeX Warning: Reference `16.1.17' on page 218 undefined on input line 184.
-
-
+ [217]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [218]
-
-LaTeX Warning: Reference `14.2.9' on page 219 undefined on input line 206.
-
-
-LaTeX Warning: Reference `14.2.9' on page 219 undefined on input line 209.
-
-
-LaTeX Warning: Reference `7.2.2' on page 219 undefined on input line 225.
-
 [219]
-
-LaTeX Warning: Reference `9.1.15' on page 220 undefined on input line 246.
-
-
 Overfull \hbox (11.56244pt too wide) detected at line 260
 []
  []
@@ -6372,20 +2989,7 @@ f\OML/cmm/m/it/12 A\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 ) = (2)$\T1/cmr/m/n/12 , $
  ) = [][](\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ) =
  []
 
-
-LaTeX Warning: Reference `9.2.1' on page 221 undefined on input line 296.
-
 [221]
-
-LaTeX Warning: Reference `17.2.11' on page 222 undefined on input line 308.
-
-
-LaTeX Warning: Reference `16.1.8' on page 222 undefined on input line 313.
-
-
-LaTeX Warning: Reference `17.2.12' on page 222 undefined on input line 315.
-
-
 Overfull \hbox (2.66571pt too wide) in paragraph at lines 320--320
 [][]\T1/cmr/bx/n/12 Lemma 17.3.4. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 S \OMS
 /cmsy/m/n/12 2 \OML/cmm/m/it/12 A[]$ \T1/cmr/m/n/12 in Smit-h-scher Nor-mal-for
@@ -6394,50 +2998,14 @@ n; m\OMS/cmsy/m/n/12 g$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 c[]; :::; c[] \OMS
 /cmsy/m/n/12 2
  []
 
-
-LaTeX Warning: Reference `9.1.9' on page 222 undefined on input line 343.
-
-
-LaTeX Warning: Reference `17.1.2' on page 222 undefined on input line 343.
-
-
-LaTeX Warning: Reference `17.3.1' on page 222 undefined on input line 343.
-
 [222]
 
-LaTeX Warning: Reference `17.1.3' on page 223 undefined on input line 354.
-
-
 LaTeX Warning: Reference `17.1.12' on page 223 undefined on input line 354.
-
-
-LaTeX Warning: Reference `17.3.4' on page 223 undefined on input line 354.
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 354--355
-[]\T1/cmr/bx/n/12 Zu (a)\T1/cmr/m/n/12 . Die Exis-tenz ist in [] ge-zeigt. Zur 
-Ein-deu-tig-keit: Sei-en
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
-
-
-LaTeX Warning: Reference `17.3.2' on page 223 undefined on input line 371.
-
-
-LaTeX Warning: Reference `17.2.11' on page 223 undefined on input line 371.
-
-
-LaTeX Warning: Reference `17.3.5' on page 223 undefined on input line 376.
-
-
-LaTeX Warning: Reference `9.1.16' on page 223 undefined on input line 378.
-
-
-LaTeX Warning: Reference `9.1.17' on page 223 undefined on input line 378.
 
 
 ./b2/b2Kapitel/b2Normalformen.tex:383: LaTeX Error: Environment beo undefined.
@@ -6453,26 +3021,14 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `9.2.6' on page 223 undefined on input line 389.
-
-
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 38
 9.
-
-
-LaTeX Warning: Reference `9.2.6' on page 223 undefined on input line 389.
 
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 38
 9.
 
 [223]
-
-LaTeX Warning: Reference `17.3.5' on page 224 undefined on input line 393.
-
-
-LaTeX Warning: Reference `17.3.5' on page 224 undefined on input line 393.
-
 
 ./b2/b2Kapitel/b2Normalformen.tex:394: LaTeX Error: \begin{document} ended by \
 end{beo}.
@@ -6487,72 +3043,22 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-LaTeX Warning: Reference `10.1.8' on page 224 undefined on input line 403.
-
-
-LaTeX Warning: Reference `10.2.11' on page 224 undefined on input line 408.
-
-
-LaTeX Warning: Reference `10.2.12' on page 224 undefined on input line 408.
-
 [224]
-
-LaTeX Warning: Reference `4.2.10' on page 225 undefined on input line 439.
-
-
-LaTeX Warning: Reference `17.4.7' on page 225 undefined on input line 445.
-
-
 Underfull \vbox (badness 1708) has occurred while \output is active []
 
  [225]
-
-LaTeX Warning: Reference `17.4.7' on page 226 undefined on input line 463.
-
-
-LaTeX Warning: Reference `17.4.7' on page 226 undefined on input line 463.
-
-
-LaTeX Warning: Reference `17.4.8' on page 226 undefined on input line 470.
-
-
-LaTeX Warning: Reference `17.4.8' on page 226 undefined on input line 475.
-
-
-LaTeX Warning: Reference `9.2.6' on page 226 undefined on input line 475.
-
-
-LaTeX Warning: Reference `17.4.2' on page 226 undefined on input line 490.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
-
-
-LaTeX Warning: Reference `17.3.6' on page 226 undefined on input line 492.
-
-
-LaTeX Warning: Reference `17.3.7' on page 226 undefined on input line 492.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
-
-LaTeX Warning: Reference `17.4.10' on page 226 undefined on input line 494.
-
 [226]
 
 LaTeX Warning: Reference `17.1.12' on page 227 undefined on input line 509.
-
-
-LaTeX Warning: Reference `17.4.11' on page 227 undefined on input line 509.
-
-
-LaTeX Warning: Reference `17.4.10' on page 227 undefined on input line 510.
 
 
 Underfull \vbox (badness 1436) has occurred while \output is active []
@@ -6562,45 +3068,7 @@ Overfull \hbox (25.72516pt too wide) detected at line 528
 []
  []
 
-[228]
-
-LaTeX Warning: Reference `17.4.11' on page 229 undefined on input line 557.
-
-
-LaTeX Warning: Reference `17.4.11' on page 229 undefined on input line 557.
-
-
-LaTeX Warning: Reference `17.4.11' on page 229 undefined on input line 557.
-
-
-LaTeX Warning: Reference `17.4.11' on page 229 undefined on input line 557.
-
-
-LaTeX Warning: Reference `10.2.14' on page 229 undefined on input line 560.
-
-
-LaTeX Warning: Reference `9.2.4' on page 229 undefined on input line 566.
-
-
-LaTeX Warning: Reference `17.4.8' on page 229 undefined on input line 566.
-
-[229]
-
-LaTeX Warning: Reference `10.2.5' on page 230 undefined on input line 573.
-
-
-LaTeX Warning: Reference `10.2.6' on page 230 undefined on input line 600.
-
-
-LaTeX Warning: Reference `10.2.12' on page 230 undefined on input line 600.
-
-
-LaTeX Warning: Reference `10.2.18' on page 230 undefined on input line 600.
-
-
-LaTeX Warning: Reference `10.2.7' on page 230 undefined on input line 600.
-
-
+[228] [229]
 Underfull \hbox (badness 6758) in paragraph at lines 612--633
 []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 := [] \OML/cmm/m/it/12
  p \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 1$\T1/cmr/m/n/12 . Streicht man in $\OM
@@ -6609,36 +3077,12 @@ L/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 ) \OMS/cmsy/m
  []
 
 [230]
-
-LaTeX Warning: Reference `17.5.2' on page 231 undefined on input line 697.
-
-
-LaTeX Warning: Reference `17.5.2' on page 231 undefined on input line 697.
-
-
 Underfull \vbox (badness 6445) has occurred while \output is active []
 
  [231]
-
-LaTeX Warning: Reference `17.4.11' on page 232 undefined on input line 739.
-
-
-LaTeX Warning: Reference `17.4.11' on page 232 undefined on input line 739.
-
-
-LaTeX Warning: Reference `10.2.16' on page 232 undefined on input line 740.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [232]
-
-LaTeX Warning: Reference `10.2.14' on page 233 undefined on input line 769.
-
-
-LaTeX Warning: Reference `17.4.15' on page 233 undefined on input line 769.
-
-
 Overfull \hbox (14.4139pt too wide) detected at line 778
 []
  []
@@ -6648,32 +3092,6 @@ Overfull \vbox (0.4pt too high) detected at line 784
  []
 
 [233]
-
-LaTeX Warning: Reference `17.4.11' on page 234 undefined on input line 807.
-
-
-LaTeX Warning: Reference `17.5.2' on page 234 undefined on input line 815.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``d''? on input line 827
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``c''? on input line 827
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``d''? on input line 864
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``c''? on input line 864
-.
-
 
 Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``d''? on input line 864
@@ -6688,75 +3106,27 @@ id you specify a point identical to the center of node ``c''? on input line 864
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [234]
-
-LaTeX Warning: Reference `17.5.4' on page 235 undefined on input line 884.
-
-
-LaTeX Warning: Reference `17.5.1' on page 235 undefined on input line 884.
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 884--885
-[]\T1/cmr/bx/n/12 Existenz\T1/cmr/m/n/12 . Die-se ist klar mit der Fro-be-ni-us
-'schen Nor-mal-form [],
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 884--885
 
  []
 
 
-LaTeX Warning: Reference `17.6.1' on page 235 undefined on input line 899.
-
-
-LaTeX Warning: Reference `17.5.4' on page 235 undefined on input line 938.
+Underfull \hbox (badness 1622) in paragraph at lines 937--939
+\T1/cmr/m/n/12 Wegen der Ein-deu-tig-keit der Fro-be-ni-us'schen Nor-mal-form a
+us []17.5.4[] folgt
+ []
 
 [235] [236]
-
-LaTeX Warning: Reference `17.5.6' on page 237 undefined on input line 943.
-
-
-LaTeX Warning: Reference `17.5.4' on page 237 undefined on input line 944.
-
-
 Overfull \vbox (0.4pt too high) detected at line 949
  []
 
-
-LaTeX Warning: Reference `17.5.1' on page 237 undefined on input line 978.
-
-
-LaTeX Warning: Reference `7.2.5' on page 237 undefined on input line 978.
-
-
-LaTeX Warning: Reference `17.5.1' on page 237 undefined on input line 978.
-
-
-LaTeX Warning: Reference `7.2.5' on page 237 undefined on input line 978.
-
-
-LaTeX Warning: Reference `17.5.1' on page 237 undefined on input line 979.
-
 [237]
-
-LaTeX Warning: Reference `10.1.13' on page 238 undefined on input line 983.
-
-
-LaTeX Warning: Reference `4.2.12' on page 238 undefined on input line 983.
-
-
-Overfull \hbox (19.4918pt too wide) in paragraph at lines 983--984
-\T1/cmr/m/n/12 gibt es ein bis auf Rei-hen-fol-ge der Ein-trä-ge ein-deu-tig be
--stimm-tes Tu-pel $\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 ^^U[]; k[]\OT1/cmr/m/n/12
- )\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U[]; k[]\OT1/cmr/
-m/n/12 ))$
+Overfull \hbox (49.99965pt too wide) in paragraph at lines 983--984
+\T1/cmr/m/n/12 Dann gibt es ein bis auf Rei-hen-fol-ge der Ein-trä-ge ein-deu-t
+ig be-stimm-tes Tu-pel $\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 ^^U[]; k[]\OT1/cmr/m
+/n/12 )\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U[]; k[]\OT1
+/cmr/m/n/12 ))$
  []
-
-
-LaTeX Warning: Reference `17.5.1' on page 238 undefined on input line 1030.
-
-
-LaTeX Warning: Reference `17.5.1' on page 238 undefined on input line 1030.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
@@ -6764,13 +3134,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
  []
 
 [238]
-
-LaTeX Warning: Reference `17.5.6' on page 239 undefined on input line 1038.
-
-
-LaTeX Warning: Reference `17.6.3' on page 239 undefined on input line 1038.
-
-
 Overfull \vbox (0.4pt too high) detected at line 1042
  []
 
@@ -6798,77 +3161,153 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 45876 strings out of 478371
- 956513 string characters out of 5848512
- 1410048 words of memory out of 5000000
- 61742 multiletter control sequences out of 15000+600000
- 446914 words of font info for 148 fonts, out of 8000000 for 9000
+ 45932 strings out of 478371
+ 957365 string characters out of 5848512
+ 1454867 words of memory out of 5000000
+ 61762 multiletter control sequences out of 15000+600000
+ 445355 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,28n,120p,10599b,1824s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/local/texlive/2021/texmf-
+ 124i,28n,120p,10599b,1714s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{sat.17.6.3} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.17.3.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.16.1.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.16.2.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.16.2.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.13.5.10} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.13.3.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.4.2.13} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.11.2.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.11.1.12} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.11.1.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.10.2.14} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.10.2.12} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.9.1.10} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.7.2.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.9.1.8} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.7.2.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.7.1.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.5.1.14} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.4.1.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.3.2.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.3.1.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.2.1.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.1.1.30} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.2.1.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.1.1.14} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.1.2.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{sat.1.1.29} has been referenced but does not exist,
+ replaced by a fixed one
+
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2021/texmf-
 dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
-cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm
--super/sfrm2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-s
-uper/sfsl1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
-er/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfsx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
-fsx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfs
-x2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1
-200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt120
-0.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/stmaryrd/stmary10.
-pfb>
-Output written on main.pdf (250 pages, 1669398 bytes).
+st/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist/f
+onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fon
+ts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
+c/cm-super/sfrm2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
+cm-super/sfsl1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm
+-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-s
+uper/sfsx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
+er/sfsx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super
+/sfsx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
+fsx2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sft
+i1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1
+200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/stmaryrd/stmary1
+0.pfb>
+Output written on main.pdf (252 pages, 1700863 bytes).
 PDF statistics:
- 3313 PDF objects out of 3580 (max. 8388607)
- 2912 compressed objects within 30 object streams
- 1429 named destinations out of 1440 (max. 500000)
+ 4769 PDF objects out of 5155 (max. 8388607)
+ 4036 compressed objects within 41 object streams
+ 1459 named destinations out of 1728 (max. 500000)
  693 words of extra memory for PDF output out of 10000 (max. 10000000)
 
