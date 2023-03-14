@@ -1,0 +1,883 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+
+\section{Mengen und Abbildungen}
+
+\begin{psdf}\label{1.1.1}
+Eine \emph{Menge}\index{Menge@{\bf Menge}} ist eine gedachte ungeordnete Ansammlung von Objekten, die man die \emph{Elemente}\index{Menge@{\bf Menge}!Element} der Menge nennt. Jedes Element darf dabei nur einmal in der Ansammlung vorkommen. Eine Menge kann auch leer sein oder unendlich viele Elemente haben. Ihre Elemente können selber wieder Mengen sein.
+\end{psdf}
+
+\begin{warning}\label{1.1.2}
+Aus logischen Gründen, die wir hier nicht erklären, sind bei der Bildung von Mengen gewisse Spielregeln einzuhalten. Zum Beispiel darf eine Menge nicht alle Mengen als Element haben, sehr wohl aber alle Mengen, die nur aus reellen Zahlen bestehen.
+Sollten Sie diese Spielregeln wirklich einmal verletzen, so sagen wir es Ihnen.
+\end{warning}
+
+\begin{nt}\label{1.1.3}
+Sind $a_1,a_2,a_3,\ldots,a_n$ Objekte (z.B. Zahlen, Mengen, Wörter,...), so schreibt man
+\[\{a_1,\ldots,a_n\}\]
+für die Menge bestehend aus den Elementen $a_1,\ldots,a_n$. Die Reihenfolge von $a_1,\ldots,a_n$ spielt dabei keine Rolle. Auch dürfen mehrere $a_i$ gleich sein. Obwohl eine mehrfache Aufzählung redundant ist (ein Element kann gemäß \ref{1.1.1} ja nicht "`mehrfach"' enthalten sein), vermeidet dies oft eine unnötige und lästige gesonderte Behandlung von Spezialfällen. Die Menge $\{a_1,\ldots,a_n\}$ kann also auch weniger als $n$ Elemente haben.
+$$\emptyset \underbrace{:=}_{\mathclap{\text{"`wird definiert durch"'}}}\{\}\qquad\text{ "`\emph{leere} Menge"'}$$
+\end{nt}
+
+\begin{bsp}\label{1.1.4}
+\begin{enumerate}[\normalfont(a)]
+\item $\{1,2,3,4\}=\{3,4,2,1\}=\{1,1,2,3,3,4\}$ hat genau 4 Elemente.
+\item $\{\emptyset, 1,\{2,3\}\}$ hat 3 Elemente, nämlich die leere Menge, die Zahl 1 und die zweielementige Menge $\{2,3\}$. Man beachte, dass 3 kein Element von $\{\emptyset, 1,\{2,3\}\}$ ist.
+\item $\{\{\{\{\{\{\{\}\}\}\}\}\}\}$ ist eine einelementige Menge, deren einziges Element die einelementige Menge $\{\{\{\{\{\{\}\}\}\}\}\}=\{\{\{\{\{\emptyset\}\}\}\}\}$ ist.
+\end{enumerate}
+\end{bsp}
+
+\begin{nt}\label{1.1.5}
+Manchmal verwendet man "`$\ldots$"', um große endliche oder unendliche Mengen zu schreiben:
+\begin{align*}
+& \mathbb{N}:=\{1,2,3,4,5,\ldots\}\text{ Menge der \emph{natürlichen Zahlen}}\\
+& \mathbb{N}_0:=\{0,1,2,3,\ldots\}\\
+& \mathbb{Z}:=\{\ldots,-3,-2,-1,0,1,2,3,\ldots\}\text{ Menge der \emph{ganzen Zahlen}\index{ganze Zahlen@{\bf ganze Zahlen} ($\Z$)}}\\
+& \{1,\ldots,n\}\text{ Menge der natürlichen Zahlen }\leq n
+\end{align*}\index{natürliche Zahlen@{\bf natürliche Zahlen} ($\N$)}
+\end{nt}
+
+\begin{warning}\label{1.1.6}
+Notationen wie in \ref{1.1.5} sind oft missverständlich. Wie alle geübten Mathematiker verstehen wir:
+\begin{itemize}
+\item $\{1,\ldots,n\}=\{1,2\}$ für $n=2$
+\item $\{1,\ldots,n\}=\{1\}$ für $n=1$
+\item $\{1,\ldots,n\}=\emptyset$ für $n=0$.
+\end{itemize}
+Ein Neuling hingegen würde $\{1,\ldots,n\}$ für $n=0$ vielleicht als $\{1,0\}=\{0,1\}$ auffassen.
+\end{warning}
+
+\begin{nt}\label{1.1.7}
+$\{\mathcal{O}\mid \mathcal{E}\}$ steht für die "`Menge aller Objekte $\mathcal{O}$ mit der Eigenschaft $\mathcal{E}$"'.\index{Menge@{\bf Menge}!Objekte mit Eigenschaft}
+\end{nt}
+
+\begin{bsp}\label{1.1.8}
+\begin{enumerate}[\normalfont(a)]
+\item $\{x\mid x\in\mathbb{N}, 1\leq x\leq n\} = \{1,\ldots,n\}$
+\item $\{x^2\mid x\in\mathbb{N}\}=\{y\mid$ es gibt ein $x\in\mathbb{N}$ mit $y=x^2\}$ ist die Menge der Quadratzahlen.
+\item $\mathbb{Q}:= \left\{ \frac{p}{q} \mid p\in\mathbb{Z}, q\in\mathbb{N}\right\}$ ist die Menge der \emph{rationalen Zahlen}.
+\end{enumerate}
+\end{bsp}
+
+\begin{nt}\label{1.1.9}
+\begin{enumerate}[\normalfont(a)]
+\item $x\begin{Bmatrix}\in\\\notin\index{Menge@{\bf Menge}!e@$\in$ oder $\notin$}\end{Bmatrix} A$ steht für "`$x$ ist $\begin{Bmatrix}\text{ein}\\\text{kein}\end{Bmatrix}$ Element von $A$"'
+\item $\left\{x\in A\mid \mathcal{E}\right\}:=\left\{x\mid x\in A ,\mathcal{E}\right\}$ steht für die Menge aller $x$ in/aus $A$ (d.h. für die Elemente $x$ von $A$) mit der Eigenschaft $\mathcal{E}$.
+\end{enumerate}
+\end{nt}
+
+\begin{bsp}\label{1.1.10}
+\begin{enumerate}[\normalfont(a)]
+\item $\left\{x\in\mathbb{Z}\mid x^2\leq 7\right\}=\left\{-2,-1,0,1,2\right\}$
+\item $3\notin\left\{x^2\mid x\in\mathbb{N}\right\}$
+\item $4\in \left\{x^2\mid x\in\mathbb{N}\right\}$
+\item $\left\{2,3,\left\{4,5\right\}\right\}\in\left\{\left\{1,2,\left\{8\right\}\right\},\left\{2,3,\left\{4,5\right\}\right\}\right\}=:M$\\
+$8\in\left\{8\right\}\in\left\{1,2,\left\{8\right\}\right\}\in M$\\
+$8\notin\left\{1,2,\left\{8\right\}\right\}, \left\{8\right\}\notin M$
+\end{enumerate}
+\end{bsp}
+
+\begin{bemnt}\label{1.1.11}
+Wir formulieren mathematische Aussagen meist in natürlicher Sprache. Manchmal ist es prägnanter, formale Notation zu benutzen:
+\begin{align*}
+& \forall x:\mathcal{E}&&\text{"`für alle $x$ gilt $\mathcal{E}$"'}\index{Allquantor@{\bf Allquantor} ($\forall$)}\\
+& \exists x:\mathcal{E}&&\text{"`es gibt/existiert ein $x$ mit $\mathcal{E}$"'}\index{Existenzquantor@{\bf Existenzquantor} ($\exists$)}\\
+& \forall x\in A:\mathcal{E}&&\text{"`für alle $x$ aus $A$ gilt $\mathcal{E}$"'}\\
+& \exists x\in A:\mathcal{E}&&\text{"`es gibt ein $x$ aus $A$ mit Eigenschaft $\mathcal{E}$"'}\\
+& \mathcal{E}\iff \mathcal{F}&& \text{"`$\mathcal{E}$
+$\underbrace{\text{genau dann, wenn}}_{\text{gdw.}}$
+$\mathcal{F}$"'}\index{Äquivalenz@{\bf Äquivalenz} ($\iff$)}\\
+& && \text{"`$\mathcal{E}$ äquivalent $\mathcal{F}$"'}\\
+& \mathcal{E} \implies \mathcal{F} && \text{"`$\mathcal{E}$ impliziert $\mathcal{F}$"'}\index{Implikation@{\bf Implikation} ($\implies$, $\impliedby$)}\\
+& && \text{"`wenn $\mathcal{E}$, dann $\mathcal{F}$"'}\\
+& && \text{"`$\mathcal{E}$ ist hinreichend für $\mathcal{F}$"'}\\
+& \mathcal{E} \impliedby \mathcal{F} && \text{"`$\mathcal{E}$ wird von $\mathcal{F}$ impliziert"'}\index{Implikation@{\bf Implikation} ($\implies$, $\impliedby$)}\\
+& && \text{"`$\mathcal{F}$ nur dann, wenn $\mathcal{E}$"'}\\
+& && \text{"`$\mathcal{E}$ ist notwendig für $\mathcal{F}$"'}\\
+& \mathcal{E} \et \mathcal{F} && \text{"`$\mathcal{E}$ und $\mathcal{F}$"'}
+\end{align*}
+Beachte: $\forall x\in \emptyset:\mathcal{E}$ ist immer wahr und $\exists x\in \emptyset:\mathcal{E}$ ist immer falsch.
+\end{bemnt}
+
+\begin{df}\label{1.1.12}
+Eine Menge $A$ heißt \emph{Teilmenge}\index{Menge@{\bf Menge}!Teilmenge ($\subseteq$)} (oder \emph{Untermenge}) der Menge $B$ und man schreibt $A\subseteq B$, wenn $\forall x\in A: x\in B$. ("`$A$ ist in $B$ enthalten"', "`$B$ enthält $A$"').
+
+Man bezeichnet dann $B$ als \emph{Obermenge}\index{Menge@{\bf Menge}!Obermenge ($\supseteq$)} von $A$ und schreibt $B\supseteq A$.
+\end{df}
+
+\begin{bem}\label{1.1.13}
+Dass zwei Mengen $A$ und $B$ gleich sind, genau dann, wenn sie dieselben Elemente enthalten, kann man auch so ausdrücken:
+\[A=B\iff (A\subseteq B ~\&~ B\subseteq A).\] Fast immer ist es ratsam, die Gleichheit zweier Mengen zu zeigen, indem man die beiden Inklusionen (Teilmengenbeziehungen) \emph{getrennt} zeigt.
+\end{bem}
+
+\begin{df}\label{1.1.14}
+\begin{enumerate}[\normalfont(a)]
+\item Ist $M$ eine Menge von Mengen, so ist
+$$\bigcup M:=\left\{x \mid \exists A\in M: x\in A\right\}$$
+die \emph{Vereinigungsmenge}\index{Menge@{\bf Menge}!Vereinigung ($\cup/\bigcup$)} von $M$ und für
+$M\hspace{-1em}\underbrace\neq_{\text{"`ungleich"'}}\hspace{-1em}\emptyset$ ist
+$$\bigcap M:=\left\{x\mid \forall A\in M : x\in A\right\}$$
+die \emph{Schnittmenge}\index{Menge@{\bf Menge}!Schnitt ($\cap/\bigcap$)} von $M$. Beachte, dass $\bigcap \emptyset$ nicht generell definiert ist wegen \ref{1.1.2}. Ist $M$ eine Menge von Teilmengen einer festen Menge $A_0$, so definiert man oft $\bigcap \emptyset:=A_0$, denn dann gilt $\bigcap M=\left\{x\in A_0\mid \forall A\in M: x\in A\right\}$ sowohl für $M\neq \emptyset$ als auch für $M=\emptyset$ (beachte, dass $\forall A\in\emptyset:\ldots$ wahr ist!).
+\item Für $n\in\mathbb{N}$ und Mengen $A_1,\ldots,A_n$ definiert man die \emph{Vereinigung}\index{Menge@{\bf Menge}!Vereinigung ($\cup/\bigcup$)} $A_1\cup\ldots\cup A_n:=\bigcup\left\{A_1,\ldots,A_n\right\}$ und den \emph{Schnitt}\index{Menge@{\bf Menge}!Schnitt ($\cap/\bigcap$)} $A_1\cap\ldots\cap A_n:=\bigcap \left\{A_1,\ldots,A_n\right\}$.
+\item Für Mengen $A$ und $B$ heißt $A\hspace{-1em}\underbrace\setminus_{\text{"`ohne"'}}\hspace{-1em}B:=\left\{x\in A\mid x\notin B\right\}$ die \emph{Mengendifferenz}\index{Menge@{\bf Menge}!Mengendifferenz ($\setminus$)}.
+\item Für jede Menge $A$ nennt man $\Pow(A):=\left\{B\mid B\subseteq A\right\}$ ihre \emph{Potenzmenge}\index{Menge@{\bf Menge}!Potenzmenge ($\Pow$)}.
+\end{enumerate}
+\end{df}
+
+\begin{bsp}\label{1.1.15}
+$\bigcup\emptyset = \emptyset,\ \bigcap\emptyset$ nicht immer definiert\\
+$\bigcup\left\{\emptyset\right\} = \emptyset, \bigcap\left\{\emptyset\right\} = \emptyset$\\
+$\bigcup\left\{\left\{1,4,6\right\},\left\{\left\{5\right\}\right\},\
+\emptyset\right\}=\left\{1,4,6,\left\{5\right\}\right\}$\\
+$\left\{1,2,3\right\}\cup\left\{3,4,5\right\}=\left\{1,2,3,4,5\right\}$\\
+$\left\{1,2,3\right\}\cap\left\{3,4,5\right\}=\left\{3\right\}$\\
+$\left\{1,2,3\right\}\setminus\left\{3,4,5\right\}=\left\{1,2\right\}$\\
+$\mathcal{P}(\emptyset) = \left\{\emptyset\right\}$\\
+$\mathcal{P}(\left\{1\right\})=\left\{\emptyset, \left\{1\right\}\right\}$\\
+$\mathcal{P}(\left\{1,2\right\})=\left\{\emptyset, \left\{1\right\}, \left\{2\right\}, \left\{1,2\right\}\right\}$
+\end{bsp}
+
+\begin{df}\label{1.1.16}
+Eine \emph{Abbildung}\index{Abbildung@{\bf Abbildung}} $f$ besteht aus folgenden Angaben:
+\begin{itemize}
+\item einer Menge $A$, genannt \emph{Definitionsmenge}\index{Abbildung@{\bf Abbildung}!Definitionsmenge} von $f$,
+\item einer Menge $B$, genannt \emph{Zielmenge}\index{Abbildung@{\bf Abbildung}!Zielmenge} von $f$ und
+\item einer Vorschrift, die jedem Element $a$ von $A$ genau ein Element $f(a)$ von $B$ (das sogenannte Bild von $a$ unter $f$) zuordnet.
+\end{itemize}
+Notation: $f\colon A\underbrace{\rightarrow}_\text{"`nach"'} B,\ \ a\hspace{-2.5em}\underbrace{\mapsto}_\text{"`wird abgebildet auf"'}
+\hspace{-2.5em}f(a)$ [Bild: Veranschaulichung mit Pfeilen]\\
+Ist $f$ eine Abbildung mit Definitionsmenge $A$ und Zielmenge $B$, so sagt man $f$ ist eine \emph{Abbildung von $A$ nach $B$} und schreibt $f\colon A\to B$.
+\end{df}
+
+\begin{bem}\label{1.1.17}
+Sind $f\colon A\rightarrow B$ und $g:C\rightarrow D$ Abbildungen, so 
+$$f=g\iff (A=C \et B = D\et\forall a\in A: f(a)=g(a)).$$
+\end{bem}
+
+\begin{bsp}\label{1.1.18}
+\begin{align*}
+\text{Für }& f\colon\left\{0,1\right\}\rightarrow\left\{0,1\right\}, x\mapsto x\\
+& g:\left\{0,1\right\}\rightarrow\left\{0,1\right\}, x\mapsto x^2\text{ und}\\
+& h:\left\{0,1\right\}\rightarrow\left\{0,1\right\}, 0\mapsto 0, 1\mapsto 1 \text{ gilt}\\
+& f=g=h\text{, aber }f\neq p\text{ für }p:\left\{0,1\right\}\rightarrow\left\{0,1,2\right\}, 0\mapsto0, 1\mapsto 1
+\end{align*}
+\end{bsp}
+
+\begin{df}\label{1.1.19}
+Eine Abbildung $f\colon A\rightarrow B$ heißt $\begin{Bmatrix}\emph{injektiv}\\\emph{surjektiv}\\\emph{bijektiv}\end{Bmatrix}$\index{Abbildung@{\bf Abbildung}!injektiv}\index{Abbildung@{\bf Abbildung}!surjektiv}\index{Abbildung@{\bf Abbildung}!bijektiv}, wenn es zu jedem $b\in B \begin{Bmatrix}\emph{höchstens}\\\emph{mindestens}\\\emph{genau}\end{Bmatrix}$ ein $\underbrace{a\in A}_{\mathclap{\text{"`Urbild von $b$"'}}}$ gibt mit $f(a)=b$.
+
+Mit anderen Worten gilt:
+\begin{eqnarray*}
+f \text{ injektiv}&\iff& \forall a_1,a_2 \in A:(f(a_1)=f(a_2)\Longrightarrow a_1=a_2)\\
+f \text{ surjektiv}&\iff& \forall b\in B: \exists a\in A:f(a)=b\text{ und}\\
+f \text{ bijektiv} &\iff& (f\text{ injektiv} ~\&~ f\text{ surjektiv})
+\end{eqnarray*}
+\end{df}
+
+\begin{bsp}\label{1.1.20}
+\begin{enumerate}[\normalfont(a)]
+\item $\left\{1,2,3\right\}\rightarrow \left\{4,5\right\}, 1\mapsto 4, 2 \mapsto 5, 3\mapsto 4$\\
+\begin{tikzpicture}
+\node(1){1};
+\node[below=0.5cm of 1](2){2};
+\node[below=0.5cm of 2](3){3};
+\node[right = 1cm of 1](4){4};
+\node[below=0.5 cm of 4](5){5};
+\draw[->](1) -- (4);
+\draw[->](2) -- (5);
+\draw[->](3) -- (4);
+\draw (2) ellipse (.5cm and 1.5cm);
+\draw (1.45, -.45) ellipse (.4cm and 1cm);
+\end{tikzpicture}
+\quad nicht injektiv,\quad surjektiv,\quad nicht bijektiv
+\item $\left\{1,2\right\}\rightarrow \left\{1,2,3\right\},1\mapsto 2, 2\mapsto 3$\\
+\begin{tikzpicture}
+\node(1){1};
+\node[below=0.5cm of 1](2){2};
+\node[right = 1cm of 1](4){1};
+\node[below=0.5cm of 4](5){2};
+\node[below=0.5cm of 5](3){3};
+\draw[->] (1) -- (5);
+\draw[->] (2) -- (3);
+\draw (5) ellipse (.5cm and 1.5cm);
+\draw (0, -.45) ellipse (.4cm and 1cm);
+\end{tikzpicture}
+\quad injektiv,\quad nicht surjektiv,\quad nicht bijektiv
+\item $\left\{1,2,3\right\}\rightarrow \left\{1,2,3\right\}, x\mapsto x$\\
+\begin{tikzpicture}
+\node(1){1};
+\node[below=0.5cm of 1](2){2};
+\node[below=0.5cm of 2](3){3};
+\node[right = 1cm of 1](4){2};
+\node[below=0.5cm of 4](5){3};
+\node[below=0.5cm of 5](6){1};
+\draw[->] (1) -- (6);
+\draw[->] (2) -- (4);
+\draw[->] (3) -- (5);
+\draw (2) ellipse (.5cm and 1.5cm);
+\draw (5) ellipse (.5cm and 1.5cm);
+\end{tikzpicture}
+\quad injektiv,\quad surjektiv,\quad bijektiv
+\item $\emptyset \rightarrow \emptyset$\quad injektiv,\quad surjektiv,\quad bijektiv [Bild: Zwei leere Kreise]
+\item $\left\{1,2,3\right\}\rightarrow\left\{1,2,3,4\right\}, x\mapsto x$\\
+\begin{tikzpicture}
+\node(1){1};
+\node[below=0.5cm of 1](2){2};
+\node[below=0.5cm of 2](3){3};
+\node[right = 1cm of 1](5){2};
+\node[below=0.5cm of 5](6){3};
+\node[below=0.5cm of 6](4){1};
+\node[below =0.5cm of 4](7){4};
+\draw[->](1) -- (4);
+\draw[->](2) -- (5);
+\draw[->](3) -- (6);
+\draw (2) ellipse (.5cm and 1.5cm);
+\draw (1.45, -1.45) ellipse (.5cm and 2cm);
+\end{tikzpicture}
+\quad injektiv, nicht surjektiv, nicht bijektiv.
+\item $\mathbb{Z}\rightarrow\mathbb{N}_0, x\mapsto |x|$ \quad nicht injektiv,\quad surjektiv,\quad nicht bijektiv
+\item $\mathbb{Z}\rightarrow \mathbb{Z}, x\mapsto |x|$ \quad nicht injektiv,\quad nicht surjektiv,\quad nicht bijektiv
+\item $\mathbb{Z}\rightarrow\mathbb{Z}, x\mapsto -x$ \quad injektiv,\quad surjektiv,\quad bijektiv
+\item \cancel{${\left\{1,2,3\right\}\rightarrow\left\{4,5\right\}, 2\mapsto 4, 3\mapsto 5}$} keine Abbildung!
+\item \cancel{$\left\{1,2,3\right\}\rightarrow\left\{4,5\right\}, 1\mapsto 4, 1\mapsto 5, 2\mapsto 4, 3\mapsto 5$} keine Abbildung!
+\item $\mathbb{N}\rightarrow \mathbb{N}, x\mapsto x+1$ \quad injektiv,\quad nicht surjektiv,\quad nicht bijektiv
+\end{enumerate}
+\end{bsp}
+
+\red{Bis hierher sollten wir am 25. Oktober kommen.}
+
+\begin{df}\label{1.1.21}
+Eine Menge $A$ heißt \emph{endlich}\index{Menge@{\bf Menge}!endlich}, wenn sie nur endlich viele Elemente hat. Die Anzahl ihrer Elemente nennt man dann \emph{Mächtigkeit}\index{Menge@{\bf Menge}!Mächtigkeit ($\#$)} (auch \emph{Kardinalität}) $\# A$ von $A$.
+Ist $A$ \emph{unendlich}\index{Menge@{\bf Menge}!unendlich} (d.h. nicht endlich), so setzen wir
+\[\# A = \underbrace{\infty}_\text{"`unendlich"'}.\] Wir nennen $A$ \emph{abzählbar}\index{Menge@{\bf Menge}!abzählbar} unendlich, wenn es eine bijektive Abbildung $f\colon\mathbb{N}\rightarrow A$ gibt, und \emph{überabzählbar}\index{Menge@{\bf Menge}!überabzählbar}, wenn $A$ weder endlich noch abzählbar unendlich ist.
+\end{df}
+
+\begin{sat}[Satz von Cantor (1891)]\label{1.1.22}
+Ist $A$ eine Menge, so gibt es keine surjektive Abbildung von $A$ nach $\mathcal{P}(A)$.
+\end{sat} 
+\begin{proof}
+Zu zeigen ist, dass keine Abbildung von $A$ nach $\mathcal{P}
+(A)$ surjektiv ist. Sei hierzu $f\colon A\rightarrow\mathcal{P}(A)$ eine (beliebige, aber feste) Abbildung. Wir setzen $B:=\left\{a\in A\mid a\notin f(a)\right\}$ und zeigen, dass es kein $a\in A$ gibt mit $f(a)=B$ (denn dann ist insbesondere $f$ nicht surjektiv). Dies zeigen wir durch Widerspruch: Wir nehmen an, wir haben $a\in A$ mit $f(a) =B$ und führen dies zu einem logischen Widerspruch.
+\begin{itemize}
+\item[Fall 1:] $a\in f(a)$.
+
+Damit ist einerseits $a\notin B$ nach Definition von $B$ und andererseits $a\in B$ wegen $f(a)=B$.
+$\lightning_{\text{"`Widerspruch\"'}}$
+\item[Fall 2:] $a\notin f(a)$.
+
+Dann einerseits $a\in B$ nach Definition von $B$ und andererseits $a\notin B$ wegen $f(a) = B$. $\lightning$
+\end{itemize}
+\end{proof}
+\vspace{-3em}
+\begin{flushright}
+$_{\text{"`quod erat demonstrandum"'}}$
+\end{flushright}
+
+\noindent
+\textbf{Veranschaulichung im Fall von $A=\mathbb{N}$}:\\
+\begin{tabular}{ccccccccccccc}
+$f(1)$ & $= \{$ & $\underline{1},$ &    & $3,$ & $4,$ &  &  & $7,$ &  & $9,$ & $10,$ & $\ldots\}$\\
+$f(2)$ & $= \{$ &    & $\underline{2},$ &  & $4,$ & $5,$ &  &  & $8,$ &  & $10,$ & $\ldots\}$\\
+$f(3)$ & $= \{$ &    & $2,$ & $\_$ & $4,$ &  & $6,$ & $7,$ & $8,$ & $9,$ &  & $\ldots\}$
+\end{tabular}\\
+$\_=\mathbb{N}\setminus B$ "`Cantors Diagonalargument"'
+
+\begin{bem}\label{1.1.23}
+Für endliche Mengen $A$ folgt \ref{1.1.22} auch aus $\# \Pow(A)=2^{\# A}>\# A$.
+\end{bem}
+
+\begin{kor}\label{1.1.24}
+$\Pow(\N)$ ist überabzählbar.
+\end{kor}
+
+\begin{proof}
+Offenbar ist $\Pow(\N)$ nicht endlich. Wäre $\Pow(\N)$ \emph{abzählbar unendlich}, so gäbe es gemäß Definition
+\ref{1.1.21} eine bijektive Abbildung $\N\rightarrow\Pow(\N)$. Dies ist nach dem Satz von Cantor \ref{1.1.22} unmöglich.
+\end{proof}
+
+\begin{df}\label{1.1.25}
+Ist $f: A\rightarrow B$ eine Abbildung, $C\subseteq A$ und $D\subseteq B$, so nennt man $f(C):=\left\{f(a)\mid a\in C\right\}$ \emph{das Bild von $C$ unter $f$}\index{Abbildung@{\bf Abbildung}!Bild} und $f^{-1}(D):=\left\{a\in A\mid f(a) \in D\right\}$ das \emph{Urbild von $D$ unter $f$}\index{Abbildung@{\bf Abbildung}!Urbild}.
+\begin{center}
+\begin{tikzpicture}
+\node(A){$A$};
+\node[right = 6cm of A](B){$B$};
+\node[below right =.02cm of A]{$C/f^{-1}(D)$};
+\node[below left =.02cm of B]{$D/f(C)$};
+
+\draw (1.5,-1.5) circle (1.5cm);
+\filldraw[blue!20] (1.5,-1.5) circle (.75cm);
+
+\draw (5,-1.5) circle (1.5cm);
+\filldraw[red!20] (5,-1.5) circle (.75cm);
+
+\filldraw (1.5,-1) circle (1pt);
+\filldraw (2,-1.5) circle (1pt);
+\filldraw (1.5,-2) circle (1pt);
+
+\filldraw (4.7, -1.2) circle (1pt);
+\filldraw (5.3, -1.8) circle (1pt);
+
+\draw[->, thick] (1.5,-1) -- (4.7,-1.2);
+\draw[->, thick] (2,-1.5) -- (4.7,-1.2);
+\draw[->, thick] (1.5,-2) -- (5.3,-1.8);
+\end{tikzpicture}
+\end{center}
+\end{df}
+
+\begin{bsp}\label{1.1.26}
+Für $f:\Z\rightarrow\Z, x\mapsto |x|$ gilt:
+\begin{align*}
+f(\left\{-3,-5,4\right\}) = \left\{3,4,5\right\}\text{und}\\
+f^{-1}(\{-3,-5,4\}) = \left\{-4,4\right\}.
+\end{align*}
+\end{bsp}
+
+\begin{df}\label{1.1.27}
+Seien $A$ und $B$ Mengen. Dann bezeichnet $B^A:=\left\{f\mid f:A\rightarrow B\right\}$ die Menge aller Abbildungen von $A$ nach $B$\index{Menge von Abbildungen@{\bf Menge von Abbildungen} ($B^A$)}.
+Für $n\in\N_0$ schreibt man oft $B^n$ statt $B^{\left\{1,\ldots,n\right\}}$ und $(b_1,\ldots,b_n)$ statt $\left\{1,\ldots,n\right\}\rightarrow B, 1\mapsto b_1,\ldots,n\mapsto b_n$ ("`$n$-Tupel"').\\
+Insbesondere ist $B^0$ einelementig: $B^0=\{\hspace{-1em}\underbrace{()}_\text{"`leeres Tupel"'}\hspace{-1em}\}$.
+\end{df}
+
+\begin{df}\label{1.1.28}
+Seien $A$ und $B_a$ für $a\in A$ Mengen.\\
+Setze $B:=\bigcup\left\{B_a\mid a\in A\right\}$. Dann nennt man 
+$$\prod_{a\in A} B_a := \left\{f\mid f:A\rightarrow B, \forall a\in A: f(a) \in B_a\right\}$$
+das \emph{kartesische} [\href{http://de.wikipedia.org/wiki/René_Descartes}{René Descartes}, *1596, $\dagger$ 1650] \emph{Produkt}\index{Menge@{\bf Menge}!kartesisches Produkt ($\times$)} der $B_a\quad (a\in A)$. Für $n\in\N_0$ schreibt man oft $B_1\times\ldots\times B_n$ statt $\prod_{a\in\left\{1,\ldots,n\right\}}B_a$ und $(b_1,\ldots,b_n)$ statt
+\[\left\{1,\ldots,n\right\}\rightarrow B, 1\mapsto b_1,\ldots, n\mapsto b_n.\]
+\end{df}
+
+\begin{spr}\label{1.1.29}
+\begin{enumerate}[\normalfont(a)]
+\item Eine Abbildung, deren Definitions- und Zielmenge übereinstimmen, nennt man \emph{Selbstabbildung}\index{Abbildung@{\bf Abbildung}!Selbstabbildung}.
+\item Eine bijektive Selbstabbildung nennt man auch \emph{Permutation}\index{Abbildung@{\bf Abbildung}!Permutation}.
+\item Synonym sind jeweils:\\
+\begin{tabular}{p{.29\textwidth}p{.29\textwidth}p{.29\textwidth}}
+Abbildung & $\underbrace{\text{Funktion}}_{\over{\text{Zielmenge wenig abstrakt,}}{\text{meist bestehend aus Zahlen}}}$ & Mengenhomomorphismus \\
+injektive Abbildung & Injektion & Mengeneinbetting/ Mengenmonomorphismus \\
+surjektive Abbildung & Surjektion & Mengenepimorphismus\\
+bijektive Abbildung & Bijektion & Mengenisomorphismus \\
+Selbstabbildung & & Mengenendomorphismus \\
+bijektive Selbstabbildung & Permutation & Mengenautomorphismus \\
+Definitionsmenge & Definitionsbereich & Quellbereich \\
+Zielmenge & Wertevorrat &
+\end{tabular}
+\item Ist $f:A\rightarrow B$ eine Abbildung, so nennt man das Bild $f(A)$ von $A$ unter $f$ auch das \emph{Bild von $f$}\index{Abbildung@{\bf Abbildung}!Bild}. Es gilt $f$ surjektiv $\iff f(A) = B$.
+Manche Leute nennen $f(A)$ die Wertemenge oder den Wertebereich von $f$, andere nennen $B$ so. Daher vermeiden wir diese beiden Begriffe.
+\end{enumerate}
+\end{spr}
+
+\begin{bem}\label{1.1.30}
+\begin{enumerate}[\normalfont(a)]
+\item Sind $f:A\rightarrow B$ und $g:A\rightarrow C$ Abbildungen, so kann $f=g$ nur gelten, wenn $B=C$. In der Praxis wird aber dann in der Literatur mit $f=g$ oft nur $\forall a\in A:f(a)=g(a)$ gemeint (d.h. es ist gemeint $f_0 = g_0$, wobei $f_0 : A\rightarrow B\cap C, a\mapsto f(a)$ und $g_0:A\rightarrow B\cap C,a\mapsto g(a)$)\index{Abbildung@{\bf Abbildung}!Gleichheit}.
+\item Wenn im Fall $A=\left\{1,\ldots,n\right\}$ die Abbildungen $f$ und $g$ aus (a) wie in \ref{1.1.27} als Tupel geschrieben werden, dann wird diese Praxis immer angewandt, da die Zielmengen $B$ und $C$ in Tupelschreibweise ja gar nicht mehr spezifiziert sind. Es gilt also stets $(b_1,\ldots,b_n)=(c_1,\ldots,c_n)\iff (b_1=c_1\et\ldots\et b_n=c_n)$.
+\item Bemerkung (b) gilt auch für folgende \emph{Varianten der Verallgemeinerungen} der Tupelschreibweise:\\
+\emph{Matrizen:}
+$$f:\underbrace{\left\{1,\ldots,m\right\}\times\left\{1,\ldots,n\right\}}_{=\left\{(1,1),(1,2),\ldots,(1,n),\ldots,(m,1),\ldots,(m,n)\right\}}\rightarrow Z$$
+$$\begin{pmatrix}
+f(1,1) & \ldots & f(1,n)\\
+f(2,1) & \ldots & f(2,n)\\
+\vdots & & \vdots\\
+f(m,1) & \ldots & f(m,n)
+\end{pmatrix}$$
+\emph{Folgen:}
+$$f:\N\rightarrow Z\qquad (f(1),f(2),f(3),\ldots)$$
+\emph{Familien:}
+$$f:\hspace{-1em}\underbrace{I}_\text{"`Indexmenge"'}\hspace{-1em}\rightarrow Z \qquad (f(a))_{a\in I}$$
+\begin{flushright}
+\footnotesize
+(manchmal auch $\{f(a)\}_{a\in A}$
+$\leadsto$ schlecht wegen\\Verwechslungsgefahr
+mit der Menge $\{f(a)\mid a\in A\}$)
+\end{flushright}
+\end{enumerate}
+\end{bem}
+
+\begin{df}\label{1.1.31}
+Sei $f:A\rightarrow B$ eine Abbildung und $C\subseteq A$. Dann heißt \[f|_C:C\rightarrow B, a\mapsto f(a)\] die \emph{Einschränkung} (oder \emph{Restriktion})\index{Abbildung@{\bf Abbildung}!Einschränkung (Restriktion)} von $f$ auf $C$.
+\end{df}
+
+\begin{nt}[Diagramme]\label{1.1.32}
+Statt $f:A\rightarrow B$ schreibt man auch $A\overset f\rightarrow B$. Zum Beispiel steht "`Gelte $A\overset f\rightarrow B\overset g\rightarrow C$"' für "`Seien $f:A\rightarrow B$ und $g:B\rightarrow C$ Abbildungen"'.
+\end{nt}
+
+\begin{df}\label{1.1.33}
+Für $f:A\rightarrow B$ heißt \[\Gamma_f:=\left\{(x,f(x))\mid x\in A\right\}\subseteq A\times B\] der \emph{Graph}\index{Abbildung@{\bf Abbildung}!Graph} von $f$. Aus $\Gamma_f$ kann man die Definitionsmenge und die Abbildungsvorschrift [$\rightarrow$ \ref{1.1.16}] und auch das Bild [$\rightarrow$ \ref{1.1.29} (d)], nicht aber die Zielmenge von $f$ zurückgewinnen.
+$$A=\left\{a\mid \exists b:(a,b)\in\Gamma_f\right\}$$
+$$a\mapsto b \text{ falls }(a,b)\in\Gamma_f$$
+$$f(A)=\left\{b\mid \exists a:(a,b)\in\Gamma_f\right\}\subseteq B$$
+\end{df}
+
+\section{Hintereinanderschaltung und Umkehrung von Abbildungen}
+
+\begin{er}\label{1.2.1}
+Eine Abbildung $f:A\rightarrow B$ ordnet jedem $a\in A$ genau ein $b\in B$ zu.
+\begin{center}
+\begin{tikzpicture}
+\node[draw=black, shape=circle, minimum size= 2cm](A){};
+\node[draw=black, shape=circle, minimum size= 2cm, right =of A](B){};
+
+\filldraw (0,.5) circle (1pt);
+\filldraw (.5,0) circle (1pt);
+\filldraw (0,-.5) circle (1pt);
+\filldraw (-.5,0) circle (1pt);
+
+\filldraw (2.5,0) circle (1pt);
+\filldraw (3,.5) circle (1pt);
+\filldraw (3,-.5) circle (1pt);
+
+\draw[->, thick] (0,.5) -- (3,.5);
+\draw[->, thick] (.5,0) -- (3,.5);
+\draw[->, thick] (0,-.5) -- (2.5,0);
+\draw[->, thick] (-.5,0) .. controls (0,-1.5) and (2,-1.5) .. (3,-.5);
+\end{tikzpicture}
+\end{center}
+Jedes $a\in A$ hat also genau ein Bild unter $f$ [$\rightarrow$ \ref{1.1.16}].\\
+$f$ heißt bijektiv, wenn zusätzlich jedes $b\in B$ genau ein Urbild unter $f$ hat.
+\begin{center}
+\begin{tikzpicture}
+\node[draw=black, shape=circle, minimum size= 2cm](A){};
+\node[draw=black, shape=circle, minimum size= 2cm, right =of A](B){};
+
+\filldraw (0,.5) circle (1pt);
+\filldraw (.5,0) circle (1pt);
+\filldraw (0,-.5) circle (1pt);
+\filldraw (-.5,0) circle (1pt);
+
+\filldraw (2.5,0) circle (1pt);
+\filldraw (3,.5) circle (1pt);
+\filldraw (3,-.5) circle (1pt);
+\filldraw (3.5,0) circle (1pt);
+
+\draw[->, thick] (0,.5) -- (3,.5);
+\draw[->, thick] (.5,0) .. controls (2.5,.3) .. (3.5,0);
+\draw[->, thick] (0,-.5) -- (2.5,0);
+\draw[->, thick] (-.5,0) .. controls (0,-1.5) and (2,-1.5) .. (3,-.5);
+\end{tikzpicture}
+\end{center}
+Vertauschen von Bild und Urbild ("`Umdrehen der Pfeile"') liefert für bijektives $f$ eine Umkehrabbildung.
+\end{er}
+
+\begin{df}\label{1.2.2}
+Für bijektives $f:A\rightarrow B$ definieren wir die \emph{Umkehrabbildung}\index{Abbildung@{\bf Abbildung}!Umkehrabbildung (inverse Abbildung)} von $f$ (oder zu $f$ inverse Abbildung)
+\[f^{-1}:B\rightarrow A, b\mapsto\text{das eindeutige $a$ mit $f(a)=b$}.\]
+\end{df}
+
+\begin{bem}\label{1.2.3}
+Während $f^{-1}$ nur für bijektive $f$ existiert, war $f^{-1}(C)$ in \ref{1.1.25} für jedes $f:A\rightarrow B$ und jedes $C\subseteq B$ definiert als $f^{-1}(C) = \left\{a\in A\mid f(a)\in C\right\}$. Ist $f:A\rightarrow B$ bijektiv und $C\subseteq B$, so notieren wir mit $f^{-1}(C)$ sowohl das Urbild von $C$ unter $f$ als auch das Bild von $C$ unter $f^{-1}$, was aber konsistent ist, denn die beiden sind gleich.
+\end{bem}
+
+\begin{df}\label{1.2.4}
+Für $A\overset f\rightarrow B\overset g\rightarrow C$ heißt \[g\circ f:A\rightarrow C, a\mapsto g(f(a))\] die \emph{Hintereinander}\case{\emph{schaltung}}{\emph{ausführung}} (auch \emph{Verkettung} oder \emph{Komposition})\index{Abbildung@{\bf Abbildung}!Hintereinanderschaltung/ -ausführung/ Verkettung/ Komposition ($\circ$)} von $f$ und $g$.\\
+Für jede Menge $A$ heißt
+\[\id_A: A\rightarrow A,a\mapsto a\]
+die \emph{Identität} (oder \emph{identische} Abbildung)\index{Abbildung@{\bf Abbildung}!Indentität ($\id$)} auf $A$.
+\end{df}
+
+\begin{pro}\label{1.2.5}
+\begin{enumerate}[\rm(a)]
+\item Für $A\overset f\rightarrow B\overset g\rightarrow C\overset h\rightarrow D$ gilt
+\[h\circ (g\circ f) = (h\circ g)\circ f\]
+("`$\circ$ ist assoziativ"').
+\item Für $f:A\rightarrow B$ gilt $f\circ \id_A = f = \id_B\circ f$.
+\item Für bijektive $f:A\rightarrow B$ gilt $f^{-1}\circ f = \id_A$ und $f\circ f^{-1}=\id_B$.
+\item Für bijektive $f:A\rightarrow B$ ist auch $f^{-1}$ bijektiv und es gilt $\left(f^{-1}\right)^{-1} = f$.
+\end{enumerate}
+\end{pro}
+\begin{proof}
+\begin{enumerate}[\normalfont(a)]
+\item Gelte $A\overset f\rightarrow B\overset g\rightarrow C\overset h\rightarrow D$.
+Dann
+\begin{center}
+\begin{tikzpicture}
+\node(A){$A$};
+\node[right = of A](B){$B$};
+\node[right = of B](C){$C$};
+\node[right = of C](D){$D$};
+\draw[->] (A) -- node[above]{$f$} (B);
+\draw[->] (B) -- node[above]{$g$} (C);
+\draw[->] (C) -- node[above]{$h$} (D);
+\draw[->] (A) .. controls (1,1) and (2,1) .. node[above]{$g\circ f$} (C);
+\draw[->] (B) .. controls (2,-1) and (3,-1) .. node[below]{$h\circ g$} (D);
+\draw[->] (A) .. controls (1,2) and (3,2) .. node[above]{$h\circ(g\circ f)$} (D);
+\draw[->] (A) .. controls (1,-2) and (3,-2) .. node[below]{$(h\circ g)\circ f$} (D);
+\end{tikzpicture}
+\end{center}
+und$ (h\circ(g\circ f))(a)=h((g\circ f)(a))=h(g(f(a)))=(h\circ g)(f(a))=((h\circ g)\circ f)(a)$ für alle $a\in A$.
+Nach \ref{1.1.16} gilt also $h\circ(g\circ f)=(h\circ g)\circ f$.
+\item Gelte $A\overset f\rightarrow B$. Dann
+\begin{center}
+\begin{tikzpicture}
+\node(A){$A$};
+\node[right = of A](B){$B$};
+\draw[->] (A) -- node[above]{$f$} (B);
+\draw[->] (A) .. controls (.5,1) and (1,1) .. node[above]{$f\circ \id_A$} (B);
+\draw[->] (A) .. controls (.5,-.5) and (1,-.5) .. node[below]{$\id_B\circ f$} (B);
+\draw[->] (A) .. controls (-1,-.5) and (-1,.5) .. node[left]{$\id_A$} (A);
+\draw[->] (B) .. controls (2.5,-.5) and (2.5,.5) .. node[right]{$\id_B$} (B);
+\end{tikzpicture}
+\end{center}
+und
+$(f\circ \id_A)(a) = f(\id_A(a)) = f(a) = \id_B(f(a)) = (\id_B\circ f)(a) \text{ für alle } a\in A$.\\
+Nach \ref{1.1.16} gilt also $f\circ \id_A = f = \id_B\circ f$.
+\item Sei $f:A\rightarrow B$ bijektiv. Dann\vspace{-2cm}
+\begin{center}
+\begin{tikzpicture}
+\node(A){$A$};
+\node[right = of A](B){$B$};
+\draw[->] (A) .. controls (.5,.5) and (1,.5) .. node[above]{$f$} (B);
+\draw[->] (B) .. controls (1,-.5) and (.5,-.5) .. node[below]{$f^{-1}$} (A);
+\draw[->] (A) .. controls (-1,-.5) and (-1,.5) .. node[left]{$\id_A$} (A);
+\draw[->] (B) .. controls (2.5,-.5) and (2.5,.5) .. node[right]{$\id_B$} (B);
+\draw[->] (A) .. controls (-3,-3) and (-3,3) .. node[left]{$f^{-1}\circ f$} (A);
+\draw[->] (B) .. controls (4,-3) and (4,3) .. node[right]{$f\circ f^{-1},$} (B);
+\end{tikzpicture}
+\end{center}\vspace{-2cm}
+\begin{align*}
+(f^{-1}\circ f)(a)&= f^{-1}(\brown{f(a)}) \overset{f(\blue a)=\brown{f(a)}}{\underset{\ref{1.2.2}}=}\blue a \text{ für alle } a\in A\text{ und}\\
+(f\circ f^{-1})(b)&= f(f^{-1}(b)) \overset{\ref{1.2.2}}= b \text{ für alle } b\in B.
+\end{align*}
+Nach \ref{1.1.16} gilt also $f^{-1}\circ f = \id_A$ und $f\circ f^{-1}=\id_B$.
+\item Sei $f:A\rightarrow B$ bijektiv. Dann ist auch $f^{-1}:B\rightarrow A$ bijektiv, denn ist $a\in A$, so $\left\{b\in B\mid f^{-1}(b) = a\right\}\overset{\text{\ref{1.2.2}}}=\left\{b\in B\mid f(a) = b\right\} = \left\{f(a)\right\}$, d.h. jedes Element von $A$ hat genau ein Urbild unter $f^{-1}$. Weiter gilt $(f^{-1})^{-1}:A\rightarrow B$ und
+\[(f^{-1})^{-1}(\blue a)\overset{{f^{-1}(\brown{f(a)})}\overset{(c)}=\blue a}{\underset{\ref{1.2.2}}=}\brown{f(a)}
+\text{ für alle }a\in A.\]
+Nach \ref{1.1.16} gilt also $f=(f^{-1})^{-1}$.
+\end{enumerate}
+\end{proof}
+
+\red{Bis hierher sollten wir am 28. Oktober kommen.}
+
+\begin{sat}\label{1.2.6}
+Seien $f:A\rightarrow B$ und $g:B\rightarrow A$ Abbildungen mit $g\circ f=\id_A$ und $f\circ g=\id_B$. Dann sind $f$ und $g$ bijektiv und es gilt $g=f^{-1}$ und $f=g^{-1}$.\vspace{-1em}
+\begin{flushright}
+\small
+"`$f$ und $g$ sind invers zueinander."'
+\end{flushright}
+\end{sat}
+\begin{proof}
+Es ist $f$ injektiv, denn sind $a_1,a_2\in A$ mit $f(a_1)=f(a_2)$, so gilt
+$$a_1=\id_A(a_1)=(g\circ f)(a_1)= g(f(a_1))= g(f(a_2)) = (g\circ f)(a_2) = \id_A(a_2) = a_2.$$
+Es ist $f$ auch surjektiv, denn ist $b\in B$, so gilt für $a:=g(b)$, dass
+$$f(a)=f(g(b))= (f\circ g)(b)=\id_B(b) = b.$$
+Also ist $f$ bijektiv.
+Analog zeigt man, dass $g$ bijektiv ist. Aus $(g\circ f)=\id_A$ folgt 
+$$g=g\circ \id_B\overset {\text{\ref{1.2.5}(c)}} =g\circ (f\circ f^{-1})\overset {\text{\ref{1.2.5} (a)}}=(g\circ f)\circ f^{-1}\overset {\text{Voraussetzung}}= \id_A \circ f^{-1} \overset{\text{\ref{1.2.5} (b)}}=f^{-1}.$$
+Analog folgt $f=g^{-1}$.
+\end{proof}
+
+\begin{sprnt}\label{1.2.7}
+Die Situation von \ref{1.2.6} drücken wir sprachlich oft so aus:
+"`Die Zuordnungen
+\begin{align*}
+a & \mapsto f(a)\\
+g(b) & \mapsfrom b
+\end{align*}
+vermitteln eine Bijektion zwischen $A$ und $B$."'\index{Abbildung@{\bf Abbildung}!Zuordnungen vermitteln Bijektion}\\
+In Zeichen:
+\begin{align*}
+A&\leftrightarrow B\\
+a&\mapsto f(a)\\
+g(b)&\mapsfrom b
+\end{align*}
+\end{sprnt}
+
+\section{Äquivalenzrelationen und Zerlegungen}\label{1.3}
+
+\noindent
+Idee: Grobe Sichtweise auf eine Menge einnehmen.
+
+\begin{df}\label{1.3.1}
+Sei $A$ eine Menge.
+\begin{enumerate}[\normalfont(a)]
+\item Eine (zweistellige) \emph{Relation}\index{Relation@{\bf Relation}} auf $A$ ist eine Teilmenge von $A\times A$. Ist $R$
+eine Relation auf $A$, so schreibt man auch $aRb$ statt $(a,b)\in R$.
+\item Eine \emph{Äquivalenzrelation}\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)} auf $A$ ist eine Relation $\sim$ auf $A$, für die gilt:
+\begin{itemize}
+\item $\forall a\in A:a\sim a$\qquad"`reflexiv"'\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!reflexiv}
+\item $\forall a,b\in A:(a\sim b\implies b\sim a)$\qquad"`symmetrisch"'\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!symmetrisch}
+\item $\forall a,b,c\in A:((a\sim b ~\et~ b\sim c)\implies a\sim c)$\qquad"`transitiv"'\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!transitiv}
+\end{itemize}
+Ist $\sim$ eine Äquivalenzrelation auf $A$ und $a\in A$,
+so heißt $\widetilde{a}:=\{b\in A\mid a\sim b\}$ die \emph{Äquivalenzklasse}\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!Äquivalenzklasse} von $a$ bezüglich $\sim$. \label{eqc}
+\end{enumerate}
+\end{df}
+
+\begin{bsp}\label{1.3.2}
+Sei $A$ eine Menge.
+\begin{enumerate}[\normalfont(a)]
+\item Durch
+$$a\sim b:\iff a=b\qquad(a,b\in A)$$
+(das heißt durch $\sim~:=\{(a,b)\in A\times A\mid a=b\})$ ist eine Äquivalenzrelation definiert, deren Äquivalenzklassen alle
+einelementig sind ("`keine Vergröberung"').
+\item Durch $a\sim b$ für alle $a,b\in A$ (das heißt durch $\sim~:=A\times A$) ist eine Äquivalenrelation definiert, die nur eine Äquivalenzklasse besitzt ("`totale Vergröberung"').
+\end{enumerate}
+\end{bsp}
+
+\begin{df}\label{1.3.3}
+Sei $A$ eine Menge. Eine Menge $\mathcal Z\subseteq\Pow(A)\setminus\{\emptyset\}$ heißt \emph{Zerlegung}\index{Menge@{\bf Menge}!Zerlegung}
+von $A$, wenn $\bigcup\mathcal Z=A$ und $\forall B,C\in \mathcal Z:(B=C\text{ oder }B\cap C=\emptyset)$. Mit anderen
+Worten: Eine Zerlegung von $A$ ist eine Menge von nichtleeren paarweise disjunkten Teilmengen von $A$, deren Vereinigung ganz $A$ ist.
+\end{df}
+
+\begin{bsp}\label{1.3.4}
+Sei $A$ eine Menge.
+\begin{enumerate}[\normalfont(a)]
+\item $\{\{a\}\mid a\in A\}$ ist eine Zerlegung von $A$ ("`keine Vergröberung"').
+\item $\{A\}$ ist eine Zerlegung von $A$ ("`totale Vergröberung"').
+\end{enumerate}
+\end{bsp}
+
+\begin{df}\label{1.3.5}
+Sei $A$ eine Menge.
+\begin{enumerate}[\normalfont(a)]
+\item
+Zu jeder Äquivalenzrelation $\sim$ auf $A$ definieren wir die zugehörige \emph{Quotientenmenge}\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!Quotientenmenge}
+$$A\underbrace{/}_\text{"`modulo"'}\text{$\sim$}$$
+als die Menge der Äquivalenzklassen von $\sim$:
+$$A/\text{$\sim$}:=\{\widetilde a\mid a\in A\}$$
+\item
+Zu jeder Zerlegung $\mathcal Z$ von $A$ definieren wir eine Relation $\sim_\mathcal Z$ auf A durch
+$$a\sim_\mathcal Zb:\iff\exists Z\in\mathcal Z:\{a,b\}\subseteq Z$$\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!z@$\sim_\mathcal{Z}$}
+\end{enumerate}
+\end{df}
+
+\begin{sat}\text{\rm[$\to$\ref{1.2.7}]} \label{1.3.6} Sei $A$ eine Menge. Die Zuordnungen
+\begin{align*}
+\sim&\mapsto A/\text{$\sim$}\\
+\sim_\mathcal Z&\mapsfrom\mathcal Z
+\end{align*}
+vermitteln eine Bijektion zwischen der Menge der Äquivalenzrelationen auf $A$ und der Menge der Zerlegungen von $A$.
+\end{sat}
+
+\begin{proof}
+Zu zeigen ist:
+\begin{enumerate}[\normalfont(a)]
+\item Ist $\sim$ eine Äquivalenzrelation auf $A$, so ist $A/\text{$\sim$}$ eine Zerlegung von $A$.
+\item Ist $\mathcal Z$ eine Zerlegung von $A$, so ist $\sim_\mathcal Z$ eine Äquivalenzrelation auf $A$.
+\item Ist $\sim$ eine Äquivalenzrelation auf $A$, so ist $\sim_{A/\text{$\sim$}}~=~\sim$.
+\item Ist $\mathcal Z$ eine Zerlegung von $A$, so ist $A/\text{$\sim_\mathcal Z$}~=~\mathcal Z$.
+\end{enumerate}
+\medskip\noindent
+{\bf Zu (a).} Sei $\sim$ eine Äquivalenzrelation auf $A$. Zu zeigen ist:
+\begin{enumerate}[(1)]
+\item $A/\text{$\sim$}\subseteq\Pow(A)\setminus\{\emptyset\}$
+\item $\bigcup(A/\text{$\sim$})=A$
+\item $\forall B,C\in A/\text{$\sim$}:(B=C\text{ oder }B\cap C=\emptyset)$
+\end{enumerate}
+
+\noindent
+Zu (1). Sei $a\in A$. Zu zeigen ist $\widetilde a\in\Pow(A)\setminus\{\emptyset\}$, das heißt $\widetilde a\subseteq A$ und
+$\widetilde a\ne\emptyset$. Ersteres ist klar nach Definition von $\widetilde a$ und letzteres folgt aus $a\sim a$, denn das heißt $a\in\widetilde a$.
+
+\smallskip\noindent
+Zu (2). Es gilt $\bigcup(A/\text{$\sim$})\overset{\ref{1.1.14}}=\{a\mid\exists B\in A/\text{$\sim$}:a\in B\}\overset{\ref{1.3.5}(a)}=\{a\mid\exists b\in A:a\in\widetilde b\}$. Wir zeigen nun die behauptete Gleichheit, indem wir beide Inklusionen getrennt zeigen:
+
+"`$\subseteq$"' Gelte $a\in\bigcup(A/\text{$\sim$})$. Wähle $b\in A$ mit $a\in\widetilde b$. Dann $a\in\widetilde b\subseteq A$,
+also $a\in A$.
+
+"`$\supseteq$"' Gelte $a\in A$. Dann $a\in\widetilde a$, also $a\in\bigcup(A/\text{$\sim$})$.
+
+\smallskip\noindent
+Zu (3). Seien $a,b\in A$. Zu zeigen: $\widetilde a=\widetilde b$ oder $\widetilde a\cap\widetilde b=\emptyset$.
+Gelte $\widetilde a\cap\widetilde b\ne\emptyset$. Zu zeigen ist dann $\widetilde a=\widetilde b$.
+Wähle $c\in\widetilde a\cap\widetilde b$. Dann $a\sim c\sim b$ und daher auch $a\sim b$. Wir zeigen nun
+$\widetilde a\subseteq\widetilde b$ (die andere Inklusion geht analog): Gelte $d\in\widetilde a$. Dann $d\sim a\sim b$, also
+$d\sim b$, das heißt $d\in\widetilde b$.
+
+\medskip\noindent
+{\bf Zu (b).} Sei $\mathcal Z$ eine Zerlegung von $A$. Zu zeigen ist:
+\begin{enumerate}[(1)]
+\item $\forall a\in A:a\sim_\mathcal Za$
+\item $\forall a,b\in A:(a\sim_\mathcal Z b\implies b\sim_\mathcal Z a)$
+\item $\forall a,b,c\in A:((a\sim_\mathcal Z b\et b\sim_\mathcal Z c)\implies a\sim_\mathcal Z c)$
+\end{enumerate}
+
+\noindent
+Zu (1). Sei $a\in A$. Zu zeigen ist $\exists Z\in\mathcal Z:\{a,a\}\subseteq A$. Mit anderen Worten ist
+$$\exists Z\in\mathcal Z:a\in A$$ zu zeigen. Dies ist aber klar, da $a\in A=\bigcup\mathcal Z$.
+
+\smallskip\noindent
+(2) ist klar nach Definition von $\sim_\mathcal Z$, da $\{a,b\}=\{b,a\}$ für alle $a$ und $b$.
+
+\smallskip\noindent
+Zu (3). Seien $a,b,c\in A$ mit $a\sim_\mathcal Zb$ und $b\sim_\mathcal Zc$. Zu zeigen ist $a\sim_\mathcal Zc$.
+Wähle $Z_1,Z_2\in\mathcal Z$ mit $\{a,b\}\in Z_1$ und $\{b,c\}\in Z_2$. Nun gilt $b\in Z_1\cap Z_2$, also
+$Z_1\cap Z_2\ne\emptyset$. Nach Definition \ref{1.3.3} folgt $Z_1=Z_2$, also $\{a,c\}\subseteq Z_1\cup Z_2=Z_1\in\mathcal Z$.
+Also $a\sim_\mathcal Zc$.
+
+\medskip\noindent
+{\bf Zu (c).} Seien $a,b\in A$. Zu zeigen ist $a\sim_{A/\text{$\sim$}}b\iff a\sim b$. Es gilt
+\begin{align*}
+a\sim_{A/\text{$\sim$}}b&\iff\exists Z\in A/\text{$\sim$}:\{a,b\}\subseteq Z\\
+&\iff\exists c\in A:\{a,b\}\subseteq\widetilde c\\
+&\iff\exists c\in A:(a\sim c\sim b)\\
+&\iff a\sim b,
+\end{align*}
+wobei man für den Teil "`$\implies$"' der letzten Äquivalenz die Transitivität von $\sim$ benutzt und für den Teil
+"`$\Longleftarrow$"' dieser Äquivalenz $c:=a$ setzt.
+
+\medskip\noindent
+{\bf Zu (d).} Sei $\mathcal Z$ eine Zerlegung von $A$. Zu zeigen ist:
+\begin{enumerate}[(1)]
+\item $A/\text{$\sim_\mathcal Z$}\subseteq\mathcal Z$
+\item $\mathcal Z\subseteq A/\text{$\sim_\mathcal Z$}$
+\end{enumerate}
+
+\noindent
+Zu (1). Sei $a\in A$. Zu zeigen ist $\widetilde a^\mathcal Z\in\mathcal Z$. Es gilt
+$$\widetilde a^\mathcal Z=\{b\in A\mid a\sim_\mathcal Zb\}=\{b\in A\mid\exists Z\in\mathcal Z:\{a,b\}\subseteq Z\}.$$
+Wähle $Z_0\in\mathcal Z$ mit $a\in Z_0$ (dies geht, da $a\in A=\bigcup\mathcal Z$). Es reicht nun zu zeigen, dass
+$$\{b\in A\mid\exists Z\in\mathcal Z:\{a,b\}\subseteq Z\}=Z_0.$$
+\begin{enumerate}
+\item["`$\subseteq$"'] Sei $b\in A$ und $Z\in\mathcal Z$ mit $\{a,b\}\subseteq Z$. Zu zeigen: $b\in Z_0$. Es gilt $a\in Z\cap Z_0$. Daher $Z\cap Z_0\ne\emptyset$ und daher $Z=Z_0$. Also $b\in Z_0$ wie gewünscht.
+\item["`$\supseteq$"'] Sei $b\in Z_0$. Dann gilt $\{a,b\}\subseteq Z_0\in\mathcal Z$.
+\end{enumerate}
+
+\smallskip\noindent
+Zu (2). Sei $Z\in\mathcal Z$. Zu zeigen ist $\exists a\in A:Z=\widetilde a^\mathcal Z$. Wähle $a\in Z$ fest (das geht, da $Z\ne\emptyset$). Wir behaupten nun $Z=\widetilde a^\mathcal Z$.
+\begin{enumerate}
+\item["`$\subseteq$"'] Sei $b\in Z$. Zu zeigen ist $a\sim_\mathcal Zb$. Dies ist klar, da $\{a,b\}\subseteq Z\in\mathcal Z$.
+\item["`$\supseteq$"'] Sei $b\in\widetilde a^\mathcal Z$, das heißt $b\sim_\mathcal Za$. Also $\{a,b\}\subseteq Z'$ für ein
+$Z'\in\mathcal Z$.
+Zu zeigen ist $b\in Z$. Nun gilt $a\in Z\cap Z'$ und damit $Z=Z'$. Somit $b\in\{a,b\}\subseteq Z$.
+\end{enumerate}
+\end{proof}
+
+\begin{bsp}\label{1.3.7}
+Unter der Bijektion aus obigem Satz \ref{1.3.6} entsprechen sich die Äquivalenzrelation $\sim$ auf $\Z$ definiert durch
+$$a\sim b:\iff\text{$a-b$ ist gerade Zahl}\qquad(a,b\in\Z)$$
+und die Zerlegung
+$$\{\{n\in\Z\mid\text{$n$ gerade}\},\{n\in\Z\mid\text{$n$ ungerade}\}\}.$$
+\end{bsp}
+
+\red{Bis hierher sollten wir am 4. November kommen.}
+
+\begin{sat}[Homomorphiesatz für Mengen]\label{1.3.8}
+Sei $\sim$ ein Äquivalenzrelation auf $A$ und $f\colon A\to B$ eine Abbildung
+derart, dass
+$$a_1\sim a_2\implies f(a_1)=f(a_2)$$
+für alle $a_1,a_2\in A$.
+\begin{enumerate}[\rm(a)]
+\item
+Es gibt genau eine Abbildung $\overline f\colon A/\text{$\sim$}\to B$ mit
+$$\overline f(\widetilde a)=f(a)$$ für alle $a\in A$. 
+\item
+$\text{$\overline f$ ist injektiv}\iff\forall a_1,a_2\in A:(a_1\sim a_2\iff f(a_1)=f(a_2))$
+\item
+$\text{$\overline f$ ist surjektiv}\iff\text{$f$ ist surjektiv}$
+\end{enumerate}
+\end{sat}
+
+\begin{proof}
+{\bf (a)} Klar ist, dass es höchstens eine solche Abbildung gibt,
+denn die Bedingung $\overline f(\widetilde a)=f(a)$ legt in eindeutiger
+Weise fest, was das Bild von $\widetilde a$ unter $\overline f$ sein soll (nämlich $f(a)$) und es gilt
+$A/\text{$\sim$}=\{\widetilde a\mid a\in A\}$.
+
+Zu zeigen bleibt, dass jedem $\widetilde a$ nur ein Bild zugeordnet wird. Man nennt dies die \emph{Wohldefiniertheit}\index{Abbildung@{\bf Abbildung}!Wohldefiniertheit}
+von $\overline f$. Man muss dazu prüfen, dass für $a_1,a_2\in A$ gilt:
+$$\widetilde{a_1}=\widetilde{a_2}\implies f(a_1)=f(a_2).$$
+Dies entspricht genau der vorausgesetzten Bedingung.
+
+{\bf (c)} Offensichtlich haben $f$ und $\overline f$ dieselbe Zielmenge
+und dasselbe Bild. Benutze nun \ref{1.1.29}(d).
+
+{\bf (b)} Zieht man die Voraussetzung an $f$ in Betracht, dann ist zu zeigen
+$$\text{$\overline f$ injektiv}\iff\forall a_1,a_2\in A:(f(a_1)=f(a_2)\implies a_1\sim a_2).$$
+Dies kann man aber umschreiben zu
+$$\text{$\overline f$ injektiv}\iff\forall a_1,a_2\in A:(\overline f(\widetilde{a_1})=\overline f(\widetilde{a_2})\implies
+\widetilde{a_1}=\widetilde{a_2}),$$
+was nach Definition \ref{1.1.19} gilt.
+\end{proof}
+
+[Zeichne Bild!]
+
+\begin{defprop}\label{1.3.9}
+Sei $f\colon A\to B$ eine Abbildung. Dann wird durch
+$$a_1\sim_f a_2:\iff f(a_1)=f(a_2)\qquad(a_1,a_2\in A)$$
+eine Äquivalenzrelation $\sim_f$ auf $A$ definiert, die wir die durch $f$ \emph{induzierte Äquivalenzrelation}\index{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!induziert} nennen.
+\end{defprop}
+
+\begin{bem}\label{1.3.10}
+Sei $\sim$ eine Äquivalenzrelation auf der Menge $A$. Dann wird $\sim$ durch eine Abbildung
+$f\colon A\to B$ in eine weitere Menge $B$ induziert, nämlich durch die \emph{kanonische Surjektion}\index{Abbildung@{\bf Abbildung}!kanonische Surjektion}
+$f\colon A\to A/\text{$\sim$},\ a\mapsto\widetilde a$ (in der Tat: $a\sim b\iff\widetilde a=\widetilde b\iff f(a)=f(b)$ für alle
+$a,b\in A$).
+\end{bem}
+
+\begin{kor}[Isomorphiesatz für Mengen]\label{1.3.11}
+Sei $f\colon A\to B$ eine Abbildung. Dann ist\\
+$\overline f\colon A/\text{$\sim_f$}\to f(A)$
+definiert durch $\overline f(\widetilde a)=f(a)$ für $a\in A$ eine Bijektion.
+\end{kor}
+
+\begin{center}
+\begin{tikzpicture}
+\node(A){A};
+\node[right = 9cm of A](B){B};
+\node[below left = 1.1cm of B](BB){f(A)};
+\node[below left=.02 cm of A, blue]{$A/\hspace{-0.3em}\sim_f$};
+\node[above right =0.5cm of A, green](f){$\sim_f$};
+\node[right = 3cm of f, red](fob){$\overline{f}$};
+\node[right = 1.5cm of f, orange](ff){$f$};
+%\node[right = .5cm of fob, orange]{$\overline{f}:A/\sim_f\rightarrow f(A)$ bijektiv.};
+\draw (2,-2) circle (2cm);
+\draw (8,-2) circle (2cm);
+
+\draw (7.6,-2.1) circle (1.4cm);
+
+\filldraw (2,-.5) circle (1pt);
+\filldraw (3,-.7) circle (1pt);
+\draw[green] (2,-.5) -- (3,-.7);
+\draw[blue] (2.5,-.6) ellipse (.8 and .3);
+
+\filldraw (7,-1) circle (1pt);
+\draw[->, thick, orange] (3,-.7) -- (7,-1);
+\draw[->, thick, orange] (2,-.5) .. controls (5,0) .. (7,-1);
+
+\filldraw (2.5,-1.5) circle (1pt);
+\filldraw (3.5,-1.7) circle (1pt);
+\filldraw (3.5,-2.5) circle (1pt);
+\filldraw (2.5,-3) circle (1pt);
+\draw[green] (2.5,-1.5) -- (3.5,-1.7);
+\draw[green] (2.5,-1.5) -- (3.5,-2.5);
+\draw[green] (2.5,-1.5) -- (2.5,-3);
+\draw[green] (3.5,-2.5) -- (2.5,-3);
+\draw[green] (3.5,-2.5) -- (3.5,-1.7);
+\draw[green] (3.5,-1.7) -- (2.5,-3);
+
+\filldraw (7,-2) circle (1pt);
+\draw[->, thick, orange] (3.5,-1.7) -- (7,-2);
+\draw[->, thick, orange] (3.5,-2.5) -- (7,-2);
+\draw[->, thick, orange] (2.5,-1.5) .. controls (5,-1) .. (7,-2);
+\draw[->, thick, orange] (2.5,-3) .. controls (5,-3) .. (7,-2);
+\draw[blue] (2.9,-2.2) ellipse (.8 and 1);
+
+\filldraw (1.7,-2) circle (1pt);
+
+\filldraw (7.5, -3) circle (1pt);
+\draw[->, thick, orange] (1.7,-2) .. controls (2,-4.5) and (6,-4) .. (7.5,-3);
+\draw[blue] (1.7,-2) circle (.2);
+
+\filldraw (.5,-2.5) circle (1pt);
+\filldraw (1.1,-2) circle (1pt);
+\filldraw (.7,-1.5) circle (1pt);
+\draw[green] (.5,-2.5) -- (1.1,-2) -- (.7,-1.5) -- cycle;
+
+\filldraw (8.5,-3) circle (1pt);
+\draw[->, thick, orange] (1.1,-2) .. controls (2.5,-5) and (6,-5) .. (8.5,-3);
+\draw[->, thick, orange] (.7,-1.5) .. controls (2,-5.5) and (6,-5.5) .. (8.5,-3);
+\draw[->, thick, orange] (.5,-2.5) .. controls (2,-6) and (6,-6) .. (8.5,-3);
+\draw[blue] (.7,-2) ellipse (.5 and .7);
+
+\draw[->, thick, red] (3.3,-.6) .. controls (5,-.3) .. (7,-1);
+\draw[->, thick, red] (3.7,-2.2) -- (7,-2);
+\draw[->, thick, red] (1.7,-2.2) .. controls (2,-4) and (6,-3.5) .. (7.5,-3);
+\draw[->, thick, red] (.7,-2.7) .. controls (2,-6) and (6,-7) .. (8.5,-3);
+
+\filldraw (9,-1) circle (1pt);
+
+\filldraw (9.5,-2) circle (1pt);
+
+\end{tikzpicture}
+\end{center}
+\end{document}

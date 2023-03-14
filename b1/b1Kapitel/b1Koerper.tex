@@ -1,0 +1,298 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\section{Definition und Beispiele von Körpern}
+
+\begin{defprop}\label{4.1.1}
+Sei $(A,+,\cdot)$ ein kommutativer Ring [$\to$ \ref{3.1.1}]. Die Elemente von $A^\times :=\left\{a\in A\mid \exists b\in A:ab=1\right\}$ nennt man \emph{Einheiten}\index{kommutativer Ring@{\bf kommutativer Ring}!Einheiten/invertierbare Elemente ($A^\times$)} oder \emph{invertierbare Elemente} von $A$. Es ist $(A^\times, \cdot)$ mit $\cdot:A^\times\times A^\times\to A^\times, (a,b)\mapsto ab$ eine abelsche Gruppe.
+\end{defprop}
+\begin{proof}
+$\cdot:A^\times\times A^\times\to A^\times$ ist wohldefiniert, denn sind $a,b\in A^\times$, so auch $ab\in A^\times$. In der Tat: Seien $a,b\in A^\times$. Dann gibt es $a',b'\in A$ mit $aa'=1=bb'$. Es folgt $(ab)(a'b')\overset{\text{\ref{3.1.2} (e)}}=(aa')(bb')=1\cdot1\overset{\text{(\.N)}}=1$, also $ab\in A^\times$. Die Axiome (K), (A), (N) für $(A^\times,\cdot)$ [$\to$ \ref{2.1.1}] folgen aus den Axiomen (\. K), (\. A), (\. N) für $(A,+,\cdot)$ [$\to$ \ref{3.1.1}], wobei $1\in A^\times$ zu beachten ist. Um schließlich (I) für $(A^\times,\cdot)$ zu zeigen, sei $a\in A^\times$. Dann gibt es $b\in A$ mit $ab=1$. Es gilt aber $ba\overset{\text{(\. K)}}=ab = 1$, also $b\in A^\times$. Also haben wir $b\in A^\times$ gefunden mit $ab=1$.
+\end{proof}
+
+\begin{bem}\label{4.1.2}
+In jedem kommutativen Ring $(A,+,\cdot)$ "`steckt"' also nicht nur die additive abelsche Gruppe $(A,+)$, sondern auch die multiplikativ geschriebene Einheitengruppe $(A^\times,\cdot)$. Oft ist $A^\times$ viel kleiner als $A$.
+\end{bem}
+
+\begin{bsp}\label{4.1.3}
+\begin{enumerate}[\normalfont(a)]
+\item $\Z^\times = \left\{-1,1\right\}, \Q^\times=\Q\setminus\left\{0\right\},\R^\times=\R\setminus\left\{0\right\}$
+\item $\overline{3}\cdot\overline{7}=\overline{1}=1$ in $\Z/(10)$, denn $3\cdot 7 \equiv_{(10)} 1$, also $\overline{3},\overline{7}\in(\Z/(10))^\times$\\
+$\overline{2}\cdot \overline{5}=\overline{0}=0$ in $\Z/(10)$, also $\overline{2},\overline{5}\notin(\Z/(10))^\times$
+(denn wäre etwa $\overline2\in(\Z/(10))^\times$, so wäre $\overline5=\overline2^{-1}\cdot\overline2\cdot\overline5=\overline2^{-1}\cdot0=0$
+in $\Z/(10)$)\\
+$\overline{1}\cdot\overline{1}=1$ in $\Z/(10)$, also $\overline{1}\in(\Z/(10))^\times$\\
+$\overline{4}\cdot\overline{5}=\overline{6}\cdot\overline{5}=\overline{8}\cdot\overline{5}=0$ in $\Z/(10)$, also $\overline{4},\overline{6},\overline{8}\notin(\Z/(10))^\times$\\
+$\overline{9}=\overline{-1}\in(\Z/(10))^\times$, da $\overline{-1}\cdot\overline{-1}=\overline{1}=1$.\\
+Insgesamt $(\Z/(10))^\times=\left\{\overline{1},\overline{3},\overline{7},\overline{9}\right\}\subseteq \Z/(10)=\left\{\overline{0},\overline{1},\overline{2},\ldots,\overline{9}\right\}$
+\end{enumerate}
+\end{bsp}
+
+\begin{df}\label{4.1.4}
+Ein kommutativer Ring $A$ heißt \emph{Körper}\index{Körper@{\bf Körper}}, wenn $A^\times=A\setminus\left\{0\right\}$.
+\end{df}
+
+\begin{bsp}\label{4.1.5}
+\begin{enumerate}[\normalfont(a)]
+\item Ein einelementiger kommutativer
+Ring $A=\left\{0\right\}=\left\{1\right\}$ [$\to$ \ref{3.1.3}, \ref{3.1.4} (a)] ist kein Körper, denn $A^\times=A$.
+\item $\Z/(2)$ und $\Z/(3)$ sind Körper.
+\item $\Z/(4)$ ist kein Körper, denn $\overline{2}\cdot\overline{2}=0$ und daher $\overline{2}\notin(\Z/(4))^\times$.
+\item $\Z$ ist kein Körper.
+\item $\Q$ und $\R$ sind Körper.
+\end{enumerate}
+\end{bsp}
+
+\begin{df}\label{4.1.6}
+Wir nennen $n\in \N$ mit $n\geq 2$ eine \emph{Primzahl}\index{Primzahl@{\bf Primzahl} ($\P$)}, wenn es keine $s,t\in \N$ mit $s,t\geq 2$ und $n=st$ gibt. Wir schreiben $\P=\left\{2,3,5,7,11,13,17,\ldots\right\}$ für die Menge der Primzahlen.
+\end{df}
+
+\begin{sat}\label{4.1.7}
+Sei $n\in \N_0$. Dann $\Z/(n)$ Körper $\iff n\in\P$.
+\end{sat}
+\begin{proof}
+\begin{enumerate}[{Fall} 1:]
+\item $n=0$
+$$\Z/(n)=\Z/(0)=\left\{\left\{m\right\}\mid m\in\Z\right\}\cong \Z ~\text{(vgl. \ref{2.3.8} (b))}$$
+Da $\Z$ kein Körper ist und $\Z/(n)\cong \Z$, ist $\Z/(n)$ auch kein Körper (vgl. \ref{2.2.15}). Gleichzeitig ist auch $n= 0\notin\P$. Also sind beide Aussagen falsch und damit äquivalent.
+\item $n=1$
+
+\noindent
+$\Z/(1)=\left\{0\right\}$ (vgl. \ref{2.3.8} (a)) ist kein Körper [$\to$ \ref{4.1.5} (a)]. Gleichzeitig $n=1\notin\P$.
+\item $n\in\N,n\geq 2$.
+\begin{itemize}
+\item["`$\Longrightarrow$"'] Sei $\Z/(n)$ ein Körper. Zu zeigen: $n\in\P$.\\
+Seien $s,t\in\N$ mit $n=st$. Zu zeigen: $s=1$ oder $t=1$. Beachte $s=1\iff t=n$ sowie $t=1\iff s=n$. Wir zeigen also:
+$t=n$ oder $s=n$.
+
+Annahme: Weder $t=n$ noch $s=n$.\\
+Dann $1\leq t\leq n-1$ und $1\leq s\leq n-1$.\\
+Also $\overline{s},\overline{t}\in\left\{\overline{1},\ldots,\overline{n-1}\right\}=(\Z/(n))^\times$.\\
+Dann
+$0=\overline{n}=\overline{st}=\overline{s}\overline{t}\in(\Z/(n))^\times$, da $(\Z/(n))^\times$ abelsche Gruppe. $\lightning$
+\item["`$\Longleftarrow$"'] Sei $n\in\P$. Zu zeigen: $A:=\Z/(n)$ Körper. Zu zeigen $A^\times = A\setminus \left\{0\right\}$.\\
+"`$\subseteq$"' klar, da $0a=0\neq 1$ für $a\in A$, also $0\notin A^\times$.\\
+"`$\supseteq$"': Sei $a\in A\setminus \left\{0\right\}$. Zu zeigen: $a\in A^\times$.
+$$a\in A^\times\iff 1\in (a)\iff A=(a)\iff \# (a)=\# A\iff\# (a) =n.$$
+Da $(a)$ eine Untergruppe der additiven Gruppe von $A$ ist, gilt nach \ref{2.3.7}
+\[
+\underbrace{(\# (a))}_{\over{\geq 2}{\over{{\text{wegen }\left\{0,a\right\}\subseteq (a)}}{\text{und }0\neq a}}}(\# (A/(a)))=\# A=n\in\P,
+\]
+woraus $\# (a)=n$ folgt wie gewünscht.
+\end{itemize}
+\end{enumerate}
+\end{proof}
+
+\begin{kor}["`Lemma von Euklid"']\label{4.1.8}{\rm[\href{http://de.wikipedia.org/wiki/Euklid}{Euklid von Alexandria} $\approx -300$]}
+Sei $n\in \N$ mit $n\geq 2$. Dann
+$$n\in\P\iff \forall a,b\in\N:(ab\in(n)\Longrightarrow(a\in(n)\text{ oder }b\in(n)))$$
+\end{kor}
+\begin{proof}
+\begin{itemize}
+\item["`$\Longleftarrow$"'] Gelte die Bedingung rechts und seien $s,t\in\N$ mit $n=st$. Zu zeigen: $s=1$ oder $t=1$. Nun $st=n\in(n)$ und daher $s\in(n)$ oder $t\in (n)$. Wäre $s\neq 1$ und $t\neq 1$, so $s<n$ und $t<n$ und damit $s=t=0~\lightning$.
+\item["`$\Longrightarrow$"'] Gelte $n\in\P$ und seien $a,b\in\N$ mit $a\notin(n)$ und $b\notin (n)$. Zu zeigen: $ab\notin(n)$. Wegen $\overline{a}\neq 0$ und $\overline{b}\neq 0$ in $\Z/(n)$ gilt nach \ref{4.1.7} $\overline{a},\overline{b}\in(\Z/(n))^\times$ und daher nach \ref{4.1.1} $\overline{ab}=\overline{a}\overline{b}\in(\Z/(n))^\times$. Insbesondere $\overline{ab}\neq 0$ in $\Z/(n)$.
+\end{itemize}
+\end{proof}
+
+\begin{bem}\label{4.1.9}
+Mit dem "`Wissen"' über "`Primfaktorzerlegungen"' aus der Schule ist \ref{4.1.8} auch klar, aber wurde dort dieses "`Wissen"' begründet? Mit \ref{4.1.8} kann man es begründen! Wir werden dies aber in der Linearen Algebra II viel allgemeiner machen!
+\end{bem}
+
+\begin{nt}\label{4.1.10}
+$\F_p:=\Z/(p)$ für $p\in\P$
+\end{nt}
+
+\begin{nt}\label{4.1.11}
+Sei $A$ ein kommutativer Ring, $a\in A$ und $b\in A^\times$.
+\begin{align*}
+\frac{a}{b}&:=ab^{\underset{\tikz\node[inner sep=0pt,outer sep=-2pt](p1){};}{-1}}\\
+\text{"`$a$ durch $b$"'}&\qquad\tikz\node(p2){[$\to$ \ref{2.1.2} (d)]};
+\end{align*}
+\begin{tikzpicture}[overlay]
+\path (p2) edge [->,bend left=20] (p1);
+\end{tikzpicture}
+\end{nt}
+
+\begin{bsp}\label{4.1.12}
+$\frac{\overline{3}}{\overline{4}}=\overline{3}\cdot\overline{2}=\overline{6}$ in $\F_7$, da $\overline{4}^{-1}=\overline{2}$, denn $\overline{2}\cdot\overline{4}=\overline{8}=\overline{1}=1$.
+\end{bsp}
+
+\section[tocentry={Die komplexen Zahlen}]{Die komplexen Zahlen \\ ~{\small[\href{http://de.wikipedia.org/wiki/Leonhard_Euler}{Leonhard Euler} *1707 \dag 1783]}}
+
+\begin{df}\label{4.2.1}
+Sei $A$ ein kommutativer Ring. Ein Element $a\in A$ heißt eine \emph{imaginäre Einheit}\index{kommutativer Ring@{\bf kommutativer Ring}!imaginäre Einheit ($\i:=\sqrt{-1}$)} oder \emph{Wurzel aus $-1$} in $A$, wenn $a^2=-1$.
+\end{df}
+
+\begin{bem}\label{4.2.2}
+Schreiben wir $\i$, so meinen wir meist stillschweigend, dass $\i$ eine imaginäre Einheit ist (genauso für $\j$).
+\end{bem}
+
+\begin{sat}\label{4.2.3}
+Sei $K$ ein Körper, der keine imaginäre Einheit besitzt.
+\begin{enumerate}[\rm(a)]
+\item Es gibt einen kommutativen Ring $C$ und (eine imaginäre Einheit) $\i\in C$ mit {\rm[$\to$\ref{3.2.4}]} $$C=K[\i].$$
+\item Gilt $C=K[\i]$, so $C=\{a+b\i\mid a,b\in K\}$ und für alle $a,b\in K$ gilt:
+$$a+b\i=0\iff a=b=0.$$
+\item Gilt $C=K[\i]$ und $D=K[\j]$, so gibt es genau einen Ringisomorphismus $\ph\colon C\to D$ mit $\ph(a)=a$ für alle $a\in K$ und $\ph(\i)=\j$.
+\end{enumerate}
+\end{sat}
+\begin{proof}
+{\bf (a).} Es ist $\ph\colon K\to K[X]/(X^2+1),\ a\mapsto\overset{\text{---}_{(X^2+1)}}{a~~~~~~~~}$ eine Ringeinbettung [$\to$\ref{3.2.10}]. In der Tat: $\ph$ ist ein Ringhomomorphismus
+[$\to$ \ref{3.2.8}] (nämlich die Einschränkung [$\to$ \ref{1.1.31}] des kanonischen Epimorphismus [$\to$ \ref{3.3.17}] von $K[X]$ nach $K[X]/(X^2+1)$) und es gilt $\ker\ph=\{0\}$, denn ist $a\in K$
+mit $\ph(a)=0$, so gilt $a\in(X^2+1)$ und damit $a=0$, denn außer dem Nullpolynom hat jedes Polynom im Hauptideal [$\to$\ref{3.3.11}] $(X^2+1)$ einen Grad [$\to$\ref{3.2.6}]  $\ge2$.
+Nun ist $\hat\ph\colon K\to\im\ph$ ein Ringisomorphismus und $K':=\im\ph$ ein Unterring von $K[X]/(X^2+1)$ [$\to$\ref{imfsubring}].
+Es reicht, die Behauptung für $K'$ statt $K$ zu zeigen, denn
+$K\cong K'$ (vergleiche \ref{2.2.15} und Beweis von \ref{polynomialringexists}). Setze
+$$\i:=\overset{\text{---}_{(X^2+1)}}{X~~~~~~~~}\qquad\text{und}\qquad C:=K'[\i]\subseteq K[X]/(X^2+1).$$
+Dann $\i^2=\overline X^2=\overline{X^2}=\overline{-1}=-1$ in $C$.
+
+\medskip\noindent{\bf (b).} Sei $C=K[\i]$.
+Wie in \ref{3.2.5} zeigt man sofort $K[\i]=\{a+b\i\mid a,b\in K\}$. Seien $a,b\in K$.
+Zu zeigen ist $a+b\i=0\iff a=b=0$.
+Hier ist "`$\Longleftarrow$"' klar. Um "`$\Longrightarrow$"' zu zeigen, gelte $a+b\i=0$. Wäre $b\ne0$, dann wäre $\i=-\frac ab\in K$ im Widerspruch zur Voraussetzung, dass $K$ keine imaginäre Einheit besitzt. Also $b=0$ und damit natürlich $a=0$.
+
+\medskip\noindent{\bf (c).} Eindeutigkeit: Es gilt sogar mehr:
+Gilt $C=K[\i]$ und ist $D$ irgendein kommutativer Oberring von $C$ und $j\in D$, so gilt für jeden Ringhomomorphismus $\ph\colon C\to D$ mit $\ph(a)=a$ für alle $a\in K$ und $\ph(\i)=j$, dass $\ph(a+b\i)=\ph(a)+\ph(b)j$ für alle $a,b\in K$ und hierdurch ist $\ph$ eindeutig festgelegt, denn $C\overset{(b)}=\{a+b\i\mid a,b\in K\}$.
+
+Existenz: Gelte $C=K[\i]$ und $D=K[\j]$. Es ist $\ph\colon C\to D,\ a+b\i\mapsto a+b\j$ nach (b) wohldefiniert. Es ist $\ph$ ein Homomorphismus [$\to$\ref{3.2.8}], denn
+\begin{align*}
+\ph((a+b\i)+(c+d\i))&=\ph((a+c)+(b+d)\i)=(a+c)+(b+d)\j\\
+&=(a+b\j)+(c+d\j)=\ph(a+b\i)+\ph(c+d\i)\text{ und}
+\end{align*}
+\begin{align*}
+\ph((a+b\i)(c+d\i))&=\ph(ac+bd\i^2+(ad+bc)\i)=\ph((ac-bd)+(ad+bc)\i)\\
+&=(ac-bd)+(ad+bc)\j=(a+b\j)(c+d\j)\text{ für alle }a,b,c,d\in K
+\end{align*}
+und $\ph(1)=\ph(1+0\i)=1+0\j=1$. Es ist
+$\ph$ injektiv, denn sind $a,b\in K$ mit $\ph(a+b\i)=0$, so gilt $a+b\j=0$ und daher nach (b) (angewandt auf $D=K[\j]$) $a=b=0$ und damit $a+b\i=0$.
+Schließlich ist wieder mit (b) angewandt auf $D=K[\j]$ die Abbildung $\ph$ auch surjektiv.
+\end{proof}
+
+\red{Bis hierher sollten wir am 25. November kommen.}
+
+\begin{nt}\label{4.2.4}
+Ist $K$ ein Körper mit imaginärer Einheit, so setzen wir $K[\i]:=K$. Ist $K$ ein Körper ohne imaginäre Einheit, so bezeichne $K[\i]$ ab jetzt einen fest gewählten kommutativen Ring
+$C$ mit $C=K[\i]$, in dem $\i$ eine imaginäre Einheit ist [$\to$\ref{4.2.3}(a)]. Wegen \ref{4.2.3}(c) ist $K[\i]$ im Wesentlichen eindeutig bestimmt.
+\end{nt}
+
+\begin{sat}\label{4.2.5}
+Sei $K$ ein Körper. Dann ist auch $K[\i]$ ein Körper.
+\end{sat}
+\begin{proof}
+Der Fall, dass $K$ eine imaginäre Einheit besitzt, ist trivial, da dann $K[\i]=K$. Besitze also $K$ keine imaginäre Einheit und wende \ref{4.2.3}(b) an. Seien also
+$a,b\in K$ mit $a+b\i\ne0$. Dann $(a+b\i)(a-b\i)=a^2+b^2$. Es reicht zu zeigen $a^2+b^2\ne0$, denn dann
+$$(a+b\i)\frac{a-b\i}{a^2+b^2}=1$$ und daher $a+b\i\in K[\i]^\times$ wie gewünscht. Wir nehmen an, dass $a^2+b^2=0$ und suchen einen Widerspruch.
+Wäre $a\ne0$, so $1+(\frac ba)^2=\frac{a^2+b^2}{a^2}=0$ und damit $-1=(\frac ba)^2$ im Widerspruch dazu, dass $K$ keine imaginäre Einheit besitzt. Also $a=0$. Analog
+zeigt man $b=0$. Dann aber $a=b=0$ im Widerspruch zu $a+b\i\ne0$.
+\end{proof}
+
+\begin{df}\label{4.2.6}
+$\C:=\R[\i]$ nennt man den Körper der \emph{komplexen Zahlen}\index{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)}.
+\end{df}
+
+\begin{bem}\label{4.2.7}
+Ist $\i$ eine imaginäre Einheit in einem kommutativen Ring $A$, so auch $\j:=-\i$, denn $\j^2=\j\j=(-\i)(-\i)=-\i(-\i)=-(-\i\i)=\i\i=\i^2=-1$. Ist nun $K$ ein Körper ohne imaginäre Einheit,
+so ist $K[\i]=K[-\i]$ und nach \ref{4.2.3}(c) gibt es genau
+einen Ringautomorphismus [$\to$\ref{3.2.10}] $\ph$ von $K[\i]$ mit $\ph(a)=a$ für alle $a\in K$ und $\ph(\i)=-\i$. Auf $\C$ bezeichnet man
+diesen Ringautomorphismus $$\C\to\C,\ a+b\i\mapsto a-b\i\qquad(a,b\in\R)$$  als \emph{komplexe Konjugation}\index{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!komplexe Konjugation} und $a-b\i$ als das \emph{komplex Konjugierte} zu $a+b\i$.
+Wir schreiben auch $z^*$ für das komplex Konjugierte von $z\in\C$. Andere Autoren schreiben dafür meist $\overline z$, aber dies könnte nicht nur zur Verwechslung mit unserer Notation für Kongruenzklassen führen, sondern ist auch aus anderen Gründen weniger modern.
+\end{bem}
+
+\begin{df}\label{4.2.8}
+Sei $z\in\C$. Wegen \ref{4.2.3}(b) können wir $z=a+b\i$ mit eindeutig bestimmten $a,b\in\R$ schreiben. Wir definieren den \emph{Realteil}\index{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Realteil} von $z$ durch
+$$\rp(z):=\frac12(z+z^*)=a\in\R,$$
+den \emph{Imaginärteil}\index{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Imaginärteil} von $z$ durch $$\ip(z):=\frac1{2\i}(z-z^*)=b\in\R$$ und den \emph{Betrag}\index{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Betrag}
+von $z$ durch $$|z|:=\sqrt{a^2+b^2}=\sqrt{z^*z}\in\R_{\ge0}.$$
+\end{df}
+
+\begin{df}\label{4.2.9}
+Sei $K$ ein Körper und $p\in K[X]$ ein Polynom. Ein Element $a\in K$ heißt \emph{Nullstelle}\index{Polynom@{\bf Polynom}!Nullstelle} von $p$, wenn $p(a)=0$ [$\to$\ref{writepx}].
+\end{df}
+
+\begin{pro}["`Abspalten von Nullstellen"']\label{4.2.10}
+Ist $K$ ein Körper, $p\in K[X]$ und $a\in K$ eine Nullstelle von $p$, so gibt es $q\in K[X]$ mit $p=(X-a)q$.
+\end{pro}
+\begin{proof}
+Zu zeigen ist, dass $p$ im Hauptideal [$\to$\ref{3.3.11}] $(X-a)$ von $K[X]$ liegt. Dazu äquivalent ist, dass $\overline p=0$ in $K[X]/(X-a)$. Ist $p=\sum_{k=0}^na_kX^k$ mit
+$n\in\N_0$ und $a_0,\dots,a_n\in K$, so gilt $\overline p\overset{\ref{3.3.3}}=\sum_{k=0}^n\overline{a_k}\overline X^k\overset{\overline X=\overline a}=
+ \sum_{k=0}^n\overline{a_k}\,\overline a^k\overset{\ref{3.3.3}}=\overline{p(a)}=\overline0=0$.
+\end{proof}
+
+\begin{kor}\label{4.2.11}
+Sei $K$ ein Körper. Ist dann $p\in K[X]$ und $\deg(p)=n\in\N_0$ {\rm[$\to$\ref{3.2.6}]}, so hat $p$ höchstens $n$ Nullstellen in $K$.
+\end{kor}
+\begin{proof}
+Wir zeigen durch Induktion nach $n\in\N_0$, dass jedes $p\in K[X]$ vom Grad $n$ höchstens $n$ Nullstellen in $K$ hat.
+
+\underline{$n=0$}\quad Sei $p\in K[X]$ vom Grad $0$. Dann gilt $p\in K^\times=K\setminus\{0\}$. Dann hat $p$ offensichtlich keine Nullstelle in $K$.
+
+\underline{$n-1\to n\quad(n\ge1)$} Sei $p\in K[X]$ vom Grad $n$. Hat $p$ keine Nullstelle, so sind wir fertig. Sonst wählen wir eine Nullstelle $a\in K$ von $p$. Nach
+\ref{4.2.10} gibt es $q\in K[X]$ mit $p=(X-a)q$. Offensichtlich gilt $\deg(q)=\deg(p)-1=n-1$, weswegen nach Induktionsvoraussetzung $q$ höchstens $n-1$ Nullstellen
+in $K$ hat. Da in einem Körper ein Produkt zweier Elemente offensichtlich nur dann null sein kann, wenn schon einer der beiden Faktoren null war, ist die einzige Nullstelle,
+die $p$ zusätzlich noch haben kann, offenbar $a$. Also hat $p$ höchstens $n$ Nullstellen in $K$.
+\end{proof}
+
+\begin{sat}[Fundamentalsatz der Algebra]{\rm[\href{http://de.wikipedia.org/wiki/Jean-Robert_Argand}{Jean-Robert Argand} *1768 \dag 1822]}\label{4.2.12}\index{Fundamentalsatz der Algebra@{\bf Fundamentalsatz der Algebra}}
+Jedes Polynom $p\in\C[X]$ vom Grad $\ge1$ hat eine Nullstelle in $\C$.
+\end{sat}
+
+\begin{bem}\label{4.2.13}
+\begin{enumerate}[\normalfont(a)]
+\item Durch sukzessives Abspalten von Nullstellen mit \ref{4.2.10} kann man den Fundamentalsatz der Algebra auch wie folgt formulieren:
+Für jedes $p\in\C[X]$ vom Grad $n\in\N_0$ gibt es komplexe Zahlen $a_1,\dots,a_n\in\C$ und ein $c\in\C^\times$ mit
+$$p=c(X-a_1)\dotsm(X-a_n).$$
+\item Der Fundamentalsatz der Algebra ist so erstaunlich, da wir durch das Adjungieren einer imaginären Einheit zu $\R$ a priori nur sicherstellen, dass das Polynom
+$X^2+1$ eine Nullstelle bekommt. Der Satz besagt, dass damit alle anderen Polynome vom Grad $\ge1$ automatisch auch eine Nullstelle erhalten.
+\item Im 17. Jahrhundert gab es von verschiedenen Mathematikern Äußerungen, die man als eine Vermutung der Gültigkeit des Fundamentalsatz deuten könnte, auch wenn der Begriff der komplexen Zahlen noch nicht auf soliden Grundlagen stand.
+\item Lückenhafte Beweisversuche mit wertvollen Ideen gab es seit 1746 [\href{http://de.wikipedia.org/wiki/Jean-Baptiste_le_Rond_d’Alembert}{Jean-Baptiste le Rond d'Alembert} *1717 \dag 1783]. Mehrere wertvolle Versuche stammen von
+\href{http://de.wikipedia.org/wiki/Carl_Friedrich_Gauß}{Carl Friedrich Gauss} [*1777 \dag 1855], unter anderem der erste algebraische Beweis aus dem Jahr 1816, der im Kern völlig richtig ist aber allerdings erst später auf solide Grundlagen gestellt wurde.
+\item Entgegen dem, was mancherorts geschrieben wird, dürfte der erste (lediglich modulo den damals noch etwas wackligen Grundlagen der Analysis) als richtig geltende Beweis des Fundamentalsatzes von \href{http://de.wikipedia.org/wiki/Jean-Robert_Argand}{Jean-Robert Argand} [*1768 \dag1822] im Jahr 1814 geführt worden sein. Wir geben unten eine sehr grobe Skizze, die der Leser mit etwas Anfängeranalysis zu einem Beweis ausbauen können sollte.
+\item Der für Anfänger am leichtesten zu verstehende \emph{algebraische} Beweis ist der Beweis von Gauss aus dem Jahr 1816. Leider würde er an dieser Stelle zuviel Zeit
+in Anspruch nehmen. Der Leser kann ihn aber in der Literatur nachlesen
+(siehe Theorem 2.17 im Buch von Basu, Pollack und Roy: Algorithms in Real Algebraic Geometry,  \url{https://perso.univ-rennes1.fr/marie-francoise.roy/bpr-ed2-posted3.pdf}).
+\item In der einführenden Algebra-Vorlesung im dritten Semester geben wir einen sehr schönen algebraischen Beweis mit Hilfe von Galoistheorie
+[\href{http://de.wikipedia.org/wiki/Évariste_Galois}{Évariste Galois} *1811 \dag 1832]. Dieser Beweis wird in Wirklichkeit sogar sehr viel mehr zeigen als jeder analytische Beweis. Wir sollten
+dabei natürlich kein Ergebnis benutzen, was schon auf dem Fundamentalsatz fußt. Um dies leichter überprüfen zu
+können, werden wir alle Resultate, in deren Beweis wir den Fundamentalsatz benutzen, in dieser Vorlesung entsprechend kennzeichnen.
+\end{enumerate}
+\end{bem}
+
+\begin{proof}[Beweisskizze für den Fundamentalsatz der Algebra \ref{4.2.12} (nicht klausurrelevant)] Wir folgen der Beweisidee
+von Argand. Wir benutzen dabei die aus der Analysis bekannte
+Geometrie der Multiplikation von komplexen Zahlen und die Konzepte der Stetigkeit und der Kompaktheit.
+Sei $p=a_nX^n+a_{n-1}X^{n-1}+\dots+a_0$ mit $n\in\N$, $n\ge1$, $a_0,\dots,a_n\in\C$ und $a_n\ne0$. Dann gilt für alle $z\in\C$
+$$|p(z)|\ge|a_n||z|^n-|a_0|-\dots-|a_{n-1}||z|^{n-1}$$
+und daher $\lim_{|z|\to\infty}|p(z)|=\infty$. Daraus folgt die Existenz eines globalen Minimalpunkts $z_0\in\C$ von $\C\to\R_{\ge0},\ z\mapsto|p(z)|$, das heißt es gibt $z_0\in\C$
+mit $|p(z_0)|\le|p(z)|$ für alle $z\in\C$ (dieser Punkt schien Argand intuitiv klar zu sein, erfordert aber heutzutage eine Begründung, die auch ein Anfänger geben kann). \OE\ $z_0=0$. Dann gilt mit
+$S:=\{\zeta\in\C\mid|\zeta|=1\}$ für alle $\zeta\in S$ und $r\in\R_{\ge0}$
+$$|p(r\zeta)|^2-|p(0)|^2\ge0.$$
+Schreibe $p=p(0)+X^kq$ mit einem $k\in\N$ und einem $q\in\C[X]$ mit $q(0)\ne0$. Die Ungleichung lautet dann
+$$|p(0)+r^k\zeta^kq(r\zeta)|^2-|p(0)|^2\ge0$$
+ für alle $\zeta\in S$ und $r\in\R_{\ge0}$.
+ Unter Beachtung von
+ \begin{multline*}
+ |z_1+z_2|^2=(z_1+z_2)^*(z_1+z_2)=z_1^*z_1+z_1^*z_2+z_1z_2^*+z_2^*z_2=\\
+ |z_1|^2+z_1^*z_2+(z_1^*z_2)^*+|z_2|^2\overset{\ref{4.2.8}}= |z_1|^2+2\rp(z_1^*z_2)+|z_2|^2
+ \end{multline*}
+ für alle $z_1,z_2\in\C$ folgt daraus
+ $$2r^k\rp(p(0)^*\zeta^kq(r\zeta))+r^{2k}|q(r\zeta)|^2\ge0$$
+  für alle $\zeta\in S$ und $r\in\R_{\ge0}$.
+ Daraus folgt
+ $$2\rp(p(0)^*\zeta^kq(r\zeta))+r^{k}|q(r\zeta)|^2\ge0$$
+   für alle $\zeta\in S$ und $r\in\R_{>0}$.
+   Indem man für festes $\zeta\in S$ nun den Grenzwert für $r\to0$ betrachtet, erhält man
+    $$2\rp(p(0)^*\zeta^kq(0))\ge0$$
+    für alle $\zeta\in S$. Man muss also nur noch zeigen, dass es für festes $z\in\C^\times$ nicht vorkommen kann, dass
+    $\rp(z\zeta^k)\ge0$ für alle $\zeta\in S$ gilt. Dies kann man auf verschiedene Weisen schließen. Es ist aber klar, wenn man die Geometrie der Multiplikation von komplexen Zahlen verstanden hat.
+\end{proof}
+
+
+\begin{bsp}\label{4.2.14} Weitere Beispiele zu imaginären Einheiten:
+\begin{enumerate}[\normalfont(a)]
+\item $\F_3$ hat keine imaginäre Einheit, da $\F_3\overset{\ref{4.1.10}}=\Z/(3)=\{\overline0,\overline1,\overline2\}$ und $\overline0^2=0\ne\overline2=-1$,
+$\overline1^2=1\ne\overline2=-1$ und $\overline2^2=\overline4=1\ne\overline2=-1$ in $\F_3$. Wegen $\#\F_3=3$ folgt $\#\F_3[\i]=9$ nach \ref{4.2.3}(b). Es ist also $\F_9:=\F_3[\i]$ ein 
+neunelementiger Körper.
+\item $\F_5$ hat eine imaginäre Einheit, denn $\overline2\,\overline2=\overline4=-1$ in $\F_5$. Es gilt also $\F_5[\i]=\F_5$.
+\item In $\F_7$ gilt $0^2=0$, $1^2=1$, $\overline2^2=\overline4$, $\overline3^2=\overline2$, $\overline4^2=\overline2$, $\overline5^2=\overline 4$ und $\overline6^2=\overline1$. Also hat $\F_7$ keine imaginäre Einheit und $\F_{49}:=\F_7[\i]$ ist ein Körper mit $49$ Elementen.
+\end{enumerate}
+\end{bsp}
+\end{document}

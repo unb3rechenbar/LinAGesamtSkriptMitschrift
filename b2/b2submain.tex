@@ -1,0 +1,290 @@
+% -*- coding: utf-8 -*-
+%!TEX encoding = UTF-8 Unicode
+%
+% Michael Strecke 2014, Markus Schweighofer 2018 und 2021
+%
+% compiled under MacTEX-2020 (TeXLive-2020)
+%
+% Dieses Dokument (inklusive Quelltext) unterliegt der Creative-Commons-Lizenz "`Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International"' . Die Bedingungen dieser Lizenz können unter http://creativecommons.org/licenses/by-nc-sa/4.0/ eingesehen werden.
+
+\documentclass[
+twoside=semi, % Auf beidseitigen Druck und Abheftung in Ordner ausgelegt
+fontsize=12,
+DIV=12, % Anpassung Seitenränder nach Lektüre der KOMA-Script Anleitung
+cleardoublepage=current,
+leqno,
+headings=optiontoheadandtoc, % Optionales Argument für chapter und section vielseitiger. siehe KOMA-Script-Anleitung
+toc=idx % Inhaltsverzeichniseintrag für Index
+]{scrbook}
+
+\usepackage{imakeidx}
+\makeindex
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{datetime}
+
+\usepackage[headsepline]{scrlayer-scrpage} % KOMA-Script konforme Kopf- und Fußzeilen
+\setkomafont{pageheadfoot}{\normalfont}
+\setkomafont{pagefoot}{\slshape}
+\defpagestyle{scrheadings}{%
+{\pagemark\hfill\headmark}{\headmark\hfill\pagemark}{}
+}{
+{Skript zur linearen Algebra I $\&$ II\hfill}{\hfill Fassung vom \today, \currenttime\ Uhr}{}
+}
+\defpagestyle{plain}{%
+{}{}{}(0pt,0pt)
+}{
+{Skript zur linearen Algebra I $\&$ II\hfill}{\hfill Fassung vom \today, \currenttime\ Uhr}{}
+}
+
+% Paragraphensymbol vor Kapitel- und Abschnittsnummern
+\renewcommand*{\chapterformat}{\S\thechapter\autodot\enskip}
+\renewcommand*{\othersectionlevelsformat}[3]{\S#3\autodot\enskip}
+\renewcommand*{\chaptermarkformat}{\S\thechapter\autodot\enskip}
+\renewcommand*{\sectionmarkformat}{\S\thesection\autodot\enskip}
+
+% gerahmte Kapitelüberschriften
+\newcommand*{\ORIGchapterheadstartvskip}{}%
+\let\ORIGchapterheadstartvskip=\chapterheadstartvskip
+\renewcommand*{\chapterheadstartvskip}{%
+  \ORIGchapterheadstartvskip
+  \noindent\rule[\baselineskip]{\linewidth}{4pt}\par
+}
+\newcommand*{\ORIGchapterheadendvskip}{}%
+\let\ORIGchapterheadendvskip=\chapterheadendvskip
+\renewcommand*{\chapterheadendvskip}{%
+ \ORIGchapterheadendvskip
+ \noindent\rule[\baselineskip]{\linewidth}{4pt}\par
+}
+
+\usepackage{hyperref} % Klickbare Links
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{calrsfs} % improve mathcal
+
+\usepackage{stmaryrd} % for \mapsfrom
+
+\usepackage{chngcntr}\counterwithout{equation}{section} % count equations without referring to chapter or section
+
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{paralist} % Linksbündige Labels bei itemize
+
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz-cd}
+\usetikzlibrary{shapes, positioning, matrix, decorations.pathreplacing}
+
+\usepackage{multirow}
+\usepackage{bigdelim}
+\usepackage{braket}
+\usepackage{mathtools}
+
+\usepackage{float}
+\usepackage{pifont}
+
+\usepackage[most]{tcolorbox}
+\tcbset{sharp corners=all,boxrule=0mm,breakable, enhanced}
+
+\newcommand\cancel[1]{
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.north east);
+        \draw[red] (tocancel.north west) -- (tocancel.south east);
+    }
+}
+\newcommand\red[1]{\textcolor{red}{#1}}
+\newcommand\blue[1]{\textcolor{blue}{#1}}
+\newcommand\brown[1]{\textcolor{brown}{#1}}
+
+% tlap und blap ähnlich wie llap und rlap
+\newcommand{\tlap}[1]{\mbox{\vbox to 0pt{\vss\hbox{#1}}}}
+\newcommand{\blap}[1]{\mbox{\vbox to 0pt{\hbox{#1}\vss}}}
+
+
+\newcommand\N{\mathbb N}
+\newcommand\Z{\mathbb Z}
+\newcommand\Q{\mathbb Q}
+\newcommand\R{\mathbb R}
+\newcommand\C{\mathbb C}
+\newcommand\F{\mathbb F}
+\newcommand\K{\mathbb K}
+\renewcommand\P{\mathbb P}
+\newcommand\Pow{\mathcal P}
+\renewcommand\oe{\OE$\ $}
+
+\newcommand\cc[2]{\overline{#1}^{\substack{\\\scriptscriptstyle#2}}} % congruence class
+\newcommand\tc[1]{\widehat{#1}}
+% teilbarkeitsklasse
+
+\newcommand\et{\mathbin{\&}}
+\renewcommand{\i}{\overset\circ\imath}
+\renewcommand{\j}{\overset\circ\jmath}
+\newcommand{\spann}[1]{\lin\left(#1\right)}
+\newcommand{\cvec}[1]{\left(\begin{smallmatrix}#1\end{smallmatrix}\right)}
+\newcommand{\case}[2]{$\begin{Bmatrix}\text{#1}\\\text{#2}\end{Bmatrix}$}
+\newcommand{\caset}[3]{$\begin{Bmatrix}\text{#1}\\\text{#2}\\\text{#3}\end{Bmatrix}$}
+\newcommand{\casef}[4]{$\begin{Bmatrix}\text{#1}\\\text{#2}\\\text{#3}\\\text{#4}\end{Bmatrix}$}
+\renewcommand\v{{\underline v}}
+\renewcommand\u{{\underline u}}
+\newcommand\w{{\underline w}}
+\newcommand\e{{\underline e}}
+\newcommand\ddual[1]{#1^{**}}
+\newcommand{\divi}{\,\widehat{=}\,}
+
+\newcommand\al\alpha
+\newcommand\be\beta
+\newcommand\ph\varphi
+\newcommand\ps\psi
+\newcommand\si\sigma
+\newcommand\ta\tau
+\newcommand\la\lambda
+\newcommand\rh\varrho
+\newcommand\de\delta
+\newcommand\Ph\Phi
+\newcommand\ch\chi
+\newcommand\ze\zeta
+\newcommand{\vecN}{$(\overrightarrow{\text{N}})$}
+\newcommand{\vecD}{$(\overrightarrow{\text{D}})$}
+\renewcommand\over[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+\newcommand\scal[1]{\langle #1\rangle}
+\newcommand{\rvec}[1]{\stackrel{\rightarrow}{#1}}
+\newcommand{\lvec}[1]{\stackrel{\leftarrow}{#1}}
+\newcommand\expfam{\N_0^{(\P_A)}}
+
+\newenvironment{amatrix}[1]{\left(\begin{array}{#1}}{\end{array}\right)}
+
+%\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{sat}{Satz}[section]
+\newtheorem{satdef}[sat]{Satz und Definition}
+\newtheorem{notsprpro}[sat]{Notation, Sprechweise und Proposition}
+\newtheorem{notsprbem}[sat]{Notation, Sprechweise und Bemerkung}
+\newtheorem{lem}[sat]{Lemma}
+\newtheorem{pro}[sat]{Proposition}
+\newtheorem{prospr}[sat]{Proposition und Sprechweise}
+\newtheorem{kor}[sat]{Korollar}
+\newtheorem{notpro}[sat]{Notation und Proposition}
+\newtheorem{notsat}[sat]{Notation und Satz}
+%\theoremstyle{definition}
+\newtheorem{df}[sat]{Definition}
+\newtheorem{psdf}[sat]{Pseudodefinition}
+\newtheorem{defbem}[sat]{Definition und Bemerkung}
+\newtheorem{nt}[sat]{Notation}
+\newtheorem{bemnt}[sat]{Bemerkung und Notation}
+\newtheorem{spr}[sat]{Sprechweise}
+\newtheorem{sprnt}[sat]{Sprechweise und Notation}
+\newtheorem{sprbem}[sat]{Sprechweise und Bemerkung}
+\newtheorem{defprop}[sat]{Definition und Proposition}
+\newtheorem{propdef}[sat]{Proposition und Definition}
+\newtheorem{notrep}[sat]{Notation und Wiederholung}
+\newtheorem{kordef}[sat]{Korollar und Definition}
+%\theoremstyle{remark}
+\newtheorem{bem}[sat]{Bemerkung}
+\newtheorem{bsp}[sat]{Beispiel}
+\newtheorem{exo}[sat]{Übung}
+\newtheorem{er}[sat]{Erinnerung}
+\newtheorem{remdef}[sat]{Erinnerung und Definition}
+\newtheorem{ged}[sat]{Gedanke}
+\newtheorem{algo}[sat]{Algorithmus}
+\newtheorem{warning}[sat]{Warnung}
+
+\DeclareMathOperator\im{im}
+\DeclareMathOperator\rp{Re}
+\DeclareMathOperator\ip{Im}
+\DeclareMathOperator\lin{span}
+\DeclareMathOperator\row{row}
+\DeclareMathOperator\supp{supp}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator\ve{vec}
+\DeclareMathOperator\co{coord}
+\DeclareMathOperator\id{id}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator\sgn{sgn}
+\DeclareMathOperator\com{com}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\ub}{ub}
+\DeclareMathOperator{\lb}{lb}
+\DeclareMathOperator{\Bil}{Bil}
+\DeclareMathOperator{\SBil}{SBil}
+\DeclareMathOperator{\SK}{SK}
+\DeclareMathOperator{\SQ}{SQ}
+\DeclareMathOperator{\SR}{S\R}
+\DeclareMathOperator{\QForm}{Q}
+%\DeclareMathOperator{\gcd}{gcd}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\minor}{minor}
+\DeclareMathOperator{\psd}{psd}
+\DeclareMathOperator{\nsd}{nsd}
+\DeclareMathOperator{\pd}{pd}
+\DeclareMathOperator{\nd}{nd}
+\DeclareMathOperator{\ad}{ad}
+
+% Beseitige Fehlermeldungen bei Verwendung der veralteten Kommandos \rm und \bf in Kombination mit KOMA-Script
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+
+
+
+
+\usepackage{subfiles}
+
+% Beweisumgebung
+\newenvironment{cproof}{\begin{tcolorbox}\begin{proof}}{\end{proof}\end{tcolorbox}}
+% Umgebung für Anschauungen
+\newenvironment{ans}{\begin{tcolorbox}[colback=blue!10]\textbf{Anschauung}. }{\end{tcolorbox}}
+
+
+\begin{document}
+\subject{Skript zur Vorlesung}
+\title{Lineare Algebra II}
+\subtitle{gehalten von \href{http://www.math.uni-konstanz.de/~schweigh/}{Prof. Dr. Markus Schweighofer}\\im Wintersemester 2021/2022\\an der Universität Konstanz}
+\author{\small entstanden aus einer\\
+\small früheren elektronischen Mitschrift\\
+\small von \href{https://www.is.mpg.de/person/mstrecke}{Michael Strecke}, \\
+\small erweitert um die lineare Algebra II von David Jannack\\
+\small und editiert von Tom Folgmann}
+\date{Fassung vom\\\today, \currenttime\ Uhr}
+\frontmatter
+\pagestyle{empty}
+
+\maketitle
+
+\noindent
+    \subfile{b1/b1Lizenzen.tex}
+
+\chapter*{Vorwort des Originalskripts zur linearen Algebra 1}
+\pagestyle{scrheadings}
+\manualmark
+    \subfile{b1/b1OriginalesVorwort.tex}
+
+\automark[section]{chapter}
+\tableofcontents
+
+\mainmatter
+\tikzstyle{every picture}+=[remember picture]
+
+\chapter{Halbordnungen und Ordnungen}
+    \subfile{b2Kapitel/b2Halbordnungen}
+
+\chapter{Linearformen, Bilinearformen und quadratische Formen}
+    \subfile{b2Kapitel/b2BiLiQuaFormen.tex}
+    
+\chapter{Reelle quadratische Formen}
+    \subfile{b2Kapitel/b2ReQuaFormen.tex}
+    
+\chapter{Skalarprodukte}
+    \subfile{b2Kapitel/b2Skalarprodukte.tex}
+
+\chapter{Teilbarkeit in kommutativen Ringen}
+In diesem Kapitel sei stets $A$ ein kommutativer Ring [$\to$\ref{3.1.1}].
+    \subfile{b2Kapitel/b2Teilbarkeit}
+
+\chapter{Normalformen von Matrizen}
+    \subfile{b2Kapitel/b2Normalformen.tex}
+
+\backmatter
+\printindex
+\end{document}

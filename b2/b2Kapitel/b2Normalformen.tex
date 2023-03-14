@@ -1,0 +1,1063 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\section{Existenz der Normalform von Smith}
+
+In diesem Abschnitt sei stets $A$ ein Hauptidealring (z.B. $A=\Z$ oder $A=K[X]$ mit $K$ als Körper). Wie in \ref{16.4.8} fixieren wir wieder eine Menge $\P_A$ von Primelementen von $A$ derart, dass $\P_A\to\{\tc p\mid p\in A,p\text{ prim},p\neq 0\}$ eine Bijektion ist (z.B. $\P_Z=\P$ oder $\P_{K[X]}=\{f\in K[X]\mid f\text{ normiert und irreduzibel}\}$). Wie in  $\S16.3$ (vergleiche aus $\S5.2$) betrachten wir wieder die folgenden elementaren Zeilenoperationen auf Matrizen über $A$:
+\begin{itemize}
+\item
+$Z_i\leftarrow Z_i+\lambda Z_j
+\qquad(i\neq j, \lambda\in A)$
+\item
+$Z_i\leftarrow \lambda Z_i\qquad(\lambda\in A^\times)$
+\end{itemize}
+Für theoretische Zwecke erlauben wir erstmals noch eine dritte elementare Zeilenoperation:
+\begin{itemize}
+\item
+$\begin{pmatrix*}Z_i\\ Z_j\end{pmatrix*}\underbrace{\leftarrow}_\text{"`simultan"'} \begin{pmatrix*}aZ_i+bZ_j\\ cZ_i+dZ_j\end{pmatrix*}\qquad( i\neq j, a,b,c,d\in A\text{ mit }ad-bc=1)$\\
+\end{itemize}
+\begin{tikzpicture}
+\matrix(A)[matrix of math nodes,left delimiter={[},right delimiter={]},column 4/.style={anchor=base west}]
+{
+\text{umkehrbar: Sind }a,b,c,d\in A\text{ mit } ab-cd=1\text{, so }da-(-b)(-c)=1\text{ und z.B.}\\
+\begin{pmatrix*}L_1\\ L_2\end{pmatrix*}\stackrel{\left(\begin{smallmatrix}Z_1\\ Z_2\end{smallmatrix}\right)\leftarrow\left(\begin{smallmatrix}aZ_1+bZ_2\\ cZ_1+dZ_2\end{smallmatrix}\right)}{\sim}\begin{pmatrix*}aL_1+bL_2\\ cL_1+dL_2\end{pmatrix*}\stackrel{\left(\begin{smallmatrix}Z_1\\ Z_2\end{smallmatrix}\right)\leftarrow\left(\begin{smallmatrix}dZ_1-bZ_2\\ -cZ_1+aZ_2\end{smallmatrix}\right)}{\sim}\begin{pmatrix*}L_1\\ L_2\end{pmatrix*}\\
+};
+\end{tikzpicture}\\
+Man sieht aber gleich, dass diese im Fall $A=\Z$, $A=K[X]$ und $A=K$ ($K$ sei ein Körper) durch die anderen beiden simuliert werden kann und somit in diesem Fällen nichts beisteuert. $\left[\text{Man kann nämlich in allen drei Fällen die Matrix }I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix}\in A^{2\times 2}\right.$ durch Anwendung der ersten beiden Operationen in jede Matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in A^{2\times 2}$ mit $\det\begin{pmatrix}a&b\\c&d\end{pmatrix}=1$ überführen $\left(\text{und dementsprechend }\begin{pmatrix*}L_1\\L_2\end{pmatrix*}=\begin{pmatrix}1L_1+0L_2\\0L_1+1L_2\end{pmatrix}\text{ in }\begin{pmatrix}aL_1+bL_2\\cL_1+dL_2\end{pmatrix}\right)$. Da alle Operationen umkehrbar sind, reicht es, sich zu überlegen, dass man $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ mit der Determinante $1$ in $I_2$ durch die ersten beiden Operationen überführen kann. Im Fall $A=K$ ist dies klar, da $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ invertierbar ist. In den Fällen $A=\Z$ und $A=K[X]$ kann man mit den ersten beiden Operationen $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ auf die Form $\begin{pmatrix}e_1&h\\0&e_2\end{pmatrix}$ bringen (vergleiche $\S16.3$). Da sich die Determinante dabei nur um eine Einheit ändert (siehe $\S9.1$), bleibt die Determinante eine Einheit. Mit $e_1e_2=\det \begin{pmatrix}e_1&h\\0&e_2\end{pmatrix}\in A^\times$ gilt aber auch $e_1,e_2\in A^\times$ un daher \oe $e_1=e_2=1$ und dann auch \oe $h=0$, also $\left.\begin{pmatrix}e_1&h\\0&e_2\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.\right]$\\
+Wie in $\S5.2$ kann man natürlich auch wieder Zeilenoperationen erlauben, die man durch endlich viele obiger Zeilenoperationen simulieren kann, z.B. $Z_i\longleftrightarrow Z_j$. Wir erlauben nun zusätzlich auch noch die entsprechenden Spaltenoperationen:
+\begin{itemize}
+\item
+$S_i\leftarrow S_i+\lambda S_j
+\qquad(i\neq j, \lambda\in A)$
+\item
+$S_i\leftarrow \lambda S_i\qquad(\lambda\in A^\times)$
+\item
+$\begin{pmatrix*}S_i\\ S_j\end{pmatrix*}\underbrace{\leftarrow}_\text{"`simultan"'} \begin{pmatrix*}aS_i+bS_j\\ cS_i+dS_j\end{pmatrix*}\qquad( i\neq j, a,b,c,d\in A\text{ mit }ad-bc=1)$
+\end{itemize}
+Letztere ist für $A=\Z$, $A=K[X]$ und $A=K$ ($K$ sei ein Körper) wiederum überflüssig. Offenbar sind alle diese Operationen umkehrbar und verändern die Determinante nur um einen Faktor, der eine Einheit ist.\\
+Wir führen eine Äquivalenzrelation $\sim$ auf $A^{m\times n}$ ein durch
+\begin{align*}
+M\sim N:\Longleftrightarrow N \text{ geht aus }M\text{ durch obige Zeilen- und Spaltenoperationen hervor}
+\end{align*}
+für alle $M,N\in A^{m\times n}$.
+
+\begin{warning}\label{17.1.1}
+Dies ist eine andere Äquivalenzrelation als die in $\S5.2$ betrachtete, welche man auch ''Zeilenäquivalenz nennt''. Es handelt sich hier um ''Zeilenspaltenäquivalenz''.
+\end{warning}
+
+\begin{df}\label{17.1.2}
+Seien $m,n\in \N_0$. Eine Matrix $S\in A^{m\times n}$ findet sich in Smithscher Normalform, wenn mit $l:=\min\{m,n\}$ es $\alpha_1,...,\alpha_l\in \expfam\cup\{\infty\}$. mit $\alpha_1\preceq\alpha_2\preceq...\preceq\alpha_l$ [$\to$\ref{16.4.21}] und 
+\begin{align*}
+&S=\left(\begin{array}{c c c}
+\P_A^{\alpha_1}& \multicolumn{2}{c}{\text{\kern 1em\smash{\raisebox{-1.5ex}{\Huge 0}}}} \\
+& \ddots &  \\
+\multicolumn{2}{c}{\text{\kern-1.5em\smash{\raisebox{0ex}{\Huge 0}}}} &\P_A^{\alpha_l}\\
+& &\\
+\hline 
+&\tikz[remember picture]\node[inner sep=0pt] (a){ };&\\
+& &
+\end{array}\right)\qquad\text{falls }m\ge n\\
+\text{bzw.}\qquad&S=\left(\begin{array}{c c c c|c c}
+ \P_A^{\alpha_1}& \multicolumn{2}{c}{\text{\kern 1em\smash{\raisebox{-1.5ex}{\Huge 0}}}}& &\tikz[remember picture]\node[inner sep=0pt] (b){ }; &\\
+& \ddots & & \\
+\multicolumn{2}{c}{\text{\kern-1.5em\smash{\raisebox{0ex}{\Huge 0}}}}& \P_A^{\alpha_l}& &\\
+\end{array}\right)\qquad\text{falls }m\le n,\text{ wobei } \P_A^\infty:=0. 
+\begin{tikzpicture}[overlay, remember picture]
+\node at (a.north) [anchor=center,yshift=-0.2cm, yscale=2,xscale=3] {$0$};
+\node at (b.east) [anchor=center, xshift=0.2cm,yshift=-0.6cm,  xscale=3, yscale=3] {$0$};
+\end{tikzpicture}
+\end{align*}
+\end{df}
+
+\begin{sat}\label{17.1.3}
+Zu jeder Matrix $M\in A^{m\times n}$ gibt es eine Matrix $S\in A^{m\times n}$ in Smithscher Normalform mit $M\sim S$.
+\end{sat}
+\begin{cproof}
+Kommt später.
+\end{cproof}
+
+\begin{bsp}\label{17.1.4}
+\begin{enumerate}[\normalfont(a)]
+\item Sei $M:=\begin{pmatrix*}2 & 1 & -3 & -1\\ 1 & -1 & -3 & 1\\ 4 & -4 & 0 & 16\end{pmatrix*}\in \Z^{3\times 4}$. Es gilt:
+\begin{align*}
+M\stackrel{Z_1\leftrightarrow Z_2}{\sim}&\begin{pmatrix*}1 & -1 & -3 & 1\\ 2 & 1 & -3 & -1\\ 4 & -4 & 0 & 16\end{pmatrix*}\stackrel{\begin{smallmatrix*}Z_1\leftarrow Z_2-Z_1\\Z_3\leftarrow Z_1-4Z_1\end{smallmatrix*}}{\sim}\begin{pmatrix*}1 & -1 & -3 & 1\\ 0 &3 & 3 & -3\\ 0 & 0 & 12 & 12\end{pmatrix*}\\
+\stackrel{\begin{smallmatrix*}S_2\leftarrow S_2+S_1\\S_3\leftarrow S_3+3S_1\\ S_4\leftarrow S_4-S_1\end{smallmatrix*}}{\sim}&\begin{pmatrix*}1 & 0 & 0 & 0\\ 0 &3 & 3 & -3\\ 0 & 0 & 12 & 12\end{pmatrix*}\stackrel{\begin{smallmatrix*}S_3\leftarrow S_3-S_1\\ S_4\leftarrow S_4+S_3\end{smallmatrix*}}{\sim}\begin{pmatrix*}1 & 0 & 0 & 0\\ 0 &3 & 0 & 0\\ 0 & 0 & 12 & 12\end{pmatrix*}\\
+\stackrel{\begin{smallmatrix*}S_4\leftarrow S_4-S_3\end{smallmatrix*}}{\sim}&\begin{pmatrix*}1 & 0 & 0 & 0\\ 0 &3 & 0 & 0\\ 0 & 0 & 12 & 0\end{pmatrix*}:=S
+\end{align*}
+Also $M\sim S$ und $S$ ist in Smithscher Normalform.
+\item Sei $M:=\begin{pmatrix*}3 & 3 & 7\\ -2 & 5 & 7\\ 2 & 0 & -2\end{pmatrix*}\in \Z^{3\times 3}$. Es gilt:
+\begin{align*}
+M\stackrel{\begin{smallmatrix*}Z_1\leftarrow Z_1-Z_3\\Z_2\leftarrow Z_2+Z_3\\ Z_3\leftarrow Z_3-2Z_1\end{smallmatrix*}}{\sim}&\begin{pmatrix*}1 & 3 & 9\\ 0 & 5 & 0\\ 0 & -6 & -20\end{pmatrix*}\stackrel{\begin{smallmatrix*}S_2\leftarrow S_1-3S_1\\S_3\leftarrow S_3-9S_1\\ Z_2\leftarrow Z_2+Z_3\\ Z_3\leftarrow -Z_3\end{smallmatrix*}}{\sim}\begin{pmatrix*}1 & 0 & 0\\ 0 & -1 & -20\\ 0 & 6 & 20\end{pmatrix*}\\
+\stackrel{\begin{smallmatrix*}Z_3\leftarrow Z_3+6Z_2\\ Z_2\leftarrow -Z_2\end{smallmatrix*}}{\sim}&\begin{pmatrix*}1 & 0 & 0\\ 0 & 1 & 20\\ 0 & 0 & -100\end{pmatrix*}\stackrel{\begin{smallmatrix*}S_3\leftarrow S_3-20S_2\\ Z_3\leftarrow -Z_3\end{smallmatrix*}}{\sim}\begin{pmatrix*}1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 100\end{pmatrix*}:=S
+\end{align*}
+\item Sei $M:=\begin{pmatrix}1-X^2 & 1+X\\ 1-X & 1+X+X^2+X^3\\ 1-X & 1+X\end{pmatrix}\in K[X]$ mit $K$ als Körper mit $2\neq 0$. Es gilt:
+\begin{align*}
+M\stackrel{\begin{smallmatrix*}S_1\leftrightarrow S_2\\Z_3\leftarrow Z_3-Z_1\\ Z_2\leftarrow Z_2-(X^2+1)Z_1\end{smallmatrix*}}{\sim}&\begin{pmatrix}1+X & 1-X^2\\ 0 & X^4-X\\ 0 & X^2-X\end{pmatrix}\stackrel{\begin{smallmatrix*}Z_2\leftarrow Z_2-(X^2+X+1)Z_3\\ Z_2\leftrightarrow Z_3\end{smallmatrix*}}{\sim}\begin{pmatrix}1+X & 1-X^2\\ 0 & X^2-X\\ 0 & 0\end{pmatrix}\\
+\stackrel{\begin{smallmatrix*}Z_1\leftarrow Z_1+Z_2\end{smallmatrix*}}{\sim}&\begin{pmatrix}1+X & 1-X\\ 0 & X^2-X\\ 0 & 0\end{pmatrix}\stackrel{\begin{smallmatrix*}S_1\leftarrow S_1+S_2\end{smallmatrix*}}{\sim}\begin{pmatrix}2 & 1-X\\ X^2-X & X^2-X\\ 0 & 0\end{pmatrix}\\
+\stackrel{\begin{smallmatrix*}Z_2\leftarrow 2Z_2\\ Z_2\leftarrow Z_2-(X^2-X)Z_1\end{smallmatrix*}}{\sim}&\begin{pmatrix}2 & 1-X\\ 0 & X^3-X\\ 0 & 0\end{pmatrix}:=S
+\end{align*}
+\end{enumerate}
+\end{bsp}
+
+\begin{lem}\label{17.1.5}
+Seien $a,b,c,d,g\in A$ mit $(a,b)=(g)$. Dann gibt es $h,j,i\in A$ mit $\begin{pmatrix*}a & b \\ c & d\end{pmatrix*}\sim \begin{pmatrix*}g & h \\ i & j\end{pmatrix*}$ und $h\in (a,b)$ sowie $i,j\in (c,d)$.
+\end{lem}
+\begin{cproof}
+\oe $g\neq 0$. Schreibe $g=sa+tb$ mit $s,t\in A$ und $a=a'g$ sowie $b=b'g$ mit $a',b'\in A$. Dann $1=sa'+tb'=sa-t(-b')$ und $\begin{pmatrix*}a & b \\ c & d\end{pmatrix*}\stackrel{\left(\begin{smallmatrix}S_1\\ S_2\end{smallmatrix}\right)\leftarrow\left(\begin{smallmatrix}sS_1+tS_2\\ -b'S_1+a'S_2\end{smallmatrix}\right)}{\sim}\begin{pmatrix*}g & h \\ i & j\end{pmatrix*}$ für gewisse $h,j,j\in A$.
+\end{cproof}
+
+\begin{bem}\label{17.1.6}
+Im Fall $A=\Z$ oder $A=K[X]$ ($K$ sei ein Körper) kann man $g$ aus der Aussage und $s,t,a',b'\in A$ im Beweis explizit berechnen, siehe $\S16.3$ (nehme $g=\gcd=\{a,b\}$). Man kann also dann $h,i,j$ explizit berechnen.
+\end{bem}
+
+\begin{lem}\label{17.1.7}
+Seien $a,b\in A$. Dann gibt es $c,d\in A$ mit $\begin{pmatrix*}a&0\\0&b\end{pmatrix*}\sim\begin{pmatrix*}c&0\\0&d\end{pmatrix*}$ mit $(c)=(a,b)$ und $c\mid d$.
+\end{lem}
+\begin{cproof}
+Wähle $c\in A$ mit $(a,b)=(c)$. Dann gibt es nach \ref{17.1.5} ein $h\in (a,b)$ und $i,j\in (b)$ mit $\begin{pmatrix*}a&0\\0&b\end{pmatrix*}\sim\begin{pmatrix*}a&b\\0&b\end{pmatrix*}\sim\begin{pmatrix*}c&h\\i&j\end{pmatrix*}$. Wegen $h\in (a,b)=(c)$ gilt $\begin{pmatrix*}c&h\\i&j\end{pmatrix*}\sim \begin{pmatrix*}c&0\\i&d\end{pmatrix*}$ für ein $d\in (i,j)\subseteq(b)\subseteq(c)$. Wegen $i\in (b)\subseteq(c)$ gilt $\begin{pmatrix*}c&0\\i&d\end{pmatrix*}\sim \begin{pmatrix*}c&0\\0&d\end{pmatrix*}$.
+\end{cproof}
+
+Lemma \ref{17.1.5} brauchen wir später noch einmal in folgender Variante:
+
+\begin{lem}\label{17.1.8}
+Seien $a,b,g\in A$ mit $(a,b)=(g)$. Dann gibt es $h\in A$ mit $\begin{pmatrix*}a&b\end{pmatrix*}\sim \begin{pmatrix*}g&h\end{pmatrix*}$ und $\begin{pmatrix*}a\\b\end{pmatrix*}\sim \begin{pmatrix*}g\\h\end{pmatrix*}$.
+\end{lem}
+\begin{cproof}
+$\begin{pmatrix*}a&b\end{pmatrix*}\sim \begin{pmatrix*}g&h\end{pmatrix*}$ folgt durch Inspektion des Beweises von \ref{17.1.5}, da durch nur eine \underline{Spalten}operation durchgeführt wird.\\
+$\begin{pmatrix*}a\\b\end{pmatrix*}\sim \begin{pmatrix*}g\\h\end{pmatrix*}$ folgt mir der entsprechenden Zeilenoperation.
+\end{cproof}
+
+\begin{lem}\label{17.1.9}
+Seien $m,n\in \N$ und $M\in A^{m\times n}$. Dann gibt es $a\in A$ mit\\ $M\sim\begin{pmatrix}a&0&\hdots&0\\
+0&&&\\\vdots&&
+\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=0.5em,scale=7]{$*$};\end{tikzpicture}&\\
+0&&&
+\end{pmatrix}$.
+\end{lem}
+\begin{cproof}
+Bezeichne $G$ die Menge der Matrizen $N\in A^{m\times n}$, deren linker obere Eintrag alle Einträge der ersten Zeile und ersten Spalte von $N$ teilt. Es reicht, ein $N\in G$ mit $M\sim N$ zu finden.\\
+
+\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]\noindent\textbf{Behauptung}. Ist $M'\in A^{m\times n}\setminus G$ mit linkem oberen Eintrag $a'$, so gibt es $M''\in A^{m\times n}$ mit linkem oberen Eintrag $a''$ derart, dass $M'\sim M''$ und $(a')\subset (a'')$.\\
+
+\noindent\textbf{Begründung}. Sei $M'\in A^{m\times n}\setminus G$, etwa $M'=\begin{pmatrix}a'&b'&&\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=-1em,yscale=8,xscale=5]{$*$};\end{tikzpicture}&\\&&&&\\\begin{tikzpicture}[overlay]\node[xshift=0.6em,yshift=0.8em,scale=5]{$*$};\end{tikzpicture}&&&\end{pmatrix}$ mit $a'\nmid b'$. Wähle $a''\in A$ mit $(a',b')=(a'')$. Nach \ref{17.1..8} gibt es dann $h\in A$ und $M''=\begin{pmatrix}a''&h&&\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=-1em,yscale=8,xscale=5]{$*$};\end{tikzpicture}&\\&&&&\\\begin{tikzpicture}[overlay]\node[xshift=0.6em,yshift=0.8em,scale=5]{$*$};\end{tikzpicture}&&&\end{pmatrix}$ mit $M'\sim M''$. Es gilt $(a')\subseteq (a'')$, aber nicht $(a')=(a'')$, denn sonst $b'\in(a'')=(a')$ und daher $a'\mid b'$.\end{tcolorbox}
+
+\noindent Ist $M_1:=M\in G$, so setzen wir $N:=M_1$ und sind fertig. Sonst gibt es $M_2\in A^{m\times n}$ mit $M_1\sim M_2$ und $(a_1)\subset(a_2)$ ($a_i$ bezeichne den linken oberen Eintrag von $M_i$). Ist $M_2\in G$, so setze $N:=M_2$. Ist $M_2\notin G$, so findent wir $M_3$ mit $M_1\sim M_2\sim M_3$ und $(a_1)\subset(a_2)\subset (a_3)$. Da $A$ ein Hauptidealring und damit faktoriell ist, gilt die Teilerkettenbedingung aus \ref{16.4.18}, das heißt die so weitergeführte Konstruktion muss irgendwann abbrechen (andernsfalls folgt $(a_1)\subset(a_2)\subset(a_3)\subset(a_4)\subset...$) und wir finden $M_1,...,M_k\in A^{m\times n}$ mit $M=M_1\sim M_2\sim M_3\sim...\sim M_k\in G$.
+\end{cproof}
+
+\begin{lem}\label{17.1.10}
+Sei $D\in A^{n\times n}$ eine Diagonalmatrix. Dann gibt es $c_1,...,c_n\in A$ mit $c_1\mid c_2\mid c_3\mid ...\mid c_n$ und $D\sim \left(\begin{smallmatrix}
+c_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & c_n
+\end{smallmatrix}\right)$.
+\end{lem}
+\begin{cproof}
+Man kann die Nullen auf der Diagonalen von $D$ alle nach rechts unten wandern lassen, denn $\begin{pmatrix*}0&0\\ 0&a\end{pmatrix*}\stackrel{S_1\leftrightarrow S_2}{\sim}\begin{pmatrix*}0&0\\ a&0\end{pmatrix*}\stackrel{Z_1\leftrightarrow Z_2}{\sim}\begin{pmatrix*}a&0\\0&0\end{pmatrix*}$. Wegen $a\mid 0$ für alle $a\in A$ kann man dann gleich voraussetzen, dass $D= \left(\begin{smallmatrix}
+d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & d_n
+\end{smallmatrix}\right)$ mit $d_1,...,d_n\in A\setminus\{0\}$. Für jedes $d\in A\setminus\{0\}$ bezeichne $l(d)$ die Summe der Exponenten in der Primfaktorzerlegung von $d$, das heißt ist $(c,\alpha)\in A^\times\times \expfam$ mit $d=c\P_A^\alpha$, so gilt $l(d):=\sum_{p\in\supp(\alpha)}\alpha(p)$. Setze $\delta:\begin{cases}(A\setminus\{0\})^n\to\N_0\\(c_1,...,c_n)\mapsto \sum_{i=1}^n(n-i)l(c_i)\end{cases}$ und $G:=\{(c_1,...,c_n)\in (A\setminus\{0\})^n: c_1\mid c_2\mid ...\mid c_n\}$.\\
+
+\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]\noindent\textbf{Behauptung}. Ist $(d_1',...,d_n')\in (A\setminus\{0\})^n\setminus G$, so gibt es $(d_1',...,d_n')\in (A\setminus\{0\})^n$ mit $\left(\begin{smallmatrix}
+d'_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & d'_n
+\end{smallmatrix}\right)\sim \left(\begin{smallmatrix}
+d''_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & d''_n
+\end{smallmatrix}\right)$ und $\delta(d_1',...d_n')>\delta(d_1'',...d_n'')$.\\
+
+\noindent\textbf{Begründung}. Sei $(d_1',...,d_n')\in (A\setminus\{0\})^n\setminus G$. Wähle $i\in\{1,...,n-1\}$ mit $d_i'\nmid d_{i+1}'$. Nach Lemma \ref{17.1.7} gibt es $c,d\in A$ mit $(c)=(d_i',d_{i+1}')$ und $\begin{pmatrix*}d_i'&0\\ 0&d_{i+1}'\end{pmatrix*}\sim\begin{pmatrix*}c&0\\ 0&d\end{pmatrix*}$ (und $c\mid d$, was wir aber nicht brauchen). Insbesondere $d_i'd_{i+1}'=\det\begin{pmatrix*}d_i'&0\\ 0&d_{i+1}'\end{pmatrix*}\divi\begin{pmatrix*}c&0\\ 0&d\end{pmatrix*}=cd$ und daher $c,d\in A\setminus\{0\}$ sowie
+\begin{align*}
+(*)\qquad l(d_i')+l(d_{i+1}')=l(d_i'd_{i+1}')=l(cd)=l(c)+l(d).
+\end{align*}
+Setze $(d_1'',...,d_n''):=(d_1',..d_{i-1},c,d,d_{i+2}',...,d_n')$. Noch zu zeigen ist: $\delta(d_1',...,d_n')>\delta(d_1'',...,d_n'')$. Wegen (*) reicht es zu zeigen, dass $l(d_i')>l(c)$. Dies folgt aus $c\nmid d_i'$ (sonst ist $d_{i+1}\in (c)=(d_i')$ und daher $d_i\mid d_{i+1}$).\end{tcolorbox}
+
+\noindent Nun folgt alles durch mehrfache Anwendung der Hilfsbehauptung.
+\end{cproof}
+
+\begin{proof}[Beweis von Satz \ref{17.1.3}]
+Sei $M\in A^{m\times n}$. Zu zeigen ist, dass es $S\in A^{m\times n}$ gibt in Smithscher Normalform mit $M\sim S$. Setzte $l:=\min\{m,n\}$. Durch $l$-fache Anwendung von Lemma \ref{17.1.9} erhält man $D\in A^{l\times l}$ diagonal mit $M\sim\begin{pmatrix}D\\0\end{pmatrix}$ falls $m\ge n$ bzw. $M\sim \begin{pmatrix}D&0\end{pmatrix}$ falls $m\le n$. Wende nun letztes Lemma auf $D$ an, um $c_1,...,c_l\in A$ mit $c_1\mid c_2\mid...\mid c_l$ zu finden mit $D\sim \left(\begin{smallmatrix}
+c_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & c_n
+\end{smallmatrix}\right)$. Nach Operationen von Typ $Z_i\leftarrow \lambda Z_i\qquad (\lambda\in A^\times)$ gilt \oe $c_i=\P_A^{\alpha_i}$ mit $\alpha_I\in \expfam\cup\{\infty\}$. Wegen $c_1\mid c_2\mid...\mid c_l$ gilt $\tc c_1\preceq \tc c_2\preceq...\preceq \tc c_l$ und daher $\alpha_1\preceq \alpha_2\preceq...\preceq \alpha_l$ [$\to$\ref{16.1.3},\ref{16.1.17}].
+\end{proof}
+
+Alle betrachteten Zeilenoperation auf $(m\times n)$-Matrizen sind von der Form
+\begin{align*}
+\begin{pmatrix}Z_1\\\vdots\\ Z_m\end{pmatrix}\leftarrow\begin{pmatrix}a_{1,1}Z_1+&\hdots&+a_{1,m}Z_m\\\vdots&&\vdots\\ a_{m,1}Z_1+&\hdots&+a_{m,m}Z_m\end{pmatrix}
+\end{align*}
+mit $a_{i,j}\in A$. Setzt man $P:=(a_{i,j})_{1\le i,j\le m}\in A^{m\times m}$, so erhält man aus $M\in A^{m\times n}$ durch Anwendung dieser Operation offenbar $PM$. Analog sind die Spaltenoperation auf $(m\times n)$-Matrizen sind von der Form
+\begin{align*}
+\begin{pmatrix}S_1\\\vdots\\ S_m\end{pmatrix}\leftarrow\begin{pmatrix}b_{1,1}S_1+&\hdots&+b_{1,n}S_n\\\vdots&&\vdots\\ b_{n,1}S_1+&\hdots&+b_{n,n}S_n\end{pmatrix}
+\end{align*}
+mit $b_{j,i}\in A$. Setzt man $Q:=(b_{i,j})_{1\le i,j\le n}\in A^{n\times n}$, so überführt diese Operation $M\in A^{m\times n}$ in $MQ$.
+
+\section[Die Formel von Cauchy-Binet]{Die Formel von Cauchy-Binet\\{\small[\href{https://de.wikipedia.org/wiki/Augustin-Louis_Cauchy}{Augustin Louis-Cauchy} *1789 \dag 1857; \href{https://en.wikipedia.org/wiki/Jacques_Philippe_Marie_Binet}{Jacques Philippe Marie Binet} *1786, \dag 1856]}}
+
+In diesem Unterabschnitt sei stets $K$ ein kommutativer Ring.
+
+\begin{df}\label{17.2.1}
+Seien $m,n\in \N_0$ und $A\in K^{m\times n}$. Für alle $I\subseteq\{1,...,m\}$ und $J\subseteq\{1,...,n\}$ bezeichnet $A_{I,J}\in K^{(\#I)\times (\#J)}$ die Matrix, durch aus $A$ durch Streichen aller Zeilen $i$ mit $i\notin I$ und Spalten $j$ mi $j\notin J$ entsteht.
+\end{df}
+
+\begin{bem}\label{17.2.2}
+Für $A\in K^{n\times n}$ gilt also mit der Notation aus \ref{14.2.9} für $I\subseteq\{1,...,n\}$: $A_I=A_{I,I}$
+\end{bem}
+
+\begin{df}\mbox{}[$\to$\ref{14.2.9}]
+\label{17.2.3}
+Seien $m,n,k\in \N_0$ und $A\in K^{m\times n}$. Die Determinanten der $\begin{pmatrix*}m\\k\end{pmatrix*}\cdot\begin{pmatrix*}n\\k\end{pmatrix*}$ Matrizen $A_{I,J}$ ($I\subseteq\{1,...,n\}$,$J\subseteq\{1,...,m\}$, $\# I=k=\# J$) nennt man die Minoren der Ordnung $k$ von $A$. Ein Minor von  $A$ ist ein Minor irgendeiner Ordnung von $A$.
+\end{df}
+
+\begin{bem}\label{17.2.4}
+Ein Minor einer Matrix $A$ ist also die Determinante einer quadratischen Matrix, die durch eventuelles Streichen von Zeilen und Spalten aus $A$ hervorgeht.
+\end{bem}
+
+\begin{sat}\label{17.2.5}
+(Formel von Cauchy-Binet) Seien $m,n\in \N_0$, $A\in K^{m\times n}$ und $B\in K^{n\times m}$. Mit $I:=\{1,...,m\}$ gilt dann 
+\begin{align*}
+\det(AB)=\sum_{\substack{J\subseteq\{1,...,n\}\\\#J=m}}(\det A_{I,J})(\det B_{J,I}).
+\end{align*}
+\end{sat}
+\begin{cproof}
+Setze $J_0:=\{1,...,n\}$. Da Matrixenmultiplikation ''simultanes Multiplizieren mit Spaltenvektoren'' ist [$\to$\ref{7.2.2}(c)], gilt
+\begin{align*}
+AB=A(B_{J_0,\{0\}}\hdots B_{J_0,\{m\}})=\left(\sum_{j=1}^nB_{\{j\},\{1\}}A_{I,\{j\}}\hdots\sum_{j=1}^nB_{\{j\},\{m\}}A_{I,\{j\}}\right).
+\end{align*}
+Da die Determinante ''linear in den Spalten'' ist, folgt
+\begin{align*}
+\det(AB)=\sum_{j_1=1}^n\hdots\sum_{j_m=1}^nB_{\{j_1\},\{1\}}\hdots B_{\{j_m\},\{m\}}\det(A_{I,\{j_1\}}\hdots A_{I,\{j_m\}}).
+\end{align*}
+Weil die Determinante einer Matrix mit zwei identischen Spalten gleich Null ist, folgt
+\begin{align*}
+\det(AB)=\sum_{1\le j_1<...<j_m\le n}\sum_{\si\in S_n}B_{\{j_{\si(1)}\},\{1\}}\hdots B_{\{j_{\si(m)}\},\{m\}}\det(A_{I,\{j_{\si(1)}\}}\hdots A_{I,\{j_{\si(m)}\}}).
+\end{align*}
+Da sich beim Vertauschen zweier Spalten das Vorzeichen der Determinante ändert und jede Permutation einer Hintereinanderschaltung von Transpositionen ist, ist die hier rechts auftretende Determinante gleich $(\sgn\si)\det(A_{I,\{j_1\}}\hdots A_{I,\{j_m\}})=(\sgn\si)\det(A_{I,\{j_1,...,j_m\}})$ und es folgt
+\begin{align*}
+\det(AB)&=\sum_{1\le j_1<...<j_m\le n}\det(A_{I,\{j_1,...,j_m\}})\sum_{\si\in S_n}(\sgn\si)B_{\{j_{\si(1)}\},\{1\}}\hdots B_{\{j_{\si(m)}\},\{m\}}\\
+&=\sum_{\substack{J\subseteq\{1,...,n\}\\\#J=m}}\det(A_{I,J})\det(B_{J,I}).
+\end{align*}
+\end{cproof}
+
+\begin{bem}\label{17.2.6}
+\begin{enumerate}[\normalfont(a)]
+\item Im Fall $m=n$ gibt es in der Formel von Cauchy-Binet nur den Summanden mit $J=\{1,..,n\}$. Dabei handelt es sich in diesem Fall um einen neuen Beweis des Determinantenproduktsatzes \ref{9.1.15}.
+
+\item Falls $m>n$, gibt es in der Formel von Cauchy-Binet keinen Summanden. Die Formel besagt dann, dass $\det(AB)=0$, was im Falle mit $K$ als Körper schon bekannt ist, da die Abbildung $K^m\to K^m, x\mapsto ABx$ dann aus Dimensionsgründen nicht surjektiv (oder gleichbedeutend injektiv) sein kann. EVENTUELL DIAGRAMM HINZUFÜGEN.
+\end{enumerate}
+\end{bem}
+
+\begin{bsp}\label{17.2.7}
+Setze $A:=\begin{pmatrix*}1&1&-2\\3&1&-1\end{pmatrix*}\in Z^{2\times 3}$, $B:=\begin{pmatrix*}1&1\\ 3&1\\ 0&2\end{pmatrix*}\in \Z^{3\times 2}$ und $I:=\{1,2\}$. Dann
+\begin{align*}
+\det(AB)&=\det(A_{I,\{1,2\}})\det(B_{\{1,2\},I})+\det(A_{I,\{1,3\}})\det(B_{\{1,3\},I})
++\det(A_{I,\{2,3\}})\det(B_{\{2,4\},I})\\
+&=\det\begin{pmatrix*}1&1\\3&1\end{pmatrix*}\det\begin{pmatrix*}1&1\\3&1\end{pmatrix*}+\det\begin{pmatrix*}1&2\\3&-1\end{pmatrix*}\det\begin{pmatrix*}1&1\\0&2\end{pmatrix*}
++\det\begin{pmatrix*}1&2\\1&-1\end{pmatrix*}\det\begin{pmatrix*}3&1\\0&2\end{pmatrix*}\\
+&=(-2)(-2)+(-7)2+(-3)6=4-18-18=-28.
+\end{align*}
+\end{bsp}
+
+\begin{kor}\label{17.2.8}
+(Minorenformel) Seien $m,n,r\in \N_0$, $A\in A^{m\times n}$ und $B\in K^{n\times r}$. Seien $I\subseteq\{1,...,m\}$ und $L\subseteq\{1,...,r\}$ mit $\# I=\#L=:k$. Dann gilt\\ $\det((AB)_{I,L})=\sum_{\substack{J\subseteq\{1,...,n\}\\\#J=m}}(\det A_{I,J})(\det B_{J,L})$.
+\end{kor}
+\begin{cproof}
+Beachte $(AB)_{I,L}=A_{I,\{1,...,n\}}B_{\{1,...,n\},L}$ und nutze Cauchy-Binet.
+\end{cproof}
+
+\begin{bem}\label{17.2.9}
+\begin{enumerate}[\normalfont(a)]
+\item Im Fall $m=r=k$ wird die Minorenformel zur Formel von Cauchy-Binet.
+\item Im Fall $k=1$ wird die Minorenformel zur Formel der Matrixmultiplikation.
+\end{enumerate}
+\end{bem}
+
+\begin{df}\label{17.2.10}
+Seien $m,n,k\in \N_0$ und $A\in K^{m\times n}$. Das $k$-te Minorenideal von $A$, geschrieben $\minor_k(A)$, ist das Ideal von $K$, welches von allen Minoren der Ordnung $k$ von $A$ erzeugt wird.
+\end{df}
+
+\begin{bsp}\label{17.2.11}
+Sei $A:=\begin{pmatrix}2&4\\-2&2\\0&6\end{pmatrix}\in \Z^{3\times 2}$. Dann ist $\minor_0(A)=(1)=\Z$, $\minor_1(A)=(\gcd\{A\})=(2)$, $\minor_2(A)=(12,12,-12)=(12)$, $\minor_3(A)=\minor_4(A)=...=(0)$.
+\end{bsp}
+
+\begin{kor}\label{17.2.12}
+Seien $m,n,k\in\N_0$, $M\in K^{m\times n}$ und seien $P\in K^{m\times m}$ und $Q\in K^{n\times n}$ invertierbar. Dann stimmen die $k$-ten Minorenideale von $M$ und von $PMQ$ überein. 
+\end{kor}
+\begin{cproof}
+Nach der Minorenformel ist das $k$-te Minorenideal von $PMQ$ in dem von $M$ enthalten. Genauso ist das $k$-te Minorenideal von $M=P^{-1}(PQM)Q^{-1}$ in dem von $PMQ$ enthalten.
+\end{cproof}
+
+\begin{pro}\label{17.2.13}
+Seien $m,n,k\in\N_0$ und $A\in K^{m\times n}$. Dann $\minor_0(A)=K$, $\minor_k(A)=\{0\}$ falls $k>\min\{m,n\}$ und $\minor_0(A)\ge \minor_1(A)\ge\minor_2(A)\ge...$.
+\end{pro}
+\begin{cproof}
+Entwickelt man einen Minor der Ordnung $k+1$ nach einer Zeile oder einer Spalte [$\to$\ref{9.2.1}], so sieht man, dass er im Ideal $\minor_k(A)$ liegt.
+\end{cproof}
+
+\section{Eindeutigkeit der Normalform von Smith}
+
+Wir springen zurück in die Notation und in die Generalvoraussetzungen von Paragraph $\S 17.1$. Insbesondere sei $A$ ein Hauptidealring. Daher kann man die gesamte Information über die Minorenideale einer Matrix $M\in A^{m\times n}$ durch die sogenannten Determinantenteiler von $M$ erfassen.
+
+\begin{df}\label{17.3.1}
+Seien $m,n\in \N_0$, $M\in A^{m\times n}$ und $l:=\min\{m,n\}$. Dann heißt für $k\in\{1,...,l\}$ das eindeutig bestimmte $\P_A^\alpha$ ($\alpha\in\expfam\cup\{\infty\}$, hier wieder $\P_A^\infty:=0$) mit $\minor_k(M)=(\P_A^\alpha)$ der $k$-te Determinantenteiler $d_k(M)$ von $M$. Wir setzen $d(M):=(d_1(M),...,d_l(M))$.
+\end{df}
+
+\begin{bsp}\label{17.3.2}
+Sei $M:=\begin{pmatrix}2 & 4\\-2&2\\0&6\end{pmatrix}\in \Z^{3\times 2}$ [$\to$\ref{17.2.11}]. Setzt man wie üblich $\P_\Z=\P$, so gilt $d(M)=(2,12)$.
+\end{bsp}
+
+\begin{bem}\label{17.3.3}
+\begin{enumerate}[\normalfont(a)]
+\item $d_k(M)$ ist nach \ref{16.1.8}(c) ein ggT der Minoren der Ordnung $k$ von $M$.
+\item Wegen $\minor_1(M)\supseteq...\supseteq \minor_l(M)$ gilt, dass $d_1(M)\mid...\mid d_l(M)$.
+\item Sind $P\in A^{m\times m}$ und $Q\in A^{n\times n}$ invertierbar, so $d(M)=d(PMQ)$ [$\to$\ref{17.2.12}].
+\end{enumerate}
+\end{bem}
+
+\begin{lem}\label{17.3.4}
+Sei $S\in A^{m\times n}$ in Smithscher Normalform, $l:=\min\{n,m\}$ und $c_1,...,c_l\in A$ mit \begin{align*}
+&S=\left(\begin{array}{c c c}
+c_1& \multicolumn{2}{c}{\text{\kern 1em\smash{\raisebox{-1.5ex}{\Huge 0}}}} \\
+& \ddots &  \\
+\multicolumn{2}{c}{\text{\kern-1.5em\smash{\raisebox{0ex}{\Huge 0}}}} &c_l\\
+& &\\
+\hline 
+&\tikz[remember picture]\node[inner sep=0pt] (a){ };&\\
+& &
+\end{array}\right)\qquad\text{falls }m\ge n\\
+\text{bzw.}\qquad&S=\left(\begin{array}{c c c c|c c}
+ c_1& \multicolumn{2}{c}{\text{\kern 1em\smash{\raisebox{-1.5ex}{\Huge 0}}}}& &\tikz[remember picture]\node[inner sep=0pt] (b){ }; &\\
+& \ddots & & \\
+\multicolumn{2}{c}{\text{\kern-1.5em\smash{\raisebox{0ex}{\Huge 0}}}}& c_l& &\\
+\end{array}\right)\qquad\text{falls }m\le n.
+\begin{tikzpicture}[overlay, remember picture]
+\node at (a.north) [anchor=center,yshift=-0.2cm, yscale=2,xscale=3] {$0$};
+\node at (b.east) [anchor=center, xshift=0.2cm,yshift=-0.6cm,  xscale=3, yscale=3] {$0$};
+\end{tikzpicture}
+\end{align*}
+Dann gilt $d_k(M)=c_1...c_k$ für $k\in\{1,...,l\}$.
+\end{lem}
+\begin{cproof}
+Sei $k\in\{1,...l\}$. Dann $(c_1...c_k)\subseteq \minor_k(M)\stackrel{\ref{9.1.9}}{\subseteq}(\{c_{i_1}...c_{i_k}\mid 1\le i_1\le...\le i_k\le l\})\stackrel{c_1\mid...\mid c_l}{\subseteq}(c_1...c_k)$, also $(d_k(M))=(c_1...c_k)$ und daher $d_k(M)\divi c_1...c_k$ und nach Definition \ref{17.1.2} und \ref{17.3.1} sogar $d_k(M)=c_1...c_k$.
+\end{cproof}
+
+\begin{sat}\label{17.3.5}
+(Elementarteilersatz, auch Invariantenteilersatz genannt)
+\begin{enumerate}[\normalfont(a)]
+\item Zu jeder Matrix $M\in A^{m\times n}$ gibt es genau eine Matrix $S\in A^{m\times n}$ in Smithscher Normalform mit $M\sim S$.
+\item Sind $M,N\in A^{m\times n}$, so gilt $M\sim N$ genau dann, wenn es invertierbare Matrizen $P\in A^{m\times m}$ und $Q\in A^{n\times n}$ gibt mit $M=PNQ$.
+\end{enumerate}
+\end{sat}
+\begin{cproof}
+\textbf{Zu (a)}. Die Existenz ist in \ref{17.1.3} gezeigt. Zur Eindeutigkeit: Seien $S,T\in A^{m\times n}$ in Smithscher Normalform mit $S\sim T$. Zu zeigen ist $S=T$. Nach $\S 17.1$ gibt es invertierbare $\P\in A^{m\times n}$ und $Q\in A^{n\times n}$ mit $S=PTQ$. Nach \ref{17.1.12} gilt dann $\minor_k(S)=\minor_k(T)$ für alle $k\in\N_0$ und daher $d(S)=d(T)$. Mit \ref{17.3.4} folgert man leicht $S=T$.\\
+
+\noindent\textbf{Zu (b)}. Seien $P\in A^{m\times m}$ und $Q\in A^{n\times n}$ invertierbar mit $M=PNQ$. Zu zeigen ist $M\sim N$. Seien $S$ und $T$ die Smithschen Normalformen von $M$ und $N$. Wie im Beweis von (a) gerade gezeigt, gilt dann $S=T$, also $M\sim S=T\sim N$ und daher $M\sim N$.
+\end{cproof}
+
+\begin{df}\label{17.3.6}
+Sei $M\in A^{m\times n}$. Die eindeutig bestimmte Matrix $S\in A^{m\times n}$ in Smithscher Normalform mit $M\sim S$ heißt \underline{die Smithsche Normalform von $M$}. Für $k\in \{1,...,l\}$ mit $l:=\min\{n,m\}$ heißt der Eintrag in der $k$-ten Zeile und $k$-Spalte von $S$ der $k$-te Elementarteiler von $M$, geschrieben $c_k(M)$. Wir setzen $c(M):=(c_1(M),...,c_l(M))$.
+\end{df}
+
+\begin{kor}\label{17.3.7}
+\begin{enumerate}[\normalfont(a)]
+\item $d_k(M)=c_1(M)...c_k(M)$ für alle $M\in A^{m\times n}$ und $k\in\{1,...,l\}$ mit $l:=\min\{n,m\}$.
+\item $M\sim N\Longleftrightarrow d(M)=d(N)\Longleftrightarrow c(M)=c(N)$ für alle $M,N\in A^{m\times n}$.
+\end{enumerate}
+\end{kor}
+
+\begin{bsp}\label{17.3.8}
+Sei wieder $M:=\begin{pmatrix}2 & 4\\ -2&2\\ 0&6\end{pmatrix}\in \Z^{3\times 2}$ [$\to$\ref{17.3.2},\ref{17.2.11}]. Wegen $d(M)=(2,12)$ gilt $c(M)=(2,6)$. Die Smithsche Normalform von $M$ ist also $S=\begin{pmatrix}2 & 0\\ 0 & 6\\ 0&0\end{pmatrix}$.
+\end{bsp}
+
+\section{Charakterisierung der Ähnlichkeit und nochmals Cayley-Hamilton}
+
+In diesem Abschnitt sei stets $K$ ein kommutativer Ring mit $1\neq 0$. Nach \ref{17.3.5}(a) sind zwei Matrizen über einen Hauptidealring (zeilenspalten-)äquivalent genau dann, wenn sie dieselbe Smithsche Normalform haben. Oftmals interessiert man sich aber nicht für Äquivalenz, sondern für Ähnlichkeit von Matrizen.
+
+\begin{er}\mbox{}[$\to$\ref{9.1.16}, \ref{9.1.17}]
+\label{17.4.1}
+$A,B\in K^{n\times n}$ heißen ähnlich, in Zeichen $A\approx B$, wenn es eine invertierbare Matrix $P\in K^{n\times n}$ gibt mit $A=P^{-1}BP$. Ähnlichkeit ist eine Äquivalenzrelation.
+\end{er}
+
+\begin{beo}\label{17.4.2}
+Für $A,B\in K^{n\times n}$ gilt
+\begin{align*}
+A\approx B&\Longleftrightarrow\text{es gibt ein invertierbares }P\in K^{n\times n}\text{ mit }A=PBP^{-1}\\
+&\stackrel{\ref{9.2.6}}{\Longleftrightarrow}\text{es gibt (invertierbare) }P,Q\in K^{n\times n}\text{ mit }PAQ=B\text{ und }PQ=I_n\\
+&\stackrel{\footnotesize{Koeff.vergleich}}{\Longleftrightarrow}\text{es gibt (invertierbare) }P,Q\in K^{n\times n}\text{ mit }P(A-XI_n)Q=B-XI_n
+\end{align*}und andererseits
+\begin{align*}
+A-XI_n\sim B-XI_n&\stackrel{\ref{17.3.5}}{\Longleftrightarrow}\text{es gibt invertierbare }P,Q\in K[X]^{n\times n}\text{ mit }\\
+&(*)\qquad P(A-XI_n)Q=B-XI_n.
+\end{align*}
+\end{beo}
+
+\begin{df}\label{17.4.3}
+Ist $A\in K^{n\times n}$, so heißt $A-XI_n\in K[X]^{n\times n}$ die charakteristische Matrix von $A$.
+\end{df}
+
+\begin{bem}\label{17.4.4}
+Sei $K$ ein Körper.
+\begin{enumerate}[\normalfont(a)]
+\item Die Determinante der charakteristischen Matrix ist das charakteristische Polynom [$\to$\ref{10.1.8}(e)].
+\item Obige Beobachtung lässt die Idee aufkommen, dass man die Ähnlichkeit von Matrizen im Zusammenhang mit der Äquivalenz mit der Äquivalenz ihrer charakteristischen Matrizen bringen könnte. Das Problem scheint dabei, dass die Übergangsmatrizen $P$ und $Q$ einmal aus $K^{n\times n}$ und einmal aus $K[X]^{n\times n}$ sein sollen. Trotzdem wird sich auf überraschende Weise herausstellen, dass die Ähnlichkeit von Matrizen gleichbedeutend zur Äquivalenz ihrer charakteristischen Matrizen ist.
+\item Da man die Elemente von $K[X]^{n\times n}$ in der Form $X^dP_d+X^{d-1}P_{d-1}+...+P_0$ mit eindeutig bestimmten $P_i\in K^{n\times n}$ schreiben kann, nennt man sie auch Matrixpolynome.
+\item Im Hinblick auf (b) untersuchen wir Möglichkeiten durch Einsetzen von etwas für $X$ aus einem Matrixpolynom eine Matrix zu machen. 
+\\Einsetzen eines Skalars $\la\in K$ für $X$ scheint leider nichts zu bringen, denn aus (*) wird dann $P(\la)(A-\la I_n)Q(\la)=B-\la I_n$ mit invertierbaren $P(\la),Q(\la)\in K^{n\times n}$, aber da die Unbestimmte verschwunden ist, kann man dies nicht aufspalten in $P(\la)AQ(\la)=B(\la)$ und $P(\la)Q(\la)=I_n$. 
+\\Gewöhnliches Einsetzen einer Matrix $M\in K^{n\times n}$ für $X$ würde (*) zu einer Gleichung von Elementen aus $K[M]^{n\times n}$ [$\to$\ref{10.2.11}(b)] machen und die Sache eher noch verkomplizieren. Wir definieren daher die Linkseinsetzung einer Matrix in ein Matrixpolynom. Sie hat (genauso wie die Rechtseinsetzung, die wir alternativ verwenden könnten) viel schlechtere Eigenschaften als etwa die in \ref{10.2.12}(b) definierte Einsetzung einer Matrix in ein Polynom. Sie wird uns aber in erstaunlicher Weise helfen.
+\end{enumerate}
+\end{bem}
+
+\begin{df}\label{17.4.5}
+Ist $P=X^dP_d+X^{d-1}P_{d-1}+...+P_0\in K[X]^{n\times n}$ mit $P_i\in K^{n\times n}$, dann nennen wir $P_A:=A^dP_d+...+P_0$ für $A\in K^{n\times n}$ die Linkseinsetzung von der Matrix $A$ in (das Matrixpolynom) $P$
+\end{df}
+
+\begin{bsp}\label{17.4.6} Ist $P:=\begin{pmatrix}2-X^2&X\\ 1&1+X\end{pmatrix}=X^2\begin{pmatrix}-1&0\\0&0\end{pmatrix}+X\begin{pmatrix}0&0\\1&1\end{pmatrix}+\begin{pmatrix}2&0\\1&1\end{pmatrix}$ und $A:=\begin{pmatrix}1&2\\0&0\end{pmatrix}$, so ist
+\begin{align*}
+P_A&=\begin{pmatrix}1&2\\0&0\end{pmatrix}^2\begin{pmatrix}-1&0\\0&0\end{pmatrix}+\begin{pmatrix}1&2\\0&0\end{pmatrix}\begin{pmatrix}0&0\\1&1\end{pmatrix}+\begin{pmatrix}2&0\\1&1\end{pmatrix}\\
+&=\begin{pmatrix}1&2\\0&0\end{pmatrix}\begin{pmatrix}-1&0\\0&0\end{pmatrix}+\begin{pmatrix}0&3\\0&0\end{pmatrix}+\begin{pmatrix}2&0\\1&1\end{pmatrix}
+\\
+&=\begin{pmatrix}-1&0\\0&0\end{pmatrix}+\begin{pmatrix}0&3\\0&0\end{pmatrix}+\begin{pmatrix}2&0\\1&1\end{pmatrix}=\begin{pmatrix}1&3\\1&1\end{pmatrix}.
+\end{align*}
+\end{bsp}
+
+\begin{lem}\label{17.4.7}
+Seien $P,Q\in K[X]^{n\times n}$ und $A\in K^{n\times n}$. Sei weiter $P=X^dP_d+...+P_0$ mit $P_i\in K^{n\times n}$ derart, dass $P_iA=AP_i$ für alle $i\in\{1,...,d\}$. Dann gilt $(PQ)_A=P_AQ_A$.
+\end{lem}
+\begin{cproof}
+Schreibe $Q=X^eQ_e+...+Q_0$ mit $Q_j\in K^{n\times n}$. Dann ist
+\begin{align*}
+(PQ)_A&=\left(\sum_{k=0}^{d+e}X^k\sum_{i+j=k}P_iQ_j\right)_A\left[\begin{matrix}\text{setze }P_i:=0\text{ für i>d}\\\text{und }Q_j:=0\text{ für j>e}\end{matrix}\right]\\
+&=\sum_{k=0}^{d+e}A^k\sum_{i+j=k}P_iQ_j\\
+&\stackrel{P_iA=AP_i}{=}\sum_{k=0}^{d+e}\sum_{i+j=k}(A^iP_i)(A^jQ_j)\\
+&=\sum_{i=0}^d\sum_{j=0}^e(A^i P_i)(A^j Q_j)\\
+&=\left(\sum_{i=0}^d A^iP_i\right)\left(\sum_{j=0}^e A^jQ_j\right)=P_AQ_A.
+\end{align*}
+\end{cproof}
+
+\begin{lem}\mbox{}[$\to$\ref{4.2.10}]
+\label{17.4.8}
+Sei $P\in K[X]^{n\times n}$ und $A\in K^{n\times n}$. Dann $P_A=0\Longleftrightarrow \exists Q\in K[X]^{n\times n}: P=(XI_n-A)Q$.
+\end{lem}
+\begin{cproof}
+\begin{itemize}
+\item[$"\impliedby"$] Sei $Q\in K[X]^{n\times n}$ mit $P=(XI_n-A)Q$. Dann gilt wegen $I_nA=AI_n$  und $AA=AA$ nach \ref{17.4.7} $P_A=(XI_n-A)_AQ_A=\underbrace{(AI_n-A)}_{=0}Q_A=0$.
+\item[$"\implies"$] Gelte $P_A=0$. Schreibe $P=X^dP_d+...+P_0$ mit $P_i\in K^{n\times n}$. Dann
+\begin{align*}
+P=P-P_A&=(X^dI_n-A^d)P_d+...+(XI_n-A)P_1\\
+&=(XI_n-A)(X^{d-1}I_n+X^{d-2}A+X^{d-3}A^2+...+A^{d-1})\\
+&+...+(XI_n-A)P_1.
+\end{align*}
+\end{itemize}
+\end{cproof}
+
+\begin{lem}\label{17.4.9}
+Seien $A,B\in K^{n\times n}$ und $P,Q\in K[X]^{n\times n}$ mit $P(B-XI_n)=(A-XI_n)Q$. Dann gilt $AP_A=P_AB$.
+\end{lem}
+\begin{cproof}
+Es gilt
+\begin{align*}
+0&=(A-AI_n)Q\stackrel{\ref{17.4.7}}{=}((A-XI_n)Q)_A=(P(B-XI_n))_A=(PB-XP)_A\\
+&=(PB_A)-(XP)_A=P_AB-AP_A.
+\end{align*}
+\end{cproof}
+
+\begin{sat}\label{17.4.10}
+Seien $P,Q\in K[X]^{n\times n}$ invertierbar und $A,B\in K^{n\times n}$ mit $P(B-XI_n)Q=A-XI_n$. Dann ist $P_A\in K^{n\times n}$ invertierbar mit $P_A^{-1}AP_A=B$.
+\end{sat}
+\begin{cproof}
+Wegen $P(B-XI_n)=(A-XI_n)Q^{-1}$ folgt nach dem letzten Lemma $AP_A=P_AB$. Zu zeigen ist, $P_A$ ist invertierbar. Setze $R:=P^{-1}\in K[X]^{n\times n}$, das heißt $PR=I_n$. Nach Lemma \ref{17.4.8} gibt es $F,G\in K[X]^{n\times n}$ mit $P-P_A=(XI_n-A)F$ und $R-R_B=(XI_n-B)G$. Es folgt
+\begin{align*}
+I_n=PR&=P(XI_n-B)G+PR_B=(XI_n-A)Q^{-1}G+PR_B\\
+&=(XI_n-A)Q^{-1}G+P_AR_B+(XI_n-A)FR_B
+\end{align*}
+und daher $I_n-P_AR_B=(XI_n-A)(Q^{-1}G+FR_B)$. Es folgt $I_n-P_AR_B=(I_n-P_AR_B)_A\stackrel{\ref{17.4.8}}{=}0$, also $P_AR_B=I_n$ und nach \ref{9.2.6} ist $P_A$ invertierbar.
+\end{cproof}
+
+\begin{kor}\label{17.4.11}
+Sei $K$ ein Körper und $A,B\in K^{n\times n}$. Dann äquivalent:
+\begin{enumerate}[\normalfont(a)]
+\item $A\approx B$
+\item $A-XI_n\sim B-XI_n$
+\item $c(A-XI_n)=c(B-XI_n)$
+\item $d(A-XI_n)=d(B-XI_n)$
+\item $A-XI_n$ und $B-XI_n$ haben dieselbe Smithsche Normalform.
+\end{enumerate}
+\end{kor}
+\begin{cproof}
+Beachte, dass $K[X]$ ein Hauptidealring ist.\\
+$\boldsymbol{(a)\implies(b)}$ folgt aus \ref{17.4.2}.\\
+
+\noindent$\boldsymbol{(b)\Longleftrightarrow(c)\Longleftrightarrow(d)\Longleftrightarrow(e)}$ folgt aus \ref{17.3.6} und \ref{17.3.7}.\\
+
+\noindent $\boldsymbol{(b)\implies(a)}$ folgt aus \ref{17.4.10}.
+\end{cproof}
+
+\begin{algo}\label{17.4.2}
+Sei $K$ ein Körper und $A,B\in K^{n\times n}$ gegeben. Um zu entscheiden, ob $A\approx B$ gilt, und um gegebenenfalls $R\in K^{n\times n}$ mit $R^{-1}AR=B$ zu berechnen, kann man wie folgt vorgehen: Berechne wie in $\S 17.1$ durch Zeilen- und Spaltenoperatonen der Form
+\begin{itemize}
+\item $Z_i\leftarrow Z_i+\la Z_j\qquad(i\neq j, \la\in K[X])$
+\item $Z_i\la Z_i\qquad(\lambda\in K^\times)$
+\item $S_i\leftarrow S_i+\la S_j\qquad(i\neq j,\ \la\in K[X], i\le n, j\le n)$
+\item $S_i\la Z_i\qquad(\lambda\in K^\times, i\le n)$
+\end{itemize}
+$S,T\in K[X]^{n\times n}$ in Smithscher Normalform und $L\in K[X]^{n\times n}$ mit $(A-XI_n\mid I_n)\sim (S\mid L)$ und $B-XI_n\sim T$. Notiere dabei die \underline{Zeilen}operationen, die zu $B-XI_n\sim T$ führen (aus Effizienzgründen sollte man im Zweifelsfall Spaltenoperationen vorziehen!). Gilt $S\neq T$, so $A\not\approx B$.\\
+Gelte also nun $S=T$. Wende dann die zu den notieren Zeilenoperationen inversen Zeilenoperationen in umgekehrter Reihenfolge auf $L$ an und nenne die so erhaltene Matrix $P\in K[X]^{n\times n}$. Setze nun $R:=P_B$. Dann ist $R$ invertierbar und es gilt $R^{-1}BR=A$.
+\end{algo}
+\begin{cproof}
+$L\in K[X]^{n\times n}$ ist invertierbar und es gibt ein invertierbares $M\in K[X]^{n\times n}$ mit $L(A-XI_n)M=S$ (vergleiche \ref{17.1.12}, im Gegensatz zu dort haben wir $M$ nicht berechnet, da wir es nicht brauchen). Weiter gibt es invertierbare $P',Q'\in K[X]^{n\times n}$ mit $P'(B-XI_n)Q'=T$, wobei Multiplikation von links mit $P'$ der Anwendung der notierten Zeilenoperationen entspricht (siehe $\S 17.1$). Gilt $S\neq T$, so ist $A\not\approx B$ nach \ref{17.4.11}.\\
+Gelte also $S=T$. Dann ist $L(A-XI_n)M=P'(B-XI_n)Q'$. Nun gilt $P=(P')^{-1}L$, also $P(A-XI_n)(M(Q')^{-1})=B-XI_n$, weswegen nach \ref{17.4.10} gilt, dass $R=P_B\in K^{n\times n}$ invertierbar ist mit $R^{-1}BR=P_B^{-1}BP_B=A$.
+\end{cproof}
+
+\begin{bsp}\label{17.4.13}
+Betrachte $A,B\in\Q^{3\times 3}$ gegeben durch $A=\begin{pmatrix*}1&1&0\\0&1&1\\1&0&1\end{pmatrix*}$ und $B=\begin{pmatrix}1&1&\frac{1}{2}\\1&1&-\frac{1}{2}\\0&2&1\end{pmatrix}$. Es gilt
+\begin{align*}
+(A-XI_3\mid I_3)=&\left(\begin{array}{ccc|ccc}1-X&1&0&1&0&0\\
+0&1-X&1&0&1&0\\1&0&1-X&0&0&1\end{array}\right)\\
+\sim&\left(\begin{array}{ccc|ccc}0&1&-(1-X)^2&1&0&-(1-X)\\0&0&1+(1-X)^3&-(1-X)&1&(1-X)^2\\1&0&0&0&0&1\end{array}\right)\\
+\sim&\left(\begin{array}{ccc|ccc}0&1&0&1&0&X-1\\0&0&1+(1-X)^3&-X-1&1&(X-1)^2\\1&0&0&0&0&1\end{array}\right)\\
+\sim&\left(\begin{array}{ccc|ccc}1&0&0&0&0&1\\0&1&0&1&0&X-1\\0&0&(X-1)^3-1&X-1&1&(X-1)^2\end{array}\right):=(S\mid L).
+\end{align*}
+Notiere im Folgenden nur die Zeilenoperationen!
+\begin{align*}
+B-XI_3=&\begin{pmatrix}1-X&1&\frac{1}{2}\\1&1-X&-\frac{1}{2}\\0&2&1-X\end{pmatrix}\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1-(1-X)Z_2\\ Z_3\leftarrow \frac{1}{2}Z_3\end{smallmatrix}}{\sim}\begin{pmatrix}0&1-(1-X)^2&\frac{1}{2}+\frac{1}{2}(1-X)\\1&0&0\\0&1&\frac{1}{2}(1-X)\end{pmatrix}\\
+\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1-Z_3\end{smallmatrix}}{\sim}&\begin{pmatrix}0&-(1-X)^2&\frac{1}{2}\\1&0&0\\0&1&\frac{1}{2}(1-X)\end{pmatrix}\\
+\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1+(1-X)^2Z_3\end{smallmatrix}}{\sim}&\begin{pmatrix}0&0&\frac{1}{2}\\1&0&0\\0&1&0\end{pmatrix}
+\stackrel{\begin{smallmatrix}Z_1\leftrightarrow Z_3\end{smallmatrix}}{\sim}\begin{pmatrix}1&0&0\\0&1&0\\0&0&(X-1)^3-1\end{pmatrix}=:T.
+\end{align*}
+$S$ und $T$ sind in Smithscher Normalform und es gilt $S=T$, also $A\approx B$. Führe nun die zu den notieren Zeilenoperationen inversen Operationen in umgekehrter Reihenfolge auf $L$ aus.
+\begin{align*}
+L=&\begin{pmatrix}0&0&1\\1&0&X-1\\X-1&1&(X-1)^2\end{pmatrix}\stackrel{\begin{smallmatrix}Z_1\leftrightarrow Z_3\end{smallmatrix}}{\sim}\begin{pmatrix}X-1&1&(X-1)^2\\1&0&X-1\\0&0&1\end{pmatrix}\\
+\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1-(1-X)^2Z_3\end{smallmatrix}}{\sim}&\begin{pmatrix}X-1&1&0\\1&0&X-1\\0&0&1\end{pmatrix}\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1-(1-X)^2Z_3\end{smallmatrix}}{\sim}\begin{pmatrix}X-1&1&0\\1&0&X-1\\0&0&1\end{pmatrix}\\
+\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1+Z_3\end{smallmatrix}}{\sim}&\begin{pmatrix}X-1&1&1\\1&0&X-1\\0&0&1\end{pmatrix}\stackrel{\begin{smallmatrix}Z_3\leftarrow 2Z_3\end{smallmatrix}}{\sim}\begin{pmatrix}X-1&1&1\\1&0&X-1\\0&0&2\end{pmatrix}\\
+\stackrel{\begin{smallmatrix}Z_1\leftarrow Z_1+2(1-X)_2\end{smallmatrix}}{\sim}&\begin{pmatrix}0&1&1-(X-1)^2\\1&0&X-1\\0&0&2\end{pmatrix}=\begin{pmatrix}0&1&-X^2+2X\\1&0&X-1\\0&0&2\end{pmatrix}.
+\end{align*}
+Somit ist
+\begin{align*}
+P:=X^2\begin{pmatrix}0&0&-1\\0&0&0\\0&0&0\end{pmatrix}+X\begin{pmatrix}0&0&2\\0&0&1\\0&0&0\end{pmatrix}+\begin{pmatrix}0&1&0\\1&0&-1\\0&0&2\end{pmatrix}.
+\end{align*}
+Mit
+\begin{align*}
+R:=P_B&=\begin{pmatrix}1&1&\frac{1}{2}\\1&1&-\frac{1}{2}\\0&2&1\end{pmatrix}^2\begin{pmatrix}0&0&-1\\0&0&0\\0&0&0\end{pmatrix}+\begin{pmatrix}1&1&\frac{1}{2}\\1&1&-\frac{1}{2}\\0&2&1\end{pmatrix}\begin{pmatrix}0&0&2\\0&0&1\\0&0&0\end{pmatrix}+\begin{pmatrix}0&1&0\\1&0&-1\\0&0&2\end{pmatrix}\\
+&=\begin{pmatrix}1&1&\frac{1}{2}\\1&1&-\frac{1}{2}\\0&2&1\end{pmatrix}\begin{pmatrix}0&0&-1\\0&0&-1\\0&0&0\end{pmatrix}+\begin{pmatrix}0&0&3\\0&0&3\\0&0&2\end{pmatrix}+\begin{pmatrix}0&1&0\\1&0&-1\\0&0&2\end{pmatrix}\\
+&=\begin{pmatrix}0&0&-2\\0&0&-2\\0&0&-2\end{pmatrix}+\begin{pmatrix}0&0&3\\0&0&3\\0&0&2\end{pmatrix}+\begin{pmatrix}0&1&0\\1&0&-1\\0&0&2\end{pmatrix}\\
+&=\begin{pmatrix}0&1&1\\1&0&0\\0&0&2\end{pmatrix}
+\end{align*}
+gilt $R^{-1}BR=A$.
+\end{bsp}
+
+\begin{pro}\label{17.4.14}
+Sei $L$ ein Körper und $K$ ein Unterkörper von $L$. Seien $A,B\in K^{n\times n}$. Dann sind $A$ und $B$ ähnlich über $K$ (das heißt aufgefasst als Matrizen in $K^{n\times n}$) genau dann wenn, wenn $A$ und $B$ ähnlich über $L$ sind.
+\end{pro}
+\begin{cproof}
+Da $K[X]$ ein Hauptidealring ist, gibt es $S,T\in K[X]^{n\times n}$ in Smithscher Normalform mit $A-XI_n\sim S$ über $K[X]$ und $B-XI_n\sim T$ über $K[X]$. Es sind dann $S$ und $T$ auch im Smithscher Normalform über $L[X]$ (das heißt als Matrizen aus $L[X]^{n\times n}$) und auch über $L$ gilt $A-XI_n\sim S$ und $B-XI_n\sim T$. Daher gilt
+\begin{align*}
+A\approx B\text{ über }K\stackrel{\ref{17.4.11}}{\Longleftrightarrow}S=T \stackrel{\ref{17.4.11}}{\Longleftrightarrow}A\approx B\text{ über }L.
+\end{align*}
+\end{cproof}
+
+Mit den in diesem Abschnitt entwickelten Werkzeugen können wir den Satz von Caley-Hamilton \ref{10.2.14}(b) jetzt mühelos noch einmal beweisen und zwar sogar in einer allgemeineren Form.
+
+\begin{sat}\label{17.4.15}
+(Cayley-Hamilton) Sei $A\in K^{n\times n}$ und $\chi_A:=\det(A-XI_n)$. Dann ist $\chi_A(A)=0$.
+\end{sat}
+\begin{cproof}
+Sei $P:=(A-XI_n)(\com(A-XI_n))^T\stackrel{\ref{9.2.4}}{=}(\det(A-XI_n))I_n=\chi_AI_n$. Dann gilt $0\stackrel{\ref{17.4.8}}{=}P_A=\chi_A(A)I_n=\chi_A(A)$.
+\end{cproof}
+
+\section[Die Normalform von Frobenius]{Die Normalform von Frobenius\\{\small[\href{https://de.wikipedia.org/wiki/Ferdinand_Georg_Frobenius}{Ferdinand Georg Frobenius} *1849 \dag 1917}]}
+In diesem Abschnitt sei $K$ stets ein Körper.
+
+\begin{er}\label{17.5.1}
+Sei $p=X^n+a_{n-1}X^{n-1}+...+a_1X+a_0\in K[X]$ mit $a_0,...,a_n\in K$ ein normiertes Polynom. Dann ist das Ideal $(p)$ des kommutativen Ringes $K[X]$ ein Unterraum des $K$-Vektorraums $K[X]$ und $\v:=(\overline{1},\overline{X},...\overline{X^{n-1}})$ eine Basis des Quotientenvektorraums $K[X]/(p)$ [$\to$\ref{10.2.5}]. Die Abbildung
+\begin{align*}
+f: K[X]/(p)\to K[X]/(p), \overline{q}\mapsto \overline{Xq}\qquad(q\in K[X])
+\end{align*}
+ist wohldefiniert und linear und
+\begin{equation*}
+C(p):=M(f,\v)=
+\begin{tikzpicture}[loosely dotted,thick,baseline]
+\matrix (m) [matrix of math nodes,nodes in empty cells,right delimiter=),left delimiter=(,column sep=1em]{
+0&0&&&&0&-a_0\\
+1&0&&&&  &-a_1\\
+0&1&&&&  &-a_2\\
+0&0\\
+\\
+ &   &&&&0\\
+0&0&&&0&1&-a_{n-1}\\
+} ;
+\draw (m-1-2)-- (m-1-6);
+\draw (m-2-2)-- (m-6-6);
+\draw (m-3-2)-- (m-7-6);
+\draw (m-4-2)-- (m-7-5);
+\draw (m-1-6)-- (m-6-6);
+\draw (m-3-7)-- (m-7-7);
+\draw (m-4-1)-- (m-7-1);
+\draw (m-4-2)-- (m-7-2) -- (m-7-5);
+\end{tikzpicture}\in K^{n\times n}
+\end{equation*}
+heißt die Begleitmatrix von $p$ [$\to$\ref{10.2.6}]. Man sieht leicht $p(f)=0$ und $r(f)\neq 0$ für alle $r\in K[X]\setminus\{0\}$ mit $\deg(r)<n$ [$\to$\ref{10.2.12}]. Es folgt $\mu_{C(p)}=\mu_f=p$ und $\chi_{C(p)}=\chi_f=(-1)^np$ [$\to$\ref{10.2.18},\ref{10.2.7}].
+\end{er}
+
+\begin{lem}\label{17.5.2}
+Sei $p\in K[X]$ normiert vom Grad $\ge 1$. Dann ist die Smithsche Normalform der charakteristischen Matrix $C(p)-XI_n\in K[X]^{n\times n}$ gleich $\left(\begin{smallmatrix}
+1 & & &\llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots & &\\
+& & 1 &\\
+\rlap{\tlap{\LARGE 0}}& & & p
+\end{smallmatrix}\right)$.
+\end{lem}
+\begin{cproof}
+Sei $n:=\deg p\ge 1$. Streicht man in $C(p)-XI_n=
+\begin{tikzpicture}[loosely dotted,thick,baseline]
+\matrix (m) [matrix of math nodes,nodes in empty cells,right delimiter=),left delimiter=(,column sep=1em]{
+-X&&&-a_0\\
+1&&&-a_1\\
+&&&\\
+&&&\\
+&&-X&-a_{n-2}\\
+&&1&-a_{n-1}-X\\
+} ;
+\node at (m-1-3.south) [anchor=center, xshift=0.2cm,yshift=-0.3cm,  xscale=5, yscale=5] {$0$};
+\node at (m-6-1.north) [anchor=center, xshift=0.2cm,yshift=0.3cm,  xscale=5, yscale=5] {$0$};
+\draw (m-2-4)-- (m-5-4);
+\draw (m-1-1)-- (m-5-3);
+\draw (m-2-1)-- (m-6-3);
+\end{tikzpicture}$ die erste Zeile und letzte Spalte, so erhält man eine obere Dreiecksmatrix mit Determinante $1$. Es folgt $d(C(p)-XI_n)=(1,...,1,p)=d\left(\begin{smallmatrix}
+1 & & &\llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots & &\\
+& & 1 &\\
+\rlap{\tlap{\LARGE 0}}& & & p
+\end{smallmatrix}\right)$.
+\end{cproof}
+
+\begin{lem}\label{17.5.3}
+Sei $m\in \N_0$ und seien $p_1,...,p_m\in K[X]$ normiert vom Grad $\ge 1$ mit $p_1\mid...\mid p_m$. Dann ist die Smithsche Normalform von
+\begin{center}
+$A=
+\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{pmatrix}-XI_n\in K[X]^{n\times n}
+$
+(mit $n:=\sum_{i=1}^m\deg(p_i)$) 
+\end{center}
+gleich $\left(\begin{smallmatrix}
+\tikz\node(c){$1$};\\
+&\ddots\\
+&&1\\
+&&&p_1\\
+&&&&&\ddots\\
+&&&&&&\tikz\node(d){$p_m$};
+\end{smallmatrix}\right)
+\begin{tikzpicture}[overlay]
+\node[below right of = c,xshift=0em,yshift=-3em,scale=3]{$0$};
+\node[above left of = d,xshift=0em,yshift=3em,scale=3]{$0$};
+\end{tikzpicture}$.
+\end{lem}
+\begin{cproof}
+Setze $n_i:=\deg(p_i)$. Für $i\in\{1,...,n\}$ gilt
+\begin{align*}
+&\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}\end{pmatrix}-XI_n
+\stackrel{\ref{17.5.2}}{\sim}
+\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (b1) {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_1\end{smallmatrix}$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (bm) at (1.5,-1.5) [anchor=north west] {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_m\end{smallmatrix}$};
+\node[scale=4.5, yshift=-0.1cm] at (b1.east-|bm) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (b1)--(bm);
+\end{tikzpicture}
+\end{pmatrix}\\
+~&\begin{pmatrix}
+\tikz\node(c){$1$};\\
+&\ddots\\
+&&1\\
+&&&p_1\\
+&&&&&\ddots\\
+&&&&&&\tikz\node(d){$p_m$};
+\end{pmatrix}
+\begin{tikzpicture}[overlay]
+\node[below right of = c,xshift=0em,yshift=-3.5em,scale=5]{$0$};
+\node[above left of = d,xshift=0em,yshift=3.5em,scale=5]{$0$};
+\end{tikzpicture}.
+\end{align*}
+\end{cproof}
+
+\begin{satdef}\label{17.5.4}
+Sei $A\in K^{n\times n}$. Dann gibt es genau ein Tupel $(p_1,...,p_m)$ von normierten Polynomen $p_i\in K[X]$ vom Grad $\ge 1$ mit $p_1\mid...p_m$ und
+\begin{align*}
+A\approx\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{pmatrix}.
+\end{align*}
+Die rechte Matrix heißt die Frobenius'sche Normalform von $A$. Es gilt $c(A-XI_n)=(1,...,1,p_1,...,p_m)$, $\mu_A=p_m$ und $\chi_A=(-1)^np_1\hdots p_m$.
+\end{satdef}
+\begin{cproof}
+Seien $p_1,...,p_m$ normierte Polynome vom Grad $\ge 1$ mit $p_1\mid...\mid p_m$. Dann gilt
+\begin{align*}
+&A\approx\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{pmatrix}\\
+&\stackrel{\ref{17.4.11}}{\Longleftrightarrow}\text{die Smitsche Normalform von }A-XI_n\text{ ist}\left(\begin{smallmatrix}
+\tikz\node(c){$1$};\\
+&\ddots\\
+&&1\\
+&&&p_1\\
+&&&&&\ddots\\
+&&&&&&\tikz\node(d){$p_m$};
+\end{smallmatrix}\right)
+\begin{tikzpicture}[overlay]
+\node[below right of = c,xshift=0em,yshift=-3em,scale=3]{$0$};
+\node[above left of = d,xshift=0em,yshift=3em,scale=3]{$0$};
+\end{tikzpicture}.
+\end{align*}
+Hieraus folgt alles bis auf die Behauptung, dass in diesem Fall $\mu_A=p_m$ ist. Um das auch noch zu zeigen, betrachten wir das in \ref{10.2.16} eingeführte Ideal $I_A=\{q\in K[X]\mid q(A)=0\}$ der algebraischen Identitäten von $A$. Es gilt
+\begin{align*}
+I_A=\{q\in K[X]\mid q(A)=0\}&=\left\{q\in K[X]\mid q\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(p_m)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)=0\right\}\\
+&=\left\{q\in K[X]\mid \left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$q(C(p_1))$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$q(C(p_m))$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)=0\right\}\\
+&=\{q\in K[X]\mid q(C(p_1))=0,...,q(C(p_m))=0\}\\
+&=I_{C(p_1)}\cap...\cap I_{C(p_m)}\\
+&=(\mu_{C(p_1)})\cap...\cap(\mu_{C(p_m)})\\
+&=(p_1)\cap...\cap(p_m)\stackrel{p_1\mid...\mid p_m}{=}(p_m)
+\end{align*}
+und daher $\mu_A=p_m$.
+\end{cproof}
+
+\begin{bem}\label{17.5.5}
+Wir haben insbesondere $\chi_A=(-1)^np_1\hdots p_m\in (p_m)=I_A$ und daher einen weiteren Beweis des Satzes von Cayley-Hamilton \ref{10.2.14} [$\to$\ref{17.4.15}]
+\end{bem}
+
+\begin{bsp}\label{17.5.6}
+Sei $K:=\Q$, $A:=\begin{pmatrix}2&1&0&1\\0&3&0&0\\-1&1&3&1\\-1&1&0&4\end{pmatrix}$.
+\begin{align*}
+&A-XI_4\\
+=&\begin{pmatrix}2-X&1&0&1\\0&3-X&0&0\\-1&1&3-X&1\\-1&1&0&4-X\end{pmatrix}\sim\begin{pmatrix}-1&1&0&4-X\\0&1+(2-X)&0&1+(2-X)(4-X)\\0&3-X&0&0\\0&0&3-X&1-(4-X)\end{pmatrix}\\
+\sim&\begin{pmatrix}1&0&0&0\\0&X-3&0&-X^2+6X-9\\0&0&0&-X^2+6X-9\\0&0&X-3&-X+3\end{pmatrix}\sim\begin{pmatrix}1&0&0&0\\0&X-3&0&0\\0&0&X-3&0\\0&0&0&X^2-6X+9\end{pmatrix}:=S
+\end{align*}
+Wegen $3^2-6\cdot 3+9=0$ gilt $(X-3)\mid X^2-6X+9$ und $S$ ist in Smithscher Normalform. Es gilt also $c(A-XI_4)=(1,X-3,X-3,X^2-6X+9)$ und daher lautet die Frobenuis'sche Normalform von $A$ $\arraycolsep=1pt
+\left(\begin{array}{c c c c}
+\begin{tabular}{c|}3\\\hline\end{tabular}&0&0&0\\
+0&\begin{tabular}{|c|}\hline 3\\\hline\end{tabular}&0&0\\
+0&0&\multicolumn{2}{c}{\multirow{2}{*}{\begin{tabular}{|cc}
+\hline 0&-9\\1&6\end{tabular}}}\\0&0
+\end{array}\right)$ und es gilt $\mu_A=X^2-6X+9=(X-3)^2$ und $\chi_A=(X-3)(X-3)(X^2-6X+9)=(X-3)^4$.
+\end{bsp}
+
+\section[Die Normalform von Weierstraß]{Die Normalform von Weierstraß\\{\small[\href{https://de.wikipedia.org/wiki/Karl_Weierstrass}{Karl Theodor Wilhelm Weierstraß} *1815 \dag 1897]}}
+
+Wieder sei stets $K$ ein Körper.
+
+\begin{lem}\label{17.6.1}
+Sei $m\in \N_0$ und $p_1,...,p_m\in K[X]$ normiert mit $\gcd(p_i,p_j)=1$ für alle $i,j\in\{1,...,m\}$ bei $i\neq j$. Dann ist 
+\begin{align*}
+C(p_1\hdots p_m)\approx\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{pmatrix}.
+\end{align*}
+\end{lem}
+\begin{cproof}
+Setze $n:=\deg(p_1\hdots p_m)$. Nach \ref{17.4.11} ist die Behauptung äquivalent zu $C(p_1\hdots p_m)-XI_n\sim\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(p_m)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)-XI_n$, was nach \ref{17.5.2} gleichbedeutend ist mit\\
+$\left(\begin{matrix}
+\tikz\node(c){$1$};\\
+&\\
+&&\\
+&&&\\
+&&&&\tikz\node(d){$1$};\\
+&&&&&\tikz\node(e){$p_1\hdots p_m$};
+\end{matrix}\right)
+\begin{tikzpicture}[overlay, loosely dotted,thick,baseline]
+\node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
+\node[above left of = e,xshift=0em,yshift=4em,scale=5]{$0$};
+\draw (c)-- (d);
+\end{tikzpicture}\sim 
+\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (b1) {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_1\end{smallmatrix}$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (bm) at (1,-1) [anchor=north west] {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_m\end{smallmatrix}$};
+\node[scale=3, yshift=0.0cm] at (b1.east-|bm) {$0$};
+\node[scale=3] at (0.1,-1.6) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (b1)--(bm);
+\end{tikzpicture}
+\end{pmatrix}$, das heißt mit
+\begin{align*}
+S:=\left(\begin{matrix}
+\tikz\node(c){$1$};\\
+&\\
+&&\\
+&&&\\
+&&&&\tikz\node(d){$1$};\\
+&&&&&\tikz\node(e){$p_1\hdots p_m$};
+\end{matrix}\right)
+\begin{tikzpicture}[overlay, loosely dotted,thick,baseline]
+\node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
+\node[above left of = e,xshift=0em,yshift=4em,scale=5]{$0$};
+\draw (c)-- (d);
+\end{tikzpicture}\sim
+\begin{pmatrix}
+\tikz\node(c){$1$};\\
+&\ddots\\
+&&1\\
+&&&p_1\\
+&&&&&\ddots\\
+&&&&&&\tikz\node(d){$p_m$};
+\end{pmatrix}
+\begin{tikzpicture}[overlay]
+\node[below right of = c,xshift=0em,yshift=-3.5em,scale=5]{$0$};
+\node[above left of = d,xshift=0em,yshift=3.5em,scale=5]{$0$};
+\end{tikzpicture}:=T.
+\end{align*}
+\oe sei $n\ge 2$. Es gilt $d_n(S)=\det(S)=p_1\hdots p_m=\det(T)=d_n(T)$ und $d_{n-1}(S)=1=d_{n-1}(T)$, denn $d_{n_1}(T)$ teilt $p_1\hdots p_{i-1}p_{i+1}\hdots p_m$ für alle $i\in\{1,...,m\}$. Wäre nämlich $d_{n-1}(T)\neq 1$, so gäbe es ein Primpolynom $g\in K[X]$ mit $g\mid d_{n-1}(T)$ und daher gilt $g\mid p_i$ für ein $i\in\{2,...,m\}$, sowie $g\mid p_j$ für ein $j\in\{1,...,m\}\setminus\{i\}$. Es folgt $g\mid \gcd(p_i,p_j)=1$, was ein Widerspruch ist. Daher gilt $d(S)=(1,...,1,p_1\hdots p_m)=d(T)$ und somit $S\sim T$. 
+\end{cproof}
+
+\begin{satdef}\label{17.6.2}
+Sei $A\in K^{n\times n}$. Dann gibt es ein bis auf Reihenfolge der Einträge eindeutig bestimmtes Tupel $(p_1,...,p_m)$ von normierten Polynomen $p_i\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolyonomen sind mit
+\begin{align*}
+A\approx\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{pmatrix}.
+\end{align*}
+Die bis auf Reihenfolge der Kästchen eindeutig bestimmte Matrix heißt Weierstraß'sche Normalform von $A$.
+\end{satdef}
+\begin{cproof}
+\textbf{Existenz}. Diese ist klar mit der Frobenius'schen Normalform \ref{17.5.4}, Primfaktorzerlegung und Lemma \ref{17.5.1}\\
+
+\noindent\textbf{Eindeutigkeit}.
+\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]\noindent\textbf{Behauptung}. Sei $(p_1,...,p_m)$ ein Tupel normierter $p_i\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolynomen sind. Dann gibt es eine Zerlegung $Z=\{I_1,...,I_s\}$ von $\{1,...,m\}$ mit $\#Z=s$ derart, dass mit $f_1,...,f_s$ definiert durch $f_k:=\prod_{i\in I_k}p_i$ ($k\in\{1,...,s\}$) gilt:
+\begin{itemize}
+\item[$(*)_k$] $\gcd(p_ip_j)=1$ für alle $i,j\in I_k$ (für alle $k\in\{1,...,s\}$
+\item[$(**)_k$] $f_{k+1}\mid f_k$ (für alle $k\in\{1,...,s-1\}$)
+\end{itemize}
+
+\noindent\textbf{Begründung}. Ist $m=0$, so ist nichts zu tun. Sei also $m>0$. Da jedes $p_i$ eine Potenz von Primpolynomen ist gibt es dann $\emptyset\neq I_1\subseteq\{1,...,m\}$ derart, dass $f_1:=\prod_{i\in I_1}p_i=\lcm(p_1,...,p_m)$ [wäre z.B. $K=\C$, $m=5$, $p_1=(X-1)^3, p_2=X-1, p_3=X^5, p_4=(X-1)^3, p_5=X^7$, so wären $I_1=\{1,5\}$ und $I_1=\{4,5\}$ die beiden möglichen Wahlen für $I_1$]. Es gilt dann $(*_1)$. Ist $I_1=\{1,...,m\}$, so setzen wir $s:=1$ und sind fertig. Sonst gibt es $\emptyset\neq I_2\subseteq\{1,...,m\}$ derart, dass $f_2:=\prod_{i\in I_2}p_i=\lcm(p_i\mid i\in\{1,...,m\}\setminus I_1)$. Es gilt dann $(**_1)$ und $(*_2)$. Ist $I_1\cup I_2=\{1,...m\}$, so setze $s:=2$ und wir sind fertig. Sonst mache so weiter... \end{tcolorbox}
+Seien nun $(p_1,...,p_m)$ und $(q_1,...,q_l)$ Tupel normierter Polynome $p_i,q_j\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolynomen sind und für welche die Behauptung gilt. Zu zeigen ist, nach Umnummerierung gilt $(p_1,...,p_m)=(q_1,...,q_l)$. Wähle gemäß Hilfsbehauptung Zerlegungen $Z=\{I_1,...,I_s\}$ von $\{1,...,m\}$ und $Z'=\{J_1,...,J_t\}$ von $\{1,...,l\}$ mit $\#Z=s$ und $\#Z'=t$ derart, dass mit $f_1,...f_s,g_1,...,g_t$ definiert durch $f_k:=\prod_{i\in I_k}p_i$ ($k\in\{1,...,s\}$) und $g_k:=\prod_{j\in J_k}q_j$ ($k\in\{1,...,t\}$) gilt:
+\begin{itemize}
+\item $\forall k\in\{1,...,s\}: \forall i,j\in I_k: (i\neq j\implies \gcd(p_i,p_j)=1$ und $f_s\mid...\mid f_1$
+\item $\forall k\in\{1,...,t\}: \forall i,j\in J_k: (i\neq j\implies \gcd(q_i,q_j)=1$ und $g_t\mid...\mid g_1$.
+\end{itemize}
+Nach Lemma \ref{17.6.1} gilt nun
+\begin{align*}
+&\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(f_s)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(f_1)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)\approx
+\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(p_m)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)\\
+\approx&\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(q_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(q_l)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)\approx
+\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(g_t)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(g_t)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right).
+\end{align*}
+Wegen der Eindeutigkeit der Frobenius'schen Normalform aus \ref{17.5.4} folgt $(f_s,...,f_1)=(g_t,...,g_1)$, insbesondere $s=t$. Wegen der Eindeutigkeit der Primfaktorzerlegung in $K[X]$ folgt, dass nach Umnummerieren gilt $(p_1,...,p_m)=(q_1,...,q_l)$. 
+\end{cproof}
+
+\begin{bsp}\label{17.6.3}
+\begin{enumerate}[\normalfont(a)]
+\item Für die in \ref{17.5.6} betrachtete Matrix $A\in \Q^{4\times 4}$ galt $c(A-XI_4)=(1,X-3,X-3,X^2-6X+9)$. Da $X^2-6X+9=(X-3)^2$ eine Potenz eines Primpolynoms ist, stimmt für $A$ die Frobenius'sche Normalform mit der Weierstraß'schen Normalform überein.
+\item Die Matrix $A:=\left(\begin{array}{c|ccc}1&0&0&0\\\hline 0&0&0&1\\0&1&0&-1\\0&0&1&1\end{array}\right)\in \R^{4\times 4}$ ist nach \ref{17.5.4} in Frobenius'scher Normalform und $c(A-XI_4)=(1, 1, X-1, X^3-X^2+X-1)$, wobei $X^3-X^2+X-1=(X-1)(X^2+1)$. Da $X-1$ und $X^2+1$ Primpolynome sind, ist die Weierstraß'sche Normalform von $A$ gegeben durch $A\approx\arraycolsep=1pt
+\left(\begin{array}{c c c c}
+\begin{tabular}{c|}1\\\hline\end{tabular}&0&0&0\\
+0&\begin{tabular}{|c|}\hline 1\\\hline\end{tabular}&0&0\\
+0&0&\multicolumn{2}{c}{\multirow{2}{*}{\begin{tabular}{|cc}
+\hline 0&-1\\1&0\end{tabular}}}\\0&0
+\end{array}\right)$.
+\end{enumerate}
+\end{bsp}
+
+\section[Die Normalform von Jordan]{Die Normalform von Jordan\\{\small[\href{https://en.wikipedia.org/wiki/Camille_Jordan}{Marie Ennemand Camille Jordan} *1838 \dag 1922]}}
+
+Wieder sei stets $K$ ein Körper.
+
+\begin{df}\label{17.7.1}
+Sei $\la\in K$ und $n\in \N$. Dann nennt man\\ $J(\lambda, n):=\begin{tikzpicture}[loosely dotted,thick,baseline]
+\matrix (m) [matrix of math nodes,nodes in empty cells,right delimiter=),left delimiter=(,column sep=1em]{
+\tikz\node(a){$\la$};&&\\
+1\\
+\\
+&\tikz\node(b){$1$};&\la\\
+} ;
+\draw (m-1-1)-- (m-4-3);
+\draw (m-2-1)-- (m-4-2);
+\node[scale=3, xshift=0.5cm, yshift=-0.1cm] at (a.east) {$0$};
+\node[scale=3, xshift=-0.3cm, yshift=0.0cm] at (b.west) {$0$};
+\end{tikzpicture}\in K^{n\times n}$ das Jordankästchen zum Eigenwert $\la$ der Größe $n$ [insbesondere $J(\la,1)=(\la)$ falls $n=1$, und beachte, dass $J(\la,n)$ den Eigenwert $\la$ hat, denn $\chi_{J(\la, n}=(\la-X)^n$].
+\end{df}
+
+\begin{bem}
+(vergleiche $\S 17.5$) Sei $n\in \N$ und $\la\in K$. Setze $p:=(X-\la)^n=\sum_{k=0}^n\cvec{n\\k}(-k)^{n-k}X^k$. Wie gehabt ist $\v:=(\overline{1}, \overline{X},...,\overline{X^{n-1}})$ eine Basis von $K[X]/(p)$ und die lineare Abbildung $f:\begin{cases}K[X]/(p)\to K[X]/(p)\\ \overline{q}\mapsto \overline{Xq}\end{cases}$ $(q\in K[X])$ wohldefiniert. Die Begleitmatrix $C(p)=M(f,\v)$ von $p$ ist leider etwas kompliziert, da in der letzten Spalte die Koeffizienten von $p$ eingehen. Daher betrachtete man die Basis $\w=(\overline{1},\overline{X-\la},...,\overline{(X-\la)^{n-1}})$ von $K[X]/(p)$ bezüglich derer gilt $M(f,\v)=J(\la,n)$. Wegen
+\begin{align*}
+C(p)\stackrel{\ref{17.5.1}}{=}M(f,\v)&\stackrel{\ref{7.2.5}}{=}M(\w,\v)M(f,\w)M(\v,\w)\\
+&=M(\v,\w)^{-1}M(f,\w)M(\v,\w)\approx M(f,\w)=J(\la, n)
+\end{align*}
+gilt $C(p)\approx J(\la,n)$. Es ist also $J(\la,n)$ ein schöner Ersatz für $C(p)$ im Fall $p=(X-\la)^n$. Wie in \ref{17.5.1} gilt $\mu_{J(\la,n))}=\mu_f=(X-\la)^n$ und $\chi_f=\chi_{J(\la,n)}=(-1)^n(X-\la)^n$.
+\end{bem}
+
+\begin{satdef}\label{17.7.3}
+Sei $A\in K^{n\times n}$ derart, dass $\chi_A$ zerfällt [$\to$\ref{10.1.13},\ref{4.2.12}]. Dann gibt es ein bis auf Reihenfolge der Einträge eindeutig bestimmtes Tupel $((\la_1,k_1),...,(\la_m,k_m))$ von Paaren $(\la_i,k_i)\in K\times\N$ mit
+\begin{align*}
+A\approx\begin{pmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (a1) {$J(\la_1,k_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (am) at (1.5,-1.5) [anchor=north west] {$J(\la_m,k_m)$};
+\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=4.5] at (0.1,-1.9) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{pmatrix}.
+\end{align*}
+Die bis auf Reihenfolge der Kästchen eindeutig bestimmte rechte obige Matrix heißt Jordansche Normalform von $A$.
+\end{satdef}
+\begin{cproof} Beachte, dass
+\begin{align*}
+\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$J(\la_1,k_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$J(\la_1,k_1)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.5) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)\approx
+\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C((X-\la_1)^{k_1})$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1.5,-1.5) [anchor=north west] {$C((X-\la_m)^{k_m})$};
+\node[scale=5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=5] at (0.1,-2.4) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right).
+\end{align*}
+
+\textbf{Existenz}. Bringe $A$ auf die Weierstraß'sche Normalform aus $\S 17.6$, d.h. wähle ein Tupel $(p_1,...,p_m)$ von normierten Polynomen $p_i\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolynomen sind mit $A\approx \left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(p_1)$};
+\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(p_m)$};
+\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+\node[scale=3] at (0.1,-1.5) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+\end{tikzpicture}
+\end{smallmatrix}\right)$. Mit $n_i:=\deg p_i$ gilt dann
+\begin{align*}
+(-1)^{n_1+...+n_m}p_1\hdots p_m\stackrel{\ref{17.5.1}}{=}\prod_{i=1}^m\deg(C(p_i)-XI_n)=\deg(A-XI_n)=\chi_A.
+\end{align*}
+Mit $\chi_A$ zerfällt daher auch jedes $p_i$. Daher gibt es zu jedem $i\in\{1,...,m\}$ ein Paar $(\la_i,k_i)\in K\times \N$ mit $p_i=(X-\la_i)^{k_i}$.\\
+
+\noindent\textbf{Eindeutigkeit}. Diese wird sofort klar aus der Eindeutigkeit der Weierstraß'schen Normalform.
+\end{cproof}
+
+\begin{bsp}\label{17.7.4}
+\begin{enumerate}[\normalfont(a)]
+\item Für die in \ref{17.5.6} und \ref{17.6.3}(a) betrachtete Matrix $A\in \Q^{4\times 4}$ galt $c(A-XI_4)=(1,X-3,X-3,(X-3)^2)$. Daher ist $\arraycolsep=1pt\left(\begin{array}{c c c c}
+\begin{tabular}{c|}3\\\hline\end{tabular}&0&0&0\\
+0&\begin{tabular}{|c|}\hline 3\\\hline\end{tabular}&0&0\\
+0&0&\multicolumn{2}{c}{\multirow{2}{*}{\begin{tabular}{|cc}
+\hline 3&0\\1&3\end{tabular}}}\\0&0
+\end{array}\right)\approx A$ die Jordansche Normalform von $A$.
+\item Ist $A\in \R^{8\times 8}$ mit $c(A-XI_8)=(1,1,1,1,1,1,(X-1)^2(X-2),(X-1)^2(X-2)(X-3))$, so ist $\arraycolsep=1pt\left(\begin{array}{cccc cccc}
+\multicolumn{2}{c}{\multirow{2}{*}{\begin{tabular}{cc|}
+1&0\\1&1\\\hline\end{tabular}}}&&&&&&\tikz\node(a){$ $};\\
+&&&&&&&\\
+&&\begin{tabular}{|c|}\hline 2\\\hline\end{tabular}&&&&&\\
+&&&\multicolumn{3}{c}{\multirow{3}{*}{\begin{tabular}{|ccc|}
+\hline 1&0&0\\1&1&0\\0&1&1\\\hline\end{tabular}}}&&\\
+\\
+\\
+&&&&&&\begin{tabular}{|c|}\hline 2\\\hline\end{tabular}&\\
+\tikz\node(b){$ $};&&&&&&&\begin{tabular}{|c}\hline 3\end{tabular}
+\end{array}
+\right)\approx A
+\begin{tikzpicture}[overlay]
+\node[scale=5, xshift=-0.05cm, yshift=-0.2cm] at (a) {$0$};
+\node[scale=5, xshift=0.1cm, yshift=0.2cm] at (b) {$0$};
+\end{tikzpicture}$ die Jordansche Normalform von $A$, $\mu_A=(X-1)^3(X-2)(X-3)$ und $\chi_A=(X-1)^5(X-2)^2(X-3)$.
+\end{enumerate}
+\end{bsp}
+\end{document}

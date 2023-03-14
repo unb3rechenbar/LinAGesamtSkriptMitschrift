@@ -1,0 +1,501 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+Dieses Kapitel ist eine Fortsetzung von $\S 11$. Wie dort, so sei auch hier stets $\K=\{\R, \C\}$.
+
+\section{Die adjungierte Abbildung}
+
+\begin{defprop}\label{15.1.1}
+Seien $V,W$ $\K$-Vektorräume mit Skalarprodukt und $f: V\to W$ linear. Dann gibt es zu jedem $w\in W$ höchstens ein $v'\in V$ mit $\forall v\in V: \scal{f(v),w}=\scal{v,v'}$. Setzt man
+\begin{align*}
+W'=\{w\in W\mid \exists v'\in V: \forall v\in V: \scal{f(v),w}=\scal{v,v'}\},
+\end{align*}
+so gibt es also genau eine Abbildung $f^*: W'\to V$ mit $\forall v\in V: \scal{f(v),w}=\scal{v,f^*(w)}$.\\
+Man nennt $f^*$ die zu $f$ adjungierte Abbildung. Es ist $W'$ ein Unterverktorraum von $W$ und $f^*$ linear.
+\end{defprop}	
+\begin{cproof}
+Zu zeigen ist:
+\begin{enumerate}[\normalfont(a)]
+\item die Eindeutigkeit von $f^*$
+\item $\forall w_1,w_2\in W': [w_1+w_2\in W']\land[f^*(w_1+w_2)=f^*(w_1)+f^*(w_2)]$
+\item $\forall w\in W', \la\in \K [\la w\in W']\land[f^*(\la w)=\la f^*(w)]$
+\end{enumerate}
+
+\textbf{Zu (a)}. Sei $w\in W$. Sind $v_1',v_2'\in V$ mit $\forall v\in V: \scal{v,v_1'}=\scal{f(v),w}=\scal{v,v_2'}$ So folgt $\forall v\in V: \scal{v, v_1'-v_2'}=0$, insbesondere $\scal{v_1'-v_2',v_1'-v_2'}=0$, also $v_1'=v_2'$.\\
+
+\noindent\textbf{Zu (b)}. Seien $w_1,w_2\in W'$. Dann gilt für alle $v\in V$
+\begin{align*}
+\scal{f(v),w_1+w_2}&=\scal{f(v),w_1}+\scal{f(v),w_2}=\scal{v,f^*(w_1)}+\scal{v, f^*(w_2)}\\
+&=\scal{v,f^*(w_1)+f^*(w_2)}
+\end{align*}	
+
+\textbf{Zu (c)}. Sei $w\in W'$ und $\lambda\in \K$. Dann gilt für alle $v\in V$
+\begin{align*}
+\scal{f(v),\lambda w}=\lambda\scal{f(v),w}=\lambda\scal{v,f^*(w)}=\scal{v,\lambda f^*(w)}.
+\end{align*}
+\end{cproof}
+
+\begin{bsp}\label{15.1.2}
+Sei $V:=C^\infty([0,1], \R)$ die der $\R$-Vektorraum der unendlich oft differenzierbaren reellen Funktionen definiert auf $[0,1]$ mit dem durch $\scal{f,g}:=\int_0^1 fg$ für alle $f,g\in V$ definierten Skalarprodukt. Die Ableitung sei geschrieben als $D: V\to V, f\mapsto f'$. Ist $g$ im Definitionsbereich von $D^*$, so gilt
+\begin{align*}
+\forall f\in V: \int_0^1f'g=\int_0^1 fD^*(g).
+\end{align*}
+Andererseits gilt gemäß partieller Integration auch
+\begin{align*}
+\forall f\in V: \int_0^1f'g=\left[fg\right]_0^1-\int_0^1 fg'
+\end{align*}
+und daher
+\begin{align*}
+\forall f\in V: \int_0^1 f(g+D^*(g))=\left[fg\right]_0^1.
+\end{align*}
+Durch Einsetzen von ''Nadelfunktionen'' (siehe etwas Wikipedia-Eintrag zu \href{https://en.wikipedia.org/wiki/Bump_function}{''bumpfunction''}) für $f$ sieht man nun $D^*(g)=-g'$. Daher ist der Definitionsbereich von $D^*$ gleich
+\begin{align*}
+\left\{g\in V\mid \forall v\in V: \int_0^1fg'=\int_0^f(-g')\right\}&=\{g\in V\mid \forall v\in V: \left[fg\right]_0^1=0\}\\
+&=\{g\in V\mid g(0)=g(1)=0\}.
+\end{align*}
+Es gilt also $D^*:\begin{cases}\{g\in V\mid g(0)=g(1)=0\}\to V\\g\mapsto-g'\end{cases}$.
+\end{bsp}
+
+\begin{er}\mbox{}[$\to$\ref{11.3.1}]
+\label{15.1.3}
+Sei $V$ ein $\K$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Dann heißt $f$ selbstadjungiert, wenn $\forall v,w\in V: \scal{f(v),w}=\scal{v,f(w)}$.
+\end{er}
+
+\begin{pro}\label{15.1.4}
+Sei $V$ ein $\K$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Dann ist $f$ selbstadjungiert genau dann, wenn $f=f^*$ (was natürlich beinhaltet, dass $f^*$ auf $V$ definiert ist).
+\end{pro}
+	
+\begin{bsp}\label{15.1.5}
+Sei $V:=\{f\in C^\infty([0,1],\C)\mid f(0)=f(1)\}$ ein $\C$-Vektorraum mit dem durch $\scal{f,g}:=\int_0^1 f^*g$ für alle $f,g\in V$ definierten Skalarpodukt, wobei für $f,g\in V$ jeweils $f^*$ die zu $f$ punktweise komplex-konjugierte Funktion ist. Betrachte $T: V\to V, f\mapsto \i f'$.  Es gilt für alle $f,g\in V$
+\begin{align*}
+\scal{T(f),g}&=\int_0^1(\i f')^*g=-\i \int_0^1 f^*g\stackrel{\text{part. Int.}}{=}-\i\left(\underbrace{\left[f^*g\right]_0^1}_{\substack{\small=0\\\text{da }f,g\in V}}-\int_0^1 f^*g'\right)=\int_0^1 f^*T(g)\\
+&=\scal{f,T(g)}.
+\end{align*}
+Daher ist $T=T^*$.
+\end{bsp}
+
+\begin{sat}\label{15.1.6}
+Seien $V,W$ je $\K$-Vektorräume mit Skalarprodukt. Sei $f: V\to W$ linear und $\dim V<\infty$. Dann ist $f^*$ auf ganz $W$ definiert.
+\end{sat}
+\begin{cproof}
+Wähle mit \ref{11.2.5} eine ONB $\v=(v_1,...,v_n)$ von $V$. Dann gilt für jede lineare Abbildung $g: W\to V$:
+\begin{align*}
+g=f^*&\Longleftrightarrow \forall v\in V: \forall w\in W: \scal{f(v),w}=\scal{v,g(w)}\\
+&\Longleftrightarrow \forall i\in\{1,...,n\}: \forall w\in W: \scal{f(v_i),w}=\scal{v_i, g(w)}\\
+&\Longleftrightarrow \forall w\in W: \sum_{i=1}^n \scal{f(v_i),w}v_i=\sum_{i=1}^n\scal{v_i, g(w)}v_i\stackrel{\ref{11.2.13}}{=}g(w).
+\end{align*}
+\end{cproof}
+	
+\begin{bem}\label{15.1.7}
+Die Notation $f^*$ hatten wir in \ref{13.1.8} anders verwendet, nämlich für die zu einer linearen Abbildung gehörige lineare Abbildung $f^*: W^*\to V^*$. Man verwendet fast nie die adjungierte und die duale Abbildung gleichzeitig und aus dem Kontext ist fast immer klar, welche gemeint ist.\\
+Wenn $V,W$ endlichdimensionale $\R$-Vektorräume mit Skalarprodukt sind und $f: V\to W$ linear ist, dann sind außerdum die zu $f$ duale Abbildung $f^T:=f^*: W^*\to V^*$ und die zu $f$ adjungierte Abbildung $f^{\ad}:=f^*: W\to V$ ''im Prinzip dieselben'', denn das Diagramm
+\begin{center}
+\begin{tikzpicture}
+ \node(V){$V$};
+ \node[right = 4cm of V](W){$W$};
+ \node[below = 2cm of V](VS){$V^*$};
+ \node[below = 2cm of W](WS){$W^*$};
+ 
+ \draw[->, thick] (W) -- node[above]{$f^{\ad}$} (V);
+ \draw[->, thick] (V) -- node[anchor = north, rotate = -90]{$\alpha$} (VS);
+ \draw[->, thick] (WS) -- node[above](u){$f^T$} (VS);
+ \draw[->, thick] (W) -- node[anchor = north, rotate = 90]{$\beta$} (WS);
+ 
+ \draw[->, thick] (2.45,-.75) arc (425:125:.5);
+\end{tikzpicture}
+\end{center}
+mit den kanoninischen Isomorphismen
+\begin{center}
+$\alpha: V\to V^*, v_1\mapsto(v_2\mapsto\scal{v_1,v_2})$ und\\
+$\beta: W\to W^*, w_1\mapsto(w_2\mapsto\scal{w_1,w_2})$
+\end{center}
+kommutiert. In der Tat: es gilt für alle $w\in W$ und $v\in V$
+\begin{align*}
+(\alpha(f^{ad}(w)))(v)&=\scal{v,f^{ad}(w)}=\scal{f(v),w}=\scal{w,f(v)}\\
+&=(\beta(w))(f(v))=(\beta(w)\circ f)(v)=(f^T(\beta(w)))(v).
+\end{align*}
+\end{bem}	
+
+\begin{lem}\label{15.1.8}
+Sei $A\in \K^{m\times n}$, $x\in \K^n$ und $y\in \K^m$. Dann ist
+\begin{align*}
+\scal{Ax,y}=(Ax)^*y=x^*A^*y=\scal{x,A^*y}.
+\end{align*}
+\end{lem}
+
+\begin{pro}\label{15.1.9}
+Seien $V$ und $W$ endlichdimensionale $\K$-Vektorräume mit Skalaprodukt und $f: V\to W$ linear. Sei $\v$ eine ONB von $V$ und $\w$ eine ONB von $W$. Dann gilt $M(f^*,\w,\v)=M(f,\v,\w)^*$.
+\end{pro}
+\begin{cproof}
+Es ist $(*)\ f^*=\ve_{\v}\circ f_{M(f,\v,\w)^*}\circ \co_{\w}$ zu zeigen. Es gilt
+\begin{align*}
+(*)&\Longleftrightarrow \forall v\in V:\forall w\in W: \scal{f(v),w}=\scal{v,\ve_{\v}(M(f,\v,\w)^* \co_{\w}(w))}\\
+&\stackrel{\ref{11.2.24}}{\Longleftrightarrow}\forall v\in V:\forall w\in W: \scal{\co_{\w}(f(v)),\co_{\w}(w)}\\
+&=\scal{\co_{\v}(v), M(f,\v,\w)^* \co_{\w}(w)}.
+\end{align*}
+\end{cproof}
+
+\begin{pro}\label{15.1.10}
+Seien $U,V$ und $W$ je $\K$-Vektorräume mit Skalarprodukt, und $U$ und $V$ endlichdimensional. Sei $\la\in \K$ und $f,f_1,f_2: U\to V$ sowie $g: V\to W$ linear. Dann gilt $(f_1+f_2)^*=f_1^*+f_2^*$, $(\la f)^*=\la^*f^*, (g\circ f)^*=f^*\circ g^*$, $id_V^*=id_V$ und $\ddual f=f$.
+\end{pro}
+\begin{cproof}
+\begin{enumerate}[\normalfont(a)]
+Zu zeigen ist:
+\item $\forall u\in U: \forall v\in V: \scal{(f_1+f_2)(u),v)}=\scal{u,(f_1^*+f_2^*)(v)}$,
+\item $\forall u\in U: \forall v\in V: \scal{(\la f)(u),v}=\scal{u,(\la^* f^*)(v)}$,
+\item $\forall u\in U: \forall v\in W: \scal{(g\circ f)(u),w}=\scal{u,(f^*\circ g^*)(w)}$,
+\item $\forall u\in U: \forall v\in V: \scal{(id_V(u),v)}=\scal{u,id_V(v)}$,
+\item $\forall u\in U: \forall v\in V: \scal{(f^*(u),v)}=\scal{u,f(v)}$.
+\end{enumerate}
+
+\noindent\textbf{Zu (a)}. Seien $u\in U$ und $v\in V$. Dann 
+\begin{align*}
+\scal{(f_1+f_2)(u),v}&=\scal{f_1(u),v}+\scal{f_2(u),v}=\scal{u,f_1^*(v)}+\scal{u,f_2^*(v)}\\
+&=\scal{u,f_1^*(v)+f_2^*(v)}=\scal{u,(f_1^*+f_2^*)(v)}.
+\end{align*}
+
+\noindent\textbf{Zu (b)}. Seien $u\in V$ und $v\in V$. Dann\begin{align*}
+\scal{(\l f)(u), v}&=\scal{\la(f(u)), v}=\la^*\scal{f(u),v}=\la^*\scal{u,f^*(v)}\\
+&=\scal{u,\la^*(f^*(v))}=\scal{u,(\la^*f^*)(v)}.
+\end{align*}
+
+\noindent\textbf{Zu (c)}. Seien $u\in V$ und $w\in W$. Dann gilt
+\begin{align*}
+\scal{(g\circ f)(u),w}=\scal{f(u),g^*(w)}=\scal{u,(f^*\circ g^*)(w)}.
+\end{align*}
+
+\noindent\textbf{(d)} ist trivial.\\
+
+\noindent\textbf{Zu (d)}. Seien $u\in U$ und $v\in V$. Dann gilt
+\begin{align*}
+\scal{f^*(v),u}=\scal{u,f^*(v)}^*=\scal{f(u),v}^*=\scal{v,f(u)}.
+\end{align*}
+\end{cproof}
+
+Falls $W$ auch endlichdimensional ist, kann man den Beweis von Proposition \ref{15.1.9} durch Rückführung auf die entsprechenden Tatsachen für Matrizen führen.
+
+\begin{pro}\label{15.1.11}
+Seien $V$ und $W$ je $\K$-Vektorräume mit Skalarprodukt und $f: V\to W$ linear. Dann gilt $\ker(f^*)=(\im f)^\perp$.
+\end{pro}
+\begin{cproof}
+Für $w\in W$ gilt gemäß Definition \ref{15.1.1} der adjungierten Abbildung
+\begin{align*}
+w\in \ker(f^*)\Longleftrightarrow \forall v\in V: \scal{f(v),w}=\scal{v,0}.
+\end{align*}
+\end{cproof}
+
+\begin{sat}\label{15.2.12}
+Seien $V$ und $W$ $\K$-Vektorräume mit Skalarprodukt und $f: V\to W$ linear. Dann sind äquivalent:
+\begin{enumerate}[\normalfont(a)]
+\item  $f$ ist ein Isomorphismus von Vektorräumen mit Skalarprodukt.
+\item $f^*$ ist auf ganz $W$ definiert und es gilt sowohl $f^*\circ f=id_V$ als auch $f\circ f^*=id_W$.
+\item $f^*$ ist eine Bijektion von $W\to V$, deren Umkehrabbildung $f$ ist. 
+\end{enumerate}
+\end{sat}
+\begin{cproof}
+$(c)$ ist nur eine Umformulierung von $(b)$.\\
+
+$\boldsymbol{(a)\implies(b)}$. Gelte (a). Sei $v'\in V$. Setze $w:=f(v')$. Wegen $\scal{f(v),w}\stackrel{(a)}{=}\scal{v,v'}$ für alle $v\in V$. ist $f^*$ in ganz $W$ definiert und es gilt $f^*(w)=v'$, das heißt $f^*(f(v'))=v'$. Da $v'\in V$ beliebig war, ist $f^*$ auf $\im f\stackrel{(a)}{=}W$ definiert und es gilt $f^*\circ f=id_V$ Weiter gilt $f^*=f^*\circ (f\circ f^{-1})=(f^*\circ f)\circ f^{-1}=f^{-1}$ und daher auch $f\circ f^*=id_W$.\\
+		
+\noindent$\boldsymbol{(b)\implies(a)}$. Gelte $(b)$. Dann hat $f$ eine Umkehrabbildung und ist bijektiv. Da $f$ auch linear ist, ist $f$ ein Isomorphismus mit Vektorräumen. Es bleibt zu zeigen, dass für alle $v,v'\in V$ gilt $\scal{f(v),f(v')}=\scal{v,v'}$. Seien also $v,v'\in V$. Dann
+$\scal{f(v),f(v')}=\scal{v,f^*(f(v'))}=\scal{v,(f^*\circ f)(v')}=\scal{v,v'}$.
+\end{cproof}
+
+\section{Normale Abbildungen}
+
+\begin{df}\label{15.2.1}
+Sei $V$ ein Vektorraum mit Skalarpodukt und $f: V\to V$ linear. Dann heißt $f$ normal, wenn $f^*$ auf ganz $V$ definiert ist [$\to$\ref{15.1.1}] und $f\circ f^*=f^*\circ f$.
+\end{df}	
+	
+\begin{bsp}\label{15.2.2} Sei $V$ ein Vektorraum mit Skalarprodukt und $f: V\to V$ linear.
+\begin{enumerate}[\normalfont(a)]
+\item Ist $f$ selbstadjungiert (das heißt $f=f^*$), so ist $f$ normal.
+\item Ist $f$ ein Automorphismus von Vektorräumen mit Skalarprodukt [$\to$\ref{11.2.19}], so ist $f$ ebenfalls normal, denn es ist $f\circ f^*=id_V=f^*\circ f$.
+\end{enumerate}
+\end{bsp}
+
+\begin{lem}\label{15.2.3}
+Sei $V$ ein endlichdimensionaler $\K$-Vektorraum mit Skalarprodukt, $\la\in \K$ und $f: V\to V$ normal. Dann gilt $\ker (f-\la \id_V)=\ker (f^*-\la^* \id_V)$.
+\end{lem}
+\begin{cproof}
+Wegen
+\begin{align*}
+(f-\la id_V)\circ (f-\la id_V)^*&\stackrel{\ref{15.1.10}}{=}(f-\la id_V)\circ (f^*-\la^* id_V)\\
+&=f\circ f^*-\la f^*-\la^*f+\la\la^* id_V\\
+&=f^*\circ f-\la f^*-\la^*f+\la^*\la id_V\\
+&=(f^*-\la^* id_V)\circ (f-\la id_V)
+\end{align*}
+ist auch $f-\la id_V$ normal. Daher reicht es $\ker f=\ker f^*$ zu zeigen. Dies folgt aus
+\begin{align*}
+\| f(v)\|^2&=\scal{f(v),f(v)}=\scal{v,f^*(f(v))}\\
+&=\scal{v,f(f^*(v))}=\scal{f^*(v),f^*(v)}=\| f^*(v)\|^2
+\end{align*}
+für alle  $v\in V$.
+\end{cproof}
+
+\begin{sat}\mbox{}[$\to$\ref{11.3.9}]
+\label{15.2.4}
+Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\C$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Es sind äquivalent:
+\begin{enumerate}[\normalfont(a)]
+\item $f$ ist normal,
+\item $V$ hat eine ONB, die aus Eigenvektoren von $f$ besteht.
+\item Es gibt eine ONB $\v$ von $V$ derart, dass $M(f,\v)$ Diagonalgestalt hat.
+\end{enumerate}
+\end{sat}
+\begin{cproof}
+$\boldsymbol{(b)\implies(c)}$ ist klar.\\
+	
+\noindent$\boldsymbol{(c)\implies(a)}$. Sei $\v$ eine ONB von $V$ mit $M(f,\v)$ in Diagonalgestalt. Nach \ref{15.1.6}, \ref{7.1.8} reicht es $M(f\circ f^*,\underline{v})=M(f^*\circ f,\underline{v})$ zu zeigen. Es gilt aber
+\begin{align*}
+M(f\circ f^*,\v)&=M(f,\v)M(f^*,\v)\substack{\v\ \text{ONB}\\=\\\ref{15.1.9}}M(f,\v)M(f,\v)^*\\
+&\stackrel{\tiny Diagonagestalt}{=}M(f,\v)^*M(f,\v)\substack{\v\ \text{ONB}\\=\\\ref{15.1.9}}M(f^*,\v)M(f,\v)\\
+&=M(f^*\circ f,\v).
+\end{align*}
+
+\noindent$\boldsymbol{(a)\implies(c)}$. Wir zeigen die Implikation per Induktion nach $n:=\dim V\in \N_0$:
+
+\underline{$n=0$} Es ist nichts zu zeigen.\\
+\underline{$n-1\to n\ (n\in \N)$} Sei $f: V\to V$ normal. Wegen $\deg \chi_f=n\ge 1$ gibt es nach dem Fundmantalsatz der Algebra einen Eigenwert $\lambda$ von $f$. wähle dazu einen Eigenvektor $u\in V$, das heißt $u\neq 0$ und $f(u)=\lambda u$. Setze $U:=\lin(u)$ Es gilt $f(U^\perp)\subseteq U^\perp$ und $f^*(U^\perp)\subseteq U^\perp$, denn ist $v\in U^\perp$ und $u\in U$, so gilt
+\begin{center}
+$\scal{f(v),u}=\scal{v,f^*(u)}\stackrel{\ref{15.2.3}}{=}\scal{v,\la^*u}=\la^*\scal{v,u}=0$ und\\
+$\scal{f^*(v),u}=\scal{v,f(u)}=\scal{v,\la u}=\la\scal{v,u}=0$.
+\end{center}
+Betrachte nun $f\vert_{U^\perp}: U^{\perp}\to U^{\perp}$ und $f^*\vert_{U^\perp}: U^{\perp}\to U^{\perp}$. Anhand von \ref{15.1.1} sieht man leicht, dass $f^*\vert_{U^\perp}=f\vert^*_{U^\perp}$. Daher hat man
+\begin{align*}
+f\vert_{U^\perp}^*\circ f\vert_{U^\perp}&=f^*\vert_{U^\perp}\circ f\vert_{U^\perp}=(f^*\circ f)\vert_{U^\perp}=(f\circ f^*)\vert_{U^\perp}=f\vert_{U^\perp}\circ f^*\vert_{U^\perp}=f\vert_{U^\perp}\circ f\vert_{U^\perp}^*,
+\end{align*}
+weswegen $f\vert_{U^\perp}$ ebenfalls normal ist. Wegen $\dim(U^\perp)\stackrel{\ref{11.2.7}}{=}n-1$ gibt es nach IV eine ONB $(v_2,....,v_n)$ von $U^\perp$, die aus Eigenwerten von $f$ besteht. Setze $v_1:=u/\|u\|$, so erhält man eine ONB $(v_1,...,v_n)$ von $V$, die aus Eigenwerten von $f$ besteht.
+\end{cproof}
+
+\begin{kor}\label{15.2.5}
+Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\C$-Vektorraum mit Skalarprodukt und $f: V\to V$ normal. Dann ist $f$ diagonalisierbar [$\to$\ref{10.3.2}(a)].
+\end{kor}
+
+\begin{kor}\label{15.2.6}
+Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\C$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Es sind äquivalent:
+\begin{enumerate}[\normalfont(a)]
+\item $f$ ist orthogonal (auch: unitär [$\to$\ref{11.2.19}]), das heißt $\forall v,w\in V: \scal{f(v),f(w)}=\scal{v,w}$.
+\item $f$ ist ein Isomorphismus von Vektorräumen mit Skalarprodukt.
+\item $V$ besitzt eine ONB die aus Eigenvektoren von $f$ zu Eigenwerten vom Betrag Eins besteht.
+\item Es gibt eine ONB $\underline{v}$ von $V$ derart, dass $M(f,\underline{v})$ Diagonalgestalt mit Diagonaleinträgen vom Betrag $1$ hat.
+\end{enumerate}	
+\end{kor}
+\begin{cproof}
+$\boldsymbol{(a)\implies(b)}$ ist klar, da $f$ injektiv, und weil $V$ endlichdimensional ist, auch surjektiv ist [$\to$\ref{7.2.12}].\\
+		
+\noindent$\boldsymbol{(b)\implies(c)}$ folgt sofort aus Satz \ref{15.2.4}, denn wenn (b) gilt, so ist $f$ normal und alle Eigenwerte von $f$ haben den Absolutbetrag $1$: Sei $\la\in \C$ und $v\in V\setminus\{0\}$ mit $f(v)=\la v)$. Dann ist $\vert\la\vert\| v\|=\|\la v\|=\|f(v)\|=\|v\|$ und daher $\vert \la\vert=1$. \\
+		
+\noindent$\boldsymbol{(c)\implies(d)}$ ist klar.\\
+		
+\noindent$\boldsymbol{(d)\implies(a)}.$ Sei $\underline{v}=(v_1,...,v_n)$ eine ONB von $V$ mit $M(f,\underline{v})=\left(\begin{smallmatrix}
+\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & \la_n
+\end{smallmatrix}\right)$ und $\vert \la_i\vert=1$ für $i\in\{1,...,n\}$. Dann gilt
+\begin{align*}
+M(f\circ f^*,\v)&=M(f,\v)M(f^*,\v)\stackrel{\v\text{ ONB}}{=}M(f,\underline{v})M(f,\v)^*\\
+&=\left(\begin{smallmatrix}
+\la_1\la_1* & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & \la_n\la_n*
+\end{smallmatrix}\right)
+=\left(\begin{smallmatrix}
+\vert \la_1\vert^2 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+& \ddots &\\
+\rlap{\tlap{\LARGE 0}} & & \vert \la_n\vert^2
+\end{smallmatrix}\right)=I_n
+\end{align*}
+und daher $f\circ f^*=id_V$. Analolg folgt $f^*\circ f=id_V$ [alternativ: aus $f\circ f^*=id_V$ folgt, $f^*$ ist injektiv und damit $f^*$ auch bijektiv, wodurch folgt $f^*\circ f=f^*\circ f\circ f^*\circ(f^*)^{-1}=f^*\circ id_V\circ (f^*)^{-1}=\id_V$].
+\end{cproof}
+
+\noindent Um dem Leser zu helfen, die Resultate einzuordnen, formulieren wir Satz \ref{11.3.9} noch einmal leicht anders. Er wurde damals durch eine kleine Variante des Beweises von \ref{15.2.4} gezeigt, aber zumindest für $\K=\C$ erhält man ihn auch leicht als Korollar aus dem obigen Satz \ref{15.2.4}.
+
+\begin{sat}\label{15.2.7}
+Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\C$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Dann sind äquivalent:
+\begin{enumerate}[\normalfont(a)]
+\item $f$ ist selbstadjungiert (für $\K=\C$ auch hermitesch genannt [$\to$\ref{11.3.3}]).
+\item $V$ hat eine ONB die aus Eigenvektoren zu reellen Eigenwerten von $f$ besteht.
+\item Es gibt eine ONB $\v$ von $V$ derart, dass $M(f,\v)$ eine reelle Diagonalmatrix ist.
+\end{enumerate}
+\end{sat}
+
+\begin{ans}
+Normale, orthogonale und selbstadjungierte Endomorphismen können bezüglich \underline{gewisser} ONB anschaulich in der komplexen Zahlebene dargestellt werden.
+\begin{center}
+\begin{tabular}{c|c}
+\textbf{Endomorphismusart} & \textbf{Charakteristik der ONB}\\
+\hline
+normal & ist existent\\
+orthogonal & Eigenwerte liegen auf Einheitskreis\\
+selbstadjungiert & Eigenwerte sind reell
+\end{tabular}
+\end{center}
+Sei $V$ ein endlichdimensionaler $\K$-Vektorraum. Dann kann man für $f\in\End(V)$ und eine \underline{bestimmte} ONB davon mit Eigenwerten $\la_1,...\la_n\in \K$ ($n:=\dim V$) obige Tabelle auch formal darstellen.
+\begin{center}
+\begin{tabular}{c|c}
+\textbf{Bedingung an $f$} & \textbf{Bedingung an alle $\la_i$}\\
+\hline
+$f\circ f^*=f^*\circ f$ & $\la_i\la_i^*=\la_i^*\la_i$\\
+$\forall v\in V: \| f(v)\|=\|v\|$ [$\to$\ref{11.2.20}] & $\vert \la_i\vert=1$\\
+$f=f^*$ & $\la_i=\la_i^*$
+\end{tabular}
+\end{center}
+Es bleibt anzumerken, dass die Bedingung der Eigenwerte zu der ONB einer normalen Abbildung nur die immer gegebene Kommutativität der Körpermultiplikation darstellt, d.h. immer gegeben ist.
+\end{ans}
+
+\begin{nt}\label{15.2.8}
+Für den Rest des Abschnitts notieren wir $\overline{x}:=\cvec{x_1^*\\\vdots\\x_n^*}=(x^*)^T$ für $x=\cvec{x_1\\\vdots\\x_n}\in \C^n$.
+\end{nt}
+
+\begin{lem}\label{15.2.9}
+Seien $x,y\in \R^n$ und $w,\in \C^n$ mit $\sqrt{2}w=x+iy$. Ist dann $(w,\overline{w})$ ein ONS in $\C^n$, so ist $(x,y)$ eine ONB von $\lin(w,\overline{w})$ in $\C^n$.
+\end{lem}
+\begin{cproof}
+Sei $(w,\overline{w})$ ein ONS in $\C^n$, das heißt $\scal{w,w}=\scal{\overline{w},\overline{w}}=1$ und $\scal{\overline{w},w}=0$. Dann ist
+\begin{align*}
+1&=\scal{w,w}=\frac{1}{2}\scal{x+iy,x+iy}=\frac{1}{2}(\scal{x,x}+i\scal{x,y}-i\scal{y,x}-i^2\scal{y,y})=\\
+&\frac{1}{2}(\scal{x,x}+\scal{y,y}+i(\underbrace{\underbrace{\scal{x,y}}_{\in \R}-\scal{x,y}^*}_{=0}))=\frac{1}{2}(\scal{x,x}+\scal{y,y})
+\end{align*}
+und
+\begin{align*}
+0&=\scal{w,\overline{w}}=\frac{1}{2}\scal{x+iy,x-iy}=\frac{1}{2}(\scal{x,x}-i\scal{x,y}-i\scal{x,y}-\scal{y,y})\\
+&=\frac{1}{2}(\scal{x,x}-\scal{y,y}-2i\scal{x,y}),
+\end{align*}
+woraus folgt $0=\frac{1}{2}(\scal{x,x}-\scal{y,y})$ und $\scal{x,y}=0$. Insgesamt folgt $\scal{x,x}=\scal{y,y}=1$ und $0=\scal{x,y}$, wehsalb $(x,y)$ ein ONS in $\C^n$ ist mit $w,\overline{w}\in\lin_\C(x,y)$. Wegen $\lin_\C(w,\overline{w})\subseteq\lin_\C(x,y)$ und $\dim(\lin_\C(w,\overline{w}))=2$ folgt $\lin_\C(w,\overline{w})=\lin_\C(x,y)$.
+\end{cproof}
+
+\begin{sat}\mbox{}[$\to$\ref{11.3.9}]
+\label{15.2.10}
+Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\R$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Es sind äquivalent:
+\begin{itemize}[\normalfont(a)]
+\item $f$ ist normal [$\to$\ref{15.2.1}].
+\item Es gibt eine ONB $\v$ von $V$ derart, dass $M(f,\v)$ von der Gestalt\\ $\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node (a) {$\begin{smallmatrix}\la_1\end{smallmatrix}$};
+\node (b) at (1,-1) {$\begin{smallmatrix}\la_k\end{smallmatrix}$};
+\node (c) at (1.8,-1.8) {$\arraycolsep=1pt\begin{smallmatrix}\begin{array}{|cc|}\hline a_1&b_1\\-b_1&a_1\\\hline\end{array}\end{smallmatrix}$};
+\node (d) at (2.8,-2.8) [anchor=north west] {$\arraycolsep=1.1pt\begin{smallmatrix}\begin{array}{|cc|}\hline a_l&b_l\\-b_l&a_l\\\hline\end{array}\end{smallmatrix}$};
+\node[scale=5, xshift=0.6cm, yshift=-0.2cm] at (a.east) {$0$};
+\node[scale=5] at (0.5,-2.7) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (c)--(d);
+\draw[loosely dotted,very thick,dash phase=2pt] (a)--(b);
+\end{tikzpicture}
+\end{smallmatrix}\right)$ ist.
+\end{itemize}
+\end{sat}
+\begin{cproof}
+$\boldsymbol{(b)\implies (a)}$. Für $(a,b)\in \R$ gilt
+\begin{align*}
+\begin{pmatrix*}a&b\\-b&a\end{pmatrix*}^*\begin{pmatrix*}a&b\\-b&a\end{pmatrix*}&=\begin{pmatrix*}a&-b\\b&a\end{pmatrix*}\begin{pmatrix*}a&b\\-b&a\end{pmatrix*}=\begin{pmatrix*}a^2+b^2&0\\0&a^2+b^2\end{pmatrix*}\\
+&=\begin{pmatrix*}a&b\\-b&a\end{pmatrix*}\begin{pmatrix*}a&-b\\b&a\end{pmatrix*}=\begin{pmatrix*}a&b\\-b&a\end{pmatrix*}\begin{pmatrix*}a&b\\-b&a\end{pmatrix*}^*
+\end{align*}
+und der Beweis geht daher wie der Beweis von $(c)\implies (a)$ in Satz \ref{15.2.4}\\
+		
+$\boldsymbol{(a)\implies (b)}$. Nach \ref{11.2.23} ist $V$ als Vektorraum mit Standardskalarprodukt isomorph zu $\R^n$ ($n=\dim V)$ mit dem Standardskalarprodukt. Daher sei \oe $V=\R^n$ und $f=f_A$ mit $A:=M(f,\e)\in \R^{n\times n}$. Betrachte $g: \C^n\to \C^n,  x\mapsto Ax$. Offensichtlich gilt $A=M(g,\e)$ und wegen $A^*A=AA^*$ ist $g$ normal. Daher gibt es eine ONB $\w=(w_1,...,w_n)$ von $\C^n$, die aus Eigenwerten von $g$ besteht. Bezeichne $\la_i\in \C$ den zu $w_i$ gehörigen Eigenwert von $g$ $(i\in\{1,...,n\})$. Dann gilt $\chi_g=\det(A-XI_n)=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und wegen $\chi_g\in \R[X]$ (weil $A\in \R^{n\times n}$) auch $\chi_g=(-1)^n\prod_{i=1}^n(X-\lambda_i^*)$. Es folgt [$\to$\ref{10.1.13}], dass die Tupel $(\la_1,...\la_n)$ und $(\la_1^*,...,\la_n^*)$ bis auf Permutationen der Einträge dieselben sind. Nach allfälligem Umnummerieren der $\la_i$ und $w_i$ können wir daher davon ausgehen, dass
+\begin{itemize}
+\item $\la_1,...,\la_k$ reell sind,
+\item $\la_{k+1},\la_{k+3},...$ einen positiven Imaginärteil haben und
+\item $\la_{k+1}^*=\la_{k+2}$, $\la_{k+3}=\la_{k+4}^*,...$.
+\end{itemize}
+		
+\noindent Wir ersetzen nun \oe in der ONB $\w$ mehrmals jeweils endlich viele $w_{i_1},...w_{i_r}$ ($1\le i_1\le i_2\le...\le i_r$) durch eine ONB $(u_1,...,u_r)$ von $\lin(w_{i_1},...w_{i_r})$ mit $f(u_j)=\la_{i_j}u_j$ für $j\in\{1,...,r\}$. Wir behaupten, dass wir so $w_1,...,w_k\in \R^n$ und $\overline{w}_{k+1}=w_{k+2},\overline{w}_{k+3}=w_{k+4},...$ erreichen können [$\to$\ref{15.2.8}].\\
+		
+\noindent\underline{Schritt 1}. \oe $w_1,....,w_k\in \R^n$.\\
+\underline{Begründung}. Für jeden reellen Eigenwert $\la$ von $g$ seien $r\in \N$ und $1\le i_1\le...\le i_r\le n$ derart, dass $\{i_1,...,i_r\}=\{i\mid \la_i=\la\}\subseteq\{1,...,k\}$. Dann gilt $\lin(w_{i_1},...,w_{i_r})=\ker(g-\la\text{id}_{\C^n})$, denn $"\subseteq"$ ist trivial und $r\ge \dim\ker(g-\la\text{id}_{\C^n})$ nach \ref{10.1.15} ("geometrische Vielfachheit ist kleiner/gleich algebraischer").\\
+Nun gilt $\ker(g-\la\id_{\C^n})=\ker_{\C^n}(A-\la I_n)\supseteq \ker_{\R^n}(A-\la I_n)$. Da $A-\la I_n$ als reelle Matrix denselben Rang hat wie als komplexe Matrix (der Rang kann durch Überführung in Stufenform über $\R$ ermittelt werden [$\to$,\ref{9.1.14}], dieselben Zeilenoperationen sind erst recht über $\C$ durchführbar), gilt $r=\dim\ker_{\C^n}(A-\la I_n)=\dim\ker_{\R^n}(A-\la I_n)$. Wähle nun eine ONB $(u_1,...,u_r)$ des $\R$-Vektorraums $\ker_{\R^n}(A-\la I_n)$ (mit Standardskalarprodukt). Dann ist $(u_1,...,u_r)$ auch eine ONB des $\C$-Vektorraums $\ker_{\C^n}(A-\la I_n)=\lin(w_{i_1},...,w_{i_r})$.\\
+		
+\noindent\underline{Schritt 2}. \oe $\overline{w_{k+1}}=w_{k+2},\overline{w_{k+3}}=w_{k+4},...$ .\\
+\noindent\underline{Begründung}. Für jeden Eigenwert $\la$ von $g$ mit negativem Imaginärteil seien $r\in \N$ und $1\le i_1\le...\le i_r\le n$ derart, dass $\{i_1,...,i_r\}=\{i\mid \la_i=\la\}\subseteq\{k+2,k+4,...,n\}$. Dann gilt wieder $\lin(w_{i_1},...w_{i_r})=\ker(g-\la \id_{\C^n})$. Nun gilt
+\begin{align*}
+\ker(g-\la \id_{\C^n})&=\ker(A-\la I_n)=\{x\in \C^n\mid Ax=\la x\}\\
+&=\{\overline{x}\in \C^n\mid A\overline{x}=\la^* \overline{x}\}\\
+&\stackrel{A\in \R^{n\times n}}{=}\{\overline{x}\in \C^n\mid Ax=\la^* x\}\\
+&=\{\overline{x}\in \C^n\mid x\in \ker(A-\la^* \id_{\C^n })\}.
+\end{align*}
+Wegen $\{i\mid \la_i=\la^*\}=\{i_1-1,...i_r-1\}\subseteq\{k+1,k+3,...,n-1\}$ ist $\lin(w_{i_1-1},...w_{i_r-1})=\ker(g-\la^*\id_{\C^n})$ und mit $(u_1,...,u_r):=(\overline{w_{i_1-1}},...\overline{w_{i_r-1}})$ daher $\lin(u_1,...u_r)=\lin(g-\la \id_{\C^n})=\lin(w_{i_1},...,w_{i_r})$. Es ist $(u_1,...,u_r)$ auch ein ONS und damit eine ONB von $\lin(w_{i_1},...,w_{i_r})$.\\
+		
+\noindent\underline{Schritt 3}. Für $v_1,...,v_n\in \R^n$ definiert durch $v_1=w_1,...v_k=w_k, \sqrt{2}w_{k+1}=v_{k+1}+\i v_{k+2},\sqrt{2}w_{k+3}=v_{k+3}+\i v_{k+4},...,\sqrt{2}w_{n-1}=v_{n-1}+\i v_n$ ist $\v:=(v_1,...,v_n)$ eines ONB des $\R^n$ mit $M(f,\v)$ von der gewünschten Gestalt.\\
+\noindent\underline{Begründung}. Mit Lemma \ref{15.2.9} sieht man leicht, dass $\v$ eine ONB des $\C^n$ und damit auch des $\R^n$ ist. Dass $M(f,\v)$ von der gewünschten Gestalt ist, folgt leicht wie folgt. Sei $j\in\{k+1,k+3,...\}$ und schreibe $\lambda_j=a_j+\i b_j$ mit $a_j,b_j\in \R$. Dann gilt
+\begin{align*}
+f(v_j)+\i f(v_{j+1})&=g(v_j)+\i g(v_{j+1})=g(v_j+\i v_{j+1})\\
+&=g(\sqrt{2}w_j)=\sqrt{2}\lambda_jw_j=\lambda_j(v_j+\i v_{j+1})\\
+&=(a+\i b)(v_j+\i v_{j+1})=av_j-b_jv_{j+1}+\i(a_jv_{j+1}+b_jv_j).
+\end{align*}
+\end{cproof}
+
+\begin{sat}\mbox{}[$\to$\ref{11.3.9}]
+\label{15.2.11}
+Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\R$-Vektorraum mit Skalarprodukt und $f: V\to V$ linear. Es sind äquivalent:
+\begin{enumerate}[\normalfont(a)]
+\item $f$ ist orthogonal [$\to$\ref{11.2.19}].
+\item Es gibt eine ONB $\v$ von $V$ derart, dass $M(f,\v)$ von der Gestalt 
+\begin{center}
+$\begin{pmatrix}\begin{tikzpicture}[inner sep=0]
+\node (a) {$\begin{smallmatrix}\la_1\end{smallmatrix}$};
+\node (b) at (1,-1) {$\begin{smallmatrix}\la_k\end{smallmatrix}$};
+\node (c) at (2.5,-2.3) {$\arraycolsep=1pt\def\arraystretch{2.2}\begin{smallmatrix}\begin{array}{|cc|}\hline \cos\ph_1 &-\sin\ph_1\\\sin\ph_1&\cos\ph_1\\\hline\end{array}\end{smallmatrix}$};
+\node (d) at (4.4,-3.9) [anchor=north west] {$\arraycolsep=1pt\def\arraystretch{2.2}\begin{smallmatrix}\begin{array}{|cc|}\hline \cos\ph_l &-\sin\ph_l\\\sin\ph_l&\cos\ph_l\\\hline\end{array}\end{smallmatrix}$};
+\node[scale=7, xshift=0.7cm, yshift=-0.2cm] at (a.east) {$0$};
+\node[scale=7] at (1.3,-4.8) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (c)--(d);
+\draw[loosely dotted,very thick,dash phase=2pt] (a)--(b);
+\end{tikzpicture}\end{pmatrix}$
+\begin{tikzpicture}[overlay]
+\node[text width=4cm](e) at (3,2) {Drehmatrizen [$\to$\ref{7.1.4}(a),\ref{11.2.28}]};
+\draw[<-,red] (c)--(e);
+\path (d) edge [<-,bend left, color=red] (e);
+\end{tikzpicture}
+mit $\la_1,...\la_k\in \{-1,1\},\ph_1,...\ph_l\in \R$
+\end{center}
+ist.
+\end{enumerate}
+\end{sat}
+\begin{cproof}
+$\boldsymbol{(b)\implies (a)}$ ist einfach.\\
+		
+\noindent$\boldsymbol{(a)\implies (b)}$. Es reicht zu zeigen, dass es für $a,b\in \R$ mit $\left(\begin{smallmatrix*}a & b\\ -b& a\end{smallmatrix*}\right)^*\left(\begin{smallmatrix*}a & b\\ -b& a\end{smallmatrix*}\right)=I_2$ ein $\varphi\in \R$ gibt mit $\left(\begin{smallmatrix*}a & b\\ -b& a\end{smallmatrix*}\right)=\left(\begin{smallmatrix*}\cos\varphi&-\sin\varphi\\ \sin\varphi&\cos \varphi\end{smallmatrix*}\right)$. Seien also $a,b\in \R$ derart, dass sie vorige Bedingung erfüülen. Das heißt $a^2+(-b)^2=a^2+b^2=1$. Dann gibt es $\varphi\in \R$ mit $\left(\begin{smallmatrix*}a\\-b\end{smallmatrix*}\right)=\left(\begin{smallmatrix*}\cos\varphi\\\sin\varphi\end{smallmatrix*}\right)$ und somit $\left(\begin{smallmatrix*}a & b\\ -b& a\end{smallmatrix*}\right)=\left(\begin{smallmatrix*}\cos\varphi&-\sin\varphi\\ \sin\varphi&\cos \varphi\end{smallmatrix*}\right)$.
+\end{cproof}
+
+\begin{df}\mbox{}[$\to$\ref{11.2.25}, \ref{11.3.3}]
+\label{15.2.12}
+Eine Matrix $A\in \K^{n\times n}$ heißt normal, wenn $f_A$ normal ist.
+\end{df}
+
+\begin{pro}\mbox{}[$\to$\ref{11.2.27}, \ref{11.3.7}]
+\label{15.2.13}
+Sei $A\in \K^{n\times n}$. Dann gilt
+\begin{align*}
+A\text{ normal}\Longleftrightarrow A^*A=AA^*.
+\end{align*}
+\end{pro}
+\begin{cproof}
+Es gilt
+\begin{align*}
+A\text{ normal}&\Longleftrightarrow f_A\text{ normal}\\
+&\Longleftrightarrow f_A^*\circ f_A=f_A\circ f_A^*\\
+&\Longleftrightarrow M(f_A^*\circ f_A,\e)=M(f_A\circ f_A^*,\e)\\
+&\Longleftrightarrow M(f_A^*,\e)M(f_A,\e)=M(f_A,\e)M(f_A^*,\e)\\
+&\stackrel{\ref{15.1.9}}{\Longleftrightarrow} M(f_A,\e)^*M(f_A,\e)=M(f_A,\e)M(f_A,\e)^*\\
+&\Longleftrightarrow A^*A=AA^*.
+\end{align*}
+\end{cproof}
+
+\begin{pro}\mbox{}[$\to$\ref{11.2.26}, \ref{11.3.4}]
+\label{15.2.14}
+Seien $V$ ein $\K$-VR mit Skalarprodukt und $\v=(v_1,...,v_n)$ eine ONB. Sei $f: V\to V$ linear. Dann gilt
+\begin{align*}
+f\text{ ist normal}\Longleftrightarrow M(f,\v)\text{ ist normal}
+\end{align*}
+\end{pro}
+\begin{cproof}
+Es gilt
+\begin{align*}
+f\text{ normal}&\Longleftrightarrow f\circ f^*=f^*\circ \Longleftrightarrow M(f\circ f^*,\v)=M(f^*\circ f,\v)\\
+&f\Longleftrightarrow M(f,\v)M(f^*,\v)=M(f^*,\v)M(f,\v)\\
+&\stackrel{\ref{15.2.9}}{\Longleftrightarrow} M(f,\v)M(f,\v)^*=M(f,\v)^*M(f,\v)\\
+&\stackrel{\ref{15.2.14}}{\Longleftrightarrow}M(f_A,\v)\text{ ist normal}.
+\end{align*}		 
+\end{cproof}
+
+\noindent Ähnlich wie man z.B. \ref{11.3.9} in \ref{11.3.10} übersetzen kann, kann man die Sätze in diesem Abschnitt matrizentheoretisch formulieren. Wir überlassen dies dem Leser.
+
+\end{document}
