@@ -1,12 +1,19 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.14)  18 MAR 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.14)  18 MAR 2023 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**b2ReQuaFormen.tex
+(./b2ReQuaFormen.tex
 LaTeX2e <2021-11-15>
 L3 programming layer <2021-11-12>
+(/usr/local/texlive/2021/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../../main.tex'
+(/usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+)
+(../../main.tex
 (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2021/06/25 v3.34 KOMA-Script document class (book)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -327,11 +334,11 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \colbreak@box=\box96
 \mc@col@check@num=\count269
 ))
-\main@idxfile=\write3
-\openout3 = `main.idx'.
+\b2ReQuaFormen@idxfile=\write3
+\openout3 = `b2ReQuaFormen.idx'.
 
 
-Writing index file main.idx
+Writing index file b2ReQuaFormen.idx
 (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/11/08 3.66 The Babel package
 \babel@savecnt=\count270
@@ -1347,42 +1354,31 @@ LaTeX Info: Redefining \rm on input line 231.
 LaTeX Info: Redefining \bf on input line 232.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+)))
+(./b2ReQuaFormen.aux)
+\openout1 = `b2ReQuaFormen.aux'.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-)) (./main.aux
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+Package hyperref Info: Link coloring OFF on input line 2.
 
-LaTeX Warning: Label `15.2.12' multiply defined.
-
-
-LaTeX Warning: Label `16.4.23' multiply defined.
-
-
-LaTeX Warning: Label `17.4.2' multiply defined.
-
-)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-Package hyperref Info: Link coloring OFF on input line 248.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1394,12 +1390,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count367
 )
-LaTeX Info: Redefining \ref on input line 248.
-LaTeX Info: Redefining \pageref on input line 248.
-LaTeX Info: Redefining \nameref on input line 248.
- (./main.out) (./main.out)
+LaTeX Info: Redefining \ref on input line 2.
+LaTeX Info: Redefining \pageref on input line 2.
+LaTeX Info: Redefining \nameref on input line 2.
+ (./b2ReQuaFormen.out) (./b2ReQuaFormen.out)
 \@outlinefile=\write5
-\openout5 = `main.out'.
+\openout5 = `b2ReQuaFormen.out'.
 
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1408,7 +1404,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 248.
+(scrbook)           before \begin{document} on input line 2.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1440,737 +1436,44 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count375
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-62.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
+.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 262
-.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+3.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 262
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 
-262.
+6.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
-62.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
-
-
-
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./b1/b1Lizenzen.tex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 .
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [2]
-(./b1/b1OriginalesVorwort.tex)
-1: section
-1: chapter
-1: chapter
-1: section
-[3
-
-] [4
-
-] (./main.toc
-Overfull \hbox (2.03697pt too wide) detected at line 29
- []\T1/cmss/bx/n/12 109
- []
-
-[5]
-Overfull \hbox (2.03697pt too wide) detected at line 32
- []\T1/cmss/bx/n/12 117
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 35
- []\T1/cmss/bx/n/12 129
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 39
- []\T1/cmss/bx/n/12 149
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 43
- []\T1/cmss/bx/n/12 163
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 47
- []\T1/cmss/bx/n/12 173
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 53
- []\T1/cmss/bx/n/12 193
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 56
- []\T1/cmss/bx/n/12 203
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 59
- []\T1/cmss/bx/n/12 215
- []
-
-
-Overfull \hbox (2.03697pt too wide) detected at line 64
- []\T1/cmss/bx/n/12 231
- []
-
-
-Underfull \vbox (badness 2111) has occurred while \output is active []
-
- [6])
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-
-[7] [8
-
-]
-chapter 1.
-
-Class scrbook Warning: \float@addtolists detected!
-(scrbook)              Implementation of \float@addtolist became
-(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrbook)              has been replaced by several more flexible
-(scrbook)              features of package `tocbasic`.
-(scrbook)              Since Version 3.12 support for deprecated
-(scrbook)              \float@addtolist interface has been
-(scrbook)              restricted to only some of the KOMA-Script
-(scrbook)              features and been removed from others.
-(scrbook)              Loading of package `scrhack' may help to
-(scrbook)              avoid this warning, if you are using a
-(scrbook)              a package that still implements the
-(scrbook)              deprecated \float@addtolist interface.
-
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-277.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-(./b1/b1Kapitel/b1Mengen.tex [1
-
-] [2] [3] [4] [5] [6] [7] [8] [9] [10]
-Underfull \vbox (badness 1590) has occurred while \output is active []
-
- [11]
-[12] [13] [14] [15] [16]) [17] [18
-
-]
-chapter 2.
-(./b1/b1Kapitel/b1AbelscheGruppen.tex [19] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 142--145
-[]$\T1/cmr/m/n/12 : Sei-en zwei sinn-vol-le Klam-me-run-gen von
- []
-
-[22]
-Overfull \hbox (18.2122pt too wide) in paragraph at lines 182--183
-\T1/cmr/m/n/12 Wir set-zen $[][] \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 := 0$\T1/
-cmr/m/n/12 . Statt $[][] \OML/cmm/m/it/12 a[]$ \T1/cmr/m/n/12 schreibt man auch
- $[][] \OML/cmm/m/it/12 a[]$\T1/cmr/m/n/12 . Be-ach-te $[][] \OML/cmm/m/it/12 a
-[] []
- []
-
-[23]
-Overfull \hbox (10.92612pt too wide) detected at line 258
-\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^C\OT1/cmr/m/n/12 ) ((\OML/cmm/m/it/12 a\OT1
-/cmr/m/n/12 ) & (\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 ) & (\OML/cmm/m/it/12 c\OT1/
-cmr/m/n/12 ) & (\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ))  =[]\OMS/cmsy/m/n/12 )  \O
-ML/cmm/m/it/12 H[]
- []
-
-[24] [25] [26]
-Overfull \hbox (9.12148pt too wide) in paragraph at lines 377--382
-\T1/cmr/m/n/12 (Gruppen-)$[]$ \T1/cmr/m/it/12 mor-phis-mus[][][]\T1/cmr/m/n/12 
-, wenn $\OML/cmm/m/it/12 f []$ \T1/cmr/m/n/12 ist. Einen Grup-
- []
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 397.
-
-[27] [28] [29pdfTeX warning (ext4): destination with the same identifier (name{
-equation.2.3.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.512 ...rline b:=\overline{a+b}\qquad(a,b\in G)$$
-                                                  ] [30] [31] [32]
-Overfull \hbox (11.71187pt too wide) detected at line 659
-[] \OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 G;  \OT1/cmr/m/n/12
- 0 \OMS/cmsy/m/n/12 2 [] \OML/cmm/m/it/12 f;  \OMS/cmsy/m/n/12 8\OML/cmm/m/it/1
-2 a; b \OMS/cmsy/m/n/12 2 [] \OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : \OML/cmm/m/it
-/12 a \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b \OMS/cmsy/m/n/12 2 [] \OML/cmm/m/it/
-12 f [] \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 a \OMS/cmsy/m/n/12 2 [] \OML/cmm/m/i
-t/12 f \OT1/cmr/m/n/12 : \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a \OMS/cmsy/m/n/1
-2 2 [] \OML/cmm/m/it/12 f:
- []
-
-[33] [34]) [35] [36
-
-]
-chapter 3.
-(./b1/b1Kapitel/b1KommutativeRinge.tex
-Overfull \hbox (36.67015pt too wide) in paragraph at lines 19--23
-[]\T1/cmr/m/n/12 Man nennt $[]$ die \T1/cmr/m/it/12 zu-grun-de-lie-gen-de $[]$ 
-\T1/cmr/m/n/12 oder die $[]$
- []
-
-[37] [38] [39]
-Underfull \hbox (badness 1264) in paragraph at lines 179--180
-\OT1/cmr/m/n/12 1$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 := 
-0$ \T1/cmr/m/n/12 für $\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12 ^^U \OML/cmm/m/it/12
- n \OT1/cmr/m/n/12 + 1$\T1/cmr/m/n/12 . Dann gilt mit $[] [] \OT1/cmr/m/n/12 :=
-
- []
-
-[40] [41] [42]
-Underfull \vbox (badness 6316) has occurred while \output is active []
-
- [43]
-[44] [45] [46] [47] [48]) [49] [50
-
-]
-chapter 4.
-(./b1/b1Kapitel/b1Koerper.tex [51]
-Overfull \hbox (8.72614pt too wide) detected at line 75
-\OML/cmm/m/it/12 a \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A[]  \OMS/cmsy/m/n/12 ([
-])  \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT
-1/cmr/m/n/12 )  \OMS/cmsy/m/n/12 ([])  \OML/cmm/m/it/12 A \OT1/cmr/m/n/12 = (\O
-ML/cmm/m/it/12 a\OT1/cmr/m/n/12 )  \OMS/cmsy/m/n/12 ([])  \OT1/cmr/m/n/12 #(\OM
-L/cmm/m/it/12 a\OT1/cmr/m/n/12 ) = #\OML/cmm/m/it/12 A  \OMS/cmsy/m/n/12 ([])  
-\OT1/cmr/m/n/12 #(\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 n:
- []
-
-[52]
-Overfull \hbox (4.20282pt too wide) detected at line 164
-[]
- []
-
-[53] [54] [55] [56]
-Overfull \hbox (8.5566pt too wide) in paragraph at lines 249--252
-[]$\T1/cmtt/m/n/12 https : / / perso . univ-[]rennes1 . fr / marie-[]francoise 
-. roy / bpr-[]ed2-[]posted3 . pdf$[]\T1/cmr/m/n/12 ). 
- []
-
-
-Overfull \hbox (3.28926pt too wide) in paragraph at lines 259--263
-[]
- []
-
-[57]) [58]
-chapter 5.
-(./b1/b1Kapitel/b1HoLiGleichungssysteme.tex [59
-
-]
-Overfull \hbox (26.29782pt too wide) detected at line 54
-[]
- []
-
-[60]
-Overfull \hbox (13.11844pt too wide) detected at line 89
-[]
- []
-
-[61]
-Overfull \hbox (17.62038pt too wide) in paragraph at lines 125--126
-[][]\T1/cmr/bx/n/12 Definition 5.1.10. []\T1/cmr/m/n/12 Ei-ne Ma-trix $\OML/cmm
-/m/it/12 A \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 )[] \OMS/cmsy
-/m/n/12 2 \OML/cmm/m/it/12 K[]$ \T1/cmr/m/n/12 heiÿt in \T1/cmr/m/it/12 (Zeilen
--)Stufenform[]\T1/cmr/m/n/12 ,
- []
-
-[62] [63] [64] [65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66]
-Overfull \vbox (11.98065pt too high) has occurred while \output is active []
-
-
-[67] [68] [69] [70] [71] [72]
-Overfull \hbox (14.29868pt too wide) in paragraph at lines 756--758
-[][]\T1/cmr/bx/n/12 Beispiel 5.3.8. []\T1/cmr/m/n/12 Wir su-chen ein Glei-chung
-s-sys-tem, des-sen Lö-sungs-men-ge $[] []$
- []
-
-) [73] [74
-
-]
-chapter 6.
-(./b1/b1Kapitel/b1Vektorraume.tex [75]
-Overfull \hbox (6.04178pt too wide) in paragraph at lines 62--63
-[][]\T1/cmr/bx/n/12 Korollar 6.1.6. []\T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 !$ []\T
-1/cmr/m/n/12 2.1.12[]] Sei $\OML/cmm/m/it/12 K$ \T1/cmr/m/n/12 ein Kör-per. Sin
-d $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N[]$ \T1/cmr/m/n/12 und 
-$\OML/cmm/m/it/12 V[]; [] ; V[]$ $K$\T1/cmr/m/n/12 -Vektorräume,
- []
-
-[76] [77] [78]
-Underfull \hbox (badness 6380) in paragraph at lines 211--212
-[]\T1/cmr/m/n/12 Es gibt ein $\OML/cmm/m/it/12 i \OMS/cmsy/m/n/12 2 f\OT1/cmr/m
-/n/12 1\OML/cmm/m/it/12 ; [] ; n\OMS/cmsy/m/n/12 g$ \T1/cmr/m/n/12 mit $[]\OT1/
-cmr/m/n/12 (\OML/cmm/m/it/12 v[]; [] ; v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 ) =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
-\T1/cmr/m/n/12 Dies ist klar, da (ã) und ([]b) bei-de äqui-va-lent sind zu $\OM
-L/cmm/m/it/12 v[] \OMS/cmsy/m/n/12 2
- []
-
-[79] [80] [81]
-Overfull \hbox (15.78998pt too wide) in paragraph at lines 321--322
-[]\T1/cmr/m/n/12 Die Men-ge $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 e[]; [] ; e[]\O
-MS/cmsy/m/n/12 g$ \T1/cmr/m/n/12 der Stan-dard-vek-to-ren [$\OMS/cmsy/m/n/12 !$
-[]\T1/cmr/m/n/12 6.2.2[]] ist ei-ne Ba-sis des $\OML/cmm/m/it/12 K$\T1/cmr/m/n/
-12 -Vektorraums
- []
-
-
-Overfull \hbox (1.81975pt too wide) in paragraph at lines 340--344
-[][]\T1/cmr/bx/n/12 Beispiel 6.2.10. []$[] [] []$ \T1/cmr/m/n/12 ist ei-ne Ba-s
-is von $\U/msb/m/n/12 R[]$\T1/cmr/m/n/12 , aber $[] \OML/cmm/m/it/12 ; [] ; []$
-
- []
-
-[82] [83] [84] [85] [86] [87]
-Overfull \hbox (64.99062pt too wide) in paragraph at lines 577--579
-\T1/cmr/m/n/12 Eine li-nea-re Ab-bil-dung $\OML/cmm/m/it/12 f [] [] V \OMS/cmsy
-/m/n/12 ! \OML/cmm/m/it/12 W$ \T1/cmr/m/n/12 heiÿt (($\OML/cmm/m/it/12 K$\T1/cm
-r/m/n/12 -)Vektorraum-) $[]$\T1/cmr/m/it/12 morphismus[][][]\T1/cmr/m/n/12 ,
- []
-
-[88] [89] [90]
-Overfull \hbox (9.68776pt too wide) detected at line 799
-[]
- []
-
-[91] [92]) [93] [94
-
-]
-chapter 7.
-(./b1/b1Kapitel/b1Matrizen.tex [95] [96] [97]
-Overfull \hbox (9.95876pt too wide) detected at line 229
-[]
- []
-
-
-Overfull \hbox (29.85356pt too wide) detected at line 233
-[]
- []
-
-[98] [99]
-Underfull \hbox (badness 10000) in paragraph at lines 355--357
-
- []
-
-[100] [101] [102] [103] [104] [105] [106] [107]) [108]
-chapter 8.
-(./b1/b1Kapitel/b1Quotienten.tex [109
-
-]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[110] [111]
-Overfull \hbox (7.56657pt too wide) in paragraph at lines 184--184
-[][]\T1/cmr/bx/n/12 Satz 8.1.12 \T1/cmr/m/n/12 (Di-men-si-ons-for-mel für li-ne
-a-re Ab-bil-dun-gen)\T1/cmr/bx/n/12 . []\T1/cmr/m/n/12 Sei-en $\OML/cmm/m/it/12
- V$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 W$ $K$\T1/cmr/m/n/12 -Vektorräume
- []
-
-[112] [113]
-Overfull \hbox (13.63017pt too wide) detected at line 272
-\OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : [] []  \OMS/cmsy/m/n/12 ([])  [] [] \OML/c
-mm/m/it/12 U[] \OT1/cmr/m/n/12 = [] []
- []
-
-[114]) [115] [116
-
-]
-chapter 9.
-(./b1/b1Kapitel/b1Determinanten.tex [117] [118] [119] [120]
-Overfull \hbox (16.27493pt too wide) detected at line 199
-[] \OML/cmm/m/it/12 A \OT1/cmr/m/n/12 = [] [] [] ([] \OML/cmm/m/it/12 B\OT1/cmr
-/m/n/12 )([] \OML/cmm/m/it/12 C\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
- []
-
-[121] [122] [123] [124] [125]
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``m1''? on input line 49
-0.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``g2''? on input line 49
-0.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``m2''? on input line 49
-0.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``g4''? on input line 49
-0.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [126]
-Underfull \hbox (badness 1303) in paragraph at lines 512--513
-[]\T1/cmr/m/n/12 Ist $\OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 in-ver-tier-bar [$\OMS
-/cmsy/m/n/12 !$ []\T1/cmr/m/n/12 7.2.9[]], so $\OT1/cmr/m/n/12 1 = [] \OML/cmm/
-m/it/12 I[] \OT1/cmr/m/n/12 = [](\OML/cmm/m/it/12 AA[]\OT1/cmr/m/n/12 ) []
- []
-
-[127]) [128]
-chapter 10.
-(./b1/b1Kapitel/b1Eigenvektoren.tex [129
-
-] [130]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [131]
-[132] [133] [134] [135] [136]
-Overfull \hbox (7.49211pt too wide) detected at line 394
-\OML/cmm/m/it/12 ^^_[] \OT1/cmr/m/n/12 = [] []\OML/cmm/m/it/12 :
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [137]
-[138] [139] [140]
-Underfull \vbox (badness 2245) has occurred while \output is active []
-
- [141]
-[142] [143]
-Underfull \hbox (badness 1406) in paragraph at lines 689--694
-[]$[]$ \T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 f$ \T1/cmr/m/n/12 dia-go-na-li-sier
--bar. Wäh-le ge-ord-ne-te Ba-sis $[]$ von $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 m
-it
- []
-
-[144]
-Overfull \hbox (10.6502pt too wide) in paragraph at lines 714--715
-[][]\T1/cmr/bx/n/12 Definition 10.3.4. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 A
- \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 K[]$\T1/cmr/m/n/12 . Dann heiÿt $\OML/cmm/
-m/it/12 A$ $[]$[][]\T1/cmr/m/n/12 , wenn $\OML/cmm/m/it/12 f[]$ \T1/cmr/m/n/12 
-[$\OMS/cmsy/m/n/12 !$ []\T1/cmr/m/n/12 6.3.2[](e)]
- []
-
-[145]
-Overfull \hbox (1.93799pt too wide) in paragraph at lines 758--759
-[][]\T1/cmr/bx/n/12 Lemma 10.3.7. []\T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 !$ []\T1/
-cmr/m/n/12 8.1.11[]] Sei-en $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein Vek-tor-rau
-m, $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V
-\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 U$ \T1/cmr/m/n/12 ein $
-\OML/cmm/m/it/12 f$\T1/cmr/m/n/12 -invarianter
- []
-
-[146] [147]) [148]
-chapter 11.
-(./b1/b1Kapitel/b1Skalarprodukte.tex [149
-
-] [150] [151]
-Overfull \hbox (9.13423pt too wide) in paragraph at lines 152--156
-[]\T1/cmr/m/n/12 Die durch das Stan-dards-ka-lar-pro-dukt auf dem $\U/msb/m/n/1
-2 R[]$ \T1/cmr/m/n/12 [$\OMS/cmsy/m/n/12 !$[]\T1/cmr/m/n/12 11.1.3[](a)]
- []
-
-[152] [153] [154]
-Overfull \hbox (3.7356pt too wide) detected at line 257
-\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 w \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 w[];
- w \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 w[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 
-= \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 w \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 w[
-]; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 w[
-]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v \OM
-S/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 w\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 i \OT1/cm
-r/m/n/12 = \OMS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 i ^^@ h[]\
-OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :
- []
-
-[155] [156] [157]
-Overfull \hbox (3.74588pt too wide) detected at line 404
-[]  \OMS/cmsy/m/n/12 ([])  []\OML/cmm/m/it/12 :
- []
-
-[158] [159] [160] [161]) [162]
-chapter 12.
-(./b2/b2Kapitel/b2Halbordnungen.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[163
-
-]
-Overfull \hbox (8.24394pt too wide) in paragraph at lines 58--59
-\T1/cmr/m/n/12 Ein Ele-ment $\OML/cmm/m/it/12 a \OMS/cmsy/m/n/12 2 \OML/cmm/m/i
-t/12 A$ \T1/cmr/m/n/12 heiÿt $[]$, wenn $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Overfull \hbox (3.52448pt too wide) in paragraph at lines 66--67
-[]\T1/cmr/m/n/12 Besitzt $\OML/cmm/m/it/12 B$ \T1/cmr/m/n/12 ein $[]$, so auch 
-ein $[]$ und es gilt $[]$. 
- []
-
-[164]
-Overfull \hbox (0.35948pt too wide) in paragraph at lines 127--128
-[]$[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 ) = [] []\OML/cmm/m/it/
-12 B[]$ 
- []
-
-[165] [166]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
-
- []
-
-
-Package paralist Warning: Incorrect label; no or multiple counters.
-(paralist)                The label is: \normalfont (b) on input line 206.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-LaTeX Warning: Command \OE invalid in math mode on input line 224.
-
-Missing character: There is no × in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-[167]
-
-LaTeX Warning: Command \OE invalid in math mode on input line 238.
-
-Missing character: There is no × in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
-
+(/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+Overfull \hbox (13.01865pt too wide) in paragraph at lines 6--7
+[][]\T1/cmr/bx/n/12 Satz und De-fi-ni-ti-on 0.1.1. []\T1/cmr/m/n/12 (Träg-heits
+-satz) Sei $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein end-lich-di-men-sio-na-ler $
+\U/msb/m/n/12 R$\T1/cmr/m/n/12 -Vektorraum
  []
 
-[168] [169]
 
-LaTeX Warning: Command \OE invalid in math mode on input line 320.
-
-Missing character: There is no × in font cmr12!
-[170]) [171] [172
-
-]
-chapter 13.
-(./b2/b2Kapitel/b2BiLiQuaFormen.tex
-Overfull \hbox (31.48123pt too wide) in paragraph at lines 29--30
-[][]\T1/cmr/bx/n/12 Satz 13.1.4. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 V$ \T1/
-cmr/m/n/12 ein $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -Vektorraum mit Ba-sis $[] \O
-T1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; :::v[]\OT1/cmr/m/n/12 )$\T1/cmr/m/n/12 .
- Dann sind $\OT1/cmr/m/n/12 ^^H : []$
- []
-
-
-Overfull \hbox (26.58786pt too wide) in paragraph at lines 29--30
-\T1/cmr/m/n/12 und $\OT1/cmr/m/n/12 	 : []$ \T1/cmr/m/n/12 zu-ein-an-der in-ver
--se $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -Vektorraumisomorphismen 
- []
-
-[173]
-Overfull \hbox (23.52322pt too wide) in paragraph at lines 46--47
-[][]\T1/cmr/bx/n/12 Korollar 13.1.6. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 n \
-OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N[]$\T1/cmr/m/n/12 . Dann sind $\OT1/cmr/m/n/12
- ^^H : []$ \T1/cmr/m/n/12 und $\OT1/cmr/m/n/12 	 : []$
- []
-
-[174]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-[175] [176]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-[177] [178] [179] [180] [181]
-Overfull \hbox (10.94563pt too wide) in paragraph at lines 374--376
-[][]\T1/cmr/bx/n/12 Definition und Pro-po-si-ti-on 13.3.11. []\T1/cmr/m/n/12 Se
-i $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -V
-ektorraum mit Ba-sis $[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; :::; v[]\OT1/
-cmr/m/n/12 )$\T1/cmr/m/n/12 .
- []
-
-[182]
-Overfull \hbox (11.80663pt too wide) in paragraph at lines 420--421
-[]$ \T1/cmr/m/n/12 zu-ein-an-der in-ver-se $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -
-Vektorraumisomorphismen. 
- []
-
-[183]
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
-
- []
-
-
-Overfull \hbox (9.11063pt too wide) detected at line 468
-[]
- []
-
-[184]
-Overfull \hbox (3.56052pt too wide) detected at line 474
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--499
-
- []
-
-[185] [186]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [187]
-Overfull \hbox (9.05482pt too wide) in paragraph at lines 608--609
-\T1/cmr/m/n/12 von $\OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 ver-ste-hen wir ein Tri-
-pel $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; P; D\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12
- von Ma-tri-zen $\OML/cmm/m/it/12 S; P; D \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 K
-[]$ \T1/cmr/m/n/12 mit $\OML/cmm/m/it/12 A \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 S
-[]P[]DPS$\T1/cmr/m/n/12 ,
- []
-
-[188]
-Overfull \hbox (4.70929pt too wide) in paragraph at lines 648--650
-\T1/cmr/m/n/12 und $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ) = []
-[] \OML/cmm/m/it/12 B[] \OT1/cmr/m/n/12 = [][]$\T1/cmr/m/n/12 . Al-so $[] \OML/
-cmm/m/it/12 A \OT1/cmr/m/n/12 = 4[] [] \OML/cmm/m/it/12 D$\T1/cmr/m/n/12 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
-
- []
-
-
-Underfull \hbox (badness 2035) in paragraph at lines 665--666
-\OML/cmm/m/it/12 a[]h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML
-/cmm/m/it/12 h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm
-/m/it/12 a[]x[]x[] \OT1/cmr/m/n/12 + [] + [][] \OML/cmm/m/it/12 b[]x[]x[]$ \T1/
-cmr/m/n/12 für
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--666
-
- []
-
-[189]
-Overfull \hbox (10.05965pt too wide) in paragraph at lines 684--685
-[]\T1/cmr/m/n/12 Es ist na-tür-lich er-stre-bens-wert in ei-ner ver-all-ge-mei-
-ner-ten Cholesky-Zerlegung $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; P; D\OT1/cmr/m
-/n/12 )$
- []
-
-[190]) [191] [192
-
-]
-chapter 14.
-(./b2/b2Kapitel/b2ReQuaFormen.tex
-Overfull \hbox (19.767pt too wide) in paragraph at lines 6--7
-[][]\T1/cmr/bx/n/12 Satz und De-fi-ni-ti-on 14.1.1. []\T1/cmr/m/n/12 (Träg-heit
-s-satz) Sei $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein end-lich-di-men-sio-na-ler 
-$\U/msb/m/n/12 R$\T1/cmr/m/n/12 -Vektorraum
- []
+LaTeX Warning: Reference `13.5.12' on page 1 undefined on input line 19.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--24
@@ -2178,24 +1481,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
  []
 
 
-Underfull \vbox (badness 1874) has occurred while \output is active []
+LaTeX Warning: Reference `8.1.12' on page 1 undefined on input line 54.
 
- [193]
-Overfull \hbox (24.42099pt too wide) in paragraph at lines 60--62
-\T1/cmr/m/n/12 des $\OML/cmm/m/it/12 ^^U[]$ \T1/cmr/m/n/12 sei-ner al-ge-brai-s
-chen Viel-fach-heit ent-spre-chend oft auf-ge-führt ist [$\OMS/cmsy/m/n/12 !$[]
-\T1/cmr/m/n/12 10.1.14[],[]11.3.10[]],
- []
+[1
 
-[194]
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `10.1.14' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Reference `11.3.10' on page 2 undefined on input line 60.
+
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
+LaTeX Warning: Reference `6.3.7' on page 3 undefined on input line 86.
+
+
+LaTeX Warning: Reference `6.3.8' on page 3 undefined on input line 86.
+
+
+LaTeX Warning: Reference `13.3.10' on page 3 undefined on input line 90.
+
+
+LaTeX Warning: Reference `13.3.10' on page 3 undefined on input line 90.
+
+
+LaTeX Warning: Reference `11.3.10' on page 3 undefined on input line 109.
+
+
+LaTeX Warning: Reference `10.1.4' on page 3 undefined on input line 112.
+
+
+LaTeX Warning: Reference `10.1.13' on page 3 undefined on input line 112.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 109--113
 
  []
+
+
+LaTeX Warning: Reference `10.1.4' on page 3 undefined on input line 114.
 
 
 Underfull \hbox (badness 1622) in paragraph at lines 114--115
@@ -2210,7 +1539,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-[195] [196]
+
+LaTeX Warning: Reference `13.5.2' on page 3 undefined on input line 116.
+
+[3]
+
+LaTeX Warning: Reference `11.1.1' on page 4 undefined on input line 163.
+
+
+LaTeX Warning: Reference `13.3.2' on page 4 undefined on input line 167.
+
+
+LaTeX Warning: Reference `13.4.2' on page 4 undefined on input line 171.
+
+
+LaTeX Warning: Reference `9.1.21' on page 4 undefined on input line 171.
+
+[4]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 192.
@@ -2221,11 +1566,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
  []
 
 
+LaTeX Warning: Reference `13.5.1' on page 5 undefined on input line 194.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-[197] [198]
+
+LaTeX Warning: Reference `13.5.7' on page 5 undefined on input line 199.
+
+[5]
+
+LaTeX Warning: Reference `10.3.1' on page 6 undefined on input line 222.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
@@ -2239,6 +1594,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--235
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
+
+
+LaTeX Warning: Reference `10.1.4' on page 6 undefined on input line 240.
+
+
+LaTeX Warning: Reference `11.3.10' on page 6 undefined on input line 240.
+
+
+LaTeX Warning: Reference `9.1.9' on page 6 undefined on input line 246.
+
+
+LaTeX Warning: Reference `13.5.10' on page 6 undefined on input line 249.
+
+
+LaTeX Warning: Reference `13.5.9' on page 6 undefined on input line 249.
 
 
 Underfull \hbox (badness 4726) in paragraph at lines 251--261
@@ -2268,642 +1638,144 @@ Underfull \hbox (badness 1221) in paragraph at lines 266--267
  Äqui-va-len-zen
  []
 
-[199]
+[6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
+
+
+LaTeX Warning: Reference `13.5.1' on page 8 undefined on input line 285.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
-[200]
+
+LaTeX Warning: Reference `13.1.4' on page 8 undefined on input line 287.
+
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[201]) [202]
-chapter 15.
-(./b2/b2Kapitel/b2Skalarprodukte.tex
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
- []
+LaTeX Warning: Reference `13.1.10' on page 9 undefined on input line 312.
 
-[203
 
-]
+LaTeX Warning: Reference `9.1.15' on page 9 undefined on input line 315.
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 72.
 
+LaTeX Warning: Reference `9.1.23' on page 9 undefined on input line 315.
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 72.
 
-[204] [205]
+LaTeX Warning: Reference `9.1.15' on page 9 undefined on input line 315.
 
-LaTeX Warning: Command \l invalid in math mode on input line 159.
 
-Missing character: There is no ª in font cmr12!
+LaTeX Warning: Reference `9.1.23' on page 9 undefined on input line 315.
 
-LaTeX Warning: Command \l invalid in math mode on input line 159.
 
-Missing character: There is no ª in font cmr12!
+LaTeX Warning: Reference `13.5.9' on page 9 undefined on input line 320.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
- []
+LaTeX Warning: Reference `13.5.10' on page 9 undefined on input line 320.
 
-[206]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
- []
+LaTeX Warning: Reference `13.5.2' on page 9 undefined on input line 320.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+LaTeX Warning: Reference `13.5.12' on page 9 undefined on input line 323.
 
- []
+[9]
 
-[207]
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+LaTeX Warning: Reference `13.4.6' on page 10 undefined on input line 329.
 
- []
 
+LaTeX Warning: Reference `11.1.1' on page 10 undefined on input line 329.
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 252.
 
+LaTeX Warning: Reference `11.2.5' on page 10 undefined on input line 329.
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 252.
 
+LaTeX Warning: Reference `11.2.15' on page 10 undefined on input line 329.
 
-Overfull \hbox (19.90054pt too wide) detected at line 265
-[]
- []
 
-[208]
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+LaTeX Warning: Reference `11.3.3' on page 10 undefined on input line 329.
 
- []
 
+LaTeX Warning: Reference `11.3.4' on page 10 undefined on input line 329.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
- []
+LaTeX Warning: Reference `11.3.9' on page 10 undefined on input line 329.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+LaTeX Warning: Reference `11.2.26' on page 10 undefined on input line 334.
 
- []
 
-[209] [210]
-Underfull \hbox (badness 10000) in paragraph at lines 390--392
+LaTeX Warning: Reference `7.2.11' on page 10 undefined on input line 334.
 
- []
 
+LaTeX Warning: Reference `7.2.5' on page 10 undefined on input line 334.
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
- []
+LaTeX Warning: Reference `11.2.26' on page 10 undefined on input line 334.
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 402--405
-[]$\T1/cmr/m/n/12 . Für je-den re-el-len Ei-gen-wert $\OML/cmm/m/it/12 ^^U$ \T1
-/cmr/m/n/12 von $\OML/cmm/m/it/12 g$ \T1/cmr/m/n/12 sei-en $\OML/cmm/m/it/12 r 
-\OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$ \T1/cmr/m/n/12 und
- []
+LaTeX Warning: Reference `7.2.11' on page 10 undefined on input line 334.
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 402--405
-\T1/cmr/m/n/12 die-sel-ben Zei-len-ope-ra-tio-nen sind erst recht über $\U/msb/
-m/n/12 C$ \T1/cmr/m/n/12 durch-führ-bar), gilt
- []
+LaTeX Warning: Reference `7.2.5' on page 10 undefined on input line 334.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--405
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
-
- []
-
-[211] [212]
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
-
- []
-
-[213]) [214]
-chapter 16.
-(./b2/b2Kapitel/b2Teilbarkeit.tex [215
-
-]
-Overfull \hbox (6.64333pt too wide) in paragraph at lines 44--45
-[][]\T1/cmr/bx/n/12 Definition 16.1.4. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 B
- \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 
-a \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A$\T1/cmr/m/n/12 . Es heiÿt $\OML/cmm/m/i
-t/12 a$ \T1/cmr/m/n/12 ein $[]$
- []
-
-
-Overfull \hbox (11.06276pt too wide) in paragraph at lines 63--64
-[]\T1/cmr/m/n/12 Wegen der Ein-deu-tig-keit von In-fi-ma und Su-pre-ma in halb-
-ge-ord-ne-ten Men-gen [$\OMS/cmsy/m/n/12 !$[]\T1/cmr/m/n/12 12.1.6[]]
- []
-
-[216]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-[217]
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-[218]
-
-Package paralist Warning: Incorrect label; no or multiple counters.
-(paralist)                The label is: \normalfont  on input line 183.
-
-[219]
-
-LaTeX Warning: Reference `16.1.18' on page 220 undefined on input line 218.
-
-[220]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
-
- []
-
-[221]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-[222]
-Underfull \hbox (badness 1748) in paragraph at lines 337--338
-[]\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 p \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$
- \T1/cmr/m/n/12 prim in $\OML/cmm/m/it/12 A$\T1/cmr/m/n/12 . Zu zei-gen sind (a
-) $\OML/cmm/m/it/12 p [] A[]$ \T1/cmr/m/n/12 und (b)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
-
- []
-
-[223]
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
-
- []
-
-[224]
-Underfull \hbox (badness 10000) in paragraph at lines 414--416
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
-
- []
-
-[225]
-Underfull \hbox (badness 1275) in paragraph at lines 456--457
-\T1/cmr/m/n/12 fak-tor auf-tau-chen. Da Prim-ele-men-te kei-ne Ein-hei-ten sind
-, kann aber dort
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 456--457
-\T1/cmr/m/n/12 auch höchs-tens ein Prim-fak-tor auf-tre-ten. Sei nun $\OT1/cmr/
-m/n/12 (\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 )[]$ \T1/cmr/m/n/12 ei-ne Fol-ge mi
-t
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
-
- []
-
-[226]
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
-
- []
-
-
-LaTeX Warning: Reference `16.4.9' on page 227 undefined on input line 475.
-
-[227]
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
-
- []
-
-
-Overfull \hbox (14.17291pt too wide) in paragraph at lines 515--518
-\OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 := []$\T1/cmr/m/n/12 .
- []
-
-[228]) [229] [230
-
-]
-chapter 17.
-(./b2/b2Kapitel/b2Normalformen.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
-Overfull \hbox (15.59352pt too wide) in paragraph at lines 24--28
-\T1/cmr/m/n/12 An-wen-dung der ers-ten bei-den Ope-ra-tio-nen in je-de Ma-trix 
-$[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 A[]$ \T1/cmr/m/n/12 mit $[] [] \OT1/cmr
-/m/n/12 =
- []
-
-[231] [232]
-Underfull \vbox (badness 7081) has occurred while \output is active []
-
- [233]
-[234]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-
-LaTeX Warning: Reference `17.1..8' on page 235 undefined on input line 141.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--169
-
- []
-
-
-Underfull \hbox (badness 3179) in paragraph at lines 173--174
-\T1/cmr/m/n/12 Setze $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 d[]; :::; d[]\OT1/cmr/m
-/n/12 ) := (\OML/cmm/m/it/12 d[]; ::d[]; c; d; d[]; :::; d[]\OT1/cmr/m/n/12 )$\
-T1/cmr/m/n/12 . Noch zu zei-gen ist:
- []
-
-
-Underfull \vbox (badness 1342) has occurred while \output is active []
-
- [235]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [236]
-[237]
-Overfull \hbox (11.56244pt too wide) detected at line 260
-[]
- []
-
-
-Underfull \vbox (badness 4739) has occurred while \output is active []
-
- [238]
-Overfull \hbox (13.73965pt too wide) in paragraph at lines 282--283
-[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ) = ([]\OMS/cmsy/m/n/12 
-f\OML/cmm/m/it/12 A\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 ) = (2)$\T1/cmr/m/n/12 , $
-[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ) = (12\OML/cmm/m/it/12 
-; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 12) 
-= (12)$\T1/cmr/m/n/12 , $[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A\OT1/cmr/m/n/12
- ) = [][](\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ) =
- []
-
-[239]
-Overfull \hbox (2.66571pt too wide) in paragraph at lines 320--320
-[][]\T1/cmr/bx/n/12 Lemma 17.3.4. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 S \OMS
-/cmsy/m/n/12 2 \OML/cmm/m/it/12 A[]$ \T1/cmr/m/n/12 in Smit-h-scher Nor-mal-for
-m, $\OML/cmm/m/it/12 l \OT1/cmr/m/n/12 := []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 
-n; m\OMS/cmsy/m/n/12 g$ \T1/cmr/m/n/12 und $\OML/cmm/m/it/12 c[]; :::; c[] \OMS
-/cmsy/m/n/12 2
- []
-
-[240]
-
-LaTeX Warning: Reference `17.1.12' on page 241 undefined on input line 354.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
-
- []
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 38
-9.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 38
-9.
-
-[241] [242]
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
- [243]
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
-
- []
-
-[244]
-
-LaTeX Warning: Reference `17.1.12' on page 245 undefined on input line 509.
-
-
-Underfull \vbox (badness 1436) has occurred while \output is active []
-
- [245]
-Overfull \hbox (25.72516pt too wide) detected at line 528
-[]
- []
-
-[246] [247]
-Underfull \hbox (badness 6758) in paragraph at lines 612--633
-[]\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 := [] \OML/cmm/m/it/12
- p \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 1$\T1/cmr/m/n/12 . Streicht man in $\OM
-L/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 ) \OMS/cmsy/m
-/n/12 ^^@ \OML/cmm/m/it/12 XI[] \OT1/cmr/m/n/12 =
- []
-
-[248]
-Underfull \vbox (badness 6445) has occurred while \output is active []
-
- [249]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [250]
-Overfull \hbox (14.4139pt too wide) detected at line 778
-[]
- []
-
-
-Overfull \vbox (0.4pt too high) detected at line 784
- []
-
-[251]
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``d''? on input line 864
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``c''? on input line 864
-.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [252]
-Underfull \hbox (badness 10000) in paragraph at lines 884--885
-
- []
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 937--939
-\T1/cmr/m/n/12 Wegen der Ein-deu-tig-keit der Fro-be-ni-us'schen Nor-mal-form a
-us []17.5.4[] folgt
- []
-
-[253] [254]
-Overfull \vbox (0.4pt too high) detected at line 949
- []
-
-[255]
-Overfull \hbox (49.99965pt too wide) in paragraph at lines 983--984
-\T1/cmr/m/n/12 Dann gibt es ein bis auf Rei-hen-fol-ge der Ein-trä-ge ein-deu-t
-ig be-stimm-tes Tu-pel $\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 ^^U[]; k[]\OT1/cmr/m
-/n/12 )\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U[]; k[]\OT1
-/cmr/m/n/12 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
-
- []
-
-[256]
-Overfull \vbox (0.4pt too high) detected at line 1042
- []
-
-
-Overfull \vbox (0.4pt too high) detected at line 1046
- []
-
-
-Overfull \vbox (0.79999pt too high) detected at line 1050
- []
-
-) [257] [258
-
-]
-runsystem(makeindex main.idx)...executed safely (allowed).
-
- (./main.ind [259
-
-
-] [260] [261]) [262] (./main.aux)
+[10] (./b2ReQuaFormen.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `b2ReQuaFormen.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 46456 strings out of 478371
- 964822 string characters out of 5848512
- 1448453 words of memory out of 5000000
- 62126 multiletter control sequences out of 15000+600000
- 443798 words of font info for 144 fonts, out of 8000000 for 9000
+ 39575 strings out of 478371
+ 856749 string characters out of 5848512
+ 1376348 words of memory out of 5000000
+ 56876 multiletter control sequences out of 15000+600000
+ 427006 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,28n,120p,10599b,1714s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{sat.17.6.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.17.3.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.16.1.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.16.2.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.16.2.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.13.5.10} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.13.3.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.4.2.13} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.11.2.11} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.11.1.12} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.11.1.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.10.2.14} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.10.2.12} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.9.1.10} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.7.2.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.9.1.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.7.2.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.7.1.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.2.2.14} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.6.2.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.6.1.11} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.6.1.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.5.1.14} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.4.1.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.3.2.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.3.1.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.2.1.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.1.1.30} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.2.1.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.1.1.14} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.1.2.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{sat.1.1.29} has been referenced but does not exist,
- replaced by a fixed one
-
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
-/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
-c/cm-super/sfsl1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
-cm-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm
--super/sfsx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-s
-uper/sfsx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
-er/sfsx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfsx2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
-fti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sft
-t1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/stmaryrd/stmar
-y10.pfb>
-Output written on main.pdf (270 pages, 1771370 bytes).
+ 144i,28n,137p,10648b,1057s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2021/texmf-di
+st/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on b2ReQuaFormen.pdf (10 pages, 385577 bytes).
 PDF statistics:
- 5310 PDF objects out of 6186 (max. 8388607)
- 4512 compressed objects within 46 object streams
- 1618 named destinations out of 1728 (max. 500000)
- 717 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

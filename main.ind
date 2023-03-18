@@ -14,8 +14,8 @@
     \subitem kanonische Surjektion, \hyperpage{17}
     \subitem Kern ($\ker$), \hyperpage{33}
     \subitem Permutation, \hyperpage{7}, \hyperpage{23}
-      \subsubitem Fehlstand, \hyperpage{99}
-      \subsubitem Transposition, \hyperpage{99}
+      \subsubitem Fehlstand, \hyperpage{117}
+      \subsubitem Transposition, \hyperpage{117}
     \subitem Selbstabbildung, \hyperpage{7}
     \subitem surjektiv, \hyperpage{4}
     \subitem Umkehrabbildung (inverse Abbildung), \hyperpage{10}
@@ -36,33 +36,33 @@
     \subitem Untergruppe, \hyperpage{24}
       \subsubitem erzeugte Untergruppe, \hyperpage{26}
     \subitem zugrundeliegende Menge/ Trägermenge, \hyperpage{19}
-  \item {\bf Algebraischer Dualraum}, \hyperpage{155}
-    \subitem  Linearform, \hyperpage{155}
-    \subitem Doppeldual/ Bidual, \hyperpage{159}
-    \subitem duale Abbildung, \hyperpage{156}
-    \subitem duale Basis, \hyperpage{156}
-  \item {\bf Allgemeine Cholesky-Zerlegung}, \hyperpage{170}
-    \subitem Permutationsmatrix, \hyperpage{170}
+  \item {\bf Algebraischer Dualraum}, \hyperpage{173}
+    \subitem  Linearform, \hyperpage{173}
+    \subitem Doppeldual/ Bidual, \hyperpage{177}
+    \subitem duale Abbildung, \hyperpage{174}
+    \subitem duale Basis, \hyperpage{174}
+  \item {\bf Allgemeine Cholesky-Zerlegung}, \hyperpage{188}
+    \subitem Permutationsmatrix, \hyperpage{188}
   \item {\bf  Allquantor} ($\forall $), \hyperpage{3}
   \item {\bf assoziativ}, \hyperpage{19}, \hyperpage{37}
 
   \indexspace
 
-  \item {\bf Bilinearform}, \hyperpage{161}
-    \subitem  bilineare Abbildung, \hyperpage{160}
-    \subitem ausgeartet, \hyperpage{164}
-    \subitem Darstellungsmatrix, \hyperpage{162}
-    \subitem quadratische Form, \hyperpage{165}
-    \subitem symmetrische Bilinearform, \hyperpage{164}
-    \subitem symmetrische Matrix, \hyperpage{164}
+  \item {\bf Bilinearform}, \hyperpage{179}
+    \subitem  bilineare Abbildung, \hyperpage{178}
+    \subitem ausgeartet, \hyperpage{182}
+    \subitem Darstellungsmatrix, \hyperpage{180}
+    \subitem quadratische Form, \hyperpage{183}
+    \subitem symmetrische Bilinearform, \hyperpage{182}
+    \subitem symmetrische Matrix, \hyperpage{182}
 
   \indexspace
 
-  \item {\bf Cayley-Hamilton (Satz)}, \hyperpage{121}
+  \item {\bf Cayley-Hamilton (Satz)}, \hyperpage{140}
 
   \indexspace
 
-  \item {\bf distributiv}, \hyperpage{37}
+  \item {\bf distributiv}, \hyperpage{37}, \hyperpage{75}
 
   \indexspace
 
@@ -81,19 +81,19 @@
   \indexspace
 
   \item {\bf  Halbordnung}
-    \subitem Infimum, \hyperpage{146}
-    \subitem maximales Element, \hyperpage{148}
-    \subitem Maximum, \hyperpage{146}
-    \subitem minimales Element, \hyperpage{148}
-    \subitem Minimum, \hyperpage{146}
-    \subitem obere Schranke, \hyperpage{146}
-    \subitem Supremum, \hyperpage{146}
-    \subitem untere Schranke, \hyperpage{146}
-  \item {\bf Halbordnung}, \hyperpage{145}
-    \subitem Kette, \hyperpage{148}
-    \subitem Ordnung/ lineare Ordnung, \hyperpage{145}
-      \subsubitem  natürliche Ordnung, \hyperpage{145}
-    \subitem Zorn'sche Lemma, \hyperpage{151}
+    \subitem Infimum, \hyperpage{164}
+    \subitem maximales Element, \hyperpage{166}
+    \subitem Maximum, \hyperpage{164}
+    \subitem minimales Element, \hyperpage{166}
+    \subitem Minimum, \hyperpage{164}
+    \subitem obere Schranke, \hyperpage{164}
+    \subitem Supremum, \hyperpage{164}
+    \subitem untere Schranke, \hyperpage{164}
+  \item {\bf Halbordnung}, \hyperpage{163}
+    \subitem Kette, \hyperpage{166}
+    \subitem Ordnung/ lineare Ordnung, \hyperpage{163}
+      \subsubitem  natürliche Ordnung, \hyperpage{163}
+    \subitem Zorn'sche Lemma, \hyperpage{169}
   \item {\bf homogenes lineares Gleichungssystem}, \hyperpage{59}
     \subitem Koeffizientenmatrix, \hyperpage{62}
     \subitem Stufenform, \hyperpage{62}
@@ -106,11 +106,11 @@
   \item {\bf  Implikation} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace  +\thickmuskip {.2777em}$, $\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Relbar \tmspace  +\thickmuskip {.2777em}$), 
 		\hyperpage{3}
   \item {\bf (vollständige) Induktion}, \hyperpage{22}
-  \item {\bf inhomogenes lineares Gleichungssystem}, \hyperpage{87}
-    \subitem Stufenform, \hyperpage{87}
-      \subsubitem abhängige Unbekannte, \hyperpage{87}
-      \subsubitem freie Unbekannte, \hyperpage{87}
-      \subsubitem reduzierte Stufenform, \hyperpage{87}
+  \item {\bf inhomogenes lineares Gleichungssystem}, \hyperpage{105}
+    \subitem Stufenform, \hyperpage{105}
+      \subsubitem abhängige Unbekannte, \hyperpage{105}
+      \subsubitem freie Unbekannte, \hyperpage{105}
+      \subsubitem reduzierte Stufenform, \hyperpage{105}
   \item {\bf inverse Elemente}, \hyperpage{19}
 
   \indexspace
@@ -149,27 +149,29 @@
   \indexspace
 
   \item {\bf Matrix}
-    \subitem charakteristisches Polynom, \hyperpage{114}
-    \subitem Darstellungsmatrix, \hyperpage{77}, \hyperpage{81}
-      \subsubitem Basiswechselmatrix, \hyperpage{81}
-    \subitem Determinante, \hyperpage{102}
-      \subsubitem Entwicklung, \hyperpage{107}
-    \subitem diagonalisierbar, \hyperpage{126, 127}
-    \subitem Diagonalmatrix, \hyperpage{125}
-    \subitem Einheitsmatrix, \hyperpage{85}
-    \subitem inverse Matrix, \hyperpage{85}
+    \subitem Bild, \hyperpage{89}
+    \subitem charakteristisches Polynom, \hyperpage{133}
+    \subitem Darstellungsmatrix, \hyperpage{95}, \hyperpage{99}
+      \subsubitem Basiswechselmatrix, \hyperpage{99}
+    \subitem Determinante, \hyperpage{120}
+      \subsubitem Entwicklung, \hyperpage{125}
+    \subitem diagonalisierbar, \hyperpage{144, 145}
+    \subitem Diagonalmatrix, \hyperpage{144}
+    \subitem Einheitsmatrix, \hyperpage{103}
+    \subitem inverse Matrix, \hyperpage{103}
     \subitem Kern ($\ker$), \hyperpage{69}
-    \subitem Komatrix, \hyperpage{109}
-    \subitem Matrizenprodukt, \hyperpage{82}
-    \subitem obere Dreiecksmatrix, \hyperpage{125}
-    \subitem Orthogonalität, \hyperpage{140}
-    \subitem Rang, \hyperpage{94}
-    \subitem selbstadjungiert, \hyperpage{141}
-    \subitem trigonalisierbar, \hyperpage{126, 127}
-    \subitem untere Dreiecksmatrix, \hyperpage{125}
-    \subitem Vandermonde-Matrix, \hyperpage{79}
+    \subitem Komatrix, \hyperpage{127}
+    \subitem Matrizenprodukt, \hyperpage{100}
+    \subitem obere Dreiecksmatrix, \hyperpage{144}
+    \subitem Orthogonalität, \hyperpage{158}
+    \subitem Rang, \hyperpage{112}
+    \subitem selbstadjungiert, \hyperpage{159}
+    \subitem Spaltenraum, \hyperpage{89}
+    \subitem trigonalisierbar, \hyperpage{144, 145}
+    \subitem untere Dreiecksmatrix, \hyperpage{144}
+    \subitem Vandermonde-Matrix, \hyperpage{97}
     \subitem Zeilenraum ($\row$), \hyperpage{69}
-    \subitem Ähnlichkeit, \hyperpage{105}
+    \subitem Ähnlichkeit, \hyperpage{123}
   \item {\bf Menge}, \hyperpage{1}
     \subitem abzählbar, \hyperpage{6}
     \subitem $\in$ oder $\notin$, \hyperpage{2}
@@ -179,11 +181,13 @@
     \subitem Mengendifferenz ($\setminus$), \hyperpage{4}
     \subitem Mächtigkeit ($\#$), \hyperpage{6}
     \subitem Obermenge ($\supseteq$), \hyperpage{3}
+      \subsubitem echte Obermenge ($\supset$), \hyperpage{83}
     \subitem Objekte mit Eigenschaft, \hyperpage{2}
     \subitem Potenzmenge ($\Pow$), \hyperpage{4}
     \subitem Schnitt ($\cap/\bigcap$), \hyperpage{3, 4}
     \subitem symmetrische Differenz ($\Delta$), \hyperpage{21}
     \subitem Teilmenge ($\subseteq$), \hyperpage{3}
+      \subsubitem echte Teilmenge ($\subset$), \hyperpage{83}
     \subitem unendlich, \hyperpage{6}
     \subitem Vereinigung ($\cup/\bigcup$), \hyperpage{3, 4}
     \subitem Zerlegung, \hyperpage{13}
@@ -193,7 +197,8 @@
   \indexspace
 
   \item {\bf natürliche Zahlen} ($\N$), \hyperpage{2}
-  \item {\bf neutrales Element}, \hyperpage{19}, \hyperpage{37}
+  \item {\bf neutrales Element}, \hyperpage{19}, \hyperpage{37}, 
+		\hyperpage{75}
 
   \indexspace
 
@@ -204,13 +209,13 @@
   \item {\bf Polynom}, \hyperpage{41}
     \subitem Koeffizient, \hyperpage{41}
       \subsubitem Leitkoeffizient, \hyperpage{41}
-    \subitem normiertes Polynom, \hyperpage{117}
-      \subsubitem Begleitmatrix, \hyperpage{118}
+    \subitem normiertes Polynom, \hyperpage{135}
+      \subsubitem Begleitmatrix, \hyperpage{136}
     \subitem Nullstelle, \hyperpage{56}
-      \subsubitem Vielfachheit, \hyperpage{116}
+      \subsubitem Vielfachheit, \hyperpage{134}
     \subitem $p(x)$, \hyperpage{44}
-    \subitem Polynomdivision, \hyperpage{116}
-    \subitem zerfällt (in Linearfaktoren), \hyperpage{116}
+    \subitem Polynomdivision, \hyperpage{135}
+    \subitem zerfällt (in Linearfaktoren), \hyperpage{134}
   \item {\bf Primzahl} ($\P$), \hyperpage{52}
   \item {\bf punktweise Addition}, \hyperpage{24}
 
@@ -218,13 +223,13 @@
 
   \item {\bf Relation}, \hyperpage{12}
     \subitem Kongruenzrelation ($\equiv$), \hyperpage{29}, 
-		\hyperpage{44}, \hyperpage{91}
+		\hyperpage{44}, \hyperpage{109}
       \subsubitem $\equiv_H$, \hyperpage{31}
       \subsubitem Kongruenzklasse, \hyperpage{29}
       \subsubitem Nebenklassen, \hyperpage{32}
       \subsubitem Quotientengruppe, \hyperpage{30}, \hyperpage{32}
       \subsubitem Quotientenring, \hyperpage{45, 46}
-      \subsubitem Quotientenvektorraum, \hyperpage{91}
+      \subsubitem Quotientenvektorraum, \hyperpage{109}
       \subsubitem Restklassen, \hyperpage{46}
     \subitem Äquivalenzrelation ($\sim$), \hyperpage{12}
       \subsubitem induziert, \hyperpage{16}
@@ -242,47 +247,71 @@
   \indexspace
 
   \item {\bf  Teilbarkeit}
-    \subitem  gemeinsamer Teiler (gT), \hyperpage{198}
-    \subitem  gemeinsames Vielfaches (gV), \hyperpage{198}
-    \subitem  größter gemeinsamer Teiler (ggT), \hyperpage{198}
-    \subitem  kleinstes gemeinsames Vielfaches (kgV), \hyperpage{198}
-    \subitem Teiler, \hyperpage{197}
+    \subitem  gemeinsamer Teiler (gT), \hyperpage{216}
+    \subitem  gemeinsames Vielfaches (gV), \hyperpage{216}
+    \subitem  größter gemeinsamer Teiler (ggT), \hyperpage{216}
+    \subitem  kleinstes gemeinsames Vielfaches (kgV), \hyperpage{216}
+    \subitem Teiler, \hyperpage{215}
   \item {\bf Teilbarkeit}
-    \subitem Assozitation, \hyperpage{197}
-    \subitem Teilbarkeitsrelation, \hyperpage{197}
+    \subitem Assozitation, \hyperpage{215}
+    \subitem Teilbarkeitsrelation, \hyperpage{215}
 
   \indexspace
 
-  \item {\bf Vektorraum}
-    \subitem Basis
-      \subsubitem Eigenbasis, \hyperpage{126}
-    \subitem charakteristisches Polynom, \hyperpage{113}
-      \subsubitem algebraische Vielfachheit, \hyperpage{116}
-      \subsubitem geometrische Vielfachheit, \hyperpage{116}
-    \subitem Homomorphismus/ lineare Abbildung
-      \subsubitem algebraische Identität, \hyperpage{124}
-      \subsubitem Eigenraum, \hyperpage{111}
-      \subsubitem Eigenvektor, \hyperpage{111}
-      \subsubitem Eigenwert, \hyperpage{111}
-      \subsubitem $\End(V)$, \hyperpage{111}
-      \subsubitem $\Hom(V,W)$, \hyperpage{80}
-      \subsubitem Minimalpolynom, \hyperpage{124}
-    \subitem normierter Vektorraum, \hyperpage{132}
-      \subsubitem Homomorphismus, \hyperpage{139}
-      \subsubitem Norm, \hyperpage{132}
-      \subsubitem orthogonale Projektion, \hyperpage{137}
-      \subsubitem orthogonales Komplement, \hyperpage{137}
-      \subsubitem Orthogonalität, \hyperpage{136}
-      \subsubitem Orthonormalbasis, \hyperpage{136}
-      \subsubitem Orthonormalsystem, \hyperpage{136}
-      \subsubitem selbsadjungierter Endomorphismus, \hyperpage{141}
-      \subsubitem Skalarprodukt, \hyperpage{131}
-      \subsubitem Standardskalarprodukt, \hyperpage{132}
-      \subsubitem Winkel, \hyperpage{134}
+  \item {\bf Vektorraum}, \hyperpage{75}
+    \subitem additive Gruppe, \hyperpage{75}
+    \subitem Basis, \hyperpage{79}, \hyperpage{82}
+      \subsubitem Eigenbasis, \hyperpage{144}
+      \subsubitem Standardbasis, \hyperpage{79}
+    \subitem charakteristisches Polynom, \hyperpage{131}
+      \subsubitem algebraische Vielfachheit, \hyperpage{134}
+      \subsubitem geometrische Vielfachheit, \hyperpage{134}
+    \subitem Dimension, \hyperpage{86}
+    \subitem direktes Produkt, \hyperpage{76}
+    \subitem endlich erzeugt, \hyperpage{84}
+    \subitem Erzeugendensystem, \hyperpage{79}, \hyperpage{81}
+    \subitem Grundkörper, \hyperpage{75}
+    \subitem Homomorphismus/ lineare Abbildung, \hyperpage{88}
+      \subsubitem algebraische Identität, \hyperpage{142}
+      \subsubitem Automorphismus, \hyperpage{88}
+      \subsubitem $\co_\v$, \hyperpage{92}
+      \subsubitem Eigenraum, \hyperpage{129}
+      \subsubitem Eigenvektor, \hyperpage{129}
+      \subsubitem Eigenwert, \hyperpage{129}
+      \subsubitem $\End(V)$, \hyperpage{129}
+      \subsubitem Endomorphismus, \hyperpage{88}
+      \subsubitem Epimorphismus, \hyperpage{88}
+      \subsubitem $\Hom(V,W)$, \hyperpage{98}
+      \subsubitem Isomorphismus, \hyperpage{88}
+      \subsubitem Minimalpolynom, \hyperpage{142, 143}
+      \subsubitem Monomorphismus, \hyperpage{88}
+      \subsubitem $\ve_\v$, \hyperpage{92}
+    \subitem isomorph ($\cong$), \hyperpage{92}
+    \subitem lineare Unabhängigkeit, \hyperpage{79}, \hyperpage{82}
+    \subitem normierter Vektorraum, \hyperpage{150}
+      \subsubitem Homomorphismus, \hyperpage{157}
+      \subsubitem Norm, \hyperpage{150}
+      \subsubitem orthogonale Projektion, \hyperpage{155}
+      \subsubitem orthogonales Komplement, \hyperpage{155}
+      \subsubitem Orthogonalität, \hyperpage{154}
+      \subsubitem Orthonormalbasis, \hyperpage{154}
+      \subsubitem Orthonormalsystem, \hyperpage{154}
+      \subsubitem selbsadjungierter Endomorphismus, \hyperpage{159}
+      \subsubitem Skalarprodukt, \hyperpage{149}
+      \subsubitem Standardskalarprodukt, \hyperpage{150}
+      \subsubitem Winkel, \hyperpage{152}
+    \subitem Skalare, \hyperpage{75}
+    \subitem Skalarmultiplikation, \hyperpage{75}
+    \subitem Trägermenge, \hyperpage{75}
     \subitem Unterraum
-      \subsubitem direkte Summe, \hyperpage{95}
-      \subsubitem kanonische Surjektion, \hyperpage{92}
-      \subsubitem Summe, \hyperpage{95}
+      \subsubitem direkte Summe, \hyperpage{113}
+      \subsubitem erzeugter Unterraum/ lineare Hülle/ Spann, 
+		\hyperpage{78}
+      \subsubitem kanonische Surjektion, \hyperpage{110}
+      \subsubitem Summe, \hyperpage{113}
+    \subitem Untervektorraum/linearer Unterraum, \hyperpage{77}
+    \subitem Vektoraddition, \hyperpage{75}
+    \subitem Vektoren, \hyperpage{75}
 
   \indexspace
 
