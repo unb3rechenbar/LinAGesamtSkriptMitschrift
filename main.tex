@@ -92,6 +92,7 @@ toc=idx % Inhaltsverzeichniseintrag für Index
 \usepackage[most]{tcolorbox}
 \tcbset{sharp corners=all,boxrule=0mm,breakable, enhanced}
 
+
 \newcommand\cancel[1]{
     \tikz[baseline=(tocancel.base)]{
         \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
@@ -248,6 +249,10 @@ toc=idx % Inhaltsverzeichniseintrag für Index
 % Umgebung für Anschauungen
 \newenvironment{ans}{\begin{tcolorbox}[colback=blue!10]\textbf{Anschauung}. }{\end{tcolorbox}}
 
+% Umgebungen für Beweis-Begründungen
+\newcommand{\schritt}[1]{\\\underline{\textbf{Schritt #1.}}}
+\newcommand{\bewbeh}[1]{\textbf{#1}}
+\newcommand{\bewbeg}[1]{\textbf{#1}}
 
 \begin{document}
 \subject{Skript zur Vorlesung}

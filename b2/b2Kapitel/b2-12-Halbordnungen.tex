@@ -3,229 +3,246 @@
 \section{Infima und Suprema, Minima und Maxima}
 
 \begin{df}\label{12.1.1}
- Sei $A$ eine Menge. Eine \emph{Halbordnung}\index{Halbordnung@{\bf Halbordnung}} (auch: \emph{partielle Ordnung}) ist eine Relation [$\to$ \ref{1.3.1} (e)] $\preceq$ auf $A$, für die gilt:
-\begin{itemize}
-\item $\forall a\in A: a\preceq a$ - "reflexiv",
-\item $\forall a,b\in A: (a\preceq b)\land (b\preceq b)\implies a=b$ - ''antisymmetrisch",
-\item $\forall a,b,c\in A: (a\preceq b)\land (b\preceq c)\implies a\preceq c$ - "transitiv".
-\end{itemize}
-Gilt zusätzlich
-\begin{itemize}
-\item $\forall a,b\in A: (a\preceq b)\lor (b\preceq a)$ - "linear",
-\end{itemize}
-so heißt $\preceq$ sogar eine \emph{Ordnung}\index{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung} (auch: \textit{lineare Ordnung}, \emph{Totalordnung)}.\\
+		Sei $A$ eine Menge. Eine \emph{Halbordnung}\index{Halbordnung@{\bf Halbordnung}} (auch: \emph{partielle Ordnung}) ist eine Relation [$\to$ \ref{1.3.1} (e)] $\preceq$ auf $A$, für die gilt:
+	\begin{itemize}
+		\item[(R)] $\forall a\in A: a\preceq a$ - \enquote{reflexiv},
+		\item[(A)] $\forall a,b\in A: (a\preceq b)\land (b\preceq a)\implies a=b$ - \enquote{antisymmetrisch},
+		\item[(T)] $\forall a,b,c\in A: (a\preceq b)\land (b\preceq c)\implies a\preceq c$ - \enquote{transitiv}.
+	\end{itemize}
+	Gilt zusätzlich
+	\begin{itemize}
+		\item[(L)] $\forall a,b\in A: (a\preceq b)\lor (b\preceq a)$ - \enquote{linear},
+	\end{itemize}
+	so heißt $\preceq$ sogar eine \emph{Ordnung}\index{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung} (auch: \textit{lineare Ordnung}, \emph{Totalordnung}).
 \end{df}
 
 \begin{bsp}\label{12.1.2}
-\begin{enumerate}[\normalfont(a)]
-\item Sei $A$ eine Menge von Mengen. Dann wird durch
-\begin{align*}
-\forall N,M\in A: N\preceq M:\Longleftrightarrow N\subseteq M
-\end{align*}
-per Mengeninklusion eine Halbordnung auf $A$ definiert.
-\item Die Teilsbarkeitsbeziehung auf $\N$ definiert durch
-\begin{align*}
-a\mid b:\Longleftrightarrow \exists c\in \N: b=ca.
-\end{align*}
-ist eine Halbordnung auf den natürlichen Zahlen.
- 				
-\item Die \emph{natürliche Ordnung}\index{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung! natürliche Ordnung} $\le$ auf $\N$ ist eine Ordnung.
-\item Die rationale Ordnung $\le$ auf $\{\infty\}\cup\R\cup\{-\infty\}$ ist eine Ordnung.
-\end{enumerate}
+	\begin{enumerate}[\normalfont(a)]
+		\item Sei $A$ eine Menge von Mengen. Dann wird durch
+		\begin{align*}
+			\forall N,M\in A: N\preceq M:\Longleftrightarrow N\subseteq M
+		\end{align*}
+		per Mengeninklusion eine Halbordnung auf $A$ definiert.
+		\item Die Teilsbarkeitsbeziehung auf $\N$ definiert durch
+		\begin{align*}
+			a\mid b:\Longleftrightarrow \exists c\in \N: b=ca.
+		\end{align*}
+		ist eine Halbordnung auf den natürlichen Zahlen.
+		\item Die \emph{natürliche Ordnung}\index{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung! natürliche Ordnung} $\le$ auf $\N$ ist eine Ordnung.
+		\item Die rationale Ordnung $\le$ auf $\{\infty\}\cup\R\cup\{-\infty\}$ ist eine Ordnung.
+	\end{enumerate}
 \end{bsp}
 
 \begin{bem}\label{12.1.3}
-\begin{enumerate}[\normalfont(a)]
-\item Ist $\preceq$ eine (Halb-)Ordnung auf $A$, dann auch $\succeq$ vermöge der Relation $\forall a,b\in A: a\succeq b:\Longleftrightarrow b\preceq a$. Es ist $\succeq$ die zu $\preceq$ \emph{inverse}	 (Halb-)Ordnung.
-\item Ist $\preceq$ eine (Halb-)Ordnung auf $A$, so finden wir auch eine Halbordnung für ein $B\subseteq A$ über $\preceq':=\preceq\cap (B\times B)$. Es ist $\preceq'$ die \emph{Einschränkung} von $\preceq$ auf $B$.
-\end{enumerate}
+	\begin{enumerate}[\normalfont(a)]
+		\item Ist $\preceq$ eine (Halb-)Ordnung auf $A$, dann auch $\succeq$ vermöge der Relation $\forall a,b\in A: a\succeq b:\Longleftrightarrow b\preceq a$. Es ist $\succeq$ die zu $\preceq$ \emph{inverse} (Halb-)Ordnung.
+		\item Ist $\preceq$ eine (Halb-)Ordnung auf $A$, so finden wir auch eine Halbordnung für ein $B\subseteq A$ über $\preceq':=\preceq\cap (B\times B)$. Es ist $\preceq'$ die \emph{Einschränkung} von $\preceq$ auf $B$.
+	\end{enumerate}
 \end{bem}
 
 \begin{df}\label{12.1.4}
- Ein geordnetes Paar $(A,\preceq)$ bestehend aus einer Menge $A$ und einer (Halb-)Ordnung $\preceq$ auf $A$ heißt (halb-)geordnete Menge. Wir nennen $A$ die zugrundeliegende Menge (auch: Trägermenge/ Universum) und $\preceq$ die (Halb-)Ordnung von $(A,\preceq)$.
+	Ein geordnetes Paar $(A,\preceq)$ bestehend aus einer Menge $A$ und einer (Halb-)Ordnung $\preceq$ auf $A$ heißt (halb-)geordnete Menge. Wir nennen $A$ die zugrundeliegende Menge (auch: Trägermenge/ Universum) und $\preceq$ die (Halb-)Ordnung von $(A,\preceq)$.
 \end{df}
 
-\begin{bem}\label{12.1.5} Wie immer pflegen wir einen ''schlamigen'' Sprachgebrauch, z.B. ''Sei $A$ eine geordnete Menge und seien $a,b\in A$ mit $a\preceq b$''.
+\begin{bem}\label{12.1.5} 
+	Wie immer pflegen wir einen \enquote{schlamigen} Sprachgebrauch, z.B. \enquote{Sei $A$ eine geordnete Menge und seien $a,b\in A$ mit $a\preceq b$}.
 \end{bem}
 
 \begin{df}\label{12.1.6}
-Sei $(A,\preceq)$ eine halbgeordnete Menge und $B\subseteq A$. Ein Elemente $a\in A$ heißt \case{\emph{obere}\index{Halbordnung@{\bf Halbordnung}!obere Schranke}}{\emph{untere}\index{Halbordnung@{\bf Halbordnung}!untere Schranke}} Schranke von $B$, wenn $\forall b\in B:$ \case{$a\preceq b$}{$b\preceq a$} gilt. Wir notieren
-\begin{itemize}
-	\item $\ub(B):=\{a\in A\mid a\text{ obere Schranke}\}$
-	\item $\lb(B):=\{a\in A\mid a\text{ untere Schranke}\}$.
-\end{itemize}
+	Sei $(A,\preceq)$ eine halbgeordnete Menge und $B\subseteq A$. Ein Elemente $a\in A$ heißt \case{\emph{obere}\index{Halbordnung@{\bf Halbordnung}!obere Schranke}}{\emph{untere}\index{Halbordnung@{\bf Halbordnung}!untere Schranke}} Schranke von $B$, wenn $\forall b\in B:$ \case{$a\preceq b$}{$b\preceq a$} gilt. Wir notieren
+	\begin{itemize}
+		\item $\ub(B):=\{a\in A\mid a\text{ obere Schranke}\}$
+		\item $\lb(B):=\{a\in A\mid a\text{ untere Schranke}\}$.
+	\end{itemize}
 
-\noindent Ein Element $a\in A$ heißt \case{\emph{Minimum}\index{Halbordnung@{\bf Halbordnung}!Minimum} (auch: kleinstes Element)}{\emph{Maximum}\index{Halbordnung@{\bf Halbordnung}!Maximum} (auch: größtes Element)}, wenn \case{$a\in B\cap \lb(B)$}{$a\in B\cap \ub(B)$} gilt.  [Wenn existent, ist ein solches Element wegen der Antisymmetrie von $\preceq$ eindeutig und wir notieren dieses mit \case{$\min B$}{$\max B$}.]\\
+	\noindent Ein Element $a\in A$ heißt \case{\emph{Minimum}\index{Halbordnung@{\bf Halbordnung}!Minimum} (auch: kleinstes Element)}{\emph{Maximum}\index{Halbordnung@{\bf Halbordnung}!Maximum} (auch: größtes Element)}, wenn \case{$a\in B\cap \lb(B)$}{$a\in B\cap \ub(B)$} gilt.  [Wenn existent, ist ein solches Element wegen der Antisymmetrie von $\preceq$ eindeutig und wir notieren dieses mit \case{$\min B$}{$\max B$}.]\\
 			
-\noindent Ein Element $a\in A$ heißt \case{\emph{Infimum}\index{Halbordnung@{\bf Halbordnung}!Infimum} (auch: größte untere Schranke)}{\emph{Supremum}\index{Halbordnung@{\bf Halbordnung}!Supremum} (auch: kleinste obere Schranke)} von $B$, wenn \case{$a=\max\lb(B)$}{$a=\min\ub(B)$} gilt. Wenn existent, notieren wir ein solches Element mit $\left\{\begin{matrix*}\inf B \\ \sup B\end{matrix*}\right\}$.
+	\noindent Ein Element $a\in A$ heißt \case{\emph{Infimum}\index{Halbordnung@{\bf Halbordnung}!Infimum} (auch: größte untere Schranke)}{\emph{Supremum}\index{Halbordnung@{\bf Halbordnung}!Supremum} (auch: kleinste obere Schranke)} von $B$, wenn \case{$a=\max\lb(B)$}{$a=\min\ub(B)$} gilt. Wenn existent, notieren wir ein solches Element mit $\left\{\begin{matrix*}\inf B \\ \sup B\end{matrix*}\right\}$.
 \end{df}
 
 \begin{pro}\label{12.1.7}
-Sei $A$ eine halbgeordnete Menge und $B\subseteq A$.
-\begin{enumerate}[\normalfont(a)]
-\item Besitzt $B$ ein \case{Minimum}{Maximum}, so auch ein \case{Infimum}{Supremum} und es gilt \case{$\inf B=\min B$}{$\sup B=\max B$}.
-\item Besitzt $B$ ein \case{Infimum}{Supremum}, so ist dieses genau dann das \case{Minimum}{Maximum}, wenn dieses in $B$ liegt.
-\item Sei $a\in A$. Dann ist $a$ genau dann \case{Infimum}{Supremum} von $B$, wenn gilt $\forall c\in A:$ \case{$c\in \lb(B)\Longleftrightarrow c\preceq a$}{$c\in \ub(B)\Longleftrightarrow a\preceq c$}.
-\end{enumerate}
+	Sei $A$ eine halbgeordnete Menge und $B\subseteq A$.
+	\begin{enumerate}[\normalfont(a)]
+		\item Besitzt $B$ ein \case{Minimum}{Maximum}, so auch ein \case{Infimum}{Supremum} und es gilt \case{$\inf B=\min B$}{$\sup B=\max B$}.
+		\item Besitzt $B$ ein \case{Infimum}{Supremum}, so ist dieses genau dann das \case{Minimum}{Maximum}, wenn dieses in $B$ liegt.
+		\item Sei $a\in A$. Dann ist $a$ genau dann \case{Infimum}{Supremum} von $B$, wenn gilt $\forall c\in A:$ \case{$c\in \lb(B)\Longleftrightarrow c\preceq a$}{$c\in \ub(B)\Longleftrightarrow a\preceq c$}.
+	\end{enumerate}
 \end{pro}
-\begin{cproof} Wir zeigen die Aussagen je für das Infimum/ Minimum. Der entsprechende Beweis für das Supremum/ Maximum folgt dann über die Halbordnung $\succeq$.
-\begin{itemize}
-\item[(a)] Sei $m:=\min B$. Dann gilt $\forall b\in B: m\preceq b$ und wegen $m\in B$ auch $\forall l\in \lb(B): l\preceq b$. Insgesamt folgt $b=\max\lb(B)=\inf B$.
-\item[(b)] Sei $i:= \inf B$. Ist $i$ das Minimum von $B$, liegt dieses per Definition bereits darin. Liegt $i$ in $B$, dann folgt aus $i\in\lb(B)$ die gewünschte Minimaleigenschaft.
-\item[(c)] Sei $a\in A$. Es gilt
-\begin{align*}
-(a=\inf A)&\Longleftrightarrow (a\in\max \lb(B))\\
-&\Longleftrightarrow (\forall c\in A: c\in\lb(B)\Rightarrow c\preceq b)\land a\in \lb(B).
-\end{align*}
-Die letzte Aussage ist erkennbar äquivalent zu der Behauptung, da $a\preceq a$.
-\end{itemize}
+\begin{cproof} 
+	Wir zeigen die Aussagen je für das Infimum/ Minimum. Der entsprechende Beweis für das Supremum/ Maximum folgt dann über die Halbordnung $\succeq$.
+	\begin{itemize}
+		\item[(a)] Sei $m:=\min B$. Dann gilt $\forall b\in B: m\preceq b$ und wegen $m\in B$ auch $\forall l\in \lb(B): l\preceq b$. Insgesamt folgt $b=\max\lb(B)=\inf B$.
+		\item[(b)] Sei $i:= \inf B$. Ist $i$ das Minimum von $B$, liegt dieses per Definition bereits darin. Liegt $i$ in $B$, dann folgt aus $i\in\lb(B)$ die gewünschte Minimaleigenschaft.
+		\item[(c)] Sei $a\in A$. Es gilt
+		\begin{align*}
+			(a=\inf A)&\Longleftrightarrow (a\in\max \lb(B))\\
+			&\Longleftrightarrow (\forall c\in A: c\in\lb(B)\Rightarrow c\preceq b)\land a\in \lb(B).
+		\end{align*}
+		Die letzte Aussage ist erkennbar äquivalent zu der Behauptung, da $a\preceq a$.
+	\end{itemize}
 \end{cproof}
 
 \begin{bsp}\label{12.1.8}
-\begin{enumerate}[\normalfont(a)]
-\item Sei $M$ eine Menge und $A:=\Pow(M)$ durch Inklusion halbgeordnet. Dann gilt für $B\subseteq A$:
-\begin{itemize}
-\item $\inf B:=\begin{cases} M & \text{wenn } B=\emptyset\\ \bigcap B & \text{sonst}\end{cases}$
-\item $\sup B:=\bigcup B$
-\end{itemize}
-\item Sei $V$ ein $K$-Vektorraum und
-\begin{align*}
-A:=\{U\mid U \text{ Unterraum von } V\}
-\end{align*}
-durch Inklusion halbgeordnet. Dann gilt für $B\subseteq A$:
-\begin{itemize}
-\item $\inf B:=\begin{cases} V & \text{wenn }B=\emptyset\\ \bigcap B & \text{sonst}\end{cases}$.
-\item $\sup B:=\lin\left(\bigcup B\right)$
-\end{itemize}
-\item Sei
-\begin{align*}
-A:=\{\underbrace{\{1\}}_{=a},\underbrace{\{2\}}_{=b},\underbrace{\{3\}}_{=c},\underbrace{\{1,2\}}_{=d},\underbrace{\{2,3\}}_{=e}\}
-\end{align*}
-durch Inklusion halbgeordnet. Es gilt:
-\begin{table}[H]
-\centering
-\begin{tabular}{c|c|c|c|c|c|c}
-$B$ & $\lb(B)$ & $\ub(B)$ & $\inf(B)$ & $\min(B)$ & $\sup(B)$ & $\max(B)$\\
-\hline
-$\emptyset$ & $A$ & $A$ & $-$ & $-$ & $-$ & $-$\\
-$\{a\}$ & $\{a\}$ & $\{a,d\}$ & $a$ & $a$ & $a$ & $a$\\
-$\{b\}$ & $\{b\}$ & $\{b,d,e\}$ & $b$ & $b$ & $b$ & $b$\\
-$\{d\}$ & $\{a,b,d\}$ & $\{d\}$ & $e$ & $e$ & $e$ & $e$\\
-$\{a,b\}$ & $-$ & $\{d\}$ & $-$ & $-$ & $d$ & $-$\\
-$\{d,e\}$ & $-$ & $\{b\}$ & $b$ & $-$ & $-$ & $-$
-\end{tabular}
-\end{table}
-\item In $(\N, \mid)$ gilt für $B\subseteq \N$:
-\begin{itemize}
-\item $\lb(B)$ ist die Menge der gemeinsamen Teiler $B$.
-\item $\ub(B)$ ist die Menge der gemeinsamen Vielfachen von $V$.
-\item $\inf(\emptyset)$ existiert nicht wegen der Unbeschränktheit von $\lb(\emptyset)=\N$.
-\end{itemize}
-Für $B\neq \emptyset$ gilt weiter:
-\begin{itemize}
-	\item $\inf(B)=\underbrace{\text{größter}}_{\text{in Teilerrelation}} \text{ gemeinsamer Teiler aller Zahlen in }B$
-	\item $\sup(B)=\underbrace{\text{kleinste}}_{\text{in Teilerrelation}} \text{ gemeinsame Vielfache aller Zahlen in }B\text{, wenn existent!}$
-\end{itemize}		
-\item In $\N$ mit der natürlichen Ordnung gilt:
-\begin{itemize}
-\item $\sup\emptyset=1$, aber das Maximum von $\emptyset$ existiert nicht. Ebenso existieren das Infimum und Minimum von $\emptyset$ nicht.
-\item ist $B\neq\emptyset$, dann hat $B$ immer ein Minimum und somit Infimum. Die Begriffe von Maximum und Supremum gleichen sich hier. Also
-\begin{align*}
-B\text{ hat Maximum}\Longleftrightarrow B\text{ hat Minimum}\Longleftrightarrow B\text{ ist endlich}.
-\end{align*}
-\end{itemize}
-\item In der auf natürliche Weise geordneten Menge $\R_\infty:=\{-\infty\}\cup\R\cup\{\infty\}$ gilt: per Supremumsaxiom in $\R$ und hinzugefügten Elementen zu $\R_\infty$ hat jede Teilmenge $B\subseteq\R_\infty$ ein Infimum und Supremum. Insbesondere gilt für das Infimum:
-\begin{itemize}
-\item $\inf B=-\infty\Longleftrightarrow B\text{ hat keine reelle untere Schranke}$
-\item $\inf B=\infty\Longleftrightarrow B\in\{\emptyset,\{\infty\}\}$
-\end{itemize}
-Anaolog gilt für das Supremum:
-\begin{itemize}
-\item $\sup B=\infty\Longleftrightarrow B\text{ hat keine reelle obere Schranke}$
-\item $\sup B=-\infty\Longleftrightarrow B\in\{\emptyset,\{-\infty\}\}$
-\end{itemize}
-\end{enumerate}
+	$\;$
+	\begin{enumerate}[\normalfont(a)]
+		\item Sei $M$ eine Menge und $A:=\Pow(M)$ durch Inklusion halbgeordnet. Dann gilt für $B\subseteq A$:
+		\begin{itemize}
+			\item $\inf B:=\begin{cases} M & \text{wenn } B=\emptyset\\ \bigcap B & \text{sonst}\end{cases}$
+			\item $\sup B:=\bigcup B$
+		\end{itemize}
+		\item Sei $V$ ein $K$-Vektorraum und
+		\begin{align*}
+			A:=\{U\mid U \text{ Unterraum von } V\}
+		\end{align*}
+		durch Inklusion halbgeordnet. Dann gilt für $B\subseteq A$:
+		\begin{itemize}
+			\item $\inf B:=\begin{cases} V & \text{wenn }B=\emptyset\\ \bigcap B & \text{sonst}\end{cases}$.
+			\item $\sup B:=\lin\left(\bigcup B\right)$
+		\end{itemize}
+		\item Sei
+		\begin{align*}
+			A:=\{\underbrace{\{1\}}_{=a},\underbrace{\{2\}}_{=b},\underbrace{\{3\}}_{=c},\underbrace{\{1,2\}}_{=d},\underbrace{\{2,3\}}_{=e}\}
+		\end{align*}
+		durch Inklusion halbgeordnet. Es gilt:
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{c|c|c|c|c|c|c}
+				$B$ & $\lb(B)$ & $\ub(B)$ & $\inf(B)$ & $\min(B)$ & $\sup(B)$ & $\max(B)$\\
+				\hline
+				$\emptyset$ & $A$ & $A$ & $-$ & $-$ & $-$ & $-$\\
+				$\{a\}$ & $\{a\}$ & $\{a,d\}$ & $a$ & $a$ & $a$ & $a$\\
+				$\{b\}$ & $\{b\}$ & $\{b,d,e\}$ & $b$ & $b$ & $b$ & $b$\\
+				$\{d\}$ & $\{a,b,d\}$ & $\{d\}$ & $e$ & $e$ & $e$ & $e$\\
+				$\{a,b\}$ & $-$ & $\{d\}$ & $-$ & $-$ & $d$ & $-$\\
+				$\{d,e\}$ & $-$ & $\{b\}$ & $b$ & $-$ & $-$ & $-$
+			\end{tabular}
+		\end{table}
+		\item In $(\N, \mid)$ gilt für $B\subseteq \N$:
+		\begin{itemize}
+			\item $\lb(B)$ ist die Menge der gemeinsamen Teiler $B$.
+			\item $\ub(B)$ ist die Menge der gemeinsamen Vielfachen von $V$.
+			\item $\inf(\emptyset)$ existiert nicht wegen der Unbeschränktheit von $\lb(\emptyset)=\N$.
+		\end{itemize}
+		Für $B\neq \emptyset$ gilt weiter:
+		\begin{itemize}
+			\item $\inf(B)=\underbrace{\text{größter}}_{\text{in Teilerrelation}} \text{ gemeinsamer Teiler aller Zahlen in }B$
+			\item $\sup(B)=\underbrace{\text{kleinste}}_{\text{in Teilerrelation}} \text{ gemeinsame Vielfache aller Zahlen in }B\text{, wenn existent!}$
+		\end{itemize}		
+		\item In $\N$ mit der natürlichen Ordnung gilt:
+		\begin{itemize}
+			\item $\sup\emptyset=1$, aber das Maximum von $\emptyset$ existiert nicht. Ebenso existieren das Infimum und Minimum von $\emptyset$ nicht.
+			\item ist $B\neq\emptyset$, dann hat $B$ immer ein Minimum und somit Infimum. Die Begriffe von Maximum und Supremum gleichen sich hier. Also
+			\begin{align*}
+				B\text{ hat Maximum}\Longleftrightarrow B\text{ hat Minimum}\Longleftrightarrow B\text{ ist endlich}.
+			\end{align*}
+		\end{itemize}
+		\item In der auf natürliche Weise geordneten Menge $\R_\infty:=\{-\infty\}\cup\R\cup\{\infty\}$ gilt: per Supremumsaxiom in $\R$ und hinzugefügten Elementen zu $\R_\infty$ hat jede Teilmenge $B\subseteq\R_\infty$ ein Infimum und Supremum. Insbesondere gilt für das Infimum:
+		\begin{itemize}
+			\item $\inf B=-\infty\Longleftrightarrow B\text{ hat keine reelle untere Schranke}$
+			\item $\inf B=\infty\Longleftrightarrow B\in\{\emptyset,\{\infty\}\}$
+		\end{itemize}
+		Anaolog gilt für das Supremum:
+		\begin{itemize}
+			\item $\sup B=\infty\Longleftrightarrow B\text{ hat keine reelle obere Schranke}$
+			\item $\sup B=-\infty\Longleftrightarrow B\in\{\emptyset,\{-\infty\}\}$
+		\end{itemize}
+	\end{enumerate}
 \end{bsp}
 
 \section{Das Zornsche Lemma}
 
 \begin{nt}\label{12.2.1} 
-Wird eine Halbordnung $R$ auf $A$ durch $\preceq$, $\le$, $\succeq$ oder $\ge$ notiert, so bezeichnen man mit $\prec$, $<$, $\succ$ oder $>$ die Relation $R'$ auf $A$ definiert durch
-\begin{align*}
-				\forall a,b\in A: aR'b:\Longleftrightarrow (aRb\land a\neq b)
-\end{align*}
+	Wird eine Halbordnung $R$ auf $A$ durch $\preceq$, $\le$, $\succeq$ oder $\ge$ notiert, so bezeichnen man mit $\prec$, $<$, $\succ$ oder $>$ die Relation $R'$ auf $A$ definiert durch
+	\begin{align*}
+		\forall a,b\in A: aR'b:\Longleftrightarrow (aRb\land a\neq b)
+	\end{align*}
 \end{nt}	
 
 \begin{df}\label{12.2.2} 
-Sei $(A\preceq)$ eine halbgeordnete Menge und $B\subseteq A$. Mann nennt $b$ ein \case{\emph{maximales}\index{Halbordnung@{\bf Halbordnung}!maximales Element}}{\emph{minimales}\index{Halbordnung@{\bf Halbordnung}!minimales Element}}  Element von $B$, wenn $b\in B$ und \case{$\nexists c\in B: b\prec c$}{$\nexists c\in B: c\prec b$} gilt.
+	Sei $(A\preceq)$ eine halbgeordnete Menge und $B\subseteq A$. Mann nennt $b$ ein \case{\emph{maximales}\index{Halbordnung@{\bf Halbordnung}!maximales Element}}{\emph{minimales}\index{Halbordnung@{\bf Halbordnung}!minimales Element}}  Element von $B$, wenn $b\in B$ und \case{$\nexists c\in B: b\prec c$}{$\nexists c\in B: c\prec b$} gilt.
 \end{df}
 
 \begin{bem}\label{12.2.3} 
-Dies ist nicht zu verwechseln mit den in \ref{12.1.6} eingeführten Begriffen. Alle Maxima und Minima sind zwar auch maximale bzw. minimale Elemente, die Umkehrung dieser Aussage gilt jedoch im Allgemeinen \underline{nicht}. In z.B. $(\N,\mid)$ ist $3$ ein maximales Element von $\{3,28\}$, aber kein Maximum. Diese Menge besitzt kein Maximum.
+	Dies ist nicht zu verwechseln mit den in \ref{12.1.6} eingeführten Begriffen. Alle Maxima und Minima sind zwar auch maximale bzw. minimale Elemente, die Umkehrung dieser Aussage gilt jedoch im Allgemeinen \underline{nicht}. In z.B. $(\N,\mid)$ ist $3$ ein maximales Element von $\{3,28\}$, aber kein Maximum. Diese Menge besitzt kein Maximum.
 \end{bem}
 		
 \begin{df}\label{12.2.4}
-Sei $(A,\preceq)$ eine halbgeordnete Menge und $C\subseteq A$. Dann heißt $C$ eine \emph{Kette}\index{Halbordnung@{\bf Halbordnung}!Kette} (in $(A,\preceq)$), wenn die Einschränkung von $\preceq$ auf $C$ eine Ordnung ist, d.h. zusätzlich gilt:
-\begin{itemize}
-	\item $\forall b,c\in C: (b\preceq c)\lor(c\preceq b)$ - ''Totalität''
-\end{itemize}
-Anschaulich wird $C$ durch $\preceq\vert_{C\times C}$ linear zu einer ''Kette''.
+	Sei $(A,\preceq)$ eine halbgeordnete Menge und $C\subseteq A$. Dann heißt $C$ eine \emph{Kette}\index{Halbordnung@{\bf Halbordnung}!Kette} (in $(A,\preceq)$), wenn die Einschränkung von $\preceq$ auf $C$ eine Ordnung ist, d.h. zusätzlich gilt:
+	\begin{itemize}
+		\item $\forall b,c\in C: (b\preceq c)\lor(c\preceq b)$ - ''Totalität''
+	\end{itemize}
+	Anschaulich wird $C$ durch $\preceq\vert_{C\times C}$ linear zu einer ''Kette''.
 \end{df}
 		
 \begin{bsp}\label{12.2.5}
-\begin{enumerate}[\normalfont(a)]
-\item Es ist $B:=\{\emptyset,\{2\},\{1,2,4\}\}$ eine Kette in $(\Pow(\{1,2,3,4\}),\subseteq)$.
-\item Die Menge $\{2^n\mid n\in\N\}$ ist eine Kette in $(\N,\mid)$, aber nicht $\{2,3\}$ denn $2\nmid 3$ und $3\nmid 2$.
-\end{enumerate}
+	\begin{enumerate}[\normalfont(a)]
+		\item Es ist $B:=\{\emptyset,\{2\},\{1,2,4\}\}$ eine Kette in $(\Pow(\{1,2,3,4\}),\subseteq)$.
+		\item Die Menge $\{2^n\mid n\in\N\}$ ist eine Kette in $(\N,\mid)$, aber nicht $\{2,3\}$ denn $2\nmid 3$ und $3\nmid 2$.
+	\end{enumerate}
 \end{bsp}
 
-\begin{lem}\label{12.2.6} Sei $M$ eine Menge und $\Pow(M)$ durch Inklusion halbgeordnet. Sei $B\in\Pow(M)$ derart, dass für jede Kette $C\subseteq B$ gilt $\bigcup C\in B$. Es ist $B$ gewissermaßen abgeschlossen unter Supremumsbildung. Ferner sei $f: B\rightarrow B$ eine Abbildung mit $\forall N\in B: N\subseteq f(N)$. Dann gibt es $N_0\in B$ mit $N_0=f(N_0)$.
+\begin{lem}\label{12.2.6} 
+	Sei $M$ eine Menge und $\Pow(M)$ durch Inklusion halbgeordnet. Sei $B\in\Pow(M)$ derart, dass für jede Kette $C\subseteq B$ gilt $\bigcup C\in B$. Es ist $B$ gewissermaßen abgeschlossen unter Supremumsbildung. Ferner sei $f: B\rightarrow B$ eine Abbildung mit $\forall N\in B: N\subseteq f(N)$. Dann gibt es $N_0\in B$ mit $N_0=f(N_0)$.
 \end{lem}
 \begin{cproof}
-Wir nennen $B'\subseteq B$ als $f$-induktiv, wenn $\forall N\in B': f(N)\in B'$ und $\bigcup C\in B'$ für jede Kette $C\subseteq B'$ gilt. Somit ist $B$ per Voraussetzung $f$-induktiv.\\		
-
-\noindent\underline{Schritt 1}: Man darf annehmen, dass keine echte Teilmenge von $B$ $f$-induktiv ist.\\
-\noindent\underline{Begründung}: Wir zeigen, dass eine kleinste $f$-induktive Teilmenge von $B$ existiert (''minimalste'' würde aber reichen!). Setze
-\begin{align*}
-B'':=\bigcap\{B'\subseteq B\mid B'\text{ ist}f\text{-induktiv}\}.
-\end{align*}
-Klarerweise ist $B''$ dann $f$-induktiv. Wir könnten dann mit $B''$ statt $B$ arbeiten - da aber $B''\subseteq B$, folgt die Aussage somit auch für $B$. \oe sei also $B=B''$. \\			
-										
-\noindent Wir definieren die Menge der Fixpunkte als  solche, für welche alle Teilmengen auch dessen $f$-Vergrößerung kleiner als diese ist:
-\begin{align*}
-B':=\{N'\in B\mid \forall N\in B: (N\subset N'\implies f(N)\subseteq N')\}.
-\end{align*}
-Für alle $N'\in B'$ definieren wir zudem
-\begin{align*}
-B'_N:=\{N\in B\mid(N\subseteq N')\lor(f(N')\subseteq N)\}.
-\end{align*}
-Dies ist also die Menge aller Punkte unter $N'$ (in der Halbordnung auf $\Pow(M)$) und alle Punkte, welcher größer als die $f$-Vergrößerung von $N'$ ist. Es fehlen alle Punkte echt zwischen $N'$ und $f(N')$.\\
-					
-\noindent\underline{Schritt 2}: Für jedes $N'\in B'$ ist $B'_N$ $f$-induktiv.\\
-\noindent\underline{Begründung}: Sei $N'\in B'$. Zu zeigen ist
-\begin{enumerate}[\normalfont(b)]
-\item $\forall N\in B'_N: f(N)\in B_N'$,
-\item Für jede Kette $C\subseteq B_N'$ gilt $\bigcup C\in B_N'$.
-\end{enumerate}
-(a) Sei $N\in B'_N$. Dann $N\in B$ und $N\subseteq N'$ oder $f(N')\subseteq N$. Zu zeigen ist $f(N)\in B_N'$. $f(N)\in B$ gilt immer. Ist $N\subseteq N'$, folgt entweder $N=N'$ oder $N\subset N'$. Ersterer ist klar wegen $N'\subseteq N'$. Aus letzterem folgt $f(N)\subseteq N'$, da $N'$ ein Fixpunkt ist. Ist $f(N')\subseteq N$, dann folgt wegen $N\subseteq f(N)$ auch $f(N')\subseteq f(N)$.\\
-
-\noindent(b) Sei $C\subseteq B_N'$ eine Kette. Zu zeigen ist $\bigcup C\in B_N'$. Es gilt immer $\bigcup C\in B$. Zu zeigen ist $\bigcup C\subseteq N'$ oder $f(N')\subseteq \bigcup C$. Gelte ersteres nicht, zu zeigen ist dann letzteres. Wir können $N\in C$ mit $N\subsetneq N'$ wählen. Mit $N\in B'_N$ folgt $f(N')\subseteq N\subseteq \bigcup C$.\\
-					
-\noindent Insgesamt folgt für alle $N'\in B'$, dass $B'_N=N$ gilt. Also ist
-\begin{align*}
-(*)\ \forall N'\in B': \forall N\in B: (N\subseteq N'\lor f(N')\subseteq N').
-\end{align*}
-\noindent\underline{Schritt 3}: $B'$ ist $f$-induktiv.\\
-\noindent\underline{Begründung}: Zu zeigen ist 
-\begin{enumerate}[\normalfont(a)]
-\item $\forall N\in B': f(N)\in B'$,
-\item Für jede Kette $C\subseteq B'$ gilt $\bigcup C\in B'$.
-\end{enumerate}
-(a) Sei $N'\subseteq B'$. Zu zeigen ist $f(N')\in B$ und $\forall N\in B: (N\subset f(N')\implies f(N)\subseteq f(N'))$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset f(N')$. Zu zeigen ist $f(N)\subseteq f(N')$. Wegen (*) folgt aber $N\subseteq N'$. Sei $\OE$ $N\neq N'$. Dann $f(N)\subseteq N'\subseteq f(N')$, da $N'$ ein Fixpunkt ist.\\
-					
-\noindent(b) Sei $C\subseteq B'$ eine Kette. Zu zeigen ist $\bigcup C\in B$ und $\forall N\in B: (N\subset \bigcup C)\implies f(N)\subseteq \bigcup C)$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset \bigcup C$. Zu zeigen ist $f(N)\subseteq \bigcup C$. Wegen $\bigcup C\subsetneq N$ gibt es $N'\in C\subseteq B'$ mit $N'\subsetneq N$. Insbesondere ist $f(N')\subseteq N$. Wegen (*) folgt $N\subseteq N'$ und hier sogar $N\subset N'$. Also $f(N)\subseteq N'\subseteq \bigcup C$ und wir sind fertig. \\
-					
-\noindent Wegen \textit{Schritt 1} ist $B'=B$, weshalb aus (*) folgt, dass $B$ eine Kette ist. Da B $f$-induktiv ist, folgt $N_0:=\bigcup B\in B$ und $f(N_0)\in B$. Daraus folgt $N_0\subseteq f(N_0)\subseteq \bigcup B=N_0$, also $N_0=f(N_0)$.
+	Wir nennen $B'\subseteq B$ als $f$-induktiv, wenn $\forall N\in B': f(N)\in B'$ und $\bigcup C\in B'$ für jede Kette $C\subseteq B'$ gilt. Somit ist $B$ per Voraussetzung $f$-induktiv.\\	
+	\schritt{1}
+	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
+		\bewbeh{Behauptung}
+			Man darf annehmen, dass keine echte Teilmenge von $B$ $f$-induktiv ist. \\
+		\bewbeg{Begründung}
+			Wir zeigen, dass eine kleinste $f$-induktive Teilmenge von $B$ existiert (''minimalste'' würde aber reichen!). Setze
+			\begin{align*}
+				B'':=\bigcap\{B'\subseteq B\mid B'\text{ ist}f\text{-induktiv}\}.
+			\end{align*}
+			Klarerweise ist $B''$ dann $f$-induktiv. Wir könnten dann mit $B''$ statt $B$ arbeiten - da aber $B''\subseteq B$, folgt die Aussage somit auch für $B$. \oe sei also $B=B''$.
+	\end{tcolorbox}
+	\noindent Wir definieren die Menge der Fixpunkte als  solche, für welche alle Teilmengen auch dessen $f$-Vergrößerung kleiner als diese ist:
+	\begin{align*}
+		B':=\{N'\in B\mid \forall N\in B: (N\subset N'\implies f(N)\subseteq N')\}.
+	\end{align*}
+	Für alle $N'\in B'$ definieren wir zudem
+	\begin{align*}
+		B'_N:=\{N\in B\mid(N\subseteq N')\lor(f(N')\subseteq N)\}.
+	\end{align*}
+	Dies ist also die Menge aller Punkte unter $N'$ (in der Halbordnung auf $\Pow(M)$) und alle Punkte, welcher größer als die $f$-Vergrößerung von $N'$ ist. Es fehlen alle Punkte echt zwischen $N'$ und $f(N')$.
+	\schritt{2}
+	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
+		\bewbeh{Behauptung}
+			Für jedes $N'\in B'$ ist $B'_N$ $f$-induktiv. \\
+		\bewbeg{Begründung}
+			Sei $N'\in B'$. Zu zeigen sind
+			\begin{enumerate}[\normalfont(b)]
+				\item $\forall N\in B'_N: f(N)\in B_N'$,
+				\item Für jede Kette $C\subseteq B_N'$ gilt $\bigcup C\in B_N'$.
+			\end{enumerate}
+			Wir zeigen die Behauptungen nacheinander:
+			\begin{enumerate}[\normalfont(b)]
+				\item Sei $N\in B'_N$. Dann $N\in B$ und $N\subseteq N'$ oder $f(N')\subseteq N$. Zu zeigen ist $f(N)\in B_N'$. $f(N)\in B$ gilt immer. Ist $N\subseteq N'$, folgt entweder $N=N'$ oder $N\subset N'$. Ersterer ist klar wegen $N'\subseteq N'$. Aus letzterem folgt $f(N)\subseteq N'$, da $N'$ ein Fixpunkt ist. Ist $f(N')\subseteq N$, dann folgt wegen $N\subseteq f(N)$ auch $f(N')\subseteq f(N)$.
+				\item Sei $C\subseteq B_N'$ eine Kette. Zu zeigen ist $\bigcup C\in B_N'$. Es gilt immer $\bigcup C\in B$. Zu zeigen ist $\bigcup C\subseteq N'$ oder $f(N')\subseteq \bigcup C$. Gelte ersteres nicht, zu zeigen ist dann letzteres. Wir können $N\in C$ mit $N\subsetneq N'$ wählen. Mit $N\in B'_N$ folgt $f(N')\subseteq N\subseteq \bigcup C$.
+			\end{enumerate}
+	\end{tcolorbox}
+	Insgesamt folgt für alle $N'\in B'$, dass $B'_N=N$ gilt. Also ist
+	\begin{align*}
+		(*)\ \forall N'\in B': \forall N\in B: (N\subseteq N'\lor f(N')\subseteq N').
+	\end{align*}
+	\schritt{3}
+	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
+		\bewbeh{Behauptung}
+			$B'$ ist $f$-induktiv. \\
+		\bewbeg{Begründung}
+			Zu zeigen sind 
+			\begin{enumerate}[\normalfont(a)]
+				\item $\forall N\in B': f(N)\in B'$,
+				\item Für jede Kette $C\subseteq B'$ gilt $\bigcup C\in B'$.
+			\end{enumerate}
+			Auch diese Aussagen zeigen wir nacheinander:
+			\begin{enumerate}[\normalfont(a)]
+				\item Sei $N'\subseteq B'$. Zu zeigen ist $f(N')\in B$ und $\forall N\in B: (N\subset f(N')\implies f(N)\subseteq f(N'))$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset f(N')$. Zu zeigen ist $f(N)\subseteq f(N')$. Wegen (*) folgt aber $N\subseteq N'$. Sei $\OE$ $N\neq N'$. Dann $f(N)\subseteq N'\subseteq f(N')$, da $N'$ ein Fixpunkt ist.
+				\item Sei $C\subseteq B'$ eine Kette. Zu zeigen ist $\bigcup C\in B$ und $\forall N\in B: (N\subset \bigcup C)\implies f(N)\subseteq \bigcup C)$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset \bigcup C$. Zu zeigen ist $f(N)\subseteq \bigcup C$. Wegen $\bigcup C\subsetneq N$ gibt es $N'\in C\subseteq B'$ mit $N'\subsetneq N$. Insbesondere ist $f(N')\subseteq N$. Wegen (*) folgt $N\subseteq N'$ und hier sogar $N\subset N'$. Also $f(N)\subseteq N'\subseteq \bigcup C$ und wir sind fertig.
+			\end{enumerate}
+	\end{tcolorbox}
+	\noindent Wegen \textit{Schritt 1} ist $B'=B$, weshalb aus (*) folgt, dass $B$ eine Kette ist. Da B $f$-induktiv ist, folgt $N_0:=\bigcup B\in B$ und $f(N_0)\in B$. Daraus folgt $N_0\subseteq f(N_0)\subseteq \bigcup B=N_0$, also $N_0=f(N_0)$.
 \end{cproof}
 
 \begin{lem}\label{12.2.7} Sei $A$ eine halbgeordnete Menge. Dann gibt es eine maximale Kette $C$ in $A$.

@@ -43,7 +43,7 @@
 \contentsline {chapter}{\numberline {12}Halbordnungen und Ordnungen}{163}{chapter.12}%
 \contentsline {section}{\numberline {12.1}Infima und Suprema, Minima und Maxima}{163}{section.12.1}%
 \contentsline {section}{\numberline {12.2}Das Zornsche Lemma}{166}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Existenz von Basen in beliebigen Vektorräumen}{170}{section.12.3}%
+\contentsline {section}{\numberline {12.3}Existenz von Basen in beliebigen Vektorräumen}{171}{section.12.3}%
 \contentsline {chapter}{\numberline {13}Linearformen, Bilinearformen und quadratische Formen}{173}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Algebraischer Dualraum}{173}{section.13.1}%
 \contentsline {section}{\numberline {13.2}Bilineare Abbildungen}{178}{section.13.2}%

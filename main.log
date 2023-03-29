@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.25)  29 MAR 2023 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.25)  29 MAR 2023 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1288,25 +1288,25 @@ LaTeX Warning: Label `16.4.23' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 252.
-LaTeX Font Info:    ... okay on input line 252.
-Package hyperref Info: Link coloring OFF on input line 252.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 257.
+LaTeX Font Info:    ... okay on input line 257.
+Package hyperref Info: Link coloring OFF on input line 257.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1318,7 +1318,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 252.
+(scrbook)           before \begin{document} on input line 257.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1351,29 +1351,29 @@ e
 ))
 \c@lstlisting=\count383
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-66.
+71.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 266
+LaTeX Font Info:    Trying to load font information for U+msa on input line 271
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 266
+LaTeX Font Info:    Trying to load font information for U+msb on input line 271
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 
-266.
+271.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
-66.
+71.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
@@ -1474,7 +1474,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-281.
+286.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -1849,12 +1849,7 @@ Overfull \hbox (3.74588pt too wide) detected at line 404
 
 [158] [159] [160] [161]) [162]
 chapter 12.
-(./b2/b2Kapitel/b2-12-Halbordnungen.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[163
+(./b2/b2Kapitel/b2-12-Halbordnungen.tex [163
 
 ]
 Overfull \hbox (8.24394pt too wide) in paragraph at lines 58--59
@@ -1873,73 +1868,45 @@ Overfull \hbox (3.52448pt too wide) in paragraph at lines 66--67
 ein $[]$ und es gilt $[]$. 
  []
 
-[164]
-Overfull \hbox (0.35948pt too wide) in paragraph at lines 127--128
+[164] [165]
+Overfull \hbox (0.35948pt too wide) in paragraph at lines 129--130
 []$[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 ) = [] []\OML/cmm/m/it/
 12 B[]$ 
  []
 
-[165] [166]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+[166]
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
 
  []
 
 
 Package paralist Warning: Incorrect label; no or multiple counters.
-(paralist)                The label is: \normalfont (b) on input line 206.
+(paralist)                The label is: \normalfont (b) on input line 215.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
+Package paralist Warning: Incorrect label; no or multiple counters.
+(paralist)                The label is: \normalfont (b) on input line 220.
 
 
-LaTeX Warning: Command \OE invalid in math mode on input line 224.
+LaTeX Warning: Command \OE invalid in math mode on input line 241.
+
+Missing character: There is no × in font cmr12!
+[167] [168]
+
+LaTeX Warning: Command \OE invalid in math mode on input line 255.
 
 Missing character: There is no × in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
+[169] [170]
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-[167]
-
-LaTeX Warning: Command \OE invalid in math mode on input line 238.
+LaTeX Warning: Command \OE invalid in math mode on input line 337.
 
 Missing character: There is no × in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
-
- []
-
-[168] [169]
-
-LaTeX Warning: Command \OE invalid in math mode on input line 320.
-
-Missing character: There is no × in font cmr12!
-[170]) [171] [172
-
-]
+[171]) [172]
 chapter 13.
 (./b2/b2Kapitel/b2-13-BiLiQuaFormen.tex
 Overfull \hbox (37.48114pt too wide) in paragraph at lines 29--30
@@ -1955,7 +1922,9 @@ Overfull \hbox (26.58786pt too wide) in paragraph at lines 29--30
 -se $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -Vektorraumisomorphismen 
  []
 
-[173]
+[173
+
+]
 Overfull \hbox (23.52322pt too wide) in paragraph at lines 47--48
 [][]\T1/cmr/bx/n/12 Korollar 13.1.6. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 n \
 OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N[]$\T1/cmr/m/n/12 . Dann sind $\OT1/cmr/m/n/12
@@ -2720,10 +2689,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 47496 strings out of 476025
- 986248 string characters out of 5790017
+ 47508 strings out of 476025
+ 986409 string characters out of 5790017
  1902388 words of memory out of 5000000
- 65485 multiletter control sequences out of 15000+600000
+ 65492 multiletter control sequences out of 15000+600000
  552655 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,28n,120p,10599b,1752s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2894,10 +2863,10 @@ per/sfsx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/
 sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/stmaryrd/st
 mary10.pfb>
-Output written on main.pdf (270 pages, 1772928 bytes).
+Output written on main.pdf (270 pages, 1774205 bytes).
 PDF statistics:
- 5320 PDF objects out of 6186 (max. 8388607)
- 4522 compressed objects within 46 object streams
- 1625 named destinations out of 1728 (max. 500000)
+ 5326 PDF objects out of 6186 (max. 8388607)
+ 4528 compressed objects within 46 object streams
+ 1630 named destinations out of 1728 (max. 500000)
  717 words of extra memory for PDF output out of 10000 (max. 10000000)
 
