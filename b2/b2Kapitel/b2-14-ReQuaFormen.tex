@@ -3,120 +3,184 @@
 \section[Der Trägheitssatz von Sylvester]{Der Trägheitssatz von Sylvester\\{\small[\href{https://de.wikipedia.org/wiki/James_Joseph_Sylvester}{James Joses Sylvester} *1814 \dag 1897]}}
 
 \begin{satdef}\label{14.1.1}
-(Trägheitssatz) Sei $V$ ein endlichdimensionaler $\R$-Vektorraum und $q\in \QForm(V)$. Dann gibt es genau ein Paar $(r,s)\in \N_0^2$, genannt Sylvester-Signatur mit $a$ derart, dass es eine geordnete Basis $\v$ von $V$ gibt mit
-\begin{align*}
-M(q,\underline{v})=\begin{pmatrix*}\begin{rcases}
-\begin{matrix}1 & & \\& \ddots & \\& & 1\end{matrix}\end{rcases}r &  & \tikz[remember picture]\node[inner sep=0pt] (a) { };\\
- & \begin{rcases}\begin{matrix}-1 & & \\& \ddots & \\& & -1\end{matrix}\end{rcases}s & \\
-\tikz[remember picture]\node[inner sep=0pt] (b) { }; &  & \begin{matrix}0 & & \\& \ddots & \\& & 0\end{matrix}\end{pmatrix*}.
-\begin{tikzpicture}[overlay, remember picture]
-\node at (a.north) [anchor=center,yshift=-0.5cm, xshift=-0.3cm, scale=8] {$0$};
-\node at (b.south) [anchor=center,yshift=0.5cm, xshift=0.3cm, scale=8] {$0$};
-\end{tikzpicture}
-\end{align*}
+    (Trägheitssatz) Sei $V$ ein endlichdimensionaler $\R$-Vektorraum und $q\in \QForm(V)$. Dann gibt es genau ein Paar $(r,s)\in \N_0^2$, genannt Sylvester-Signatur mit $a$ derart, dass es eine geordnete Basis $\v$ von $V$ gibt mit
+    \begin{align*}
+        M(q,\underline{v})=
+        \begin{pmatrix*}
+            \begin{rcases}
+                \begin{matrix}
+                    1 & & \\& \ddots & \\& & 1
+                \end{matrix}
+            \end{rcases} r &  & \tikz[remember picture]\node[inner sep=0pt] (a) { };\\
+             & \begin{rcases}
+                \begin{matrix}
+                    -1 & & \\& \ddots & \\& & -1
+                \end{matrix}
+            \end{rcases} s & \\
+            \tikz[remember picture]\node[inner sep=0pt] (b) { }; &  & 
+            \begin{matrix}
+                0 & & \\& \ddots & \\& & 0
+            \end{matrix}
+        \end{pmatrix*}.
+        \begin{tikzpicture}[overlay, remember picture]
+            \node at (a.north) [anchor=center,yshift=-0.5cm, xshift=-0.3cm, scale=8] {$0$};
+            \node at (b.south) [anchor=center,yshift=0.5cm, xshift=0.3cm, scale=8] {$0$};
+        \end{tikzpicture}
+    \end{align*}
 \end{satdef}
 \begin{cproof}
-\underline{Existenz}. Nach Korollar \ref{13.5.12} gibt es eine Basis $\underline{w}=(w_1,\ldots ,w_n)$ von $V$ derart, dass $M(q,\w)$ Diagonalgestalt hat. \oe gibt es $r,s\in \N_0$ mit $q(w_1)>0,\ldots ,q(w_r)>0, q(w_{r+1})<0,\ldots ,q(w_{r+s})<0,q(w_{r+s+1})=\ldots =q(w_n)=0$. Setze nun
-\begin{align*}
-\v:=\left(\frac{w_1}{\sqrt{q(w_1)}},\ldots ,\frac{w_r}{\sqrt{q(w_r)}},\frac{w_{r+1}}{\sqrt{-q(w_{r+1})}}\ldots .,\frac{w_{r+s}}{\sqrt{-q(w_{r+s})}},w_{r+s+1},\ldots ,w_n\right).
-\end{align*}
-Dann ist $M(q,\v)$ von der gewünschten Gestalt.\\
-	
-\noindent\underline{Eindeutigkeit}. Seien $(r,s),(t,u)\in \N_0^2$ und $\v=(v_1,\ldots ,v_n), \w=(w_1,\ldots ,w_n)$ Basen von $V$ mit
-\begin{align*}
-M(q,\underline{v})&=\left(\begin{smallmatrix}\begin{rcases}
-\begin{smallmatrix}1 & & \\& \ddots & \\& & 1\end{smallmatrix}\end{rcases}r &  & \tikz[remember picture]\node[inner sep=0pt] (a) { };\\
- & \begin{rcases}\begin{smallmatrix}-1 & & \\& \ddots & \\& & -1\end{smallmatrix}\end{rcases}s & \\
-\tikz[remember picture]\node[inner sep=0pt] (b) { }; &  & \begin{smallmatrix}0 & & \\& \ddots & \\& & 0\end{smallmatrix}\end{smallmatrix}\right)\text{ und}\\ 
-M(q,\underline{w})&=\left(\begin{smallmatrix}\begin{rcases}
-\begin{smallmatrix}1 & & \\& \ddots & \\& & 1\end{smallmatrix}\end{rcases}t &  & \tikz[remember picture]\node[inner sep=0pt] (c) { };\\
- & \begin{rcases}\begin{smallmatrix}-1 & & \\& \ddots & \\& & -1\end{smallmatrix}\end{rcases}u & \\
-\tikz[remember picture]\node[inner sep=0pt] (d) { }; &  & \begin{smallmatrix}0 & & \\& \ddots & \\& & 0\end{smallmatrix}\end{smallmatrix}\right)
-\begin{tikzpicture}[overlay, remember picture]
-\node at (a.north) [anchor=center,yshift=-0.2cm, xshift=-1mm, scale=5] {$0$};
-\node at (b.south) [anchor=center,yshift=0.2cm, xshift=1mm, scale=5] {$0$};
-\node at (c.north) [anchor=center,yshift=-0.2cm, xshift=-1mm, scale=5] {$0$};
-\node at (d.south) [anchor=center,yshift=0.2cm, xshift=1mm, scale=5] {$0$};
-\end{tikzpicture}
-\end{align*}
-Zu zeigen ist $(r,s)=(t,u)$. Setze $b:= b_q$. Dann gilt für $\la_1, \ldots ,\la_n\in K$:
-\begin{align*}
-\sum_{i=1}^n \la_i v_i\in \ker \rvec b&\Longleftrightarrow \rvec b\left(\sum_{i=1}^n \la_i v_i\right)=0\\
-&\Longleftrightarrow b\left(\sum_{i=1}^n \la_i v_i,\cdot\right)=0\\
-&\Longleftrightarrow \forall j\in\{1,\ldots ,n\}: \underbrace{b\left(\sum_{i=1}^n \la_i v_i,v_j\right)}_{=\la_j q(v_j)}=0\\
-&\Longleftrightarrow \forall j\in\{1,\ldots ,r+s\}: \la_j=0.
-\end{align*}
-Also $\lin(v_{r+s+1},\ldots v_n)=\ker \rvec b$ und ebenso $\lin(w_{r+s+1},\ldots w_n)=\ker \rvec b$. Es folgt $r+s=t+u$. Betrachte nun die Untervektorräume
-\begin{itemize}
-\item $U:=\lin(v_1,\ldots v_r,v_{r+s+1},\ldots ,v_n)$ und
-\item $W :=\lin(w_{t+1},\ldots ,w_{t+u})$.
-\end{itemize}
-Es gilt $q(v)\ge 0$ für $v\in U$ und $q(v)<0$ für $W\setminus\{0\}$. Daher gilt $U\cap W=\{0\}$ und mit der Dimensionsformel [$\to$\ref{8.1.12}] für Untervektorräume $n\ge \dim U+\dim W=n-s+u$. Also ist $u\le s$. Genauso zeigt man $s\le u$. Es folgt $s=u$ und daher auch $r=t$. Somit $(r,s)=(t,u)$.
+    $\;$
+    \begin{itemize}
+        \item[\textbf{Existenz.}] 
+            Nach Korollar \ref{13.5.12} gibt es eine Basis $\underline{w}=(w_1,\ldots ,w_n)$ von $V$ derart, dass $M(q,\w)$ Diagonalgestalt hat. \oe gibt es $r,s\in \N_0$ mit $q(w_1)>0,\ldots ,q(w_r)>0, q(w_{r+1})<0,\ldots ,q(w_{r+s})<0,q(w_{r+s+1})=\ldots =q(w_n)=0$. Setze nun
+            \begin{align*}
+                \v:=\left(\frac{w_1}{\sqrt{q(w_1)}},\ldots ,\frac{w_r}{\sqrt{q(w_r)}},\frac{w_{r+1}}{\sqrt{-q(w_{r+1})}}\ldots .,\frac{w_{r+s}}{\sqrt{-q(w_{r+s})}},w_{r+s+1},\ldots ,w_n\right).
+            \end{align*}
+            Dann ist $M(q,\v)$ von der gewünschten Gestalt.
+        \item[\textbf{Eindeutigkeit.}]
+            Seien $(r,s),(t,u)\in \N_0^2$ und $\v=(v_1,\ldots ,v_n), \w=(w_1,\ldots ,w_n)$ Basen von $V$ mit
+            \begin{align*}
+                M(q,\underline{v})&=\left(
+                    \begin{smallmatrix}
+                        \begin{rcases}
+                            \begin{smallmatrix}
+                                1 & & \\& \ddots & \\& & 1
+                            \end{smallmatrix}
+                        \end{rcases} r &  & \tikz[remember picture]\node[inner sep=0pt] (a) { };\\
+                        & \begin{rcases}
+                            \begin{smallmatrix}
+                                -1 & & \\& \ddots & \\& & -1
+                            \end{smallmatrix}
+                        \end{rcases}s & \\
+                        \tikz[remember picture]\node[inner sep=0pt] (b) { }; &  & 
+                        \begin{smallmatrix}
+                            0 & & \\& \ddots & \\& & 0
+                        \end{smallmatrix}
+                    \end{smallmatrix}
+                \right)\text{ und}\\ 
+                M(q,\underline{w})&=\left(
+                    \begin{smallmatrix}
+                        \begin{rcases}
+                            \begin{smallmatrix}
+                                1 & & \\& \ddots & \\& & 1
+                            \end{smallmatrix}
+                        \end{rcases}t &  & \tikz[remember picture]\node[inner sep=0pt] (c) { };\\
+                         & \begin{rcases}
+                            \begin{smallmatrix}
+                                -1 & & \\& \ddots & \\& & -1
+                            \end{smallmatrix}
+                        \end{rcases}u & \\
+                        \tikz[remember picture]\node[inner sep=0pt] (d) { }; &  & 
+                        \begin{smallmatrix}
+                            0 & & \\& \ddots & \\& & 0
+                        \end{smallmatrix}
+                    \end{smallmatrix}
+                \right)
+                \begin{tikzpicture}[overlay, remember picture]
+                    \node at (a.north) [anchor=center,yshift=-0.2cm, xshift=-1mm, scale=5] {$0$};
+                    \node at (b.south) [anchor=center,yshift=0.2cm, xshift=1mm, scale=5] {$0$};
+                    \node at (c.north) [anchor=center,yshift=-0.2cm, xshift=-1mm, scale=5] {$0$};
+                    \node at (d.south) [anchor=center,yshift=0.2cm, xshift=1mm, scale=5] {$0$};
+                \end{tikzpicture}
+            \end{align*}
+            Zu zeigen ist $(r,s)=(t,u)$. Setze $b:= b_q$. Dann gilt für $\la_1, \ldots ,\la_n\in K$:
+            \begin{align*}
+                \sum_{i=1}^n \la_i v_i\in \ker \rvec b&\Longleftrightarrow \rvec b\left(\sum_{i=1}^n \la_i v_i\right)=0\\
+                &\Longleftrightarrow b\left(\sum_{i=1}^n \la_i v_i,\cdot\right)=0\\
+                &\Longleftrightarrow \forall j\in\{1,\ldots ,n\}: \underbrace{b\left(\sum_{i=1}^n \la_i v_i,v_j\right)}_{=\la_j q(v_j)}=0\\
+                &\Longleftrightarrow \forall j\in\{1,\ldots ,r+s\}: \la_j=0.
+            \end{align*}
+            Also $\lin(v_{r+s+1},\ldots v_n)=\ker \rvec b$ und ebenso $\lin(w_{r+s+1},\ldots w_n)=\ker \rvec b$. Es folgt $r+s=t+u$. Betrachte nun die Untervektorräume
+            \begin{align*}
+                U&:=\lin(v_1,\ldots v_r,v_{r+s+1},\ldots ,v_n)\quad\text{und} \\
+                W&:=\lin(w_{t+1},\ldots ,w_{t+u}).
+            \end{align*}
+            Es gilt $q(v)\ge 0$ für $v\in U$ und $q(v)<0$ für $W\setminus\{0\}$. Daher gilt $U\cap W=\{0\}$ und mit der Dimensionsformel [$\to$\ref{8.1.12}] für Untervektorräume $n\ge \dim U+\dim W=n-s+u$. Also ist $u\le s$. Genauso zeigt man $s\le u$. Es folgt $s=u$ und daher auch $r=t$. Somit $(r,s)=(t,u)$. 
+    \end{itemize}
 \end{cproof}
 
 \begin{sat}\label{14.1.2}
-Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\R$-Vektorraum und $q\in \QForm(V)$ mit Sylvestersignatur $(r,s)\in \N_0$.
-\begin{enumerate}[\normalfont(a)]
-\item Ist $\v=(v_1,\ldots ,v_n)$ eine Basis und sind $\la_1,\ldots \la_n$ die Eigenwerte von $M(q,\underline{v})$ wobei jedes $\lambda_i$ seiner algebraischen Vielfachheit entsprechend oft aufgeführt ist [$\to$\ref{10.1.14},\ref{11.3.10}], das heißt $\chi_{M(q,\underline{v})}=\det(M(q,\v)-XI_n)=(-1)^n\prod_{i=1}^n(X - \la_i)$, so gilt
-\begin{itemize}
-\item $r=\#\{i\in \{1,\ldots ,n\}\mid \la_i>0\}$ und
-\item $s=\#\{i\in \{1,\ldots ,n\}\mid \la_i<0\}$.
-\end{itemize}
-\item Ist $\v=(v_1,\ldots ,v_n)$ eine Basis von $V$, $D:=\left(\begin{smallmatrix}
-d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
-& \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}\right)\in \R^{n\times n}$ eine Diagonalmatrix und $P\in \R^{n\times n}$ invertierbar mit $M(q,\underline{v})=P^TDP$ oder $M(q,\underline{v})=P^{-1}DP$, so gilt
-\begin{itemize}
-\item $r=\#\{i\in \{1,\ldots ,n\}\mid d_i>0\}$ und
-\item $s=\#\{i\in \{1,\ldots ,n\}\mid d_i<0\}$.
-\end{itemize}
-\item Sind $l_1,\ldots ,l_m\in V^*$ linear unabhängig und $\la_1,\ldots ,\la_n\in \R$ mit $\forall v\in V: q(v)=\sum_{i=1}^m\la_il_i^2(v)$, so gilt
-\begin{itemize}
-\item $r=\#\{i\in \{1,\ldots ,n\}\mid \lambda_i>0\}$ und
-\item $s=\#\{i\in \{1,\ldots ,n\}\mid \lambda_i<0\}$.
-\end{itemize}
-\end{enumerate}
+    Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\R$-Vektorraum und $q\in \QForm(V)$ mit Sylvestersignatur $(r,s)\in \N_0$.
+    \begin{enumerate}[\normalfont(a)]
+        \item Ist $\v=(v_1,\ldots ,v_n)$ eine Basis und sind $\la_1,\ldots \la_n$ die Eigenwerte von $M(q,\underline{v})$ wobei jedes $\lambda_i$ seiner algebraischen Vielfachheit entsprechend oft aufgeführt ist [$\to$\ref{10.1.14},\ref{11.3.10}], das heißt $\chi_{M(q,\underline{v})}=\det(M(q,\v)-XI_n)=(-1)^n\prod_{i=1}^n(X - \la_i)$, so gilt
+        \begin{itemize}
+            \item $r=\#\{i\in \{1,\ldots ,n\}\mid \la_i>0\}$ und
+            \item $s=\#\{i\in \{1,\ldots ,n\}\mid \la_i<0\}$.
+        \end{itemize}
+        \item Ist $\v=(v_1,\ldots ,v_n)$ eine Basis von $V$, $D:=\left(\begin{smallmatrix}
+            d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+            & \ddots &\\
+            \rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}
+        \right)\in \R^{n\times n}$ eine Diagonalmatrix und $P\in \R^{n\times n}$ invertierbar mit $M(q,\underline{v})=P^TDP$ oder $M(q,\underline{v})=P^{-1}DP$, so gilt
+        \begin{itemize}
+            \item $r=\#\{i\in \{1,\ldots ,n\}\mid d_i>0\}$ und
+            \item $s=\#\{i\in \{1,\ldots ,n\}\mid d_i<0\}$.
+        \end{itemize}
+        \item Sind $l_1,\ldots ,l_m\in V^*$ linear unabhängig und $\la_1,\ldots ,\la_n\in \R$ mit $\forall v\in V: q(v)=\sum_{i=1}^m\la_il_i^2(v)$, so gilt
+        \begin{itemize}
+            \item $r=\#\{i\in \{1,\ldots ,n\}\mid \lambda_i>0\}$ und
+            \item $s=\#\{i\in \{1,\ldots ,n\}\mid \lambda_i<0\}$.
+        \end{itemize}
+    \end{enumerate}
 \end{sat}
 \begin{cproof}
-Wir zeigen zunächst den Fall $M(q,\underline{v})=P^T{DP}$ von (b), dann (a), dann den Fall $M(q,\underline{v})=P^{-1}DP$ von (b) und schließlich (c).\\
-
-\noindent\underline{(b) Fall $M(q,\underline{v})=P^T{DP}$}.
-\begin{itemize}
-\item[ ]\underline{Schritt 1}. \oe gelte $P=I_n$.\\
-\underline{Begründung}. Setze $w_i:=\ve_{\v}(P^{-1}e_i)$ für alle $i\in\{1,\ldots ,n\}$. Dann ist $\w=(w_1,\ldots ,w_n)$ eine Basis von $V$ [$\to$ \ref{6.3.7},\ref{6.3.8}] und es gilt $P^{-1}=M(\w,\v)$ und somit 
-\begin{align*}
-M(q,\underline{w})&\stackrel{\ref{13.3.10}}{=}M(\underline{w},\underline{v})^TM(q,\underline{w})M(\underbrace{w},\underline{v})\\
-&=(P^{-1})^TP^TDPP^{-1})(PP^{-1})^TD(PP^{-1})=D.
-\end{align*}
-\item[ ]\underline{Schritt 2}. \oe sei $D$ von der Gestalt $\left(\begin{smallmatrix}
-\tikz\node(c){$1$};\\
-&\ddots\\
-&&1\\
-&&&-1\\
-&&&&\ddots\\
-&&&&&-1\\
-&&&&&&0\\
-&&&&&&&\ddots\\
-&&&&&&&&\tikz\node(d){$0$};
-\end{smallmatrix}\right)
-\begin{tikzpicture}[overlay]
-\node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
-\node[above left of = d,xshift=0em,yshift=4em,scale=5]{$0$};
-\end{tikzpicture}$.\\
-\underline{Begründung.} Vertauschen der Basiselemente und Skalieren änder die Anzahl der positiven bzw. negativen Diagonaleinträge von $M(q,\v)$ nicht.
-\end{itemize}
-	
-\noindent\underline{(a)} Da $M(q,v)$ eine reelle symmetrische Matrix ist, gibt es nach \ref{11.3.10} eine orthogonale Matrix $P\in \R^{n\times n}$ und einer Diagonalmatrix $D=\left(\begin{smallmatrix}
-d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
-& \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}\right)\in \R^{n\times n}$ mit $M(q,\v)=P^TDP=P^{-1}DP$. Da $M(q,\v)$ und $D$ ähnlich sind, haben sie dasselbe charakteristische Polynom [$\to$\ref{10.1.4}], das heißt $\prod_{i=1}^n(X-\la_i)=\prod_{i=1}^n(X-d_i)$. Dann gibt es nach \ref{10.1.13} eine Permutation $\si\in S_n$ mit $(\la_1,\ldots \la_n)=(d_{\si(1)},\ldots d_{\si(n)})$, weshalb in der Behauptung die $\la_i$ durch die $d_i$ ersetzt werden können. Wegen $M(q,\v)=P^TDP$ folgt dann die Behauptung nach dem bereits bewiesenen Teil von (b).\\
-		
-\noindent\underline{(b) Fall $M(q,\v)=P^{-1}DP$}. Setze $\la_i:= d_i$ für $i\in\{1,\ldots ,n\}$. Dann gilt $\chi_{M(q,\v)}\stackrel{\ref{10.1.4}}{=}\chi_D=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und die Behauptung folgt nun aus (a).\\
-		
-\noindent\underline(c) Ergänze $l_1,\ldots ,l_m$ zu einer Basis $l_1,\ldots l_m,l_{m+1},\ldots ,l_n$ von $V^*$ und setze $\la_{m+1}=\ldots =\la_n=0$. Wähle eine Basis $\underline{v}=(v_1,\ldots ,v_n)$ von $V$. Nach \ref{13.5.2} ist dann $P:=(l_i(v_j))_{1\le i,j\le n}\in \R^{n\times n}$ invertierbar und mit $D:=\left(\begin{smallmatrix}
-\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
-& \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & \la_n\end{smallmatrix}\right)\in \R^{n\times n}$ gilt $M(q,\underline{v})=P^TDP$. Nun folgt die Behauptung aus (b). 
+    Wir zeigen zunächst den Fall $M(q,\underline{v})=P^T{DP}$ von (b), dann (a), dann den Fall $M(q,\underline{v})=P^{-1}DP$ von (b) und schließlich (c).\\
+    \begin{itemize}
+        \item[(b.1)] Fall $M(q,\underline{v})=P^T{DP}$. 
+        \schritt{1}
+        \begin{behbox}
+            \textbf{Behauptung} 
+                Es gilt \oe $P=I_n$. \\
+            \textbf{Begründung} 
+                Setze $w_i:=\ve_{\v}(P^{-1}e_i)$ für alle $i\in\{1,\ldots ,n\}$. Dann ist $\w=(w_1,\ldots ,w_n)$ eine Basis von $V$[$\to$ \ref{6.3.7},\ref{6.3.8}] und es gilt $P^{-1}=M(\w,\v)$ und somit 
+                \begin{align*}
+                    M(q,\underline{w})&\stackrel{\ref{13.3.10}}{=}M(\underline{w},\underline{v})^TM(q,\underline{w})M(\underbrace{w},\underline{v})\\
+                    &=(P^{-1})^TP^TDPP^{-1})(PP^{-1})^TD(PP^{-1})=D.
+                \end{align*}
+        \end{behbox}
+        \schritt{2}
+        \begin{behbox}
+            \textbf{Behauptung} 
+                \oe sei $D$ von der Gestalt 
+                $\left(
+                    \begin{smallmatrix}
+                        \tikz\node(c){$1$};\\
+                        &\ddots\\
+                        &&1\\
+                        &&&-1\\
+                        &&&&\ddots\\
+                        &&&&&-1\\
+                        &&&&&&0\\
+                        &&&&&&&\ddots\\
+                        &&&&&&&&\tikz\node(d){$0$};
+                    \end{smallmatrix}
+                \right)
+                \begin{tikzpicture}[overlay]
+                    \node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
+                    \node[above left of = d,xshift=0em,yshift=4em,scale=5]{$0$};
+                \end{tikzpicture}$. \\
+            \textbf{Begründung} 
+                Vertauschen der Basiselemente und Skalieren änder die Anzahl der positiven bzw. negativen Diagonaleinträge von $M(q,\v)$ nicht.
+        \end{behbox}
+        \item[(a)] 
+            Da $M(q,v)$ eine reelle symmetrische Matrix ist, gibt es nach \ref{11.3.10} eine orthogonale Matrix $P\in \R^{n\times n} $ und einer Diagonalmatrix $D=\left(
+                \begin{smallmatrix}
+                    d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+                    & \ddots &\\
+                    \rlap{\tlap{\LARGE 0}} & & d_n
+                \end{smallmatrix}
+            \right)\in \R^{n\times n}$ mit $M(q,\v)=P^TDP=P^{-1}DP$. Da $M(q,\v)$ und $D$ ähnlich sind, haben sie dasselbe charakteristische Polynom [$\to$\ref{10.1.4}], das heißt $\prod_{i=1}^n(X-\la_i)=\prod_{i=1}^n(X-d_i)$. Dann gibt es nach \ref{10.1.13} eine Permutation $\si\in S_n$ mit $(\la_1,\ldots \la_n)=(d_{\si(1)},\ldots d_{\si(n)})$, weshalb in der Behauptung die $\la_i$ durch die $d_i$ ersetzt werden können. Wegen $M(q,\v)=P^TDP$ folgt dann die Behauptung nach dem bereits bewiesenen Teil von (b).
+        \item[(b.2)] Fall $M(q,\v)=P^{-1}DP$. 
+            Setze $\la_i:= d_i$ für $i\in\{1,\ldots ,n\}$. Dann gilt $\chi_{M(q,\v)}\stackrel{\ref{10.1.4}}{=}\chi_D=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und die Behauptung folgt nun aus (a).
+        \item[(c)] 
+            Ergänze $l_1,\ldots ,l_m$ zu einer Basis $l_1,\ldots l_m,l_{m+1},\ldots ,l_n$ von $V^*$ und setze $\la_{m+1}=\ldots =\la_n=0$. Wähle eine Basis $\underline{v}=(v_1,\ldots ,v_n)$ von $V$. Nach \ref{13.5.2} ist dann $P:=(l_i(v_j))_{1\le i,j\le n}\in \R^{n\times n}$ invertierbar und mit $D:=\left(
+                \begin{smallmatrix}
+                    \la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+                    & \ddots &\\
+                    \rlap{\tlap{\LARGE 0}} & & \la_n
+                \end{smallmatrix}
+            \right)\in \R^{n\times n}$ gilt $M(q,\underline{v})=P^TDP$. Nun folgt die Behauptung aus (b).
+    \end{itemize} 
 \end{cproof}
 
 \begin{df}\label{14.1.3}
