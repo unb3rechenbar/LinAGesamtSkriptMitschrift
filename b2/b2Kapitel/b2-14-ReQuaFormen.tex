@@ -16,13 +16,13 @@ M(q,\underline{v})=\begin{pmatrix*}\begin{rcases}
 \end{align*}
 \end{satdef}
 \begin{cproof}
-\underline{Existenz}. Nach Korollar \ref{13.5.12} gibt es eine Basis $\underline{w}=(w_1,...,w_n)$ von $V$ derart, dass $M(q,\w)$ Diagonalgestalt hat. \oe gibt es $r,s\in \N_0$ mit $q(w_1)>0,...,q(w_r)>0, q(w_{r+1})<0,...,q(w_{r+s})<0,q(w_{r+s+1})=...=q(w_n)=0$. Setze nun
+\underline{Existenz}. Nach Korollar \ref{13.5.12} gibt es eine Basis $\underline{w}=(w_1,\ldots ,w_n)$ von $V$ derart, dass $M(q,\w)$ Diagonalgestalt hat. \oe gibt es $r,s\in \N_0$ mit $q(w_1)>0,\ldots ,q(w_r)>0, q(w_{r+1})<0,\ldots ,q(w_{r+s})<0,q(w_{r+s+1})=\ldots =q(w_n)=0$. Setze nun
 \begin{align*}
-\v:=\left(\frac{w_1}{\sqrt{q(w_1)}},...,\frac{w_r}{\sqrt{q(w_r)}},\frac{w_{r+1}}{\sqrt{-q(w_{r+1})}}....,\frac{w_{r+s}}{\sqrt{-q(w_{r+s})}},w_{r+s+1},...,w_n\right).
+\v:=\left(\frac{w_1}{\sqrt{q(w_1)}},\ldots ,\frac{w_r}{\sqrt{q(w_r)}},\frac{w_{r+1}}{\sqrt{-q(w_{r+1})}}\ldots .,\frac{w_{r+s}}{\sqrt{-q(w_{r+s})}},w_{r+s+1},\ldots ,w_n\right).
 \end{align*}
 Dann ist $M(q,\v)$ von der gewünschten Gestalt.\\
 	
-\noindent\underline{Eindeutigkeit}. Seien $(r,s),(t,u)\in \N_0^2$ und $\v=(v_1,...,v_n), \w=(w_1,...,w_n)$ Basen von $V$ mit
+\noindent\underline{Eindeutigkeit}. Seien $(r,s),(t,u)\in \N_0^2$ und $\v=(v_1,\ldots ,v_n), \w=(w_1,\ldots ,w_n)$ Basen von $V$ mit
 \begin{align*}
 M(q,\underline{v})&=\left(\begin{smallmatrix}\begin{rcases}
 \begin{smallmatrix}1 & & \\& \ddots & \\& & 1\end{smallmatrix}\end{rcases}r &  & \tikz[remember picture]\node[inner sep=0pt] (a) { };\\
@@ -39,17 +39,17 @@ M(q,\underline{w})&=\left(\begin{smallmatrix}\begin{rcases}
 \node at (d.south) [anchor=center,yshift=0.2cm, xshift=1mm, scale=5] {$0$};
 \end{tikzpicture}
 \end{align*}
-Zu zeigen ist $(r,s)=(t,u)$. Setze $b:= b_q$. Dann gilt für $\la_1, ...,\la_n\in K$:
+Zu zeigen ist $(r,s)=(t,u)$. Setze $b:= b_q$. Dann gilt für $\la_1, \ldots ,\la_n\in K$:
 \begin{align*}
 \sum_{i=1}^n \la_i v_i\in \ker \rvec b&\Longleftrightarrow \rvec b\left(\sum_{i=1}^n \la_i v_i\right)=0\\
 &\Longleftrightarrow b\left(\sum_{i=1}^n \la_i v_i,\cdot\right)=0\\
-&\Longleftrightarrow \forall j\in\{1,...,n\}: \underbrace{b\left(\sum_{i=1}^n \la_i v_i,v_j\right)}_{=\la_j q(v_j)}=0\\
-&\Longleftrightarrow \forall j\in\{1,...,r+s\}: \la_j=0.
+&\Longleftrightarrow \forall j\in\{1,\ldots ,n\}: \underbrace{b\left(\sum_{i=1}^n \la_i v_i,v_j\right)}_{=\la_j q(v_j)}=0\\
+&\Longleftrightarrow \forall j\in\{1,\ldots ,r+s\}: \la_j=0.
 \end{align*}
-Also $\lin(v_{r+s+1},...v_n)=\ker \rvec b$ und ebenso $\lin(w_{r+s+1},...w_n)=\ker \rvec b$. Es folgt $r+s=t+u$. Betrachte nun die Untervektorräume
+Also $\lin(v_{r+s+1},\ldots v_n)=\ker \rvec b$ und ebenso $\lin(w_{r+s+1},\ldots w_n)=\ker \rvec b$. Es folgt $r+s=t+u$. Betrachte nun die Untervektorräume
 \begin{itemize}
-\item $U:=\lin(v_1,...v_r,v_{r+s+1},...,v_n)$ und
-\item $W :=\lin(w_{t+1},...,w_{t+u})$.
+\item $U:=\lin(v_1,\ldots v_r,v_{r+s+1},\ldots ,v_n)$ und
+\item $W :=\lin(w_{t+1},\ldots ,w_{t+u})$.
 \end{itemize}
 Es gilt $q(v)\ge 0$ für $v\in U$ und $q(v)<0$ für $W\setminus\{0\}$. Daher gilt $U\cap W=\{0\}$ und mit der Dimensionsformel [$\to$\ref{8.1.12}] für Untervektorräume $n\ge \dim U+\dim W=n-s+u$. Also ist $u\le s$. Genauso zeigt man $s\le u$. Es folgt $s=u$ und daher auch $r=t$. Somit $(r,s)=(t,u)$.
 \end{cproof}
@@ -57,33 +57,33 @@ Es gilt $q(v)\ge 0$ für $v\in U$ und $q(v)<0$ für $W\setminus\{0\}$. Daher gil
 \begin{sat}\label{14.1.2}
 Es gelte der Fundamentalsatz der Algebra. Sei $V$ ein endlichdimensionaler $\R$-Vektorraum und $q\in \QForm(V)$ mit Sylvestersignatur $(r,s)\in \N_0$.
 \begin{enumerate}[\normalfont(a)]
-\item Ist $\v=(v_1,...,v_n)$ eine Basis und sind $\la_1,...\la_n$ die Eigenwerte von $M(q,\underline{v})$ wobei jedes $\lambda_i$ seiner algebraischen Vielfachheit entsprechend oft aufgeführt ist [$\to$\ref{10.1.14},\ref{11.3.10}], das heißt $\chi_{M(q,\underline{v})}=\det(M(q,\v)-XI_n)=(-1)^n\prod_{i=1}^n(X - \la_i)$, so gilt
+\item Ist $\v=(v_1,\ldots ,v_n)$ eine Basis und sind $\la_1,\ldots \la_n$ die Eigenwerte von $M(q,\underline{v})$ wobei jedes $\lambda_i$ seiner algebraischen Vielfachheit entsprechend oft aufgeführt ist [$\to$\ref{10.1.14},\ref{11.3.10}], das heißt $\chi_{M(q,\underline{v})}=\det(M(q,\v)-XI_n)=(-1)^n\prod_{i=1}^n(X - \la_i)$, so gilt
 \begin{itemize}
-\item $r=\#\{i\in \{1,...,n\}\mid \la_i>0\}$ und
-\item $s=\#\{i\in \{1,...,n\}\mid \la_i<0\}$.
+\item $r=\#\{i\in \{1,\ldots ,n\}\mid \la_i>0\}$ und
+\item $s=\#\{i\in \{1,\ldots ,n\}\mid \la_i<0\}$.
 \end{itemize}
-\item Ist $\v=(v_1,...,v_n)$ eine Basis von $V$, $D:=\left(\begin{smallmatrix}
+\item Ist $\v=(v_1,\ldots ,v_n)$ eine Basis von $V$, $D:=\left(\begin{smallmatrix}
 d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
 & \ddots &\\
 \rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}\right)\in \R^{n\times n}$ eine Diagonalmatrix und $P\in \R^{n\times n}$ invertierbar mit $M(q,\underline{v})=P^TDP$ oder $M(q,\underline{v})=P^{-1}DP$, so gilt
 \begin{itemize}
-\item $r=\#\{i\in \{1,...,n\}\mid d_i>0\}$ und
-\item $s=\#\{i\in \{1,...,n\}\mid d_i<0\}$.
+\item $r=\#\{i\in \{1,\ldots ,n\}\mid d_i>0\}$ und
+\item $s=\#\{i\in \{1,\ldots ,n\}\mid d_i<0\}$.
 \end{itemize}
-\item Sind $l_1,...,l_m\in V^*$ linear unabhängig und $\la_1,...,\la_n\in \R$ mit $\forall v\in V: q(v)=\sum_{i=1}^m\la_il_i^2(v)$, so gilt
+\item Sind $l_1,\ldots ,l_m\in V^*$ linear unabhängig und $\la_1,\ldots ,\la_n\in \R$ mit $\forall v\in V: q(v)=\sum_{i=1}^m\la_il_i^2(v)$, so gilt
 \begin{itemize}
-\item $r=\#\{i\in \{1,...,n\}\mid \lambda_i>0\}$ und
-\item $s=\#\{i\in \{1,...,n\}\mid \lambda_i<0\}$.
+\item $r=\#\{i\in \{1,\ldots ,n\}\mid \lambda_i>0\}$ und
+\item $s=\#\{i\in \{1,\ldots ,n\}\mid \lambda_i<0\}$.
 \end{itemize}
 \end{enumerate}
 \end{sat}
 \begin{cproof}
-Wir zeigen zunächst den Fall $M(q,\underline{v})=P^TDP$ von (b), dann (a), dann den Fall $M(q,\underline{v})=P^{-1}DP$ von (b) und schließlich (c).\\
+Wir zeigen zunächst den Fall $M(q,\underline{v})=P^T{DP}$ von (b), dann (a), dann den Fall $M(q,\underline{v})=P^{-1}DP$ von (b) und schließlich (c).\\
 
-\noindent\underline{(b) Fall $M(q,\underline{v})=P^TDP$}.
+\noindent\underline{(b) Fall $M(q,\underline{v})=P^T{DP}$}.
 \begin{itemize}
 \item[ ]\underline{Schritt 1}. \oe gelte $P=I_n$.\\
-\underline{Begründung}. Setze $w_i:=\ve_{\v}(P^{-1}e_i)$ für alle $i\in\{1,...,n\}$. Dann ist $\w=(w_1,...,w_n)$ eine Basis von $V$ [$\to$ \ref{6.3.7},\ref{6.3.8}] und es gilt $P^{-1}=M(\w,\v)$ und somit 
+\underline{Begründung}. Setze $w_i:=\ve_{\v}(P^{-1}e_i)$ für alle $i\in\{1,\ldots ,n\}$. Dann ist $\w=(w_1,\ldots ,w_n)$ eine Basis von $V$ [$\to$ \ref{6.3.7},\ref{6.3.8}] und es gilt $P^{-1}=M(\w,\v)$ und somit 
 \begin{align*}
 M(q,\underline{w})&\stackrel{\ref{13.3.10}}{=}M(\underline{w},\underline{v})^TM(q,\underline{w})M(\underbrace{w},\underline{v})\\
 &=(P^{-1})^TP^TDPP^{-1})(PP^{-1})^TD(PP^{-1})=D.
@@ -109,11 +109,11 @@ M(q,\underline{w})&\stackrel{\ref{13.3.10}}{=}M(\underline{w},\underline{v})^TM(
 \noindent\underline{(a)} Da $M(q,v)$ eine reelle symmetrische Matrix ist, gibt es nach \ref{11.3.10} eine orthogonale Matrix $P\in \R^{n\times n}$ und einer Diagonalmatrix $D=\left(\begin{smallmatrix}
 d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
 & \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}\right)\in \R^{n\times n}$ mit $M(q,\v)=P^TDP=P^{-1}DP$. Da $M(q,\v)$ und $D$ ähnlich sind, haben sie dasselbe charakteristische Polynom [$\to$\ref{10.1.4}], das heißt $\prod_{i=1}^n(X-\la_i)=\prod_{i=1}^n(X-d_i)$. Dann gibt es nach \ref{10.1.13} eine Permutation $\si\in S_n$ mit $(\la_1,...\la_n)=(d_{\si(1)},...d_{\si(n)})$, weshalb in der Behauptung die $\la_i$ durch die $d_i$ ersetzt werden können. Wegen $M(q,\v)=P^TDP$ folgt dann die Behauptung nach dem bereits bewiesenen Teil von (b).\\
+\rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}\right)\in \R^{n\times n}$ mit $M(q,\v)=P^TDP=P^{-1}DP$. Da $M(q,\v)$ und $D$ ähnlich sind, haben sie dasselbe charakteristische Polynom [$\to$\ref{10.1.4}], das heißt $\prod_{i=1}^n(X-\la_i)=\prod_{i=1}^n(X-d_i)$. Dann gibt es nach \ref{10.1.13} eine Permutation $\si\in S_n$ mit $(\la_1,\ldots \la_n)=(d_{\si(1)},\ldots d_{\si(n)})$, weshalb in der Behauptung die $\la_i$ durch die $d_i$ ersetzt werden können. Wegen $M(q,\v)=P^TDP$ folgt dann die Behauptung nach dem bereits bewiesenen Teil von (b).\\
 		
-\noindent\underline{(b) Fall $M(q,\v)=P^{-1}DP$}. Setze $\la_i:= d_i$ für $i\in\{1,...,n\}$. Dann gilt $\chi_{M(q,\v)}\stackrel{\ref{10.1.4}}{=}\chi_D=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und die Behauptung folgt nun aus (a).\\
+\noindent\underline{(b) Fall $M(q,\v)=P^{-1}DP$}. Setze $\la_i:= d_i$ für $i\in\{1,\ldots ,n\}$. Dann gilt $\chi_{M(q,\v)}\stackrel{\ref{10.1.4}}{=}\chi_D=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und die Behauptung folgt nun aus (a).\\
 		
-\noindent\underline(c) Ergänze $l_1,...,l_m$ zu einer Basis $l_1,...l_m,l_{m+1},...,l_n$ von $V^*$ und setze $\la_{m+1}=...=\la_n=0$. Wähle eine Basis $\underline{v}=(v_1,...,v_n)$ von $V$. Nach \ref{13.5.2} ist dann $P:=(l_i(v_j))_{1\le i,j\le n}\in \R^{n\times n}$ invertierbar und mit $D:=\left(\begin{smallmatrix}
+\noindent\underline(c) Ergänze $l_1,\ldots ,l_m$ zu einer Basis $l_1,\ldots l_m,l_{m+1},\ldots ,l_n$ von $V^*$ und setze $\la_{m+1}=\ldots =\la_n=0$. Wähle eine Basis $\underline{v}=(v_1,\ldots ,v_n)$ von $V$. Nach \ref{13.5.2} ist dann $P:=(l_i(v_j))_{1\le i,j\le n}\in \R^{n\times n}$ invertierbar und mit $D:=\left(\begin{smallmatrix}
 \la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
 & \ddots &\\
 \rlap{\tlap{\LARGE 0}} & & \la_n\end{smallmatrix}\right)\in \R^{n\times n}$ gilt $M(q,\underline{v})=P^TDP$. Nun folgt die Behauptung aus (b). 
@@ -124,16 +124,16 @@ Sei $n\in \N_0$ und $A\in \SR^{n\times n}$. Dann definiert man die Sylvester-Sig
 \end{df}
 	
 \begin{bem}\label{14.1.4}
-Sei $V$ ein $\R$-Vektorraum mit Basis $\v=(v_1,...,v_n)$ und $q\in\QForm(V)$. Dann stimmen die Sylvester-Signaturen von $q$ und $M(q,\v)$ natürlich überein, denn setzt man $A:=M(q,\v)$, so gilt $M(q_A,\e)=A=M(q,\v )$ und es liefert zum Beispiel (a) des obigen Satzes das Gewünschte.
+Sei $V$ ein $\R$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q\in\QForm(V)$. Dann stimmen die Sylvester-Signaturen von $q$ und $M(q,\v)$ natürlich überein, denn setzt man $A:=M(q,\v)$, so gilt $M(q_A,\e)=A=M(q,\v )$ und es liefert zum Beispiel (a) des obigen Satzes das Gewünschte.
 \end{bem}
 
 \begin{kor}\label{14.1.5}
 Sei $n\in \N_0$ und $A\in \SR^{n\times n}$ mit Sylvester-Signatur $(r,s)$.
 \begin{enumerate}[\normalfont(a)]
-\item Gilt $\chi_A=(-1)^n\prod_{i=1}^n(X-\la_i)$ mit $\la_1,...\la_n\in \R$, so gilt
+\item Gilt $\chi_A=(-1)^n\prod_{i=1}^n(X-\la_i)$ mit $\la_1,\ldots \la_n\in \R$, so gilt
 \begin{itemize}
-\item $r=\#\{i\in \{1,...,n\}\mid \la_i>0\}$ und
-\item $s=\#\{i\in \{1,...,n\}\mid \la_i<0\}$.
+\item $r=\#\{i\in \{1,\ldots ,n\}\mid \la_i>0\}$ und
+\item $s=\#\{i\in \{1,\ldots ,n\}\mid \la_i<0\}$.
 \end{itemize}
 		
 \item $D:=\left(\begin{smallmatrix}
@@ -141,14 +141,14 @@ d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
 & \ddots &\\
 \rlap{\tlap{\LARGE 0}} & & d_n\end{smallmatrix}\right)\in \R^{n\times n}$ eine Diagonalmatrix und $P\in \R^{n\times n}$ invertierbar mit $M(q_A,\underline{v})=P^TDP$ oder $M(q_A,\underline{v})=P^{-1}DP$, so gilt
 \begin{itemize}
-\item $r=\#\{i\in \{1,...,n\}\mid d_i>0\}$ und
-\item $s=\#\{i\in \{1,...,n\}\mid d_i<0\}$.
+\item $r=\#\{i\in \{1,\ldots ,n\}\mid d_i>0\}$ und
+\item $s=\#\{i\in \{1,\ldots ,n\}\mid d_i<0\}$.
 \end{itemize}
 		
-\item[(c)] Sind $l_1,...l_m\in (\R^n)^*$ linear unabhängig und $\la_1,...,\la_n\in \R$ mit $\forall x\in \R^n: x^TAx=\sum_{i=1}^m\la_il_i^2(v)$, so gilt
+\item[(c)] Sind $l_1,\ldots l_m\in (\R^n)^*$ linear unabhängig und $\la_1,\ldots ,\la_n\in \R$ mit $\forall x\in \R^n: x^TAx=\sum_{i=1}^m\la_il_i^2(v)$, so gilt
 \begin{itemize}
-\item $r=\#\{i\in \{1,...,n\}\mid \la_i>0\}$ und
-\item $s=\#\{i\in \{1,...,n\}\mid \la_i<0\}$.
+\item $r=\#\{i\in \{1,\ldots ,n\}\mid \la_i>0\}$ und
+\item $s=\#\{i\in \{1,\ldots ,n\}\mid \la_i<0\}$.
 \end{itemize}
 \end{enumerate}
 \end{kor}
@@ -172,7 +172,7 @@ Sei $n\in \N_0$ und $A\in \R^{n\times n}$. Dann ist $A$ psd/nsd/pd/nd genau dann
 \end{bem}
 	
 \begin{bem}\label{14.2.5}
-Sei $V$ ein $\R$-Vektorraum mit Basis $\v=(v_1,...,v_n)$ und $q\in\QForm(V)$. Dann ist $q \psd/\nsd/\pd/\nd \Longleftrightarrow$ $M(q,\v) \psd/\nsd/\pd/\nd$.
+Sei $V$ ein $\R$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q\in\QForm(V)$. Dann ist $q \psd/\nsd/\pd/\nd \Longleftrightarrow$ $M(q,\v) \psd/\nsd/\pd/\nd$.
 \end{bem}
 
 \begin{bem}\label{14.2.6}
@@ -184,8 +184,8 @@ Sei $V$ ein $\R$-Vektorraum mit $n=\dim V<\infty$ und $q\in \QForm(V)$. Dann sin
 \begin{enumerate}[\normalfont(a)]
 \item $q$ ist psd.
 \item Die Sylvester-Signatur ist $(r,0)$ for ein $r\in \N_0$,
-\item $\exists l_1,...,l_n\in V^*: \forall v\in V: q(v)=\sum_{i=1}^nl_i^2(v)$.
-\item $\exists m\in \N_0:\exists l_1,...,l_m\in V^*: \forall v\in V: q(v)=\sum_{i=1}^ml_i^2(v)$.
+\item $\exists l_1,\ldots ,l_n\in V^*: \forall v\in V: q(v)=\sum_{i=1}^nl_i^2(v)$.
+\item $\exists m\in \N_0:\exists l_1,\ldots ,l_m\in V^*: \forall v\in V: q(v)=\sum_{i=1}^ml_i^2(v)$.
 \end{enumerate}
 \end{sat}
 \begin{cproof}
@@ -202,7 +202,7 @@ Sei $A\in \SR$. Unter einer Cholesky-Zerlegung [\href{https://en.wikipedia.org/w
 \end{df}
 
 \begin{df}\label{14.2.9}
-Sei $K$ ein kommutativer Ring, $n\in \N_0$ und $A\in K^{n\times n}$. Für jedes $I\subseteq\{1,...,n\}$ bezeichne $A_I\in K^{(\#I)\times (\#I)}$ die Matrix, die aus $A$ durch Streichen aller Zeichen $i$ und Spalten $j$ mit $i,j\notin I$ entsteht. Wir bezeichnen die Determinanten der $n$ Matrizen $A_{\{1\}}$,$A_{\{1,2\}}$,$A_{\{1,2,3\}}$,...,$A_{\{1,...,n\}}$ als die Leithauptminoren (auch: führende Hauptminoren) von $A$ und die Determinanten der $2^{n}-1$ Matrizen $A_I$ $(\emptyset \neq I\subseteq\{1,...,n\})$ als die Hauptminoren von $A$. [Vorsicht: manche deutschsprachige Autoren bezeichnen nur die Leithauptminoren als Hauptminoren und haben keine Bezeichnung für unsere Hauptminoren].
+Sei $K$ ein kommutativer Ring, $n\in \N_0$ und $A\in K^{n\times n}$. Für jedes $I\subseteq\{1,\ldots ,n\}$ bezeichne $A_I\in K^{(\#I)\times (\#I)}$ die Matrix, die aus $A$ durch Streichen aller Zeichen $i$ und Spalten $j$ mit $i,j\notin I$ entsteht. Wir bezeichnen die Determinanten der $n$ Matrizen $A_{\{1\}}$,$A_{\{1,2\}}$,$A_{\{1,2,3\}}$,\ldots ,$A_{\{1,\ldots ,n\}}$ als die Leithauptminoren (auch: führende Hauptminoren) von $A$ und die Determinanten der $2^{n}-1$ Matrizen $A_I$ $(\emptyset \neq I\subseteq\{1,\ldots ,n\})$ als die Hauptminoren von $A$. [Vorsicht: manche deutschsprachige Autoren bezeichnen nur die Leithauptminoren als Hauptminoren und haben keine Bezeichnung für unsere Hauptminoren].
 \end{df}
 
 \begin{bsp}\label{14.2.10}
@@ -222,10 +222,10 @@ Es gelte der Fundamentalsatz der Algebra. Sei $A\in\SR^{n\times n}$. Dann sind �
 \item Es gibt eine obere Dreiecksmatrix [$\to$\ref{10.3.1}] $B\in \R^{n\times n}$ mit $A=B^TB$.
 \item $\exists B\in \R^{n\times n}: A=B^TB$.
 \item $\exists m\in \N_0: \exists B\in \R^{m\times n}: A=B^TB$.
-\item $\exists v_1,...,v_n\in \R^n: A=\begin{pmatrix*}\scal{v_1,v_1}&\hdots&\scal{v_1,v_n}\\\vdots &\ddots&\vdots\\ \scal{v_n,v_1}&\hdots&\scal{v_n,v_n}\end{pmatrix*}$.
-\item $\exists m\in \N_0:\exists v_1,...,v_n\in \R^m: A=\begin{pmatrix*}\scal{v_1,v_1}&\hdots&\scal{v_1,v_n}\\\vdots&\ddots&\vdots\\ \scal{v_n,v_1}&\hdots&\scal{v_n,v_n}\end{pmatrix*}$.
-\item $\exists v_1,...v_n\in \R^n: A=\sum_{i=1}^n v_iv_i^T$.
-\item $\exists m\in \N_0:\exists v_1,...v_m\in \R^n: A=\sum_{i=1}^m v_iv_i^T$.
+\item $\exists v_1,\ldots ,v_n\in \R^n: A=\begin{pmatrix*}\scal{v_1,v_1}&\hdots&\scal{v_1,v_n}\\\vdots &\ddots&\vdots\\ \scal{v_n,v_1}&\hdots&\scal{v_n,v_n}\end{pmatrix*}$.
+\item $\exists m\in \N_0:\exists v_1,\ldots ,v_n\in \R^m: A=\begin{pmatrix*}\scal{v_1,v_1}&\hdots&\scal{v_1,v_n}\\\vdots&\ddots&\vdots\\ \scal{v_n,v_1}&\hdots&\scal{v_n,v_n}\end{pmatrix*}$.
+\item $\exists v_1,\ldots v_n\in \R^n: A=\sum_{i=1}^n v_iv_i^T$.
+\item $\exists m\in \N_0:\exists v_1,\ldots v_m\in \R^n: A=\sum_{i=1}^m v_iv_i^T$.
 \end{enumerate}	 
 \end{sat}
 \begin{cproof}
@@ -237,13 +237,13 @@ Es gelte der Fundamentalsatz der Algebra. Sei $A\in\SR^{n\times n}$. Dann sind �
 
 \noindent\underline{$(d)\Longleftrightarrow(e)$}
 \begin{itemize}
-\item[$"\implies"$] Sind $\lambda_1,...,\lambda_n\in \R$ die Eigenwerte von $A$ gezählt mit algebraischer Vielfachheit [$\to$\ref{10.1.4},\ref{11.3.10}], so gilt $\chi_A=\prod_{i=1}^n (\lambda_i-X)$ und daher $\chi_A=\prod_{i=1}^n (\lambda_i+X)$. Die Koeffizienten von $\chi_A(-X)$ sind daher Summen von Produkten der $\lambda_i$.
+\item[$"\implies"$] Sind $\lambda_1,\ldots ,\lambda_n\in \R$ die Eigenwerte von $A$ gezählt mit algebraischer Vielfachheit [$\to$\ref{10.1.4},\ref{11.3.10}], so gilt $\chi_A=\prod_{i=1}^n (\lambda_i-X)$ und daher $\chi_A=\prod_{i=1}^n (\lambda_i+X)$. Die Koeffizienten von $\chi_A(-X)$ sind daher Summen von Produkten der $\lambda_i$.
 \item[$"\impliedby"$] Gelte $(e)$. Sei $\lambda\in \R$ ein Eigenwert von $A$. Dann $\det(A-\lambda I_n)=\chi_A(\lambda)=0$. Setzt man also $-\lambda$ anstelle von $X$ in das Polynom $0\neq \det(A+XI_n)$ ein, so erhält man 0. Hat dieses Polynom nur nichtnegativen Koeffizienten, so folgt $-\lambda\le 0$.
 \end{itemize}
 
 \noindent\underline{$(e)\Longleftrightarrow(f)$}\begin{itemize}
-\item[$"\implies"$] Gelte $(e)$. Sei $\emptyset\neq I\subseteq\{1,...,n\}$. Zu zeigen ist $\det(A_I)\ge 0$. Wegen $(b)\Longleftrightarrow (e)$ gilt auch $(b)$. Insbesondere $\forall x\in \R^{\# I}: x^TA_Ix\ge 0$. Wieder wegen $(b)\Longleftrightarrow (e)$ hat $\det(A_I+XI_{\# I})\in \R[X]$ keine negativen Koeffizienten. Insbesondere ist der konstante Koeffizient $\det (A_I)$ dieses Polynoms $\ge 0$.
-\item[$"\impliedby"$] Schreibt man $\det(A+XI_n)=X^n+a_{n-1}X^{n-1}+...+a_0$ mit $a_0,...,a_{n-1}\in K$, so sieht man mit scharfem Auge direkt an der Definition einer Determinante \ref{9.1.9}, dass $a_i=\sum_{\substack{I\subseteq \{1,...,n\}\\\#(\{1,...,n\}\setminus I)=i}} \det(A_I)$ für $i\in\{0,...,n-1\}$.
+\item[$"\implies"$] Gelte $(e)$. Sei $\emptyset\neq I\subseteq\{1,\ldots ,n\}$. Zu zeigen ist $\det(A_I)\ge 0$. Wegen $(b)\Longleftrightarrow (e)$ gilt auch $(b)$. Insbesondere $\forall x\in \R^{\# I}: x^TA_Ix\ge 0$. Wieder wegen $(b)\Longleftrightarrow (e)$ hat $\det(A_I+XI_{\# I})\in \R[X]$ keine negativen Koeffizienten. Insbesondere ist der konstante Koeffizient $\det (A_I)$ dieses Polynoms $\ge 0$.
+\item[$"\impliedby"$] Schreibt man $\det(A+XI_n)=X^n+a_{n-1}X^{n-1}+\ldots +a_0$ mit $a_0,\ldots ,a_{n-1}\in K$, so sieht man mit scharfem Auge direkt an der Definition einer Determinante \ref{9.1.9}, dass $a_i=\sum_{\substack{I\subseteq \{1,\ldots ,n\}\\\#(\{1,\ldots ,n\}\setminus I)=i}} \det(A_I)$ für $i\in\{0,\ldots ,n-1\}$.
 \end{itemize}
 
 \noindent\underline{$(b)\implies (g)$} folgt wie in Bemerkung \ref{13.5.10} (c) angekündigt durch Inspektion des Beweises von Satz \ref{13.5.9}.
@@ -263,7 +263,7 @@ d_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
 
 \noindent\underline{$(j)\implies (b)$}. Ist $A=B^TB$ mit $B\in \R^{m\times n}$, so gilt $x^TAX=x^TB^TBx=(Bx)^TBx=\scal{Bx,Bx}\ge 0$ für alle $x\in \R^n$.\\
 
-\noindent Es ist nun die Äquivalenz der Aussagen (a)-(j) gezeigt. Die Äquivalenzen \underline{$(i)\Longleftrightarrow (k)$} und \underline{$(j)\Longleftrightarrow (l)$} ergeben sich sofort, indem man die $v_i$ als die Spalten von $B$ auffasst, denn für $v_1,...,v_n\in \R^m$ gilt $\cvec{v_1^T\\\vdots\\ v_n^T}\cvec{v_1\hdots v_n}=\left(\begin{smallmatrix}\scal{v_1,v_1}&\hdots&\scal{v_1,v_n}\\\vdots &\ddots&\vdots\\ \scal{v_n,v_1}&\hdots&\scal{v_n,v_n}\end{smallmatrix}\right)$. Die Äquivalenzen \underline{$(i)\Longleftrightarrow (m)$} und \underline{$(j)\Longleftrightarrow (n)$} ergeben sich, indem man die $v^T_i$ als die Zeilen von $B$ auffasst, denn für $v_1,...,v_m\in \R^n$ gilt
+\noindent Es ist nun die Äquivalenz der Aussagen (a)-(j) gezeigt. Die Äquivalenzen \underline{$(i)\Longleftrightarrow (k)$} und \underline{$(j)\Longleftrightarrow (l)$} ergeben sich sofort, indem man die $v_i$ als die Spalten von $B$ auffasst, denn für $v_1,\ldots ,v_n\in \R^m$ gilt $\cvec{v_1^T\\\vdots\\ v_n^T}\cvec{v_1\hdots v_n}=\left(\begin{smallmatrix}\scal{v_1,v_1}&\hdots&\scal{v_1,v_n}\\\vdots &\ddots&\vdots\\ \scal{v_n,v_1}&\hdots&\scal{v_n,v_n}\end{smallmatrix}\right)$. Die Äquivalenzen \underline{$(i)\Longleftrightarrow (m)$} und \underline{$(j)\Longleftrightarrow (n)$} ergeben sich, indem man die $v^T_i$ als die Zeilen von $B$ auffasst, denn für $v_1,\ldots ,v_m\in \R^n$ gilt
 \begin{align*}
 (v_1\hdots v_n)\begin{pmatrix}v_1^T\\\vdots\\ v_n^T\end{pmatrix}&=\sum_{i=1}^m(0\hdots 0\ v_i\ 0\blap{\llap{$\begin{smallmatrix}\ \ \uparrow\\i-\text{te Spalte}\end{smallmatrix}$}}\hdots 0)\begin{pmatrix}v_1^T\\\vdots\\ v_n^T\end{pmatrix}\\
 &=\sum_{i=1}^m(0\hdots 0\ v_i\ 0\blap{\llap{$\begin{smallmatrix}\ \ \uparrow\\i-\text{te Spalte}\end{smallmatrix}$}}\hdots 0)\begin{pmatrix}0\\\vdots\\0\\v_i^T\rlap{\small$\leftarrow i$-te Zeile}\\0\\\vdots\\0\end{pmatrix}\qquad\qquad=\sum_{i=1}^m v_iv_i^T.
@@ -276,7 +276,7 @@ Sei $V$ ein endlichdimensionaler $\R$-Vektorraum, $n:=\dim V$ und $q\in \Q(V)$. 
 \begin{enumerate}[\normalfont(a)]
 \item $q$ ist pd
 \item Die Sylvester-Signatur von $q$ ist $(n,0)$
-\item Es gibt eines Basis $l_1,...,l_n$ von $V^*$ mit $\forall v\in V: q(v)=\sum_{i=1}^n l_i^2(v)$
+\item Es gibt eines Basis $l_1,\ldots ,l_n$ von $V^*$ mit $\forall v\in V: q(v)=\sum_{i=1}^n l_i^2(v)$
 \end{enumerate}
 \end{sat}
 \begin{cproof}
@@ -284,7 +284,7 @@ Sei $V$ ein endlichdimensionaler $\R$-Vektorraum, $n:=\dim V$ und $q\in \Q(V)$. 
 
 \noindent\underline{$(b)\implies (c)$} folgt ebenfalls aus dieser Definition zusammen mit Lemma \ref{13.5.1}\\
 
-\noindent \underline{$(c)\implies (a)$} Gelte $(c)$ und sei $0\neq v\in V$. Zu zeigen ist $q(v)>0$. Da die kanonische Auswertung $V\to \ddual V$ [$\to$\ref{13.1.4}] injektiv ist, gibt es $l\in V^*$ mit $l(v)\neq 0$. Wegen $l\in\lin(l_1,...,l_n)$ gibt es $i\in\{1,...,n\}$ mit $l_i(v)\neq 0$. Daraus folgt $q(v)\ge l_i^2(v)>0$.
+\noindent \underline{$(c)\implies (a)$} Gelte $(c)$ und sei $0\neq v\in V$. Zu zeigen ist $q(v)>0$. Da die kanonische Auswertung $V\to \ddual V$ [$\to$\ref{13.1.4}] injektiv ist, gibt es $l\in V^*$ mit $l(v)\neq 0$. Wegen $l\in\lin(l_1,\ldots ,l_n)$ gibt es $i\in\{1,\ldots ,n\}$ mit $l_i(v)\neq 0$. Daraus folgt $q(v)\ge l_i^2(v)>0$.
 \end{cproof}
 
 \begin{sat}\label{14.2.13}
@@ -294,7 +294,7 @@ Es gelte der Fundamentalsatz der Algebra. Sei $A\in\SR^{n\times n}$. Dann sind �
 \item $\forall x\in \R^n: x^TAx> 0$.
 \item Die Sylvester-Signatur von $A$ ist $(n,0)$ für ein $r\in \N_0$.
 \item Alle Eigenwerte von $A$ sind $> 0$.
-\item Die Koeffizienten zu den Monomen $1,X,...,X^{n-1}$ von $\det(A+XI_n)=\chi_A(-X)\in \R[X]$ sind $> 0$.
+\item Die Koeffizienten zu den Monomen $1,X,\ldots ,X^{n-1}$ von $\det(A+XI_n)=\chi_A(-X)\in \R[X]$ sind $> 0$.
 \item Alle Leithauptminoren von $A$ sind $>0$
 \item Alle Hauptminoren von $A$ sind $>0$.
 \item $A$ besitzt eine Cholesky-Zerlegung $(P,D)$ derart, dass alle Diagonaleinträge von $D$ positiv sind.
@@ -305,11 +305,11 @@ Die Äquivalent aller Aussagen mit Ausnahme von (f) zeigt man analog zum Beweis 
 
 \noindent\underline{$n=0$} Hier ist (b) die leer Aussage, da $\R^n=\R^0=\{0\}$.\\
 \noindent\underline{$n\to n+1\ (n\in\N_0)$} Seien die Leithauptminoren der Matrix $A\in\R^{(n+1)\times(n+1)}$ positiv. Schreibt man $A=\left(\begin{array}{c|c}& a_1\\
-B & \vdots\\& a_n\\\hline a_1\ldots a_n & c\end{array}\right)$ mit $B\in \SR^{n\times n}$ und $a_1,...,_n,c\in \R$, so $x^TBx>0$ für alle $x\in\R^{n}\setminus\{0\}$ (denn insbesondere sind alle Leithauptminoren von $B$ positiv). Wähle nun $0\neq v\in\ker\underbrace{\begin{pmatrix}\tikz\node[inner sep=0pt] (a) { };&&&a_1\\&&&\vdots\\&&&a_n\end{pmatrix}}_{\in \R^{n\times(n+1)}}
+B & \vdots\\& a_n\\\hline a_1\ldots  a_n & c\end{array}\right)$ mit $B\in \SR^{n\times n}$ und $a_1,\ldots ,_n,c\in \R$, so $x^TBx>0$ für alle $x\in\R^{n}\setminus\{0\}$ (denn insbesondere sind alle Leithauptminoren von $B$ positiv). Wähle nun $0\neq v\in\ker\underbrace{\begin{pmatrix}\tikz\node[inner sep=0pt] (a) { };&&&a_1\\&&&\vdots\\&&&a_n\end{pmatrix}}_{\in \R^{n\times(n+1)}}
 \begin{tikzpicture}[overlay]
 \node at (a.north) [anchor=center,yshift=-0.5cm, xshift=0.4cm, scale=3] {$B$};
-\end{tikzpicture}$. Wegen $\ker B=\{0\}$ kann nicht $v\in\lin(e_1,...,e_n)$ gelten, wobei $\e=(e_1,...,e_{n+1})$ die Standardbasis des $\R^{n+1}$ bezeichnet. Dann ist $\v:=(e_1,...,e_n,v)$ und es gilt $e_i^TAv=0$ f+r $i\in\{0,...,n\}$. Es folgt, dass die Darstellungsmatrix $M(q_A,\v)$ von der Form $M(q_A,\v)=\left(\begin{array}{c|c}& 0\\
-B & \vdots\\& 0\\\hline 0\ldots 0 & d\end{array}\right)$ mit $d\in\R$ ist. Wegen $A=M(q_A,\e)\stackrel{\ref{13.1.10}}{=}M(\e,\v)^TM(q_A,\v)M(\e,\v)$ gilt
+\end{tikzpicture}$. Wegen $\ker B=\{0\}$ kann nicht $v\in\lin(e_1,\ldots ,e_n)$ gelten, wobei $\e=(e_1,\ldots ,e_{n+1})$ die Standardbasis des $\R^{n+1}$ bezeichnet. Dann ist $\v:=(e_1,\ldots ,e_n,v)$ und es gilt $e_i^TAv=0$ f+r $i\in\{0,\ldots ,n\}$. Es folgt, dass die Darstellungsmatrix $M(q_A,\v)$ von der Form $M(q_A,\v)=\left(\begin{array}{c|c}& 0\\
+B & \vdots\\& 0\\\hline 0\ldots  0 & d\end{array}\right)$ mit $d\in\R$ ist. Wegen $A=M(q_A,\e)\stackrel{\ref{13.1.10}}{=}M(\e,\v)^TM(q_A,\v)M(\e,\v)$ gilt
 \begin{align*}
 0<\det A\substack{\ref{9.1.15}\\=\\\ref{9.1.23}}(\det M(\e,\v))^2\det(M(q_A,\v))=\underbrace{\det M(\e,\v)}_{>0}\underbrace{(\det B)}_{>0}d
 \end{align*}
