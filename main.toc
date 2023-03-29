@@ -47,9 +47,9 @@
 \contentsline {chapter}{\numberline {13}Linearformen, Bilinearformen und quadratische Formen}{173}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Algebraischer Dualraum}{173}{section.13.1}%
 \contentsline {section}{\numberline {13.2}Bilineare Abbildungen}{178}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Bilinearformen}{179}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Symmetrische Bilinearformen und quadratische Formen}{182}{section.13.4}%
-\contentsline {section}{\numberline {13.5}Eine verallgemeinerte Cholesky-Zerlegung}{185}{section.13.5}%
+\contentsline {section}{\numberline {13.3}Bilinearformen}{180}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Symmetrische Bilinearformen und quadratische Formen}{183}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Eine verallgemeinerte Cholesky-Zerlegung}{186}{section.13.5}%
 \contentsline {chapter}{\numberline {14}Reelle quadratische Formen}{193}{chapter.14}%
 \contentsline {section}{\numberline {14.1}Der Trägheitssatz von Sylvester}{193}{section.14.1}%
 \contentsline {section}{\numberline {14.2}Positiv semidefinite Matrizen}{197}{section.14.2}%

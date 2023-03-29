@@ -36,25 +36,26 @@
     \subitem Untergruppe, \hyperpage{24}
       \subsubitem erzeugte Untergruppe, \hyperpage{26}
     \subitem zugrundeliegende Menge/ Trägermenge, \hyperpage{19}
+  \item {\bf  Algebraischer Dualraum}
+    \subitem duale Basis, \hyperpage{174}
   \item {\bf Algebraischer Dualraum}, \hyperpage{173}
     \subitem  Linearform, \hyperpage{173}
     \subitem Doppeldual/ Bidual, \hyperpage{177}
     \subitem duale Abbildung, \hyperpage{174}
-    \subitem duale Basis, \hyperpage{174}
-  \item {\bf Allgemeine Cholesky-Zerlegung}, \hyperpage{188}
+  \item {\bf Allgemeine Cholesky-Zerlegung}, \hyperpage{189}
     \subitem Permutationsmatrix, \hyperpage{188}
   \item {\bf  Allquantor} ($\forall $), \hyperpage{3}
   \item {\bf assoziativ}, \hyperpage{19}, \hyperpage{37}
 
   \indexspace
 
-  \item {\bf Bilinearform}, \hyperpage{179}
+  \item {\bf Bilinearform}, \hyperpage{180}
     \subitem  bilineare Abbildung, \hyperpage{178}
     \subitem ausgeartet, \hyperpage{182}
     \subitem Darstellungsmatrix, \hyperpage{180}
     \subitem quadratische Form, \hyperpage{183}
-    \subitem symmetrische Bilinearform, \hyperpage{182}
-    \subitem symmetrische Matrix, \hyperpage{182}
+    \subitem symmetrische Bilinearform, \hyperpage{183}
+    \subitem symmetrische Matrix, \hyperpage{183}
 
   \indexspace
 

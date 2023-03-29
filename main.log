@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.25)  29 MAR 2023 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.25)  29 MAR 2023 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1288,25 +1288,25 @@ LaTeX Warning: Label `16.4.23' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-Package hyperref Info: Link coloring OFF on input line 251.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+Package hyperref Info: Link coloring OFF on input line 252.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1318,7 +1318,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 251.
+(scrbook)           before \begin{document} on input line 252.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1351,29 +1351,29 @@ e
 ))
 \c@lstlisting=\count383
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-65.
+66.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 265
+LaTeX Font Info:    Trying to load font information for U+msa on input line 266
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 265
+LaTeX Font Info:    Trying to load font information for U+msb on input line 266
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 
-265.
+266.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
-65.
+66.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
@@ -1474,7 +1474,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-280.
+281.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -1956,77 +1956,150 @@ Overfull \hbox (26.58786pt too wide) in paragraph at lines 29--30
  []
 
 [173]
-Overfull \hbox (23.52322pt too wide) in paragraph at lines 46--47
+Overfull \hbox (23.52322pt too wide) in paragraph at lines 47--48
 [][]\T1/cmr/bx/n/12 Korollar 13.1.6. []\T1/cmr/m/n/12 Sei $\OML/cmm/m/it/12 n \
 OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N[]$\T1/cmr/m/n/12 . Dann sind $\OT1/cmr/m/n/12
  ^^H : []$ \T1/cmr/m/n/12 und $\OT1/cmr/m/n/12 	 : []$
  []
 
-[174]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-[175] [176]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+[174] [175] [176] [177] [178] [179] [180]
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+! LaTeX Error: Illegal character in array arg.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+? s
+OK, entering \scrollmode...
 
-[177] [178] [179] [180]
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+! LaTeX Error: Illegal character in array arg.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 	\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 [181]
-Overfull \hbox (16.94554pt too wide) in paragraph at lines 383--385
+Overfull \hbox (16.94554pt too wide) in paragraph at lines 407--409
 [][]\T1/cmr/bx/n/12 Definition und Pro-po-si-ti-on 13.3.11. []\T1/cmr/m/n/12 Se
 i $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 ein $\OML/cmm/m/it/12 K$\T1/cmr/m/n/12 -V
 ektorraum mit Ba-sis $[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; [] ; v[]\OT1/
 cmr/m/n/12 )$\T1/cmr/m/n/12 .
  []
 
-[182] [183]
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+[182] [183] [184]
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 
-Overfull \hbox (9.11063pt too wide) detected at line 482
-[]
- []
-
-[184]
-Overfull \hbox (3.56052pt too wide) detected at line 488
+Overfull \hbox (9.11063pt too wide) detected at line 508
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-
+Overfull \hbox (3.56052pt too wide) detected at line 514
+[]
  []
 
 [185]
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \vbox (badness 6141) has occurred while \output is active []
+
+ [186]
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 []\T1/cmr/m/n/12 Nach Lem-ma []13.5.1[] reicht es zu zei-gen
  []
 
 
-Overfull \hbox (2.51006pt too wide) detected at line 586
+Overfull \hbox (2.51006pt too wide) detected at line 618
 []
  []
 
-[186] [187]
-Overfull \hbox (9.05482pt too wide) in paragraph at lines 622--623
+[187] [188]
+Overfull \hbox (9.05482pt too wide) in paragraph at lines 654--655
 \T1/cmr/m/n/12 von $\OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 ver-ste-hen wir ein Tri-
 pel $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; P; D\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12
  von Ma-tri-zen $\OML/cmm/m/it/12 S; P; D \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 K
@@ -2035,48 +2108,40 @@ pel $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; P; D\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12
  []
 
 
-Overfull \hbox (4.70929pt too wide) in paragraph at lines 662--664
+Overfull \hbox (4.70929pt too wide) in paragraph at lines 694--696
 \T1/cmr/m/n/12 und $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ) = []
 [] \OML/cmm/m/it/12 B[] \OT1/cmr/m/n/12 = [][]$\T1/cmr/m/n/12 . Al-so $[] \OML/
 cmm/m/it/12 A \OT1/cmr/m/n/12 = 4[] [] \OML/cmm/m/it/12 D$\T1/cmr/m/n/12 . 
  []
 
-[188]
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
 
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 679--680
-\OML/cmm/m/it/12 a[]h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML
-/cmm/m/it/12 h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm
-/m/it/12 a[]x[]x[] \OT1/cmr/m/n/12 + [] + [][] \OML/cmm/m/it/12 b[]x[]x[]$ \T1/
-cmr/m/n/12 für
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 679--680
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
 
  []
 
-[189]
-Overfull \hbox (10.05965pt too wide) in paragraph at lines 698--699
+[189] [190]
+Overfull \hbox (10.05965pt too wide) in paragraph at lines 734--735
 []\T1/cmr/m/n/12 Es ist na-tür-lich er-stre-bens-wert in ei-ner ver-all-ge-mei-
 ner-ten Cholesky-Zerlegung $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; P; D\OT1/cmr/m
 /n/12 )$
  []
 
-[190]) [191] [192
+) [191] [192
 
 ]
 chapter 14.
@@ -2655,10 +2720,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 47484 strings out of 476025
- 986107 string characters out of 5790017
+ 47496 strings out of 476025
+ 986248 string characters out of 5790017
  1902388 words of memory out of 5000000
- 65479 multiletter control sequences out of 15000+600000
+ 65485 multiletter control sequences out of 15000+600000
  552655 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,28n,120p,10599b,1752s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2681,10 +2746,6 @@ pdfTeX warning (dest): name{sat.16.2.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{sat.16.2.3} has been referenced but does not exist,
  replaced by a fixed one
-
-
-pdfTeX warning (dest): name{sat.13.5.10} has been referenced but does not exist
-, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{sat.13.3.2} has been referenced but does not exist,
@@ -2833,10 +2894,10 @@ per/sfsx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/
 sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/stmaryrd/st
 mary10.pfb>
-Output written on main.pdf (270 pages, 1772234 bytes).
+Output written on main.pdf (270 pages, 1772928 bytes).
 PDF statistics:
- 5312 PDF objects out of 6186 (max. 8388607)
- 4514 compressed objects within 46 object streams
- 1619 named destinations out of 1728 (max. 500000)
+ 5320 PDF objects out of 6186 (max. 8388607)
+ 4522 compressed objects within 46 object streams
+ 1625 named destinations out of 1728 (max. 500000)
  717 words of extra memory for PDF output out of 10000 (max. 10000000)
 

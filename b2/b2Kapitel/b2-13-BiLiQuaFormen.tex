@@ -5,713 +5,750 @@ In diesem Abschnitt sei $K$ stets ein Körper.
 \section{Algebraischer Dualraum}
 
 \begin{df}\label{13.1.1} 
-Sei $V$ ein $K$-Vektorraum. Eine \emph{Linearform}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}! Linearform} auf $V$ ist eine lineare Funktion $V\to K$. Der $K$-Vektorraum
-\begin{align*}
-V^*:=\Hom(V,K)
-\end{align*}
-aller Linearformen auf $V$ heißt der \emph{(algebraische) Dualraum}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}} von $V$.
+	Sei $V$ ein $K$-Vektorraum. Eine \emph{Linearform}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}! Linearform} auf $V$ ist eine lineare Funktion $V\to K$. Der $K$-Vektorraum
+	\begin{align*}
+		V^*:=\Hom(V,K)
+	\end{align*}
+	aller Linearformen auf $V$ heißt der \emph{(algebraische) Dualraum}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}} von $V$.
 \end{df} 
 
 \begin{er}\label{13.1.2}
-Die $K$-Vektorraumstruktur auf $V^*$ ist gegeben durch
-$(l_l+l_2)(v)=l_1(v)+l_2(v)$, $(\lambda l)(v)=\lambda\,l(v)$ für alle $l,l_1,l_2\in V^*, \lambda\in K$ und $v\in V$.
+	Die $K$-Vektorraumstruktur auf $V^*$ ist gegeben durch
+	$(l_l+l_2)(v)=l_1(v)+l_2(v)$, $(\lambda l)(v)=\lambda\,l(v)$ für alle $l,l_1,l_2\in V^*, \lambda\in K$ und $v\in V$.
 \end{er}
 
 \begin{bem}\label{13.1.3}
-Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots .v_n)$. Bezeichne mit $\e=(1)$ die Standardbasis des $K$-Vektorraums $K$.  Dann ist für $l\in V^*$
-\begin{align*}
-M(l,\underline{v},\underline{e})=\cvec{l(v_1)\\\vdots\\l(v_n)}^T
-\end{align*}
-ein Zeilenvektor. Folgender Satz ist daher ein Speziallfall von \ref{7.1.8}.
+	Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots .v_n)$. Bezeichne mit $\e=(1)$ die Standardbasis des $K$-Vektorraums $K$.  Dann ist für $l\in V^*$
+	\begin{align*}
+		M(l,\underline{v},\underline{e})=\cvec{l(v_1)\\\vdots\\l(v_n)}^T
+	\end{align*}
+	ein Zeilenvektor. Folgender Satz ist daher ein Speziallfall von \ref{7.1.8}.
 \end{bem}
 
 \begin{sat}\label{13.1.4}
-Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots v_n)$. Dann sind $\Phi: \begin{cases}V^*\to K^n\\l\mapsto \cvec{l(v_1)\\\vdots\\l(v_n)}\end{cases}$ und $\Psi: \begin{cases}K^n\to V^*\\ a\mapsto\begin{pmatrix*}V\to K\\\sum_{i=1}^n\lambda_iv_i\mapsto a^T\cvec{\lambda_1\\\vdots\\\lambda_n}\end{pmatrix*}\end{cases}$ zueinander inverse $K$-Vektorraumisomorphismen
+	Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots v_n)$. Dann sind $\Phi: \begin{cases}V^*\to K^n\\l\mapsto \cvec{l(v_1)\\\vdots\\l(v_n)}\end{cases}$ und $\Psi: \begin{cases}K^n\to V^*\\ a\mapsto\begin{pmatrix*}V\to K\\\sum_{i=1}^n\lambda_iv_i\mapsto a^T\cvec{\lambda_1\\\vdots\\\lambda_n}\end{pmatrix*}\end{cases}$ zueinander inverse $K$-Vektorraumisomorphismen
 \end{sat}
-\begin{cproof} Schon gezeigt.
+\begin{cproof} 
+	Schon gezeigt.
 \end{cproof}
 	
 \begin{kordef}\label{13.1.5}
-Sei $V$ ein $K$-Vektorraum mit Basis $\e=(v_1,\ldots v_n)$. Definiere $v_1^*,\ldots ,v_n^*\in V^*$ durch
-\begin{align*}
-v_i^*(v_j):=\begin{cases} 1 & \text{falls } i=j\\ 0 & \text{sonst}\end{cases}\ (\forall i,j\in \{1\ldots n\}).
-\end{align*}
-Dann ist $\v^*:=(v_1^*,\ldots v_n^*)$ eine Basis von $V^*$, genannt die zu $\v$ \emph{duale Basis}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!duale Basis}.
+	Sei $V$ ein $K$-Vektorraum mit Basis $\e=(v_1,\ldots v_n)$. Definiere $v_1^*,\ldots ,v_n^*\in V^*$ durch
+	\begin{align*}
+		v_i^*(v_j):=\begin{cases} 1 & \text{falls } i=j\\ 0 & \text{sonst}\end{cases}\ (\forall i,j\in \{1\ldots n\}).
+	\end{align*}
+	Dann ist $\v^*:=(v_1^*,\ldots v_n^*)$ eine Basis von $V^*$, genannt die zu $\v$ \emph{duale Basis}\index{Algebraischer Dualraum@{\bf 	Algebraischer Dualraum}!duale Basis}.
 \end{kordef}	
 \begin{cproof}
-Es ist $\v^*=(\Psi(e_1),\ldots ,\Psi(e_n))$ eine Basis, da $\Psi$ ein Vektorraumisomorphismus ist.
+	Es ist $\v^*=(\Psi(e_1),\ldots ,\Psi(e_n))$ eine Basis, da $\Psi$ ein Vektorraumisomorphismus ist.
 \end{cproof}
 
 \begin{kor}\label{13.1.6}
-Sei $n\in \N_0$. Dann sind $\Phi: \begin{cases}(K^n)^*\to K^n\\l\mapsto \cvec{l(e_1)\\\vdots\\l(e_n)}\end{cases}$ und $\Psi: \begin{cases}K^n\to (K^n)^*\\ a\mapsto\begin{pmatrix*}K^n\to K\\ x\mapsto a^Tx\end{pmatrix*}\end{cases}$ zueinander inverse $K$-Vektorraumisomorphismen.
+	Sei $n\in \N_0$. Dann sind $\Phi: \begin{cases}(K^n)^*\to K^n\\l\mapsto \cvec{l(e_1)\\\vdots\\l(e_n)}\end{cases}$ und $\Psi: \begin{cases}K^n\to (K^n)^*\\ a\mapsto\begin{pmatrix*}K^n\to K\\ x\mapsto a^Tx\end{pmatrix*}\end{cases}$ zueinander inverse $K$-Vektorraumisomorphismen.
 \end{kor}
 	
 \begin{kor}\label{13.1.7}
-Sei $\K\in \{\R, \C\}$ und $V$ ein endlichdimensionaler $\K$-Vektorraum mit Skalarprodukt. Dann ist die Abbildung $\Psi: V\to V^*, v\mapsto\begin{pmatrix*}V\to \K \\w\mapsto \scal{v,w}\end{pmatrix*}$  bijektiv und im Fall $\K=\R$ auch linear.
+	Sei $\K\in \{\R, \C\}$ und $V$ ein endlichdimensionaler $\K$-Vektorraum mit Skalarprodukt. Dann ist die Abbildung $\Psi: V\to V^*, v\mapsto\begin{pmatrix*}V\to \K \\w\mapsto \scal{v,w}\end{pmatrix*}$  bijektiv und im Fall $\K=\R$ auch linear.
 \end{kor}
 \begin{cproof}
-In \ref{11.2.23} wurde gezeigt, dass je zwei $n$-dimensionale $\K$-Vektorräume mit Skalarprodukt als solche isomorph sind. Da die Aussage nur Bezug nimmt auf die Struktur als Vektorraum mit Skalarprodukt, können wir in der Behauptung $V$ durch $\K^n$ mit Standardskalarprodukt ersetzen. Dann ist die Behauptung, dass $Psi: \K^n\to (\K^n)^*, x\mapsto\begin{pmatrix*}\K^n\to \K \\y\mapsto x^*\end{pmatrix*}$ bijektiv und falls $\K=\R$ linear ist. Der Fall $\K=\R$ ergibt sich dann genau aus Korollar \ref{13.1.6}. Sei also $\K=\C$. Dann gilt für $x:=\cvec{x_1\\\vdots\\x_n}\in \C^n$, dass    
-$x^*=(x_1^*,\ldots x_n^*)=\cvec{x_1^*\\\vdots\\x_n^*}^T=c(x)^T$, wobei $c: \C^n\to \C^n,\cvec{x_1\\\vdots\\x_n}\mapsto \cvec{x_1^*\\\vdots\\x_n^*}$ bijektiv ist. Es gilt nun:
-\begin{align*}
-\Psi\text{ bijektiv}&\Longleftrightarrow \Psi\circ c\text{ bijektiv}\\
-&\Longleftrightarrow\begin{pmatrix*}\K^n\to (\K^n)^*\\ x\mapsto \begin{pmatrix*}\K^n\to \K\\ y\mapsto x^Ty
-\end{pmatrix*}\end{pmatrix*}\text{ bijektiv}
-\end{align*}
-Letzteres folgt aus Korollar \ref{13.1.6} für $\K=\C$.
+	In \ref{11.2.23} wurde gezeigt, dass je zwei $n$-dimensionale $\K$-Vektorräume mit Skalarprodukt als solche isomorph sind. Da die Aussage nur Bezug nimmt auf die Struktur als Vektorraum mit Skalarprodukt, können wir in der Behauptung $V$ durch $\K^n$ mit Standardskalarprodukt ersetzen. Dann ist die Behauptung, dass $Psi: \K^n\to (\K^n)^*, x\mapsto\begin{pmatrix*}\K^n\to \K \\y\mapsto x^*\end{pmatrix*}$ bijektiv und falls $\K=\R$ linear ist. Der Fall $\K=\R$ ergibt sich dann genau aus Korollar \ref{13.1.6}. Sei also $\K=\C$. Dann gilt für $x:=\cvec{x_1\\\vdots\\x_n}\in \C^n$, dass    
+	$x^*=(x_1^*,\ldots x_n^*)=\cvec{x_1^*\\\vdots\\x_n^*}^T=c(x)^T$, wobei $c: \C^n\to \C^n,\cvec{x_1\\\vdots\\x_n}\mapsto \cvec{x_1^*\\\vdots\\x_n^*}$ bijektiv ist. Es gilt nun:
+	\begin{align*}
+		\Psi\text{ bijektiv}&\Longleftrightarrow \Psi\circ c\text{ bijektiv}\\
+		&\Longleftrightarrow\begin{pmatrix*}\K^n\to (\K^n)^*\\ x\mapsto \begin{pmatrix*}\K^n\to \K\\ y\mapsto x^Ty
+		\end{pmatrix*}\end{pmatrix*}\text{ bijektiv}
+	\end{align*}
+	Letzteres folgt aus Korollar \ref{13.1.6} für $\K=\C$.
 \end{cproof}
 
 \begin{propdef}\label{13.1.8}
-Seien $V,W$ je $K$-Vektorräume und sei $f: V\to W$ linear. Dann ist die Abbildung $f^*: W^*\to V^*, l\mapsto l\circ f$ linear und heißt die zu $f$ \emph{duale lineare Abbildung}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!duale Abbildung}.
+	Seien $V,W$ je $K$-Vektorräume und sei $f: V\to W$ linear. Dann ist die Abbildung $f^*: W^*\to V^*, l\mapsto l\circ f$ linear und heißt die zu $f$ \emph{duale lineare Abbildung}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!duale Abbildung}.
 \end{propdef}
 \begin{cproof}
-$f^*$ ist wohldefiniert, da für $l\in W^*$ gilt $l\circ f\in V^*$. Denn ist $l: W\to K$ linear, so auch $l\circ f: V\to K$. Zu zeigen verbleibt die Linearität von $f^*$. Sei hierfür $l_1,l_2\in W^*$ und $v\in V$. Dann gilt
-\begin{align*}
-(f^*(l_1+l_2))(v)&=((l_1+l_2)\circ f)(v)=(l_1+l_2)(f(v))=l_1(f(v))+l_2(f(v))\\
-&=(l_1\circ f)(v)+(l_2\circ f)(v)=(f^*(l_1))(v)+(f^*(l_2))(v),
-\end{align*}
-also $f^*(l_1+l_2)=f^*(l_1)+f^*(l_2)$.	Sei nun $l\in W^*$, $v\in V$ und $\lambda\in K$. Es folgt
-\begin{align*}
-(f^*(\lambda l))(v)&=((\lambda l)\circ f)(v)=(\lambda l)(f(v))=\lambda(l(f(v)))=\lambda((f^*(l)(v)),
-\end{align*}
+	$f^*$ ist wohldefiniert, da für $l\in W^*$ gilt $l\circ f\in V^*$. Denn ist $l: W\to K$ linear, so auch $l\circ f: V\to K$. Zu zeigen verbleibt die Linearität von $f^*$. Sei hierfür $l_1,l_2\in W^*$ und $v\in V$. Dann gilt
+	\begin{align*}
+		(f^*(l_1+l_2))(v)&=((l_1+l_2)\circ f)(v)=(l_1+l_2)(f(v))=l_1(f(v))+l_2(f(v))\\
+		&=(l_1\circ f)(v)+(l_2\circ f)(v)=(f^*(l_1))(v)+(f^*(l_2))(v),
+	\end{align*}
+	also $f^*(l_1+l_2)=f^*(l_1)+f^*(l_2)$.	Sei nun $l\in W^*$, $v\in V$ und $\lambda\in K$. Es folgt
+	\begin{align*}
+		(f^*(\lambda l))(v)&=((\lambda l)\circ f)(v)=(\lambda l)(f(v))=\lambda(l(f(v)))=\lambda((f^*(l)(v)),
+	\end{align*}
 \end{cproof}
 	
 \begin{pro}\label{13.1.9}
-Seien $U,V,W$ je $K$-Vektorräume und $U\stackrel{g}{\to}V\stackrel{f}{\to}W$ linear. Dann gilt $(f\circ g)^*=g^*\circ f^*$.
+	Seien $U,V,W$ je $K$-Vektorräume und $U\stackrel{g}{\to}V\stackrel{f}{\to}W$ linear. Dann gilt $(f\circ g)^*=g^*\circ f^*$.
 \end{pro}
 \begin{cproof}
-Es ist $f\circ g: U\to W$, also $(f\circ g)^*: W\to U$. Auch ist $g^*: W\to V$ und $f^*: V\to U$, also $g^*\circ f^*: W\to U$. Die Definitions und Zielbereiche stimmen folglich überein. Zum Beweis der punktweisen Gleichheit sei $l\in W^*$. Zu zeigen ist $(f\circ g)^*(l)=g^*(f^*(l))$. Wir tun dies über die Gleichungskette
-\begin{align*}
-(f\circ g)^*(l)=l\circ (f\circ g)=(l\circ f)\circ g=(f^*(l))\circ g
-&=g^*(f^*(l)).
-\end{align*}
+	Es ist $f\circ g: U\to W$, also $(f\circ g)^*: W\to U$. Auch ist $g^*: W\to V$ und $f^*: V\to U$, also $g^*\circ f^*: W\to U$. Die Definitions und Zielbereiche stimmen folglich überein. Zum Beweis der punktweisen Gleichheit sei $l\in W^*$. Zu zeigen ist $(f\circ g)^*(l)=g^*(f^*(l))$. Wir tun dies über die Gleichungskette
+	\begin{align*}
+		(f\circ g)^*(l)=l\circ (f\circ g)=(l\circ f)\circ g=(f^*(l))\circ g
+		&=g^*(f^*(l)).
+	\end{align*}
 \end{cproof}
 
 \begin{pro}\label{13.1.10}
-Die Abbildung $\Hom(V,W)\to \Hom(W^*,V^*), f\mapsto f^*$ ist linear.
+	Die Abbildung $\Hom(V,W)\to \Hom(W^*,V^*), f\mapsto f^*$ ist linear.
 \end{pro}
 \begin{cproof}
-Sei $f,g\in \Hom(V,W)$ und $\lambda\in K$. Zu zeigen ist:
-\begin{enumerate}[\normalfont(a)]
-\item $(f+g)^*=f^*+g^*$
-\item $(\lambda f)^*=\lambda f^*$
-\end{enumerate}
-(a) Für alle $l\in W^*$ und $v\in V$ gilt
-\begin{align*}
-((f+g^*)(l))(v)&=(l\circ (f+g))(v)=(l\circ f+l\circ g)(v)=(l\circ f)(v)+(l\circ g)(v)\\
-&=(f^*(l))(v)+(g^*(l))(v)),
-\end{align*}
-wobei wir genutzt haben, dass $l$ linear ist.\\
-	
-\noindent(b) Für alle $l\in W^*$, $v\in V$ gilt
-\begin{align*}
-((\lambda f)^*(l))(v)=(l\circ (\lambda f))(v)=\lambda((l\circ f)(v))=\lambda(f^*(v)),
-\end{align*}
-wieder per Linearität von $l$.
+	Sei $f,g\in \Hom(V,W)$ und $\lambda\in K$. Zu zeigen ist:
+	\begin{enumerate}[\normalfont(a)]
+		\item $(f+g)^*=f^*+g^*$
+		\item $(\lambda f)^*=\lambda f^*$
+	\end{enumerate}
+	Arbeite die Bedingungen ab. 
+	\begin{enumerate}[\normalfont(a)]
+		\item Für alle $l\in W^*$ und $v\in V$ gilt
+		\begin{align*}
+			((f+g^*)(l))(v)&=(l\circ (f+g))(v)=(l\circ f+l\circ g)(v)=(l\circ f)(v)+(l\circ g)(v)\\
+			&=(f^*(l))(v)+(g^*(l))(v)),
+		\end{align*}
+		wobei wir genutzt haben, dass $l$ linear ist.
+		\item Für alle $l\in W^*$, $v\in V$ gilt
+		\begin{align*}
+			((\lambda f)^*(l))(v)=(l\circ (\lambda f))(v)=\lambda((l\circ f)(v))=\lambda(f^*(v)),
+		\end{align*}
+		wieder per Linearität von $l$.
+	\end{enumerate}
 \end{cproof}
 
 \begin{pro}\label{13.1.11}
-Seien $V,W$ endlichdimensionale $K$-Vektorräume mit geordneten Basen $\v$ und $\w$. Sei $f: V\to W$ linear. Dann gilt
-\begin{align*}
-M(f^*,\w^*,\v^*)=M(f,\v,\w)^T.
-\end{align*}
-\framebox{''Transponieren heißt Komponenten dualisieren.''}
+	Seien $V,W$ endlichdimensionale $K$-Vektorräume mit geordneten Basen $\v$ und $\w$. Sei $f: V\to W$ linear. Dann gilt
+	\begin{align*}
+		M(f^*,\w^*,\v^*)=M(f,\v,\w)^T.
+	\end{align*}
+	\begin{center}
+		\framebox{\enquote{Transponieren heißt Komponenten dualisieren.}}
+	\end{center}
 \end{pro}
 \begin{cproof}
-Schreibe $\v=(v_1,\ldots ,v_n)$, $\w=(w_1,\ldots w_m)$, $\v^*=(v_1^*,\ldots v_n^*)$ und $\w^*=(w_1^*,\ldots ,w_m^*)$. Schreibe $M(f,\v,\w)=(a_{i,j})_{(i,j)\in \{1\ldots m\}\times\{1\ldots n\}}$. Dann ist
-\begin{align*}
-f(v_j)=\sum^m_{i=1}a_{i,j}w_i \text{ für } j\in\{1\ldots n\}.
-\end{align*}
-Daher gilt
-\begin{align*}
-(f^*(w_i^*))(v_j)&=(w_i^*\circ f)(v_j)=w^*(f(v_j))=w^*_i\left(\sum^m_{i=1}a_{i,j}w_i \right)\\
-&=\sum^m_{k=1}a_{k,j}w_i^*(w_k)=a_{i,j}=\sum^m_{k=1}a_{i,k}v_k^*(v_j)=\left(\sum^m_{k=1}a_{i,k}v_k^*\right)(v_j)
-\end{align*}
-für $i\in\{1\ldots n\}$ und $j\in\{1,\ldots ,n\}$. Es folgt
-\begin{align*}
-f^*(w_i^*)=\sum^m_{k=1}a_{i,k}v_k^*\text{ für }i\in\{1\ldots n\}.
-\end{align*}
-Dies bedeutet $M(f^*,\v^*,\w^*)=(a_{i,j})_{(j,i)\in \{1\ldots n\}\times\{1\ldots m\}}=M(f,\underline{v},\underline{w})^T$.
+	Schreibe $\v=(v_1,\ldots ,v_n)$, $\w=(w_1,\ldots w_m)$, $\v^*=(v_1^*,\ldots v_n^*)$ und $\w^*=(w_1^*,\ldots ,w_m^*)$. Schreibe $M(f,\v,\w)=(a_{i,j})_{(i,j)\in \{1\ldots m\}\times\{1\ldots n\}}$. Dann ist
+	\begin{align*}
+		f(v_j)=\sum^m_{i=1}a_{i,j}w_i \text{ für } j\in\{1\ldots n\}.
+	\end{align*}
+	Daher gilt
+	\begin{align*}
+		(f^*(w_i^*))(v_j)&=(w_i^*\circ f)(v_j)=w^*(f(v_j))=w^*_i\left(\sum^m_{i=1}a_{i,j}w_i \right)\\
+		&=\sum^m_{k=1}a_{k,j}w_i^*(w_k)=a_{i,j}=\sum^m_{k=1}a_{i,k}v_k^*(v_j)=\left(\sum^m_{k=1}a_{i,k}v_k^*\right)(v_j)
+	\end{align*}
+	für $i\in\{1\ldots n\}$ und $j\in\{1,\ldots ,n\}$. Es folgt
+	\begin{align*}
+		f^*(w_i^*)=\sum^m_{k=1}a_{i,k}v_k^*\text{ für }i\in\{1\ldots n\}.
+	\end{align*}
+	Dies bedeutet $M(f^*,\v^*,\w^*)=(a_{i,j})_{(j,i)\in \{1\ldots n\}\times\{1\ldots m\}}=M(f,\underline{v},\underline{w})^T$.
 \end{cproof}
 	
 \begin{pro}\label{13.1.12}
-Seien $V,W$ eindlichdimensionale $K$-Vektorräume und $f: V\to W$ linear. Dann gilt:	
-\begin{enumerate}[\normalfont(a)]
-\item $\dim \ker f+\dim \im f^*=\dim V$ und $\dim \im f+\dim\ker f^*=\dim W$,
-\item $f\text{ injektiv}\Longleftrightarrow f^*\text{ surjektiv}$,
-\item $f\text{ surjektiv}\Longleftrightarrow f^*\text{ injektiv}$,
-\item $f\text{ bijektiv}\Longleftrightarrow f^*\text{ bijektiv}$.
-\end{enumerate}
+	Seien $V,W$ eindlichdimensionale $K$-Vektorräume und $f: V\to W$ linear. Dann gilt:	
+	\begin{enumerate}[\normalfont(a)]
+		\item $\dim \ker f+\dim \im f^*=\dim V$ und $\dim \im f+\dim\ker f^*=\dim W$,
+		\item $f\text{ injektiv}\Longleftrightarrow f^*\text{ surjektiv}$,
+		\item $f\text{ surjektiv}\Longleftrightarrow f^*\text{ injektiv}$,
+		\item $f\text{ bijektiv}\Longleftrightarrow f^*\text{ bijektiv}$.
+	\end{enumerate}
 \end{pro}
 \begin{cproof}
-(a) Nach der Dimensionsformel für die lineare Abbildung $f$ und $f^*$ [$\to$\ref{8.1.12}] genügt es $\dim \im f=\dim \im f^*$ zu zeigen. Wähle Basen $\v$ von $V$ und $\w$ von $W$. Es gilt 
-\begin{align*}
-\dim \im f^* &\stackrel{\ref{8.1.15}}{=}\rank M(f^*,\underline{v}^*,\underline{w}^*)=\dim\im M(f^*,\underline{v}^*,\underline{w}^*)\\
-&=\dim\row M(f^*,\underline{v}^*,\underline{w}^*)^T=\rank M(f^*,\underline{v}^*,\underline{w}^*)^T\\
-&\stackrel{\ref{13.1.11}}{=}\rank M(f,\underline{v},\underline{w})=\dim\im f.
-\end{align*}
-(b) und (c) folgen sofort aus (a). (d) folgt aus (b) und (c).
+	Zeige die Behauptungen.
+	\begin{enumerate}[\normalfont(a)]
+		\item Nach der Dimensionsformel für die lineare Abbildung $f$ und $f^*$ [$\to$\ref{8.1.12}] genügt es $\dim \im f=\dim \im f^*$ zu zeigen. Wähle Basen $\v$ von $V$ und $\w$ von $W$. Es gilt 
+		\begin{multline*}
+			\dim \im f^* \stackrel{\ref{8.1.15}}{=}\rank M(f^*,\underline{v}^*,\underline{w}^*)=\dim\im M(f^*,\underline{v}^*,\underline{w}^*)\\
+			=\dim\row M(f^*,\underline{v}^*,\underline{w}^*)^T=\rank M(f^*,\underline{v}^*,\underline{w}^*)^T\\
+			\stackrel{\ref{13.1.11}}{=}\rank M(f,\underline{v},\underline{w})=\dim\im f.
+		\end{multline*}
+		\item[(b)$\,\&\,$(c)] folgen sofort aus (a).
+		\item[(d)] folgt aus (b) und (c).
+	\end{enumerate} 
+		% (b) und (c) folgen sofort aus (a). (d) folgt aus (b) und (c).
 \end{cproof}
 
 \begin{df}\label{13.1.13}
-Ist $V$ ein $K$-Vektorraum, so heißt $\ddual V:=(V^*)^*$ das \emph{Doppeldual}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!Doppeldual/ Bidual} (auch: Bidual) von $V$.
+	Ist $V$ ein $K$-Vektorraum, so heißt $\ddual V:=(V^*)^*$ das \emph{Doppeldual}\index{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!Doppeldual/ Bidual} (auch: Bidual) von $V$.
 \end{df}
 
 \begin{pro}\label{13.1.14}
-Sei $V$ ein $K$-Vektorraum. Die kanonische Abbildung $\ep : V\to \ddual V, v\mapsto\begin{pmatrix*}[l]V^*\to K\\ l\mapsto l(v)\end{pmatrix*}$ ist linear und injektiv. Ist $V$ endlichdimensional, so ist sie auch surjektiv.
+	Sei $V$ ein $K$-Vektorraum. Die kanonische Abbildung $\ep : V\to \ddual V, v\mapsto\begin{pmatrix*}[l]V^*\to K\\ l\mapsto l(v)\end{pmatrix*}$ ist linear und injektiv. Ist $V$ endlichdimensional, so ist sie auch surjektiv.
 \end{pro}
 \begin{cproof}
-\underline{$\ep$ wohldefiniert}. Sei $v\in V$. Zu zeigen ist, $V^*\to K, l\mapsto l(v)$ ist linear. Dies ist klar nach Linearität der Elemente in $V^*$.\\
-		
-\noindent\underline{$\ep$ linear}. Seien $v_1,v_2,v\in V$ und $\lambda\in K$. Es gilt für alle $l\in V^*$
-\begin{align*}
-(\ep(v_1+v_2))(l)=l(v_1+v_2)=l(v_1)+l(v_2)=(\ep(v_1))(l)+(\ep(v_2))(l)
-\end{align*}
-sowie
-\begin{align*}
-(\ep(\lambda v))(l)=l(\lambda v)=\lambda l(v)=\lambda((\ep(v))(l)).
-\end{align*}
-		
-\noindent\underline{$\varepsilon$ injektiv}. Sei $v\in V\setminus\{0\}$. Zu zeigen ist $\varepsilon\neq 0$. Nach \ref{12.3.2} gibt es dann eine Basis $B$ von $V$ mit $v\in B$. Definiere eine linear Abbildung $l: V\to K$ mit $l(b)=1$ für alle $b\in B$. Dann insbesondere $l(v)=1$, also $(\varepsilon(v))(l)=1$ und daher $\varepsilon(v)\neq 0$.\\
-		
-\noindent\underline{$\varepsilon$ surjektiv}. Ist $V$ endlichdimensional, so gilt wegen \eqref{13.1.5} $\dim \ddual V=\dim V^*=\dim V$, weswegen $\varepsilon$ dann surjektiv ist.
+	Zeige die nötigen Abbildungseigenschaften.
+	\begin{itemize}
+		\item[\underline{$\ep$ wohldefiniert.}] Sei $v\in V$. Zu zeigen ist, $V^*\to K, l\mapsto l(v)$ ist linear. Dies ist klar nach Linearität der Elemente in $V^*$.
+		\item[\underline{$\ep$ linear.}] Seien $v_1,v_2,v\in V$ und $\lambda\in K$. Es gilt für alle $l\in V^*$
+		\begin{align*}
+			(\ep(v_1+v_2))(l)=l(v_1+v_2)=l(v_1)+l(v_2)=(\ep(v_1))(l)+(\ep(v_2))(l)
+		\end{align*}
+		sowie
+		\begin{align*}
+			(\ep(\lambda v))(l)=l(\lambda v)=\lambda l(v)=\lambda((\ep(v))(l)).
+		\end{align*}
+		\item[\underline{$\ep$ injektiv.}] Sei $v\in V\setminus\{0\}$. Zu zeigen ist $\varepsilon\neq 0$. Nach \ref{12.3.2} gibt es dann 	eine Basis $B$ von $V$ mit $v\in B$. Definiere eine linear Abbildung $l: V\to K$ mit $l(b)=1$ für alle $b\in B$. Dann insbesondere $l(v)=1$, also $(\varepsilon(v))(l)=1$ und daher $\varepsilon(v)\neq 0$.
+		\item[\underline{$\ep$ surjektiv.}] Ist $V$ endlichdimensional, so gilt wegen \eqref{13.1.5} $\dim \ddual V=\dim V^*=\dim V$,weswegen $\ep$ dann surjektiv ist.
+	\end{itemize}
 \end{cproof}
 
 \begin{bem}\label{13.1.15}
-Seien $V,W$ je $K$-Vektorräume und $f: V\to W$ eine lineare Abbildung. Seine $\varepsilon_V: V\to \ddual V$ und $\varepsilon_W: W\to \ddual W$ die kanonischen Abbildungen wie in \ref{13.1.14}. Dann kommutiert das folgende Diagramm:
-\begin{center}
-\begin{tikzpicture}
-\node(V){$V$};
-\node[right = 4cm of V](W){$W$};
-\node[below = 2cm of V](DV){$\ddual V$};
-\node[below = 2cm of W](DW){$\ddual W$};
+	Seien $V,W$ je $K$-Vektorräume und $f: V\to W$ eine lineare Abbildung. Seine $\varepsilon_V: V\to \ddual V$ und $\varepsilon_W: W\to \ddual W$ die kanonischen Abbildungen wie in \ref{13.1.14}. Dann kommutiert das folgende Diagramm:
+	\begin{center}
+		\begin{tikzpicture}
+			\node(V){$V$};
+			\node[right = 4cm of V](W){$W$};
+			\node[below = 2cm of V](DV){$\ddual V$};
+			\node[below = 2cm of W](DW){$\ddual W$};
 
-\draw[->, thick] (V) -- node[above]{$f$} (W);
-\draw[->, thick] (V) -- node[anchor = north, rotate = -90]{$\ep_V$}  (DV);
-\draw[->, thick] (DV) -- node[above](u){$\ddual f$} (DW);
-\draw[->, thick] (W) -- node[anchor = north, rotate = 90]{$\ep_W$}  (DW);
-\end{tikzpicture}
-\end{center}
-Also $\varepsilon_W\circ f= \ddual f\circ \varepsilon_V$. Ist nämlich $v \in V$ und $l\in W^*$, so gilt
-\begin{align*}
-((\ddual f\circ \varepsilon_V)(v))(l)&=(\ddual f(\varepsilon_V(v)))(l)=(\varepsilon_V(v)\circ f^*)(l)=(\varepsilon_V(v))(f^*(l))\\
-&=(\varepsilon_V(v))(l\circ f)=(l\circ f)(v)=l(f(v))\\
-&=(\varepsilon_W(f(v)))(l)=((\varepsilon_W\circ f)(v))(l)
-\end{align*}
+			\draw[->, thick] (V) -- node[above]{$f$} (W);
+			\draw[->, thick] (V) -- node[anchor = north, rotate = -90]{$\ep_V$}  (DV);
+			\draw[->, thick] (DV) -- node[above](u){$\ddual f$} (DW);
+			\draw[->, thick] (W) -- node[anchor = north, rotate = 90]{$\ep_W$}  (DW);
+		\end{tikzpicture}
+	\end{center}
+	Also $\varepsilon_W\circ f= \ddual f\circ \varepsilon_V$. Ist nämlich $v \in V$ und $l\in W^*$, so gilt
+	\begin{align*}
+		((\ddual f\circ \varepsilon_V)(v))(l)&=(\ddual f(\varepsilon_V(v)))(l)=(\varepsilon_V(v)\circ f^*)(l)=(\varepsilon_V(v))(f^*(l))\\
+		&=(\varepsilon_V(v))(l\circ f)=(l\circ f)(v)=l(f(v))\\
+		&=(\varepsilon_W(f(v)))(l)=((\varepsilon_W\circ f)(v))(l)
+	\end{align*}
 \end{bem}
 
 
 \section{Bilineare Abbildungen}
 \begin{df}\label{13.2.1}
-Seien $V_1,V_2$ und $W$ Mengen und $b: V_1\times V_2\to W$ eine Abbildung. Dann bezeichen wir für $v_1\in V_1$ mit $b(v_1,\cdot)$ die Abbildung $V_2\to W, v_2\mapsto b(v_1,v_2)$ und für $v_2\in V_2$ mit $b(\cdot,v_2)$ die Abbildung $V_1\to W, v_1\mapsto b(v_1,v_2)$.
+	Seien $V_1,V_2$ und $W$ Mengen und $b: V_1\times V_2\to W$ eine Abbildung. Dann bezeichen wir für $v_1\in V_1$ mit $b(v_1,\cdot)$ die Abbildung $V_2\to W, v_2\mapsto b(v_1,v_2)$ und für $v_2\in V_2$ mit $b(\cdot,v_2)$ die Abbildung $V_1\to W, v_1\mapsto b(v_1,v_2)$.
 \end{df}	
 
 \begin{df}\label{13.2.2}
-Seien $V_1,V_2$ und $W$ je $K$-Vektorräume. Eine Abbildung $b: V_1\times V_2\to W$ heißt bilinear \emph{bilinear}\index{Bilinearform@{\bf Bilinearform}! bilineare Abbildung} , wenn $b(\cdot,v_2)$ für alle $v_2\in V_2$ und $b(v_1,\cdot)$ für alle $v_1\in V_1$ linear sind.
+	Seien $V_1,V_2$ und $W$ je $K$-Vektorräume. Eine Abbildung $b: V_1\times V_2\to W$ heißt bilinear \emph{bilinear}\index{Bilinearform@{\bf Bilinearform}! bilineare Abbildung} , wenn $b(\cdot,v_2)$ für alle $v_2\in V_2$ und $b(v_1,\cdot)$ für alle $v_1\in V_1$ linear sind.
 \end{df}
 	
 \begin{bsp}\label{13.2.3}
-\begin{enumerate}[\normalfont(a)]
-\item Seien $U,V,W$ je $K$-Vektorräume. In \ref{7.1.7} wurde gezeigt, dass die Hintereinanderschaltung von linearer Abbildungen
-\begin{align*}
-\Hom(V,W)\times \Hom(U,V)&\to\Hom(U,W)\\
-(g,f)&\mapsto g\circ f,
-\end{align*}		
-eine bilineare Abbildung ist.		
-\item[(b)]	Seien $m,n,r\in N_0$. In \ref{7.2.7}(b) wurde gezeigt, dass die Matrizenmultiplikation,
-\begin{align*}
-K^{m\times n}\times K^{n\times r}&\to K^{m\times r}\\
-(A,B)&\mapsto AB,
-\end{align*}
-bilinear ist.
-\end{enumerate}
+	$\;$
+	\begin{enumerate}[\normalfont(a)]
+		\item Seien $U,V,W$ je $K$-Vektorräume. In \ref{7.1.7} wurde gezeigt, dass die Hintereinanderschaltung von linearer Abbildungen
+		\begin{align*}
+			\Hom(V,W)\times \Hom(U,V)&\to\Hom(U,W)\\
+			(g,f)&\mapsto g\circ f,
+		\end{align*}		
+		eine bilineare Abbildung ist.		
+		\item Seien $m,n,r\in N_0$. In \ref{7.2.7}(b) wurde gezeigt, dass die Matrizenmultiplikation,
+		\begin{align*}
+			K^{m\times n}\times K^{n\times r}&\to K^{m\times r}\\
+			(A,B)&\mapsto AB,
+		\end{align*}
+		bilinear ist.
+	\end{enumerate}
 \end{bsp}
 
 \begin{bem} \label{13.2.4}
-Seien $V_1,V_2$ und $W$ je $K$-Vektorräume.
-\begin{enumerate}[\normalfont(a)]
-\item Es ist $\{b\mid b: V_1\times V_2\to W\text{ bilinear}\}$ ein Unterraum des $K$-Vektorraums $W^{V_1\times V_2}$.
-\item ist $f: V_1\times V_2\to W$ gleichzeitig linear und bilinear, so gilt $f=0$. Denn ist $(v_1,v_2)\in V_1\times V_2$, so gilt
-\begin{align*}
-f((v_1,v_2))=f((v_1,0))+f((0,v_2))=0+0=0.
-\end{align*}
-\item Ist $b: V_1\times V_2\to W$ bilinear, so auch $V_2\times V_1\to W, (v_2,v_1)\mapsto b(v_1,v_2)$. Daher kann man z.B. im nächsten Satz die Rolle von erstem und zweitem Argument vertauschen.
-\item Das Studium bilinearer Abbildungen kann teilweise auf das Studium linearer Abbildung zurückgeführt werden. Siehe nächster Satz.
-\end{enumerate}
+	Seien $V_1,V_2$ und $W$ je $K$-Vektorräume.
+	\begin{enumerate}[\normalfont(a)]
+		\item Es ist $\{b\mid b: V_1\times V_2\to W\text{ bilinear}\}$ ein Unterraum des $K$-Vektorraums $W^{V_1\times V_2}$.
+		\item ist $f: V_1\times V_2\to W$ gleichzeitig linear und bilinear, so gilt $f=0$. Denn ist $(v_1,v_2)\in V_1\times V_2$, so gilt
+		\begin{align*}
+			f((v_1,v_2))=f((v_1,0))+f((0,v_2))=0+0=0.
+		\end{align*}
+		\item Ist $b: V_1\times V_2\to W$ bilinear, so auch $V_2\times V_1\to W, (v_2,v_1)\mapsto b(v_1,v_2)$. Daher kann man z.B. im nächsten Satz die Rolle von erstem und zweitem Argument vertauschen.
+		\item Das Studium bilinearer Abbildungen kann teilweise auf das Studium linearer Abbildung zurückgeführt werden. Siehe nächster Satz.
+	\end{enumerate}
 \end{bem}
 
 \begin{lem}\label{13.2.5} 
-Seien $V_1,V_2$ und $W$ Mengen. Dann sind die Abbildungen\\ $\Phi: \begin{cases}W^{V_1\times V_2}\to(W^{V_2})^{V_1}\\
-b\mapsto\begin{pmatrix*}[l]V_1\to W^{V_2}\\ v_1\mapsto b(v_1,\cdot)\end{pmatrix*}\end{cases}$ und $\Psi: \begin{cases}(W^{V_2})^{V_1}\to W^{V_1\times V_2}\\f\mapsto\begin{pmatrix*}[l] V_1\times V_2\to W\\ (v_1,v_2)\mapsto (f(v_1))(v_2)\end{pmatrix*}\end{cases}$ zueinander invers und damit insbesondere bijektiv. Ist $W$ ein $K$-Vektorraum, so sind $\Phi$ und $\Psi$ sogar $K$-Vektorraumisomorphismen.
+	Seien $V_1,V_2$ und $W$ Mengen. Dann sind die Abbildungen
+	\begin{align*}
+		\Phi: \begin{cases}W^{V_1\times V_2}\to(W^{V_2})^{V_1}\\ b\mapsto\begin{pmatrix*}[l]V_1\to W^{V_2}\\ v_1\mapsto b(v_1,\cdot)\end{pmatrix*}\end{cases}\hspace{0.5cm}\text{und}\hspace{0.5cm}
+		\Psi: \begin{cases}(W^{V_2})^{V_1}\to W^{V_1\times V_2}\\f\mapsto\begin{pmatrix*}[l] V_1\times V_2\to W\\ (v_1,v_2)\mapsto (f(v_1))(v_2)\end{pmatrix*}\end{cases}
+	\end{align*}
+	zueinander invers und damit insbesondere bijektiv. Ist $W$ ein $K$-Vektorraum, so sind $\Phi$ und $\Psi$ sogar $K$-Vektorraumisomorphismen.
 \end{lem}
 \begin{cproof}
-Übung.
+	Übung.
 \end{cproof}
 
 \begin{sat}\label{13.2.6}
-Seien $V_1,V_2$ und $W$ je $K$-Vektorräume. Dann sind die Abbildungen\\ $\Phi: \begin{cases}\{b\mid b: V_1\times V_2\to W\text{ bilinear}\}\to\Hom(V_1,\Hom(V_2,W))\\
-b\mapsto\begin{pmatrix*}[l]V_1\to \Hom(V_2,W)\\ v_1\mapsto b(v_1,\cdot)\end{pmatrix*}\end{cases}$ und\\
-$\Psi: \begin{cases}\Hom(V_1,\Hom(V_2,W))\to \{b\mid b: V_1\times V_2\to W\text{ bilinear}\}\\
-f\mapsto\begin{pmatrix*}[l]V_1\times V_2\to W\\ (v_1,v_2)\mapsto (f(v_1))(v_2)\end{pmatrix*}\end{cases}$ zueinander inverse $K$-Vektorraumisomorphismen.
+	Seien $V_1,V_2$ und $W$ je $K$-Vektorräume. Dann sind die Abbildungen
+	\begin{align*}
+		\Phi&:\begin{cases}\{b\mid b: V_1\times V_2\to W\text{ bilinear}\}\to\Hom(V_1,\Hom(V_2,W))\\ b\mapsto\begin{pmatrix*}[l]V_1\to \Hom(V_2,W)\\ v_1\mapsto b(v_1,\cdot)\end{pmatrix*}\end{cases} \;\text{und}\;\\
+		\Psi&:\begin{cases}\Hom(V_1,\Hom(V_2,W))\to \{b\mid b: V_1\times V_2\to W\text{ bilinear}\}\\ f\mapsto\begin{pmatrix*}[l]V_1\times V_2\to W\\ (v_1,v_2)\mapsto (f(v_1))(v_2)\end{pmatrix*}\end{cases}
+	\end{align*}
+	zueinander inverse $K$-Vektorraumisomorphismen.
 \end{sat}
 \begin{cproof}
-Es reicht zu zeigen, dass für $\Phi$ definiert wie in Lemma \ref{13.2.5} und jede Abbildung $b: V_1\times V_2\to W$ gilt $b\text{ bilinear}\Longleftrightarrow\Phi(b)\in \Hom(V_1,\Hom(V_2,W))$.
-\begin{itemize}
-\item[$\implies$] Sei $b$ bilinear. Dann ist ist $(\Phi(b))(v_1)=b(v_1,\cdot)$ linear für also $v_1\in V$, also $\Phi(b): V_1\to \Hom(V_2,W)$ eine Abbildung. Zu zeigen ist, $\Phi(b)$ ist linear. Seien hierzu $v_1,v_1'\in V_1$ und $\lambda\in K$. Nach Definition von $\Phi$ ist zu zeigen $b(v_1+v_1',\cdot)=b(v_1,\cdot)+b(v_1',\cdot)$ und $b(\lambda v_1,\cdot)=\lambda b(v_1,\cdot)$. Sei $v_2\in V_2$. Dann gilt
-\begin{align*}
-(b(v_1+v_1',\cdot))(v_2)&=b(v_1+v_1',v_2)=b(v_1,v_2)+b(v_1',v_2)\\&=(b(v_1,\cdot))(v_2)+(b(v_1',\cdot))(v_2)
-\end{align*}
-und
-\begin{align*}
-(b(\lambda v_1,\cdot))(v_2)&=b(\lambda v_1,v_2)=\lambda b(v_1,v_2)=(\lambda b(v_1,\cdot))(v_2).
-\end{align*}
-\item[$\impliedby$] Sei $\Phi(b): V_1\to \Hom(V_2,W)$ linear. Zu zeigen ist $\forall v_1\in V_1: b(v_1,\cdot)\text{ linear}$ und $\forall v_2\in V_2: b(\cdot, v_2)\text{ linear}$. Ersteres ist klar, denn $\forall v_1\in V_2: (\Phi(b))(v_1)=b(v_1,\cdot))$. Für Zweiteres sei $v_2\in V_2$. Dann ist $\ep: \Hom(V_2,W)\to W, g\mapsto g(v_2)$ linear und $b(\cdot,v_2)=\ep\circ \Phi(b)$ ebenso.
-\end{itemize}
+	Es reicht zu zeigen, dass für $\Phi$ definiert wie in Lemma \ref{13.2.5} und jede Abbildung $b: V_1\times V_2\to W$ gilt $b\text{ bilinear} \Longleftrightarrow\Phi(b)\in \Hom(V_1,\Hom(V_2,W))$.
+	\begin{itemize}
+		\item[$\implies$] Sei $b$ bilinear. Dann ist ist $(\Phi(b))(v_1)=b(v_1,\cdot)$ linear für also $v_1\in V$, also $\Phi(b): V_1\to \Hom(V_2,W)$ eine Abbildung. Zu zeigen ist, $\Phi(b)$ ist linear. Seien hierzu $v_1,v_1'\in V_1$ und $\lambda\in K$. Nach Definition von $\Phi$ ist zu zeigen $b(v_1+v_1',\cdot)=b(v_1,\cdot)+b(v_1',\cdot)$ und $b(\lambda v_1,\cdot)=\lambda b(v_1,\cdot)$. Sei $v_2\in V_2$. Dann gilt
+		\begin{align*}
+			(b(v_1+v_1',\cdot))(v_2)&=b(v_1+v_1',v_2)=b(v_1,v_2)+b(v_1',v_2)\\
+			&=(b(v_1,\cdot))(v_2)+(b(v_1',\cdot))(v_2)
+		\end{align*}
+		und
+		\begin{align*}
+			(b(\lambda v_1,\cdot))(v_2)&=b(\lambda v_1,v_2)=\lambda b(v_1,v_2)=(\lambda b(v_1,\cdot))(v_2).
+		\end{align*}
+		\item[$\impliedby$] Sei $\Phi(b): V_1\to \Hom(V_2,W)$ linear. Zu zeigen ist $\forall v_1\in V_1: b(v_1,\cdot)\text{ linear}$ und $\forall v_2\in V_2: b(\cdot, v_2)\text{ linear}$. Ersteres ist klar, denn $\forall v_1\in V_2: (\Phi(b))(v_1)=b(v_1,\cdot))$. Für Zweiteres sei $v_2\in V_2$. Dann ist $\ep: \Hom(V_2,W)\to W, g\mapsto g(v_2)$ linear und $b(\cdot,v_2)=\ep\circ \Phi(b)$ ebenso.
+	\end{itemize}
 \end{cproof}
 
 \section{Bilinearformen}
 
 \begin{df}\label{13.3.1}
-Sei $V$ ein $K$-Vektorraum. Eine \emph{bilinear}\index{Bilinearform@{\bf Bilinearform}} auf $V$ ist eine bilineare Funktion $f: V\times V\to K$. Wir bezeichnen den $K$-Vektorraum aller Bilinearformen auf $V$ mit $\Bil(V)$.
+	Sei $V$ ein $K$-Vektorraum. Eine \emph{bilinear}\index{Bilinearform@{\bf Bilinearform}} auf $V$ ist eine bilineare Funktion $f: V\times V\to K$. Wir bezeichnen den $K$-Vektorraum aller Bilinearformen auf $V$ mit $\Bil(V)$.
 \end{df}
 
 \begin{bsp}\label{13.3.2}
-\begin{enumerate}[\normalfont(a)]
-\item Ist $n\in N_0$ und $A=(a_{i,j})_{1\le i,j\le n}\in K^{n\times n}$, so ist $b_A: K^n\times K^n\to K, (x,y)\mapsto x^TAy=\sum_{i,j=1}^na_{i,j}x_iy_j$ bilinear.
-\item Jedes Skalarprodukt auf einem reellen Vektorraum $V$ ist eine Bilinearform auf $V$.
-\end{enumerate}
+	\begin{enumerate}[\normalfont(a)]
+		\item Ist $n\in N_0$ und $A=(a_{i,j})_{1\le i,j\le n}\in K^{n\times n}$, so ist $b_A: K^n\times K^n\to K, (x,y)\mapsto x^TAy=\sum_{i,j=1}^na_{i,j}x_iy_j$ bilinear.
+		\item Jedes Skalarprodukt auf einem reellen Vektorraum $V$ ist eine Bilinearform auf $V$.
+	\end{enumerate}
 \end{bsp}
 	
 \begin{df}\label{13.3.3} 
-[$\to$\ref{7.1.1}] Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $b$ eine Bilinearform auf $V$. Eine Matrix $A\in K^{n\times n}$ heißt \emph{Darstellungsmatrix}\index{Bilinearform@{\bf Bilinearform}!Darstellungsmatrix} von $b$ bezüglich der Basis $\v$, falls für alle $v,w\in V$ gilt
-\begin{align*}
-	(*)\hspace{0.5cm} b(v,w)=b_A(\co_{\v}(v),\co_{\v}(w))
-\end{align*}
+	[$\to$\ref{7.1.1}] Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $b$ eine Bilinearform auf $V$. Eine Matrix $A\in K^{n\times n}$ heißt \emph{Darstellungsmatrix}\index{Bilinearform@{\bf Bilinearform}!Darstellungsmatrix} von $b$ bezüglich der Basis $\v$, falls für alle $v,w\in V$ gilt
+	\begin{align*}
+		(*)\hspace{0.5cm} b(v,w)=b_A(\co_{\v}(v),\co_{\v}(w))
+	\end{align*}
 \end{df}
 
 \begin{bem}\label{13.3.4} 
-Man beachte
-\begin{align*}
-(*)&\stackrel{\underline{v}\text{ Basis}}{\Longleftrightarrow} \forall i,j\in \{1\ldots n\}: b(v_i,v_j)=b_A(\co_{\underline{v}}(v_i),\co_{\underline{v_j}}(w))\\
-&\Longleftrightarrow \forall i,j\in \{1\ldots n\}: b(v_i,v_j)=b_A(e_i,e_j)\\
-&\Longleftrightarrow \forall i,j\in \{1\ldots n\}: b(v_i,v_j)=e_i^TAe_j\\
-&\Longleftrightarrow A=(b(v_i,v_j))_{1\le i,j\le n}.
-\end{align*}
-Zu jeder Bilinearform auf einem endlichdimensionalen Vektorraum gibt es also eine bezüglich einer gegeben Basis jeweils genau eine Darstellungsmatrix.
+	Man beachte
+	\begin{align*}
+		(*)&\stackrel{\underline{v}\text{ Basis}}{\Longleftrightarrow} \forall i,j\in \{1\ldots n\}: b(v_i,v_j)=b_A(\co_{\underline{v}}(v_i),\co_{\underline{v_j}}(w))\\
+		&\Longleftrightarrow \forall i,j\in \{1\ldots n\}: b(v_i,v_j)=b_A(e_i,e_j)\\
+		&\Longleftrightarrow \forall i,j\in \{1\ldots n\}: b(v_i,v_j)=e_i^TAe_j\\
+		&\Longleftrightarrow A=(b(v_i,v_j))_{1\le i,j\le n}.
+	\end{align*}
+	Zu jeder Bilinearform auf einem endlichdimensionalen Vektorraum gibt es also eine bezüglich einer gegeben Basis jeweils genau eine Darstellungsmatrix.
 \end{bem}
 	
 \begin{nt}\label{13.3.5}  
-$M(b,\underline{v})$ steht für das eindeutig bestimmte $A\in K^{n\times n}$ aus Definition \ref{13.3.3}.
+	$M(b,\underline{v})$ steht für das eindeutig bestimmte $A\in K^{n\times n}$ aus Definition \ref{13.3.3}.
 \end{nt}
 
 \begin{bsp}\label{13.3.6}
-Sei $d\in \N_0$. Betrachte den $\R$-Vektorraum $\R[X]_d$ aller reellen Polynome vom Grad $\le d$ mit dem Skalarprodukt
-\begin{align*}
-b: \R[X]_d\times \R[X]_d\to \R, (f,g)\mapsto \int_0^1 f(x)g(x)\,\text{d}x
-\end{align*}
-und der Basis $\v=(1,X,\ldots X^d)$. Dann ist
-\begin{align*}
-M(b,\underline{v})=\begin{pmatrix*}[l]
-1& 1/2& 1/3&\ldots &1/(d+1)\\
-1/2 &1/3& 1/4&\ldots &1(d+2)\\
-1/3& 1/4& 1/5&\ldots &1/(d+3)\\
-\ldots  &\ldots & \ldots &\ldots &\ldots \\
-1/(d+1) &1/3& 1/4&\ldots &1(d+d)
-\end{pmatrix*}\in K^{(d+1)\times(d+1)}.
-\end{align*}
+	Sei $d\in \N_0$. Betrachte den $\R$-Vektorraum $\R[X]_d$ aller reellen Polynome vom Grad $\le d$ mit dem Skalarprodukt
+	\begin{align*}
+		b: \R[X]_d\times \R[X]_d\to \R, (f,g)\mapsto \int_0^1 f(x)g(x)\,\text{d}x
+	\end{align*}
+	und der Basis $\v=(1,X,\ldots X^d)$. Dann ist
+	\begin{align*}
+		M(b,\underline{v})=\begin{pmatrix*}[l]
+			1& 1/2& 1/3&\ldots &1/(d+1)\\
+			1/2 &1/3& 1/4&\ldots &1/(d+2)\\
+			1/3& 1/4& 1/5&\ldots &1/(d+3)\\
+			\ldots  &\ldots & \ldots &\ldots &\ldots \\
+			1/(d+1) &1/3& 1/4&\ldots &1/(d+d)
+		\end{pmatrix*}\in K^{(d+1)\times(d+1)}.
+	\end{align*}
 \end{bsp}
 	
 \begin{df}\label{13.3.7}
-Sei $V$ ein $K$-Vektorraum. Dann definieren wir die beiden Vektorraumisomorphismen [$\to$\ref{13.2.1}] 
-\begin{align*}
-	\leftarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \lvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(\cdot, v)\end{pmatrix*}\end{cases} \;\text{und}\;
-	\rightarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \rvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(v, \cdot)\end{pmatrix*}\end{cases}.
-\end{align*}
+	Sei $V$ ein $K$-Vektorraum. Dann definieren wir die beiden Vektorraumisomorphismen [$\to$\ref{13.2.1}] 
+	\begin{align*}
+		\leftarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \lvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(\cdot, v)\end{pmatrix*}\end{cases} \;\text{und}\;
+		\rightarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \rvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(v, \cdot)\end{pmatrix*}\end{cases}.
+	\end{align*}
 \end{df}
 
 \begin{pro}\label{13.3.8}
-Sei $V$ ein $K$-Vektorraum mit geordneter Basis $\v$ und $b\in \Bil(V)$. Dann gilt $M(b,\v)=M(\lvec b, \v,\v^*)=M(\rvec b,\v,\v^*)^T$.
+	Sei $V$ ein $K$-Vektorraum mit geordneter Basis $\v$ und $b\in \Bil(V)$. Dann gilt $M(b,\v)=M(\lvec b, \v,\v^*)=M(\rvec b,\v,\v^*)^T$.
 \end{pro}
 \begin{cproof} Zu zeigen ist:
-\begin{enumerate}[\normalfont (a)]
-\item $\lvec b=\ve_{\v^*}\circ f_{M(b,\v)}\circ \co_\v$
-\item $\rvec b=\ve_{\v^*}\circ f_{M(b,\v)^T}\circ \co_\v$
-\end{enumerate}
-Wir zeigen nur (a), denn (b) geht fast genauso. Es gilt
-\begin{align*}
-(a)&\stackrel{\v\text{Basis}}{\Longleftrightarrow}\forall j\in\{1,\ldots ,n\}: \lvec b(v_j)=\ve_{\v^*}(M(b,\v)\underbrace{\co_\v(v_j)}_{=e_j})\\
-&\Longleftrightarrow \forall j\in\{1,\ldots ,n\}: b(\dot, v_j)=\sum_{k=1}^n\left(e_k^TM(b,\v)e_j\right)v_k^*\\
-&\stackrel{\v\text{Basis}}{\Longleftrightarrow}\forall i,j\in\{1,\ldots ,n\}: b(v_i,v_j)=e_i^TM(b,\v)e_j=b(v_i,v_j).
-\end{align*}
+	\begin{enumerate}[\normalfont (a)]
+		\item $\lvec b=\ve_{\v^*}\circ f_{M(b,\v)}\circ \co_\v$
+		\item $\rvec b=\ve_{\v^*}\circ f_{M(b,\v)^T}\circ \co_\v$
+	\end{enumerate}
+	Wir zeigen nur (a), denn (b) geht fast genauso. Es gilt
+	\begin{align*}
+		(a)&\stackrel{\v\text{Basis}}{\Longleftrightarrow}\forall j\in\{1,\ldots ,n\}: \lvec b(v_j)=\ve_{\v^*}(M(b,\v)\underbrace{\co_\v(v_j)}_{=e_j})\\
+		&\Longleftrightarrow \forall j\in\{1,\ldots ,n\}: b(\dot, v_j)=\sum_{k=1}^n\left(e_k^TM(b,\v)e_j\right)v_k^*\\
+		&\stackrel{\v\text{Basis}}{\Longleftrightarrow}\forall i,j\in\{1,\ldots ,n\}: b(v_i,v_j)=e_i^TM(b,\v)e_j=b(v_i,v_j).
+	\end{align*}
 \end{cproof}
 
 \begin{sat}\label{13.3.9}
-Sei $V$ ein $K$-Vektorraum mit Basis $\v:=(v_1,\ldots v_n)$. Dann sind\\ 
-\begin{align*}
-	\Phi:\begin{cases}\Bil(V)\to \K^{n\times n}\\ b\mapsto M(b,\v)\end{cases} \;\text{und}\quad
-	\Psi: \begin{cases}K^{n\times n}\to \Bil(V)\\A\mapsto\begin{pmatrix*}V\times V\to K\\ (v,w)\mapsto \co(v)_{\v}^TA\co_\v(w)\end{pmatrix*}\end{cases}
-\end{align*}
-zueinander inverse $K$-Vektorraumisomorphismen.
+	Sei $V$ ein $K$-Vektorraum mit Basis $\v:=(v_1,\ldots v_n)$. Dann sind\\ 
+	\begin{align*}
+		\Phi:\begin{cases}\Bil(V)\to \K^{n\times n}\\ b\mapsto M(b,\v)\end{cases} \;\text{und}\quad
+		\Psi: \begin{cases}K^{n\times n}\to \Bil(V)\\A\mapsto\begin{pmatrix*}V\times V\to K\\ (v,w)\mapsto \co(v)_{\v}^TA\co_\v(w)\end{pmatrix*}\end{cases}
+	\end{align*}
+	zueinander inverse $K$-Vektorraumisomorphismen.
 \end{sat}
 \begin{cproof} $\Phi$ ist als Hintereinanderschaltung zweier Vektorraumisomorphismen ebenfalls ein Vektorraumisomorphismen:
-\begin{align*}
-\Bil(V)\substack{\cong\\\longrightarrow\\ [\to\ref{13.3.7}]}&\Hom(V,V^*)\substack{\cong\\\longrightarrow\\ [\to\ref{7.1.8}]}K^{n\times n}\\
-b\mapsto\lvec b\mapsto &M(\lvec b,\v,\v^*)\stackrel{\ref{13.3.7}}{=}M(b,\v).
-\end{align*}
-Ist $b\in \Bil(V)$, so gilt für alle $i,j\in\{1,\ldots ,n\}$
-\begin{align*}
-	(\Psi(\Phi(b)))(v_i,v_j)&=e_i^T\Phi(b)e_j=e_i^TM(b,\v)e_i=b(v_i,v_j).
-\end{align*}
-Daraus folgt für $A\in K^{n\times n}$
-\begin{align*}
-	\Psi(A)=\Psi(\Phi(\Phi^{-1}(A)))=\Phi^{-1}(A).
-\end{align*}
-Daher ist $\Phi=\Psi^{-1}$ auch ein Vektorraumisomorphismus.
+	% TODO: Fix illegal argument in array argument.
+	\begin{align*}
+		\begin{array}{cols=5}
+			\Bil(V) & \stackrel{\substack{[\to\ref{13.3.7}\\\cong]}}{\longrightarrow} & \Hom(V,V^*) & \stackrel{\substack{[\to\ref{7.1.8}\\\cong]}}{\longrightarrow} & K^{n\times n} \\
+			b & \mapsto & \lvec{b} & \mapsto & M(\lvec b,\v,\v^*)\stackrel{\ref{13.3.7}}{=}M(b,\v)
+		\end{array}
+		%\Bil(V)&\stackrel{\substack{[\to\ref{13.3.7}\\\cong]}}{\longrightarrow}
+		%\Hom(V,V^*)&\stackrel{\substack{[\to\ref{7.1.8}\\\cong]}}{\longrightarrow}K^{n\times n}\\
+		%b&\mapsto\lvec b&\mapsto M(\lvec b,\v,\v^*)\stackrel{\ref{13.3.7}}{=}M(b,\v).
+	\end{align*}
+	Ist $b\in \Bil(V)$, so gilt für alle $i,j\in\{1,\ldots ,n\}$
+	\begin{align*}
+		(\Psi(\Phi(b)))(v_i,v_j)&=e_i^T\Phi(b)e_j=e_i^TM(b,\v)e_i=b(v_i,v_j).
+	\end{align*}
+	Daraus folgt für $A\in K^{n\times n}$
+	\begin{align*}
+		\Psi(A)=\Psi(\Phi(\Phi^{-1}(A)))=\Phi^{-1}(A).
+	\end{align*}
+	Daher ist $\Phi=\Psi^{-1}$ auch ein Vektorraumisomorphismus.
 \end{cproof}
 
 \begin{sat}\label{13.3.10}
-Sei $V$ ein $K$-Vektorraum mit geordneten Basen $\v$, $\w$ und $b\in \Bil(V)$. Dann gilt $M(b,\v)=M(\v,\w)^TM(b,\w)M(\v,\w)$.
+	Sei $V$ ein $K$-Vektorraum mit geordneten Basen $\v$, $\w$ und $b\in \Bil(V)$. Dann gilt $M(b,\v)=M(\v,\w)^TM(b,\w)M(\v,\w)$.
 \end{sat}
 \begin{cproof} Es gilt
-\begin{align*}
-M(b,\v)&\stackrel{\ref{13.3.8}}{=}M(\lvec b, \v,\v^*)\stackrel{\ref{7.2.5}}{=}M(\w^*,v^*)M(\lvec b,\w,\w^*)M(\v,\w)\\
-&\stackrel{\ref{13.1.11}}{=}M(\v,\w)^TM(\lvec b,\w,\w^*)M(\v,\w)\\
-&\stackrel{13.3.8}{=}M(\v,\w)^TM(b,\w)M(\v,\w)
-\end{align*}
+	\begin{align*}
+		M(b,\v)&\stackrel{\ref{13.3.8}}{=}M(\lvec b, \v,\v^*)\stackrel{\ref{7.2.5}}{=}M(\w^*,v^*)M(\lvec b,\w,\w^*)M(\v,\w)\\
+		&\stackrel{\ref{13.1.11}}{=}M(\v,\w)^TM(\lvec b,\w,\w^*)M(\v,\w)\\
+		&\stackrel{13.3.8}{=}M(\v,\w)^TM(b,\w)M(\v,\w)
+	\end{align*}
 \end{cproof}
 
 \begin{defprop}\label{13.3.11}
-Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$. Sei $b\in \Bil(V)$. Man nennt $b$ \emph{nicht ausgeartet}\index{Bilinearform@{\bf Bilinearform}!ausgeartet}, wenn folgende äquivalente Bedingungen gelten:
-\begin{enumerate}[\normalfont(a)]
-\item $\lvec b$ ist injektiv, d.h. $\forall w\in V: b(\cdot, w)=0\implies w=0)$,
-\item $\lvec b$ ist surjektiv, d.h. $\forall \ell\in V^*: \exists w\in V: \ell=b(\cdot,w)$,
-\item $\lvec b$ ist ein Vektorraumisomorphismus,
-\item $M(b,\underline{v})$ ist invertierbar,
-\item $\rvec b$ ist injektiv, d.h. $\forall v\in V: b(v, \cdot)=0\implies v=0)$,
-\item $\rvec b$ ist surjektiv, d.h. $\forall \ell\in V^*: \exists v\in V: \ell=b(v,\cdot)$,
-\item $\rvec b$ ist ein Vektorraumisomorphismus.
-\end{enumerate}
+	Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$. Sei $b\in \Bil(V)$. Man nennt $b$ \emph{nicht ausgeartet}\index{Bilinearform@{\bf Bilinearform}!ausgeartet}, wenn folgende äquivalente Bedingungen gelten:
+	\begin{enumerate}[\normalfont(a)]
+		\item $\lvec b$ ist injektiv, d.h. $\forall w\in V: b(\cdot, w)=0\implies w=0)$,
+		\item $\lvec b$ ist surjektiv, d.h. $\forall \ell\in V^*: \exists w\in V: \ell=b(\cdot,w)$,
+		\item $\lvec b$ ist ein Vektorraumisomorphismus,
+		\item $M(b,\underline{v})$ ist invertierbar,
+		\item $\rvec b$ ist injektiv, d.h. $\forall v\in V: b(v, \cdot)=0\implies v=0)$,
+		\item $\rvec b$ ist surjektiv, d.h. $\forall \ell\in V^*: \exists v\in V: \ell=b(v,\cdot)$,
+		\item $\rvec b$ ist ein Vektorraumisomorphismus.
+	\end{enumerate}
 \end{defprop}
 \begin{cproof}
-$(a)\Longleftrightarrow(b)\Longleftrightarrow(c)\Longleftrightarrow(d)$ ist klar, da $M(b,\underline{v})=M(\lvec b,\underline{v},\underline{v}^*)$. Ebenso ist $(d)\Longleftrightarrow(e)\Longleftrightarrow(f)\Longleftrightarrow(g)$, da $M^T(b,\underline{v})=M(\rvec b,\underline{v},\underline{v}^*)$ und $M(b,\underline{v})\text{ invertierbar}\Longleftrightarrow M^T(b,\underline{v})\text{ invertierbar}$.
+	$(a)\Longleftrightarrow(b)\Longleftrightarrow(c)\Longleftrightarrow(d)$ ist klar, da $M(b,\underline{v})=M(\lvec b,\underline{v},\underline{v}^*)$. Ebenso ist $(d)\Longleftrightarrow(e)\Longleftrightarrow(f)\Longleftrightarrow(g)$, da $M^T(b,\underline{v})=M(\rvec b,\underline{v},\underline{v}^*)$ und $M(b,\underline{v})\text{ invertierbar}\Longleftrightarrow M^T(b,\underline{v})\text{ invertierbar}$.
 \end{cproof}
 
 \section{Symmetrische Bilinearformen und quadratische Formen}
 
 \begin{df}\label{13.4.1}
-Eine Bilinearform $b$ auf einen $K$-Vektorraum $V$ heißt symmetrisch \emph{symmetrisch}\index{Bilinearform@{\bf Bilinearform}!symmetrische Bilinearform}, wenn $b(v,w)=b(w,v)$ für alle $v,w\in V$ gilt. Wir bezeichnen den $K$-Vektorraum aller symmetrischen Bilinearformen auf einen $K$-Vektorraum $V$ mit $\SBil(V)$.
+	Eine Bilinearform $b$ auf einen $K$-Vektorraum $V$ heißt symmetrisch \emph{symmetrisch}\index{Bilinearform@{\bf Bilinearform}!symmetrische Bilinearform}, wenn $b(v,w)=b(w,v)$ für alle $v,w\in V$ gilt. Wir bezeichnen den $K$-Vektorraum aller symmetrischen Bilinearformen auf einen $K$-Vektorraum $V$ mit $\SBil(V)$.
 \end{df}	
 	
 \begin{df}\label{13.4.2}
-[$\to$\ref{11.3.3}] Eine Matrix $A\in K^{n\times n}$ heißt \emph{symmetrisch}\index{Bilinearform@{\bf Bilinearform}!symmetrische Matrix}, wenn $A=A^T$. Wir bezeichnen den $K$-Vektorraum aller symmetrischen $n\times n$-Matrizen über $K$ mit $\SK^{n\times n}$.
+	[$\to$\ref{11.3.3}] Eine Matrix $A\in K^{n\times n}$ heißt \emph{symmetrisch}\index{Bilinearform@{\bf Bilinearform}!symmetrische Matrix}, wenn $A=A^T$. Wir bezeichnen den $K$-Vektorraum aller symmetrischen $n\times n$-Matrizen über $K$ mit $\SK^{n\times n}$.
 \end{df}
 	
 \begin{pro}\label{13.4.3}
-Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$. Sei $b\in \Bil(V)$. Dann gilt $b\in \SBil(V)\Longleftrightarrow M(b,\underline{v})\in\SK^{n\times n}$.
+	Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$. Sei $b\in \Bil(V)$. Dann gilt $b\in \SBil(V)\Longleftrightarrow M(b,\underline{v})\in\SK^{n\times n}$.
 \end{pro}
 \begin{cproof}
-Definiere $\stackrel{\sim}{b}: V\times V\to K, (v,w)\mapsto b(w,v)$. Es gilt
-\begin{align*}
-b\in\SBil(V)&\Longleftrightarrow b=\stackrel{\sim}{b}\Longleftrightarrow \forall i,j\in\{1\ldots n\}: b(v_i,v_j)=\stackrel{\sim}{b}(v_j,v_i)\\
-&\Longleftrightarrow (b(v_i,v_j))_{i,j\in\{1\ldots n\}}=(\stackrel{\sim}{b}(v_j,v_i))_{i,j\in\{1\ldots n\}}\\
-&\Longleftrightarrow M(b,\v)=M(b,\v)^T\Longleftrightarrow M(b,\v)\in\SK^{n\times n}.
-\end{align*}
+	Definiere $\stackrel{\sim}{b}: V\times V\to K, (v,w)\mapsto b(w,v)$. Es gilt
+	\begin{align*}
+		b\in\SBil(V)&\Longleftrightarrow b=\stackrel{\sim}{b}\Longleftrightarrow \forall i,j\in\{1\ldots n\}: b(v_i,v_j)=\stackrel{\sim}{b}(v_j,v_i)\\
+		&\Longleftrightarrow (b(v_i,v_j))_{i,j\in\{1\ldots n\}}=(\stackrel{\sim}{b}(v_j,v_i))_{i,j\in\{1\ldots n\}}\\
+		&\Longleftrightarrow M(b,\v)=M(b,\v)^T\Longleftrightarrow M(b,\v)\in\SK^{n\times n}.
+	\end{align*}
 \end{cproof}
 
 \begin{bsp}\label{13.4.4}
-Jedes Skalarprodukt auf einem reellen Vektorraum $V$ ist eine symmetrische Biliniearform auf $V$.
+	Jedes Skalarprodukt auf einem reellen Vektorraum $V$ ist eine symmetrische Biliniearform auf $V$.
 \end{bsp}
 	
 \begin{df}\label{13.4.5} 
-Sei $V$ ein $K$-Vektorraum. Eine Funktion $q: V\to K$ heißt  \emph{quadratische Form}\index{Bilinearform@{\bf Bilinearform}!quadratische Form} auf $V$, wenn es $b\in \Bil(V)$ gibt mit $q(v)=b(v,v)$ für alle $v\in V$. Wir bezeichnen den $K$-Vektorraum aller quadratischen Formen auf einem $K$-Vektorraum $V$ mit $\QForm(V)$.
+	Sei $V$ ein $K$-Vektorraum. Eine Funktion $q: V\to K$ heißt  \emph{quadratische Form}\index{Bilinearform@{\bf Bilinearform}!quadratische Form} auf $V$, wenn es $b\in \Bil(V)$ gibt mit $q(v)=b(v,v)$ für alle $v\in V$. Wir bezeichnen den $K$-Vektorraum aller quadratischen Formen auf einem $K$-Vektorraum $V$ mit $\QForm(V)$.
 \end{df}
 
 \begin{notpro}\label{13.4.6}
-Gelte $1+1\neq 0$ in $K$. Dann sind die Abbildungen $\Phi:\SBil(V)\to \QForm(V),b\mapsto q_b$ und $\Psi:\QForm(V)\to \SBil(V),q\mapsto b_q$ mit 
-\begin{align*}
-	q_b:\begin{cases} V\to K\\ v\mapsto b(v,v)\end{cases}\;\text{und}\;
-	b_q:\begin{cases} V\times V\to K\\ (v,w)\mapsto \frac{1}{2}\left(q(v+w)-q(v)-q(w)\right)\end{cases}
-\end{align*}
-zueinander inverse $K$-Vektorraumisomorphismen. 
+	Gelte $1+1\neq 0$ in $K$. Dann sind die Abbildungen $\Phi:\SBil(V)\to \QForm(V),b\mapsto q_b$ und $\Psi:\QForm(V)\to \SBil(V),q\mapsto b_q$ mit 
+	\begin{align*}
+		q_b:\begin{cases} V\to K\\ v\mapsto b(v,v)\end{cases}\;\text{und}\;
+		b_q:\begin{cases} V\times V\to K\\ (v,w)\mapsto \frac{1}{2}\left(q(v+w)-q(v)-q(w)\right)\end{cases}
+	\end{align*}
+	zueinander inverse $K$-Vektorraumisomorphismen. 
 \end{notpro}	
 \begin{cproof}
-Sei $q\in \QForm(V)$. Zu zeigen ist $b_q\in \SBil(V)$. Wähle $b\in \SBil(V)$ mit $q(v)=b(v,v)$ für alle $v\in V$. Dann ist
-\begin{align*}
-b_q(v,w)&=\frac{1}{2}\left(b(v+w,v+w)-b(v,v)-b(w,w)\right)\\
-&=\frac{1}{2}\left(b(v,v)+b(w,w)+b(v,w)+b(w,v)-b(v,v)-b(w,w)\right)\\
-&=\frac{1}{2}\left(b(v,w)+b(v,w)\right)\\
-&=b(v,w).
-\end{align*}
-Genauso zeigt man, dass $b_{q_b}=b$ für alle $b\in \SBil(V)$. Sei $q\in \QForm(V)$, etwa $q(v)=b(v,v)$ für alle $v\in V$ für ein $b\in \SBil(V)$. Dann gilt $q_{b_q}(v)=b_q(v,v)=b(v,v)=q(v)$. Daher sind die zwei Abbildungen invers zueinander. Die Linearität ist klar.
+	Sei $q\in \QForm(V)$. Zu zeigen ist $b_q\in \SBil(V)$. Wähle $b\in \SBil(V)$ mit $q(v)=b(v,v)$ für alle $v\in V$. Dann ist
+	\begin{align*}
+		b_q(v,w)&=\frac{1}{2}\left(b(v+w,v+w)-b(v,v)-b(w,w)\right)\\
+		&=\frac{1}{2}\left(b(v,v)+b(w,w)+b(v,w)+b(w,v)-b(v,v)-b(w,w)\right)\\
+		&=\frac{1}{2}\left(b(v,w)+b(v,w)\right)\\
+		&=b(v,w).
+	\end{align*}
+	Genauso zeigt man, dass $b_{q_b}=b$ für alle $b\in \SBil(V)$. Sei $q\in \QForm(V)$, etwa $q(v)=b(v,v)$ für alle $v\in V$ für ein $b\in \SBil(V)$. Dann gilt $q_{b_q}(v)=b_q(v,v)=b(v,v)=q(v)$. Daher sind die zwei Abbildungen invers zueinander. Die Linearität ist klar.
 \end{cproof}
 
 \begin{pro}\label{13.4.7}
-Die folgende Proposition motiviert die Bezeichnung \enquote{quadratische Form}. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q: V\to K$ eine Funktion. Dann ist $q\in \QForm(V)$ genau dann, wenn es eindeutig bestimmte $a_{i,j}\in K\, (1\le i\le j\le n)$ gibt mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$.
+	Die folgende Proposition motiviert die Bezeichnung \enquote{quadratische Form}. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q: V\to K$ eine Funktion. Dann ist $q\in \QForm(V)$ genau dann, wenn es eindeutig bestimmte $a_{i,j}\in K\, (1\le i\le j\le n)$ gibt mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$.
 \end{pro}
 \begin{cproof}
-\begin{itemize}
-\item[$\implies$] Sei $q\in \QForm(V)$. Wähle $b\in \Bil(V)$ mit $\forall v\in V: q(v)=b(v,v)$. Dann gilt für $a_{i,j}\in K\, (1\le i\le j\le n)$:
-\begin{align*}
-&\forall x\in K^n: b\left(\sum_{i=1}^n x_iv_i, q \sum_{i=1}^n x_iv_i\right)=\sum_{i\le j}^n a_{i,j}x_ix_j\\
-\Longleftrightarrow&\forall x\in K^n:\sum_{i,j=1}^n b(v_i,v_j)x_ix_j=\sum_{i\le j}^n a_{i,j}x_ix_j\\
-\Longleftrightarrow&\forall x\in K^n (i\in\{1\ldots n\}: a_{i,i}=b(v_i,v_i)\\
-&\land \forall i,j\in\{1\ldots n\}: (i<j\implies a_{i,j}=b(v_i,v_j)+b(v_j,v_i)).
-\end{align*}
-Daher gibt es eindeutig bestimmte $a_{i,j}\in K\, (1\le i\le j\le n)$ mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$.
-\item[$\impliedby$] Gebe es nun umgekehrt $a_{i,j}\in K\, (1\le i\le j\le n)$ mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$. Definiere dann $b\in \Bil(V)$ durch
-\begin{align*}
-b(v_i,v_j):=\begin{cases}a_{i,j} & \text{falls }i\le j\\ 0 & \text{ sonst}\end{cases}.
-\end{align*}
-Dann gilt
-\begin{align*}
-q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j=\sum_{i\le j}x_ix_jb(v_i,v_j)=b\left(\sum_{i=1}^n x_iv_i,\sum_{i=1}^nx_iv_i\right).
-\end{align*}
-\end{itemize}
+	\begin{itemize}
+		\item[$\implies$] Sei $q\in \QForm(V)$. Wähle $b\in \Bil(V)$ mit $\forall v\in V: q(v)=b(v,v)$. Dann gilt für $a_{i,j}\in K\, (1\le i\le j\le n)$:
+		\begin{align*}
+			&\forall x\in K^n: b\left(\sum_{i=1}^n x_iv_i, q \sum_{i=1}^n x_iv_i\right)=\sum_{i\le j}^n a_{i,j}x_ix_j\\
+			\Longleftrightarrow&\forall x\in K^n:\sum_{i,j=1}^n b(v_i,v_j)x_ix_j=\sum_{i\le j}^n a_{i,j}x_ix_j\\
+			\Longleftrightarrow&\forall x\in K^n (i\in\{1\ldots n\}: a_{i,i}=b(v_i,v_i)\\
+			&\land \forall i,j\in\{1\ldots n\}: (i<j\implies a_{i,j}=b(v_i,v_j)+b(v_j,v_i)).
+		\end{align*}
+		Daher gibt es eindeutig bestimmte $a_{i,j}\in K\, (1\le i\le j\le n)$ mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$.
+		\item[$\impliedby$] Gebe es nun umgekehrt $a_{i,j}\in K\, (1\le i\le j\le n)$ mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$. Definiere dann $b\in \Bil(V)$ durch
+		\begin{align*}
+			b(v_i,v_j):=\begin{cases}a_{i,j} & \text{falls }i\le j\\ 0 & \text{ sonst}\end{cases}.
+		\end{align*}
+		Dann gilt
+		\begin{align*}
+			q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j=\sum_{i\le j}x_ix_jb(v_i,v_j)=b\left(\sum_{i=1}^n x_iv_i,\sum_{i=1}	^nx_iv_i\right).
+		\end{align*}
+	\end{itemize}
 \end{cproof}
 
 \begin{bem}\label{13.4.8}
-\underline{Im Fall $2\neq 0$ in $K$} kann man in der Definition \ref{13.4.5} \enquote{wenn es $b\in \Bil(V)$ gibt} ersetzen durch \enquote{wenn es (ein eindeutig bestimmtes) $b\in \SBil(V)$ gibt}. Dieses $b\in \SBil(V)$ ist natürlich $b_q$ und man identifiziert dann oft $q$ mit $b_q$. Z.B. kann man von einer \enquote{Darstellungsmatrix von $q$} reden und damit eine Darstellungsmatrix von $b_q$ meinen.\\
+	\underline{Im Fall $2\neq 0$ in $K$} kann man in der Definition \ref{13.4.5} \enquote{wenn es $b\in \Bil(V)$ gibt} ersetzen durch \enquote{wenn es (ein eindeutig bestimmtes) $b\in \SBil(V)$ gibt}. Dieses $b\in \SBil(V)$ ist natürlich $b_q$ und man identifiziert dann oft $q$ mit $b_q$. Z.B. kann man von einer \enquote{Darstellungsmatrix von $q$} reden und damit eine Darstellungsmatrix von $b_q$ meinen.\\
 	
-\noindent\underline{Im Fall $2=0$ in $K$}, der uns hier nicht weiter interessiert, ist all dies nicht möglich, wie die folgenden beiden Beispiele zeigen.
+	\noindent\underline{Im Fall $2=0$ in $K$}, der uns hier nicht weiter interessiert, ist all dies nicht möglich, wie die folgenden beiden Beispiele zeigen.
 \end{bem}
 	
 \begin{bsp}
-\begin{enumerate}[\normalfont(a)]
-\item $q: \F_2^2\to \F_2, \begin{pmatrix}x_1\\x_2\end{pmatrix}\mapsto x_1x_2$ ist eine quadratische Form auf $\F_2^2$, aber es gibt kein $b\in \SBil(V)$ mit $q(x)=b(x,x)$ für alle $x\in \F_2^2$. Denn sonst würde gelten
-\begin{align*}	q(x)=b(x,x)&=b(x_1e_1+x_2e_2,x_1e_1+x_2e_2)=x^2b(e_1,e_1)+2x_1x_2b(e_1,e_2)+x_2^2b(e_2,e_2)\\
-&=x^2b(e_1,e_1)+x_2^2b(e_2,e_2)
-\end{align*}
-für alle $x=\begin{pmatrix}x_1\\x_2\end{pmatrix}\in \F_2^2$ und daher $1=q\left(\begin{pmatrix}1\\1\end{pmatrix}\right)=b(e_1,e_1)+b(e_2,e_2)=q(e_1)+q(e_2)=0$.
-\item Für die Nullform  $0\in \QForm(\F_2^2)$ gibt es außer $0\in \SBil(\F_2^2)$ noch eine andere symmetrische Bilinearform $b: \F_2^2\to \F_2$ mit $q_b=0$, nämlich die durch $M(b,\underline{e})=\begin{pmatrix}0 & 1\\ 1&0\end{pmatrix}$ gegebene.
-\item $q: \R^3\to \R, \begin{pmatrix}x_1\\ x_2\\x_3\end{pmatrix}\mapsto 2x_1^2-3x_1x_2+x_2^2-x_1x_3-2x_3^2$ ist eine quadratische Form auf $\R^3$ mit zugehöriger Bilinearform
-\begin{align*}
-b: \begin{cases}\R^3\times \R^3&\to \R\\ \left(\begin{pmatrix}x_1\\ x_2\\x_3\end{pmatrix}, \begin{pmatrix}y_1\\ y_2\\y_3\end{pmatrix}\right)&\mapsto 2x_1y_1-\frac{3}{2}x_1y_2-\frac{3}{2}x_2y_1+x_2y_2-\frac{1}{2}x_1y_3-\frac{1}{2}x_3y_1-2x_3y_3\end{cases}.
-\end{align*}
-Es gilt
-\begin{align*}
-M(q,\underline{e})=\begin{pmatrix*} 2 & -3/2 & -1/2\\-3/2 &1 & 0\\ -1/2 & 0 & -2\end{pmatrix*}.
-\end{align*}
-\end{enumerate}
+	$\;$
+	\begin{enumerate}[\normalfont(a)]
+		\item $q: \F_2^2\to \F_2, \begin{pmatrix}x_1\\x_2\end{pmatrix}\mapsto x_1x_2$ ist eine quadratische Form auf $\F_2^2$, aber es gibt kein $b\in \SBil(V)$ mit $q(x)=b(x,x)$ für alle $x\in \F_2^2$. Denn sonst würde gelten
+		\begin{align*}	
+			q(x)=b(x,x)&=b(x_1e_1+x_2e_2,x_1e_1+x_2e_2)=x^2b(e_1,e_1)+2x_1x_2b(e_1,e_2)+x_2^2b(e_2,e_2)\\
+			&=x^2b(e_1,e_1)+x_2^2b(e_2,e_2)
+		\end{align*}
+		für alle $x=\begin{pmatrix}x_1\\x_2\end{pmatrix}\in \F_2^2$ und daher $1=q\left(\begin{pmatrix}1\\1\end{pmatrix}\right)=b(e_1,e_1)+b(e_2,e_2)=q(e_1)+q(e_2)=0$.
+		\item Für die Nullform  $0\in \QForm(\F_2^2)$ gibt es außer $0\in \SBil(\F_2^2)$ noch eine andere symmetrische Bilinearform $b: \F_2^2\to \F_2$ mit $q_b=0$, nämlich die durch $M(b,\underline{e})=\begin{pmatrix}0 & 1\\ 1&0\end{pmatrix}$ gegebene.
+		\item $q: \R^3\to \R, \begin{pmatrix}x_1\\ x_2\\x_3\end{pmatrix}\mapsto 2x_1^2-3x_1x_2+x_2^2-x_1x_3-2x_3^2$ ist eine quadratische Form auf $\R^3$ mit zugehöriger Bilinearform
+		\begin{align*}
+			b: \begin{cases}\R^3\times \R^3&\to \R\\ \left(\begin{pmatrix}x_1\\ x_2\\x_3\end{pmatrix}, \begin{pmatrix}y_1\\ y_2\\y_3\end{pmatrix}\right)&\mapsto 2x_1y_1-\frac{3}{2}x_1y_2-\frac{3}{2}x_2y_1+x_2y_2-\frac{1}{2}x_1y_3-\frac{1}{2}x_3y_1-2x_3y_3\end{cases}.
+		\end{align*}
+		Es gilt
+		\begin{align*}
+			M(q,\underline{e})=\begin{pmatrix*} 2 & -3/2 & -1/2\\-3/2 &1 & 0\\ -1/2 & 0 & -2\end{pmatrix*}.
+		\end{align*}
+	\end{enumerate}
 \end{bsp}
 
 \section{Eine verallgemeinerte Cholesky-Zerlegung}
 
 \begin{lem}\label{13.5.1}
-Gelte $2\neq 0$ in $K$. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$, $b\in \SBil(V)$ und $q:=q_b\in \QForm(V)$. Seien $l_1,\ldots ,l_m\in V^*$ und $\la_1,\ldots ,\la_m\in K$. Dann sind äquivalent:
-\begin{enumerate}[\normalfont(a)]
-\item $q(v)=\sum_{k=1}^m\la_k l_k^2(v)$ für alle $v\in V$
-\item $b(v,w)=\sum_{k=1}^m\la_k l_k(v)l_k(w)$ für alle $v,w\in V$
-\item $M(b,\v)=P^TDP$ mit $D:=\left(\begin{smallmatrix}
-\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
-& \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & \la_m\end{smallmatrix}\right)\in K^{m\times m}$ und $P:=(l_i(v_j))_{1\le i\le m, 1\le j\le n}\in K^{m\times n}$
-\end{enumerate}
+	Gelte $2\neq 0$ in $K$. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$, $b\in \SBil(V)$ und $q:=q_b\in \QForm(V)$. Seien $l_1,\ldots ,l_m\in V^*$ und $\la_1,\ldots ,\la_m\in K$. Dann sind äquivalent:
+	\begin{enumerate}[\normalfont(a)]
+		\item $q(v)=\sum_{k=1}^m\la_k l_k^2(v)$ für alle $v\in V$
+		\item $b(v,w)=\sum_{k=1}^m\la_k l_k(v)l_k(w)$ für alle $v,w\in V$
+		\item $M(b,\v)=P^TDP$ mit $D:=
+			\left(\begin{smallmatrix}
+				\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+				& \ddots &\\
+				\rlap{\tlap{\LARGE 0}} & & \la_m
+			\end{smallmatrix}\right)\in K^{m\times m}$ und $P:=(l_i(v_j))_{1\le i\le m, 1\le j\le n}\in K^{m\times n}$
+	\end{enumerate}
 \end{lem}
 \begin{cproof}
-$(a)\impliedby (b)$. Ist klar.\\
-
-\noindent $(a)\implies (b)$. Gelte $(a)$. Es ist $b_0: V\times V\to K, (v,w)\mapsto \sum_{k=1}^m\lambda_k l_k(v)l_k(w)$ eine symmetrische Bilinearform, für die gilt $q_{b_0}=q=q_b$ und daher $b_0=b$.\\	
-
-\noindent$(b)\Longleftrightarrow (c)$. Es gilt:
-\begin{itemize}
-\item $(b)\Longleftrightarrow \forall i,j\in\{1,\ldots ,n\}: b(v_i,v_j)=\sum_{k=1}^m\lambda_k l_k(v_i)l_k(v_j)$
-\item $(c)\Longleftrightarrow \forall i,j\in\{1,\ldots ,m\}. e_i^TM(b,\underline{v})e_j=	(Pe_i)^TDPe_j$
-\end{itemize}
-Seien nun $i,j\in\{1,\ldots ,n\}$. Wegen $b(v_i,v_j)=e_i^TM(b,\underline{v})e_j$ reicht es zu zeigen, dass $\sum_{k=1}^m\lambda_k l_k(v_i)l_k(v_j)=(Pe_i)^TDPe_j$. Sei hierzu $k\in\{1,\ldots ,m\}$. Wir zeigen
-\begin{align*}
-l_k(v_i)l_k(v_j)&=\left(\left(\begin{smallmatrix}
-0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
-& \ddots & & & &\\ 
-& & 0 & & & &\\
-& & & \tikz[remember picture]\node[inner sep=0pt] (a) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
-\rlap{\tlap{\Huge 0}} & & & & & &0\end{smallmatrix}\right)Pe_i\right)^T& &\left(\left(\begin{smallmatrix}
-0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
-& \ddots & & & &\\ 
-& & 0 & & & &\\
-& & & \tikz[remember picture]\node[inner sep=0pt] (c) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
-\rlap{\tlap{\Huge 0}} & & & & & &0\end{smallmatrix}\right)Pe_j\right)\\
-&\, & &\\
-&=\cvec{0\\ \vdots\\\tikz[remember picture]\node[inner sep=0pt] (g) {$l(e_i)$};\\\vdots\\0}^T& &=\cvec{0\\ \vdots\\\tikz[remember picture]\node[inner sep=0pt] (e) {$l(e_j)$};\\\vdots\\0}
-\begin{tikzpicture}[overlay, remember picture]
-%\draw[->] (a.south) ++(0,-2mm) -- node[above] {DAG} ++(0,-1);
-\node(b) at (a.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
-\draw[<-] (a.south) ++(0,-2mm) -- (b.north);
-\node(d) at (c.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
-\draw[<-] (c.south) ++(0,-2mm) -- (d.north);
-\node(f) at (e.east) [anchor=center,xshift=2cm] {$k$-te Stelle};
-\draw[<-] (e.east) ++(1mm, 0) -- (f.west);
-\node(h) at (g.east) [anchor=center,xshift=2cm] {$k$-te Stelle};
-\draw[<-] (g.east) ++(1mm, 0) -- (h.west);
-\end{tikzpicture}
-\end{align*}
-Multipliziert man auf beiden Seiten mit $\lambda_k$ und summiert man auf, so erhält man
-\begin{align*}
-\sum_{k=1}^m\lambda_k l_k(v_i)l_k(v_j)&=\sum_{k=1}^m(Pe_i)^T\left(\begin{smallmatrix}
-0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
-& \ddots & & & &\\ 
-& & 0 & & & &\\
-& & & \tikz[remember picture]\node[inner sep=0pt] (ba) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
-\rlap{\tlap{\Huge 0}} & & & & & &0\end{smallmatrix}\right)^2Pe_j\\
-&\,\\
-&=(Pe_i)^T\left(\sum_{k=1}^m\left(\begin{smallmatrix}
-0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
-& \ddots & & & &\\ & & 0 & & & &\\
-& & & \tikz[remember picture]\node[inner sep=0pt] (bc) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
-\rlap{\tlap{\Huge 0}} & & & & & &0\end{smallmatrix}\right)\right)Pe_j\\
-&\,\\
-&=(Pe_i)^TDPe_j.
-\begin{tikzpicture}[overlay, remember picture]
-\node(bb) at (ba.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
-\draw[<-] (ba.south) ++(0,-2mm) -- (bb.north);
-\node(bd) at (bc.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
-\draw[<-] (bc.south) ++(0,-2mm) -- (bd.north);
-\end{tikzpicture}
-\end{align*}
+	\begin{itemize}
+		\item[$(a)\impliedby (b)$] Ist klar.
+		\item[$(a)\implies (b)$] Gelte $(a)$. Es ist $b_0: V\times V\to K, (v,w)\mapsto \sum_{k=1}^m\lambda_k l_k(v)l_k(w)$ eine symmetrische Bilinearform, für die gilt $q_{b_0}=q=q_b$ und daher $b_0=b$.
+		\item[$(b)\Longleftrightarrow (c)$] Es gilt:
+		\begin{itemize}
+			\item $(b)\Longleftrightarrow \forall i,j\in\{1,\ldots ,n\}: b(v_i,v_j)=\sum_{k=1}^m\lambda_k l_k(v_i)l_k(v_j)$
+			\item $(c)\Longleftrightarrow \forall i,j\in\{1,\ldots ,m\}. e_i^TM(b,\underline{v})e_j=	(Pe_i)^TDPe_j$
+		\end{itemize}
+		Seien nun $i,j\in\{1,\ldots ,n\}$. Wegen $b(v_i,v_j)=e_i^TM(b,\underline{v})e_j$ reicht es zu zeigen, dass $\sum_{k=1}^m\lambda_k l_k(v_i)l_k(v_j)=(Pe_i)^TDPe_j$. Sei hierzu $k\in\{1,\ldots ,m\}$. Wir zeigen
+		\begin{align*}
+			l_k(v_i)l_k(v_j)&=\left(\left(\begin{smallmatrix}
+				0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
+				& \ddots & & & &\\ 
+				& & 0 & & & &\\
+				& & & \tikz[remember picture]\node[inner sep=0pt] (a) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
+				\rlap{\tlap{\Huge 0}} & & & & & &0
+			\end{smallmatrix}\right)Pe_i\right)^T& &\left(\left(\begin{smallmatrix}
+				0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
+				& \ddots & & & &\\ 
+				& & 0 & & & &\\
+				& & & \tikz[remember picture]\node[inner sep=0pt] (c) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
+				\rlap{\tlap{\Huge 0}} & & & & & &0
+			\end{smallmatrix}\right)Pe_j\right)\\
+				&\, & &\\
+				&=\cvec{0\\ \vdots\\\tikz[remember picture]\node[inner sep=0pt] (g) {$l(e_i)$};\\\vdots\\0}^T& &=\cvec{0\\ \vdots\\\tikz[remember picture]\node[inner sep=0pt] (e) {$l(e_j)$};\\\vdots\\0}
+			\begin{tikzpicture}[overlay, remember picture]
+				%\draw[->] (a.south) ++(0,-2mm) -- node[above] {DAG} ++(0,-1);
+				\node(b) at (a.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
+				\draw[<-] (a.south) ++(0,-2mm) -- (b.north);
+				\node(d) at (c.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
+				\draw[<-] (c.south) ++(0,-2mm) -- (d.north);
+				\node(f) at (e.east) [anchor=center,xshift=2cm] {$k$-te Stelle};
+				\draw[<-] (e.east) ++(1mm, 0) -- (f.west);
+				\node(h) at (g.east) [anchor=center,xshift=2cm] {$k$-te Stelle};
+				\draw[<-] (g.east) ++(1mm, 0) -- (h.west);
+			\end{tikzpicture}
+		\end{align*}
+		Multipliziert man auf beiden Seiten mit $\lambda_k$ und summiert man auf, so erhält man
+		\begin{align*}
+			\sum_{k=1}^m\lambda_k l_k(v_i)l_k(v_j)&=\sum_{k=1}^m(Pe_i)^T\left(\begin{smallmatrix}
+				0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
+				& \ddots & & & &\\ 
+				& & 0 & & & &\\
+				& & & \tikz[remember picture]\node[inner sep=0pt] (ba) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
+				\rlap{\tlap{\Huge 0}} & & & & & &0
+			\end{smallmatrix}\right)^2Pe_j\\
+			&\,\\
+			&=(Pe_i)^T\left(\sum_{k=1}^m\left(\begin{smallmatrix}
+				0 & & & & & &\llap{$\overset{\blap{\Huge 0}}{~}$}\\
+				& \ddots & & & &\\ & & 0 & & & &\\
+				& & & \tikz[remember picture]\node[inner sep=0pt] (bc) {\small 1}; & & &\\& & &  & 0 & &\\& & & & &\ddots &\\
+				\rlap{\tlap{\Huge 0}} & & & & & &0
+			\end{smallmatrix}\right)\right)Pe_j\\
+			&\,\\
+			&=(Pe_i)^TDPe_j.
+			\begin{tikzpicture}[overlay, remember picture]
+				\node(bb) at (ba.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
+				\draw[<-] (ba.south) ++(0,-2mm) -- (bb.north);
+				\node(bd) at (bc.north) [anchor=center,yshift=-1.6cm] {$k$-te Stelle};
+				\draw[<-] (bc.south) ++(0,-2mm) -- (bd.north);
+			\end{tikzpicture}
+		\end{align*}
+	\end{itemize}
 \end{cproof}
 
 \begin{sat}\label{13.5.2}
-Gelte $2\neq 0$ in $K$. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q\in \QForm(V)$. Seien $l_1,\ldots ,l_n\in V^*$ und $\lambda_1,\ldots ,\lambda_n\in K$. Dann sind äquivalent:
-\begin{enumerate}[\normalfont(a)]
-\item $l_1,\ldots l_n$ sind linear unabhängig in $V^*$ und $q(v)=\sum_{k=1}^n\lambda_k l_k^2(v)$ für alle $v\in V$.
-\item $P:=(l_i(v_j))_{1\le i,j\le n}\in K^{n\times n}$ ist invertierbar und $M(q,\underline{v})=P^TDP$  mit $D:=\left(\begin{smallmatrix}
-\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
-& \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & \la_n\end{smallmatrix}\right)\in K^{n\times n}$.
-\end{enumerate}
+	Gelte $2\neq 0$ in $K$. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q\in \QForm(V)$. Seien $l_1,\ldots ,l_n\in V^*$ und $\lambda_1,\ldots ,\lambda_n\in K$. Dann sind äquivalent:
+	\begin{enumerate}[\normalfont(a)]
+		\item $l_1,\ldots l_n$ sind linear unabhängig in $V^*$ und $q(v)=\sum_{k=1}^n\lambda_k l_k^2(v)$ für alle $v\in V$.
+		\item $P:=(l_i(v_j))_{1\le i,j\le n}\in K^{n\times n}$ ist invertierbar und $M(q,\underline{v})=P^TDP$  mit $D:=\left(\begin{smallmatrix}
+		\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+		& \ddots &\\
+		\rlap{\tlap{\LARGE 0}} & & \la_n\end{smallmatrix}\right)\in K^{n\times n}$.
+	\end{enumerate}
 \end{sat}
 \begin{cproof}
-Nach Lemma \ref{13.5.1} reicht es zu zeigen $l_1,\ldots ,l_n\text{ lin. unabhängig in }V^*\Longleftrightarrow P\text{ invertierbar}$. Da $\underline{v}$ eine Basis von $V$ ist, ist $V^*\to K^n, l\mapsto\cvec{l(v_1)\\\vdots\\l(v_n)}$ ein $K$-Vektorraum Isomorhismus. Daher gilt
-\begin{align*}
-l_1,\ldots ,l_n\text{ lin. unabhängig in }V^*&\Longleftrightarrow\cvec{l_1(v_1)\\\vdots\\l_1(v_n)},\ldots ,\cvec{l_n(v_1)\\\vdots\\l_n(v_n)} \text{ lin. unabhängig in }K\\
-&\Longleftrightarrow \rank P=n\Longleftrightarrow P\text{ invertierbar}.
-\end{align*}
+	Nach Lemma \ref{13.5.1} reicht es zu zeigen $l_1,\ldots ,l_n\text{ lin. unabhängig in }V^*\Longleftrightarrow P\text{ invertierbar}$. Da $\underline{v}$ eine Basis von $V$ ist, ist $V^*\to K^n, l\mapsto\cvec{l(v_1)\\\vdots\\l(v_n)}$ ein $K$-Vektorraum Isomorphismus. Daher gilt
+	\begin{align*}
+		l_1,\ldots ,l_n\text{ lin. unabhängig in }V^*&\Longleftrightarrow\cvec{l_1(v_1)\\\vdots\\l_1(v_n)},\ldots ,\cvec{l_n(v_1)\\\vdots\\l_n(v_n)} \text{ lin. unabhängig in }K\\
+		&\Longleftrightarrow \rank P=n\Longleftrightarrow P\text{ invertierbar}.
+	\end{align*}
 \end{cproof}
 
 \begin{bsp}\label{13.5.3}
-Gegeben ist die Matrix $A:=\begin{pmatrix*}2&-2&0\\-2&-1&-4\\ 0&-4&0
-\end{pmatrix*}\in \SQ^{3\times 3}$. Gesucht ist eine invertierbare Matrix $P\in \SQ^{3\times 3}$ und eine Diagonalmatrix $D\in \Q^{3\times 3}$ mit $A=P^TDP$. Betrachte die quadratische Form $q$ auf $\Q^3$ mit $M(q,\e)=A$. Es gilt für $x,y,z\in \Q$:
-\begin{align*}
-q(x,y,z)&=2x^2-4xy-y^2-8yz=(\underbrace{2}_{\la_1}\underbrace{(x-y)^2}_{l_1(x,y,z)}\underbrace{-2(-y)^2)-y^2-8yz}_{q_1(y,z)}\\
-q_1(y,z)&=-3y^3-8zy=\underbrace{-3}_{\la_2}\underbrace{\left(y-\frac{4}{3}z\right)^2}_{l_2(y,z)}\underbrace{+\frac{16}{9}}_{\la_3}\underbrace{z^2}_{l_3(z)}.
-\end{align*}
-Setzt man $P:=\begin{pmatrix}1&-1&0\\ 0 & 1 & 4/3\\ 0 & 0 & 1\end{pmatrix}$ und $D:=\begin{pmatrix*}2 & 0 & 0\\ 0 & -3 & 0\\ 0 & 0 &16/3\end{pmatrix*}$, so gilt nach Satz \ref{13.5.2} $A=P^TDP$.
+	Gegeben ist die Matrix $A:=\begin{pmatrix*}2&-2&0\\-2&-1&-4\\ 0&-4&0
+	\end{pmatrix*}\in \SQ^{3\times 3}$. Gesucht ist eine invertierbare Matrix $P\in \SQ^{3\times 3}$ und eine Diagonalmatrix $D\in \Q^{3\times 3}$ mit $A=P^TDP$. Betrachte die quadratische Form $q$ auf $\Q^3$ mit $M(q,\e)=A$. Es gilt für $x,y,z\in \Q$:
+	\begin{align*}
+		q(x,y,z)&=2x^2-4xy-y^2-8yz=(\underbrace{2}_{\la_1}\underbrace{(x-y)^2}_{l_1(x,y,z)}\underbrace{-2(-y)^2)-y^2-8yz}_{q_1(y,z)}\\
+		q_1(y,z)&=-3y^3-8zy=\underbrace{-3}_{\la_2}\underbrace{\left(y-\frac{4}{3}z\right)^2}_{l_2(y,z)}\underbrace{+\frac{16}{9}}_{\la_3}\underbrace{z^2}_{l_3(z)}.
+	\end{align*}
+	Setzt man $P:=\begin{pmatrix}1&-1&0\\ 0 & 1 & 4/3\\ 0 & 0 & 1\end{pmatrix}$ und $D:=\begin{pmatrix*}2 & 0 & 0\\ 0 & -3 & 0\\ 0 & 0 &16/3\end{pmatrix*}$, so gilt nach Satz \ref{13.5.2} $A=P^TDP$.
 \end{bsp}
 
 \begin{bsp}\label{13.5.4}
-Gegeben ist die Matrix $A:=\begin{pmatrix}0&1&1&0\\1&0&1&0\\1&1&0&1\\0&0&1&0\end{pmatrix}\in \SQ^{4\times 4}$. Gesucht ist eine invertierbare Matrix $P\in \Q^{4\times 4}$ und eine Diagonalmatrix $D\in \Q^{4\times 4}$ mit $A=P^TDP$. Betrachte $q\in \QForm(\Q^4)$ mit $M(q,\e)=A$. Für $x\in \Q^4$ gilt
-\begin{align*}
-q(x)&=2x_1x_2+2x_1x_3+2x_2x_3+2x_3x_4\\
-&=(2\underbrace{(x_1+x_3)}_{h_1(x_1,x_3)}\underbrace{(x_2+x_3)}_{h_2(x_2,x_3)}\underbrace{-2x_3^3)+2x_3x_4}_{q_1(x_3,x_4)}\\
-&=\underbrace{\frac{1}{2}}_{\la_1=-\la_2}\left(\underbrace{(h_1+h_2)^2}_{l_1(x_1,x_2,x_3)}-\underbrace{(h_1-h_2)^2}_{l_2(x_1,x_2,x_3)}\right)+q_1\\
-q_1(x_3,x_4)&=-2x_3^2+2x_3x_4=\underbrace{-2}_{\la_3}\left(\underbrace{x_3-\frac{1}{2}x_4}_{l_3(x_3,x_4}\right)^2\underbrace{-\frac{1}{2}}_{\la_4}\underbrace{x_4^2}_{l_4(x_4)}.
-\end{align*}
-Wir rechnen noch $l_1,l_2$ aus: $l_1=h_1+h_2=x_1+x_2+2x_3$ und $l_2=h_1-h_2=x_1-x_2$. Setzt man $P:=\begin{pmatrix*}1&1&2&0\\1&-1&0&0\\0&0&1&-1/2\\0&0&0&1\end{pmatrix*}$ und $D:=\begin{pmatrix*}1/2 & 0 & 0 & 0\\0&-1/2&0&0\\ 0&0&-2&0\\ 0&0&0&-1/2\end{pmatrix*}$, so gilt $A=P^TDP$. Man beachte hierbei, dass die Matrix $P=(l_i(e_j))_{1\le i,h\le 4}$ invertierbar ist, da $l_1,l_2,l_3,l_4$ eine Basis von $(\Q^4)^*$ bilden, denn $\lin(l_1,l_2,l_3,l_4)=\lin(h_1,h_2,l_3,l_4)=(\Q^4)^*$.
+	Gegeben ist die Matrix $A:=\begin{pmatrix}0&1&1&0\\1&0&1&0\\1&1&0&1\\0&0&1&0\end{pmatrix}\in \SQ^{4\times 4}$. Gesucht ist eine invertierbare Matrix $P\in \Q^{4\times 4}$ und eine Diagonalmatrix $D\in \Q^{4\times 4}$ mit $A=P^TDP$. Betrachte $q\in \QForm(\Q^4)$ mit $M(q,\e)=A$. Für $x\in \Q^4$ gilt
+	\begin{align*}
+		q(x)&=2x_1x_2+2x_1x_3+2x_2x_3+2x_3x_4\\
+		&=(2\underbrace{(x_1+x_3)}_{h_1(x_1,x_3)}\underbrace{(x_2+x_3)}_{h_2(x_2,x_3)}\underbrace{-2x_3^3)+2x_3x_4}_{q_1(x_3,x_4)}\\
+		&=\underbrace{\frac{1}{2}}_{\la_1=-\la_2}\left(\underbrace{(h_1+h_2)^2}_{l_1(x_1,x_2,x_3)}-\underbrace{(h_1-h_2)^2}_{l_2(x_1,x_2,x_3)}\right)+q_1\\
+		q_1(x_3,x_4)&=-2x_3^2+2x_3x_4=\underbrace{-2}_{\la_3}\left(\underbrace{x_3-\frac{1}{2}x_4}_{l_3(x_3,x_4}\right)^2\underbrace{-\frac{1}{2}}_{\la_4}\underbrace{x_4^2}_{l_4(x_4)}.
+	\end{align*}
+	Wir rechnen noch $l_1,l_2$ aus: $l_1=h_1+h_2=x_1+x_2+2x_3$ und $l_2=h_1-h_2=x_1-x_2$. Setzt man $P:=\begin{pmatrix*}1&1&2&0\\1&-1&0&0\\0&0&1&-1/2\\0&0&0&1\end{pmatrix*}$ und $D:=\begin{pmatrix*}1/2 & 0 & 0 & 0\\0&-1/2&0&0\\ 0&0&-2&0\\ 0&0&0&-1/2\end{pmatrix*}$, so gilt $A=P^TDP$. Man beachte hierbei, dass die Matrix $P=(l_i(e_j))_{1\le i,h\le 4}$ invertierbar ist, da $l_1,l_2,l_3,l_4$ eine Basis von $(\Q^4)^*$ bilden, denn $\lin(l_1,l_2,l_3,l_4)=\lin(h_1,h_2,l_3,l_4)=(\Q^4)^*$.
 \end{bsp}
 
 \begin{df}\label{13.5.5}
-Bezeichne $\e=(e_1,\ldots ,e_n)$ wie immer die Standardbasis des $K^n$. Eine Permutationsmatrix \emph{Permutationsmatrix}\index{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}!Permutationsmatrix} ist eine Matrix $S\in K^{n\times n}$ der Form $S=(e_{\si(1)},\ldots ,e_{\si(n)})$ für eine Permutation $\si \in S_n$.
+	Bezeichne $\e=(e_1,\ldots ,e_n)$ wie immer die Standardbasis des $K^n$. Eine Permutationsmatrix \emph{Permutationsmatrix}\index{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}!Permutationsmatrix} ist eine Matrix $S\in K^{n\times n}$ der Form $S=(e_{\si(1)},\ldots ,e_{\si(n)})$ für eine Permutation $\si \in S_n$.
 \end{df}
 	
 \begin{bem}\label{13.5.6}
-\begin{enumerate}[\normalfont(a)]
-\item Sei $V$ ein Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $\si\in S_n$. Dann ist $\underline{v_{\si}}:=(v_{\si(1)},\ldots ,v_{\si(n)})$ auch eine Basis von $V$ und die Basiswechselmatrizen $M(\underline{v},\underline{v_{\si}})=(e_{\si^{-1}(1)},\ldots ,e_{\si^{-1}(n)})$ und $M(\underline{v_{\si}},\v)=(e_{\si^{}(1)},\ldots ,e_{\sigma^{}(n)})$ Permutationsmatrizen.
-\item Ist $\sigma\in S_n$, so gilt $\cvec{e^T_{\si(1)}\\\ldots \\ e^T_{\si(n)}}(e_{\si(1)},\ldots ,e_{\si(n)})=I_n$. Für jede Permutationsmatrix $S$ gilt daher $S^{-1}=S^T$.
-\end{enumerate}
+	\begin{enumerate}[\normalfont(a)]
+		\item Sei $V$ ein Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $\si\in S_n$. Dann ist $\underline{v_{\si}}:=(v_{\si(1)},\ldots ,v_{\si(n)})$ auch eine Basis von $V$ und die Basiswechselmatrizen $M(\underline{v},\underline{v_{\si}})=(e_{\si^{-1}(1)},\ldots ,e_{\si^{-1}(n)})$ und $M(\underline{v_{\si}},\v)=(e_{\si^{}(1)},\ldots ,e_{\sigma^{}(n)})$ Permutationsmatrizen.
+		\item Ist $\sigma\in S_n$, so gilt $\cvec{e^T_{\si(1)}\\\ldots \\ e^T_{\si(n)}}(e_{\si(1)},\ldots ,e_{\si(n)})=I_n$. Für jede Permutationsmatrix $S$ gilt daher $S^{-1}=S^T$.
+	\end{enumerate}
 \end{bem}
 
 \begin{df}\label{13.5.7}
-Sei $A\in \SK^{n\times n}$. Unter einer \emph{verallgemeinerten Cholesky-Zerlegung}\index{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}} von $A$ verstehen wir ein Tripel $(S,P,D)$ von Matrizen  $S,P,D\in K^{n\times n}$ mit $A=S^TP^TDPS$, wobei $S$ eine Permtuationsmatrix und $P$ wie $D$ von der Gestalt
-\begin{center}
-$P=
-\begin{pmatrix}~
-\begin{tikzpicture}[inner sep=0]
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a1) {$B_1$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a2) at (a1.south east) [anchor=north west] {$B_2$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (am) at (1.5,-1.5) [anchor=north west] {$B_k$};
-\node[scale=6] at (a2.north-|am) {$*$};
-\node[scale=3.5] at (0.1,-1.9) {$0$};
-\draw[loosely dotted,very thick,dash phase=2pt] (a2)--(am);
-\end{tikzpicture}
-\end{pmatrix}
-$
-und
-$P=
-\begin{pmatrix}~
-\begin{tikzpicture}[inner sep=0]
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a1) {$C_1$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a2) at (a1.south east) [anchor=north west] {$C_2$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (am) at (1.5,-1.5) [anchor=north west] {$C_k$};
-\node[scale=3.5] at (a2.north-|am) {$0$};
-\node[scale=3.5] at (0.1,-1.9) {$0$};
-\draw[loosely dotted,very thick,dash phase=2pt] (a2)--(am);
-\end{tikzpicture}
-\end{pmatrix}
-$
-\end{center}
-sind, wobei jedes $i\in \{1\ldots k\}$ das Paar $(B_i,C_i$)
-\begin{itemize}
-\item[-] \underline{entweder} ein Paar von $2\times 2$-Matrizen ist, nämlich $B_i:=\begin{pmatrix*}1&1\\ 1 &-1\end{pmatrix*}$ und $C_i=\begin{pmatrix*}\lambda & 0\\ 0 & -\lambda\end{pmatrix*}$ für ein $\lambda\in K^\times$,
-\item[-] \underline{oder} ein Paar von $1\times$-Matrizen ist, nämlich $B_i=(1)$ und $C_i=(\lambda)$ für ein $\lambda\in K$.
-\end{itemize}
+	Sei $A\in \SK^{n\times n}$. Unter einer \emph{verallgemeinerten Cholesky-Zerlegung}\index{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}} von $A$ verstehen wir ein Tripel $(S,P,D)$ von Matrizen  $S,P,D\in K^{n\times n}$ mit $A=S^TP^TDPS$, wobei $S$ eine Permtuationsmatrix und $P$ wie $D$ von der Gestalt
+	\begin{center}
+		$P=
+		\begin{pmatrix}~
+			\begin{tikzpicture}[inner sep=0]
+				\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a1) {$B_1$};
+				\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a2) at (a1.south east) [anchor=north west] {$B_2$};
+				\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (am) at (1.5,-1.5) [anchor=north west] {$B_k$};
+				\node[scale=6] at (a2.north-|am) {$*$};
+				\node[scale=3.5] at (0.1,-1.9) {$0$};
+				\draw[loosely dotted,very thick,dash phase=2pt] (a2)--(am);
+			\end{tikzpicture}
+		\end{pmatrix}
+		$
+		und
+		$P=
+		\begin{pmatrix}~
+			\begin{tikzpicture}[inner sep=0]
+				\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a1) {$C_1$};
+				\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (a2) at (a1.south east) [anchor=north west] {$C_2$};
+				\node[draw,regular polygon,regular polygon sides=4,inner sep=0] (am) at (1.5,-1.5) [anchor=north west] {$C_k$};
+				\node[scale=3.5] at (a2.north-|am) {$0$};
+				\node[scale=3.5] at (0.1,-1.9) {$0$};
+				\draw[loosely dotted,very thick,dash phase=2pt] (a2)--(am);
+			\end{tikzpicture}
+		\end{pmatrix}
+		$
+	\end{center}
+	sind, wobei jedes $i\in \{1\ldots k\}$ das Paar $(B_i,C_i$)
+	\begin{itemize}
+		\item[-] \underline{entweder} ein Paar von $2\times 2$-Matrizen ist, nämlich $B_i:=\begin{pmatrix*}1&1\\ 1 &-1\end{pmatrix*}$ und $C_i=\begin{pmatrix*}\lambda & 0\\ 0 & -\lambda\end{pmatrix*}$ für ein $\lambda\in K^\times$,
+		\item[-] \underline{oder} ein Paar von $1\times$-Matrizen ist, nämlich $B_i=(1)$ und $C_i=(\lambda)$ für ein $\lambda\in K$.
+	\end{itemize}
 \end{df}
 
 \begin{bem}\label{13.5.8}
-Ist $(S,P,D)$ eine verallgemeinerte Cholesky-Zerlegung einer Matrix $A\in \SK^{n\times n}$, so gilt
-\begin{align*}
-\det(A)&=\det(S^TP^TDPS)=\det(S^T)\det(P^T)\det(D)\det(S)\det(P)\\
-&=(\underbrace{\det(S)}_{=\pm 1})^2\det(P)^2\det(D)
-\end{align*}
-und $\det (P)=\prod_{k\in \{1\ldots n\}} B_i=\left(\det\begin{pmatrix*}1&1\\ 1 &-1\end{pmatrix*}\right)^{\{\# i\mid P_{i,i}=-1\}}$. Also $\det A=4^{\{\# i\mid P_{i,i}=-1\}}\det D$.
+	Ist $(S,P,D)$ eine verallgemeinerte Cholesky-Zerlegung einer Matrix $A\in \SK^{n\times n}$, so gilt
+	\begin{align*}
+		\det(A)&=\det(S^TP^TDPS)=\det(S^T)\det(P^T)\det(D)\det(S)\det(P)\\
+		&=(\underbrace{\det(S)}_{=\pm 1})^2\det(P)^2\det(D)
+	\end{align*}
+	und $\det (P)=\prod_{k\in \{1\ldots n\}} B_i=\left(\det\begin{pmatrix*}1&1\\ 1 &-1\end{pmatrix*}\right)^{\{\# i\mid P_{i,i}=-1\}}$. Also $\det A=4^{\{\# i\mid P_{i,i}=-1\}}\det D$.
 \end{bem}
 
-\begin{sat}\label{13.5.9} 
-Jede symmetrische Matrix über einen Körper $K$ mit $2\neq 0$ besitzt eine verallgemeinerte Cholesky-Zerlegung.
-\end{sat}
+\begin{satalgo}\label{13.5.9} 
+	Jede symmetrische Matrix über einen Körper $K$ mit $2\neq 0$ besitzt eine verallgemeinerte Cholesky-Zerlegung.
+\end{satalgo}
 \begin{cproof}
-Gelte $2\neq 0$ in $K$. Sei $n\in \N_0$ und $B\in \SK^{n\times n}$. Betrachte eine quadratische Form $q\in \QForm(K^n)$ mit $M(q,e)=B$. Schreibe $q(x)=\sum_{i\le j} a_{i,j}x_ix_j$ für $x\in K^n$ mit $a_{i,j}\in K$ ($1\le i\le j\ne n$).\\
-		
-\noindent \underline{Fall 1}. $a_{1,1}=a_{1,2}=\ldots =a_{1,n}=0$. Definiere $\la_1:=0$ und $l_1\in (K^n)^*$ durch $l(x)=x_1$ für $x\in K^n$. Betrachte sodann $q_1\in \QForm(K^{n-1})$ definiert durch $q_1\cvec{x_2\\\vdots\\x_n}=\sum_{2\le i\le j} a_{i,j}x_ix_j$ für $q(x)=\la_1l_1^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
+	Gelte $2\neq 0$ in $K$. Sei $n\in \N_0$ und $B\in \SK^{n\times n}$. Betrachte eine quadratische Form $q\in \QForm(K^n)$ mit $M(q,e)=B$. Schreibe $q(x)=\sum_{i\le j} a_{i,j}x_ix_j$ für $x\in K^n$ mit $a_{i,j}\in K$ ($1\le i\le j\ne n$).\\
+	\begin{itemize}
+			
+		\item[\underline{Fall 1}] $a_{1,1}=a_{1,2}=\ldots =a_{1,n}=0$. Definiere $\la_1:=0$ und $l_1\in (K^n)^*$ durch $l(x)=x_1$ für $x\in K^n$. Betrachte sodann $q_1\in \QForm(K^{n-1})$ definiert durch $q_1\cvec{x_2\\\vdots\\x_n}=\sum_{2\le i\le j} a_{i,j}x_ix_j$ für $q(x)=\la_1l_1^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
 	
-\noindent\underline{Fall 2}. $a_{1,1}\neq 0$. Definiere $\la_1:=a_{1,1}$ und $l_1\in (K^n)^*$ durch $l_1(x)=x_1+\sum_{j=2}^n\frac{a_{1,j}}{2a_{1,1}}x_j$ für $x\in K^n$. Dann gilt $\la_1l_1^2(x)=a_{1,1}x^2+\sum_{j=2}^n a_{1,j}x_1x_j+\sum_{2\le i\le j}b_{i,j}x_ix_j$ für alle $x\in K^n$ und gewisse $b_{i,j}\in K$. Betrachte sodann $q_1\in \QForm(K^{n-1})$ definiert durch $q_1\cvec{x_2\\\vdots\\x_n}=\sum_{2\le i\le j} (a_{i,j}-b_{i,j})^x_i1x_j$ für $\cvec{x_2\\\vdots\\x_n}\in K^{n-1}$. Es gilt $q(x)=\la_1l_1^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
+		\item[\underline{Fall 2}] $a_{1,1}\neq 0$. Definiere $\la_1:=a_{1,1}$ und $l_1\in (K^n)^*$ durch $l_1(x)=x_1+\sum_{j=2}^n\frac{a_{1,j}}{2a_{1,1}}x_j$ für $x\in K^n$. Dann gilt $\la_1l_1^2(x)=a_{1,1}x^2+\sum_{j=2}^n a_{1,j}x_1x_j+\sum_{2\le i\le j}b_{i,j}x_ix_j$ für alle $x\in K^n$ und gewisse $b_{i,j}\in K$. Betrachte sodann $q_1\in \QForm(K^{n-1})$ definiert durch $q_1\cvec{x_2\\\vdots\\x_n}=\sum_{2\le i\le j} (a_{i,j}-b_{i,j})^x_i1x_j$ für $\cvec{x_2\\\vdots\\x_n}\in K^{n-1}$. Es gilt $q(x)=\la_1l_1^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
 	
-\noindent\underline{Fall 3} $a_{1,1}=0$ aber $a_{1,j}\neq 0$ für ein $j$. 
-\begin{itemize}
-\item[ ]\underline{Fall 3.1} $a_{j,j}\neq 0$. Vertausche Indizes $1$ und $j$ auf Kosten der Permutationsmatrix und nehme daher \oe an, dass wir im Fall 2 sind.
-\item[ ] \underline{Fall 3.2} $a_{j,j}=0$. Wieder durch Permutation können wir \oe $j=2$ annehmen. Definiere $\la_1:=\frac{a_{1,2}}{4}, \la_2:=\frac{-a_{1,2}}{4}$ und $h_1,h_2\in (K^n)^*$ durch $h_1(x)=x_1+\sum_{j=3}^n\frac{a_{2,j}}{a_{1,2}}x_j$ und $h_2(x)=x_2+\sum_{j=3}^n\frac{a_{1,j}}{a_{1,2}}x_j$ für $x\in K^n$. Setze ferner $l_1:=h_1+h_2$ und $l_2:=h_1-h_2$. Dann gilt $\la_1 l_1^2(x)+\la_2l_2^2(x)=a_{1,2}h_1(x)h_2(x)=a_{1,2}x_1x_2+\underbrace{\sum_{j=3}^n a_{1,j} x_j+\sum_{j=3}^n a_{2,j}x_j}_{=\sum_{i=1}^2\sum_{j=1}^n a_{i,j}x_ix_j}+\sum_{3\le i\le j}b_{i,j}x_ix_j$ für alle $x\in K^n$ und gewisse $b_{i,j}\in K$. Betrachte $q_1\in \QForm(K^{n-2})$ definiert durch  $q_1\cvec{x_3\\\vdots\\x_n}=\sum_{2\le i\le j} (a_{i,j}-b_{i,j})x_ix_j$ für $\cvec{x_3\\\vdots\\x_n}\in K^{n-2}$. Es gilt $q(x)=\la_1l_1^2(x)+\la_2l_2^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
-\end{itemize}
-Wendet man nun dasselbe Verfahren rekursiv auf $q_1\in \QForm(K^{n-1})$ bzw. im Fall 3.2 auf $q_1\in \QForm(K^{n-2})$ an usw., so erhält man eine Darstellung 
-\begin{align*}
-q(x)=\sum_{i=1}^n \la_il_i^2(x)\ (x\in K^n)
-\end{align*}	 
-mit $\la_1,\ldots ,\la_n\in K$ und $l_1,\ldots ,l_n\in (K_n)^*$. Nach Lemma \ref{13.5.1} gilt $M(q,\underline{e})=P^TDP$ mit $D:=\left(\begin{smallmatrix}
-\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
-& \ddots &\\
-\rlap{\tlap{\LARGE 0}} & & \la_n\end{smallmatrix}\right)\in K^{n\times n}$ und $P:=(l_i(v_j))_{1\le i\le m, 1\le j\le n}\in K^{n\times n}$ und $P:=(l_i(e_j))_{1\le i,j\le n}\in K^{n\times n}$ Man erkennt, dass $P$ die gewünschte Gestalt hat. In der Tat: in den Fällen 1 und 2 gilt (mit $B_i$ und $C_i$ wie in der Definition der verallgemeinerten Cholesky-Zerlegung) $B_1=(l_1(e_1))\in K^{1\times 1}$ und $C_1=(\lambda_1)\in K^{1\times 1}$. Im Fall 3.2 gilt
-\begin{align*}
-B_1=\begin{pmatrix*}l_1(e_1) & l_1(e_2)\\ l_2(e_1) & l_2(e_2)\end{pmatrix*}=\begin{pmatrix*}(h_1+h_2)(e_1) & (h_1+h_2)(e_2)\\ (h_1-h_2)(e_1) & (h_1-h_2)(e_2)\end{pmatrix*}=\begin{pmatrix} 1 & 1 \\ 1 &  -1\end{pmatrix}\in K^{2\times 2}
-\end{align*}
-und $C_1=\begin{pmatrix}\lambda_1 & 0\\ 0 & -\lambda_1\end{pmatrix}$ mit $\lambda_1=\frac{a_{1,2}}{4}\neq 0$.
+		\item[\underline{Fall 3}] $a_{1,1}=0$ aber $a_{1,j}\neq 0$ für ein $j$. 
+		\begin{itemize}
+			\item[\underline{Fall 3.1}] $a_{j,j}\neq 0$. Vertausche Indizes $1$ und $j$ auf Kosten der Permutationsmatrix und nehme daher \oe an, dass wir im Fall 2 sind.
+			\item[\underline{Fall 3.2}] $a_{j,j}=0$. Wieder durch Permutation können wir \oe $j=2$ annehmen. Definiere $\la_1:=\frac{a_{1,2}}{4}, \la_2:=\frac{-a_{1,2}}{4}$ und $h_1,h_2\in (K^n)^*$ durch $h_1(x)=x_1+\sum_{j=3}^n\frac{a_{2,j}}{a_{1,2}}x_j$ und $h_2(x)=x_2+\sum_{j=3}^n\frac{a_{1,j}}{a_{1,2}}x_j$ für $x\in K^n$. Setze ferner $l_1:=h_1+h_2$ und $l_2:=h_1-h_2$. Dann gilt $\la_1 l_1^2(x)+\la_2l_2^2(x)=a_{1,2}h_1(x)h_2(x)=a_{1,2}x_1x_2+\underbrace{\sum_{j=3}^n a_{1,j} x_j+\sum_{j=3}^n a_{2,j}x_j}_{=\sum_{i=1}^2\sum_{j=1}^n a_{i,j}x_ix_j}+\sum_{3\le i\le j}b_{i,j}x_ix_j$ für alle $x\in K^n$ und gewisse $b_{i,j}\in K$. Betrachte $q_1\in \QForm(K^{n-2})$ definiert durch  $q_1\cvec{x_3\\\vdots\\x_n}=\sum_{2\le i\le j} (a_{i,j}-b_{i,j})x_ix_j$ für $\cvec{x_3\\\vdots\\x_n}\in K^{n-2}$. Es gilt $q(x)=\la_1l_1^2(x)+\la_2l_2^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
+		\end{itemize}
+	\end{itemize}
+	Wendet man nun dasselbe Verfahren rekursiv auf $q_1\in \QForm(K^{n-1})$ bzw. im Fall 3.2 auf $q_1\in \QForm(K^{n-2})$ an usw., so erhält man eine Darstellung 
+	\begin{align*}
+		q(x)=\sum_{i=1}^n \la_il_i^2(x)\ (x\in K^n)
+	\end{align*}	 
+	mit $\la_1,\ldots ,\la_n\in K$ und $l_1,\ldots ,l_n\in (K_n)^*$. Nach Lemma \ref{13.5.1} gilt $M(q,\underline{e})=P^TDP$ mit $D:=\left(\begin{smallmatrix}
+		\la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
+		& \ddots &\\
+		\rlap{\tlap{\LARGE 0}} & & \la_n
+	\end{smallmatrix}\right)\in K^{n\times n}$ und $P:=(l_i(v_j))_{1\le i\le m, 1\le j\le n}\in K^{n\times n}$ und $P:=(l_i(e_j))_{1\le i,j\le n}\in K^{n\times n}$ Man erkennt, dass $P$ die gewünschte Gestalt hat. In der Tat: in den Fällen 1 und 2 gilt (mit $B_i$ und $C_i$ wie in der Definition der verallgemeinerten Cholesky-Zerlegung) $B_1=(l_1(e_1))\in K^{1\times 1}$ und $C_1=(\lambda_1)\in K^{1\times 1}$. Im Fall 3.2 gilt
+	\begin{align*}
+		B_1=\begin{pmatrix*}l_1(e_1) & l_1(e_2)\\ l_2(e_1) & l_2(e_2)\end{pmatrix*}=\begin{pmatrix*}(h_1+h_2)(e_1) & (h_1+h_2)(e_2)\\ (h_1-h_2)(e_1) & (h_1-h_2)(e_2)\end{pmatrix*}=\begin{pmatrix} 1 & 1 \\ 1 &  -1\end{pmatrix}\in K^{2\times 2}
+	\end{align*}
+	und $C_1=\begin{pmatrix}\lambda_1 & 0\\ 0 & -\lambda_1\end{pmatrix}$ mit $\lambda_1=\frac{a_{1,2}}{4}\neq 0$.
 \end{cproof}
 
 \begin{bem}\label{13.5.10}
-\begin{enumerate}[\normalfont(a)]
-\item Der Beweis von \ref{13.5.9} zeigt, wie man im Fall $2\neq 0$ in $K$ verallgemeinerte Cholesky-Zerlegungen berechnen kann. Auf diese Weise wurde in den letzten beiden Beispielen bereits eine solche Zerlegung berechnet (mit der Einheitsmatrix als Permutationsmatrix).
-\item Es ist natürlich erstrebenswert in einer verallgemeinerten Cholesky-Zerlegung $(S,P,D)$ einer Matrix $A\in \SK^{n\times n}$ zu erreichen, dass $P$ in oberer Dreiecksgestalt vorliegt (vermeide Fall 3.2 im Beweis des Satzes) und $S=I_n$ gilt (vermeide Fall 3.1 , also unnötige Variablenvertauschungen).
-\item Ist $K=\R$, gilt $q(x)\ge 0$ für alle $x\in \R^n$, so sieht man leicht, dass Fall 3 in obigem Beweis im ersten Schritt nicht eintreten kann. In den Fällen 1 und 2 gibt es aber für alle $x_2,\ldots x_n\in \R$  ein $x_1\in \R$ mit $l_1(x_1)=0$, woraus $q_1\cvec{x_2\\\vdots\\x_n}=q(x)\ge 0$ folgt. Daher kann dann Fall 3 auch in den folgenden Schritten automatisch nicht eintreten.
-\end{enumerate}
+	$\,$
+	\begin{enumerate}[\normalfont(a)]
+		\item Der Beweis von \ref{13.5.9} zeigt, wie man im Fall $2\neq 0$ in $K$ verallgemeinerte Cholesky-Zerlegungen berechnen kann. Auf diese Weise wurde in den letzten beiden Beispielen bereits eine solche Zerlegung berechnet (mit der Einheitsmatrix als Permutationsmatrix).
+		\item Es ist natürlich erstrebenswert in einer verallgemeinerten Cholesky-Zerlegung $(S,P,D)$ einer Matrix $A\in \SK^{n\times n}$ zu erreichen, dass $P$ in oberer Dreiecksgestalt vorliegt (vermeide Fall 3.2 im Beweis des Satzes) und $S=I_n$ gilt (vermeide Fall 3.1 , also unnötige Variablenvertauschungen).
+		\item Ist $K=\R$, gilt $q(x)\ge 0$ für alle $x\in \R^n$, so sieht man leicht, dass Fall 3 in obigem Beweis im ersten Schritt nicht eintreten kann. In den Fällen 1 und 2 gibt es aber für alle $x_2,\ldots x_n\in \R$  ein $x_1\in \R$ mit $l_1(x_1)=0$, woraus $q_1\cvec{x_2\\\vdots\\x_n}=q(x)\ge 0$ folgt. Daher kann dann Fall 3 auch in den folgenden Schritten automatisch nicht eintreten.
+	\end{enumerate}
 \end{bem}
 
 \begin{kor}\label{13.5.11}
-Gelte $0\neq 2$ in $K$. Sei $n\in \N_0$ und $A\in \SK^{n\times n}$. Dann gibt es eine invertierbare Matrix $P\in K^{n\times n}$ und eine Diagonalmatrix $D\in K^{n\times n}$ mit $A=P^TDP$.
+	Gelte $0\neq 2$ in $K$. Sei $n\in \N_0$ und $A\in \SK^{n\times n}$. Dann gibt es eine invertierbare Matrix $P\in K^{n\times n}$ und eine Diagonalmatrix $D\in K^{n\times n}$ mit $A=P^TDP$.
 \end{kor}
 	
-\begin{kor}\label{13.5.12} (Diagonalisierung quadratischer Formen) Gelte $0\neq 2$ in $K$. Sei $V$ ein endlichdimensionaler Vektorraum und $b\in \SBil(V)$. Dann gibt es eine geordnete Basis $\underline{v}$ und $V$ derart, dass $M(b,\underline{v})$ Diagonalgestalt hat.
+\begin{kor}\label{13.5.12} (Diagonalisierung quadratischer Formen) 
+	Gelte $0\neq 2$ in $K$. Sei $V$ ein endlichdimensionaler Vektorraum und $b\in \SBil(V)$. Dann gibt es eine geordnete Basis $\underline{v}$ und $V$ derart, dass $M(b,\underline{v})$ Diagonalgestalt hat.
 \end{kor}
 \begin{cproof}
-Wähle eine Basis $\w=(w_1,\ldots ,w_n)$ von $V$. Wähle eine invertierbare Matrix $P\in K^{n\times n}$ und eine Diagonalmatrix $D\in K^{n\times n}$ mit $M(b,\w)=P^TDP$. Setze $v_i:=\ve_{\w} P^{-1}e_i$. Dann ist $\v=(v_1,\ldots ,v_n)$ eine Basis von $V$ und es gilt
-\begin{align*}
-b(v_i,v_j)&=\co_{\w}(v_i)^T M(b,\w)\co_{\w}(v_j)=(P^{-1}e_i)^TP^TDP(P^{-1}e_j)\\
-&=(PP^{-1}e_i)^TD(PP^{-1}e_j)=e_i^TDe_j
-\end{align*}
-für $i,j\in\{1\ldots n\}$, also $M(b,\v)=D$.
+	Wähle eine Basis $\w=(w_1,\ldots ,w_n)$ von $V$. Wähle eine invertierbare Matrix $P\in K^{n\times n}$ und eine Diagonalmatrix $D\in K^{n\times n}$ mit $M(b,\w)=P^TDP$. Setze $v_i:=\ve_{\w} P^{-1}e_i$. Dann ist $\v=(v_1,\ldots ,v_n)$ eine Basis von $V$ und es gilt
+	\begin{align*}
+		b(v_i,v_j)&=\co_{\w}(v_i)^T M(b,\w)\co_{\w}(v_j)=(P^{-1}e_i)^TP^TDP(P^{-1}e_j)\\
+		&=(PP^{-1}e_i)^TD(PP^{-1}e_j)=e_i^TDe_j
+	\end{align*}
+	für $i,j\in\{1\ldots n\}$, also $M(b,\v)=D$.
 \end{cproof}
 \end{document}
