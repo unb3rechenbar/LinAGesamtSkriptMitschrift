@@ -661,7 +661,7 @@ Gelte $2\neq 0$ in $K$. Sei $n\in \N_0$ und $B\in \SK^{n\times n}$. Betrachte ei
 	
 \noindent\underline{Fall 3} $a_{1,1}=0$ aber $a_{1,j}\neq 0$ für ein $j$. 
 \begin{itemize}
-\item[ ]\underline{Fall 3.1} $a_{j,j}\neq 0$. Vertausche Indizes $1$ und $j$ auf Kosten der Permutationsmatrix und nehme daher \oe an, dass wir im Fall 1 sind.
+\item[ ]\underline{Fall 3.1} $a_{j,j}\neq 0$. Vertausche Indizes $1$ und $j$ auf Kosten der Permutationsmatrix und nehme daher \oe an, dass wir im Fall 2 sind.
 \item[ ] \underline{Fall 3.2} $a_{j,j}=0$. Wieder durch Permutation können wir \oe $j=2$ annehmen. Definiere $\la_1:=\frac{a_{1,2}}{4}, \la_2:=\frac{-a_{1,2}}{4}$ und $h_1,h_2\in (K^n)^*$ durch $h_1(x)=x_1+\sum_{j=3}^n\frac{a_{2,j}}{a_{1,2}}x_j$ und $h_2(x)=x_2+\sum_{j=3}^n\frac{a_{1,j}}{a_{1,2}}x_j$ für $x\in K^n$. Setze ferner $l_1:=h_1+h_2$ und $l_2:=h_1-h_2$. Dann gilt $\la_1 l_1^2(x)+\la_2l_2^2(x)=a_{1,2}h_1(x)h_2(x)=a_{1,2}x_1x_2+\underbrace{\sum_{j=3}^n a_{1,j} x_j+\sum_{j=3}^n a_{2,j}x_j}_{=\sum_{i=1}^2\sum_{j=1}^n a_{i,j}x_ix_j}+\sum_{3\le i\le j}b_{i,j}x_ix_j$ für alle $x\in K^n$ und gewisse $b_{i,j}\in K$. Betrachte $q_1\in \QForm(K^{n-2})$ definiert durch  $q_1\cvec{x_3\\\vdots\\x_n}=\sum_{2\le i\le j} (a_{i,j}-b_{i,j})x_ix_j$ für $\cvec{x_3\\\vdots\\x_n}\in K^{n-2}$. Es gilt $q(x)=\la_1l_1^2(x)+\la_2l_2^2(x)+q_1\cvec{x_2\\\vdots\\x_n}$ für $x\in K^n$.\\
 \end{itemize}
 Wendet man nun dasselbe Verfahren rekursiv auf $q_1\in \QForm(K^{n-1})$ bzw. im Fall 3.2 auf $q_1\in \QForm(K^{n-2})$ an usw., so erhält man eine Darstellung 
