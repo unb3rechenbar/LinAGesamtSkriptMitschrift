@@ -169,9 +169,9 @@
 \begin{df}\label{12.2.4}
 	Sei $(A,\preceq)$ eine halbgeordnete Menge und $C\subseteq A$. Dann heißt $C$ eine \emph{Kette}\index{Halbordnung@{\bf Halbordnung}!Kette} (in $(A,\preceq)$), wenn die Einschränkung von $\preceq$ auf $C$ eine Ordnung ist, d.h. zusätzlich gilt:
 	\begin{itemize}
-		\item $\forall b,c\in C: (b\preceq c)\lor(c\preceq b)$ - ''Totalität''
+		\item $\forall b,c\in C: (b\preceq c)\lor(c\preceq b)$ - \enquote{Totalität}
 	\end{itemize}
-	Anschaulich wird $C$ durch $\preceq\vert_{C\times C}$ linear zu einer ''Kette''.
+	Anschaulich wird $C$ durch $\preceq\vert_{C\times C}$ linear zu einer \enquote{Kette}.
 \end{df}
 		
 \begin{bsp}\label{12.2.5}
@@ -182,16 +182,16 @@
 \end{bsp}
 
 \begin{lem}\label{12.2.6} 
-	Sei $M$ eine Menge und $\Pow(M)$ durch Inklusion halbgeordnet. Sei $B\in\Pow(M)$ derart, dass für jede Kette $C\subseteq B$ gilt $\bigcup C\in B$. Es ist $B$ gewissermaßen abgeschlossen unter Supremumsbildung. Ferner sei $f: B\rightarrow B$ eine Abbildung mit $\forall N\in B: N\subseteq f(N)$. Dann gibt es $N_0\in B$ mit $N_0=f(N_0)$.
+	Sei $M$ eine Menge und $\Pow(M)$ durch Inklusion halbgeordnet. Sei $B\in\Pow(M)$ derart, daß für jede Kette $C\subseteq B$ gilt $\bigcup C\in B$. Es ist $B$ gewissermaßen abgeschlossen unter Supremumsbildung. Ferner sei $f: B\rightarrow B$ eine Abbildung mit $\forall N\in B: N\subseteq f(N)$. Dann gibt es $N_0\in B$ mit $N_0=f(N_0)$.
 \end{lem}
 \begin{cproof}
 	Wir nennen $B'\subseteq B$ als $f$-induktiv, wenn $\forall N\in B': f(N)\in B'$ und $\bigcup C\in B'$ für jede Kette $C\subseteq B'$ gilt. Somit ist $B$ per Voraussetzung $f$-induktiv.\\	
 	\schritt{1}
 	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
 		\bewbeh{Behauptung}
-			Man darf annehmen, dass keine echte Teilmenge von $B$ $f$-induktiv ist. \\
+			Man darf annehmen, daß keine echte Teilmenge von $B$ $f$-induktiv ist. \\
 		\bewbeg{Begründung}
-			Wir zeigen, dass eine kleinste $f$-induktive Teilmenge von $B$ existiert (''minimalste'' würde aber reichen!). Setze
+			Wir zeigen, daß eine kleinste $f$-induktive Teilmenge von $B$ existiert (\enquote{minimalste} würde aber reichen!). Setze
 			\begin{align*}
 				B'':=\bigcap\{B'\subseteq B\mid B'\text{ ist}f\text{-induktiv}\}.
 			\end{align*}
@@ -222,7 +222,7 @@
 				\item Sei $C\subseteq B_N'$ eine Kette. Zu zeigen ist $\bigcup C\in B_N'$. Es gilt immer $\bigcup C\in B$. Zu zeigen ist $\bigcup C\subseteq N'$ oder $f(N')\subseteq \bigcup C$. Gelte ersteres nicht, zu zeigen ist dann letzteres. Wir können $N\in C$ mit $N\subsetneq N'$ wählen. Mit $N\in B'_N$ folgt $f(N')\subseteq N\subseteq \bigcup C$.
 			\end{enumerate}
 	\end{tcolorbox}
-	Insgesamt folgt für alle $N'\in B'$, dass $B'_N=N$ gilt. Also ist
+	Insgesamt folgt für alle $N'\in B'$, daß $B'_N=N$ gilt. Also ist
 	\begin{align*}
 		(*)\ \forall N'\in B': \forall N\in B: (N\subseteq N'\lor f(N')\subseteq N').
 	\end{align*}
@@ -242,98 +242,100 @@
 				\item Sei $C\subseteq B'$ eine Kette. Zu zeigen ist $\bigcup C\in B$ und $\forall N\in B: (N\subset \bigcup C)\implies f(N)\subseteq \bigcup C)$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset \bigcup C$. Zu zeigen ist $f(N)\subseteq \bigcup C$. Wegen $\bigcup C\subsetneq N$ gibt es $N'\in C\subseteq B'$ mit $N'\subsetneq N$. Insbesondere ist $f(N')\subseteq N$. Wegen (*) folgt $N\subseteq N'$ und hier sogar $N\subset N'$. Also $f(N)\subseteq N'\subseteq \bigcup C$ und wir sind fertig.
 			\end{enumerate}
 	\end{tcolorbox}
-	\noindent Wegen \textit{Schritt 1} ist $B'=B$, weshalb aus (*) folgt, dass $B$ eine Kette ist. Da B $f$-induktiv ist, folgt $N_0:=\bigcup B\in B$ und $f(N_0)\in B$. Daraus folgt $N_0\subseteq f(N_0)\subseteq \bigcup B=N_0$, also $N_0=f(N_0)$.
+	\noindent Wegen \textit{Schritt 1} ist $B'=B$, weshalb aus (*) folgt, daß $B$ eine Kette ist. Da B $f$-induktiv ist, folgt $N_0:=\bigcup B\in B$ und $f(N_0)\in B$. Daraus folgt $N_0\subseteq f(N_0)\subseteq \bigcup B=N_0$, also $N_0=f(N_0)$.
 \end{cproof}
 
-\begin{lem}\label{12.2.7} Sei $A$ eine halbgeordnete Menge. Dann gibt es eine maximale Kette $C$ in $A$.
+\begin{lem}\label{12.2.7}
+	Sei $A$ eine halbgeordnete Menge. Dann gibt es eine maximale Kette $C$ in $A$.
 \end{lem}
 \begin{cproof}
-Bezeichne $\mathcal{C}$ die durch Inklusion halbgeordnete Menge aller Ketten in $A$:
-\begin{align*}
-\mathcal{C}:=\{C\subseteq A\mid C\text{ ist Kette}\}.
-\end{align*}
-Nehmen wir an, es gäbe kein maximales Element in $\mathcal{C}$, also zu jedem $C\in\mathcal{C}$ gibt es ein $f(C)\in\mathcal{C}$ mit $C\subset f(C)$. Dies definiert eine Abbildung $f: \mathcal{C}\rightarrow \mathcal{C}$. Wir zeigen nun, für jede Kette $K\subseteq\mathcal{C}$ gilt $\bigcup K\in \mathcal{C}$. Sei also $K\subseteq\mathcal{C}$ eine Kette und seien $a,b\in \bigcup K$. Zu zeigen ist $a\preceq b\lor b\preceq a$. Wählen wir nun $C_1,C_2\in K$ so, dass $a\in C_1$ und $b\in C_2$. Da $K$ eine Kette ist, folgt $(C_1\subseteq C_2)\lor (C_2\subseteq C_1)$. $\OE$ gelte ersteres. Dann $a,b\in C_2$ und da $C_2$ eine Kette ist, folgt die Behauptung.\\
+	Bezeichne $\mathcal{C}$ die durch Inklusion halbgeordnete Menge aller Ketten in $A$:
+	\begin{align*}
+		\mathcal{C}:=\{C\subseteq A\mid C\text{ ist Kette}\}.
+	\end{align*}
+	Nehmen wir an, es gäbe kein maximales Element in $\mathcal{C}$, also zu jedem $C\in\mathcal{C}$ gibt es ein $f(C)\in\mathcal{C}$ mit $C\subset f(C)$. Dies definiert eine Abbildung $f: \mathcal{C}\rightarrow \mathcal{C}$. Wir zeigen nun, für jede Kette $K\subseteq\mathcal{C}$ gilt $\bigcup K\in \mathcal{C}$. Sei also $K\subseteq\mathcal{C}$ eine Kette und seien $a,b\in \bigcup K$. Zu zeigen ist $a\preceq b\lor b\preceq a$. Wählen wir nun $C_1,C_2\in K$ so, daß $a\in C_1$ und $b\in C_2$. Da $K$ eine Kette ist, folgt $(C_1\subseteq C_2)\lor (C_2\subseteq C_1)$. $\OE$ gelte ersteres. Dann $a,b\in C_2$ und da $C_2$ eine Kette ist, folgt die Behauptung.\\
 				
-Insgesamt ist dann $\mathcal{C}$ $f$-induktiv. Mit Lemma \eqref{12.2.6} finden wir dann aber eine Kette $C_0\in\mathcal{C}$ mit $C_0=f(C_0)$, was unserer Annahme widerspricht. Per Widerspruch sind wir somit fertig.
+	Insgesamt ist dann $\mathcal{C}$ $f$-induktiv. Mit Lemma \eqref{12.2.6} finden wir dann aber eine Kette $C_0\in\mathcal{C}$ mit $C_0=f(C_0)$, was unserer Annahme widerspricht. Per Widerspruch sind wir somit fertig.
 \end{cproof}
 
 \begin{sat}\label{12.2.8}
-Als \emph{Lemma von Zorn}\index{Halbordnung@{\bf Halbordnung}!Zorn'sche Lemma} $\left[\begin{matrix*}\text{Max August Zorn}\\ \text{*1906,\dag 1993}\end{matrix*}\right]$ wird der folgende Satz von Kuratowski $\left[\begin{matrix*}\text{Kazimierz, Kuratowski}\\ \text{*1896,\dag 1980}\end{matrix*}\right]$ bezeichnet.\\
-Sei $A$ eine halbgeordnete Menge derat, dass jede Kette in $A$ eine obere Schranke in $A$ besitzt. Dann besitzt $A$ ein maximales Element.
-		
+	Als \emph{Lemma von Zorn}\index{Halbordnung@{\bf Halbordnung}!Zorn'sche Lemma} $\left[\begin{matrix*}\text{Max August Zorn}\\ \text{*1906,\dag 1993}\end{matrix*}\right]$ wird der folgende Satz von Kuratowski $\left[\begin{matrix*}\text{Kazimierz, Kuratowski}\\ \text{*1896,\dag 1980}\end{matrix*}\right]$ bezeichnet.\\
+	Sei $A$ eine halbgeordnete Menge derart, daß jede Kette in $A$ eine obere Schranke in $A$ besitzt. Dann besitzt $A$ ein maximales Element.
 \end{sat}
-\begin{cproof} Wähle nach Lemma \eqref{12.2.7} eine maximale Kette $C$ in A. Wähle $a\in\ub(C)$ gemäß Voraussetzung. Wir behaupten, dass $a$ ein maximales Element von $A$ ist. Sei hierfür $c\in A$ mit $a\preceq c$. Zu zeigen ist $a=c$. Es ist wohl dann $C\cup\{a,c\}$ eine Kette in $A$. Da $C$ maximal ist, folgt aber $a,c\in C$. Da $a\in\ub(C)$, muss $c\preceq a$ gelten und per Antisymmetrie also $a=c$.
+\begin{cproof}
+	Wähle nach Lemma \eqref{12.2.7} eine maximale Kette $C$ in A. Wähle $a\in\ub(C)$ gemäß Voraussetzung. Wir behaupten, daß $a$ ein maximales Element von $A$ ist. Sei hierfür $c\in A$ mit $a\preceq c$. Zu zeigen ist $a=c$. Es ist wohl dann $C\cup\{a,c\}$ eine Kette in $A$. Da $C$ maximal ist, folgt aber $a,c\in C$. Da $a\in\ub(C)$, muss $c\preceq a$ gelten und per Antisymmetrie also $a=c$.
 \end{cproof}
 
 \begin{bem}\label{12.2.9}
-Dass die leere Kette in einer halbgeordneten Menge $A$ eine obere Schranke besitzt, führt dazu, dass $A$ nichtleer sein darf. Deshalb formulieren manche Autoren: \enquote{Sei $A$ eine nichtleere halgeordnete Menge derart, dass jede nichtleere Kette \ldots}.
+	Daß die leere Kette in einer halbgeordneten Menge $A$ eine obere Schranke besitzt, führt dazu, daß $A$ nichtleer sein darf. Deshalb formulieren manche Autoren: \enquote{Sei $A$ eine nichtleere halgeordnete Menge derart, daß jede nichtleere Kette \ldots}.
 \end{bem}
 
 \begin{kor}\label{12.2.10}
-Sei $A$ eine halbgeordnete Menge derart, dass jede nichtleere Kette in $A$ eine obere Schranke in $A$ besitzt. Dann gibt es zu jedem $a\in A$ ein maximales Element $b\in A$ mit $a\preceq b$.
+	Sei $A$ eine halbgeordnete Menge derart, daß jede nichtleere Kette in $A$ eine obere Schranke in $A$ besitzt. Dann gibt es zu jedem $a\in A$ ein maximales Element $b\in A$ mit $a\preceq b$.
 \end{kor}
 \begin{cproof}
-Betrachte $A':=\ub(\{a\})$ mit der auf $A'$ eingeschränkten Halbordnung. Wende das Zornsche Lemma auf $A'$ an und erhalte ein maximales Element $b$ von $A'$ zu erhalten. Es ist $b$ auch ein maximales Element von $A$, denn ist $c\in A$ mit $b\preceq c$, so gilt auch $c\in A'$. Also folgt $b=c$.
+	Betrachte $A':=\ub(\{a\})$ mit der auf $A'$ eingeschränkten Halbordnung. Wende das Zornsche Lemma auf $A'$ an und erhalte ein maximales Element $b$ von $A'$ zu erhalten. Es ist $b$ auch ein maximales Element von $A$, denn ist $c\in A$ mit $b\preceq c$, so gilt auch $c\in A'$. Also folgt $b=c$.
 \end{cproof}
 
 \begin{kor}\label{12.2.11}
-Sei $A$ eine durch Inklusion halbgeordnete Menge von Mengen derart, dass für jede nichtleere Kette $C\subseteq A$ gilt \case{$\bigcup C\in A$}{$\bigcap C\in A$}. Dann gibt es zu jedem $M\in A$ ein \case{maximales}{minimales} $N\in A$ mit \case{$M\subseteq N$}{$ N\subseteq M$}.
+	Sei $A$ eine durch Inklusion halbgeordnete Menge von Mengen derart, daß für jede nichtleere Kette $C\subseteq A$ gilt \case{$\bigcup C\in A$}{$\bigcap C\in A$}. Dann gibt es zu jedem $M\in A$ ein \case{maximales}{minimales} $N\in A$ mit \case{$M\subseteq N$}{$ N\subseteq M$}.
 \end{kor}
 
 \begin{bem}\label{12.2.12}
-Wie in \ref{1.1.2} angedeutet, gibt es bei der Mengenbildung Spielregeln einzuhalten. Dies wird auch durch obiges Korollar deutlich, welches im Widerspruch zur Existenz der Menge aller Mengen steht. Denn diese hat keine maximalen Elemente.
+	Wie in \ref{1.1.2} angedeutet, gibt es bei der Mengenbildung Spielregeln einzuhalten. Dies wird auch durch obiges Korollar deutlich, welches im Widerspruch zur Existenz der Menge aller Mengen steht. Denn diese hat keine maximalen Elemente.
 \end{bem}
 
 \begin{ans}
-Das Zorn'sche Lemma besagt, dass Mengen nicht furchtbar groß sein können, was folgender Gedanke verdeutlicht: Sei $A$ eine Menge, die alle Voraussetzung für das Lemma von Zorn erfüllt. Wie in Bemerkung \ref{12.2.9} erläutert, muss es ein Element $a_1\in A$ geben. Ist dieses nicht maximal, finden wir $a_2,a_3\ldots $, die größer als $a_1$ sind und erhalten die Kette
-\begin{align*}
-a_1,a_2,a_3,\ldots 
-\end{align*}
-Im schlimmsten Fall ist diese unendlich. Da aber jede Kette nach Voraussetzung ein maximales Element hat, gibt es ein $b_1$ in $A$, das größer als $a_1,a_2,a_3,\ldots $ ist und weiter eine Kette $b_1,b_2,b_3,\ldots $. Irgendwann erhält man so im schlimmsten Fall unendlich viele Ketten
-\begin{align*}
-&a_1,a_2,a_3,\ldots \\
-&b_1,b_2,b_3,\ldots \\
-&c_1,c_2,c_3,\ldots \\
-&\ldots ,
-\end{align*}
-wobei sichtbar $a_1,b_1,c_1,\ldots $ wieder eine Kette ist, mit welcher man gleiche Überlegungen wie zu der Kette $a_1,a_2,a_3,\ldots $ anstellen kann. Nach dem Zorn'schen Lemma muss aber irgendwann damit Schluss sein - es muss ein maximales Element geben.
+	Das Zorn'sche Lemma besagt, daß Mengen nicht furchtbar groß sein können, was folgender Gedanke verdeutlicht: Sei $A$ eine Menge, die alle Voraussetzung für das Lemma von Zorn erfüllt. Wie in Bemerkung \ref{12.2.9} erläutert, muss es ein Element $a_1\in A$ geben. Ist dieses nicht maximal, finden wir $a_2,a_3\ldots $, die größer als $a_1$ sind und erhalten die Kette
+	\begin{align*}
+		a_1,a_2,a_3,\ldots 
+	\end{align*}
+	Im schlimmsten Fall ist diese unendlich. Da aber jede Kette nach Voraussetzung ein maximales Element hat, gibt es ein $b_1$ in $A$, das größer als $a_1,a_2,a_3,\ldots $ ist und weiter eine Kette $b_1,b_2,b_3,\ldots $. Irgendwann erhält man so im schlimmsten Fall unendlich viele Ketten
+	\begin{align*}
+		&a_1,a_2,a_3,\ldots \\
+		&b_1,b_2,b_3,\ldots \\
+		&c_1,c_2,c_3,\ldots \\
+		&\ldots ,
+	\end{align*}
+	wobei sichtbar $a_1,b_1,c_1,\ldots $ wieder eine Kette ist, mit welcher man gleiche Überlegungen wie zu der Kette $a_1,a_2,a_3,\ldots $ anstellen kann. Nach dem Zorn'schen Lemma muss aber irgendwann damit Schluss sein - es muss ein maximales Element geben.
 \end{ans}
 
 \section{Existenz von Basen in beliebigen Vektorräumen}
 \begin{sat}\label{12.3.1}
-[$\to$ \ref{6.2.14}] Sei $V$ ein Vektorraum, $F\subseteq G\subseteq V$. Sei ferner $F$ linear unabhängig in $V$ und $G$ ein Erzeugendensystem von $V$. Betrachte die durch Inklusion halbgeordnete Menge
-\begin{align*}
-\mathcal{A}:=\{C\mid F\subseteq C\subseteq G\}.
-\end{align*}
-Dann sind äquivalent folgende Aussagen für alle $F\subseteq B\subseteq G$:
-\begin{enumerate}[\normalfont (a)]
-\item $B$ ist eine Basis von $V$,
-\item $B$ ist ein minimales Element von
-\begin{align*}
-\{C\in \mathcal{A}\mid C\in\text{ Erzeugendensystem von } V\},
-\end{align*}
-\item $B$ ist ein maximales Element von
-\begin{align*}
-\{C\in \mathcal{A}\mid C\in\text{ linear unabhängig in } V\}.
-\end{align*}
-\end{enumerate}
+	[$\to$ \ref{6.2.14}] 
+	Sei $V$ ein Vektorraum, $F\subseteq G\subseteq V$. Sei ferner $F$ linear unabhängig in $V$ und $G$ ein 	Erzeugendensystem von $V$. Betrachte die durch Inklusion halbgeordnete Menge
+	\begin{align*}
+		\mathcal{A}:=\{C\mid F\subseteq C\subseteq G\}.
+	\end{align*}
+	Dann sind äquivalent folgende Aussagen für alle $F\subseteq B\subseteq G$:
+	\begin{enumerate}[\normalfont (a)]
+		\item $B$ ist eine Basis von $V$,
+		\item $B$ ist ein minimales Element von
+		\begin{align*}
+			\{C\in \mathcal{A}\mid C\in\text{ Erzeugendensystem von } V\},
+		\end{align*}
+		\item $B$ ist ein maximales Element von
+		\begin{align*}
+			\{C\in \mathcal{A}\mid C\in\text{ linear unabhängig in } V\}.
+		\end{align*}
+	\end{enumerate}
 \end{sat}
 \begin{cproof}
-Schon gezeigt.
+	Schon gezeigt.
 \end{cproof}
 
 \begin{kor}\label{12.3.2}
-Sei $V$ ein Vektorraum, $F\subseteq G\subseteq V$. Sei ferner $F$ linear unabhängig in $V$ und $G$ ein Erzeugendensystem von $V$. Dann gibt es eine Basis $B$ von V mit $F\subseteq B\subseteq G$.
+	Sei $V$ ein Vektorraum, $F\subseteq G\subseteq V$. Sei ferner $F$ linear unabhängig in $V$ und $G$ ein Erzeugendensystem von $V$. Dann gibt es eine Basis $B$ von V mit $F\subseteq B\subseteq G$.
 \end{kor}
 \begin{cproof}
-Betrachte die durch Inklusion halbgeordnete Menge
-\begin{align*}
-\mathcal{B}:=\{C\mid F\subseteq C\subseteq G, C\text{ linear unabhängig in }V\}.
-\end{align*}
-Gemäß \ref{12.3.1}(c) ist zu zeigen, dass $\mathcal{B}$ ein maximales Element besitzt. Nach dem Zornschen Lemma reicht es hierfür zu zeigen, dass jede Kette in $\mathcal{B}$ eine obere Schranke besitzt. Sei also $K\subseteq \mathcal{B}$ eine Kette. Falls $K=\emptyset$, so ist $F$ eine obere Schranke von $K$. Sei also $K\neq \emptyset$. Wir behaupten, dass
-\begin{align*}
-C:=\bigcup K
-\end{align*}
-eine obere Schranke von $K$ ist. Es ist $F\subseteq C\subseteq G$ klar. Zu zeigen bleibt, dass $C$ linear unabhängig ist. Hierfür zeigen wir, dass jede endliche Teilmenge von $C$ linear unabhängig ist. Sei also $C'\subseteq C$ endlich. Da $C'\subseteq K$, gibt es eine endliche Teilkette $K'\subseteq K$ mit $C'\subseteq \bigcup K'$. $\OE$ gelte $K'\neq \emptyset$. Da $K'$ eine endliche nichtleere Kette ist, hat sie ein maximales Element $m_k:=\bigcup K'$. Daher gilt gilt $\bigcup K'\in K'\subseteq K\subseteq \mathcal{B}$. Insbesondere ist $K'$ linear unabhängig und damit auch $C'$.
+	Betrachte die durch Inklusion halbgeordnete Menge
+	\begin{align*}
+		\mathcal{B}:=\{C\mid F\subseteq C\subseteq G, C\text{ linear unabhängig in }V\}.
+	\end{align*}
+	Gemäß \ref{12.3.1}(c) ist zu zeigen, daß $\mathcal{B}$ ein maximales Element besitzt. Nach dem Zornschen Lemma reicht es hierfür zu zeigen, daß jede Kette in $\mathcal{B}$ eine obere Schranke besitzt. Sei also $K\subseteq \mathcal{B}$ eine Kette. Falls $K=\emptyset$, so ist $F$ eine obere Schranke von $K$. Sei also $K\neq \emptyset$. Wir behaupten, daß
+	\begin{align*}
+		C:=\bigcup K
+	\end{align*}
+	eine obere Schranke von $K$ ist. Es ist $F\subseteq C\subseteq G$ klar. Zu zeigen bleibt, daß $C$ linear unabhängig ist. Hierfür zeigen wir, daß jede endliche Teilmenge von $C$ linear unabhängig ist. Sei also $C'\subseteq C$ endlich. Da $C'\subseteq K$, gibt es eine endliche Teilkette $K'\subseteq K$ mit $C'\subseteq \bigcup K'$. $\OE$ gelte $K'\neq \emptyset$. Da $K'$ eine endliche nichtleere Kette ist, hat sie ein maximales Element $m_k:=\bigcup K'$. Daher gilt gilt $\bigcup K'\in K'\subseteq K\subseteq \mathcal{B}$. Insbesondere ist $K'$ linear unabhängig und damit auch $C'$.
 \end{cproof}
 \end{document}
