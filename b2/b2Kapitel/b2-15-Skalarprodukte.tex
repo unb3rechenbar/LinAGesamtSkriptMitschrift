@@ -77,10 +77,10 @@ Daher ist $T=T^*$.
 Seien $V,W$ je $\K$-Vektorräume mit Skalarprodukt. Sei $f: V\to W$ linear und $\dim V<\infty$. Dann ist $f^*$ auf ganz $W$ definiert.
 \end{sat}
 \begin{cproof}
-Wähle mit \ref{11.2.5} eine ONB $\v=(v_1,...,v_n)$ von $V$. Dann gilt für jede lineare Abbildung $g: W\to V$:
+Wähle mit \ref{11.2.5} eine ONB $\v=(v_1,\ldots ,v_n)$ von $V$. Dann gilt für jede lineare Abbildung $g: W\to V$:
 \begin{align*}
 g=f^*&\Longleftrightarrow \forall v\in V: \forall w\in W: \scal{f(v),w}=\scal{v,g(w)}\\
-&\Longleftrightarrow \forall i\in\{1,...,n\}: \forall w\in W: \scal{f(v_i),w}=\scal{v_i, g(w)}\\
+&\Longleftrightarrow \forall i\in\{1,\ldots ,n\}: \forall w\in W: \scal{f(v_i),w}=\scal{v_i, g(w)}\\
 &\Longleftrightarrow \forall w\in W: \sum_{i=1}^n \scal{f(v_i),w}v_i=\sum_{i=1}^n\scal{v_i, g(w)}v_i\stackrel{\ref{11.2.13}}{=}g(w).
 \end{align*}
 \end{cproof}
@@ -263,7 +263,7 @@ Betrachte nun $f\vert_{U^\perp}: U^{\perp}\to U^{\perp}$ und $f^*\vert_{U^\perp}
 \begin{align*}
 f\vert_{U^\perp}^*\circ f\vert_{U^\perp}&=f^*\vert_{U^\perp}\circ f\vert_{U^\perp}=(f^*\circ f)\vert_{U^\perp}=(f\circ f^*)\vert_{U^\perp}=f\vert_{U^\perp}\circ f^*\vert_{U^\perp}=f\vert_{U^\perp}\circ f\vert_{U^\perp}^*,
 \end{align*}
-weswegen $f\vert_{U^\perp}$ ebenfalls normal ist. Wegen $\dim(U^\perp)\stackrel{\ref{11.2.7}}{=}n-1$ gibt es nach IV eine ONB $(v_2,....,v_n)$ von $U^\perp$, die aus Eigenwerten von $f$ besteht. Setze $v_1:=u/\|u\|$, so erhält man eine ONB $(v_1,...,v_n)$ von $V$, die aus Eigenwerten von $f$ besteht.
+weswegen $f\vert_{U^\perp}$ ebenfalls normal ist. Wegen $\dim(U^\perp)\stackrel{\ref{11.2.7}}{=}n-1$ gibt es nach IV eine ONB $(v_2,\ldots .,v_n)$ von $U^\perp$, die aus Eigenwerten von $f$ besteht. Setze $v_1:=u/\|u\|$, so erhält man eine ONB $(v_1,\ldots ,v_n)$ von $V$, die aus Eigenwerten von $f$ besteht.
 \end{cproof}
 
 \begin{kor}\label{15.2.5}
@@ -286,11 +286,11 @@ $\boldsymbol{(a)\implies(b)}$ ist klar, da $f$ injektiv, und weil $V$ endlichdim
 		
 \noindent$\boldsymbol{(c)\implies(d)}$ ist klar.\\
 		
-\noindent$\boldsymbol{(d)\implies(a)}.$ Sei $\underline{v}=(v_1,...,v_n)$ eine ONB von $V$ mit $M(f,\underline{v})=\left(\begin{smallmatrix}
+\noindent$\boldsymbol{(d)\implies(a)}.$ Sei $\underline{v}=(v_1,\ldots ,v_n)$ eine ONB von $V$ mit $M(f,\underline{v})=\left(\begin{smallmatrix}
 \la_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
 & \ddots &\\
 \rlap{\tlap{\LARGE 0}} & & \la_n
-\end{smallmatrix}\right)$ und $\vert \la_i\vert=1$ für $i\in\{1,...,n\}$. Dann gilt
+\end{smallmatrix}\right)$ und $\vert \la_i\vert=1$ für $i\in\{1,\ldots ,n\}$. Dann gilt
 \begin{align*}
 M(f\circ f^*,\v)&=M(f,\v)M(f^*,\v)\stackrel{\v\text{ ONB}}{=}M(f,\underline{v})M(f,\v)^*\\
 &=\left(\begin{smallmatrix}
@@ -329,7 +329,7 @@ orthogonal & Eigenwerte liegen auf Einheitskreis\\
 selbstadjungiert & Eigenwerte sind reell
 \end{tabular}
 \end{center}
-Sei $V$ ein endlichdimensionaler $\K$-Vektorraum. Dann kann man für $f\in\End(V)$ und eine \underline{bestimmte} ONB davon mit Eigenwerten $\la_1,...\la_n\in \K$ ($n:=\dim V$) obige Tabelle auch formal darstellen.
+Sei $V$ ein endlichdimensionaler $\K$-Vektorraum. Dann kann man für $f\in\End(V)$ und eine \underline{bestimmte} ONB davon mit Eigenwerten $\la_1,\ldots \la_n\in \K$ ($n:=\dim V$) obige Tabelle auch formal darstellen.
 \begin{center}
 \begin{tabular}{c|c}
 \textbf{Bedingung an $f$} & \textbf{Bedingung an alle $\la_i$}\\
@@ -390,31 +390,31 @@ $\boldsymbol{(b)\implies (a)}$. Für $(a,b)\in \R$ gilt
 \end{align*}
 und der Beweis geht daher wie der Beweis von $(c)\implies (a)$ in Satz \ref{15.2.4}\\
 		
-$\boldsymbol{(a)\implies (b)}$. Nach \ref{11.2.23} ist $V$ als Vektorraum mit Standardskalarprodukt isomorph zu $\R^n$ ($n=\dim V)$ mit dem Standardskalarprodukt. Daher sei \oe $V=\R^n$ und $f=f_A$ mit $A:=M(f,\e)\in \R^{n\times n}$. Betrachte $g: \C^n\to \C^n,  x\mapsto Ax$. Offensichtlich gilt $A=M(g,\e)$ und wegen $A^*A=AA^*$ ist $g$ normal. Daher gibt es eine ONB $\w=(w_1,...,w_n)$ von $\C^n$, die aus Eigenwerten von $g$ besteht. Bezeichne $\la_i\in \C$ den zu $w_i$ gehörigen Eigenwert von $g$ $(i\in\{1,...,n\})$. Dann gilt $\chi_g=\det(A-XI_n)=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und wegen $\chi_g\in \R[X]$ (weil $A\in \R^{n\times n}$) auch $\chi_g=(-1)^n\prod_{i=1}^n(X-\lambda_i^*)$. Es folgt [$\to$\ref{10.1.13}], dass die Tupel $(\la_1,...\la_n)$ und $(\la_1^*,...,\la_n^*)$ bis auf Permutationen der Einträge dieselben sind. Nach allfälligem Umnummerieren der $\la_i$ und $w_i$ können wir daher davon ausgehen, dass
+$\boldsymbol{(a)\implies (b)}$. Nach \ref{11.2.23} ist $V$ als Vektorraum mit Standardskalarprodukt isomorph zu $\R^n$ ($n=\dim V)$ mit dem Standardskalarprodukt. Daher sei \oe $V=\R^n$ und $f=f_A$ mit $A:=M(f,\e)\in \R^{n\times n}$. Betrachte $g: \C^n\to \C^n,  x\mapsto Ax$. Offensichtlich gilt $A=M(g,\e)$ und wegen $A^*A=AA^*$ ist $g$ normal. Daher gibt es eine ONB $\w=(w_1,\ldots ,w_n)$ von $\C^n$, die aus Eigenwerten von $g$ besteht. Bezeichne $\la_i\in \C$ den zu $w_i$ gehörigen Eigenwert von $g$ $(i\in\{1,\ldots ,n\})$. Dann gilt $\chi_g=\det(A-XI_n)=(-1)^n\prod_{i=1}^n(X-\lambda_i)$ und wegen $\chi_g\in \R[X]$ (weil $A\in \R^{n\times n}$) auch $\chi_g=(-1)^n\prod_{i=1}^n(X-\lambda_i^*)$. Es folgt [$\to$\ref{10.1.13}], dass die Tupel $(\la_1,\ldots \la_n)$ und $(\la_1^*,\ldots ,\la_n^*)$ bis auf Permutationen der Einträge dieselben sind. Nach allfälligem Umnummerieren der $\la_i$ und $w_i$ können wir daher davon ausgehen, dass
 \begin{itemize}
-\item $\la_1,...,\la_k$ reell sind,
-\item $\la_{k+1},\la_{k+3},...$ einen positiven Imaginärteil haben und
-\item $\la_{k+1}^*=\la_{k+2}$, $\la_{k+3}=\la_{k+4}^*,...$.
+\item $\la_1,\ldots ,\la_k$ reell sind,
+\item $\la_{k+1},\la_{k+3},\ldots $ einen positiven Imaginärteil haben und
+\item $\la_{k+1}^*=\la_{k+2}$, $\la_{k+3}=\la_{k+4}^*,\ldots $.
 \end{itemize}
 		
-\noindent Wir ersetzen nun \oe in der ONB $\w$ mehrmals jeweils endlich viele $w_{i_1},...w_{i_r}$ ($1\le i_1\le i_2\le...\le i_r$) durch eine ONB $(u_1,...,u_r)$ von $\lin(w_{i_1},...w_{i_r})$ mit $f(u_j)=\la_{i_j}u_j$ für $j\in\{1,...,r\}$. Wir behaupten, dass wir so $w_1,...,w_k\in \R^n$ und $\overline{w}_{k+1}=w_{k+2},\overline{w}_{k+3}=w_{k+4},...$ erreichen können [$\to$\ref{15.2.8}].\\
+\noindent Wir ersetzen nun \oe in der ONB $\w$ mehrmals jeweils endlich viele $w_{i_1},\ldots w_{i_r}$ ($1\le i_1\le i_2\le\ldots \le i_r$) durch eine ONB $(u_1,\ldots ,u_r)$ von $\lin(w_{i_1},\ldots w_{i_r})$ mit $f(u_j)=\la_{i_j}u_j$ für $j\in\{1,\ldots ,r\}$. Wir behaupten, dass wir so $w_1,\ldots ,w_k\in \R^n$ und $\overline{w}_{k+1}=w_{k+2},\overline{w}_{k+3}=w_{k+4},\ldots $ erreichen können [$\to$\ref{15.2.8}].\\
 		
-\noindent\underline{Schritt 1}. \oe $w_1,....,w_k\in \R^n$.\\
-\underline{Begründung}. Für jeden reellen Eigenwert $\la$ von $g$ seien $r\in \N$ und $1\le i_1\le...\le i_r\le n$ derart, dass $\{i_1,...,i_r\}=\{i\mid \la_i=\la\}\subseteq\{1,...,k\}$. Dann gilt $\lin(w_{i_1},...,w_{i_r})=\ker(g-\la\text{id}_{\C^n})$, denn $"\subseteq"$ ist trivial und $r\ge \dim\ker(g-\la\text{id}_{\C^n})$ nach \ref{10.1.15} ("geometrische Vielfachheit ist kleiner/gleich algebraischer").\\
-Nun gilt $\ker(g-\la\id_{\C^n})=\ker_{\C^n}(A-\la I_n)\supseteq \ker_{\R^n}(A-\la I_n)$. Da $A-\la I_n$ als reelle Matrix denselben Rang hat wie als komplexe Matrix (der Rang kann durch Überführung in Stufenform über $\R$ ermittelt werden [$\to$,\ref{9.1.14}], dieselben Zeilenoperationen sind erst recht über $\C$ durchführbar), gilt $r=\dim\ker_{\C^n}(A-\la I_n)=\dim\ker_{\R^n}(A-\la I_n)$. Wähle nun eine ONB $(u_1,...,u_r)$ des $\R$-Vektorraums $\ker_{\R^n}(A-\la I_n)$ (mit Standardskalarprodukt). Dann ist $(u_1,...,u_r)$ auch eine ONB des $\C$-Vektorraums $\ker_{\C^n}(A-\la I_n)=\lin(w_{i_1},...,w_{i_r})$.\\
+\noindent\underline{Schritt 1}. \oe $w_1,\ldots .,w_k\in \R^n$.\\
+\underline{Begründung}. Für jeden reellen Eigenwert $\la$ von $g$ seien $r\in \N$ und $1\le i_1\le\ldots \le i_r\le n$ derart, dass $\{i_1,\ldots ,i_r\}=\{i\mid \la_i=\la\}\subseteq\{1,\ldots ,k\}$. Dann gilt $\lin(w_{i_1},\ldots ,w_{i_r})=\ker(g-\la\text{id}_{\C^n})$, denn $"\subseteq"$ ist trivial und $r\ge \dim\ker(g-\la\text{id}_{\C^n})$ nach \ref{10.1.15} ("geometrische Vielfachheit ist kleiner/gleich algebraischer").\\
+Nun gilt $\ker(g-\la\id_{\C^n})=\ker_{\C^n}(A-\la I_n)\supseteq \ker_{\R^n}(A-\la I_n)$. Da $A-\la I_n$ als reelle Matrix denselben Rang hat wie als komplexe Matrix (der Rang kann durch Überführung in Stufenform über $\R$ ermittelt werden [$\to$,\ref{9.1.14}], dieselben Zeilenoperationen sind erst recht über $\C$ durchführbar), gilt $r=\dim\ker_{\C^n}(A-\la I_n)=\dim\ker_{\R^n}(A-\la I_n)$. Wähle nun eine ONB $(u_1,\ldots ,u_r)$ des $\R$-Vektorraums $\ker_{\R^n}(A-\la I_n)$ (mit Standardskalarprodukt). Dann ist $(u_1,\ldots ,u_r)$ auch eine ONB des $\C$-Vektorraums $\ker_{\C^n}(A-\la I_n)=\lin(w_{i_1},\ldots ,w_{i_r})$.\\
 		
-\noindent\underline{Schritt 2}. \oe $\overline{w_{k+1}}=w_{k+2},\overline{w_{k+3}}=w_{k+4},...$ .\\
-\noindent\underline{Begründung}. Für jeden Eigenwert $\la$ von $g$ mit negativem Imaginärteil seien $r\in \N$ und $1\le i_1\le...\le i_r\le n$ derart, dass $\{i_1,...,i_r\}=\{i\mid \la_i=\la\}\subseteq\{k+2,k+4,...,n\}$. Dann gilt wieder $\lin(w_{i_1},...w_{i_r})=\ker(g-\la \id_{\C^n})$. Nun gilt
+\noindent\underline{Schritt 2}. \oe $\overline{w_{k+1}}=w_{k+2},\overline{w_{k+3}}=w_{k+4},\ldots $ .\\
+\noindent\underline{Begründung}. Für jeden Eigenwert $\la$ von $g$ mit negativem Imaginärteil seien $r\in \N$ und $1\le i_1\le\ldots \le i_r\le n$ derart, dass $\{i_1,\ldots ,i_r\}=\{i\mid \la_i=\la\}\subseteq\{k+2,k+4,\ldots ,n\}$. Dann gilt wieder $\lin(w_{i_1},\ldots w_{i_r})=\ker(g-\la \id_{\C^n})$. Nun gilt
 \begin{align*}
 \ker(g-\la \id_{\C^n})&=\ker(A-\la I_n)=\{x\in \C^n\mid Ax=\la x\}\\
 &=\{\overline{x}\in \C^n\mid A\overline{x}=\la^* \overline{x}\}\\
 &\stackrel{A\in \R^{n\times n}}{=}\{\overline{x}\in \C^n\mid Ax=\la^* x\}\\
 &=\{\overline{x}\in \C^n\mid x\in \ker(A-\la^* \id_{\C^n })\}.
 \end{align*}
-Wegen $\{i\mid \la_i=\la^*\}=\{i_1-1,...i_r-1\}\subseteq\{k+1,k+3,...,n-1\}$ ist $\lin(w_{i_1-1},...w_{i_r-1})=\ker(g-\la^*\id_{\C^n})$ und mit $(u_1,...,u_r):=(\overline{w_{i_1-1}},...\overline{w_{i_r-1}})$ daher $\lin(u_1,...u_r)=\lin(g-\la \id_{\C^n})=\lin(w_{i_1},...,w_{i_r})$. Es ist $(u_1,...,u_r)$ auch ein ONS und damit eine ONB von $\lin(w_{i_1},...,w_{i_r})$.\\
+Wegen $\{i\mid \la_i=\la^*\}=\{i_1-1,\ldots i_r-1\}\subseteq\{k+1,k+3,\ldots ,n-1\}$ ist $\lin(w_{i_1-1},\ldots w_{i_r-1})=\ker(g-\la^*\id_{\C^n})$ und mit $(u_1,\ldots ,u_r):=(\overline{w_{i_1-1}},\ldots \overline{w_{i_r-1}})$ daher $\lin(u_1,\ldots u_r)=\lin(g-\la \id_{\C^n})=\lin(w_{i_1},\ldots ,w_{i_r})$. Es ist $(u_1,\ldots ,u_r)$ auch ein ONS und damit eine ONB von $\lin(w_{i_1},\ldots ,w_{i_r})$.\\
 		
-\noindent\underline{Schritt 3}. Für $v_1,...,v_n\in \R^n$ definiert durch $v_1=w_1,...v_k=w_k, \sqrt{2}w_{k+1}=v_{k+1}+\i v_{k+2},\sqrt{2}w_{k+3}=v_{k+3}+\i v_{k+4},...,\sqrt{2}w_{n-1}=v_{n-1}+\i v_n$ ist $\v:=(v_1,...,v_n)$ eines ONB des $\R^n$ mit $M(f,\v)$ von der gewünschten Gestalt.\\
-\noindent\underline{Begründung}. Mit Lemma \ref{15.2.9} sieht man leicht, dass $\v$ eine ONB des $\C^n$ und damit auch des $\R^n$ ist. Dass $M(f,\v)$ von der gewünschten Gestalt ist, folgt leicht wie folgt. Sei $j\in\{k+1,k+3,...\}$ und schreibe $\lambda_j=a_j+\i b_j$ mit $a_j,b_j\in \R$. Dann gilt
+\noindent\underline{Schritt 3}. Für $v_1,\ldots ,v_n\in \R^n$ definiert durch $v_1=w_1,\ldots v_k=w_k, \sqrt{2}w_{k+1}=v_{k+1}+\i v_{k+2},\sqrt{2}w_{k+3}=v_{k+3}+\i v_{k+4},\ldots ,\sqrt{2}w_{n-1}=v_{n-1}+\i v_n$ ist $\v:=(v_1,\ldots ,v_n)$ eines ONB des $\R^n$ mit $M(f,\v)$ von der gewünschten Gestalt.\\
+\noindent\underline{Begründung}. Mit Lemma \ref{15.2.9} sieht man leicht, dass $\v$ eine ONB des $\C^n$ und damit auch des $\R^n$ ist. Dass $M(f,\v)$ von der gewünschten Gestalt ist, folgt leicht wie folgt. Sei $j\in\{k+1,k+3,\ldots \}$ und schreibe $\lambda_j=a_j+\i b_j$ mit $a_j,b_j\in \R$. Dann gilt
 \begin{align*}
 f(v_j)+\i f(v_{j+1})&=g(v_j)+\i g(v_{j+1})=g(v_j+\i v_{j+1})\\
 &=g(\sqrt{2}w_j)=\sqrt{2}\lambda_jw_j=\lambda_j(v_j+\i v_{j+1})\\
@@ -444,7 +444,7 @@ $\begin{pmatrix}\begin{tikzpicture}[inner sep=0]
 \draw[<-,red] (c)--(e);
 \path (d) edge [<-,bend left, color=red] (e);
 \end{tikzpicture}
-mit $\la_1,...\la_k\in \{-1,1\},\ph_1,...\ph_l\in \R$
+mit $\la_1,\ldots \la_k\in \{-1,1\},\ph_1,\ldots \ph_l\in \R$
 \end{center}
 ist.
 \end{enumerate}
@@ -481,7 +481,7 @@ A\text{ normal}&\Longleftrightarrow f_A\text{ normal}\\
 
 \begin{pro}\mbox{}[$\to$\ref{11.2.26}, \ref{11.3.4}]
 \label{15.2.14}
-Seien $V$ ein $\K$-VR mit Skalarprodukt und $\v=(v_1,...,v_n)$ eine ONB. Sei $f: V\to V$ linear. Dann gilt
+Seien $V$ ein $\K$-VR mit Skalarprodukt und $\v=(v_1,\ldots ,v_n)$ eine ONB. Sei $f: V\to V$ linear. Dann gilt
 \begin{align*}
 f\text{ ist normal}\Longleftrightarrow M(f,\v)\text{ ist normal}
 \end{align*}

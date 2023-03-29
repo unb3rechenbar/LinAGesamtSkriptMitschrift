@@ -44,18 +44,24 @@ Für theoretische Zwecke erlauben wir erstmals noch eine dritte elementare Zeile
 Man sieht aber gleich, dass diese im Fall $A=\Z$, $A=K[X]$ und $A=K$ ($K$ sei ein Körper) durch die anderen beiden simuliert werden kann und somit in diesem Fällen nichts beisteuert. $\left[\text{Man kann nämlich in allen drei Fällen die Matrix }I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix}\in A^{2\times 2}\right.$ durch Anwendung der ersten beiden Operationen in jede Matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in A^{2\times 2}$ mit $\det\begin{pmatrix}a&b\\c&d\end{pmatrix}=1$ überführen $\left(\text{und dementsprechend }\begin{pmatrix*}L_1\\L_2\end{pmatrix*}=\begin{pmatrix}1L_1+0L_2\\0L_1+1L_2\end{pmatrix}\text{ in }\begin{pmatrix}aL_1+bL_2\\cL_1+dL_2\end{pmatrix}\right)$. Da alle Operationen umkehrbar sind, reicht es, sich zu überlegen, dass man $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ mit der Determinante $1$ in $I_2$ durch die ersten beiden Operationen überführen kann. Im Fall $A=K$ ist dies klar, da $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ invertierbar ist. In den Fällen $A=\Z$ und $A=K[X]$ kann man mit den ersten beiden Operationen $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ auf die Form $\begin{pmatrix}e_1&h\\0&e_2\end{pmatrix}$ bringen (vergleiche $\S16.3$). Da sich die Determinante dabei nur um eine Einheit ändert (siehe $\S9.1$), bleibt die Determinante eine Einheit. Mit $e_1e_2=\det \begin{pmatrix}e_1&h\\0&e_2\end{pmatrix}\in A^\times$ gilt aber auch $e_1,e_2\in A^\times$ un daher \oe $e_1=e_2=1$ und dann auch \oe $h=0$, also $\left.\begin{pmatrix}e_1&h\\0&e_2\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.\right]$\\
 Wie in $\S5.2$ kann man natürlich auch wieder Zeilenoperationen erlauben, die man durch endlich viele obiger Zeilenoperationen simulieren kann, z.B. $Z_i\longleftrightarrow Z_j$. Wir erlauben nun zusätzlich auch noch die entsprechenden Spaltenoperationen:
 \begin{itemize}
-\item
-$S_i\leftarrow S_i+\lambda S_j
-\qquad(i\neq j, \lambda\in A)$
-\item
-$S_i\leftarrow \lambda S_i\qquad(\lambda\in A^\times)$
-\item
-$\begin{pmatrix*}S_i\\ S_j\end{pmatrix*}\underbrace{\leftarrow}_\text{\enquote{simultan}} \begin{pmatrix*}aS_i+bS_j\\ cS_i+dS_j\end{pmatrix*}\qquad( i\neq j, a,b,c,d\in A\text{ mit }ad-bc=1)$
+    \item
+        $S_i\leftarrow S_i+\lambda S_j \qquad (i\neq j, \lambda\in A)$
+    \item
+        $S_i\leftarrow \lambda S_i\qquad(\lambda\in A^\times)$
+    \item
+        $\begin{pmatrix*}
+            S_i\\ S_j
+        \end{pmatrix*}
+        \underbrace{\leftarrow}_\text{\enquote{simultan}} 
+        \begin{pmatrix*}
+            aS_i+bS_j\\ cS_i+dS_j
+        \end{pmatrix*}
+        \qquad (i\neq j, a,b,c,d\in A\text{ mit }ad-bc=1)$
 \end{itemize}
 Letztere ist für $A=\Z$, $A=K[X]$ und $A=K$ ($K$ sei ein Körper) wiederum überflüssig. Offenbar sind alle diese Operationen umkehrbar und verändern die Determinante nur um einen Faktor, der eine Einheit ist.\\
 Wir führen eine Äquivalenzrelation $\sim$ auf $A^{m\times n}$ ein durch
 \begin{align*}
-M\sim N:\Longleftrightarrow N \text{ geht aus }M\text{ durch obige Zeilen- und Spaltenoperationen hervor}
+    M\sim N:\Longleftrightarrow N \text{ geht aus }M\text{ durch obige Zeilen- und Spaltenoperationen hervor}
 \end{align*}
 für alle $M,N\in A^{m\times n}$.
 

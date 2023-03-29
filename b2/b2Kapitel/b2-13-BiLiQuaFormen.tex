@@ -284,7 +284,7 @@ Sei $V$ ein $K$-Vektorraum. Eine \emph{bilinear}\index{Bilinearform@{\bf Bilinea
 \begin{df}\label{13.3.3} 
 [$\to$\ref{7.1.1}] Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $b$ eine Bilinearform auf $V$. Eine Matrix $A\in K^{n\times n}$ heißt \emph{Darstellungsmatrix}\index{Bilinearform@{\bf Bilinearform}!Darstellungsmatrix} von $b$ bezüglich der Basis $\v$, falls für alle $v,w\in V$ gilt
 \begin{align*}
-(*)\ b(v,w)=b_A(\co_{\v}(v),\co_{\v}(w))
+	(*)\hspace{0.5cm} b(v,w)=b_A(\co_{\v}(v),\co_{\v}(w))
 \end{align*}
 \end{df}
 
@@ -321,7 +321,11 @@ M(b,\underline{v})=\begin{pmatrix*}[l]
 \end{bsp}
 	
 \begin{df}\label{13.3.7}
-Sei $V$ ein $K$-Vektorraum. Dann definieren wir die beiden Vektorraumisomorphismen [$\to$\ref{13.2.1}] $\leftarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \lvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(\cdot, v)\end{pmatrix*}\end{cases}$ und\\ $\rightarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \rvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(v, \cdot)\end{pmatrix*}\end{cases}$.
+Sei $V$ ein $K$-Vektorraum. Dann definieren wir die beiden Vektorraumisomorphismen [$\to$\ref{13.2.1}] 
+\begin{align*}
+	\leftarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \lvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(\cdot, v)\end{pmatrix*}\end{cases} \;\text{und}\;
+	\rightarrow: \begin{cases}\Bil(V)&\to\Hom(V,V^*)\\b&\mapsto \rvec b:=\begin{pmatrix*}[l]V\to V^*\\ v\mapsto b(v, \cdot)\end{pmatrix*}\end{cases}.
+\end{align*}
 \end{df}
 
 \begin{pro}\label{13.3.8}
@@ -341,7 +345,12 @@ Wir zeigen nur (a), denn (b) geht fast genauso. Es gilt
 \end{cproof}
 
 \begin{sat}\label{13.3.9}
-Sei $V$ ein $K$-Vektorraum mit Basis $\v:=(v_1,\ldots v_n)$. Dann sind\\ $\Phi:\begin{cases}\Bil(V)\to \K^{n\times n}\\ b\mapsto M(b,\v)\end{cases}$ und $\Psi: \begin{cases}K^{n\times n}\to \Bil(V)\\A\mapsto\begin{pmatrix*}V\times V\to K\\ (v,w)\mapsto \co(v)_{\v}^TA\co_\v(w)\end{pmatrix*}\end{cases}$ zueinander inverse\\ $K$-Vektorraumisomorphismen.
+Sei $V$ ein $K$-Vektorraum mit Basis $\v:=(v_1,\ldots v_n)$. Dann sind\\ 
+\begin{align*}
+	\Phi:\begin{cases}\Bil(V)\to \K^{n\times n}\\ b\mapsto M(b,\v)\end{cases} \;\text{und}\quad
+	\Psi: \begin{cases}K^{n\times n}\to \Bil(V)\\A\mapsto\begin{pmatrix*}V\times V\to K\\ (v,w)\mapsto \co(v)_{\v}^TA\co_\v(w)\end{pmatrix*}\end{cases}
+\end{align*}
+zueinander inverse $K$-Vektorraumisomorphismen.
 \end{sat}
 \begin{cproof} $\Phi$ ist als Hintereinanderschaltung zweier Vektorraumisomorphismen ebenfalls ein Vektorraumisomorphismen:
 \begin{align*}
@@ -417,7 +426,12 @@ Sei $V$ ein $K$-Vektorraum. Eine Funktion $q: V\to K$ heißt  \emph{quadratische
 \end{df}
 
 \begin{notpro}\label{13.4.6}
-Gelte $1+1\neq 0$ in $K$. Dann sind die Abbildungen $\SBil(V)\to \QForm(V),b\mapsto q_b$ mit $q_b:\begin{cases} V\to K\\ v\mapsto b(v,v)\end{cases}$ und $\QForm(V)\to \SBil(V),q\mapsto b_q$ mit $b_q:\begin{cases} V\times V\to K\\ (v,w)\mapsto \frac{1}{2}\left(q(v+w)-q(v)-q(w)\right)\end{cases}$ zueinander inverse $K$-Vektorraumisomorphismen. 
+Gelte $1+1\neq 0$ in $K$. Dann sind die Abbildungen $\Phi:\SBil(V)\to \QForm(V),b\mapsto q_b$ und $\Psi:\QForm(V)\to \SBil(V),q\mapsto b_q$ mit 
+\begin{align*}
+	q_b:\begin{cases} V\to K\\ v\mapsto b(v,v)\end{cases}\;\text{und}\;
+	b_q:\begin{cases} V\times V\to K\\ (v,w)\mapsto \frac{1}{2}\left(q(v+w)-q(v)-q(w)\right)\end{cases}
+\end{align*}
+zueinander inverse $K$-Vektorraumisomorphismen. 
 \end{notpro}	
 \begin{cproof}
 Sei $q\in \QForm(V)$. Zu zeigen ist $b_q\in \SBil(V)$. Wähle $b\in \SBil(V)$ mit $q(v)=b(v,v)$ für alle $v\in V$. Dann ist
@@ -431,7 +445,7 @@ Genauso zeigt man, dass $b_{q_b}=b$ für alle $b\in \SBil(V)$. Sei $q\in \QForm(
 \end{cproof}
 
 \begin{pro}\label{13.4.7}
-Die folgende Proposition motiviert die Bezeichnung ''quadratische Form''. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q: V\to K$ eine Funktion. Dann ist $q\in \QForm(V)$ genau dann, wenn es eindeutig bestimmte $a_{i,j}\in K\, (1\le i\le j\le n)$ gibt mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$.
+Die folgende Proposition motiviert die Bezeichnung \enquote{quadratische Form}. Sei $V$ ein $K$-Vektorraum mit Basis $\v=(v_1,\ldots ,v_n)$ und $q: V\to K$ eine Funktion. Dann ist $q\in \QForm(V)$ genau dann, wenn es eindeutig bestimmte $a_{i,j}\in K\, (1\le i\le j\le n)$ gibt mit $\forall x\in K^n: q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j$.
 \end{pro}
 \begin{cproof}
 \begin{itemize}
@@ -455,7 +469,7 @@ q\left(\sum_{i=1}^nx_iv_i\right)=\sum_{i\le j}a_{i,j}x_ix_j=\sum_{i\le j}x_ix_jb
 \end{cproof}
 
 \begin{bem}\label{13.4.8}
-\underline{Im Fall $2\neq 0$ in $K$} kann man in der Definition \ref{13.4.5} ''wenn es $b\in \Bil(V)$ gibt'' ersetzen durch ''wenn es (ein eindeutig bestimmtes) $b\in \SBil(V)$ gibt''. Dieses $b\in \SBil(V)$ ist natürlich $b_q$ und man identifiziert dann oft $q$ mit $b_q$. Z.B. kann man von einer ''Darstellungsmatrix von $q$'' reden und damit eine Darstellungsmatrix von $b_q$ meinen.\\
+\underline{Im Fall $2\neq 0$ in $K$} kann man in der Definition \ref{13.4.5} \enquote{wenn es $b\in \Bil(V)$ gibt} ersetzen durch \enquote{wenn es (ein eindeutig bestimmtes) $b\in \SBil(V)$ gibt}. Dieses $b\in \SBil(V)$ ist natürlich $b_q$ und man identifiziert dann oft $q$ mit $b_q$. Z.B. kann man von einer \enquote{Darstellungsmatrix von $q$} reden und damit eine Darstellungsmatrix von $b_q$ meinen.\\
 	
 \noindent\underline{Im Fall $2=0$ in $K$}, der uns hier nicht weiter interessiert, ist all dies nicht möglich, wie die folgenden beiden Beispiele zeigen.
 \end{bem}

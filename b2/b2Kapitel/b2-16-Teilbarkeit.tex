@@ -102,11 +102,11 @@ In \ref{3.3.13} haben wir gezeigt, dass in $\Z$ jedes Ideal ein Hauptideal ist. 
 \end{bem}
 
 \begin{spr}\label{16.1.10}
-Seien $b_1,...,b_n\in A$ . Wenn wir von einem $gT/ gV/ ggT/ kgV$ von $b_1,...,b_n$ shreiben, so meinen wir einen $gT/ gV/ ggT/ kgV$ von $\{b_1,...,b_n\}$. Wir nennen wir 
+Seien $b_1,\ldots ,b_n\in A$ . Wenn wir von einem $gT/ gV/ ggT/ kgV$ von $b_1,\ldots ,b_n$ shreiben, so meinen wir einen $gT/ gV/ ggT/ kgV$ von $\{b_1,\ldots ,b_n\}$. Wir nennen wir 
 \begin{align*}
-(b_1,...,b_n):=(\{b_1,...,b_n\})=\left\{\sum_{i=1}^n a_ib_i\mid a_1,...a_n\in A\right\}\ [\to\ref{3.3.11}]
+(b_1,\ldots,b_n):=(\{b_1,\ldots ,b_n\})=\left\{\sum_{i=1}^n a_ib_i\mid a_1,\ldots a_n\in A\right\}\ [\to\ref{3.3.11}]
 \end{align*}
-das von $b_1,...,b_n$ erzeugte Ideal.
+das von $b_1,\ldots ,b_n$ erzeugte Ideal.
 \end{spr}
 
 \begin{bsp}\label{16.1.11}
@@ -214,14 +214,14 @@ Aus \ref{16.2.2}(b)(c) folgt nun:
 
 \section{Zur Berechnung größter gemeinsamer Teiler}
 
-Gegeben seien $b_1,...b_n\in A$. Um die gT von $b_1,...,b_n$ zu bestimmen oder sogar einen ggT von $b_1,...,b_n$ zu bestimmen, falls er existiert, ist es generell eine gute Strategie ''einfachere'' $c_1,...c_m\in A$ zu suchen mit $(b_1,...,b_n)=(c_1,...,c_m)$.
-Gilt nämlich diese Gleichung, so haben $b_1,...,b_n$ und $c_1,...,c_m$ jeweils dieselben gT nach \ref{16.1.8}(a). Existiert sogar ein $c\in A$ mit $(b_1,...,b_n)=(c)$, was in Hauptidealringen immer der Fall ist, so ist $c$ nach \ref{16.1.18}(a) ein ggT von $b_1,...,b_n$. Wir werden sehen, wie man in $\Z$ und in $K(X]$ (modulo dem Problem, die Rechenoperationen im Körper $K$ durchzuführen). Ein solches $c$ und damit $\gcd\{b_1,...,b_n\}$ berechnen kann. Weiter werden wir sehen, wie man in $\Z$ und $K[X]$, allerdings mit erheblich mehr Aufwand, sogar $a_1,...,a_n$ berechnen kann mit $a_1b_1+...+a_nb_n=\gcd\{b_1,...,b_n\}$.
+Gegeben seien $b_1,\ldots b_n\in A$. Um die gT von $b_1,\ldots ,b_n$ zu bestimmen oder sogar einen ggT von $b_1,\ldots ,b_n$ zu bestimmen, falls er existiert, ist es generell eine gute Strategie ''einfachere'' $c_1,\ldots c_m\in A$ zu suchen mit $(b_1,\ldots ,b_n)=(c_1,\ldots ,c_m)$.
+Gilt nämlich diese Gleichung, so haben $b_1,\ldots ,b_n$ und $c_1,\ldots ,c_m$ jeweils dieselben gT nach \ref{16.1.8}(a). Existiert sogar ein $c\in A$ mit $(b_1,\ldots ,b_n)=(c)$, was in Hauptidealringen immer der Fall ist, so ist $c$ nach \ref{16.1.18}(a) ein ggT von $b_1,\ldots ,b_n$. Wir werden sehen, wie man in $\Z$ und in $K(X]$ (modulo dem Problem, die Rechenoperationen im Körper $K$ durchzuführen). Ein solches $c$ und damit $\gcd\{b_1,\ldots ,b_n\}$ berechnen kann. Weiter werden wir sehen, wie man in $\Z$ und $K[X]$, allerdings mit erheblich mehr Aufwand, sogar $a_1,\ldots ,a_n$ berechnen kann mit $a_1b_1+\ldots +a_nb_n=\gcd\{b_1,\ldots ,b_n\}$.
 
 \begin{sat}\label{16.3.1}
-Seien $b_1,...,b_n\in A$, $i\in\{1,...,i\}$ und sei $d\in A$ derart, dass $\overline b_i\divi \overline d$ in $A/(b_1,...b_{i-1},b_{i+1},...,b_n)$. Dann gilt $(b_1,...,b_n)=(b_1,...b_{i-1},d,b_{i+1},...,b_n)$.
+Seien $b_1,\ldots ,b_n\in A$, $i\in\{1,\ldots ,i\}$ und sei $d\in A$ derart, dass $\overline b_i\divi \overline d$ in $A/(b_1,\ldots b_{i-1},b_{i+1},\ldots ,b_n)$. Dann gilt $(b_1,\ldots ,b_n)=(b_1,\ldots b_{i-1},d,b_{i+1},\ldots ,b_n)$.
 \end{sat}
 \begin{cproof}
-Da man in der Behauptung $b_i$ und $d$ vertauschen kann, reicht es ''$\subseteq$'' zu zeigen. Dafür reicht es, $b_i\in (b_1,...b_{i-1},d,b_{i+1},...,b_n)$ zu zeigen. Wegen $(\overline{b_i})=(\overline{d})$ gibt es ein $e\in A$ mit $\overline{b_i}=\overline{e}\overline{d}$ in $A/(b_1,...b_{i-1},b_{i+1},...,b_n)$. Daher gilt $b_1-ed\in (b_1,...b_{i-1},b_{i+1},...,b_n)$ und somit $b_i\in (b_1,...b_{i-1},d,b_{i+1},...,b_n)$.
+Da man in der Behauptung $b_i$ und $d$ vertauschen kann, reicht es ''$\subseteq$'' zu zeigen. Dafür reicht es, $b_i\in (b_1,\ldots b_{i-1},d,b_{i+1},\ldots ,b_n)$ zu zeigen. Wegen $(\overline{b_i})=(\overline{d})$ gibt es ein $e\in A$ mit $\overline{b_i}=\overline{e}\overline{d}$ in $A/(b_1,\ldots b_{i-1},b_{i+1},\ldots ,b_n)$. Daher gilt $b_1-ed\in (b_1,\ldots b_{i-1},b_{i+1},\ldots ,b_n)$ und somit $b_i\in (b_1,\ldots b_{i-1},d,b_{i+1},\ldots ,b_n)$.
 \end{cproof}
 
 \begin{bsp}\label{16.3.2}
@@ -272,9 +272,9 @@ und daher $\gcd\{X^4-2X^3+2X^2-2X+1,p,q\}=X-1$.
 \end{enumerate}
 \end{bsp}
 
-\noindent Es sollte nun klar sein, dass man in $\Z$ und in $K[X]$ (sofern $K$ ein Körper ist, in dem man zu rechnen weiß) durch mehrfache Anwendung von Satz \ref{16.3.1} zu gegebenen Elemente $b_1,...b_n$ stets $\gcd\{b_1,...,b_n\}$ berechnen kann. Solange man nämlich nicht $(b_1,...,b_n)$ noch nicht als Hauptideal geschrieben hat (also mindestens zwei Erzeuger $\neq 0$ hat), kann man die Summe der Absolutbeträge (für $\Z$) bzw. die Summe der Gerade (für $K[X]$) der Erzeuger $\neq 0$ in jedem Schritt verringern.\\
+\noindent Es sollte nun klar sein, dass man in $\Z$ und in $K[X]$ (sofern $K$ ein Körper ist, in dem man zu rechnen weiß) durch mehrfache Anwendung von Satz \ref{16.3.1} zu gegebenen Elemente $b_1,\ldots b_n$ stets $\gcd\{b_1,\ldots ,b_n\}$ berechnen kann. Solange man nämlich nicht $(b_1,\ldots ,b_n)$ noch nicht als Hauptideal geschrieben hat (also mindestens zwei Erzeuger $\neq 0$ hat), kann man die Summe der Absolutbeträge (für $\Z$) bzw. die Summe der Gerade (für $K[X]$) der Erzeuger $\neq 0$ in jedem Schritt verringern.\\
 
-\noindent Will man zu gegebenen $b_1,...,b_n\in A$ nicht nur, falls es existiert, ein $b\in A$ finden mit $(b_1,...,b_n)=(b)$, sondern will man auch noch $a_1,...,a_n$ mit $b=a_1b_1+...+a_nb_n$ finden, so kann man das wie folgt versuchen: Man bildet die Matrix
+\noindent Will man zu gegebenen $b_1,\ldots ,b_n\in A$ nicht nur, falls es existiert, ein $b\in A$ finden mit $(b_1,\ldots ,b_n)=(b)$, sondern will man auch noch $a_1,\ldots ,a_n$ mit $b=a_1b_1+\ldots +a_nb_n$ finden, so kann man das wie folgt versuchen: Man bildet die Matrix
 \begin{align*}
 M(q,\underline{v})=\begin{pmatrix*}
 b_1 & & & & & \\ \vdots &  & & & & \\
@@ -287,7 +287,7 @@ b_n & \multicolumn{2}{c}{\text{\kern-1.5em\smash{\raisebox{0ex}{\Huge 0}}}} & 1
 \node at (b.south) [anchor=center,yshift=0.6cm, xshift=-0.7cm, scale=4] {$I_n$};
 \end{tikzpicture}
 \end{align*}
-Die $i$-te Zeile dieser Matrix kann man als die (trivialeriwese) gültige Gleichung $b_i=0\cdot b_1+0\cdot b_{i-1}+b_i+0\cdot b_{i+1}+...+0\cdot b_{n+1}$ interpretieren. Nun überträgt man die vom Gauß-Verfahren aus $\S 5.2$ bekannten elementaren Zeilenoperationen von Matrizen über Körpern auf Matrizen über kommutativen Ringen:
+Die $i$-te Zeile dieser Matrix kann man als die (trivialeriwese) gültige Gleichung $b_i=0\cdot b_1+0\cdot b_{i-1}+b_i+0\cdot b_{i+1}+\ldots +0\cdot b_{n+1}$ interpretieren. Nun überträgt man die vom Gauß-Verfahren aus $\S 5.2$ bekannten elementaren Zeilenoperationen von Matrizen über Körpern auf Matrizen über kommutativen Ringen:
 \begin{itemize}
 \item
 $\underbrace{Z_i}_\text{"`Zeile $i$"'}\underbrace{\leftarrow}_\text{"`wird"'} Z_i+\lambda Z_j
@@ -301,10 +301,10 @@ Nach Satz \ref{16.3.1} ändert sich das von den Einträgen der ersten Spalte auf
 
 \noindent Sowohl für $A=\Z$ als auch für $A=K[X]$ (K sei ein Körper) kann man durch endlich viele dieser Zeilenoperationen die Matrix $\begin{pmatrix}b_1&&&&&\\\vdots&&&&\\
 b_n&&&&&\begin{tikzpicture}[overlay]\node[xshift=-0.7cm,yshift=0.6cm,scale=4]{$I_n$};\end{tikzpicture}
-\end{pmatrix}$ überführen in eine Matrix $\begin{pmatrix}\gcd\{b_1,...,b_n\}& a_1 & \hdots & a_n\\
+\end{pmatrix}$ überführen in eine Matrix $\begin{pmatrix}\gcd\{b_1,\ldots ,b_n\}& a_1 & \hdots & a_n\\
 \\0&&&\\\vdots&&&\begin{tikzpicture}[overlay]\node[xshift=-0.9cm,yshift=0.4cm,xscale=12,yscale=9]{$*$};\end{tikzpicture}\
 \\0&&&
-\end{pmatrix}$, deren erste Zeile als Gleichung gelesen besagt, dass $\gcd\{b_1,...,b_n\}=a_1b_1+...+a_nb_n$.
+\end{pmatrix}$, deren erste Zeile als Gleichung gelesen besagt, dass $\gcd\{b_1,\ldots ,b_n\}=a_1b_1+\ldots +a_nb_n$.
 
 \begin{bsp}\label{16.3.3}
 Durch Anwenden elementarer Zeilenoperationen über $\Z$ erhält man
@@ -348,7 +348,7 @@ $\overline{2}=\overline{2}\cdot \overline{4}$ in $\Z/(6)$ und $\overline{2},\ove
 
 \begin{er}\mbox{}[$\to$\ref{4.1.6}]
 \label{16.4.5}
-Wir nennen $n\in \N$ mit $n\ge 2$ eine Primzahl, wenn es nicht $s,t\in \N$ mit $s,t\ge 2$ und $n=st$ gibt. Wir schreiben $\P:=\{2,3,5,7,11,...\}$ für die Menge der Primzahlen.
+Wir nennen $n\in \N$ mit $n\ge 2$ eine Primzahl, wenn es nicht $s,t\in \N$ mit $s,t\ge 2$ und $n=st$ gibt. Wir schreiben $\P:=\{2,3,5,7,11,\ldots \}$ für die Menge der Primzahlen.
 \end{er}
 
 \begin{pro}\label{16.4.6}
@@ -382,7 +382,7 @@ Im Folgenden fixieren wir eine Menge $\P_A$ von Primelementen $\neq 0$ in $A$ de
 
 \begin{bsp}\label{14.4.9}
 \begin{enumerate}[\normalfont(a)]
-\item In der Regel wird man $\P_\Z=\P$ nehmen. Man könnte aber auch $\P_\Z:=\{2,-3,5,7,-11,13,...\}$.
+\item In der Regel wird man $\P_\Z=\P$ nehmen. Man könnte aber auch $\P_\Z:=\{2,-3,5,7,-11,13,\ldots \}$.
 \item Ist $K$ ein Körper, so nimmt man in der Regel\\
 $\P_{K[X]}:=\{p\in K[X]\mid p\neq 0, p\text{ normiert},p\text{ prim in }K[X]\}$.
 \end{enumerate}
@@ -450,10 +450,10 @@ Sei $A$ ein faktorieller Ring. Dann gilt für alle $(c,\alpha),(d,\beta)\in A^\t
 \end{cproof}
 
 \begin{sat}\label{16.4.18}
-Sei $A$ ein Integritätsring. Dann ist $A$ faktoriell genau dann, wenn in $A$ jeder irreduzible Element prim ist und die folgende ''Teilerkettenbedingung'': Ist $(a_n)_{n\in \N}$ eine Folge der Elemente $a_n\in A$ mit $(a_1)\subseteq (a_2)\subseteq(a_3)\subseteq...$, so gibt es $k\in \N$ mit $(a_k)=(a_{k+1})=(a_{k+2})=...$
+Sei $A$ ein Integritätsring. Dann ist $A$ faktoriell genau dann, wenn in $A$ jeder irreduzible Element prim ist und die folgende ''Teilerkettenbedingung'': Ist $(a_n)_{n\in \N}$ eine Folge der Elemente $a_n\in A$ mit $(a_1)\subseteq (a_2)\subseteq(a_3)\subseteq\ldots $, so gibt es $k\in \N$ mit $(a_k)=(a_{k+1})=(a_{k+2})=\ldots $
 \end{sat}
 \begin{cproof}
-Sei zunächst $A$ faktoriell. Da ein irreduzibles Element per Definition keine Einheit ist, muss in seiner Primfaktorzerlegung mindestens ein Primfaktor auftauchen. Da Primelemente keine Einheiten sind, kann aber dort auch höchstens ein Primfaktor auftreten. Sei nun $(a_n)_{n\in \N}$ eine Folge mit $(a_1)\subseteq (a_2)\subseteq(a_3)\subseteq...$. \oe $a_1\neq 0$ und damit $\forall n\in \N: a_n\neq 0$. Schreibe $a_n=c_n\P_A^{\alpha_n}$ mit $(c_n,\alpha_n),\in A^\times\times \N_0^{(\P_A)}$ für alle $n\in \N$. Mit Proposition \ref{16.4.17} folgt $\alpha_1\succeq\alpha_2\succeq\alpha_3\succeq...$. Weil $\supp(\alpha_1)$ endlich ist, folgt hieraus, dass es $k\in \N$ gibt mit $\alpha_k=\alpha_{k+1}=...$. Dann ist $(a_k)=(a_{k+1})=...$.\\
+Sei zunächst $A$ faktoriell. Da ein irreduzibles Element per Definition keine Einheit ist, muss in seiner Primfaktorzerlegung mindestens ein Primfaktor auftauchen. Da Primelemente keine Einheiten sind, kann aber dort auch höchstens ein Primfaktor auftreten. Sei nun $(a_n)_{n\in \N}$ eine Folge mit $(a_1)\subseteq (a_2)\subseteq(a_3)\subseteq\ldots $. \oe $a_1\neq 0$ und damit $\forall n\in \N: a_n\neq 0$. Schreibe $a_n=c_n\P_A^{\alpha_n}$ mit $(c_n,\alpha_n),\in A^\times\times \N_0^{(\P_A)}$ für alle $n\in \N$. Mit Proposition \ref{16.4.17} folgt $\alpha_1\succeq\alpha_2\succeq\alpha_3\succeq\ldots $. Weil $\supp(\alpha_1)$ endlich ist, folgt hieraus, dass es $k\in \N$ gibt mit $\alpha_k=\alpha_{k+1}=\ldots $. Dann ist $(a_k)=(a_{k+1})=\ldots $.\\
 
 \noindent Sei nun umgekehrt jede irreduzible Element prim und gelte die Teilerkettenbedingung. Es reicht dann zu zeigen, dass jedes $a\in A\setminus\{a\}$ ein Produkt von irreduziblen Elementen und einer Einheit ist. Sei $M$ die durch Inklusion halbgeordnete Menge von Hauptidealen $(a)$ derart, dass $a\in A\setminus\{a\}$ kein Produkt von irreduziblen Elementen und keiner Einheit ist. Es reicht, die Annahme $M\neq \emptyset$ zum Widerspruch zu führen. Wegen der Teilerkettenbedingung besitzt $M$ mindestens ein maximales Element [$\to$\ref{12.2.2}](a) mit $a\in A\setminus\{a\}$, welches kein Produkt der gewünschten Form ist. Insbesondere ist $a$ weder irreduzibel noch eine Einheit, weswegen es $b,c\in A\setminus A^\times$ mit $a=bc$. Es folgt $a\subset(b)$ und $(a)\subset (b)$ (wäre etwa $(a)=(b)$; das heißt $a\divi b$, so gäbe es nach Proposition \ref{16.2.4} ein $c\in A^\times$ mit $a=bc'$ und es folgt $c=c'\in A^\times$ wegen $b\neq 0$). Wegen der Maximalität von $(a)$ sind sowohl $b$ als auch $c$ Produkte von irreduziblen Elementen und einer Einheit, dann aber auch $a$. Dies ist ein Widerspruch.
 \end{cproof}
@@ -466,7 +466,7 @@ Sei $A$ ein Hauptideal. Zu zeigen ist (a) ist jedes irreduzible Element prim und
 
 \noindent\textbf{Zu (a)}. Sei $p\in A$ irreduzibel. Zu zeigen ist, dass $p$ prim ist. Per Definition ist $p\neq A\times$. Seien $a,b\in A$ mit $p\mid ab$. Zu zeigen ist $p\mid a$ oder $p\mid b$. Wähle $c\in A$ mit $(c)=(p,a)$. Wegen $p\in (c)$ und der Irreduzibilität von $p$ folgt $c\in A^\times$ oder $p\divi c$. Fall $p\divi c$, so gilt $p\mid c$ und $c\mid a$, also $p\mid a$. Gelte also $c\in A^\times$. Dann $(1)=(p,a)$ und es gibt $s,t\in A$ mit $1=sp+ta$. Dann $b=sbp+tab$ und mit $p\mid(sbp+tab)$ (wegen $p\mid ab$) folgt $p\mid b$.\\
 
-\noindent\textbf{Zu (b)}. Sei $(a_n)_{n\in \N}$ eine Folge in $A$ mit $(a_1)\subseteq (a_2)\subseteq(a_3)\subseteq...$. Dann ist $I:=\bigcup\{(a_n)\mid n\in \N\}$ ein Ideal von $A$, wie man sich leicht überlegt. Wähle $a\in A$ mit $I=(a)$. Wähle $k\in \N$ mit $a\in (a_k)$. Dann $(a_k)\subseteq (a_{k+1})\subseteq... I\subseteq (a_k)$, also $(a_k)=(a_{k+1})=...$.
+\noindent\textbf{Zu (b)}. Sei $(a_n)_{n\in \N}$ eine Folge in $A$ mit $(a_1)\subseteq (a_2)\subseteq(a_3)\subseteq\ldots $. Dann ist $I:=\bigcup\{(a_n)\mid n\in \N\}$ ein Ideal von $A$, wie man sich leicht überlegt. Wähle $a\in A$ mit $I=(a)$. Wähle $k\in \N$ mit $a\in (a_k)$. Dann $(a_k)\subseteq (a_{k+1})\subseteq\ldots  I\subseteq (a_k)$, also $(a_k)=(a_{k+1})=\ldots $.
 \end{cproof}
 
 \begin{bsp}\label{16.4.20}
