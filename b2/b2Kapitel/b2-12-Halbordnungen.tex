@@ -187,16 +187,16 @@
 \begin{cproof}
 	Wir nennen $B'\subseteq B$ als $f$-induktiv, wenn $\forall N\in B': f(N)\in B'$ und $\bigcup C\in B'$ für jede Kette $C\subseteq B'$ gilt. Somit ist $B$ per Voraussetzung $f$-induktiv.\\	
 	\schritt{1}
-	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
-		\bewbeh{Behauptung}
+	\begin{behbox}
+		\hbeh{}
 			Man darf annehmen, daß keine echte Teilmenge von $B$ $f$-induktiv ist. \\
-		\bewbeg{Begründung}
+		\hbeg{}
 			Wir zeigen, daß eine kleinste $f$-induktive Teilmenge von $B$ existiert (\enquote{minimalste} würde aber reichen!). Setze
 			\begin{align*}
 				B'':=\bigcap\{B'\subseteq B\mid B'\text{ ist}f\text{-induktiv}\}.
 			\end{align*}
 			Klarerweise ist $B''$ dann $f$-induktiv. Wir könnten dann mit $B''$ statt $B$ arbeiten - da aber $B''\subseteq B$, folgt die Aussage somit auch für $B$. \oe sei also $B=B''$.
-	\end{tcolorbox}
+	\end{behbox}
 	\noindent Wir definieren die Menge der Fixpunkte als  solche, für welche alle Teilmengen auch dessen $f$-Vergrößerung kleiner als diese ist:
 	\begin{align*}
 		B':=\{N'\in B\mid \forall N\in B: (N\subset N'\implies f(N)\subseteq N')\}.
@@ -207,10 +207,10 @@
 	\end{align*}
 	Dies ist also die Menge aller Punkte unter $N'$ (in der Halbordnung auf $\Pow(M)$) und alle Punkte, welcher größer als die $f$-Vergrößerung von $N'$ ist. Es fehlen alle Punkte echt zwischen $N'$ und $f(N')$.
 	\schritt{2}
-	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
-		\bewbeh{Behauptung}
+	\begin{behbox}
+		\hbeh{}
 			Für jedes $N'\in B'$ ist $B'_N$ $f$-induktiv. \\
-		\bewbeg{Begründung}
+		\hbeg{}
 			Sei $N'\in B'$. Zu zeigen sind
 			\begin{enumerate}[\normalfont(b)]
 				\item $\forall N\in B'_N: f(N)\in B_N'$,
@@ -221,16 +221,16 @@
 				\item Sei $N\in B'_N$. Dann $N\in B$ und $N\subseteq N'$ oder $f(N')\subseteq N$. Zu zeigen ist $f(N)\in B_N'$. $f(N)\in B$ gilt immer. Ist $N\subseteq N'$, folgt entweder $N=N'$ oder $N\subset N'$. Ersterer ist klar wegen $N'\subseteq N'$. Aus letzterem folgt $f(N)\subseteq N'$, da $N'$ ein Fixpunkt ist. Ist $f(N')\subseteq N$, dann folgt wegen $N\subseteq f(N)$ auch $f(N')\subseteq f(N)$.
 				\item Sei $C\subseteq B_N'$ eine Kette. Zu zeigen ist $\bigcup C\in B_N'$. Es gilt immer $\bigcup C\in B$. Zu zeigen ist $\bigcup C\subseteq N'$ oder $f(N')\subseteq \bigcup C$. Gelte ersteres nicht, zu zeigen ist dann letzteres. Wir können $N\in C$ mit $N\subsetneq N'$ wählen. Mit $N\in B'_N$ folgt $f(N')\subseteq N\subseteq \bigcup C$.
 			\end{enumerate}
-	\end{tcolorbox}
+	\end{behbox}
 	Insgesamt folgt für alle $N'\in B'$, daß $B'_N=N$ gilt. Also ist
 	\begin{align*}
 		(*)\ \forall N'\in B': \forall N\in B: (N\subseteq N'\lor f(N')\subseteq N').
 	\end{align*}
 	\schritt{3}
-	\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
-		\bewbeh{Behauptung}
+	\begin{behbox}
+		\hbeh{}
 			$B'$ ist $f$-induktiv. \\
-		\bewbeg{Begründung}
+		\hbeg{}
 			Zu zeigen sind 
 			\begin{enumerate}[\normalfont(a)]
 				\item $\forall N\in B': f(N)\in B'$,
@@ -241,7 +241,7 @@
 				\item Sei $N'\subseteq B'$. Zu zeigen ist $f(N')\in B$ und $\forall N\in B: (N\subset f(N')\implies f(N)\subseteq f(N'))$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset f(N')$. Zu zeigen ist $f(N)\subseteq f(N')$. Wegen (*) folgt aber $N\subseteq N'$. Sei $\OE$ $N\neq N'$. Dann $f(N)\subseteq N'\subseteq f(N')$, da $N'$ ein Fixpunkt ist.
 				\item Sei $C\subseteq B'$ eine Kette. Zu zeigen ist $\bigcup C\in B$ und $\forall N\in B: (N\subset \bigcup C)\implies f(N)\subseteq \bigcup C)$. Ersteres ist klar. Sei nun $N\in B$ mit $N\subset \bigcup C$. Zu zeigen ist $f(N)\subseteq \bigcup C$. Wegen $\bigcup C\subsetneq N$ gibt es $N'\in C\subseteq B'$ mit $N'\subsetneq N$. Insbesondere ist $f(N')\subseteq N$. Wegen (*) folgt $N\subseteq N'$ und hier sogar $N\subset N'$. Also $f(N)\subseteq N'\subseteq \bigcup C$ und wir sind fertig.
 			\end{enumerate}
-	\end{tcolorbox}
+	\end{behbox}
 	\noindent Wegen \textit{Schritt 1} ist $B'=B$, weshalb aus (*) folgt, daß $B$ eine Kette ist. Da B $f$-induktiv ist, folgt $N_0:=\bigcup B\in B$ und $f(N_0)\in B$. Daraus folgt $N_0\subseteq f(N_0)\subseteq \bigcup B=N_0$, also $N_0=f(N_0)$.
 \end{cproof}
 

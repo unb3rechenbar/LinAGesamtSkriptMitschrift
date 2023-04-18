@@ -165,11 +165,11 @@ Lemma \ref{17.1.5} brauchen wir später noch einmal in folgender Variante:
 \begin{cproof}
     Bezeichne $G$ die Menge der Matrizen $N\in A^{m\times n}$, deren linker obere Eintrag alle Einträge der ersten Zeile und ersten Spalte von $N$ teilt. Es reicht, ein $N\in G$ mit $M\sim N$ zu finden.\\
 
-    \begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
-        \noindent\textbf{Behauptung}. Ist $M'\in A^{m\times n}\setminus G$ mit linkem oberen Eintrag $a'$, so gibt es $M''\in A^{m\times n}$ mit linkem oberen Eintrag $a''$ derart, dass $M'\sim M''$ und $(a')\subset (a'')$.\\
+    \begin{behbox}
+        \hbeh{}. Ist $M'\in A^{m\times n}\setminus G$ mit linkem oberen Eintrag $a'$, so gibt es $M''\in A^{m\times n}$ mit linkem oberen Eintrag $a''$ derart, dass $M'\sim M''$ und $(a')\subset (a'')$.\\
 
-        \noindent\textbf{Begründung}. Sei $M'\in A^{m\times n}\setminus G$, etwa $M'=\begin{pmatrix}a'&b'&&\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=-1em,yscale=8,xscale=5]{$*$};\end{tikzpicture}&\\&&&&\\\begin{tikzpicture}[overlay]\node[xshift=0.6em,yshift=0.8em,scale=5]{$*$};\end{tikzpicture}&&&\end{pmatrix}$ mit $a'\nmid b'$. Wähle $a''\in A$ mit $(a',b')=(a'')$. Nach \ref{17.1..8} gibt es dann $h\in A$ und $M''=\begin{pmatrix}a''&h&&\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=-1em,yscale=8,xscale=5]{$*$};\end{tikzpicture}&\\&&&&\\\begin{tikzpicture}[overlay]\node[xshift=0.6em,yshift=0.8em,scale=5]{$*$};\end{tikzpicture}&&&\end{pmatrix}$ mit $M'\sim M''$. Es gilt $(a')\subseteq (a'')$, aber nicht $(a')=(a'')$, denn sonst $b'\in(a'')=(a')$ und daher $a'\mid b'$.
-    \end{tcolorbox}
+        \hbeg{}. Sei $M'\in A^{m\times n}\setminus G$, etwa $M'=\begin{pmatrix}a'&b'&&\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=-1em,yscale=8,xscale=5]{$*$};\end{tikzpicture}&\\&&&&\\\begin{tikzpicture}[overlay]\node[xshift=0.6em,yshift=0.8em,scale=5]{$*$};\end{tikzpicture}&&&\end{pmatrix}$ mit $a'\nmid b'$. Wähle $a''\in A$ mit $(a',b')=(a'')$. Nach \ref{17.1..8} gibt es dann $h\in A$ und $M''=\begin{pmatrix}a''&h&&\begin{tikzpicture}[overlay]\node[xshift=-0.3em,yshift=-1em,yscale=8,xscale=5]{$*$};\end{tikzpicture}&\\&&&&\\\begin{tikzpicture}[overlay]\node[xshift=0.6em,yshift=0.8em,scale=5]{$*$};\end{tikzpicture}&&&\end{pmatrix}$ mit $M'\sim M''$. Es gilt $(a')\subseteq (a'')$, aber nicht $(a')=(a'')$, denn sonst $b'\in(a'')=(a')$ und daher $a'\mid b'$.
+    \end{behbox}
 
     \noindent Ist $M_1:=M\in G$, so setzen wir $N:=M_1$ und sind fertig. Sonst gibt es $M_2\in A^{m\times n}$ mit $M_1\sim M_2$ und $(a_1)\subset(a_2)$ ($a_i$ bezeichne den linken oberen Eintrag von $M_i$). Ist $M_2\in G$, so setze $N:=M_2$. Ist $M_2\notin G$, so findent wir $M_3$ mit $M_1\sim M_2\sim M_3$ und $(a_1)\subset(a_2)\subset (a_3)$. Da $A$ ein Hauptidealring und damit faktoriell ist, gilt die Teilerkettenbedingung aus \ref{16.4.18}, das heißt die so weitergeführte Konstruktion muss irgendwann abbrechen (andernsfalls folgt $(a_1)\subset(a_2)\subset(a_3)\subset(a_4)\subset\ldots $) und wir finden $M_1,\ldots ,M_k\in A^{m\times n}$ mit $M=M_1\sim M_2\sim M_3\sim\ldots \sim M_k\in G$.
 \end{cproof}
@@ -192,8 +192,8 @@ Lemma \ref{17.1.5} brauchen wir später noch einmal in folgender Variante:
         \end{smallmatrix}
     \right)$ mit $d_1,\ldots ,d_n\in A\setminus\{0\}$. Für jedes $d\in A\setminus\{0\}$ bezeichne $l(d)$ die Summe der Exponenten in der Primfaktorzerlegung von $d$, das heißt ist $(c,\alpha)\in A^\times\times \expfam$ mit $d=c\P_A^\alpha$, so gilt $l(d):=\sum_{p\in\supp(\alpha)}\alpha(p)$. Setze $\delta:\begin{cases}(A\setminus\{0\})^n\to\N_0\\(c_1,\ldots ,c_n)\mapsto \sum_{i=1}^n(n-i)l(c_i)\end{cases}$ und $G:=\{(c_1,\ldots ,c_n)\in (A\setminus\{0\})^n: c_1\mid c_2\mid \ldots \mid c_n\}$.\\
 
-    \begin{tcolorbox}[arc=0mm, boxrule=0.2mm]
-        \noindent\textbf{Behauptung}. Ist $(d_1',\ldots ,d_n')\in (A\setminus\{0\})^n\setminus G$, so gibt es $(d_1',\ldots ,d_n')\in (A\setminus\{0\})^n$ mit $\left(
+    \begin{behbox}
+        \hbeh{}. Ist $(d_1',\ldots ,d_n')\in (A\setminus\{0\})^n\setminus G$, so gibt es $(d_1',\ldots ,d_n')\in (A\setminus\{0\})^n$ mit $\left(
             \begin{smallmatrix}
                 d'_1 & & \llap{$\overset{\blap{\LARGE 0}}{~}$} \\
                 & \ddots &\\
@@ -205,12 +205,12 @@ Lemma \ref{17.1.5} brauchen wir später noch einmal in folgender Variante:
             \end{smallmatrix}
         \right)$ und $\delta(d_1',\ldots d_n')>\delta(d_1'',\ldots d_n'')$.\\
 
-        \noindent\textbf{Begründung}. Sei $(d_1',\ldots ,d_n')\in (A\setminus\{0\})^n\setminus G$. Wähle $i\in\{1,\ldots ,n-1\}$ mit $d_i'\nmid d_{i+1}'$. Nach Lemma \ref{17.1.7} gibt es $c,d\in A$ mit $(c)=(d_i',d_{i+1}')$ und $\begin{pmatrix*}d_i'&0\\ 0&d_{i+1}'\end{pmatrix*}\sim\begin{pmatrix*}c&0\\ 0&d\end{pmatrix*}$ (und $c\mid d$, was wir aber nicht brauchen). Insbesondere $d_i'd_{i+1}'=\det\begin{pmatrix*}d_i'&0\\ 0&d_{i+1}'\end{pmatrix*}\divi\begin{pmatrix*}c&0\\ 0&d\end{pmatrix*}=cd$ und daher $c,d\in A\setminus\{0\}$ sowie
+        \hbeg{}. Sei $(d_1',\ldots ,d_n')\in (A\setminus\{0\})^n\setminus G$. Wähle $i\in\{1,\ldots ,n-1\}$ mit $d_i'\nmid d_{i+1}'$. Nach Lemma \ref{17.1.7} gibt es $c,d\in A$ mit $(c)=(d_i',d_{i+1}')$ und $\begin{pmatrix*}d_i'&0\\ 0&d_{i+1}'\end{pmatrix*}\sim\begin{pmatrix*}c&0\\ 0&d\end{pmatrix*}$ (und $c\mid d$, was wir aber nicht brauchen). Insbesondere $d_i'd_{i+1}'=\det\begin{pmatrix*}d_i'&0\\ 0&d_{i+1}'\end{pmatrix*}\divi\begin{pmatrix*}c&0\\ 0&d\end{pmatrix*}=cd$ und daher $c,d\in A\setminus\{0\}$ sowie
         \begin{align*}
             (*)\qquad l(d_i')+l(d_{i+1}')=l(d_i'd_{i+1}')=l(cd)=l(c)+l(d).
         \end{align*}
         Setze $(d_1'',\ldots ,d_n''):=(d_1',..d_{i-1},c,d,d_{i+2}',\ldots ,d_n')$. Noch zu zeigen ist: $\delta(d_1',\ldots ,d_n')>\delta(d_1'',\ldots ,d_n'')$. Wegen (*) reicht es zu zeigen, dass $l(d_i')>l(c)$. Dies folgt aus $c\nmid d_i'$ (sonst ist $d_{i+1}\in (c)=(d_i')$ und daher $d_i\mid d_{i+1}$).
-    \end{tcolorbox}
+    \end{behbox}
 
     \noindent Nun folgt alles durch mehrfache Anwendung der Hilfsbehauptung.
 \end{cproof}
@@ -964,13 +964,17 @@ Die bis auf Reihenfolge der Kästchen eindeutig bestimmte Matrix heißt Weierstr
 \textbf{Existenz}. Diese ist klar mit der Frobenius'schen Normalform \ref{17.5.4}, Primfaktorzerlegung und Lemma \ref{17.5.1}\\
 
 \noindent\textbf{Eindeutigkeit}.
-\begin{tcolorbox}[arc=0mm, boxrule=0.2mm]\noindent\textbf{Behauptung}. Sei $(p_1,\ldots ,p_m)$ ein Tupel normierter $p_i\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolynomen sind. Dann gibt es eine Zerlegung $Z=\{I_1,\ldots ,I_s\}$ von $\{1,\ldots ,m\}$ mit $\#Z=s$ derart, dass mit $f_1,\ldots ,f_s$ definiert durch $f_k:=\prod_{i\in I_k}p_i$ ($k\in\{1,\ldots ,s\}$) gilt:
-\begin{itemize}
-\item[$(*)_k$] $\gcd(p_ip_j)=1$ für alle $i,j\in I_k$ (für alle $k\in\{1,\ldots ,s\}$
-\item[$(**)_k$] $f_{k+1}\mid f_k$ (für alle $k\in\{1,\ldots ,s-1\}$)
-\end{itemize}
+    \begin{behbox}
+        \hbeh{}. 
+            Sei $(p_1,\ldots ,p_m)$ ein Tupel normierter $p_i\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolynomen sind. Dann gibt es eine Zerlegung $Z=\{I_1,\ldots ,I_s\}$ von $\{1,\ldots ,m\}$ mit $\#Z=s$ derart, dass mit $f_1,\ldots ,f_s$ definiert durch $f_k:=\prod_{i\in I_k}p_i$ ($k\in\{1,\ldots ,s\}$) gilt:
+        \begin{itemize}
+            \item[$(*)_k$] $\gcd(p_ip_j)=1$ für alle $i,j\in I_k$ (für alle $k\in\{1,\ldots ,s\}$
+            \item[$(**)_k$] $f_{k+1}\mid f_k$ (für alle $k\in\{1,\ldots ,s-1\}$)
+        \end{itemize}
 
-\noindent\textbf{Begründung}. Ist $m=0$, so ist nichts zu tun. Sei also $m>0$. Da jedes $p_i$ eine Potenz von Primpolynomen ist gibt es dann $\emptyset\neq I_1\subseteq\{1,\ldots ,m\}$ derart, dass $f_1:=\prod_{i\in I_1}p_i=\lcm(p_1,\ldots ,p_m)$ [wäre z.B. $K=\C$, $m=5$, $p_1=(X-1)^3, p_2=X-1, p_3=X^5, p_4=(X-1)^3, p_5=X^7$, so wären $I_1=\{1,5\}$ und $I_1=\{4,5\}$ die beiden möglichen Wahlen für $I_1$]. Es gilt dann $(*_1)$. Ist $I_1=\{1,\ldots ,m\}$, so setzen wir $s:=1$ und sind fertig. Sonst gibt es $\emptyset\neq I_2\subseteq\{1,\ldots ,m\}$ derart, dass $f_2:=\prod_{i\in I_2}p_i=\lcm(p_i\mid i\in\{1,\ldots ,m\}\setminus I_1)$. Es gilt dann $(**_1)$ und $(*_2)$. Ist $I_1\cup I_2=\{1,\ldots m\}$, so setze $s:=2$ und wir sind fertig. Sonst mache so weiter\ldots  \end{tcolorbox}
+        \hbeg{}. 
+            Ist $m=0$, so ist nichts zu tun. Sei also $m>0$. Da jedes $p_i$ eine Potenz von Primpolynomen ist gibt es dann $\emptyset\neq I_1\subseteq\{1,\ldots ,m\}$ derart, dass $f_1:=\prod_{i\in I_1}p_i=\lcm(p_1,\ldots ,p_m)$ [wäre z.B. $K=\C$, $m=5$, $p_1=(X-1)^3, p_2=X-1, p_3=X^5, p_4=(X-1)^3, p_5=X^7$, so wären $I_1=\{1,5\}$ und $I_1=\{4,5\}$ die beiden möglichen Wahlen für $I_1$]. Es gilt dann $(*_1)$. Ist $I_1=\{1,\ldots ,m\}$, so setzen wir $s:=1$ und sind fertig. Sonst gibt es $\emptyset\neq I_2\subseteq\{1,\ldots ,m\}$ derart, dass $f_2:=\prod_{i\in I_2}p_i=\lcm(p_i\mid i\in\{1,\ldots ,m\}\setminus I_1)$. Es gilt dann $(**_1)$ und $(*_2)$. Ist $I_1\cup I_2=\{1,\ldots m\}$, so setze $s:=2$ und wir sind fertig. Sonst mache so weiter \ldots  
+    \end{behbox}
 Seien nun $(p_1,\ldots ,p_m)$ und $(q_1,\ldots ,q_l)$ Tupel normierter Polynome $p_i,q_j\in K[X]$ vom Grad $\ge 1$, die Potenzen von Primpolynomen sind und für welche die Behauptung gilt. Zu zeigen ist, nach Umnummerierung gilt $(p_1,\ldots ,p_m)=(q_1,\ldots ,q_l)$. Wähle gemäß Hilfsbehauptung Zerlegungen $Z=\{I_1,\ldots ,I_s\}$ von $\{1,\ldots ,m\}$ und $Z'=\{J_1,\ldots ,J_t\}$ von $\{1,\ldots ,l\}$ mit $\#Z=s$ und $\#Z'=t$ derart, dass mit $f_1,\ldots f_s,g_1,\ldots ,g_t$ definiert durch $f_k:=\prod_{i\in I_k}p_i$ ($k\in\{1,\ldots ,s\}$) und $g_k:=\prod_{j\in J_k}q_j$ ($k\in\{1,\ldots ,t\}$) gilt:
 \begin{itemize}
 \item $\forall k\in\{1,\ldots ,s\}: \forall i,j\in I_k: (i\neq j\implies \gcd(p_i,p_j)=1$ und $f_s\mid\ldots \mid f_1$
