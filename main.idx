@@ -1,270 +1,270 @@
-\indexentry{Menge@{\bf Menge}|hyperpage}{1}
-\indexentry{Menge@{\bf Menge}!Element|hyperpage}{1}
-\indexentry{ganze Zahlen@{\bf  ganze Zahlen} ($\mathbb  Z$)|hyperpage}{2}
-\indexentry{natürliche Zahlen@{\bf natürliche Zahlen} ($\N$)|hyperpage}{2}
-\indexentry{Menge@{\bf Menge}!Objekte mit Eigenschaft|hyperpage}{2}
-\indexentry{Menge@{\bf Menge}!e@$\in$ oder $\notin$|hyperpage}{2}
-\indexentry{Allquantor@{\bf  Allquantor} ($\forall $)|hyperpage}{3}
-\indexentry{Existenzquantor@{\bf  Existenzquantor} ($\exists $)|hyperpage}{3}
-\indexentry{Äquivalenz@{\bf  Äquivalenz} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel  \Rightarrow \tmspace  +\thickmuskip {.2777em}$)|hyperpage}{3}
-\indexentry{Implikation@{\bf  Implikation} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace  +\thickmuskip {.2777em}$, $\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Relbar \tmspace  +\thickmuskip {.2777em}$)|hyperpage}{3}
-\indexentry{Implikation@{\bf  Implikation} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace  +\thickmuskip {.2777em}$, $\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Relbar \tmspace  +\thickmuskip {.2777em}$)|hyperpage}{3}
-\indexentry{Menge@{\bf Menge}!Teilmenge ($\subseteq$)|hyperpage}{3}
-\indexentry{Menge@{\bf Menge}!Obermenge ($\supseteq$)|hyperpage}{3}
-\indexentry{Menge@{\bf Menge}!Vereinigung ($\cup/\bigcup$)|hyperpage}{3}
-\indexentry{Menge@{\bf Menge}!Schnitt ($\cap/\bigcap$)|hyperpage}{3}
-\indexentry{Menge@{\bf Menge}!Vereinigung ($\cup/\bigcup$)|hyperpage}{4}
-\indexentry{Menge@{\bf Menge}!Schnitt ($\cap/\bigcap$)|hyperpage}{4}
-\indexentry{Menge@{\bf Menge}!Mengendifferenz ($\setminus$)|hyperpage}{4}
-\indexentry{Menge@{\bf Menge}!Potenzmenge ($\Pow$)|hyperpage}{4}
-\indexentry{Abbildung@{\bf Abbildung}|hyperpage}{4}
-\indexentry{Abbildung@{\bf Abbildung}!Definitionsmenge|hyperpage}{4}
-\indexentry{Abbildung@{\bf Abbildung}!Zielmenge|hyperpage}{4}
-\indexentry{Abbildung@{\bf Abbildung}!injektiv|hyperpage}{4}
-\indexentry{Abbildung@{\bf Abbildung}!surjektiv|hyperpage}{4}
-\indexentry{Abbildung@{\bf Abbildung}!bijektiv|hyperpage}{4}
-\indexentry{Menge@{\bf Menge}!endlich|hyperpage}{6}
-\indexentry{Menge@{\bf Menge}!Mächtigkeit ($\#$)|hyperpage}{6}
-\indexentry{Menge@{\bf Menge}!unendlich|hyperpage}{6}
-\indexentry{Menge@{\bf Menge}!abzählbar|hyperpage}{6}
-\indexentry{Menge@{\bf Menge}!überabzählbar|hyperpage}{6}
-\indexentry{Abbildung@{\bf Abbildung}!Bild|hyperpage}{7}
-\indexentry{Abbildung@{\bf Abbildung}!Urbild|hyperpage}{7}
-\indexentry{Menge von Abbildungen@{\bf Menge von Abbildungen} ($B^A$)|hyperpage}{7}
-\indexentry{Menge@{\bf Menge}!kartesisches Produkt ($\times$)|hyperpage}{7}
-\indexentry{Abbildung@{\bf Abbildung}!Selbstabbildung|hyperpage}{7}
-\indexentry{Abbildung@{\bf Abbildung}!Permutation|hyperpage}{7}
-\indexentry{Abbildung@{\bf Abbildung}!Bild|hyperpage}{8}
-\indexentry{Abbildung@{\bf Abbildung}!Gleichheit|hyperpage}{8}
-\indexentry{Abbildung@{\bf Abbildung}!Einschränkung (Restriktion)|hyperpage}{9}
-\indexentry{Abbildung@{\bf Abbildung}!Graph|hyperpage}{9}
-\indexentry{Abbildung@{\bf Abbildung}!Umkehrabbildung (inverse Abbildung)|hyperpage}{10}
-\indexentry{Abbildung@{\bf Abbildung}!Hintereinanderschaltung/ -ausführung/ Verkettung/ Komposition ($\circ$)|hyperpage}{10}
-\indexentry{Abbildung@{\bf Abbildung}!Indentität ($\id$)|hyperpage}{10}
-\indexentry{Abbildung@{\bf Abbildung}!Zuordnungen vermitteln Bijektion|hyperpage}{12}
-\indexentry{Relation@{\bf Relation}|hyperpage}{12}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)|hyperpage}{12}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!reflexiv|hyperpage}{12}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!symmetrisch|hyperpage}{12}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!transitiv|hyperpage}{12}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!Äquivalenzklasse|hyperpage}{12}
-\indexentry{Menge@{\bf Menge}!Zerlegung|hyperpage}{13}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!Quotientenmenge|hyperpage}{13}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!z@$\sim_\mathcal{Z}$|hyperpage}{13}
-\indexentry{Abbildung@{\bf Abbildung}!Wohldefiniertheit|hyperpage}{16}
-\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!induziert|hyperpage}{16}
-\indexentry{Abbildung@{\bf Abbildung}!kanonische Surjektion|hyperpage}{17}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}|hyperpage}{19}
-\indexentry{kommutativ@{\bf kommutativ}|hyperpage}{19}
-\indexentry{assoziativ@{\bf assoziativ}|hyperpage}{19}
-\indexentry{neutrales Element@{\bf neutrales Element}|hyperpage}{19}
-\indexentry{inverse Elemente@{\bf inverse Elemente}|hyperpage}{19}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!zugrundeliegende Menge/ Trägermenge|hyperpage}{19}
-\indexentry{Menge@{\bf Menge}!symmetrische Differenz ($\Delta$)|hyperpage}{21}
-\indexentry{Induktion@{\bf (vollständige) Induktion}|hyperpage}{22}
-\indexentry{ohne Einschränkung (\OE)|hyperpage}{22}
-\indexentry{Abbildung@{\bf Abbildung}!Permutation|hyperpage}{23}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!direktes Produkt|hyperpage}{24}
-\indexentry{punktweise Addition@{\bf punktweise Addition}|hyperpage}{24}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Untergruppe|hyperpage}{24}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Untergruppe!erzeugte Untergruppe|hyperpage}{26}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Isomorphismus|hyperpage}{27}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Monomorphismus|hyperpage}{27}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Epimorphismus|hyperpage}{27}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Endomorphismus|hyperpage}{27}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Automorphismus|hyperpage}{27}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!isomorph ($\cong$)|hyperpage}{28}
+\indexentry{Menge@{\bf Menge}|hyperpage}{3}
+\indexentry{Menge@{\bf Menge}!Element|hyperpage}{3}
+\indexentry{ganze Zahlen@{\bf  ganze Zahlen} ($\mathbb  Z$)|hyperpage}{4}
+\indexentry{natürliche Zahlen@{\bf natürliche Zahlen} ($\N$)|hyperpage}{4}
+\indexentry{Menge@{\bf Menge}!Objekte mit Eigenschaft|hyperpage}{4}
+\indexentry{Menge@{\bf Menge}!e@$\in$ oder $\notin$|hyperpage}{4}
+\indexentry{Allquantor@{\bf  Allquantor} ($\forall $)|hyperpage}{5}
+\indexentry{Existenzquantor@{\bf  Existenzquantor} ($\exists $)|hyperpage}{5}
+\indexentry{Äquivalenz@{\bf  Äquivalenz} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel  \Rightarrow \tmspace  +\thickmuskip {.2777em}$)|hyperpage}{5}
+\indexentry{Implikation@{\bf  Implikation} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace  +\thickmuskip {.2777em}$, $\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Relbar \tmspace  +\thickmuskip {.2777em}$)|hyperpage}{5}
+\indexentry{Implikation@{\bf  Implikation} ($\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace  +\thickmuskip {.2777em}$, $\DOTSB \tmspace  +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Relbar \tmspace  +\thickmuskip {.2777em}$)|hyperpage}{5}
+\indexentry{Menge@{\bf Menge}!Teilmenge ($\subseteq$)|hyperpage}{5}
+\indexentry{Menge@{\bf Menge}!Obermenge ($\supseteq$)|hyperpage}{5}
+\indexentry{Menge@{\bf Menge}!Vereinigung ($\cup/\bigcup$)|hyperpage}{5}
+\indexentry{Menge@{\bf Menge}!Schnitt ($\cap/\bigcap$)|hyperpage}{5}
+\indexentry{Menge@{\bf Menge}!Vereinigung ($\cup/\bigcup$)|hyperpage}{6}
+\indexentry{Menge@{\bf Menge}!Schnitt ($\cap/\bigcap$)|hyperpage}{6}
+\indexentry{Menge@{\bf Menge}!Mengendifferenz ($\setminus$)|hyperpage}{6}
+\indexentry{Menge@{\bf Menge}!Potenzmenge ($\Pow$)|hyperpage}{6}
+\indexentry{Abbildung@{\bf Abbildung}|hyperpage}{6}
+\indexentry{Abbildung@{\bf Abbildung}!Definitionsmenge|hyperpage}{6}
+\indexentry{Abbildung@{\bf Abbildung}!Zielmenge|hyperpage}{6}
+\indexentry{Abbildung@{\bf Abbildung}!injektiv|hyperpage}{6}
+\indexentry{Abbildung@{\bf Abbildung}!surjektiv|hyperpage}{6}
+\indexentry{Abbildung@{\bf Abbildung}!bijektiv|hyperpage}{6}
+\indexentry{Menge@{\bf Menge}!endlich|hyperpage}{8}
+\indexentry{Menge@{\bf Menge}!Mächtigkeit ($\#$)|hyperpage}{8}
+\indexentry{Menge@{\bf Menge}!unendlich|hyperpage}{8}
+\indexentry{Menge@{\bf Menge}!abzählbar|hyperpage}{8}
+\indexentry{Menge@{\bf Menge}!überabzählbar|hyperpage}{8}
+\indexentry{Abbildung@{\bf Abbildung}!Bild|hyperpage}{9}
+\indexentry{Abbildung@{\bf Abbildung}!Urbild|hyperpage}{9}
+\indexentry{Menge von Abbildungen@{\bf Menge von Abbildungen} ($B^A$)|hyperpage}{9}
+\indexentry{Menge@{\bf Menge}!kartesisches Produkt ($\times$)|hyperpage}{9}
+\indexentry{Abbildung@{\bf Abbildung}!Selbstabbildung|hyperpage}{9}
+\indexentry{Abbildung@{\bf Abbildung}!Permutation|hyperpage}{9}
+\indexentry{Abbildung@{\bf Abbildung}!Bild|hyperpage}{10}
+\indexentry{Abbildung@{\bf Abbildung}!Gleichheit|hyperpage}{10}
+\indexentry{Abbildung@{\bf Abbildung}!Einschränkung (Restriktion)|hyperpage}{11}
+\indexentry{Abbildung@{\bf Abbildung}!Graph|hyperpage}{11}
+\indexentry{Abbildung@{\bf Abbildung}!Umkehrabbildung (inverse Abbildung)|hyperpage}{12}
+\indexentry{Abbildung@{\bf Abbildung}!Hintereinanderschaltung/ -ausführung/ Verkettung/ Komposition ($\circ$)|hyperpage}{12}
+\indexentry{Abbildung@{\bf Abbildung}!Indentität ($\id$)|hyperpage}{12}
+\indexentry{Abbildung@{\bf Abbildung}!Zuordnungen vermitteln Bijektion|hyperpage}{14}
+\indexentry{Relation@{\bf Relation}|hyperpage}{14}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)|hyperpage}{14}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!reflexiv|hyperpage}{14}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!symmetrisch|hyperpage}{14}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!transitiv|hyperpage}{14}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!Äquivalenzklasse|hyperpage}{14}
+\indexentry{Menge@{\bf Menge}!Zerlegung|hyperpage}{15}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!Quotientenmenge|hyperpage}{15}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!z@$\sim_\mathcal{Z}$|hyperpage}{15}
+\indexentry{Abbildung@{\bf Abbildung}!Wohldefiniertheit|hyperpage}{18}
+\indexentry{Relation@{\bf Relation}!Äquivalenzrelation ($\sim$)!induziert|hyperpage}{18}
+\indexentry{Abbildung@{\bf Abbildung}!kanonische Surjektion|hyperpage}{19}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}|hyperpage}{21}
+\indexentry{kommutativ@{\bf kommutativ}|hyperpage}{21}
+\indexentry{assoziativ@{\bf assoziativ}|hyperpage}{21}
+\indexentry{neutrales Element@{\bf neutrales Element}|hyperpage}{21}
+\indexentry{inverse Elemente@{\bf inverse Elemente}|hyperpage}{21}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!zugrundeliegende Menge/ Trägermenge|hyperpage}{21}
+\indexentry{Menge@{\bf Menge}!symmetrische Differenz ($\Delta$)|hyperpage}{23}
+\indexentry{Induktion@{\bf (vollständige) Induktion}|hyperpage}{24}
+\indexentry{ohne Einschränkung (\OE)|hyperpage}{24}
+\indexentry{Abbildung@{\bf Abbildung}!Permutation|hyperpage}{25}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!direktes Produkt|hyperpage}{26}
+\indexentry{punktweise Addition@{\bf punktweise Addition}|hyperpage}{26}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Untergruppe|hyperpage}{26}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Untergruppe!erzeugte Untergruppe|hyperpage}{29}
 \indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Isomorphismus|hyperpage}{29}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)|hyperpage}{29}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Kongruenzklasse|hyperpage}{29}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientengruppe|hyperpage}{30}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!h@$\equiv_H$|hyperpage}{31}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Monomorphismus|hyperpage}{29}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Epimorphismus|hyperpage}{29}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Endomorphismus|hyperpage}{29}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Automorphismus|hyperpage}{29}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!isomorph ($\cong$)|hyperpage}{30}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!Isomorphismus|hyperpage}{31}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)|hyperpage}{31}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Kongruenzklasse|hyperpage}{31}
 \indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientengruppe|hyperpage}{32}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Nebenklassen|hyperpage}{32}
-\indexentry{Abbildung@{\bf Abbildung}!Kern ($\ker$)|hyperpage}{33}
-\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!kanonischer Epimorphismus|hyperpage}{34}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}|hyperpage}{37}
-\indexentry{kommutativ@{\bf kommutativ}|hyperpage}{37}
-\indexentry{assoziativ@{\bf assoziativ}|hyperpage}{37}
-\indexentry{neutrales Element@{\bf neutrales Element}|hyperpage}{37}
-\indexentry{distributiv@{\bf distributiv}|hyperpage}{37}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Trägermenge|hyperpage}{37}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!additive Gruppe|hyperpage}{37}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Unterring|hyperpage}{39}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Polynomring|hyperpage}{41}
-\indexentry{Polynom@{\bf Polynom}|hyperpage}{41}
-\indexentry{Polynom@{\bf Polynom}!Koeffizient|hyperpage}{41}
-\indexentry{Polynom@{\bf Polynom}!Koeffizient!Leitkoeffizient|hyperpage}{41}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus|hyperpage}{41}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Monomorphismus|hyperpage}{42}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Epimorphismus|hyperpage}{42}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Isomorphismus|hyperpage}{42}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Endomorphismus|hyperpage}{42}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Automorphismus|hyperpage}{42}
-\indexentry{Polynom@{\bf Polynom}!p@$p(x)$|hyperpage}{44}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)|hyperpage}{44}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientenring|hyperpage}{45}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal|hyperpage}{45}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientenring|hyperpage}{46}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Restklassen|hyperpage}{46}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal!erzeugtes Ideal|hyperpage}{47}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal!endlich erzeugt|hyperpage}{47}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal!Hauptideal|hyperpage}{47}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Einheiten/invertierbare Elemente ($A^\times$)|hyperpage}{51}
-\indexentry{Körper@{\bf Körper}|hyperpage}{51}
-\indexentry{Primzahl@{\bf Primzahl} ($\P$)|hyperpage}{52}
-\indexentry{kommutativer Ring@{\bf kommutativer Ring}!imaginäre Einheit ($\i:=\sqrt{-1}$)|hyperpage}{53}
-\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)|hyperpage}{55}
-\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!komplexe Konjugation|hyperpage}{55}
-\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Realteil|hyperpage}{55}
-\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Imaginärteil|hyperpage}{55}
-\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Betrag|hyperpage}{55}
-\indexentry{Polynom@{\bf Polynom}!Nullstelle|hyperpage}{56}
-\indexentry{Fundamentalsatz der Algebra@{\bf Fundamentalsatz der Algebra}|hyperpage}{56}
-\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}|hyperpage}{59}
-\indexentry{Spaltenvektor@{\bf Spaltenvektor}|hyperpage}{59}
-\indexentry{Linearkombination@{\bf Linearkombination}|hyperpage}{60}
-\indexentry{Linearkombination@{\bf Linearkombination}!Spann|hyperpage}{60}
-\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Koeffizientenmatrix|hyperpage}{62}
-\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform|hyperpage}{62}
-\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform!reduzierte Stufenform|hyperpage}{62}
-\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform!abhängige Unbekannte|hyperpage}{63}
-\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform!freie Unbekannte|hyperpage}{63}
-\indexentry{Gauß-Verfahren@{\bf Gauß-Verfahren}|hyperpage}{65}
-\indexentry{Gauß-Verfahren@{\bf Gauß-Verfahren}!Zeilenoperationen|hyperpage}{65}
-\indexentry{Matrix@{\bf Matrix}!Zeilenraum ($\row$)|hyperpage}{69}
-\indexentry{Matrix@{\bf Matrix}!Kern ($\ker$)|hyperpage}{69}
-\indexentry{Vektorraum@{\bf Vektorraum}|hyperpage}{75}
-\indexentry{neutrales Element@{\bf neutrales Element}|hyperpage}{75}
-\indexentry{distributiv@{\bf distributiv}|hyperpage}{75}
-\indexentry{distributiv@{\bf distributiv}|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!Vektoren|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!Skalare|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!Grundkörper|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!Trägermenge|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!additive Gruppe|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!Vektoraddition|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!Skalarmultiplikation|hyperpage}{75}
-\indexentry{Vektorraum@{\bf Vektorraum}!direktes Produkt|hyperpage}{76}
-\indexentry{Vektorraum@{\bf Vektorraum}!Untervektorraum/linearer Unterraum|hyperpage}{77}
-\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!erzeugter Unterraum/ lineare Hülle/ Spann|hyperpage}{78}
-\indexentry{Vektorraum@{\bf Vektorraum}!Erzeugendensystem|hyperpage}{79}
-\indexentry{Vektorraum@{\bf Vektorraum}!lineare Unabhängigkeit|hyperpage}{79}
-\indexentry{Vektorraum@{\bf Vektorraum}!Basis|hyperpage}{79}
-\indexentry{Vektorraum@{\bf Vektorraum}!Basis!Standardbasis|hyperpage}{79}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!h@$\equiv_H$|hyperpage}{33}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientengruppe|hyperpage}{34}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Nebenklassen|hyperpage}{34}
+\indexentry{Abbildung@{\bf Abbildung}!Kern ($\ker$)|hyperpage}{35}
+\indexentry{abelsche Gruppe@{\bf abelsche Gruppe}!Homomorphismus!kanonischer Epimorphismus|hyperpage}{36}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}|hyperpage}{39}
+\indexentry{kommutativ@{\bf kommutativ}|hyperpage}{39}
+\indexentry{assoziativ@{\bf assoziativ}|hyperpage}{39}
+\indexentry{neutrales Element@{\bf neutrales Element}|hyperpage}{39}
+\indexentry{distributiv@{\bf distributiv}|hyperpage}{39}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Trägermenge|hyperpage}{39}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!additive Gruppe|hyperpage}{39}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Unterring|hyperpage}{41}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Polynomring|hyperpage}{43}
+\indexentry{Polynom@{\bf Polynom}|hyperpage}{43}
+\indexentry{Polynom@{\bf Polynom}!Koeffizient|hyperpage}{43}
+\indexentry{Polynom@{\bf Polynom}!Koeffizient!Leitkoeffizient|hyperpage}{43}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus|hyperpage}{43}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Monomorphismus|hyperpage}{44}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Epimorphismus|hyperpage}{44}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Isomorphismus|hyperpage}{44}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Endomorphismus|hyperpage}{44}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Homomorphismus!Automorphismus|hyperpage}{44}
+\indexentry{Polynom@{\bf Polynom}!p@$p(x)$|hyperpage}{46}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)|hyperpage}{47}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientenring|hyperpage}{47}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal|hyperpage}{47}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientenring|hyperpage}{48}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Restklassen|hyperpage}{48}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal!erzeugtes Ideal|hyperpage}{49}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal!endlich erzeugt|hyperpage}{49}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Ideal!Hauptideal|hyperpage}{49}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!Einheiten/invertierbare Elemente ($A^\times$)|hyperpage}{53}
+\indexentry{Körper@{\bf Körper}|hyperpage}{53}
+\indexentry{Primzahl@{\bf Primzahl} ($\P$)|hyperpage}{54}
+\indexentry{kommutativer Ring@{\bf kommutativer Ring}!imaginäre Einheit ($\i:=\sqrt{-1}$)|hyperpage}{55}
+\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)|hyperpage}{57}
+\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!komplexe Konjugation|hyperpage}{57}
+\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Realteil|hyperpage}{57}
+\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Imaginärteil|hyperpage}{57}
+\indexentry{komplexe Zahlen@{\bf komplexe Zahlen} ($\C$)!Betrag|hyperpage}{58}
+\indexentry{Polynom@{\bf Polynom}!Nullstelle|hyperpage}{58}
+\indexentry{Fundamentalsatz der Algebra@{\bf Fundamentalsatz der Algebra}|hyperpage}{58}
+\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}|hyperpage}{61}
+\indexentry{Spaltenvektor@{\bf Spaltenvektor}|hyperpage}{61}
+\indexentry{Linearkombination@{\bf Linearkombination}|hyperpage}{62}
+\indexentry{Linearkombination@{\bf Linearkombination}!Spann|hyperpage}{62}
+\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Koeffizientenmatrix|hyperpage}{64}
+\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform|hyperpage}{64}
+\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform!reduzierte Stufenform|hyperpage}{64}
+\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform!abhängige Unbekannte|hyperpage}{65}
+\indexentry{homogenes lineares Gleichungssystem@{\bf homogenes lineares Gleichungssystem}!Stufenform!freie Unbekannte|hyperpage}{65}
+\indexentry{Gauß-Verfahren@{\bf Gauß-Verfahren}|hyperpage}{67}
+\indexentry{Gauß-Verfahren@{\bf Gauß-Verfahren}!Zeilenoperationen|hyperpage}{67}
+\indexentry{Matrix@{\bf Matrix}!Zeilenraum ($\row$)|hyperpage}{71}
+\indexentry{Matrix@{\bf Matrix}!Kern ($\ker$)|hyperpage}{71}
+\indexentry{Vektorraum@{\bf Vektorraum}|hyperpage}{77}
+\indexentry{neutrales Element@{\bf neutrales Element}|hyperpage}{77}
+\indexentry{distributiv@{\bf distributiv}|hyperpage}{77}
+\indexentry{distributiv@{\bf distributiv}|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!Vektoren|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!Skalare|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!Grundkörper|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!Trägermenge|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!additive Gruppe|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!Vektoraddition|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!Skalarmultiplikation|hyperpage}{77}
+\indexentry{Vektorraum@{\bf Vektorraum}!direktes Produkt|hyperpage}{78}
+\indexentry{Vektorraum@{\bf Vektorraum}!Untervektorraum/linearer Unterraum|hyperpage}{79}
+\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!erzeugter Unterraum/ lineare Hülle/ Spann|hyperpage}{80}
 \indexentry{Vektorraum@{\bf Vektorraum}!Erzeugendensystem|hyperpage}{81}
-\indexentry{Vektorraum@{\bf Vektorraum}!lineare Unabhängigkeit|hyperpage}{82}
-\indexentry{Vektorraum@{\bf Vektorraum}!Basis|hyperpage}{82}
-\indexentry{Menge@{\bf Menge}!Teilmenge ($\subseteq$)!echte Teilmenge ($\subset$)|hyperpage}{83}
-\indexentry{Menge@{\bf Menge}!Obermenge ($\supseteq$)!echte Obermenge ($\supset$)|hyperpage}{83}
-\indexentry{Vektorraum@{\bf Vektorraum}!endlich erzeugt|hyperpage}{84}
-\indexentry{Vektorraum@{\bf Vektorraum}!Dimension|hyperpage}{86}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung|hyperpage}{88}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Monomorphismus|hyperpage}{88}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Epimorphismus|hyperpage}{88}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Isomorphismus|hyperpage}{88}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Endomorphismus|hyperpage}{88}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Automorphismus|hyperpage}{88}
-\indexentry{Matrix@{\bf Matrix}!Spaltenraum|hyperpage}{89}
-\indexentry{Matrix@{\bf Matrix}!Bild|hyperpage}{89}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!co@$\co_\v$|hyperpage}{92}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!ve@$\ve_\v$|hyperpage}{92}
-\indexentry{Vektorraum@{\bf Vektorraum}!isomorph ($\cong$)|hyperpage}{92}
-\indexentry{Matrix@{\bf Matrix}!Darstellungsmatrix|hyperpage}{95}
-\indexentry{Matrix@{\bf Matrix}!Vandermonde-Matrix|hyperpage}{97}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Hom@$\Hom(V,W)$|hyperpage}{98}
-\indexentry{Matrix@{\bf Matrix}!Darstellungsmatrix!Basiswechselmatrix|hyperpage}{99}
-\indexentry{Matrix@{\bf Matrix}!Darstellungsmatrix|hyperpage}{99}
-\indexentry{Matrix@{\bf Matrix}!Matrizenprodukt|hyperpage}{100}
-\indexentry{Matrix@{\bf Matrix}!Einheitsmatrix|hyperpage}{103}
-\indexentry{Matrix@{\bf Matrix}!inverse Matrix|hyperpage}{103}
-\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}|hyperpage}{105}
-\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform|hyperpage}{105}
-\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform!abhängige Unbekannte|hyperpage}{105}
-\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform!freie Unbekannte|hyperpage}{105}
-\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform!reduzierte Stufenform|hyperpage}{105}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)|hyperpage}{109}
-\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientenvektorraum|hyperpage}{109}
-\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!kanonische Surjektion|hyperpage}{110}
-\indexentry{Matrix@{\bf Matrix}!Rang|hyperpage}{112}
-\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!Summe|hyperpage}{113}
-\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!direkte Summe|hyperpage}{113}
-\indexentry{Abbildung@{\bf Abbildung}!Permutation!Fehlstand|hyperpage}{117}
-\indexentry{Abbildung@{\bf Abbildung}!Permutation!Transposition|hyperpage}{117}
-\indexentry{Matrix@{\bf Matrix}!Determinante|hyperpage}{120}
-\indexentry{Matrix@{\bf Matrix}!Ähnlichkeit|hyperpage}{123}
-\indexentry{Matrix@{\bf Matrix}!Determinante!Entwicklung|hyperpage}{125}
-\indexentry{Matrix@{\bf Matrix}!Komatrix|hyperpage}{127}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!End@$\End(V)$|hyperpage}{129}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Eigenwert|hyperpage}{129}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Eigenvektor|hyperpage}{129}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Eigenraum|hyperpage}{129}
-\indexentry{Vektorraum@{\bf Vektorraum}!charakteristisches Polynom|hyperpage}{131}
-\indexentry{Matrix@{\bf Matrix}!charakteristisches Polynom|hyperpage}{133}
-\indexentry{Polynom@{\bf Polynom}!Nullstelle!Vielfachheit|hyperpage}{134}
-\indexentry{Polynom@{\bf Polynom}!zerfällt (in Linearfaktoren)|hyperpage}{134}
-\indexentry{Vektorraum@{\bf Vektorraum}!charakteristisches Polynom!algebraische Vielfachheit|hyperpage}{134}
-\indexentry{Vektorraum@{\bf Vektorraum}!charakteristisches Polynom!geometrische Vielfachheit|hyperpage}{134}
-\indexentry{Polynom@{\bf Polynom}!Polynomdivision|hyperpage}{135}
-\indexentry{Polynom@{\bf Polynom}!normiertes Polynom|hyperpage}{135}
-\indexentry{Polynom@{\bf Polynom}!normiertes Polynom!Begleitmatrix|hyperpage}{136}
-\indexentry{Cayley-Hamilton@{\bf Cayley-Hamilton (Satz)}|hyperpage}{140}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!algebraische Identität|hyperpage}{142}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Minimalpolynom|hyperpage}{142}
-\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Minimalpolynom|hyperpage}{143}
-\indexentry{Matrix@{\bf Matrix}!untere Dreiecksmatrix|hyperpage}{144}
-\indexentry{Matrix@{\bf Matrix}!obere Dreiecksmatrix|hyperpage}{144}
-\indexentry{Matrix@{\bf Matrix}!Diagonalmatrix|hyperpage}{144}
-\indexentry{Matrix@{\bf Matrix}!diagonalisierbar|hyperpage}{144}
-\indexentry{Matrix@{\bf Matrix}!trigonalisierbar|hyperpage}{144}
-\indexentry{Vektorraum@{\bf Vektorraum}!Basis!Eigenbasis|hyperpage}{144}
-\indexentry{Matrix@{\bf Matrix}!diagonalisierbar|hyperpage}{145}
-\indexentry{Matrix@{\bf Matrix}!trigonalisierbar|hyperpage}{145}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Skalarprodukt|hyperpage}{149}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Standardskalarprodukt|hyperpage}{150}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Norm|hyperpage}{150}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum|hyperpage}{150}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Winkel|hyperpage}{152}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Orthogonalität|hyperpage}{154}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Orthonormalsystem|hyperpage}{154}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Orthonormalbasis|hyperpage}{154}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!orthogonales Komplement|hyperpage}{155}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!orthogonale Projektion|hyperpage}{155}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Homomorphismus|hyperpage}{157}
-\indexentry{Matrix@{\bf Matrix}!Orthogonalität|hyperpage}{158}
-\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!selbsadjungierter Endomorphismus|hyperpage}{159}
-\indexentry{Matrix@{\bf Matrix}!selbstadjungiert|hyperpage}{159}
-\indexentry{Halbordnung@{\bf Halbordnung}|hyperpage}{163}
-\indexentry{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung|hyperpage}{163}
-\indexentry{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung! natürliche Ordnung|hyperpage}{163}
-\indexentry{Halbordnung@{\bf  Halbordnung}!obere Schranke|hyperpage}{164}
-\indexentry{Halbordnung@{\bf  Halbordnung}!untere Schranke|hyperpage}{164}
-\indexentry{Halbordnung@{\bf  Halbordnung}!Minimum|hyperpage}{164}
-\indexentry{Halbordnung@{\bf  Halbordnung}!Maximum|hyperpage}{164}
-\indexentry{Halbordnung@{\bf  Halbordnung}!Infimum|hyperpage}{164}
-\indexentry{Halbordnung@{\bf  Halbordnung}!Supremum|hyperpage}{164}
-\indexentry{Halbordnung@{\bf  Halbordnung}!maximales Element|hyperpage}{166}
-\indexentry{Halbordnung@{\bf  Halbordnung}!minimales Element|hyperpage}{166}
-\indexentry{Halbordnung@{\bf Halbordnung}!Kette|hyperpage}{167}
-\indexentry{Halbordnung@{\bf Halbordnung}!Zorn'sche Lemma|hyperpage}{169}
-\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}! Linearform|hyperpage}{173}
-\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}|hyperpage}{173}
-\indexentry{Algebraischer Dualraum@{\bf  Algebraischer Dualraum}!duale Basis|hyperpage}{174}
-\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!duale Abbildung|hyperpage}{174}
-\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!Doppeldual/ Bidual|hyperpage}{177}
-\indexentry{Bilinearform@{\bf Bilinearform}! bilineare Abbildung|hyperpage}{178}
-\indexentry{Bilinearform@{\bf Bilinearform}|hyperpage}{180}
-\indexentry{Bilinearform@{\bf Bilinearform}!Darstellungsmatrix|hyperpage}{180}
-\indexentry{Bilinearform@{\bf Bilinearform}!ausgeartet|hyperpage}{182}
-\indexentry{Bilinearform@{\bf Bilinearform}!symmetrische Bilinearform|hyperpage}{183}
-\indexentry{Bilinearform@{\bf Bilinearform}!symmetrische Matrix|hyperpage}{183}
-\indexentry{Bilinearform@{\bf Bilinearform}!quadratische Form|hyperpage}{183}
-\indexentry{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}!Permutationsmatrix|hyperpage}{188}
-\indexentry{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}|hyperpage}{189}
-\indexentry{Teilbarkeit@{\bf Teilbarkeit}!Teilbarkeitsrelation|hyperpage}{217}
-\indexentry{Teilbarkeit@{\bf Teilbarkeit}!Assozitation|hyperpage}{217}
-\indexentry{Teilbarkeit@{\bf  Teilbarkeit}!Teiler|hyperpage}{217}
-\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! gemeinsamer Teiler (gT)|hyperpage}{218}
-\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! gemeinsames Vielfaches (gV)|hyperpage}{218}
-\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! größter gemeinsamer Teiler (ggT)|hyperpage}{218}
-\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! kleinstes gemeinsames Vielfaches (kgV)|hyperpage}{218}
+\indexentry{Vektorraum@{\bf Vektorraum}!lineare Unabhängigkeit|hyperpage}{81}
+\indexentry{Vektorraum@{\bf Vektorraum}!Basis|hyperpage}{81}
+\indexentry{Vektorraum@{\bf Vektorraum}!Basis!Standardbasis|hyperpage}{81}
+\indexentry{Vektorraum@{\bf Vektorraum}!Erzeugendensystem|hyperpage}{83}
+\indexentry{Vektorraum@{\bf Vektorraum}!lineare Unabhängigkeit|hyperpage}{84}
+\indexentry{Vektorraum@{\bf Vektorraum}!Basis|hyperpage}{84}
+\indexentry{Menge@{\bf Menge}!Teilmenge ($\subseteq$)!echte Teilmenge ($\subset$)|hyperpage}{85}
+\indexentry{Menge@{\bf Menge}!Obermenge ($\supseteq$)!echte Obermenge ($\supset$)|hyperpage}{85}
+\indexentry{Vektorraum@{\bf Vektorraum}!endlich erzeugt|hyperpage}{86}
+\indexentry{Vektorraum@{\bf Vektorraum}!Dimension|hyperpage}{88}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung|hyperpage}{90}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Monomorphismus|hyperpage}{90}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Epimorphismus|hyperpage}{90}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Isomorphismus|hyperpage}{90}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Endomorphismus|hyperpage}{90}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Automorphismus|hyperpage}{90}
+\indexentry{Matrix@{\bf Matrix}!Spaltenraum|hyperpage}{91}
+\indexentry{Matrix@{\bf Matrix}!Bild|hyperpage}{91}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!co@$\co_\v$|hyperpage}{94}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!ve@$\ve_\v$|hyperpage}{94}
+\indexentry{Vektorraum@{\bf Vektorraum}!isomorph ($\cong$)|hyperpage}{94}
+\indexentry{Matrix@{\bf Matrix}!Darstellungsmatrix|hyperpage}{97}
+\indexentry{Matrix@{\bf Matrix}!Vandermonde-Matrix|hyperpage}{99}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Hom@$\Hom(V,W)$|hyperpage}{100}
+\indexentry{Matrix@{\bf Matrix}!Darstellungsmatrix!Basiswechselmatrix|hyperpage}{101}
+\indexentry{Matrix@{\bf Matrix}!Darstellungsmatrix|hyperpage}{102}
+\indexentry{Matrix@{\bf Matrix}!Matrizenprodukt|hyperpage}{102}
+\indexentry{Matrix@{\bf Matrix}!Einheitsmatrix|hyperpage}{105}
+\indexentry{Matrix@{\bf Matrix}!inverse Matrix|hyperpage}{105}
+\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}|hyperpage}{107}
+\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform|hyperpage}{107}
+\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform!abhängige Unbekannte|hyperpage}{107}
+\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform!freie Unbekannte|hyperpage}{107}
+\indexentry{inhomogenes lineares Gleichungssystem@{\bf inhomogenes lineares Gleichungssystem}!Stufenform!reduzierte Stufenform|hyperpage}{107}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)|hyperpage}{111}
+\indexentry{Relation@{\bf Relation}!Kongruenzrelation ($\equiv$)!Quotientenvektorraum|hyperpage}{111}
+\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!kanonische Surjektion|hyperpage}{112}
+\indexentry{Matrix@{\bf Matrix}!Rang|hyperpage}{114}
+\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!Summe|hyperpage}{116}
+\indexentry{Vektorraum@{\bf Vektorraum}!Unterraum!direkte Summe|hyperpage}{116}
+\indexentry{Abbildung@{\bf Abbildung}!Permutation!Fehlstand|hyperpage}{119}
+\indexentry{Abbildung@{\bf Abbildung}!Permutation!Transposition|hyperpage}{119}
+\indexentry{Matrix@{\bf Matrix}!Determinante|hyperpage}{122}
+\indexentry{Matrix@{\bf Matrix}!Ähnlichkeit|hyperpage}{125}
+\indexentry{Matrix@{\bf Matrix}!Determinante!Entwicklung|hyperpage}{127}
+\indexentry{Matrix@{\bf Matrix}!Komatrix|hyperpage}{129}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!End@$\End(V)$|hyperpage}{131}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Eigenwert|hyperpage}{131}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Eigenvektor|hyperpage}{131}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Eigenraum|hyperpage}{131}
+\indexentry{Vektorraum@{\bf Vektorraum}!charakteristisches Polynom|hyperpage}{133}
+\indexentry{Matrix@{\bf Matrix}!charakteristisches Polynom|hyperpage}{135}
+\indexentry{Polynom@{\bf Polynom}!Nullstelle!Vielfachheit|hyperpage}{136}
+\indexentry{Polynom@{\bf Polynom}!zerfällt (in Linearfaktoren)|hyperpage}{136}
+\indexentry{Vektorraum@{\bf Vektorraum}!charakteristisches Polynom!algebraische Vielfachheit|hyperpage}{136}
+\indexentry{Vektorraum@{\bf Vektorraum}!charakteristisches Polynom!geometrische Vielfachheit|hyperpage}{136}
+\indexentry{Polynom@{\bf Polynom}!Polynomdivision|hyperpage}{137}
+\indexentry{Polynom@{\bf Polynom}!normiertes Polynom|hyperpage}{137}
+\indexentry{Polynom@{\bf Polynom}!normiertes Polynom!Begleitmatrix|hyperpage}{138}
+\indexentry{Cayley-Hamilton@{\bf Cayley-Hamilton (Satz)}|hyperpage}{142}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!algebraische Identität|hyperpage}{144}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Minimalpolynom|hyperpage}{144}
+\indexentry{Vektorraum@{\bf Vektorraum}!Homomorphismus/ lineare Abbildung!Minimalpolynom|hyperpage}{145}
+\indexentry{Matrix@{\bf Matrix}!untere Dreiecksmatrix|hyperpage}{146}
+\indexentry{Matrix@{\bf Matrix}!obere Dreiecksmatrix|hyperpage}{146}
+\indexentry{Matrix@{\bf Matrix}!Diagonalmatrix|hyperpage}{146}
+\indexentry{Matrix@{\bf Matrix}!diagonalisierbar|hyperpage}{146}
+\indexentry{Matrix@{\bf Matrix}!trigonalisierbar|hyperpage}{146}
+\indexentry{Vektorraum@{\bf Vektorraum}!Basis!Eigenbasis|hyperpage}{146}
+\indexentry{Matrix@{\bf Matrix}!diagonalisierbar|hyperpage}{147}
+\indexentry{Matrix@{\bf Matrix}!trigonalisierbar|hyperpage}{147}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Skalarprodukt|hyperpage}{151}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Standardskalarprodukt|hyperpage}{152}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Norm|hyperpage}{152}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum|hyperpage}{152}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Winkel|hyperpage}{154}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Orthogonalität|hyperpage}{156}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Orthonormalsystem|hyperpage}{156}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Orthonormalbasis|hyperpage}{156}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!orthogonales Komplement|hyperpage}{157}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!orthogonale Projektion|hyperpage}{157}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!Homomorphismus|hyperpage}{159}
+\indexentry{Matrix@{\bf Matrix}!Orthogonalität|hyperpage}{160}
+\indexentry{Vektorraum@{\bf Vektorraum}!normierter Vektorraum!selbsadjungierter Endomorphismus|hyperpage}{161}
+\indexentry{Matrix@{\bf Matrix}!selbstadjungiert|hyperpage}{161}
+\indexentry{Halbordnung@{\bf Halbordnung}|hyperpage}{165}
+\indexentry{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung|hyperpage}{165}
+\indexentry{Halbordnung@{\bf Halbordnung}!Ordnung/ lineare Ordnung! natürliche Ordnung|hyperpage}{165}
+\indexentry{Halbordnung@{\bf  Halbordnung}!obere Schranke|hyperpage}{166}
+\indexentry{Halbordnung@{\bf  Halbordnung}!untere Schranke|hyperpage}{166}
+\indexentry{Halbordnung@{\bf  Halbordnung}!Minimum|hyperpage}{166}
+\indexentry{Halbordnung@{\bf  Halbordnung}!Maximum|hyperpage}{166}
+\indexentry{Halbordnung@{\bf  Halbordnung}!Infimum|hyperpage}{166}
+\indexentry{Halbordnung@{\bf  Halbordnung}!Supremum|hyperpage}{166}
+\indexentry{Halbordnung@{\bf  Halbordnung}!maximales Element|hyperpage}{168}
+\indexentry{Halbordnung@{\bf  Halbordnung}!minimales Element|hyperpage}{168}
+\indexentry{Halbordnung@{\bf Halbordnung}!Kette|hyperpage}{169}
+\indexentry{Halbordnung@{\bf Halbordnung}!Zorn'sche Lemma|hyperpage}{171}
+\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}! Linearform|hyperpage}{175}
+\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}|hyperpage}{175}
+\indexentry{Algebraischer Dualraum@{\bf  Algebraischer Dualraum}!duale Basis|hyperpage}{176}
+\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!duale Abbildung|hyperpage}{176}
+\indexentry{Algebraischer Dualraum@{\bf Algebraischer Dualraum}!Doppeldual/ Bidual|hyperpage}{179}
+\indexentry{Bilinearform@{\bf Bilinearform}! bilineare Abbildung|hyperpage}{180}
+\indexentry{Bilinearform@{\bf Bilinearform}|hyperpage}{182}
+\indexentry{Bilinearform@{\bf Bilinearform}!Darstellungsmatrix|hyperpage}{182}
+\indexentry{Bilinearform@{\bf Bilinearform}!ausgeartet|hyperpage}{184}
+\indexentry{Bilinearform@{\bf Bilinearform}!symmetrische Bilinearform|hyperpage}{185}
+\indexentry{Bilinearform@{\bf Bilinearform}!symmetrische Matrix|hyperpage}{185}
+\indexentry{Bilinearform@{\bf Bilinearform}!quadratische Form|hyperpage}{185}
+\indexentry{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}!Permutationsmatrix|hyperpage}{190}
+\indexentry{Allgemeine Cholesky-Zerlegung@{\bf Allgemeine Cholesky-Zerlegung}|hyperpage}{191}
+\indexentry{Teilbarkeit@{\bf Teilbarkeit}!Teilbarkeitsrelation|hyperpage}{219}
+\indexentry{Teilbarkeit@{\bf Teilbarkeit}!Assozitation|hyperpage}{219}
+\indexentry{Teilbarkeit@{\bf  Teilbarkeit}!Teiler|hyperpage}{219}
+\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! gemeinsamer Teiler (gT)|hyperpage}{220}
+\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! gemeinsames Vielfaches (gV)|hyperpage}{220}
+\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! größter gemeinsamer Teiler (ggT)|hyperpage}{220}
+\indexentry{Teilbarkeit@{\bf  Teilbarkeit}! kleinstes gemeinsames Vielfaches (kgV)|hyperpage}{220}

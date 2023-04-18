@@ -242,8 +242,9 @@ toc=idx % Inhaltsverzeichniseintrag für Index
 \usepackage{subfiles}
 
 % Beweisumgebung
+% \renewcommand{\qedsymbol}{q.e.d.}
 \let\oproof\proof
-\newenvironment{cproof}{\begin{tcolorbox}\begin{oproof}}{\end{oproof}\end{tcolorbox}}
+\newenvironment{cproof}{\begin{tcolorbox}\begin{oproof}}{\qedhere\end{oproof}\end{tcolorbox}}
 \renewenvironment{proof}{\begin{cproof}}{\end{cproof}}
 
 % Umgebung für Anschauungen
@@ -283,6 +284,16 @@ toc=idx % Inhaltsverzeichniseintrag für Index
 
 \mainmatter
 \tikzstyle{every picture}+=[remember picture]
+
+\begin{oproof}
+    Hallo!
+\end{oproof}
+\begin{proof}
+    Hallo!
+\end{proof}
+\begin{cproof}
+    Hallo!
+\end{cproof}
 
 \chapter[tocentry={Mengen}]{Mengen \\ ~{\small[\href{http://de.wikipedia.org/wiki/Georg_Cantor}{Georg Ferdinand Ludwig Philipp Cantor} *1845, \dag 1918]}}
     \subfile{b1/b1Kapitel/b1Mengen.tex}

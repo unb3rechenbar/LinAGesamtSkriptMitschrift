@@ -1,72 +1,72 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Mengen}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Mengen und Abbildungen}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Hintereinanderschaltung und Umkehrung von Abbildungen}{9}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Äquivalenzrelationen und Zerlegungen}{12}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Abelsche Gruppen}{19}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Definition und Beispiele abelscher Gruppen}{19}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Untergruppen und Gruppenhomomorphismen}{24}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Quotientengruppen}{29}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Kommutative Ringe}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definition und Beispiele kommutativer Ringe}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Unterringe, Ringhomomorphismen und Polynome}{39}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Ideale und Quotientenringe}{44}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Körper}{51}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Definition und Beispiele von Körpern}{51}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Die komplexen Zahlen}{53}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Homogene lineare Gleichungssysteme}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Matrizen in Stufenform}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Gauß-Verfahren}{65}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Dualität}{69}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Vektorräume}{75}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Definition und Beispiele von Vektorräumen, Untervektorräume}{75}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Basen}{79}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Lineare Abbildungen}{88}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Matrizen}{95}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Matrixdarstellungen von linearen Abbildungen}{95}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Matrizenkalkül}{100}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Inhomogene lineare Gleichungssysteme}{105}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Quotienten und direkte Summen}{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Quotientenvektorräume}{109}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Direkte Summen}{113}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Determinanten}{117}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Definition und Eigenschaften von Determinanten}{117}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Determinantenentwicklung und Komatrix}{125}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Eigenvektoren}{129}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Charakteristisches Polynom und Eigenwerte}{129}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Begleitmatrix, Satz von Cayley-Hamilton und Minimalpolynom}{135}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Diagonalisierbarkeit und Trigonalisierbarkeit}{144}{section.10.3}%
-\contentsline {chapter}{\numberline {11}Vektorräume mit Skalarprodukt}{149}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Skalarprodukte}{149}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Orthogonalität}{154}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Diagonalisierung symmetrischer und hermitescher Matrizen}{159}{section.11.3}%
-\contentsline {chapter}{\numberline {12}Halbordnungen und Ordnungen}{163}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Infima und Suprema, Minima und Maxima}{163}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Das Zornsche Lemma}{166}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Existenz von Basen in beliebigen Vektorräumen}{171}{section.12.3}%
-\contentsline {chapter}{\numberline {13}Linearformen, Bilinearformen und quadratische Formen}{173}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Algebraischer Dualraum}{173}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Bilineare Abbildungen}{178}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Bilinearformen}{180}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Symmetrische Bilinearformen und quadratische Formen}{183}{section.13.4}%
-\contentsline {section}{\numberline {13.5}Eine verallgemeinerte Cholesky-Zerlegung}{186}{section.13.5}%
-\contentsline {chapter}{\numberline {14}Reelle quadratische Formen}{193}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Der Trägheitssatz von Sylvester}{193}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Positiv semidefinite Matrizen}{197}{section.14.2}%
-\contentsline {chapter}{\numberline {15}Skalarprodukte}{205}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Die adjungierte Abbildung}{205}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Normale Abbildungen}{209}{section.15.2}%
-\contentsline {chapter}{\numberline {16}Teilbarkeit in kommutativen Ringen}{217}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Teilerbeziehung und Ideale}{217}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Integritäts- und Hauptidealringe}{220}{section.16.2}%
-\contentsline {section}{\numberline {16.3}Zur Berechnung größter gemeinsamer Teiler}{222}{section.16.3}%
-\contentsline {section}{\numberline {16.4}Faktorielle Ringe}{225}{section.16.4}%
-\contentsline {chapter}{\numberline {17}Normalformen von Matrizen}{233}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Existenz der Normalform von Smith}{233}{section.17.1}%
-\contentsline {section}{\numberline {17.2}Die Formel von Cauchy-Binet}{239}{section.17.2}%
-\contentsline {section}{\numberline {17.3}Eindeutigkeit der Normalform von Smith}{242}{section.17.3}%
-\contentsline {section}{\numberline {17.4}Charakterisierung der Ähnlichkeit und nochmals Cayley-Hamilton}{243}{section.17.4}%
-\contentsline {section}{\numberline {17.5}Die Normalform von Frobenius}{250}{section.17.5}%
-\contentsline {section}{\numberline {17.6}Die Normalform von Weierstraß}{254}{section.17.6}%
-\contentsline {section}{\numberline {17.7}Die Normalform von Jordan}{257}{section.17.7}%
+\contentsline {chapter}{\numberline {1}Mengen}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Mengen und Abbildungen}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Hintereinanderschaltung und Umkehrung von Abbildungen}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Äquivalenzrelationen und Zerlegungen}{14}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Abelsche Gruppen}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definition und Beispiele abelscher Gruppen}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Untergruppen und Gruppenhomomorphismen}{26}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Quotientengruppen}{31}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Kommutative Ringe}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definition und Beispiele kommutativer Ringe}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Unterringe, Ringhomomorphismen und Polynome}{41}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ideale und Quotientenringe}{46}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Körper}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Definition und Beispiele von Körpern}{53}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Die komplexen Zahlen}{55}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Homogene lineare Gleichungssysteme}{61}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Matrizen in Stufenform}{61}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Gauß-Verfahren}{67}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dualität}{71}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Vektorräume}{77}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Definition und Beispiele von Vektorräumen, Untervektorräume}{77}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Basen}{81}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Lineare Abbildungen}{90}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Matrizen}{97}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Matrixdarstellungen von linearen Abbildungen}{97}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Matrizenkalkül}{102}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Inhomogene lineare Gleichungssysteme}{107}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Quotienten und direkte Summen}{111}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Quotientenvektorräume}{111}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Direkte Summen}{115}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Determinanten}{119}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Definition und Eigenschaften von Determinanten}{119}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Determinantenentwicklung und Komatrix}{127}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Eigenvektoren}{131}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Charakteristisches Polynom und Eigenwerte}{131}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Begleitmatrix, Satz von Cayley-Hamilton und Minimalpolynom}{137}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Diagonalisierbarkeit und Trigonalisierbarkeit}{146}{section.10.3}%
+\contentsline {chapter}{\numberline {11}Vektorräume mit Skalarprodukt}{151}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Skalarprodukte}{151}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Orthogonalität}{156}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Diagonalisierung symmetrischer und hermitescher Matrizen}{161}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Halbordnungen und Ordnungen}{165}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Infima und Suprema, Minima und Maxima}{165}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Das Zornsche Lemma}{168}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Existenz von Basen in beliebigen Vektorräumen}{173}{section.12.3}%
+\contentsline {chapter}{\numberline {13}Linearformen, Bilinearformen und quadratische Formen}{175}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Algebraischer Dualraum}{175}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Bilineare Abbildungen}{180}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Bilinearformen}{182}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Symmetrische Bilinearformen und quadratische Formen}{185}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Eine verallgemeinerte Cholesky-Zerlegung}{188}{section.13.5}%
+\contentsline {chapter}{\numberline {14}Reelle quadratische Formen}{195}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Der Trägheitssatz von Sylvester}{195}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Positiv semidefinite Matrizen}{199}{section.14.2}%
+\contentsline {chapter}{\numberline {15}Skalarprodukte}{207}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Die adjungierte Abbildung}{207}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Normale Abbildungen}{211}{section.15.2}%
+\contentsline {chapter}{\numberline {16}Teilbarkeit in kommutativen Ringen}{219}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Teilerbeziehung und Ideale}{219}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Integritäts- und Hauptidealringe}{222}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Zur Berechnung größter gemeinsamer Teiler}{224}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Faktorielle Ringe}{227}{section.16.4}%
+\contentsline {chapter}{\numberline {17}Normalformen von Matrizen}{235}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Existenz der Normalform von Smith}{235}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Die Formel von Cauchy-Binet}{241}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Eindeutigkeit der Normalform von Smith}{244}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Charakterisierung der Ähnlichkeit und nochmals Cayley-Hamilton}{245}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Die Normalform von Frobenius}{252}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Die Normalform von Weierstraß}{256}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Die Normalform von Jordan}{259}{section.17.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

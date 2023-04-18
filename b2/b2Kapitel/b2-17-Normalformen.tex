@@ -844,23 +844,23 @@ In diesem Abschnitt sei $K$ stets ein Körper.
 \end{cproof}
 
 \begin{bem}\label{17.5.5}
-Wir haben insbesondere $\chi_A=(-1)^np_1\hdots p_m\in (p_m)=I_A$ und daher einen weiteren Beweis des Satzes von Cayley-Hamilton \ref{10.2.14} [$\to$\ref{17.4.15}]
+    Wir haben insbesondere $\chi_A=(-1)^np_1\hdots p_m\in (p_m)=I_A$ und daher einen weiteren Beweis des Satzes von Cayley-Hamilton \ref{10.2.14} [$\to$\ref{17.4.15}]
 \end{bem}
 
 \begin{bsp}\label{17.5.6}
-Sei $K:=\Q$, $A:=\begin{pmatrix}2&1&0&1\\0&3&0&0\\-1&1&3&1\\-1&1&0&4\end{pmatrix}$.
-\begin{align*}
-&A-XI_4\\
-=&\begin{pmatrix}2-X&1&0&1\\0&3-X&0&0\\-1&1&3-X&1\\-1&1&0&4-X\end{pmatrix}\sim\begin{pmatrix}-1&1&0&4-X\\0&1+(2-X)&0&1+(2-X)(4-X)\\0&3-X&0&0\\0&0&3-X&1-(4-X)\end{pmatrix}\\
-\sim&\begin{pmatrix}1&0&0&0\\0&X-3&0&-X^2+6X-9\\0&0&0&-X^2+6X-9\\0&0&X-3&-X+3\end{pmatrix}\sim\begin{pmatrix}1&0&0&0\\0&X-3&0&0\\0&0&X-3&0\\0&0&0&X^2-6X+9\end{pmatrix}:=S
-\end{align*}
-Wegen $3^2-6\cdot 3+9=0$ gilt $(X-3)\mid X^2-6X+9$ und $S$ ist in Smithscher Normalform. Es gilt also $c(A-XI_4)=(1,X-3,X-3,X^2-6X+9)$ und daher lautet die Frobenuis'sche Normalform von $A$ $\arraycolsep=1pt
-\left(\begin{array}{c c c c}
-\begin{tabular}{c|}3\\\hline\end{tabular}&0&0&0\\
-0&\begin{tabular}{|c|}\hline 3\\\hline\end{tabular}&0&0\\
-0&0&\multicolumn{2}{c}{\multirow{2}{*}{\begin{tabular}{|cc}
-\hline 0&-9\\1&6\end{tabular}}}\\0&0
-\end{array}\right)$ und es gilt $\mu_A=X^2-6X+9=(X-3)^2$ und $\chi_A=(X-3)(X-3)(X^2-6X+9)=(X-3)^4$.
+    Sei $K:=\Q$, $A:=\begin{pmatrix}2&1&0&1\\0&3&0&0\\-1&1&3&1\\-1&1&0&4\end{pmatrix}$.
+    \begin{align*}
+        &A-XI_4\\
+        =&\begin{pmatrix}2-X&1&0&1\\0&3-X&0&0\\-1&1&3-X&1\\-1&1&0&4-X\end{pmatrix}\sim\begin{pmatrix}-1&1&0&4-X\\0&1+(2-X)&0&1+(2-X)(4-X)\\0&3-X&0&0\\0&0&3-X&1-(4-X)\end{pmatrix}\\
+        \sim&\begin{pmatrix}1&0&0&0\\0&X-3&0&-X^2+6X-9\\0&0&0&-X^2+6X-9\\0&0&X-3&-X+3\end{pmatrix}\sim\begin{pmatrix}1&0&0&0\\0&X-3&0&0\\0&0&X-3&0\\0&0&0&X^2-6X+9\end{pmatrix}:=S
+    \end{align*}
+    Wegen $3^2-6\cdot 3+9=0$ gilt $(X-3)\mid X^2-6X+9$ und $S$ ist in Smithscher Normalform. Es gilt also $c(A-XI_4)=(1,X-3,X-3,X^2-6X+9)$ und daher lautet die Frobenuis'sche Normalform von $A$ $\arraycolsep=1pt
+    \left(\begin{array}{c c c c}
+        \begin{tabular}{c|}3\\\hline\end{tabular}&0&0&0\\
+        0&\begin{tabular}{|c|}\hline 3\\\hline\end{tabular}&0&0\\
+        0&0&\multicolumn{2}{c}{\multirow{2}{*}{\begin{tabular}{|cc}
+        \hline 0&-9\\1&6\end{tabular}}}\\0&0
+    \end{array}\right)$ und es gilt $\mu_A=X^2-6X+9=(X-3)^2$ und $\chi_A=(X-3)(X-3)(X^2-6X+9)=(X-3)^4$.
 \end{bsp}
 
 \section[Die Normalform von Weierstraß]{Die Normalform von Weierstraß\\{\small[\href{https://de.wikipedia.org/wiki/Karl_Weierstrass}{Karl Theodor Wilhelm Weierstraß} *1815 \dag 1897]}}
@@ -868,79 +868,81 @@ Wegen $3^2-6\cdot 3+9=0$ gilt $(X-3)\mid X^2-6X+9$ und $S$ ist in Smithscher Nor
 Wieder sei stets $K$ ein Körper.
 
 \begin{lem}\label{17.6.1}
-Sei $m\in \N_0$ und $p_1,\ldots ,p_m\in K[X]$ normiert mit $\gcd(p_i,p_j)=1$ für alle $i,j\in\{1,\ldots ,m\}$ bei $i\neq j$. Dann ist 
-\begin{align*}
-C(p_1\hdots p_m)\approx\begin{pmatrix}~
-\begin{tikzpicture}[inner sep=0]
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
-\node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
-\node[scale=4.5] at (0.1,-1.9) {$0$};
-\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
-\end{tikzpicture}
-\end{pmatrix}.
-\end{align*}
+    Sei $m\in \N_0$ und $p_1,\ldots ,p_m\in K[X]$ normiert mit $\gcd(p_i,p_j)=1$ für alle $i,j\in\{1,\ldots ,m\}$ bei $i\neq j$. Dann ist 
+    \begin{align*}
+        C(p_1\hdots p_m)\approx
+        \begin{pmatrix}~
+            \begin{tikzpicture}[inner sep=0]
+                \node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.8] (a1) {$C(p_1)$};
+                \node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=1] (am) at (1.5,-1.5) [anchor=north west] {$C(p_m)$};
+                \node[scale=4.5, yshift=-0.1cm] at (a1.east-|am) {$0$};
+                \node[scale=4.5] at (0.1,-1.9) {$0$};
+                \draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+            \end{tikzpicture}
+        \end{pmatrix}.
+    \end{align*}
 \end{lem}
 \begin{cproof}
-Setze $n:=\deg(p_1\hdots p_m)$. Nach \ref{17.4.11} ist die Behauptung äquivalent zu $C(p_1\hdots p_m)-XI_n\sim\left(\begin{smallmatrix}~
-\begin{tikzpicture}[inner sep=0]
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(p_1)$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(p_m)$};
-\node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
-\node[scale=3] at (0.1,-1.4) {$0$};
-\draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
-\end{tikzpicture}
-\end{smallmatrix}\right)-XI_n$, was nach \ref{17.5.2} gleichbedeutend ist mit\\
-$\left(\begin{matrix}
-\tikz\node(c){$1$};\\
-&\\
-&&\\
-&&&\\
-&&&&\tikz\node(d){$1$};\\
-&&&&&\tikz\node(e){$p_1\hdots p_m$};
-\end{matrix}\right)
-\begin{tikzpicture}[overlay, loosely dotted,thick,baseline]
-\node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
-\node[above left of = e,xshift=0em,yshift=4em,scale=5]{$0$};
-\draw (c)-- (d);
-\end{tikzpicture}\sim 
-\begin{pmatrix}~
-\begin{tikzpicture}[inner sep=0]
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (b1) {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_1\end{smallmatrix}$};
-\node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (bm) at (1,-1) [anchor=north west] {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_m\end{smallmatrix}$};
-\node[scale=3, yshift=0.0cm] at (b1.east-|bm) {$0$};
-\node[scale=3] at (0.1,-1.6) {$0$};
-\draw[loosely dotted,very thick,dash phase=2pt] (b1)--(bm);
-\end{tikzpicture}
-\end{pmatrix}$, das heißt mit
-\begin{align*}
-S:=\left(\begin{matrix}
-\tikz\node(c){$1$};\\
-&\\
-&&\\
-&&&\\
-&&&&\tikz\node(d){$1$};\\
-&&&&&\tikz\node(e){$p_1\hdots p_m$};
-\end{matrix}\right)
-\begin{tikzpicture}[overlay, loosely dotted,thick,baseline]
-\node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
-\node[above left of = e,xshift=0em,yshift=4em,scale=5]{$0$};
-\draw (c)-- (d);
-\end{tikzpicture}\sim
-\begin{pmatrix}
-\tikz\node(c){$1$};\\
-&\ddots\\
-&&1\\
-&&&p_1\\
-&&&&&\ddots\\
-&&&&&&\tikz\node(d){$p_m$};
-\end{pmatrix}
-\begin{tikzpicture}[overlay]
-\node[below right of = c,xshift=0em,yshift=-3.5em,scale=5]{$0$};
-\node[above left of = d,xshift=0em,yshift=3.5em,scale=5]{$0$};
-\end{tikzpicture}:=T.
-\end{align*}
-\oe sei $n\ge 2$. Es gilt $d_n(S)=\det(S)=p_1\hdots p_m=\det(T)=d_n(T)$ und $d_{n-1}(S)=1=d_{n-1}(T)$, denn $d_{n_1}(T)$ teilt $p_1\hdots p_{i-1}p_{i+1}\hdots p_m$ für alle $i\in\{1,\ldots ,m\}$. Wäre nämlich $d_{n-1}(T)\neq 1$, so gäbe es ein Primpolynom $g\in K[X]$ mit $g\mid d_{n-1}(T)$ und daher gilt $g\mid p_i$ für ein $i\in\{2,\ldots ,m\}$, sowie $g\mid p_j$ für ein $j\in\{1,\ldots ,m\}\setminus\{i\}$. Es folgt $g\mid \gcd(p_i,p_j)=1$, was ein Widerspruch ist. Daher gilt $d(S)=(1,\ldots ,1,p_1\hdots p_m)=d(T)$ und somit $S\sim T$. 
+    Setze $n:=\deg(p_1\hdots p_m)$. Nach \ref{17.4.11} ist die Behauptung äquivalent zu $C(p_1\hdots p_m)-XI_n\sim\left(
+    \begin{smallmatrix}~
+        \begin{tikzpicture}[inner sep=0]
+            \node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.6] (a1) {$C(p_1)$};
+            \node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (am) at (1,-1) [anchor=north west] {$C(p_m)$};
+            \node[scale=3, yshift=-0.1cm] at (a1.east-|am) {$0$};
+            \node[scale=3] at (0.1,-1.4) {$0$};
+            \draw[loosely dotted,very thick,dash phase=2pt] (a1)--(am);
+        \end{tikzpicture}
+    \end{smallmatrix}\right)-XI_n$, was nach \ref{17.5.2} gleichbedeutend ist mit\\
+    $\left(\begin{matrix}
+        \tikz\node(c){$1$};\\
+        &\\
+        &&\\
+        &&&\\
+        &&&&\tikz\node(d){$1$};\\
+        &&&&&\tikz\node(e){$p_1\hdots p_m$};
+    \end{matrix}\right)
+    \begin{tikzpicture}[overlay, loosely dotted,thick,baseline]
+        \node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
+        \node[above left of = e,xshift=0em,yshift=4em,scale=5]{$0$};
+        \draw (c)-- (d);
+        \end{tikzpicture}\sim 
+    \begin{pmatrix}~
+    \begin{tikzpicture}[inner sep=0]
+    \node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (b1) {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_1\end{smallmatrix}$};
+    \node[draw,regular polygon,regular polygon sides=4,inner sep=0,scale=0.7] (bm) at (1,-1) [anchor=north west] {$\begin{smallmatrix}1&&&\\&\ddots &&\\&&1&\\&&&p_m\end{smallmatrix}$};
+    \node[scale=3, yshift=0.0cm] at (b1.east-|bm) {$0$};
+    \node[scale=3] at (0.1,-1.6) {$0$};
+    \draw[loosely dotted,very thick,dash phase=2pt] (b1)--(bm);
+    \end{tikzpicture}
+    \end{pmatrix}$, das heißt mit
+    \begin{align*}
+    S:=\left(\begin{matrix}
+    \tikz\node(c){$1$};\\
+    &\\
+    &&\\
+    &&&\\
+    &&&&\tikz\node(d){$1$};\\
+    &&&&&\tikz\node(e){$p_1\hdots p_m$};
+    \end{matrix}\right)
+    \begin{tikzpicture}[overlay, loosely dotted,thick,baseline]
+    \node[below right of = c,xshift=0em,yshift=-4em,scale=5]{$0$};
+    \node[above left of = e,xshift=0em,yshift=4em,scale=5]{$0$};
+    \draw (c)-- (d);
+    \end{tikzpicture}\sim
+    \begin{pmatrix}
+    \tikz\node(c){$1$};\\
+    &\ddots\\
+    &&1\\
+    &&&p_1\\
+    &&&&&\ddots\\
+    &&&&&&\tikz\node(d){$p_m$};
+    \end{pmatrix}
+    \begin{tikzpicture}[overlay]
+    \node[below right of = c,xshift=0em,yshift=-3.5em,scale=5]{$0$};
+    \node[above left of = d,xshift=0em,yshift=3.5em,scale=5]{$0$};
+    \end{tikzpicture}:=T.
+    \end{align*}
+    \oe sei $n\ge 2$. Es gilt $d_n(S)=\det(S)=p_1\hdots p_m=\det(T)=d_n(T)$ und $d_{n-1}(S)=1=d_{n-1}(T)$, denn $d_{n_1}(T)$ teilt $p_1\hdots p_{i-1}p_{i+1}\hdots p_m$ für alle $i\in\{1,\ldots ,m\}$. Wäre nämlich $d_{n-1}(T)\neq 1$, so gäbe es ein Primpolynom $g\in K[X]$ mit $g\mid d_{n-1}(T)$ und daher gilt $g\mid p_i$ für ein $i\in\{2,\ldots ,m\}$, sowie $g\mid p_j$ für ein $j\in\{1,\ldots ,m\}\setminus\{i\}$. Es folgt $g\mid \gcd(p_i,p_j)=1$, was ein Widerspruch ist. Daher gilt $d(S)=(1,\ldots ,1,p_1\hdots p_m)=d(T)$ und somit $S\sim T$. 
 \end{cproof}
 
 \begin{satdef}\label{17.6.2}
