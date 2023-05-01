@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.out
+*.toc
+*.ilg
+*.idx
+*.ind
+.DS_Store
+.vscode
